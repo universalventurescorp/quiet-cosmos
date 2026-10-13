@@ -2,7 +2,7 @@ name: produce-episode
 
 on:
   schedule:
-    - cron: "17 12 * * 1,4"   # lunes y jueves 07:17 hora de Lima
+    - cron: "17 12 * * *"     # todos los días 07:17 hora de Lima
   workflow_dispatch:
     inputs:
       topic:
