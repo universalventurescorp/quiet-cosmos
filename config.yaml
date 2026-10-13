@@ -1,0 +1,28 @@
+# Quiet Cosmos — configuración del pipeline
+channel:
+  name: "Quiet Cosmos"
+  language: en            # en | es  (es = español neutro latino)
+
+voice:
+  id: af_heart            # Kokoro. Inglés: af_heart (mejor), af_bella, bf_emma, am_fenrir. Español: ef_dora, em_alex
+  speed: 0.9              # más lento = más calmado (género "para dormir")
+  wpm: 140                # palabras por minuto estimadas a esta velocidad
+  pause_sentence: 0.45
+  pause_paragraph: 1.1
+  pause_chapter: 2.5
+
+video:
+  target_minutes: 40      # duración objetivo de narración
+  width: 1920
+  height: 1080
+  fps: 24
+  seconds_per_image: 14   # cada imagen en pantalla ~14 s con movimiento Ken Burns lento
+  crf: 21
+  preset: veryfast
+  music_volume: 0.14      # música ambiental original generada por código
+
+upload:
+  privacy: private        # privado hasta que revises / hasta que la API pase la auditoría
+  category_id: "28"       # Ciencia y tecnología
+  made_for_kids: false
+  synthetic_media: false  # pon true si quieres marcar el video como contenido alterado/sintético
