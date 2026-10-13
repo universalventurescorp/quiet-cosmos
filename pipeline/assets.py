@@ -30,6 +30,7 @@ BLOCK = (
     "training", "simulator", "engineer", "scientist", "administrator", "senator", "congress",
     "speaks", "speech", "news", "this week", "update", "countdown", "live coverage", "webcast",
     "podcast", "selfie", "signing", "test stand", "hot fire", "facility", "office", "director",
+    "launch", "liftoff", "lift-off", "rocket", "telescope in space", "spacecraft illustration",
 )
 VIDEO_PREFER = (
     "animation", "visualization", "time-lapse", "timelapse", "time lapse", "flyover", "fly-over",

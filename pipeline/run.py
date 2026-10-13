@@ -121,7 +121,8 @@ def main():
     # 7. thumbnails + metadata
     from .thumbnail import make_thumbnails
     step(7, N, "thumbnails + metadata")
-    all_imgs = [i["path"] for m in media for i in m["images"]]
+    # thumbnails come from the opening chapter (the episode's main subject), not side topics
+    all_imgs = [i["path"] for i in media[0]["images"]] or [i["path"] for m in media for i in m["images"]]
     texts = script.get("thumbnail_texts") or [script.get("thumbnail_text", script["title"])]
     thumbs = make_thumbnails(all_imgs, texts, out)
     meta = {"title": script["title"], "tags": script.get("tags", []),
