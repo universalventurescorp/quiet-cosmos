@@ -1,78 +1,127 @@
-"""Video assembly with FFmpeg: slow Ken Burns motion, soft dissolves through black, narration + ambient music."""
+"""Episode edit: turns timing + media into a shot list and overlays, then renders with the engine.
+
+Structure of every episode:
+  cold open      fast-ish montage of the episode's best footage under the hook narration
+  opening title  flight through stars over a dimmed nebula, channel name + episode title
+  chapters       each chapter's own footage: stills with camera moves, real NASA clips every few shots,
+                 chapter card at the start
+  end card       stars, channel name
+"""
 import itertools
-import os
-from concurrent.futures import ThreadPoolExecutor
 
-from .common import run
+from . import cards, engine
 
-TAIL = 4.0  # seconds of music after the last word
+MIN_SHOT = 3.0
 
 
-def _segment(job):
-    img, frames, idx, cfg, out = job
-    v = cfg["video"]
-    w, h, fps = v["width"], v["height"], v["fps"]
-    W, H = int(w * 1.5) // 2 * 2, int(h * 1.5) // 2 * 2
-    dur = frames / fps
-    center_x, center_y = "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
-    motion = [
-        (f"1+0.12*on/{frames}", center_x, center_y),                 # slow push in
-        (f"1.12-0.12*on/{frames}", center_x, center_y),              # slow pull out
-        ("1.12", f"(iw-iw/zoom)*on/{frames}", center_y),             # drift left -> right
-        ("1.12", f"(iw-iw/zoom)*(1-on/{frames})", center_y),         # drift right -> left
-        ("1.12", center_x, f"(ih-ih/zoom)*(1-on/{frames})"),         # drift upward
-    ][idx % 5]
-    fade = min(1.2, dur / 4)
-    vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-          f"zoompan=z='{motion[0]}':x='{motion[1]}':y='{motion[2]}':d={frames}:s={w}x{h}:fps={fps},"
-          f"fade=t=in:st=0:d={fade:.2f},fade=t=out:st={dur - fade:.3f}:d={fade:.2f},format=yuv420p")
-    run(["ffmpeg", "-y", "-loglevel", "error", "-i", img, "-vf", vf, "-frames:v", frames,
-         "-c:v", "libx264", "-preset", v["preset"], "-crf", v["crf"], "-r", fps, out])
-
-
-def build_timeline(timing, chapter_images, cfg):
-    """One (image, start, end) per shot; each chapter shows its own images."""
-    spi, shots = cfg["video"]["seconds_per_image"], []
-    for i, (mark, images) in enumerate(zip(timing["chapters"], chapter_images)):
-        start = mark["start"]
-        end = mark["end"] + (TAIL if i == len(timing["chapters"]) - 1 else 0)
-        count = max(1, round((end - start) / spi))
-        cycle = itertools.cycle(images)
-        for k in range(count):
-            shots.append((next(cycle)["path"], start + (end - start) * k / count,
-                          start + (end - start) * (k + 1) / count))
+def _fill(start, end, stills, clips, spi, clip_every, move_offset=0):
+    """Contiguous shots covering [start, end): stills of ~spi seconds, a clip every `clip_every` shots."""
+    shots, t, k = [], start, 0
+    clips = list(clips)
+    stills = list(stills)
+    cyc = itertools.cycle(stills) if stills else None
+    last_path = None
+    while end - t > 0.01:
+        remaining = end - t
+        use_clip = clips and (k % clip_every == clip_every - 1)
+        if use_clip:
+            c = clips.pop(0)
+            d = min(c["duration"] - engine.XFADE - 0.2, spi * 1.15)
+            shot = {"kind": "clip", "path": c["path"]}
+        elif cyc:
+            img = next(cyc)
+            if img["path"] == last_path and len(stills) > 1:
+                img = next(cyc)
+            shot = {"kind": "still", "path": img["path"], "move": k + move_offset}
+            d = spi
+        else:
+            shot = {"kind": "stars", "seed": k + 7}
+            d = spi
+        if remaining - d < MIN_SHOT:          # absorb a tiny remainder into this shot
+            d = remaining
+            if shot["kind"] == "clip":        # clips cannot stretch: finish on a still instead
+                if cyc:
+                    img = next(cyc)
+                    shot = {"kind": "still", "path": img["path"], "move": k + move_offset}
+                else:
+                    shot = {"kind": "stars", "seed": k + 7}
+        shot.update(start=t, end=t + d)
+        shots.append(shot)
+        last_path = shot.get("path")
+        t += d
+        k += 1
     return shots
 
 
-def render(timing, chapter_images, narration, music, out_dir, cfg):
-    fps = cfg["video"]["fps"]
-    seg_dir = out_dir / "segments"
-    seg_dir.mkdir(exist_ok=True)
-    shots = build_timeline(timing, chapter_images, cfg)
-    jobs = []
-    for idx, (img, a, b) in enumerate(shots):
-        frames = round(b * fps) - round(a * fps)     # frame-exact, no drift
-        jobs.append((img, frames, idx, cfg, seg_dir / f"{idx:04d}.mp4"))
-    print(f"  rendering {len(jobs)} shots...")
-    with ThreadPoolExecutor(max_workers=os.cpu_count() or 2) as pool:
-        list(pool.map(_segment, jobs))
+def best_images(images, n):
+    return sorted(images, key=lambda i: -i.get("score", 0))[:n]
 
-    listing = out_dir / "segments.txt"
-    listing.write_text("".join(f"file '{j[4].resolve()}'\n" for j in jobs))
-    total = timing["duration"] + TAIL
-    final = out_dir / "video.mp4"
-    vol = cfg["video"]["music_volume"]
-    run(["ffmpeg", "-y", "-loglevel", "error",
-         "-f", "concat", "-safe", "0", "-i", listing,
-         "-i", narration,
-         "-stream_loop", "-1", "-i", music,
-         "-filter_complex",
-         f"[1:a]aresample=48000,apad=pad_dur={TAIL}[n];"
-         f"[2:a]aresample=48000,volume={vol},afade=t=in:d=6[m];"
-         f"[n][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
-         f"afade=t=out:st={total - 4}:d=4,loudnorm=I=-16:TP=-1.5:LRA=11[a]",
-         "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-         "-ar", "48000", "-t", f"{total:.3f}", "-movflags", "+faststart", final])
-    for j in jobs:
-        j[4].unlink(missing_ok=True)
-    return final
+
+def build_episode(timing, script, media, cfg, W=None, H=None):
+    v = cfg["video"]
+    W, H = W or v["width"], H or v["height"]
+    spi = v["seconds_per_image"]
+    shots, overlays = [], []
+    all_images = [img for m in media for img in m["images"]]
+    all_clips = [c for m in media for c in m["clips"]]
+
+    # 1) cold open: the best of every chapter, quicker cuts, opens on motion when possible
+    co = timing.get("cold_open")
+    t0 = 0.0
+    if co:
+        hero = [best_images(m["images"], 1)[0] for m in media if m["images"]]
+        end = co["end"] + 0.6
+        t = 0.0
+        if all_clips:                                   # motion in the very first second
+            c = all_clips[0]
+            d = min(c["duration"] - engine.XFADE - 0.2, spi * 0.8, end - MIN_SHOT)
+            if d >= MIN_SHOT:
+                shots.append({"kind": "clip", "path": c["path"], "start": 0.0, "end": d})
+                t = d
+        shots += _fill(t, end, hero, [], spi * 0.6, 99)
+        t0 = end
+
+    # 2) opening title
+    tc = timing["title_card"]
+    tc_end = timing["chapters"][0]["start"] + 0.2
+    backdrop = best_images(all_images, 2)[-1]["path"] if all_images else None
+    shots.append({"kind": "stars", "seed": 3, "backdrop": backdrop, "start": t0, "end": tc_end})
+    overlays.append(cards.opening_title(W, H, cfg["channel"]["name"], script["title"],
+                                        tc["start"] + 0.6, tc["end"] - 0.2))
+
+    # 3) chapters
+    used_clips = {shots[0]["path"]} if shots and shots[0]["kind"] == "clip" else set()
+    for i, (mark, m) in enumerate(zip(timing["chapters"], media)):
+        start = tc_end if i == 0 else mark["start"]
+        end = mark["end"]
+        clips = [c for c in m["clips"] if c["path"] not in used_clips]
+        imgs = m["images"] or all_images
+        shots += _fill(start, end, imgs, clips, spi, v.get("clip_every", 3), move_offset=i * 2)
+        overlays.append(cards.chapter_card(W, H, i + 1, mark["title"], mark["start"] + 0.4, mark["start"] + 7.5))
+
+    # 4) end card
+    oc = timing["outro"]
+    shots.append({"kind": "stars", "seed": 9, "backdrop": backdrop, "start": oc["start"], "end": timing["duration"],
+                  "speed": 0.6})
+    overlays.append(cards.end_card(W, H, cfg["channel"]["name"], "Rest well.", oc["start"] + 1.5,
+                                   timing["duration"] - 1.0))
+    _validate(shots, timing["duration"])
+    return shots, overlays
+
+
+def _validate(shots, total):
+    shots.sort(key=lambda s: s["start"])
+    for a, b in zip(shots, shots[1:]):
+        if abs(a["end"] - b["start"]) > 0.05:
+            raise ValueError(f"gap/overlap in edit at {a['end']:.2f}")
+    if abs(shots[-1]["end"] - total) > 0.05:
+        raise ValueError("edit does not cover the full duration")
+
+
+def render_episode(timing, script, media, audio, out, cfg):
+    v = cfg["video"]
+    shots, overlays = build_episode(timing, script, media, cfg)
+    print(f"  {len(shots)} shots, {sum(s['kind'] == 'clip' for s in shots)} clips, {len(overlays)} cards")
+    engine.render(shots, overlays, audio, out, v["width"], v["height"], v["fps"], timing["duration"],
+                  crf=v["crf"], preset=v["preset"], fade_out=4.0)
+    return out

@@ -1,72 +1,102 @@
-# Quiet Cosmos — canal de YouTube automatizado
+# Quiet Cosmos v2: canal de YouTube automatizado
 
-Documentales del espacio largos (≈40 min), calmados, para relajarse y dormir. Todo el pipeline corre gratis en GitHub Actions: guion → voz → imágenes → música → video → miniatura → subida a YouTube, 3 veces por semana, sin que toques nada.
+Quiet Cosmos publica documentales del espacio de 60 minutos, cinematográficos, calmados y con ciencia revisada, pensados para relajarse y dormir. Cada episodio sale con 2 Shorts verticales para atraer audiencia nueva. Todo el proceso es automático y usa solo código abierto: guion, revisión científica, voz, imágenes y video reales de la NASA, música original, edición, miniaturas, Shorts, control de calidad y subida a YouTube.
 
-## Por qué este nicho
+## Por qué este canal
 
-| Criterio | Por qué gana "espacio para dormir" |
+| Criterio | Por qué gana "documentales del espacio para dormir" |
 |---|---|
-| Retención | El espectador pone el video y se queda; los videos de 40–90 min generan muchísimas horas de visualización, que es justo lo que pide el Programa de Socios (4.000 horas). |
-| Materia prima infinita y gratis | La NASA Image Library tiene cientos de miles de imágenes reales, en general de dominio público, con API sin clave. |
-| La voz IA encaja | El género pide narración lenta y uniforme, justo donde el TTS suena mejor. |
-| Contenido evergreen | "Qué hay dentro de un agujero negro" se busca hoy y dentro de 5 años. |
-| Anuncios | Ciencia/educación en inglés tiene RPM por encima del promedio. |
+| Retención y horas | El espectador pone el video y lo deja correr. Un episodio de 60 minutos genera muchas horas de visualización, que es lo que pide el Programa de Socios (4.000 horas). |
+| Materia prima inagotable y gratis | La NASA Image and Video Library tiene cientos de miles de fotos **y videos** reales, en general de dominio público, con una API que no requiere clave. |
+| Producción 100% automatizable | La voz IA encaja con el género (narración lenta y pareja), y la edición se puede programar. |
+| Contenido evergreen | "Qué hay dentro de un agujero negro" se busca hoy y se seguirá buscando en 5 años. |
+| Anuncios | Ciencia y educación en inglés tiene un RPM alto. |
 
-Inglés por defecto (más audiencia y RPM). Para una versión en español basta con `language: es` y `voice.id: ef_dora` en `config.yaml`: es un segundo canal con el mismo pipeline.
-
-## Cómo funciona
+## Qué hace en cada episodio
 
 ```
-data/topics.json ─▶ Claude (claude -p, tu plan Pro) ─▶ guion por capítulos
-                                                         │
-     Kokoro TTS (open source) ◀──────────────────────────┘ voz + subtítulos exactos
-     NASA Image API ─▶ imágenes por capítulo (nunca repite una imagen en todo el canal)
-     Música ambiental original generada por código (sin derechos, distinta en cada episodio)
-     FFmpeg ─▶ Ken Burns lento + fundidos + mezcla + loudnorm ─▶ video 1080p
-     Pillow ─▶ miniatura   │   descripción con capítulos y créditos
-     YouTube Data API ─▶ video + miniatura + subtítulos
+Tema (cola que se rellena sola con Claude)
+ └─ Claude: esquema → capítulos → gancho inicial → revisión científica y de pronunciación → 2 guiones de Shorts
+     └─ Kokoro TTS (open source): narración pausada + subtítulos sincronizados
+         └─ NASA: fotos por capítulo + clips de video reales (time-lapses, observatorios, visualizaciones)
+             └─ Música ambiental original (acordes que evolucionan + reverb estéreo, sin derechos)
+                 └─ Mezcla: voz ecualizada y comprimida, la música baja sola cuando habla la voz, normalización de volumen
+                     └─ Motor de edición propio: movimientos de cámara suaves, fundidos cruzados, clips reales,
+                        viaje 3D entre estrellas, título de apertura, tarjetas de capítulo, acabado de cine
+                         └─ 3 miniaturas · Shorts verticales con subtítulos grandes · control de calidad
+                             └─ Subida a YouTube: video + miniatura + subtítulos + capítulos + Shorts enlazados
 ```
 
-Cuando quedan menos de 5 temas en la cola, Claude propone 20 nuevos automáticamente. Si una corrida falla a la mitad, se retoma desde el último paso terminado.
+### Lo que cuida la retención
 
-## Lo que tienes que hacer tú (una sola vez, ~30 min)
+- **Gancho de 30 segundos:** el video abre con un dato real impactante y con la mejor toma en movimiento del episodio, antes del título.
+- **Estructura con progresión** (cerca → lejos, pequeño → inmenso), con curiosidades que se plantean al inicio y se resuelven más adelante.
+- **Revisión científica automática:** una segunda pasada de Claude corrige datos, números y repeticiones antes de narrar.
+- **Variedad visual:** cada capítulo tiene sus propias imágenes, entra un clip real cada 3 tomas, ninguna imagen se repite en todo el canal y el movimiento de cámara cambia en cada toma.
+- **Capítulos en la línea de tiempo** de YouTube, más subtítulos.
 
-1. **Repo**: crea un repo privado en GitHub y sube esta carpeta tal cual.
-2. **Claude**: en tu computadora con Claude Code instalado, ejecuta `claude setup-token`. Guarda el token como secreto del repo `CLAUDE_CODE_OAUTH_TOKEN` (Settings → Secrets and variables → Actions).
-3. **Canal**: crea el canal "Quiet Cosmos" (si el nombre está tomado, cámbialo aquí y en `config.yaml`). **Verifica el canal con tu teléfono** en youtube.com/verify: sin eso YouTube no acepta videos de más de 15 minutos ni miniaturas personalizadas.
+### Control de calidad automático
+
+Antes de subir, el sistema revisa varias cosas:
+- que la duración coincida con la narración,
+- que el volumen esté en un rango seguro,
+- que no haya títulos leídos en voz alta,
+- que no haya capítulos demasiado cortos,
+- que no haya pantallas negras.
+
+Si algo falla, **no sube nada** y el informe queda en `qa.json`.
+
+## Configuración (una sola vez)
+
+1. **Repo:** sube esta carpeta a tu repo privado de GitHub.
+2. **Claude:** ejecuta `claude setup-token` en tu computadora y guarda el token como secreto `CLAUDE_CODE_OAUTH_TOKEN` (en Settings → Secrets and variables → Actions).
+3. **Canal:** crea el canal y **verifícalo con tu teléfono** en youtube.com/verify. Sin verificación, YouTube no acepta videos de más de 15 minutos ni miniaturas personalizadas.
 4. **Google Cloud** (gratis):
-   - Crea un proyecto en console.cloud.google.com y habilita **YouTube Data API v3**.
-   - Pantalla de consentimiento OAuth: tipo *External*, agrega tu correo como usuario de prueba y luego pulsa **Publish app / En producción**. Si se queda en "Testing", el token caduca a los 7 días y las subidas dejan de funcionar.
-   - Credenciales → OAuth client ID → *Desktop app* → descarga el JSON como `client_secret.json`.
-   - En tu computadora: `pip install google-auth-oauthlib` y `python scripts/get_youtube_token.py client_secret.json`. Inicia sesión con la cuenta del canal.
-   - Guarda los 3 valores que imprime como secretos: `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`.
-5. **Primera prueba**: Actions → *produce-episode* → *Run workflow*. Tarda 1–3 horas (voz y render en CPU). El video aparece en YouTube Studio como **privado**.
+   - Crea un proyecto y habilita **YouTube Data API v3**.
+   - En la pantalla de consentimiento OAuth, elige *External*, agrega tu correo como usuario de prueba y pulsa **Publish app**. Si se queda en modo de prueba, el token caduca a los 7 días.
+   - Crea credenciales de tipo *OAuth client ID* → *Desktop app* y descárgalas como `client_secret.json`.
+   - En tu computadora ejecuta `pip install google-auth-oauthlib` y luego `python scripts/get_youtube_token.py client_secret.json`. Inicia sesión con la cuenta del canal.
+   - Guarda los 3 valores que imprime como secretos: `YT_CLIENT_ID`, `YT_CLIENT_SECRET` y `YT_REFRESH_TOKEN`.
+5. **Auditoría de la API (importante):** Google deja en **privado** los videos que se suben desde proyectos de API nuevos. Pide la auditoría gratuita con el formulario *YouTube API Services – Audit and Quota Extension*. Mientras llega la aprobación, publicar es un clic por video en YouTube Studio.
 
-Después corre solo lunes, miércoles y viernes a las 7:17 a. m. (hora de Lima).
+Una vez configurado, corre solo **los lunes y jueves a las 7:17 a. m.** (hora de Lima). Cada corrida produce 1 episodio de unos 60 minutos y 2 Shorts.
 
-## Dos límites reales que debes conocer
+## Ver los resultados
 
-- **Los videos suben en privado.** Google bloquea en privado los videos subidos por API desde proyectos nuevos sin auditar. Hay dos caminos: publicarlos tú (un clic por video en Studio) o pedir la auditoría gratuita de la API (formulario "YouTube API Services – Audit and Quota Extension"). Mi recomendación: publica tú los primeros videos, igual conviene revisarlos.
-- **Política de "contenido inauténtico".** YouTube desmonetiza canales de videos masivos y repetitivos. Este pipeline la mitiga: guiones únicos por episodio con ciencia verificable, estructura distinta por capítulo, imágenes que nunca se repiten, música original y créditos honestos. Aun así, **mira 2 minutos de cada video antes de publicarlo** al menos el primer mes: eso es lo que más protege la monetización.
+En **Actions**, abre una corrida y baja hasta **Artifacts** para descargar **episode-files**. Contiene:
+- `preview-10min.mp4`: los primeros 10 minutos del episodio,
+- `short.mp4`: los Shorts,
+- `thumbnail_1/2/3.jpg`: las tres miniaturas,
+- `qa.json`: el informe de calidad,
+- `script.json`: el guion completo.
 
-## Monetización
+Se sube la miniatura 1. Las otras dos sirven para la prueba A/B de YouTube Studio (*Test & compare*).
 
-- Programa de Socios: 1.000 suscriptores + 4.000 horas de visualización pública en 12 meses. Con 3 videos de 40 min por semana, las horas llegan rápido si el canal despega.
-- Después: membresías y un segundo canal en español con el mismo pipeline.
+## Tiempos y costos
 
-## Ajustes útiles (`config.yaml`)
+- **Por episodio:** unas 2 a 3 horas en las máquinas gratis de GitHub, sin que tengas que estar presente.
+- **Minutos de GitHub Actions:** el plan gratis para repos privados trae 2.000 minutos al mes, y 2 episodios por semana usan unos 1.400. Hay dos formas de tener más:
+  - Hacer **público** el repo, lo que da minutos ilimitados y máquinas el doble de rápidas. Tus claves siguen protegidas.
+  - Usar una **máquina propia:** registra una PC como *self-hosted runner* (Settings → Actions → Runners → New self-hosted runner) y crea la variable de repositorio `RUNNER` con el valor `self-hosted`. Con más núcleos, cada episodio tarda mucho menos.
+- **Claude:** unas 15 a 18 llamadas por episodio, que entran en tu plan.
 
-- `target_minutes`: 40 por defecto. Puedes subir a 60–90 cuando el canal funcione (más horas de visualización, más tiempo de render).
-- `voice.id` y `speed`: prueba voces en el demo de Kokoro y elige la que más te guste.
-- Horario: `cron` en `.github/workflows/produce.yml`.
-- Consumo: cada episodio usa unas 8–10 llamadas a Claude de tu plan Pro, y 60–120 minutos de GitHub Actions (el plan gratis de repos privados trae 2.000 min/mes, suficiente para unos 12–15 episodios al mes).
+## Ajustes (`config.yaml`)
 
-## Probar en local
+- `target_minutes`: 60 por defecto. Con 90 o más se juntan más horas de visualización, a cambio de más tiempo de render.
+- `voice.speed`: 0.75 por defecto. Más bajo es más lento.
+- `voice.id`: cambia la voz.
+- `shorts.count`: Shorts por episodio. Con 0 se desactivan.
+- `mix.music_volume`: volumen de la música.
+- `clip_every`: frecuencia de los clips de video.
+- **Horario:** se cambia en el `cron` de `.github/workflows/produce.yml`.
+- **Idioma:** con `language: es` y `voice.id: ef_dora` el mismo sistema produce un canal en español.
+
+## Probar en tu computadora
 
 ```bash
-sudo apt install ffmpeg espeak-ng   # (macOS: brew install ffmpeg espeak-ng)
+sudo apt install ffmpeg espeak-ng fonts-inter
 pip install -r requirements.txt
-python -m pipeline.run --no-upload                  # siguiente tema de la cola
 python -m pipeline.run --topic "Saturn's rings" --no-upload
 ```
-Todo queda en `outputs/<tema>/`: `video.mp4`, `thumbnail.jpg`, `captions.srt`, `metadata.json`, `script.json`.
+
+Todo queda en `outputs/<tema>/`.

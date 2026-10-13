@@ -1,6 +1,7 @@
 kokoro>=0.9.4
 soundfile
 numpy
+opencv-python-headless
 Pillow>=10.1
 PyYAML
 requests
