@@ -14,15 +14,21 @@ INSTRUCTION = ("Follow the instructions in the input exactly. Reply with only th
                "without any preamble or commentary.")
 
 
+MODEL = "sonnet"            # set from config.yaml (claude.model) by write_script
+LIMIT_WORDS = ("hit your weekly limit", "hit your usage limit", "usage limit reached", "limit · resets")
+
+
 def ask_claude(prompt, timeout=1500, retries=3):
     last = ""
     for attempt in range(retries):
         try:
-            r = subprocess.run(["claude", "-p", INSTRUCTION], input=prompt, capture_output=True,
-                               text=True, timeout=timeout)
+            r = subprocess.run(["claude", "-p", "--model", MODEL, INSTRUCTION], input=prompt,
+                               capture_output=True, text=True, timeout=timeout)
             if r.returncode == 0 and r.stdout.strip():
                 return r.stdout.strip()
             last = (r.stderr or r.stdout)[-1500:]
+            if any(w in last.lower() for w in LIMIT_WORDS):   # retrying will not help
+                raise RuntimeError(f"Claude plan usage limit reached, no episode today: {last.strip()}")
         except subprocess.TimeoutExpired:
             last = "timeout"
         time.sleep(45 * (attempt + 1))
@@ -82,6 +88,8 @@ def apply_fixes(sections, fixes):
 
 
 def write_script(topic, cfg):
+    global MODEL
+    MODEL = (cfg.get("claude") or {}).get("model", MODEL)
     ch, minutes = cfg["channel"], cfg["video"]["target_minutes"]
     n_chapters = max(5, round(minutes / 6.5))
     lang = LANG_NAMES[ch["language"]]
