@@ -3,6 +3,10 @@ channel:
   name: "Quiet Cosmos"
   language: en            # en | es  (es = español neutro latino; usa voz ef_dora o em_alex)
 
+claude:
+  model: sonnet           # sonnet = buena calidad y gasta mucho menos del límite semanal del plan.
+                          # opus = la mejor calidad, pero agota el límite rápido. haiku = el más barato.
+
 voice:
   id: af_heart            # Kokoro. Inglés: af_heart (mejor), af_bella, bf_emma, am_fenrir. Español: ef_dora, em_alex
   speed: 0.75             # más lento = más calmado. Rango útil 0.7 – 0.85
