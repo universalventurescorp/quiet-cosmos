@@ -55,6 +55,20 @@ def gpu_test(cfg):
         from .scenes import prepare_ai_files
         files = prepare_ai_files(out / "ai", cfg)
         print(f"GPU test result: {len(files['images'])} images, {len(files['clips'])} clips")
+        # small previews committed to the repo, to judge quality without downloading artifacts
+        import subprocess
+        from PIL import Image
+        prev = DATA / "diagnostics" / "gpu_test"
+        prev.mkdir(parents=True, exist_ok=True)
+        for f in prev.glob("*"):
+            f.unlink()
+        for k, path in files["images"].items():
+            im = Image.open(path).convert("RGB")
+            im.thumbnail((960, 960))
+            im.save(prev / f"{k}.jpg", quality=80)
+        for k, c in files["clips"].items():
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", c["path"], "-vf",
+                            "fps=1/2,scale=480:-2,tile=4x2", "-frames:v", "1", str(prev / f"{k}_frames.jpg")])
     save_diagnostics(out, {"gpu_test": True}, {"status": "ok" if manifest else "failed",
                                                "errors": (manifest or {}).get("errors", [])})
     print(json.dumps(read_json(DATA / "diagnostics" / "last_episode.json", {}), indent=1)[:6000])
