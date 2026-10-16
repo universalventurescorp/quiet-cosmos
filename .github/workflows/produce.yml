@@ -37,6 +37,9 @@ on:
         description: "Comparar voces IA en español en Kaggle (no produce episodio)"
         type: boolean
         default: false
+      bench_engines:
+        description: "Prueba de voces: solo estos motores (ej. chatterbox,qwen; vacío = todos)"
+        required: false
 
 permissions:
   contents: write
@@ -118,7 +121,7 @@ jobs:
           [ "${{ inputs.gpu_test }}" = "true" ] && ARGS="--gpu-test"
           [ "${{ inputs.video_bench }}" = "true" ] && ARGS="--video-bench"
           [ "${{ inputs.voice_bench }}" = "true" ] && ARGS="--voice-bench"
-          export BENCH_ENGINES="${{ vars.BENCH_ENGINES }}"
+          export BENCH_ENGINES="${{ inputs.bench_engines }}"
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch
