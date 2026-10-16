@@ -1,107 +1,56 @@
 {
   "episode": "gpu-test",
-  "date": "2026-10-16T06:37:53",
+  "date": "2026-10-16T06:55:55",
   "qa": {
     "gpu_test": true
   },
   "ai_status": "ok",
-  "ai_errors": [
-    ".py\", line 177, in run_images\n    pipe, kind = load_image_pipe(job, device, gpu, role)\n                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/src/script.py\", line 153, in load_image_pipe\n    pipe.to(device)\n    ~~~~~~~^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 583, in to\n    module.to(device, dtype)\n    ~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 3710, in to\n    return super().to(*args, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n    return self._apply(convert)\n           ~~~~~~~~~~~^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n    ~~~~~~~~~~~~~^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n    ~~~~~~~~~~~~~^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply\n    param_applied = fn(param)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert\n    raise NotImplementedError(\n    ...<2 lines>...\n    ) from None\nNotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.\n",
-    "nt call last):\n  File \"/kaggle/src/script.py\", line 248, in run_videos\n    pipe.enable_model_cpu_offload(gpu_id=gpu)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 1231, in enable_model_cpu_offload\n    self.to(\"cpu\", silence_dtype_warnings=True)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 583, in to\n    module.to(device, dtype)\n    ~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 3710, in to\n    return super().to(*args, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n    return self._apply(convert)\n           ~~~~~~~~~~~^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n    ~~~~~~~~~~~~~^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply\n    param_applied = fn(param)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert\n    raise NotImplementedError(\n    ...<2 lines>...\n    ) from None\nNotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.\n"
-  ],
+  "ai_errors": [],
   "scene_plan": {},
   "gpu_job_images": 4,
   "kaggle_push": {
-    "job_id": "gpu-test-20261016063017",
+    "job_id": "gpu-test-20261016063947",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792132218.900606,
+    "pushed_at": 1792132789.2485018,
     "ok": true,
-    "push_output": "Kernel version 3 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 4 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   },
   "kaggle_manifest": {
-    "job_id": "gpu-test-20261016063017",
-    "errors": [
-      "images: Traceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 177, in run_images\n    pipe, kind = load_image_pipe(job, device, gpu, role)\n                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/src/script.py\", line 153, in load_image_pipe\n    pipe.to(device)\n    ~~~~~~~^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 583, in to\n    module.to(device, dtype)\n    ~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 3710, in to\n    return super().to(*args, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n    return self._apply(convert)\n           ~~~~~~~~~~~^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n    ~~~~~~~~~~~~~^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n    ~~~~~~~~~~~~~^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply\n    param_applied = fn(param)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert\n    raise NotImplementedError(\n    ...<2 lines>...\n    ) from None\nNotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.\n",
-      "videos: Traceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 248, in run_videos\n    pipe.enable_model_cpu_offload(gpu_id=gpu)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 1231, in enable_model_cpu_offload\n    self.to(\"cpu\", silence_dtype_warnings=True)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 583, in to\n    module.to(device, dtype)\n    ~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 3710, in to\n    return super().to(*args, **kwargs)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n    return self._apply(convert)\n           ~~~~~~~~~~~^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n    ~~~~~~~~~~~~~^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply\n    param_applied = fn(param)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert\n    raise NotImplementedError(\n    ...<2 lines>...\n    ) from None\nNotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.\n"
-    ],
+    "job_id": "gpu-test-20261016063947",
+    "errors": [],
     "gpus": [
       "Tesla T4",
       "Tesla T4"
     ],
     "images_status": {
-      "done": 0,
+      "done": 4,
       "failed": 0,
-      "skipped": 0
+      "skipped": 0,
+      "model": "sdxl"
     },
     "videos_status": {
-      "done": 0,
+      "done": 1,
       "failed": 0,
       "skipped": 0
     },
-    "images": [],
-    "videos": [],
-    "minutes": 6.5
+    "images": [
+      "chapter_1_00.jpg",
+      "chapter_1_01.jpg",
+      "chapter_1_02.jpg",
+      "chapter_1_03.jpg"
+    ],
+    "videos": [
+      "chapter_1_00.mp4"
+    ],
+    "minutes": 13.1
   },
   "kaggle_log": [
-    "[   0.4 min] main: packages ready",
-    "[   0.5 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
-    "[   6.4 min] videos: Traceback (most recent call last):",
-    "  File \"/kaggle/src/script.py\", line 248, in run_videos",
-    "    pipe.enable_model_cpu_offload(gpu_id=gpu)",
-    "    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 1231, in enable_model_cpu_offload",
-    "    self.to(\"cpu\", silence_dtype_warnings=True)",
-    "    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 583, in to",
-    "    module.to(device, dtype)",
-    "    ~~~~~~~~~^^^^^^^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 3710, in to",
-    "    return super().to(*args, **kwargs)",
-    "           ~~~~~~~~~~^^^^^^^^^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to",
-    "    return self._apply(convert)",
-    "           ~~~~~~~~~~~^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply",
-    "    module._apply(fn)",
-    "    ~~~~~~~~~~~~~^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply",
-    "    param_applied = fn(param)",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert",
-    "    raise NotImplementedError(",
-    "    ...<2 lines>...",
-    "    ) from None",
-    "NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.",
-    "",
-    "[   6.5 min] images: Traceback (most recent call last):",
-    "  File \"/kaggle/src/script.py\", line 177, in run_images",
-    "    pipe, kind = load_image_pipe(job, device, gpu, role)",
-    "                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^",
-    "  File \"/kaggle/src/script.py\", line 153, in load_image_pipe",
-    "    pipe.to(device)",
-    "    ~~~~~~~^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 583, in to",
-    "    module.to(device, dtype)",
-    "    ~~~~~~~~~^^^^^^^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 3710, in to",
-    "    return super().to(*args, **kwargs)",
-    "           ~~~~~~~~~~^^^^^^^^^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to",
-    "    return self._apply(convert)",
-    "           ~~~~~~~~~~~^^^^^^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply",
-    "    module._apply(fn)",
-    "    ~~~~~~~~~~~~~^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply",
-    "    module._apply(fn)",
-    "    ~~~~~~~~~~~~~^^^^",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply",
-    "    param_applied = fn(param)",
-    "  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1377, in convert",
-    "    raise NotImplementedError(",
-    "    ...<2 lines>...",
-    "    ) from None",
-    "NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.",
-    "",
-    "[   6.5 min] main: finished: 0 images, 0 clips"
+    "[   0.5 min] main: packages ready",
+    "[   0.6 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
+    "[   2.5 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
+    "[   6.2 min] videos: video model: Lightricks/LTX-Video (torch.float16)",
+    "[   6.7 min] images: 1/4 images (26.4 s each)",
+    "[  13.1 min] videos: clip 1/1 in 379.5 s",
+    "[  13.1 min] main: finished: 4 images, 1 clips"
   ]
 }
