@@ -1,0 +1,12 @@
+[   0.7 min] GPUs ['Tesla T4', 'Tesla T4']
+[   2.6 min] kokoro: installed in 1.8 min on GPU 1
+[   2.6 min] voxcpm: installed in 1.8 min on GPU 0
+[   3.6 min] kokoro: done in 2.8 min
+[   4.7 min] qwen: installed in 1.1 min on GPU 1
+[  15.9 min] voxcpm: done in 15.2 min
+[  18.6 min] chatterbox: installed in 2.7 min on GPU 0
+[  19.7 min] chatterbox: failed in 3.7 min
+[  20.8 min] qwen: done in 17.2 min
+[  20.8 min] score: installed in 0.0 min on GPU 1
+[  23.0 min] score: done in 2.2 min
+[  23.1 min] done

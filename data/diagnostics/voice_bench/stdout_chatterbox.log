@@ -1,0 +1,19 @@
+[chatterbox] torch 2.6.0+cu124 cuda=True
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  5.82it/s]Fetching 6 files:  50%|█████     | 3/6 [00:00<00:00,  4.70it/s]Fetching 6 files:  83%|████████▎ | 5/6 [00:12<00:03,  3.18s/it]Fetching 6 files: 100%|██████████| 6/6 [00:23<00:00,  5.36s/it]Fetching 6 files: 100%|██████████| 6/6 [00:23<00:00,  3.99s/it]
+/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
+Downloading: "https://github.com/explosion/spacy-pkuseg/releases/download/v0.0.26/spacy_ontonotes.zip" to /root/.pkuseg/spacy_ontonotes.zip
+  0%|          | 0/34567143 [00:00<?, ?it/s] 20%|█▉        | 6807552/34567143 [00:00<00:00, 68062278.51it/s] 72%|███████▏  | 24772608/34567143 [00:00<00:00, 133526862.31it/s]100%|██████████| 34567143/34567143 [00:00<00:00, 128055412.31it/s]
+[chatterbox] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py", line 220, in from_pretrained
+    return cls.from_local(ckpt_dir, device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py", line 199, in from_local
+    return cls(t3, s3gen, ve, tokenizer, device, conds=conds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py", line 155, in __init__
+    self.watermarker = perth.PerthImplicitWatermarker()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+

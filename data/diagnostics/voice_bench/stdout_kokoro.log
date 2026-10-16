@@ -1,0 +1,9 @@
+[kokoro] torch 2.14.1+cu130 cuda=True
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/kaggle/tmp/voicebench/venv_kokoro/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/kaggle/tmp/voicebench/venv_kokoro/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+[kokoro] kokoro_dora: 83 s of speech in 5 s (RTF 0.06)
+[kokoro] kokoro_alex: 85 s of speech in 3 s (RTF 0.03)
