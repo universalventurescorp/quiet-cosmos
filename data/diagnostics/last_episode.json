@@ -1,6 +1,6 @@
 {
   "episode": "gpu-test",
-  "date": "2026-10-16T06:55:55",
+  "date": "2026-10-16T07:15:30",
   "qa": {
     "gpu_test": true
   },
@@ -9,14 +9,14 @@
   "scene_plan": {},
   "gpu_job_images": 4,
   "kaggle_push": {
-    "job_id": "gpu-test-20261016063947",
+    "job_id": "gpu-test-20261016065818",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792132789.2485018,
+    "pushed_at": 1792133900.7360713,
     "ok": true,
-    "push_output": "Kernel version 4 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 5 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   },
   "kaggle_manifest": {
-    "job_id": "gpu-test-20261016063947",
+    "job_id": "gpu-test-20261016065818",
     "errors": [],
     "gpus": [
       "Tesla T4",
@@ -42,15 +42,15 @@
     "videos": [
       "chapter_1_00.mp4"
     ],
-    "minutes": 13.1
+    "minutes": 13.5
   },
   "kaggle_log": [
     "[   0.5 min] main: packages ready",
     "[   0.6 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
     "[   2.5 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
     "[   6.2 min] videos: video model: Lightricks/LTX-Video (torch.float16)",
-    "[   6.7 min] images: 1/4 images (26.4 s each)",
-    "[  13.1 min] videos: clip 1/1 in 379.5 s",
-    "[  13.1 min] main: finished: 4 images, 1 clips"
+    "[   6.7 min] images: 1/4 images (30.0 s each)",
+    "[  13.5 min] videos: clip 1/1 in 404.9 s",
+    "[  13.5 min] main: finished: 4 images, 1 clips"
   ]
 }
