@@ -314,6 +314,10 @@ def main():
                            capture_output=True, text=True)
         if r.returncode:
             manifest["errors"].append("pip: " + r.stderr[-800:])
+        # Kaggle's preinstalled torchao is older than new diffusers expects and breaks its import;
+        # nothing here needs it (diffusers only uses it when it is installed)
+        subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y", "-q", "torchao"],
+                       capture_output=True, text=True)
         log("main", "packages ready")
         import torch
         n = torch.cuda.device_count()
