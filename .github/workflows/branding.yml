@@ -1,0 +1,40 @@
+name: branding-candidates
+
+# Pinta en Kaggle (GPU gratis) los candidatos fotorrealistas de avatares y banners de la red Estrato.
+# No toca episodios: usa su propio script de Kaggle ("estrato-branding") y su propio grupo de concurrencia.
+# Deja las imágenes en la rama "branding-candidates" (branding/candidates/), sin engordar main.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: branding
+  cancel-in-progress: false
+
+jobs:
+  paint:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Python packages
+        run: pip install kaggle Pillow PyYAML numpy
+      - name: Paint candidates on Kaggle
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: python -m pipeline.branding_gen
+      - name: Save candidates to their own branch
+        if: always()
+        run: |
+          git config user.name "quiet-cosmos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B branding-candidates
+          git add -f branding/candidates
+          git commit -m "Branding candidates $(date -u +%F)" || true
+          git push -f origin branding-candidates

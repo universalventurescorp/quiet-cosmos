@@ -166,8 +166,11 @@ def make_image(pipe, kind, job, item, seed):
         return pipe(f"{item['prompt']}. {job['style']}", width=job["width"], height=job["height"],
                     num_inference_steps=4, guidance_scale=0.0, max_sequence_length=256,
                     generator=g).images[0]
-    return pipe(prompt=f"{item['prompt']}, {job['style']}", negative_prompt=job["negative"],
-                width=job["width"], height=job["height"], num_inference_steps=job["steps"],
+    # an item may override the job's style, negative prompt and size (used by branding jobs)
+    return pipe(prompt=f"{item['prompt']}, {item.get('style', job['style'])}",
+                negative_prompt=item.get("negative", job["negative"]),
+                width=item.get("width", job["width"]), height=item.get("height", job["height"]),
+                num_inference_steps=job["steps"],
                 guidance_scale=5.5, generator=g).images[0]
 
 
