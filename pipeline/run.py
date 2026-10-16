@@ -33,6 +33,30 @@ def build_description(script, timing, lang, used_ai=False):
     return f"{script['description']}\n\n{label}\n" + "\n".join(lines) + f"\n\n{credits}"
 
 
+def video_bench(cfg):
+    import subprocess
+    from . import gpu
+    out = ROOT / "outputs" / "video-bench"
+    out.mkdir(parents=True, exist_ok=True)
+    job = {"job_id": f"video-bench-{dt.datetime.utcnow():%Y%m%d%H%M%S}"}
+    state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / "bench_video.py") if gpu.configured() else {}
+    manifest = gpu.collect(out, cfg, wait_minutes=150) if state.get("ok") else None
+    prev = DATA / "diagnostics" / "video_bench"
+    prev.mkdir(parents=True, exist_ok=True)
+    for f in prev.glob("*"):
+        f.unlink()
+    ai = out / "ai"
+    for p in sorted(ai.glob("*.jpg")) if ai.exists() else []:
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(p), "-vf", "scale=640:-2", str(prev / p.name)])
+    for p in sorted(ai.glob("*.mp4")) if ai.exists() else []:
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(p), "-vf",
+                        "fps=2,scale=320:-2,tile=4x2", "-frames:v", "1", str(prev / f"{p.stem}_frames.jpg")])
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(p), "-vf", "scale=480:-2",
+                        "-c:v", "libx264", "-crf", "30", "-an", str(prev / f"{p.stem}.mp4")])
+    write_json(prev / "manifest.json", manifest or {"error": "no result", "push": state})
+    print(json.dumps(manifest or {}, indent=1)[:4000])
+
+
 def gpu_test(cfg):
     from . import gpu
     from .scenes import build_job
@@ -106,7 +130,10 @@ def main():
     ap.add_argument("--no-shorts", action="store_true")
     ap.add_argument("--no-ai", action="store_true", help="v2 look: NASA imagery only, no Kaggle GPU")
     ap.add_argument("--gpu-test", action="store_true", help="only test Kaggle: 4 images + 1 clip (~20 min)")
+    ap.add_argument("--video-bench", action="store_true", help="benchmark image-to-video models on Kaggle")
     args = ap.parse_args()
+    if args.video_bench:
+        return video_bench(load_config())
     if args.gpu_test:
         return gpu_test(load_config())
 

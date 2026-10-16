@@ -40,7 +40,7 @@ def kernel_ref(cfg):
     return f"{os.environ['KAGGLE_USERNAME']}/{cfg.get('kaggle', {}).get('kernel', 'quiet-cosmos-gen')}"
 
 
-def launch(job, out, cfg):
+def launch(job, out, cfg, worker=None):
     """Push the job. Returns a state dict saved to out/kaggle.json."""
     kg = cfg.get("kaggle", {})
     ref = kernel_ref(cfg)
@@ -49,7 +49,7 @@ def launch(job, out, cfg):
     shutil.rmtree(kdir, ignore_errors=True)
     kdir.mkdir(parents=True)
     payload = base64.b64encode(json.dumps(job, ensure_ascii=False).encode()).decode()
-    (kdir / "generate.py").write_text(WORKER.read_text(encoding="utf-8").replace("__JOB_B64__", payload, 1),
+    (kdir / "generate.py").write_text((worker or WORKER).read_text(encoding="utf-8").replace("__JOB_B64__", payload, 1),
                                       encoding="utf-8")
     meta = {"id": ref, "title": slug, "code_file": "generate.py", "language": "python",
             "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_tpu": False,

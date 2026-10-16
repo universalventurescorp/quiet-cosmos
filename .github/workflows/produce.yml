@@ -24,6 +24,10 @@ on:
         description: "Solo probar la GPU de Kaggle (4 imágenes + 1 clip, ~20 min, no produce episodio)"
         type: boolean
         default: false
+      video_bench:
+        description: "Comparar modelos de video IA en Kaggle (no produce episodio)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -85,6 +89,7 @@ jobs:
           [ "${{ inputs.shorts }}" = "false" ] && ARGS="$ARGS --no-shorts"
           [ "${{ inputs.ai }}" = "false" ] && ARGS="$ARGS --no-ai"
           [ "${{ inputs.gpu_test }}" = "true" ] && ARGS="--gpu-test"
+          [ "${{ inputs.video_bench }}" = "true" ] && ARGS="--video-bench"
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch
