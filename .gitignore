@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 outputs/
+branding/candidates/
+branding/estrato/sheet_*

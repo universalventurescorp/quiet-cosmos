@@ -30,7 +30,7 @@ Display font: **Cormorant Garamond** Light. Body font: **Jost** Light and Regula
 
 > Quiet Cosmos makes slow, calm space documentaries to help you relax, wonder and fall asleep. Each episode follows one question about the universe — black holes, distant moons, the edge of the observable cosmos — narrated gently over real NASA imagery and original ambient music.
 >
-> A new episode every day.
+> New episodes every week.
 >
 > Imagery courtesy of NASA. NASA does not endorse this channel.
 
