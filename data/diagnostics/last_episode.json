@@ -1,0 +1,107 @@
+{
+  "episode": "gpu-test",
+  "date": "2026-10-16T06:28:37",
+  "qa": {
+    "gpu_test": true
+  },
+  "ai_status": "ok",
+  "ai_errors": [
+    "o_quantizer.py\", line 55, in <module>\n    from torchao.quantization import FqnToConfig, quantize_\nImportError: cannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 177, in run_images\n    pipe, kind = load_image_pipe(job, device, gpu, role)\n                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/src/script.py\", line 136, in load_image_pipe\n    from diffusers import AutoencoderKL, DPMSolverMultistepScheduler, StableDiffusionXLPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):\ncannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n",
+    ".single_file because of the following error (look up to see its traceback):\ncannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 242, in run_videos\n    from diffusers import LTXImageToVideoPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.pipelines.ltx.pipeline_ltx_image2video because of the following error (look up to see its traceback):\nFailed to import diffusers.loaders.single_file because of the following error (look up to see its traceback):\ncannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n"
+  ],
+  "scene_plan": {},
+  "gpu_job_images": 4,
+  "kaggle_push": {
+    "job_id": "gpu-test-20261016062703",
+    "kernel": "universalventures/quiet-cosmos-gen",
+    "pushed_at": 1792132025.5377364,
+    "ok": true,
+    "push_output": "Kernel version 2 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+  },
+  "kaggle_manifest": {
+    "job_id": "gpu-test-20261016062703",
+    "errors": [
+      "images: els/autoencoders/__init__.py\", line 1, in <module>\n    from .autoencoder_asym_kl import AsymmetricAutoencoderKL\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/autoencoders/autoencoder_asym_kl.py\", line 20, in <module>\n    from ..modeling_utils import ModelMixin\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/modeling_utils.py\", line 41, in <module>\n    from ..quantizers import DiffusersAutoQuantizer, DiffusersQuantizer\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/quantizers/__init__.py\", line 16, in <module>\n    from .auto import DiffusersAutoQuantizer\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/quantizers/auto.py\", line 40, in <module>\n    from .torchao import TorchAoHfQuantizer\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/quantizers/torchao/__init__.py\", line 15, in <module>\n    from .torchao_quantizer import TorchAoHfQuantizer\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/quantizers/torchao/torchao_quantizer.py\", line 55, in <module>\n    from torchao.quantization import FqnToConfig, quantize_\nImportError: cannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 177, in run_images\n    pipe, kind = load_image_pipe(job, device, gpu, role)\n                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/src/script.py\", line 136, in load_image_pipe\n    from diffusers import AutoencoderKL, DPMSolverMultistepScheduler, StableDiffusionXLPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):\ncannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n",
+      "videos:  importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 1023, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 24, in <module>\n    from ...loaders import FromSingleFileMixin, LTXVideoLoraLoaderMixin\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.loaders.single_file because of the following error (look up to see its traceback):\ncannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 242, in run_videos\n    from diffusers import LTXImageToVideoPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.pipelines.ltx.pipeline_ltx_image2video because of the following error (look up to see its traceback):\nFailed to import diffusers.loaders.single_file because of the following error (look up to see its traceback):\ncannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)\n"
+    ],
+    "gpus": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "images_status": {
+      "done": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "videos_status": {
+      "done": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "images": [],
+    "videos": [],
+    "minutes": 1.1
+  },
+  "kaggle_log": [
+    "ImportError: cannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)",
+    "",
+    "The above exception was the direct cause of the following exception:",
+    "",
+    "Traceback (most recent call last):",
+    "  File \"/kaggle/src/script.py\", line 177, in run_images",
+    "    pipe, kind = load_image_pipe(job, device, gpu, role)",
+    "                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^",
+    "  File \"/kaggle/src/script.py\", line 136, in load_image_pipe",
+    "    from diffusers import AutoencoderKL, DPMSolverMultistepScheduler, StableDiffusionXLPipeline",
+    "  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__",
+    "    value = getattr(module, name)",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__",
+    "    module = self._get_module(self._class_to_module[name])",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module",
+    "    raise RuntimeError(",
+    "    ...<2 lines>...",
+    "    ) from e",
+    "RuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):",
+    "cannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)",
+    "",
+    "[   1.1 min] videos:  importlib._bootstrap>\", line 1360, in _find_and_load",
+    "  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked",
+    "  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked",
+    "  File \"<frozen importlib._bootstrap_external>\", line 1023, in exec_module",
+    "  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 24, in <module>",
+    "    from ...loaders import FromSingleFileMixin, LTXVideoLoraLoaderMixin",
+    "  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__",
+    "    module = self._get_module(self._class_to_module[name])",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module",
+    "    raise RuntimeError(",
+    "    ...<2 lines>...",
+    "    ) from e",
+    "RuntimeError: Failed to import diffusers.loaders.single_file because of the following error (look up to see its traceback):",
+    "cannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)",
+    "",
+    "The above exception was the direct cause of the following exception:",
+    "",
+    "Traceback (most recent call last):",
+    "  File \"/kaggle/src/script.py\", line 242, in run_videos",
+    "    from diffusers import LTXImageToVideoPipeline",
+    "  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__",
+    "    value = getattr(module, name)",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__",
+    "    value = getattr(module, name)",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__",
+    "    module = self._get_module(self._class_to_module[name])",
+    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module",
+    "    raise RuntimeError(",
+    "    ...<2 lines>...",
+    "    ) from e",
+    "RuntimeError: Failed to import diffusers.pipelines.ltx.pipeline_ltx_image2video because of the following error (look up to see its traceback):",
+    "Failed to import diffusers.loaders.single_file because of the following error (look up to see its traceback):",
+    "cannot import name 'FqnToConfig' from 'torchao.quantization' (/usr/local/lib/python3.13/dist-packages/torchao/quantization/__init__.py)",
+    "",
+    "[   1.1 min] main: finished: 0 images, 0 clips"
+  ]
+}
