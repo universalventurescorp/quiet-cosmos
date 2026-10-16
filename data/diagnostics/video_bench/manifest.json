@@ -1,11 +1,37 @@
 {
-  "error": "no result",
-  "push": {
-    "job_id": "video-bench-20261016144108",
-    "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792161670.2353115,
-    "ok": true,
-    "push_output": "Kernel version 8 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen",
-    "reused": true
-  }
+  "job_id": "video-bench-20261016154243",
+  "errors": [],
+  "bench": {
+    "base2b_25steps": {
+      "seconds_per_clip": [
+        178.5,
+        169.8
+      ],
+      "frames": 97
+    },
+    "distilled2b_098": {
+      "seconds_per_clip": [
+        66.2,
+        54.8
+      ],
+      "frames": 97
+    }
+  },
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "stage": "distilled2b_098: 2 clips",
+  "ram_used_gb": 25.7,
+  "images": [
+    "src_herd.jpg",
+    "src_trike.jpg"
+  ],
+  "videos": [
+    "base2b_25steps_herd.mp4",
+    "base2b_25steps_trike.mp4",
+    "distilled2b_098_herd.mp4",
+    "distilled2b_098_trike.mp4"
+  ],
+  "minutes": 16.9
 }
