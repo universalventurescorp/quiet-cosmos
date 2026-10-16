@@ -1,4 +1,4 @@
-# Quiet Cosmos — configuración del pipeline (v2)
+# Quiet Cosmos — configuración del pipeline (v3)
 channel:
   name: "Quiet Cosmos"
   language: en            # en | es  (es = español neutro latino; usa voz ef_dora o em_alex)
@@ -35,8 +35,31 @@ shorts:
   voice_speed: 1.0
   seconds_per_shot: 4.5
 
+ai:                       # v3: escenas generadas por IA en la GPU gratis de Kaggle
+  enabled: true           # false = aspecto v2 (solo NASA). También: python -m pipeline.run --no-ai
+  share: 0.45             # fracción aproximada de tomas que son escenas IA (el resto, fotos/clips NASA reales)
+  max_images: 140         # tope de imágenes IA por episodio (≈ 70 min de GPU)
+  videos_per_chapter: 1   # clips de video IA por capítulo (+1 en el gancho inicial). 0 = sin video IA
+  image_model: SG161222/RealVisXL_V5.0   # SDXL fotorrealista. Otras: stabilityai/stable-diffusion-xl-base-1.0, flux-schnell
+  video_model: Lightricks/LTX-Video      # imagen→video. Si falla en la GPU, el sistema usa el efecto 2.5D
+  steps: 30
+  video_steps: 40
+  style: "cinematic space documentary still, photorealistic, volumetric light, deep blacks, high detail, 35mm film"
+  negative: "text, letters, watermark, logo, signature, frame, border, cartoon, anime, illustration, painting, lowres, blurry, oversaturated, deformed, people, person, face, hands"
+  parallax: true          # efecto 2.5D por mapa de profundidad en las escenas IA
+  parallax_nasa: false    # también en las fotos NASA (en nebulosas y galaxias suele verse raro)
+  label_on_screen: true   # rótulo discreto "AI artist's impression" sobre cada escena IA
+  video_slowdown: 1.6     # ralentiza los clips IA con interpolación de movimiento (más calmados)
+  video_interpolation: mci   # mci = fluido (más lento de procesar) · blend = rápido
+
+kaggle:
+  kernel: quiet-cosmos-gen        # nombre del script privado que se crea en tu cuenta de Kaggle
+  accelerator: NvidiaTeslaT4      # T4 x2 (gratis). Una GPU pinta imágenes y la otra clips de video
+  gpu_budget_minutes: 120         # tope de GPU por episodio (diario: ≈ 15 h/semana de la cuota gratis)
+  wait_minutes: 160               # cuánto espera GitHub Actions antes de seguir solo con NASA
+
 upload:
   privacy: private        # privado hasta que revises / hasta que la API pase la auditoría
   category_id: "28"       # Ciencia y tecnología
   made_for_kids: false
-  synthetic_media: false  # pon true si quieres marcar el video como contenido alterado/sintético
+  synthetic_media: false  # se marca solo como contenido sintético cuando el episodio usa escenas IA

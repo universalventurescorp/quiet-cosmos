@@ -74,6 +74,65 @@ class StillSource:
         pass
 
 
+class ParallaxSource:
+    """2.5D camera: a still split into depth layers by its depth map, so near things move against far
+    things as the camera pushes in, orbits or rises. Maps are computed at half resolution (the depth is
+    smooth), then the full-resolution photo is resampled once per frame."""
+    MARGIN = 1.16
+    MOVES = [  # zoom0, zoom1, dolly (extra zoom of near layers), lateral shift, vertical shift
+        (1.00, 1.06, 0.10, 0.000, 0.000),    # push in, foreground grows faster
+        (1.04, 1.05, 0.02, 0.040, 0.000),    # slow orbit left -> right
+        (1.03, 1.06, 0.03, 0.000, 0.030),    # rise
+        (1.07, 1.01, -0.07, 0.000, 0.000),   # pull back, foreground recedes
+        (1.04, 1.05, 0.02, -0.040, 0.010),   # orbit right -> left
+    ]
+
+    def __init__(self, path, depth_path, W, H, duration, move, strength=1.0):
+        img = cv2.imread(str(path), cv2.IMREAD_COLOR)
+        dep = cv2.imread(str(depth_path), cv2.IMREAD_GRAYSCALE)
+        if img is None or dep is None:
+            raise ValueError(f"cannot read {path} / {depth_path}")
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        self.W, self.H, self.d = W, H, max(0.1, duration)
+        k = max(W * self.MARGIN / img.shape[1], H * self.MARGIN / img.shape[0])
+        interp = cv2.INTER_AREA if k < 1 else cv2.INTER_CUBIC
+        self.img = cv2.resize(img, (round(img.shape[1] * k), round(img.shape[0] * k)), interpolation=interp)
+        sh, sw = self.img.shape[:2]
+        # depth at half the source size: dilate near objects a little (their edges lead), then blur so the
+        # warp bends smoothly instead of tearing at object borders
+        d = cv2.resize(dep, (sw // 2, sh // 2), interpolation=cv2.INTER_AREA).astype(np.float32) / 255.0
+        r = max(3, sw // 160)
+        d = cv2.dilate(d, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (r, r)))
+        d = cv2.GaussianBlur(d, (0, 0), sigmaX=sw / 90)
+        self.dep = d - float(np.median(d))
+        self.cx, self.cy = sw / 2, sh / 2
+        self.base = min(sw / W, sh / H) / self.MARGIN
+        w2, h2 = W // 2, H // 2
+        gx, gy = np.meshgrid((np.arange(w2) + 0.5) * (W / w2) - W / 2,
+                             (np.arange(h2) + 0.5) * (H / h2) - H / 2)
+        self.gx, self.gy = gx.astype(np.float32), gy.astype(np.float32)
+        z0, z1, dolly, sx, sy = self.MOVES[move % len(self.MOVES)]
+        self.move = (z0, z1, dolly * strength, sx * strength, sy * strength)
+
+    def frame(self, t):
+        z0, z1, dolly, sx, sy = self.move
+        p = ease(t / self.d) * 0.85 + min(1.0, t / self.d) * 0.15
+        s = self.base / (z0 + (z1 - z0) * p)
+        X0 = self.cx + self.gx * s
+        Y0 = self.cy + self.gy * s
+        d = cv2.remap(self.dep, X0 * 0.5, Y0 * 0.5, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
+        k = 1.0 / (1.0 + dolly * p * d)
+        q = p - 0.5
+        X = self.cx + self.gx * s * k - sx * q * d * self.W * s
+        Y = self.cy + self.gy * s * k - sy * q * d * self.H * s
+        X = cv2.resize(X, (self.W, self.H), interpolation=cv2.INTER_LINEAR)
+        Y = cv2.resize(Y, (self.W, self.H), interpolation=cv2.INTER_LINEAR)
+        return cv2.remap(self.img, X, Y, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+
+    def close(self):
+        pass
+
+
 class ClipSource:
     """A video file already prepared at the output size/fps; read sequentially through FFmpeg."""
 
@@ -125,6 +184,12 @@ class StarsSource:
 
 def open_source(shot, W, H, fps):
     d = shot["end"] - shot["start"] + XFADE
+    if shot["kind"] == "still" and shot.get("depth"):
+        try:
+            return ParallaxSource(shot["path"], shot["depth"], W, H, d, shot.get("move", 0),
+                                  shot.get("parallax", 1.0))
+        except Exception as exc:                                # noqa: BLE001
+            print(f"    parallax off for {shot['path']}: {exc}")
     if shot["kind"] == "still":
         return StillSource(shot["path"], W, H, d, shot.get("move", 0), shot.get("travel", 1.0))
     if shot["kind"] == "clip":
