@@ -7,6 +7,7 @@ cut to a calm segment, slowed slightly and conformed to 1080p/24fps.
 import io
 import json
 import pathlib
+import re
 import subprocess
 
 import numpy as np
@@ -62,6 +63,16 @@ def _text(d):
 
 def _blocked(text):
     return any(b in text for b in BLOCK)
+
+
+_BLOCK_RE = re.compile(r"\b(" + "|".join(re.escape(b) for b in BLOCK) + r")\b")
+
+
+def _blocked_video(d):
+    """Videos: judge by title + keywords only, whole words. NASA video descriptions almost always mention
+    a launch date or a 'news' page, which used to reject nearly every real clip (v2 bug)."""
+    text = " ".join([d.get("title", ""), " ".join(d.get("keywords", []) or [])]).lower()
+    return bool(_BLOCK_RE.search(text))
 
 
 # ------------------------------------------------------------------ stills
@@ -166,7 +177,7 @@ def _pick_video_url(urls):
                                .headers.get("Content-Length", 0))
                 except Exception:
                     size = 0
-                if 0 < size <= MAX_VID_BYTES:
+                if size <= MAX_VID_BYTES:      # 0 = size unknown: the streamed download enforces the cap
                     return u
     return None
 
@@ -225,7 +236,7 @@ def fetch_clips(queries, want, out_dir, used, seconds=14, W=1920, H=1080, fps=24
                 d = item["data"][0]
                 nid = d["nasa_id"]
                 text = _text(d)
-                if nid in used or _blocked(text) or not any(p in text for p in VIDEO_PREFER):
+                if nid in used or _blocked_video(d) or not any(p in text for p in VIDEO_PREFER):
                     continue
                 url = _pick_video_url(_manifest(item))
                 if not url:

@@ -26,5 +26,19 @@
     "minutes": 54.5,
     "qa_ok": true,
     "date": "2026-10-13"
+  },
+  {
+    "topic": "The surface of Titan, Saturn's largest moon",
+    "title": "Titan: Surface of Saturn's Largest Moon | Relaxing Space Documentary",
+    "video_id": "_ewxMqGmWyI",
+    "shorts": [
+      "tY-ghrdQMrU",
+      "SyJQFzrtm0I"
+    ],
+    "minutes": 51.2,
+    "qa_ok": true,
+    "ai_scenes": 0,
+    "ai_status": "ok",
+    "date": "2026-10-16"
   }
 ]

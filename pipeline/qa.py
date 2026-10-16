@@ -29,7 +29,7 @@ def black_spans(path, shots):
     return bad
 
 
-def check_episode(out, script, timing, media, shots, video):
+def check_episode(out, script, timing, media, shots, video, ai_media=None):
     fails, warns = [], []
     dur = media_duration(video)
     if abs(dur - timing["duration"]) > 2.5:
@@ -52,8 +52,16 @@ def check_episode(out, script, timing, media, shots, video):
     bad = black_spans(video, shots)
     if bad:
         warns.append(f"black frames at {bad}")
+    ai_media = ai_media or {}
+    if ai_media.get("status") not in (None, "ok", "off"):
+        warns.append(f"AI scenes: {ai_media['status']} (episode used NASA imagery only)")
+    for e in ai_media.get("errors", [])[:3]:
+        warns.append(f"Kaggle: {e[-300:]}")
     minutes = dur / 60
     report = {"ok": not fails, "fails": fails, "warnings": warns, "minutes": round(minutes, 1),
-              "lufs": lufs, "shots": len(shots), "clips": sum(s["kind"] == "clip" for s in shots)}
+              "lufs": lufs, "shots": len(shots), "clips": sum(s["kind"] == "clip" for s in shots),
+              "ai_scenes": sum(bool(s.get("ai")) for s in shots),
+              "ai_clips": sum(bool(s.get("ai")) and s["kind"] == "clip" for s in shots),
+              "ai_status": ai_media.get("status"), "gpu_minutes": ai_media.get("gpu_minutes")}
     (out / "qa.json").write_text(json.dumps(report, indent=2))
     return report

@@ -16,6 +16,14 @@ on:
         description: "Producir Shorts"
         type: boolean
         default: true
+      ai:
+        description: "Escenas IA en Kaggle (v3)"
+        type: boolean
+        default: true
+      gpu_test:
+        description: "Solo probar la GPU de Kaggle (4 imágenes + 1 clip, ~20 min, no produce episodio)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,7 +37,7 @@ jobs:
     # Por defecto, las máquinas gratis de GitHub. Para usar una máquina propia (más rápida),
     # crea la variable de repositorio RUNNER con el valor: self-hosted
     runs-on: ${{ vars.RUNNER || 'ubuntu-24.04' }}
-    timeout-minutes: 350
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
 
@@ -56,11 +64,11 @@ jobs:
       - name: Claude Code
         run: npm install -g @anthropic-ai/claude-code
 
-      - name: Cache voice model
+      - name: Cache voice and depth models
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
-          key: kokoro-v1
+          key: hf-kokoro-depth-v3
 
       - name: Produce episode
         env:
@@ -68,14 +76,16 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           TOPIC: ${{ inputs.topic }}
           UPLOAD: ${{ inputs.upload }}
         run: |
-          if [ "${{ inputs.shorts }}" = "false" ]; then
-            python -m pipeline.run --no-shorts
-          else
-            python -m pipeline.run
-          fi
+          ARGS=""
+          [ "${{ inputs.shorts }}" = "false" ] && ARGS="$ARGS --no-shorts"
+          [ "${{ inputs.ai }}" = "false" ] && ARGS="$ARGS --no-ai"
+          [ "${{ inputs.gpu_test }}" = "true" ] && ARGS="--gpu-test"
+          python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch
         if: always()
@@ -99,6 +109,10 @@ jobs:
             outputs/**/script.json
             outputs/**/metadata.json
             outputs/**/qa.json
+            outputs/**/scenes.json
+            outputs/**/ai_media.json
+            outputs/**/ai/log.txt
+            outputs/**/ai/manifest.json
             outputs/**/captions.srt
           retention-days: 7
           if-no-files-found: ignore

@@ -1,9 +1,11 @@
-"""Full episode, end to end:
-topic -> script (+review) -> voice -> footage -> score -> mix -> render -> thumbnails -> Shorts -> QA -> YouTube
+"""Full episode, end to end (v3):
+topic -> script (+review) -> AI scene plan -> [Kaggle GPU paints scenes, in parallel] -> voice -> NASA footage
+-> score -> mix -> collect AI scenes (depth maps, clips) -> render -> thumbnails -> Shorts -> QA -> YouTube
 
 Resumable: if a run dies, rerun with the same --topic and finished steps are skipped.
 """
 import argparse
+import json
 import datetime as dt
 import math
 import os
@@ -11,6 +13,7 @@ import zlib
 
 from .common import (DATA, LANG_NAMES, ROOT, load_config, read_json, slugify,
                      timestamp, write_json)
+from .scenes import credits_line
 
 CREDITS = {
     "en": "Imagery and footage: NASA Image and Video Library (public domain; NASA does not endorse this channel).\n"
@@ -22,11 +25,74 @@ CREDITS = {
 }
 
 
-def build_description(script, timing, lang):
+def build_description(script, timing, lang, used_ai=False):
     intro = "Intro" if lang == "en" else "Introducción"
     lines = [f"00:00 {intro}"] + [f"{timestamp(c['start'])} {c['title']}" for c in timing["chapters"]]
     label = "Chapters" if lang == "en" else "Capítulos"
-    return f"{script['description']}\n\n{label}\n" + "\n".join(lines) + f"\n\n{CREDITS[lang]}"
+    credits = CREDITS[lang] + (f"\n{credits_line(lang)}" if used_ai else "")
+    return f"{script['description']}\n\n{label}\n" + "\n".join(lines) + f"\n\n{credits}"
+
+
+def gpu_test(cfg):
+    from . import gpu
+    from .scenes import build_job
+    out = ROOT / "outputs" / "gpu-test"
+    out.mkdir(parents=True, exist_ok=True)
+    plan = {"sections": [{"id": "chapter_1", "scenes": [
+        {"anchor": "", "prompt": "the surface of Titan under an orange hazy sky, methane lakes and icy pebbles, "
+                                 "wide establishing shot from the ground", "motion": "slow push in, haze drifting",
+         "video": True},
+        {"anchor": "", "prompt": "Saturn with its rings seen from orbit, sunlight glinting on the ring plane"},
+        {"anchor": "", "prompt": "the Milky Way core rising over a dark rocky alien horizon, long exposure"},
+        {"anchor": "", "prompt": "a black hole with a glowing accretion disk bending light around it"}]}]}
+    job = build_job(plan, cfg, f"gpu-test-{dt.datetime.utcnow():%Y%m%d%H%M%S}", "gpu test")
+    job["budget_minutes"] = 45
+    write_json(out / "gpu_job.json", job)
+    print(f"GPU test: configured={gpu.configured()}")
+    state = gpu.launch(job, out, cfg) if gpu.configured() else {}
+    manifest = gpu.collect(out, cfg, wait_minutes=90) if state.get("ok") else None
+    if manifest:
+        from .scenes import prepare_ai_files
+        files = prepare_ai_files(out / "ai", cfg)
+        print(f"GPU test result: {len(files['images'])} images, {len(files['clips'])} clips")
+        # small previews committed to the repo, to judge quality without downloading artifacts
+        import subprocess
+        from PIL import Image
+        prev = DATA / "diagnostics" / "gpu_test"
+        prev.mkdir(parents=True, exist_ok=True)
+        for f in prev.glob("*"):
+            f.unlink()
+        for k, path in files["images"].items():
+            im = Image.open(path).convert("RGB")
+            im.thumbnail((960, 960))
+            im.save(prev / f"{k}.jpg", quality=80)
+        for k, c in files["clips"].items():
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", c["path"], "-vf",
+                            "fps=1/2,scale=480:-2,tile=4x2", "-frames:v", "1", str(prev / f"{k}_frames.jpg")])
+    save_diagnostics(out, {"gpu_test": True}, {"status": "ok" if manifest else "failed",
+                                               "errors": (manifest or {}).get("errors", [])})
+    print(json.dumps(read_json(DATA / "diagnostics" / "last_episode.json", {}), indent=1)[:6000])
+
+
+def save_diagnostics(out, report=None, ai_media=None):
+    """Small report committed to the repo (data/diagnostics/) so problems can be read without
+    downloading Actions artifacts."""
+    def tail(path, n=60):
+        return path.read_text(errors="ignore").splitlines()[-n:] if path.exists() else []
+    plan = read_json(out / "scenes.json", {"sections": []})
+    diag = {
+        "episode": out.name,
+        "date": dt.datetime.utcnow().isoformat(timespec="seconds"),
+        "qa": {k: v for k, v in (report or {}).items()},
+        "ai_status": (ai_media or {}).get("status"),
+        "ai_errors": [e[-1500:] for e in (ai_media or {}).get("errors", [])],
+        "scene_plan": {sec["id"]: len(sec["scenes"]) for sec in plan.get("sections", [])},
+        "gpu_job_images": len(read_json(out / "gpu_job.json", {}).get("images", [])),
+        "kaggle_push": read_json(out / "kaggle.json", {}),
+        "kaggle_manifest": read_json(out / "ai" / "manifest.json", None),
+        "kaggle_log": tail(out / "ai" / "log.txt"),
+    }
+    write_json(DATA / "diagnostics" / "last_episode.json", diag)
 
 
 def step(n, total, text):
@@ -38,7 +104,11 @@ def main():
     ap.add_argument("--topic")
     ap.add_argument("--no-upload", action="store_true")
     ap.add_argument("--no-shorts", action="store_true")
+    ap.add_argument("--no-ai", action="store_true", help="v2 look: NASA imagery only, no Kaggle GPU")
+    ap.add_argument("--gpu-test", action="store_true", help="only test Kaggle: 4 images + 1 clip (~20 min)")
     args = ap.parse_args()
+    if args.gpu_test:
+        return gpu_test(load_config())
 
     cfg = load_config()
     v = cfg["video"]
@@ -50,7 +120,9 @@ def main():
     do_shorts = not args.no_shorts and cfg.get("shorts", {}).get("count", 0) > 0
     out = ROOT / "outputs" / slugify(topic)
     out.mkdir(parents=True, exist_ok=True)
-    N = 10
+    N = 12
+    ai_cfg = cfg.get("ai", {})
+    use_ai = ai_cfg.get("enabled", False) and not args.no_ai
     print(f"== {topic}\n   -> {out}")
 
     # 1. script
@@ -62,25 +134,48 @@ def main():
         script["shorts"] = write_shorts(script, cfg, cfg.get("shorts", {}).get("count", 2)) if do_shorts else []
         write_json(out / "script.json", script)
 
-    # 2. narration + captions
+    # 2. AI scenes: Claude designs them, Kaggle starts painting while everything else runs
+    gpu_state = None
+    if use_ai:
+        from . import gpu
+        from .scenes import build_job, plan_scenes
+        plan = read_json(out / "scenes.json", None)
+        if not plan:
+            step(2, N, "designing AI scenes with Claude")
+            plan = plan_scenes(script, cfg)
+            write_json(out / "scenes.json", plan)
+        gpu_state = read_json(out / "kaggle.json", None)
+        if not gpu.configured():
+            print("   Kaggle not configured (KAGGLE_USERNAME / KAGGLE_KEY): NASA imagery only")
+        elif not gpu_state or not gpu_state.get("ok"):
+            job = build_job(plan, cfg, f"{slugify(topic)}-{dt.datetime.utcnow():%Y%m%d%H%M%S}", topic)
+            write_json(out / "gpu_job.json", job)
+            print(f"   sending {len(job['images'])} images + {len(job['videos'])} clips to Kaggle")
+            if job["images"]:
+                gpu_state = gpu.launch(job, out, cfg)
+            else:
+                print("   Claude returned no scene prompts: NASA imagery only")
+
+    # 3. narration + captions
     timing = read_json(out / "timing.json", None)
     if not timing or not (out / "narration.wav").exists():
         from .voice import synthesize
-        step(2, N, "narrating")
+        step(3, N, "narrating")
         timing = synthesize(script, cfg, out)
         write_json(out / "timing.json", timing)
     print(f"   narration: {timing['duration'] / 60:.1f} min")
 
-    # 3. footage per chapter; never reuses media already used on the channel
+    # 4. footage per chapter; never reuses media already used on the channel
     used = set(read_json(DATA / "used_assets.json", []))
     media = read_json(out / "media.json", None)
     if not media:
         from .assets import fetch_clips, fetch_images
-        step(3, N, "fetching NASA imagery and footage")
+        step(4, N, "fetching NASA imagery and footage")
         spi, media = v["seconds_per_image"], []
+        nasa_share = 1.0 - (ai_cfg.get("share", 0.45) if gpu_state and gpu_state.get("ok") else 0.0)
         for i, (ch, mark) in enumerate(zip(script["chapters"], timing["chapters"])):
             seconds = mark["end"] - mark["start"]
-            want = max(4, math.ceil(seconds / spi * 0.65))
+            want = max(4, math.ceil(seconds / spi * 0.65 * max(nasa_share, 0.45)))
             imgs = fetch_images(ch.get("image_queries", []), want, out / "images", used)
             clips = fetch_clips(ch.get("video_queries", []), v.get("clips_per_chapter", 3),
                                 out / "clips", used, seconds=14, W=v["width"], H=v["height"], fps=v["fps"])
@@ -91,51 +186,82 @@ def main():
         write_json(out / "media.json", media)
         write_json(DATA / "used_assets.json", sorted(used))
 
-    # 4. score
+    # 5. score
     music = out / "music.wav"
     if not music.exists():
         from .music import make_ambient
-        step(4, N, "composing ambient score")
+        step(5, N, "composing ambient score")
         make_ambient(music, seed=zlib.crc32(topic.encode()))
 
-    # 5. final audio
+    # 6. final audio
     audio = out / "audio.wav"
     if not audio.exists():
         from .mix import mix
-        step(5, N, "mixing voice and score")
+        step(6, N, "mixing voice and score")
         mix(out / "narration.wav", music, audio, timing["duration"],
             music_volume=cfg["mix"]["music_volume"], lufs=cfg["mix"]["lufs"])
 
-    # 6. picture
+    # 7. AI scenes back from the GPU: depth maps for 2.5D, slowed clips, placed on their sentences
+    ai_media = read_json(out / "ai_media.json", None)
+    if ai_media is None:
+        ai_media = {"placed": {}, "status": "off" if not use_ai else "not run"}
+        if gpu_state and gpu_state.get("ok"):
+            from . import gpu
+            from .scenes import place_scenes, prepare_ai_files, read_srt
+            step(7, N, "waiting for the Kaggle GPU and preparing AI scenes")
+            manifest = gpu.collect(out, cfg)
+            if manifest:
+                files = prepare_ai_files(out / "ai", cfg)
+                placed = place_scenes(read_json(out / "scenes.json", {"sections": []}), files,
+                                      read_srt(out / "captions.srt"), timing, min_gap=v["seconds_per_image"])
+                n_placed = sum(len(x) for x in placed.values())
+                status = "ok" if n_placed else (
+                    f"kaggle returned {len(files['images'])} images, {n_placed} placed")
+                ai_media = {"placed": placed, "status": status, "errors": manifest.get("errors", []),
+                            "gpus": manifest.get("gpus", []), "gpu_minutes": manifest.get("minutes"),
+                            "images": len(files["images"]), "clips": len(files["clips"])}
+            else:
+                ai_media["status"] = "kaggle failed or timed out"
+        elif use_ai:
+            ai_media["status"] = "kaggle push failed" if gpu_state else "kaggle not configured"
+        write_json(out / "ai_media.json", ai_media)
+    placed = ai_media.get("placed", {})
+    used_ai = any(placed.values())
+    if use_ai and not used_ai:
+        print(f"   no AI scenes this episode ({ai_media.get('status')}): NASA imagery only")
+
+    # 8. picture
     video = out / "video.mp4"
     from .render import build_episode
-    shots, _ = build_episode(timing, script, media, cfg)
+    shots, _ = build_episode(timing, script, media, cfg, ai=placed)
     write_json(out / "shots.json", shots)
     if not video.exists():
         from .render import render_episode
-        step(6, N, "rendering video")
+        step(8, N, "rendering video")
         tmp = out / "video.partial.mp4"
-        render_episode(timing, script, media, audio, tmp, cfg)
+        render_episode(timing, script, media, audio, tmp, cfg, ai=placed)
         tmp.rename(video)
 
-    # 7. thumbnails + metadata
+    # 9. thumbnails + metadata
     from .thumbnail import make_thumbnails
-    step(7, N, "thumbnails + metadata")
-    # thumbnails come from the opening chapter (the episode's main subject), not side topics
+    step(9, N, "thumbnails + metadata")
+    # thumbnails come from the opening chapter (the episode's main subject), not side topics;
+    # the AI hero scenes of the cold open and chapter one compete with the real photos
     all_imgs = [i["path"] for i in media[0]["images"]] or [i["path"] for m in media for i in m["images"]]
+    all_imgs = [it["path"] for k in ("cold_open", "chapter_1") for it in placed.get(k, [])] + all_imgs
     texts = script.get("thumbnail_texts") or [script.get("thumbnail_text", script["title"])]
     thumbs = make_thumbnails(all_imgs, texts, out)
     meta = {"title": script["title"], "tags": script.get("tags", []),
-            "description": build_description(script, timing, lang)}
+            "description": build_description(script, timing, lang, used_ai), "synthetic": used_ai}
     write_json(out / "metadata.json", meta)
 
-    # 8. Shorts
+    # 10. Shorts
     shorts = read_json(out / "shorts.json", None)
     if shorts is None:
         shorts = []
         if do_shorts and script.get("shorts"):
             from .shorts import produce_short
-            step(8, N, f"producing {len(script['shorts'])} Shorts")
+            step(10, N, f"producing {len(script['shorts'])} Shorts")
             fallback = [i for m in media for i in m["images"]]
             for k, s in enumerate(script["shorts"], 1):
                 try:
@@ -147,22 +273,22 @@ def main():
             write_json(DATA / "used_assets.json", sorted(used))
         write_json(out / "shorts.json", shorts)
 
-    # 9. QA gate
+    # 11. QA gate
     from .qa import check_episode
-    step(9, N, "quality check")
-    report = check_episode(out, script, timing, media, shots, video)
+    step(11, N, "quality check")
+    report = check_episode(out, script, timing, media, shots, video, ai_media)
     print(f"   QA {'PASSED' if report['ok'] else 'FAILED'}: {report['minutes']} min, "
-          f"{report['lufs']} LUFS, {report['clips']} clips")
+          f"{report['lufs']} LUFS, {report['clips']} clips, {report['ai_scenes']} AI scenes")
     for f in report["fails"]:
         print(f"   FAIL: {f}")
     for w in report["warnings"]:
         print(f"   warn: {w}")
 
-    # 10. upload
+    # 12. upload
     video_id, short_ids = None, []
     from .upload import has_credentials, upload
     if do_upload and has_credentials() and report["ok"]:
-        step(10, N, "uploading to YouTube")
+        step(12, N, "uploading to YouTube")
         video_id = upload(video, meta, cfg, thumbnail=thumbs[0] if thumbs else None,
                           captions=out / "captions.srt")
         print(f"   https://youtu.be/{video_id}")
@@ -179,11 +305,13 @@ def main():
     else:
         why = ("QA failed" if not report["ok"] else "no credentials" if not has_credentials()
                else "upload disabled")
-        step(10, N, f"upload skipped ({why})")
+        step(12, N, f"upload skipped ({why})")
 
+    save_diagnostics(out, report, ai_media)
     done = read_json(DATA / "done.json", [])
     done.append({"topic": topic, "title": script["title"], "video_id": video_id, "shorts": short_ids,
                  "minutes": round(timing["duration"] / 60, 1), "qa_ok": report["ok"],
+                 "ai_scenes": report["ai_scenes"], "ai_status": ai_media.get("status"),
                  "date": dt.date.today().isoformat()})
     write_json(DATA / "done.json", done)
     if not report["ok"]:

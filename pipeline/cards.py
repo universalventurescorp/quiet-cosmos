@@ -146,3 +146,23 @@ def short_hook(W, H, text, start, end):
                stroke_width=int(6 * s), stroke_fill=(0, 0, 0, 255))
         y += 82 * s
     return _to_overlay(img, start, end, 0.2, 0.4, shadow=False)
+
+
+_LABELS = {}
+
+
+def ai_label(W, H, text, start, end):
+    """Small, quiet lower-right note on AI-generated scenes (honest labelling, never distracting)."""
+    key = (W, H, text)
+    if key not in _LABELS:
+        img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(img)
+        s = H / 1080
+        f = font("regular", int(19 * s))
+        label = text.upper()
+        w = _spaced_width(label, f, 3 * s)
+        _spaced(d, (W - 70 * s - w, H - 70 * s), label, f, (230, 234, 242, 175), 3 * s)
+        _LABELS[key] = _to_overlay(img, 0, 0, 1.0, 0.8)
+    ov = dict(_LABELS[key])
+    ov.update(start=start, end=end)
+    return ov

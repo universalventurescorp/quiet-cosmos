@@ -42,7 +42,7 @@ def upload(video, meta, cfg, thumbnail=None, captions=None, yt=None):
                     "defaultLanguage": lang, "defaultAudioLanguage": lang},
         "status": {"privacyStatus": up["privacy"],
                    "selfDeclaredMadeForKids": up["made_for_kids"],
-                   "containsSyntheticMedia": up["synthetic_media"]},
+                   "containsSyntheticMedia": bool(up["synthetic_media"] or meta.get("synthetic"))},
     }
     request = yt.videos().insert(part="snippet,status", body=body,
                                  media_body=MediaFileUpload(str(video), mimetype="video/mp4",

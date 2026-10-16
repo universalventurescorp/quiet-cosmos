@@ -1,4 +1,12 @@
-# Quiet Cosmos v2: canal de YouTube automatizado
+# Quiet Cosmos v3: canal de YouTube automatizado
+
+> **Novedad v3 — escenas cinematográficas con IA.** Además de las fotos y videos reales de la NASA, cada
+> episodio lleva escenas generadas por IA para mostrar lo que ninguna cámara puede captar (la vista desde
+> la superficie de otro mundo, el disco de un agujero negro, la Tierra hace 4.000 millones de años).
+> Se pintan gratis en la GPU de **Kaggle**, se animan con un **efecto 2.5D por mapa de profundidad** y en
+> los momentos clave se convierten en **clips de video IA**. Cada escena cae justo en la frase que la
+> narra, lleva un rótulo discreto *"AI artist's impression"* y el video se marca en YouTube como
+> contenido sintético. Si Kaggle falla o no hay cuota, el episodio sale igual con imágenes de la NASA.
 
 Quiet Cosmos publica documentales del espacio de 60 minutos, cinematográficos, calmados y con ciencia revisada, pensados para relajarse y dormir. Cada episodio sale con 2 Shorts verticales para atraer audiencia nueva. Todo el proceso es automático y usa solo código abierto: guion, revisión científica, voz, imágenes y video reales de la NASA, música original, edición, miniaturas, Shorts, control de calidad y subida a YouTube.
 
@@ -57,9 +65,37 @@ Si algo falla, **no sube nada** y el informe queda en `qa.json`.
    - Crea credenciales de tipo *OAuth client ID* → *Desktop app* y descárgalas como `client_secret.json`.
    - En tu computadora ejecuta `pip install google-auth-oauthlib` y luego `python scripts/get_youtube_token.py client_secret.json`. Inicia sesión con la cuenta del canal.
    - Guarda los 3 valores que imprime como secretos: `YT_CLIENT_ID`, `YT_CLIENT_SECRET` y `YT_REFRESH_TOKEN`.
-5. **Auditoría de la API (importante):** Google deja en **privado** los videos que se suben desde proyectos de API nuevos. Pide la auditoría gratuita con el formulario *YouTube API Services – Audit and Quota Extension*. Mientras llega la aprobación, publicar es un clic por video en YouTube Studio.
+5. **Kaggle (GPU gratis para las escenas IA):**
+   - En kaggle.com → *Settings*, **verifica tu teléfono** (sin esto Kaggle no da GPU ni internet a los scripts).
+   - En la misma página, *API → Create New Token* descarga `kaggle.json`. Guarda sus dos valores como
+     secretos de GitHub: `KAGGLE_USERNAME` y `KAGGLE_KEY`.
+   - Nada más. El sistema crea solo un script privado `quiet-cosmos-gen` en tu cuenta y lo vuelve a correr
+     en cada episodio. Ahí puedes ver el registro de cada corrida.
+6. **Auditoría de la API (importante):** Google deja en **privado** los videos que se suben desde proyectos de API nuevos. Pide la auditoría gratuita con el formulario *YouTube API Services – Audit and Quota Extension*. Mientras llega la aprobación, publicar es un clic por video en YouTube Studio.
 
-Una vez configurado, corre solo **los lunes y jueves a las 7:17 a. m.** (hora de Lima). Cada corrida produce 1 episodio de unos 60 minutos y 2 Shorts.
+Una vez configurado, corre solo **todos los días a las 7:17 a. m.** (hora de Lima). Cada corrida produce 1 episodio de unos 60 minutos y 2 Shorts.
+
+## Cómo funcionan las escenas IA (v3)
+
+```
+Guion listo
+ └─ Claude diseña ~140 escenas: para cada una, la frase exacta que ilustra + el prompt + el movimiento
+     └─ Kaggle (2 GPU T4, gratis, en paralelo con la narración y la música):
+          GPU 1: imágenes fotorrealistas (RealVisXL / SDXL, o FLUX) + Real-ESRGAN x2 → 2688×1536
+          GPU 2: clips de video imagen→video (LTX-Video) de los momentos clave, también ampliados x2
+     └─ GitHub Actions: mapas de profundidad (Depth Anything V2) → cámara 2.5D con paralaje real
+        (el primer plano se mueve distinto del fondo), clips ralentizados con interpolación de movimiento
+         └─ Edición: cada escena IA entra en el segundo exacto en que la voz la describe;
+            la NASA llena el resto; el gancho inicial abre con el mejor clip IA
+```
+
+- **Tope de GPU:** `kaggle.gpu_budget_minutes` (120 por defecto). Lo que no alcance se reemplaza por NASA.
+  Diario son unas 15 horas por semana, dentro de la cuota gratis de Kaggle (que se ve en tu perfil y puede cambiar).
+- **Si algo falla** (sin cuota, cola larga, modelo que no carga): el episodio se publica igual con el aspecto v2
+  y `qa.json` explica por qué (`ai_status`). Puedes forzar el modo v2 con la casilla *Escenas IA* en
+  *Run workflow* o con `--no-ai`.
+- **Honestidad:** las escenas son reconstrucciones artísticas basadas en la ciencia actual, rotuladas en
+  pantalla y en la descripción, y el video se marca como contenido sintético en YouTube.
 
 ## Ver los resultados
 
@@ -67,18 +103,18 @@ En **Actions**, abre una corrida y baja hasta **Artifacts** para descargar **epi
 - `preview-10min.mp4`: los primeros 10 minutos del episodio,
 - `short.mp4`: los Shorts,
 - `thumbnail_1/2/3.jpg`: las tres miniaturas,
-- `qa.json`: el informe de calidad,
+- `qa.json`: el informe de calidad (incluye cuántas escenas IA entraron y el estado de Kaggle),
+- `scenes.json`, `ai_media.json`, `ai/log.txt`: el plan de escenas y el registro de la GPU,
 - `script.json`: el guion completo.
 
 Se sube la miniatura 1. Las otras dos sirven para la prueba A/B de YouTube Studio (*Test & compare*).
 
 ## Tiempos y costos
 
-- **Por episodio:** unas 2 a 3 horas en las máquinas gratis de GitHub, sin que tengas que estar presente.
-- **Minutos de GitHub Actions:** el plan gratis para repos privados trae 2.000 minutos al mes, y 2 episodios por semana usan unos 1.400. Hay dos formas de tener más:
-  - Hacer **público** el repo, lo que da minutos ilimitados y máquinas el doble de rápidas. Tus claves siguen protegidas.
-  - Usar una **máquina propia:** registra una PC como *self-hosted runner* (Settings → Actions → Runners → New self-hosted runner) y crea la variable de repositorio `RUNNER` con el valor `self-hosted`. Con más núcleos, cada episodio tarda mucho menos.
-- **Claude:** unas 15 a 18 llamadas por episodio, que entran en tu plan.
+- **Por episodio:** unas 3 a 5 horas en las máquinas gratis de GitHub (la GPU de Kaggle trabaja en paralelo), sin que tengas que estar presente.
+- **Minutos de GitHub Actions:** el repo es **público**, así que los minutos son ilimitados. Tus claves siguen protegidas como secretos. Para ir más rápido puedes registrar una PC propia como *self-hosted runner* (Settings → Actions → Runners) y crear la variable de repositorio `RUNNER` con el valor `self-hosted`.
+- **Kaggle:** hasta 2 horas de GPU por episodio, gratis.
+- **Claude:** unas 18 a 21 llamadas por episodio (3 más para diseñar las escenas IA), que entran en tu plan.
 
 ## Ajustes (`config.yaml`)
 
