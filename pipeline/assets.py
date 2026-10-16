@@ -195,19 +195,22 @@ def _download_file(url, path, limit):
     return True
 
 
-def conform_clip(src, dst, seconds, W=1920, H=1080, fps=24, slow=1.35):
-    """Take a calm middle segment, slow it slightly (frame blending), conform to WxH@fps."""
+def conform_clip(src, dst, seconds, W=1920, H=1080, fps=24, slow=1.35, margin=3.0, start_at=None):
+    """Take a calm middle segment, slow it slightly (frame blending), conform to WxH@fps.
+    margin: seconds skipped at each end (NASA clips open/close with slates and logos).
+    start_at: fraction 0..1 of where in the usable span to cut (None = the middle)."""
     w, h, dur = _probe(src)
-    if w < 1200 or dur < 6:
+    if w < 1200 or dur < 2 * margin + 1.5:
         return None
-    usable = dur - 6                                  # skip slates/logos at both ends
+    usable = dur - 2 * margin
     need = seconds / slow
     if usable < need:
         slow = max(1.0, seconds / max(usable, 1))
         need = seconds / slow
         if slow > 2.2:
             return None
-    start = 3 + max(0.0, (usable - need) / 2)
+    frac = 0.5 if start_at is None else min(max(start_at, 0.0), 1.0)
+    start = margin + max(0.0, (usable - need) * frac)
     vf = (f"setpts={slow:.3f}*PTS,framerate=fps={fps},"
           f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},format=yuv420p")
     r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.2f}", "-t", f"{need:.2f}",

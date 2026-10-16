@@ -1,0 +1,32 @@
+name: test-sources
+
+# Prueba rápida (~5 min) de las fuentes de video real (Pixabay). No usa Kaggle ni sube nada.
+# Deja el resultado en data/diagnostics/pixabay_test/ (se commitea).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pixabay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install requests numpy Pillow PyYAML
+      - name: Pixabay self-test
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python -m pipeline.pixabay
+      - name: Save diagnostics
+        if: always()
+        run: |
+          git config user.name "quiet-cosmos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/diagnostics/pixabay_test
+          git diff --cached --quiet || (git commit -m "Pixabay self-test $(date -u +%F)" && git pull --rebase && git push)
