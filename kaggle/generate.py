@@ -32,6 +32,9 @@ PIP = ["diffusers>=0.32", "transformers>=4.46", "accelerate>=1.0", "spandrel", "
 VIDEO_NEGATIVE = ("worst quality, inconsistent motion, blurry, jittery, distorted, fast motion, "
                   "camera shake, text, watermark")
 _lock = threading.Lock()
+# from_pretrained patches torch globally (meta-device init): two threads loading at once corrupt each
+# other's weights, so model loading is serialized; generation itself runs in parallel
+_load_lock = threading.Lock()
 
 
 def load_job():
@@ -174,9 +177,11 @@ def run_images(job, gpu):
     try:
         import torch
         device = f"cuda:{gpu}"
-        pipe, kind = load_image_pipe(job, device, gpu, role)
+        with _load_lock:
+            pipe, kind = load_image_pipe(job, device, gpu, role)
         st["model"] = kind
-        up = try_upscaler(device, role) if job.get("upscale") else None
+        with _load_lock:
+            up = try_upscaler(device, role) if job.get("upscale") else None
         todo = job["images"]
         for n, item in enumerate(todo):
             avg = sum(st["seconds"][-5:]) / max(1, len(st["seconds"][-5:])) if st["seconds"] else 40
@@ -244,15 +249,17 @@ def run_videos(job, gpu, images_thread):
         device = f"cuda:{gpu}"
         major = torch.cuda.get_device_capability(gpu)[0]
         dtype = torch.bfloat16 if major >= 8 else torch.float16
-        pipe = LTXImageToVideoPipeline.from_pretrained(job["video_model"], torch_dtype=dtype)
-        pipe.enable_model_cpu_offload(gpu_id=gpu)
+        with _load_lock:
+            pipe = LTXImageToVideoPipeline.from_pretrained(job["video_model"], torch_dtype=dtype)
+            pipe.enable_model_cpu_offload(gpu_id=gpu)
         try:
             pipe.vae.enable_tiling()
         except Exception:                                # noqa: BLE001
             pass
         pipe.set_progress_bar_config(disable=True)
         log(role, f"video model: {job['video_model']} ({dtype})")
-        up = try_upscaler(device, role) if job.get("upscale") else None
+        with _load_lock:
+            up = try_upscaler(device, role) if job.get("upscale") else None
         W, H = job["video_width"], job["video_height"]
         for n, v in enumerate(job["videos"]):
             est = max(st["seconds"]) if st["seconds"] else 600
