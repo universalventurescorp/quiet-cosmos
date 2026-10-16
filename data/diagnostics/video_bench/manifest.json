@@ -5,6 +5,7 @@
     "kernel": "universalventures/quiet-cosmos-gen",
     "pushed_at": 1792161670.2353115,
     "ok": true,
-    "push_output": "Kernel version 8 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 8 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen",
+    "reused": true
   }
 }
