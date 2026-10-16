@@ -34,13 +34,15 @@ def build_description(script, timing, lang, used_ai=False):
     return f"{script['description']}\n\n{label}\n" + "\n".join(lines) + f"\n\n{credits}"
 
 
-def video_bench(cfg):
+def video_bench(cfg, kind="video"):
+    """Kaggle benchmarks (no episode). kind: "video" (image-to-video models) or "voice" (Spanish TTS voices)."""
+    import shutil
     import subprocess
     from . import gpu
-    out = ROOT / "outputs" / "video-bench"
+    out = ROOT / "outputs" / f"{kind}-bench"
     out.mkdir(parents=True, exist_ok=True)
-    job = {"job_id": f"video-bench-{dt.datetime.utcnow():%Y%m%d%H%M%S}"}
-    prev_state = read_json(ROOT / "data" / "diagnostics" / "video_bench" / "manifest.json", {}).get("push") or {}
+    job = {"job_id": f"{kind}-bench-{dt.datetime.utcnow():%Y%m%d%H%M%S}"}
+    prev_state = read_json(ROOT / "data" / "diagnostics" / f"{kind}_bench" / "manifest.json", {}).get("push") or {}
     if (prev_state.get("ok") and not prev_state.get("reused")
             and time.time() - prev_state.get("pushed_at", 0) < 4 * 3600):
         # a bench pushed in the last 4 h may still be running (or finished) on Kaggle: collect it
@@ -49,13 +51,18 @@ def video_bench(cfg):
         write_json(out / "kaggle.json", state)
         print(f"   collecting the bench already on Kaggle: {state['job_id']}")
     else:
-        state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / "bench_video.py") if gpu.configured() else {}
-    manifest = gpu.collect(out, cfg, wait_minutes=150) if state.get("ok") else None
-    prev = ROOT / "data" / "diagnostics" / "video_bench"
+        state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / f"bench_{kind}.py") if gpu.configured() else {}
+    manifest = gpu.collect(out, cfg, wait_minutes=180) if state.get("ok") else None
+    prev = ROOT / "data" / "diagnostics" / f"{kind}_bench"
     prev.mkdir(parents=True, exist_ok=True)
     for f in prev.glob("*"):
         f.unlink()
     ai = out / "ai"
+    if manifest is not None:
+        manifest["push"] = state
+    for p in (sorted(ai.glob("*.mp3")) + sorted(ai.glob("scores.json")) + sorted(ai.glob("*.log"))
+              + sorted(ai.glob("log.txt"))) if ai.exists() else []:
+        shutil.copy(p, prev / p.name)          # voice bench: listening files, scores, per-engine logs
     for p in sorted(ai.glob("*.jpg")) if ai.exists() else []:
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(p), "-vf", "scale=640:-2", str(prev / p.name)])
     for p in sorted(ai.glob("*.mp4")) if ai.exists() else []:
@@ -150,9 +157,12 @@ def main():
     ap.add_argument("--no-ai", action="store_true", help="v2 look: NASA imagery only, no Kaggle GPU")
     ap.add_argument("--gpu-test", action="store_true", help="only test Kaggle: 4 images + 1 clip (~20 min)")
     ap.add_argument("--video-bench", action="store_true", help="benchmark image-to-video models on Kaggle")
+    ap.add_argument("--voice-bench", action="store_true", help="benchmark Spanish TTS voices on Kaggle")
     args = ap.parse_args()
     if args.video_bench:
         return video_bench(load_config())
+    if args.voice_bench:
+        return video_bench(load_config(), kind="voice")
     if args.gpu_test:
         return gpu_test(load_config())
 
