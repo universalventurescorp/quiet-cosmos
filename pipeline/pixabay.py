@@ -91,8 +91,59 @@ def _best_rendition(hit, min_width):
     return best
 
 
+# ------------------------------------------------------------------ visual guard
+# Pixabay tags are written by uploaders and are often wrong ("volcano" on a city skyline), so every
+# clip is also checked with CLIP (CPU, ~150 MB model) on 3 frames before we cut shots from it.
+GOOD = ["untouched wild nature landscape", "a wild ocean or sea", "a wild forest or jungle", "a volcano or lava",
+        "sky and clouds", "an underwater scene", "a desert", "wild mountains", "a river or waterfall in the wild",
+        "wild animals in nature"]
+BAD = ["a city with buildings", "houses, roads or a village", "a person or people", "a car, boat or airplane",
+       "a plain studio background", "text, a logo or a graphic", "a farm field or fences", "a beach resort"]
+_clip = {}
+
+
+def _frames(path, n=3):
+    from PIL import Image
+    import io
+    import subprocess
+    dur = _probe(path)[2]
+    out = []
+    for k in range(n):
+        t = dur * (k + 1) / (n + 1)
+        r = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", str(path), "-frames:v", "1",
+                            "-vf", "scale=448:-2", "-f", "image2pipe", "-vcodec", "png", "-"], capture_output=True)
+        if r.stdout:
+            out.append(Image.open(io.BytesIO(r.stdout)).convert("RGB"))
+    return out
+
+
+def visual_check(path, threshold=0.30):
+    """(ok, worst_bad_label, worst_bad_prob). If CLIP is unavailable, accepts the clip (tags still apply)."""
+    try:
+        import torch
+        from transformers import CLIPModel, CLIPProcessor
+    except Exception:
+        return True, None, 0.0
+    if "m" not in _clip:
+        name = "openai/clip-vit-base-patch32"
+        _clip["m"], _clip["p"] = CLIPModel.from_pretrained(name).eval(), CLIPProcessor.from_pretrained(name)
+    frames = _frames(path)
+    if not frames:
+        return False, "unreadable", 1.0
+    labels = GOOD + BAD
+    with torch.no_grad():
+        inp = _clip["p"](text=[f"a photo of {l}" for l in labels], images=frames, return_tensors="pt", padding=True)
+        probs = _clip["m"](**inp).logits_per_image.softmax(dim=-1)   # frames x labels
+    bad = probs[:, len(GOOD):]
+    per_frame = bad.sum(dim=-1)
+    worst = int(per_frame.argmax())
+    label = BAD[int(bad[worst].argmax())]
+    p_bad = float(per_frame[worst])
+    return p_bad < threshold, label, round(p_bad, 3)
+
+
 def fetch_clips(queries, want, out_dir, used, seconds=6.0, W=1920, H=1080, fps=24, slow=1.0,
-                block=MODERN, shots_per_clip=2, per_query=2, min_width=1920):
+                block=MODERN, shots_per_clip=2, per_query=2, min_width=1920, visual=True, rejected=None):
     """Download real footage for `queries` and cut it into up to `want` shots of `seconds` each.
 
     used: set of ids already used on the channel ("pixabay:<id>"); updated in place.
@@ -127,6 +178,15 @@ def fetch_clips(queries, want, out_dir, used, seconds=6.0, W=1920, H=1080, fps=2
             try:
                 if not _download_file(rend["url"], raw, MAX_BYTES):
                     continue
+                if visual:
+                    ok, why, p_bad = visual_check(raw)
+                    if not ok:
+                        print(f"    pixabay {hit['id']} rejected by visual check: {why} ({p_bad})")
+                        if rejected is not None:
+                            rejected.append({"pixabay_id": hit["id"], "tags": tags, "why": why, "p": p_bad,
+                                             "frames": _frames(raw)})
+                        used.add(uid)          # never try it again
+                        continue
                 dur = _probe(raw)[2]
                 # how many non-overlapping shots fit in this clip (skip 0.5 s at both ends)
                 n = max(1, min(shots_per_clip, int((dur - 1.0) // (seconds / max(slow, 1.0) + 1.0))))
@@ -188,7 +248,20 @@ def _self_test():
         except Exception as exc:
             report["queries"][q] = {"error": str(exc)[:300]}
     t = time.time()
-    clips = fetch_clips(queries, 12, out, used, seconds=6.0, shots_per_clip=2, per_query=1)
+    rejected = []
+    clips = fetch_clips(queries, 12, out, used, seconds=6.0, shots_per_clip=2, per_query=1, rejected=rejected)
+    from PIL import Image
+    report["rejected"] = []
+    for i, r in enumerate(rejected):
+        fr = r.pop("frames")
+        if fr:
+            sheet = Image.new("RGB", (sum(f.width for f in fr), max(f.height for f in fr)))
+            x = 0
+            for f in fr:
+                sheet.paste(f, (x, 0))
+                x += f.width
+            sheet.save(diag / f"rejected_{i:02d}.jpg", quality=75)
+        report["rejected"].append(r)
     report["seconds"] = round(time.time() - t, 1)
     report["clips"] = [{k: c[k] for k in ("pixabay_id", "title", "user", "duration", "query")} for c in clips]
     for i, c in enumerate(clips):
