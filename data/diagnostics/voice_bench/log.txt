@@ -1,6 +1,6 @@
-[   0.4 min] GPUs ['Tesla T4', 'Tesla T4']
-[   1.1 min] chatterbox: installed in 0.7 min on GPU 0
-[   7.7 min] chatterbox: done in 7.3 min
-[   8.4 min] score: installed in 0.6 min on GPU 1
-[   9.9 min] score: done in 2.1 min
-[   9.9 min] done
+[   0.3 min] GPUs ['Tesla T4', 'Tesla T4']
+[   1.5 min] qwen: installed in 1.1 min on GPU 1
+[  22.6 min] qwen: done in 22.2 min
+[  23.0 min] score: installed in 0.4 min on GPU 1
+[  25.2 min] score: done in 2.6 min
+[  25.3 min] done

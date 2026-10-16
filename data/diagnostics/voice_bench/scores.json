@@ -934,5 +934,491 @@
         "seconds": 7.4
       }
     ]
+  },
+  "qwen3_n1": {
+    "f0_median_hz": 101,
+    "pitch_var_st": 3.16,
+    "pitch_range_st": 10.9,
+    "mean_cer": 0.0008,
+    "max_cer": 0.0079,
+    "mean_mos": 4.164,
+    "words_per_min": 141,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.267,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, mientras un mundo inmenso aparece poco a poco frente a ti.",
+        "seconds": 7.6
+      },
+      {
+        "i": 1,
+        "cer": 0.0079,
+        "mos": 4.132,
+        "heard": "Es Júpiter, el planeta más grande de nuestro sistema solar, tan enorme que en su interior cabrían más de 1.300 tierras.",
+        "seconds": 8.3
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 3.993,
+        "heard": "Sus nubes forman franjas de color crema, ocre y marrón, que giran sin descanso alrededor del planeta.",
+        "seconds": 7.1
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.199,
+        "heard": "Y entre ellas, como un ojo que nunca se cierra, gira la gran mancha roja, una tormenta más ancha que nuestro propio mundo.",
+        "seconds": 8.9
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.03,
+        "heard": "Los astrónomos la observan desde hace más de 150 años y quizá lleva girando mucho más tiempo.",
+        "seconds": 7.0
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.139,
+        "heard": "En enero de 1610, Galileo Galilei apuntó su pequeño telescopio hacia Júpiter y descubrió cuatro lunas que giraban a su alrededor.",
+        "seconds": 9.4
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.464,
+        "heard": "Hoy las llamamos Io, Europa, Ganímedes y Calisto.",
+        "seconds": 5.5
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 4.061,
+        "heard": "Bajo el hielo de Europa podría esconderse un océano de agua líquida, más profundo que cualquier mar de la Tierra.",
+        "seconds": 7.3
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.226,
+        "heard": "La sonda Juno, lanzada por la NASA, sigue dando vueltas a su alrededor, enviándonos imágenes que nadie había visto antes.",
+        "seconds": 8.9
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.133,
+        "heard": "Respira despacio. Aquí, a casi 800 millones de kilómetros del sol, el tiempo parece avanzar más lento.",
+        "seconds": 8.5
+      }
+    ]
+  },
+  "qwen3_n2": {
+    "f0_median_hz": 134,
+    "pitch_var_st": 2.21,
+    "pitch_range_st": 7.1,
+    "mean_cer": 0.0032,
+    "max_cer": 0.0317,
+    "mean_mos": 4.05,
+    "words_per_min": 140,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.093,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, mientras un mundo inmenso aparece poco a poco frente a ti.",
+        "seconds": 7.9
+      },
+      {
+        "i": 1,
+        "cer": 0.0317,
+        "mos": 3.999,
+        "heard": "Es Júpiter, el planeta más grande de nuestro sistema solar, tan enorme que en su interior cabrían más de 1,300 tierras.",
+        "seconds": 8.2
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 3.649,
+        "heard": "Sus nubes forman franjas de color crema, ocre y marrón que giran sin descanso alrededor del planeta.",
+        "seconds": 7.7
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.074,
+        "heard": "Y entre ellas, como un ojo que nunca se cierra, gira la gran mancha roja, una tormenta más ancha que nuestro propio mundo.",
+        "seconds": 8.0
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.152,
+        "heard": "Los astrónomos la observan desde hace más de 150 años y quizá lleva girando mucho más tiempo.",
+        "seconds": 7.4
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.033,
+        "heard": "En enero de 1610, Galileo Galilei apuntó su pequeño telescopio hacia Júpiter y descubrió cuatro lunas que giraban a su alrededor.",
+        "seconds": 10.1
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.231,
+        "heard": "Hoy las llamamos Io Europa Ganímedes y Calisto.",
+        "seconds": 4.7
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 3.957,
+        "heard": "Bajo el hielo de Europa podría esconderse un océano de agua líquida más profundo que cualquier mar de la Tierra.",
+        "seconds": 7.5
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.187,
+        "heard": "La sonda Juno, lanzada por la NASA, sigue dando vueltas a su alrededor, enviándonos imágenes que nadie había visto antes.",
+        "seconds": 9.4
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.129,
+        "heard": "Respira despacio. Aquí, a casi 800 millones de kilómetros del sol, el tiempo parece avanzar más lento.",
+        "seconds": 8.2
+      }
+    ]
+  },
+  "qwen3_n3": {
+    "f0_median_hz": 79,
+    "pitch_var_st": 1.92,
+    "pitch_range_st": 6.5,
+    "mean_cer": 0.0025,
+    "max_cer": 0.0171,
+    "mean_mos": 3.949,
+    "words_per_min": 149,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 3.952,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, mientras un mundo inmenso aparece poco a poco frente a ti.",
+        "seconds": 7.1
+      },
+      {
+        "i": 1,
+        "cer": 0.0079,
+        "mos": 3.978,
+        "heard": "Es Júpiter, el planeta más grande de nuestro sistema solar, tan enorme que en su interior cabrían más de 1.300 tierras.",
+        "seconds": 8.2
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 3.74,
+        "heard": "Sus nubes forman franjas de color crema, ocre y marrón, que giran sin descanso alrededor del planeta.",
+        "seconds": 6.7
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 3.967,
+        "heard": "Y entre ellas, como un ojo que nunca se cierra, gira la gran mancha roja, una tormenta más ancha que nuestro propio mundo.",
+        "seconds": 8.3
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.103,
+        "heard": "Los astrónomos la observan desde hace más de 150 años y quizá lleva girando mucho más tiempo.",
+        "seconds": 6.6
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 3.842,
+        "heard": "En enero de 1610, Galileo Galilei apuntó su pequeño telescopio hacia Júpiter y descubrió cuatro lunas que giraban a su alrededor.",
+        "seconds": 8.6
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.034,
+        "heard": "Hoy las llamamos Io, Europa, Ganímedes y Calisto.",
+        "seconds": 5.3
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 3.921,
+        "heard": "Bajo el hielo de Europa podría esconderse un océano de agua líquida, más profundo que cualquier mar de la Tierra.",
+        "seconds": 6.7
+      },
+      {
+        "i": 8,
+        "cer": 0.0171,
+        "mos": 3.924,
+        "heard": "La sonda Shuno, lanzada por la NASA, sigue dando vueltas a su alrededor, enviándonos imágenes que nadie había visto antes.",
+        "seconds": 8.5
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.027,
+        "heard": "Respira despacio. Aquí, a casi 800 millones de kilómetros del sol, el tiempo parece avanzar más lento.",
+        "seconds": 8.6
+      }
+    ]
+  },
+  "qwen3_n4": {
+    "f0_median_hz": 85,
+    "pitch_var_st": 2.5,
+    "pitch_range_st": 8.6,
+    "mean_cer": 0.0008,
+    "max_cer": 0.0079,
+    "mean_mos": 4.022,
+    "words_per_min": 136,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 3.987,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, mientras un mundo inmenso aparece poco a poco frente a ti.",
+        "seconds": 7.7
+      },
+      {
+        "i": 1,
+        "cer": 0.0079,
+        "mos": 3.878,
+        "heard": "Es Júpiter, el planeta más grande de nuestro sistema solar. Tan enorme que en su interior cabrían más de 1.300 tierras.",
+        "seconds": 8.8
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 3.818,
+        "heard": "Sus nubes forman franjas de color crema, ocre y marrón que giran sin descanso alrededor del planeta.",
+        "seconds": 7.5
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 3.947,
+        "heard": "Y entre ellas, como un ojo que nunca se cierra, gira la gran mancha roja, una tormenta más ancha que nuestro propio mundo.",
+        "seconds": 9.4
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 3.931,
+        "heard": "Los astrónomos la observan desde hace más de 150 años y quizá lleva girando mucho más tiempo.",
+        "seconds": 6.7
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.118,
+        "heard": "En enero de 1610, Galileo Galilei apuntó su pequeño telescopio hacia Júpiter y descubrió cuatro lunas que giraban a su alrededor.",
+        "seconds": 10.4
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.291,
+        "heard": "Hoy las llamamos Io, Europa, Ganímedes y Calisto.",
+        "seconds": 5.1
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 3.917,
+        "heard": "Bajo el hielo de Europa podría esconderse un océano de agua líquida más profundo que cualquier mar de la Tierra.",
+        "seconds": 6.8
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.229,
+        "heard": "La sonda Juno, lanzada por la NASA, sigue dando vueltas a su alrededor, enviándonos imágenes que nadie había visto antes.",
+        "seconds": 10.0
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.107,
+        "heard": "Respira despacio. Aquí, a casi 800 millones de kilómetros del sol, el tiempo parece avanzar más lento.",
+        "seconds": 9.0
+      }
+    ]
+  },
+  "qwen3_n5": {
+    "f0_median_hz": 101,
+    "pitch_var_st": 3.15,
+    "pitch_range_st": 10.1,
+    "mean_cer": 0.0008,
+    "max_cer": 0.0079,
+    "mean_mos": 4.149,
+    "words_per_min": 155,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.173,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, mientras un mundo inmenso aparece poco a poco frente a ti.",
+        "seconds": 7.7
+      },
+      {
+        "i": 1,
+        "cer": 0.0079,
+        "mos": 4.043,
+        "heard": "Es Júpiter, el planeta más grande de nuestro sistema solar, tan enorme que en su interior cabrían más de 1.300 tierras.",
+        "seconds": 7.4
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 3.987,
+        "heard": "Sus nubes forman franjas de color crema, ocre y marrón, que giran sin descanso alrededor del planeta.",
+        "seconds": 6.7
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.134,
+        "heard": "Y entre ellas, como un ojo que nunca se cierra, gira la gran mancha roja, una tormenta más ancha que nuestro propio mundo.",
+        "seconds": 7.8
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.162,
+        "heard": "Los astrónomos la observan desde hace más de 150 años. Y quizá lleva girando mucho más tiempo.",
+        "seconds": 6.5
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.005,
+        "heard": "En enero de 1610, Galileo Galilei apuntó su pequeño telescopio hacia Júpiter y descubrió cuatro lunas que giraban a su alrededor.",
+        "seconds": 8.5
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.364,
+        "heard": "Hoy las llamamos Io, Europa, Ganímedes y Calisto.",
+        "seconds": 4.7
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 4.185,
+        "heard": "Bajo el hielo de Europa podría esconderse un océano de agua líquida, más profundo que cualquier mar de la Tierra.",
+        "seconds": 6.9
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.213,
+        "heard": "La sonda Juno, lanzada por la NASA, sigue dando vueltas a su alrededor, enviándonos imágenes que nadie había visto antes.",
+        "seconds": 8.0
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.22,
+        "heard": "Respira despacio. Aquí, a casi 800 millones de kilómetros del Sol, el tiempo parece avanzar más lento.",
+        "seconds": 7.6
+      }
+    ]
+  },
+  "qwen3_n6": {
+    "f0_median_hz": 93,
+    "pitch_var_st": 2.64,
+    "pitch_range_st": 8.9,
+    "mean_cer": 0.003,
+    "max_cer": 0.0217,
+    "mean_mos": 3.956,
+    "words_per_min": 160,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.004,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, mientras un mundo inmenso aparece poco a poco frente a ti.",
+        "seconds": 6.9
+      },
+      {
+        "i": 1,
+        "cer": 0.0079,
+        "mos": 3.872,
+        "heard": "Es Júpiter, el planeta más grande de nuestro sistema solar, tan enorme que en su interior cabrían más de 1.300 tierras.",
+        "seconds": 7.4
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 3.709,
+        "heard": "Sus nubes forman franjas de color crema, ocre y marrón que giran sin descanso alrededor del planeta.",
+        "seconds": 6.3
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 3.798,
+        "heard": "Y entre ellas, como un ojo que nunca se cierra, gira la gran mancha roja, una tormenta más ancha que nuestro propio mundo.",
+        "seconds": 7.4
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.02,
+        "heard": "Los astrónomos la observan desde hace más de 150 años y quizá lleva girando mucho más tiempo.",
+        "seconds": 6.4
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 3.939,
+        "heard": "En enero de 1610, Galileo Galilei apuntó su pequeño telescopio hacia Júpiter y descubrió cuatro lunas que giraban a su alrededor.",
+        "seconds": 8.2
+      },
+      {
+        "i": 6,
+        "cer": 0.0217,
+        "mos": 4.292,
+        "heard": "Hoy las llamamos I.O. Europa, Ganímedes y Calisto.",
+        "seconds": 4.5
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 3.882,
+        "heard": "Bajo el hielo de Europa podría esconderse un océano de agua líquida más profundo que cualquier mar de la Tierra.",
+        "seconds": 6.5
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.028,
+        "heard": "La sonda Juno, lanzada por la NASA, sigue dando vueltas a su alrededor enviándonos imágenes que nadie había visto antes.",
+        "seconds": 8.3
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.013,
+        "heard": "Respira despacio. Aquí, a casi 800 millones de kilómetros del Sol, el tiempo parece avanzar más lento.",
+        "seconds": 7.5
+      }
+    ]
   }
 }
