@@ -1,115 +1,50 @@
 {
-  "job_id": "voice-bench-20261016215502",
+  "job_id": "voice-bench-20261016230411",
   "errors": [],
   "engines": {
-    "voxcpm": {
+    "chatterbox": {
       "status": "done",
       "gpu": 0,
-      "install_min": 1.8,
+      "install_min": 0.7,
       "returncode": 0,
-      "minutes": 15.2,
+      "minutes": 7.3,
       "variants": {
-        "voxcpm2_f": {
-          "sr": 48000,
-          "speech_seconds": 82.4,
-          "gen_seconds": 240.0,
-          "rtf": 2.912
-        },
-        "voxcpm2_m": {
-          "sr": 48000,
-          "speech_seconds": 79.0,
-          "gen_seconds": 203.6,
-          "rtf": 2.576
-        }
-      },
-      "errors": [],
-      "torch": "2.14.1+cu130",
-      "cuda": true,
-      "version": null
-    },
-    "kokoro": {
-      "status": "done",
-      "gpu": 1,
-      "install_min": 1.8,
-      "returncode": 0,
-      "minutes": 2.8,
-      "variants": {
-        "kokoro_dora": {
-          "sr": 24000,
-          "speech_seconds": 83.2,
-          "gen_seconds": 4.8,
-          "rtf": 0.058
-        },
-        "kokoro_alex": {
-          "sr": 24000,
-          "speech_seconds": 84.5,
-          "gen_seconds": 2.7,
-          "rtf": 0.032
-        }
-      },
-      "errors": [],
-      "torch": "2.14.1+cu130",
-      "cuda": true,
-      "version": null
-    },
-    "qwen": {
-      "status": "done",
-      "gpu": 1,
-      "install_min": 1.1,
-      "returncode": 0,
-      "minutes": 17.2,
-      "variants": {
-        "qwen3_f": {
-          "sr": 24000,
-          "speech_seconds": 83.8,
-          "gen_seconds": 210.2,
-          "rtf": 2.507
-        },
-        "qwen3_m": {
+        "chatterbox_voxcpmref_f": {
           "sr": 24000,
           "speech_seconds": 72.0,
-          "gen_seconds": 176.7,
-          "rtf": 2.454
+          "gen_seconds": 92.3,
+          "rtf": 1.281
         },
-        "qwen3_voxref_f": {
+        "chatterbox_voxcpmref_m": {
           "sr": 24000,
-          "speech_seconds": 85.0,
-          "gen_seconds": 226.6,
-          "rtf": 2.667
+          "speech_seconds": 73.7,
+          "gen_seconds": 78.0,
+          "rtf": 1.059
         },
-        "qwen3_voxref_m": {
+        "chatterbox_qwenref_f": {
           "sr": 24000,
-          "speech_seconds": 72.7,
-          "gen_seconds": 197.8,
-          "rtf": 2.719
+          "speech_seconds": 78.0,
+          "gen_seconds": 80.7,
+          "rtf": 1.034
+        },
+        "chatterbox_qwenref_m": {
+          "sr": 24000,
+          "speech_seconds": 72.3,
+          "gen_seconds": 76.0,
+          "rtf": 1.051
         }
       },
       "errors": [],
-      "torch": "2.14.1+cu130",
-      "cuda": true,
-      "version": null
-    },
-    "chatterbox": {
-      "status": "failed",
-      "gpu": 0,
-      "install_min": 2.7,
-      "returncode": 0,
-      "minutes": 3.7,
-      "variants": {},
-      "errors": [
-        "Traceback (most recent call last):\n  File \"/kaggle/tmp/voicebench/worker.py\", line 142, in <module>\n    model = ChatterboxMultilingualTTS.from_pretrained(device=\"cuda\", t3_model=\"v3\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: ChatterboxMultilingualTTS.from_pretrained() got an unexpected keyword argument 't3_model'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/kaggle/tmp/voicebench/worker.py\", line 145, in <module>\n    model = ChatterboxMultilingualTTS.from_pretrained(device=\"cuda\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py\", line 220, in from_pretrained\n    return cls.from_local(ckpt_dir, device)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py\", line 199, in from_local\n    return cls(t3, s3gen, ve, tokenizer, device, conds=conds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py\", line 155, in __init__\n    self.watermarker = perth.PerthImplicitWatermarker()\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'NoneType' object is not callable\n"
-      ],
       "torch": "2.6.0+cu124",
       "cuda": true,
-      "version": null,
-      "stdout_tail": "[chatterbox] torch 2.6.0+cu124 cuda=True\n\nFetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nFetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  5.82it/s]\nFetching 6 files:  50%|█████     | 3/6 [00:00<00:00,  4.70it/s]\nFetching 6 files:  83%|████████▎ | 5/6 [00:12<00:03,  3.18s/it]\nFetching 6 files: 100%|██████████| 6/6 [00:23<00:00,  5.36s/it]\nFetching 6 files: 100%|██████████| 6/6 [00:23<00:00,  3.99s/it]\n/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.\n  deprecate(\"LoRACompatibleLinear\", \"1.0.0\", deprecation_message)\nDownloading: \"https://github.com/explosion/spacy-pkuseg/releases/download/v0.0.26/spacy_ontonotes.zip\" to /root/.pkuseg/spacy_ontonotes.zip\n\n  0%|          | 0/34567143 [00:00<?, ?it/s]\n 20%|█▉        | 6807552/34567143 [00:00<00:00, 68062278.51it/s]\n 72%|███████▏  | 24772608/34567143 [00:00<00:00, 133526862.31it/s]\n100%|██████████| 34567143/34567143 [00:00<00:00, 128055412.31it/s]\n[chatterbox] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py\", line 220, in from_pretrained\n    return cls.from_local(ckpt_dir, device)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py\", line 199, in from_local\n    return cls(t3, s3gen, ve, tokenizer, device, conds=conds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/venv_chatterbox/lib/python3.11/site-packages/chatterbox/mtl_tts.py\", line 155, in __init__\n    self.watermarker = perth.PerthImplicitWatermarker()\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'NoneType' object is not callable\n"
+      "version": "v3"
     },
     "score": {
       "status": "done",
       "gpu": 1,
-      "install_min": 0.0,
+      "install_min": 0.6,
       "returncode": 0,
-      "minutes": 2.2,
+      "minutes": 2.1,
       "variants": {},
       "errors": [],
       "torch": "2.14.1+cu130",
@@ -138,22 +73,18 @@
     "Tesla T4",
     "Tesla T4"
   ],
-  "minutes": 23.1,
+  "minutes": 9.9,
   "files": [
-    "kokoro_alex.mp3",
-    "kokoro_alex.wav",
-    "kokoro_dora.mp3",
-    "kokoro_dora.wav",
+    "chatterbox_qwenref_f.mp3",
+    "chatterbox_qwenref_f.wav",
+    "chatterbox_qwenref_m.mp3",
+    "chatterbox_qwenref_m.wav",
+    "chatterbox_voxcpmref_f.mp3",
+    "chatterbox_voxcpmref_f.wav",
+    "chatterbox_voxcpmref_m.mp3",
+    "chatterbox_voxcpmref_m.wav",
     "log.txt",
     "manifest.json",
-    "qwen3_f.mp3",
-    "qwen3_f.wav",
-    "qwen3_m.mp3",
-    "qwen3_m.wav",
-    "qwen3_voxref_f.mp3",
-    "qwen3_voxref_f.wav",
-    "qwen3_voxref_m.mp3",
-    "qwen3_voxref_m.wav",
     "ref_qwen_f.mp3",
     "ref_qwen_f.wav",
     "ref_qwen_m.mp3",
@@ -163,76 +94,42 @@
     "ref_voxcpm_m.mp3",
     "ref_voxcpm_m.wav",
     "res_chatterbox.json",
-    "res_kokoro.json",
-    "res_qwen.json",
     "res_score.json",
-    "res_voxcpm.json",
     "scores.json",
     "stdout_chatterbox.log",
-    "stdout_kokoro.log",
-    "stdout_qwen.log",
-    "stdout_score.log",
-    "stdout_voxcpm.log",
-    "voxcpm2_f.mp3",
-    "voxcpm2_f.wav",
-    "voxcpm2_m.mp3",
-    "voxcpm2_m.wav"
+    "stdout_score.log"
   ],
   "scores": {
-    "kokoro_alex": {
-      "mean_cer": 0.0032,
-      "max_cer": 0.0317,
-      "mean_mos": 3.457,
-      "words_per_min": 132
+    "chatterbox_qwenref_f": {
+      "mean_cer": 0.0016,
+      "max_cer": 0.0159,
+      "mean_mos": 3.986,
+      "words_per_min": 142
     },
-    "kokoro_dora": {
-      "mean_cer": 0.0032,
-      "max_cer": 0.0317,
-      "mean_mos": 3.743,
-      "words_per_min": 134
-    },
-    "qwen3_f": {
-      "mean_cer": 0.0032,
-      "max_cer": 0.0317,
-      "mean_mos": 4.373,
-      "words_per_min": 133
-    },
-    "qwen3_m": {
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 3.859,
+    "chatterbox_qwenref_m": {
+      "mean_cer": 0.003,
+      "max_cer": 0.0217,
+      "mean_mos": 3.613,
       "words_per_min": 154
     },
-    "qwen3_voxref_f": {
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 3.763,
-      "words_per_min": 131
+    "chatterbox_voxcpmref_f": {
+      "mean_cer": 0.0059,
+      "max_cer": 0.0217,
+      "mean_mos": 3.604,
+      "words_per_min": 154
     },
-    "qwen3_voxref_m": {
+    "chatterbox_voxcpmref_m": {
       "mean_cer": 0.0008,
       "max_cer": 0.0079,
-      "mean_mos": 3.725,
-      "words_per_min": 152
-    },
-    "voxcpm2_f": {
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 3.077,
-      "words_per_min": 135
-    },
-    "voxcpm2_m": {
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 3.296,
-      "words_per_min": 140
+      "mean_mos": 3.415,
+      "words_per_min": 151
     }
   },
   "push": {
-    "job_id": "voice-bench-20261016215502",
+    "job_id": "voice-bench-20261016230411",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792187704.880696,
+    "pushed_at": 1792191853.7231147,
     "ok": true,
-    "push_output": "Kernel version 12 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 13 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   }
 }
