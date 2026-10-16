@@ -26,6 +26,9 @@ CHANNELS = {
     "salvaje": {"word": "SALVAJE", "color": "#E0A43A",
                 "tag": "La historia de la Tierra, contada como una película",
                 "sched": "NUEVOS EPISODIOS CADA SEMANA"},
+    "cosmos": {"word": "QUIET COSMOS", "top": None, "big": 124, "color": "#E9B872",
+               "tag": "Slow space documentaries to relax, wonder and fall asleep",
+               "sched": "NEW EPISODES EVERY WEEK"},
     "perdido": {"word": "PERDIDO", "color": "#D27A4B", "tag": "Civilizaciones perdidas",
                 "sched": "PRÓXIMAMENTE"},
     "vivo": {"word": "VIVO", "color": "#7BB662", "tag": "La vida en la Tierra hoy", "sched": "PRÓXIMAMENTE"},
@@ -111,20 +114,24 @@ def banner(src, channel, ss=1, focus=(0.5, 0.5)):
     d = ImageDraw.Draw(img)
     cx, cy = W / 2, H / 2
     small = font("Jost.ttf", 34 * ss, 400)
-    big = font("CormorantGaramond.ttf", 150 * ss, 300)
+    top = ch.get("top", "ESTRATO")
+    big = font("CormorantGaramond.ttf", ch.get("big", 150) * ss, 300)
     tag = font("Jost.ttf", 40 * ss, 300)
     sched = font("Jost.ttf", 26 * ss, 400)
-    s_tr, b_tr, c_tr = 34 * ss * 0.62, 150 * ss * 0.1, 26 * ss * 0.34
+    s_tr, b_tr, c_tr = 34 * ss * 0.62, ch.get("big", 150) * ss * 0.1, 26 * ss * 0.34
     cap = lambda f, t: f.getbbox(t)[3] - f.getbbox(t)[1]
     h_small, h_big, h_tag, h_sched = cap(small, "E"), cap(big, "N"), cap(tag, "Dl"), cap(sched, "N")
     g1, g2, g3 = 30 * ss, 46 * ss, 28 * ss
+    if not top:
+        h_small = g1 = 0
     total = h_small + g1 + h_big + g2 + h_tag + g3 + h_sched
     y = cy - total / 2
 
-    w = tracked_width("ESTRATO", small, s_tr)
-    tracked(d, cx - w / 2, y - small.getbbox("E")[1], "ESTRATO", small, color, s_tr)
+    w = tracked_width(top or "", small, s_tr)
+    if top:
+        tracked(d, cx - w / 2, y - small.getbbox("E")[1], top, small, color, s_tr)
     # thin rules either side of ESTRATO, the network's signature
-    for side in (-1, 1):
+    for side in ((-1, 1) if top else ()):
         x1 = cx + side * (w / 2 + 28 * ss)
         x2 = x1 + side * 90 * ss
         d.line((min(x1, x2), y + h_small / 2, max(x1, x2), y + h_small / 2), fill=color + (200,), width=2 * ss)
@@ -137,6 +144,7 @@ def banner(src, channel, ss=1, focus=(0.5, 0.5)):
     w = tracked_width(ch["sched"], sched, c_tr)
     tracked(d, cx - w / 2, y - sched.getbbox("N")[1], ch["sched"], sched, color, c_tr)
     assert total < 423 * ss, "lockup taller than the safe area"
+    assert tracked_width(ch["word"], big, b_tr) < 1500 * ss, "title wider than the safe area"
     return img.convert("RGB")
 
 
@@ -192,7 +200,28 @@ def render(ids):
         print("rendered", cid)
 
 
+FINAL = HERE / "out"
+NAMES = {"nocturno": "estrato_nocturno", "salvaje": "estrato_salvaje", "cosmos": "quiet_cosmos_photo"}
+
+
+def final(ids):
+    """Upload-ready files for the chosen candidates, kept in branding/out/ (tracked in git)."""
+    for cid in ids:
+        slot = cid.split("_p")[0]
+        channel = slot.split("_")[0]
+        src = CAND / slot / f"{cid}.jpg"
+        name = NAMES[channel]
+        if slot.endswith("avatar"):
+            avatar(src, channel).save(FINAL / f"{name}_profile_800.png", optimize=True)
+        else:
+            banner(src, channel).save(FINAL / f"{name}_banner_2560x1440.jpg", quality=92)
+        print("final", cid)
+
+
 if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "final":
+        final(sys.argv[2:])
+        sys.exit()
     if len(sys.argv) > 1 and sys.argv[1] == "render":
         render(sys.argv[2:])
     else:
