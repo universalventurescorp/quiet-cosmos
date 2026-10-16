@@ -45,6 +45,19 @@ def write_mp4(frames, path, fps=24):
     p.wait()
 
 
+def save(m):
+    """Write the manifest after every step: if Kaggle kills the process (out of RAM), what we have survives."""
+    try:
+        import psutil
+        m["ram_used_gb"] = round(psutil.virtual_memory().used / 1e9, 1)
+    except Exception:
+        pass
+    m["images"] = sorted(p.name for p in OUT.glob("*.jpg"))
+    m["videos"] = sorted(p.name for p in OUT.glob("*.mp4"))
+    m["minutes"] = round((time.time() - T0) / 60, 1)
+    (OUT / "manifest.json").write_text(json.dumps(m, indent=1))
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     job = json.loads(base64.b64decode(JOB_B64))
@@ -74,6 +87,8 @@ def main():
         del sd
         torch.cuda.empty_cache()
         log("source stills ready")
+        m["stage"] = "stills ready"
+        save(m)
 
         def cover(img, w, h):
             k = max(w / img.width, h / img.height)
@@ -86,7 +101,11 @@ def main():
             ("distilled2b_098", "distilled"),
         ]
         for vname, kind in variants:
+            m["stage"] = f"loading {vname}"
+            save(m)
             try:
+                import gc
+                gc.collect()
                 t_load = time.time()
                 if kind == "base":
                     from diffusers import LTXImageToVideoPipeline
@@ -122,9 +141,16 @@ def main():
                                       generator=torch.Generator("cpu").manual_seed(3)).frames[0]
                     write_mp4(frames, OUT / f"{vname}_{name}.mp4")
                     times.append(round(time.time() - t, 1))
+                    m["bench"][vname] = {"seconds_per_clip": times, "frames": 97, "partial": True}
+                    m["stage"] = f"{vname}: {len(times)} clips"
+                    save(m)
                     log(f"{vname} {name}: {times[-1]} s")
                 m["bench"][vname] = {"seconds_per_clip": times, "frames": 97}
+                pipe.remove_all_hooks() if hasattr(pipe, "remove_all_hooks") else None
                 del pipe
+                if kind != "base":
+                    del te
+                gc.collect()
                 torch.cuda.empty_cache()
             except Exception:
                 err = traceback.format_exc()[-1500:]
