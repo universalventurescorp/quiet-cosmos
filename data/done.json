@@ -40,5 +40,19 @@
     "ai_scenes": 0,
     "ai_status": "ok",
     "date": "2026-10-16"
+  },
+  {
+    "topic": "A tour of every planet in the solar system, from the Sun outward",
+    "title": "Planets of the Solar System | A Calm Journey to Fall Asleep To",
+    "video_id": "OHeyW9lI8xM",
+    "shorts": [
+      "BDhuTGB8h4k",
+      "D0IOwvUdQcs"
+    ],
+    "minutes": 54.8,
+    "qa_ok": true,
+    "ai_scenes": 103,
+    "ai_status": "ok",
+    "date": "2026-10-16"
   }
 ]
