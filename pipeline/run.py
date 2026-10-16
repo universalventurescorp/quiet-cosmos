@@ -9,6 +9,7 @@ import json
 import datetime as dt
 import math
 import os
+import time
 import zlib
 
 from .common import (DATA, LANG_NAMES, ROOT, load_config, read_json, slugify,
@@ -39,7 +40,16 @@ def video_bench(cfg):
     out = ROOT / "outputs" / "video-bench"
     out.mkdir(parents=True, exist_ok=True)
     job = {"job_id": f"video-bench-{dt.datetime.utcnow():%Y%m%d%H%M%S}"}
-    state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / "bench_video.py") if gpu.configured() else {}
+    prev_state = read_json(DATA / "diagnostics" / "video_bench" / "manifest.json", {}).get("push") or {}
+    if (prev_state.get("ok") and not prev_state.get("reused")
+            and time.time() - prev_state.get("pushed_at", 0) < 4 * 3600):
+        # a bench pushed in the last 4 h may still be running (or finished) on Kaggle: collect it
+        # instead of spending GPU quota on a new one
+        state = {**prev_state, "reused": True}      # reuse once; if it yields nothing, the next run pushes anew
+        write_json(out / "kaggle.json", state)
+        print(f"   collecting the bench already on Kaggle: {state['job_id']}")
+    else:
+        state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / "bench_video.py") if gpu.configured() else {}
     manifest = gpu.collect(out, cfg, wait_minutes=150) if state.get("ok") else None
     prev = DATA / "diagnostics" / "video_bench"
     prev.mkdir(parents=True, exist_ok=True)

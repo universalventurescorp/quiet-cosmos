@@ -79,6 +79,9 @@ def status(ref):
     return "unknown", text.strip()
 
 
+STALE_GRACE = 30   # minutes during which a finished status is assumed to belong to the previous version
+
+
 def collect(out, cfg, wait_minutes=None):
     """Wait for the kernel and download its output into out/ai. Returns the worker manifest or None."""
     state = read_json(out / "kaggle.json", None)
@@ -101,9 +104,11 @@ def collect(out, cfg, wait_minutes=None):
             manifest = _download(state, out)
             if manifest and manifest.get("job_id") == state["job_id"]:
                 return manifest
-            if st == "complete":
-                # the status endpoint can still show the PREVIOUS version as complete while ours is
-                # queued or running: keep waiting until the output belongs to this job
+            # the status endpoint can still show the PREVIOUS version (complete, error or cancelled)
+            # while ours is queued or running: keep waiting until the output belongs to this job.
+            # Our worker always writes a manifest, so a stale "error" is far more likely than a real one;
+            # a real kernel-level error only costs STALE_GRACE minutes of extra waiting.
+            if st == "complete" or time.time() - state["pushed_at"] < STALE_GRACE * 60:
                 time.sleep(120)
                 continue
             print(f"   kaggle finished with status {st} but no results for this job")
