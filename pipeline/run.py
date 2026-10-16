@@ -63,6 +63,15 @@ def video_bench(cfg):
                         "fps=2,scale=320:-2,tile=4x2", "-frames:v", "1", str(prev / f"{p.stem}_frames.jpg")])
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(p), "-vf", "scale=480:-2",
                         "-c:v", "libx264", "-crf", "30", "-an", str(prev / f"{p.stem}.mp4")])
+    if not manifest:
+        # keep whatever Kaggle left (its own .log has the stdout/stderr of the crash) so we can read it from git
+        for f in list((out / "kaggle_output").rglob("*.log")) + list((out / "kaggle_output").rglob("log.txt")):
+            lines = f.read_text(errors="ignore").splitlines()
+            (prev / f"kaggle_{f.name}.txt").write_text("\n".join(lines[-300:]))
+        try:
+            state = {**state, "final_status": gpu.status(state["kernel"])[1][-800:]} if state.get("kernel") else state
+        except Exception:
+            pass
     write_json(prev / "manifest.json", manifest or {"error": "no result", "push": state})
     print(json.dumps(manifest or {}, indent=1)[:4000])
 
