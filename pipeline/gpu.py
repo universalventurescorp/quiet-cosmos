@@ -101,8 +101,10 @@ def collect(out, cfg, wait_minutes=None):
             manifest = _download(state, out)
             if manifest and manifest.get("job_id") == state["job_id"]:
                 return manifest
-            if st == "complete" and time.time() - state["pushed_at"] < 600:
-                time.sleep(60)                                  # probably still the previous version
+            if st == "complete":
+                # the status endpoint can still show the PREVIOUS version as complete while ours is
+                # queued or running: keep waiting until the output belongs to this job
+                time.sleep(120)
                 continue
             print(f"   kaggle finished with status {st} but no results for this job")
             return None
