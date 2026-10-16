@@ -34,7 +34,15 @@
       "usable_1080p_no_people": 23
     }
   },
-  "seconds": 31.9,
+  "rejected": [
+    {
+      "pixabay_id": 253436,
+      "tags": "volcano, nature, iceland, landscape, fire, mountain, lava, smoke, animals, bird, wildlife",
+      "why": "a city with buildings",
+      "p": 0.806
+    }
+  ],
+  "seconds": 68.8,
   "clips": [
     {
       "pixabay_id": 1890,
@@ -51,10 +59,17 @@
       "query": "ocean waves aerial"
     },
     {
-      "pixabay_id": 253436,
-      "title": "volcano, nature, iceland, landscape, fire, mountain, lava, smoke, animals, bird, wildlife",
-      "user": "LisaOlivia",
-      "duration": 6.0,
+      "pixabay_id": 152085,
+      "title": "volcano, iceland, icelandic, eruption, smoking, fire, lava, glow, drone, nature, pollution",
+      "user": "Gylfi",
+      "duration": 6.041667,
+      "query": "volcano lava"
+    },
+    {
+      "pixabay_id": 152085,
+      "title": "volcano, iceland, icelandic, eruption, smoking, fire, lava, glow, drone, nature, pollution",
+      "user": "Gylfi",
+      "duration": 6.041667,
       "query": "volcano lava"
     },
     {
@@ -112,13 +127,6 @@
       "user": "Quankawa",
       "duration": 6.041667,
       "query": "waterfall jungle"
-    },
-    {
-      "pixabay_id": 284568,
-      "title": "namibia, nature, africa, drone, desert, sand, dunes",
-      "user": "antonlukin",
-      "duration": 6.041667,
-      "query": "desert dunes aerial"
     }
   ]
 }
