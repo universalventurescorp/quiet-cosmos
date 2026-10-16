@@ -8,6 +8,7 @@ to branding/candidates/<slot>/; branding/estrato.py then adds the colored ring, 
 """
 import datetime as dt
 import json
+import os
 import zlib
 
 from PIL import Image
@@ -28,7 +29,24 @@ STYLE_DINO = ("cinematic nature documentary photograph, photorealistic, golden h
 SQUARE = {"width": 1024, "height": 1024}
 WIDE = {"width": 1344, "height": 768}
 
+STYLE_COSMOS = ("photorealistic deep space astrophotography, high detail, deep blacks, warm starlight, "
+                "soft gold highlights, calm, 35mm film")
+
 SLOTS = {
+    "cosmos_avatar": (SQUARE, STYLE_COSMOS, NEG_SPACE, [
+        "a dark planet seen as a thin bright crescent against black space, a delicate glowing golden ring "
+        "circling it, a few faint stars, centered composition",
+        "Saturn seen from its night side as a thin crescent, its rings backlit and glowing gold, black space, "
+        "centered composition",
+        "a crescent planet half in shadow with a thin tilted golden ring, deep black space, soft starlight, "
+        "minimal, centered composition",
+    ]),
+    "cosmos_banner": (WIDE, STYLE_COSMOS, NEG_SPACE, [
+        "a crescent Saturn with backlit glowing golden rings on the far right side, vast black starry space "
+        "elsewhere, wide cinematic composition with dark empty space in the center",
+        "a thin crescent planet with a faint golden ring at the right edge, the Milky Way softly glowing across "
+        "black space, wide cinematic composition with dark empty space in the center",
+    ]),
     "nocturno_avatar": (SQUARE, STYLE_SPACE, NEG_SPACE, [
         "the planet Earth at night seen from deep space, golden city lights across the continents, thin glowing "
         "blue atmosphere rim, the Moon small in the upper right, black starry background, centered composition",
@@ -64,7 +82,10 @@ SEEDS_PER_PROMPT = 4
 def build_job(job_id, cfg):
     ai = cfg["ai"]
     images = []
+    only = [x for x in os.environ.get("BRANDING_SLOTS", "").split(",") if x]
     for slot, (size, style, neg, prompts) in SLOTS.items():
+        if only and slot not in only:
+            continue
         for p, prompt in enumerate(prompts):
             for s in range(SEEDS_PER_PROMPT):
                 iid = f"{slot}_p{p + 1}_s{s + 1}"

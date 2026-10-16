@@ -5,6 +5,10 @@ name: branding-candidates
 # Deja las imágenes en la rama "branding-candidates" (branding/candidates/), sin engordar main.
 on:
   workflow_dispatch:
+    inputs:
+      slots:
+        description: "Piezas a pintar, separadas por comas (vacío = todas)"
+        required: false
 
 permissions:
   contents: write
@@ -28,13 +32,16 @@ jobs:
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          BRANDING_SLOTS: ${{ inputs.slots }}
         run: python -m pipeline.branding_gen
       - name: Save candidates to their own branch
         if: always()
         run: |
           git config user.name "quiet-cosmos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git checkout -B branding-candidates
+          mv branding/candidates /tmp/new_candidates
+          git fetch origin branding-candidates && git checkout -B branding-candidates origin/branding-candidates || git checkout -B branding-candidates
+          mkdir -p branding/candidates && cp -r /tmp/new_candidates/. branding/candidates/
           git add -f branding/candidates
           git commit -m "Branding candidates $(date -u +%F)" || true
           git push -f origin branding-candidates
