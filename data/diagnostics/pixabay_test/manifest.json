@@ -1,0 +1,124 @@
+{
+  "configured": true,
+  "queries": {
+    "ocean waves aerial": {
+      "hits": 50,
+      "usable_1080p_no_people": 41
+    },
+    "volcano lava": {
+      "hits": 50,
+      "usable_1080p_no_people": 44
+    },
+    "river forest aerial": {
+      "hits": 50,
+      "usable_1080p_no_people": 35
+    },
+    "fern forest": {
+      "hits": 50,
+      "usable_1080p_no_people": 40
+    },
+    "storm clouds timelapse": {
+      "hits": 50,
+      "usable_1080p_no_people": 39
+    },
+    "waterfall jungle": {
+      "hits": 50,
+      "usable_1080p_no_people": 41
+    },
+    "desert dunes aerial": {
+      "hits": 50,
+      "usable_1080p_no_people": 36
+    },
+    "underwater coral reef": {
+      "hits": 50,
+      "usable_1080p_no_people": 23
+    }
+  },
+  "seconds": 31.9,
+  "clips": [
+    {
+      "pixabay_id": 1890,
+      "title": "cliff, island, aerial view, nature, landscape, ocean, sea, waves",
+      "user": "bellergy",
+      "duration": 6.041667,
+      "query": "ocean waves aerial"
+    },
+    {
+      "pixabay_id": 1890,
+      "title": "cliff, island, aerial view, nature, landscape, ocean, sea, waves",
+      "user": "bellergy",
+      "duration": 6.041667,
+      "query": "ocean waves aerial"
+    },
+    {
+      "pixabay_id": 253436,
+      "title": "volcano, nature, iceland, landscape, fire, mountain, lava, smoke, animals, bird, wildlife",
+      "user": "LisaOlivia",
+      "duration": 6.0,
+      "query": "volcano lava"
+    },
+    {
+      "pixabay_id": 216058,
+      "title": "drone, drones, drone images, nature, forest, river, landscape, drone footage, aerial view, aerial image, amazon, aerial images, cloud, sky",
+      "user": "Drone_Aventura",
+      "duration": 6.0,
+      "query": "river forest aerial"
+    },
+    {
+      "pixabay_id": 216058,
+      "title": "drone, drones, drone images, nature, forest, river, landscape, drone footage, aerial view, aerial image, amazon, aerial images, cloud, sky",
+      "user": "Drone_Aventura",
+      "duration": 6.0,
+      "query": "river forest aerial"
+    },
+    {
+      "pixabay_id": 16134,
+      "title": "fern, fern leaf, worm fern, dancing leaves, forest plant, fern plant, leaf, green, leaves, fern fronds, plant, nature, time lapse, timelapse",
+      "user": "adege",
+      "duration": 6.0,
+      "query": "fern forest"
+    },
+    {
+      "pixabay_id": 16134,
+      "title": "fern, fern leaf, worm fern, dancing leaves, forest plant, fern plant, leaf, green, leaves, fern fronds, plant, nature, time lapse, timelapse",
+      "user": "adege",
+      "duration": 6.0,
+      "query": "fern forest"
+    },
+    {
+      "pixabay_id": 107336,
+      "title": "clouds, heaven, storm, weather, mood, time lapse, timelapse",
+      "user": "adege",
+      "duration": 6.041667,
+      "query": "storm clouds timelapse"
+    },
+    {
+      "pixabay_id": 107336,
+      "title": "clouds, heaven, storm, weather, mood, time lapse, timelapse",
+      "user": "adege",
+      "duration": 6.041667,
+      "query": "storm clouds timelapse"
+    },
+    {
+      "pixabay_id": 178732,
+      "title": "waterfall, jungle, halong bay, vietnam, saigon, hanoi, mocchau, sapa, ninhbinh, hagiang, water, travel",
+      "user": "Quankawa",
+      "duration": 6.041667,
+      "query": "waterfall jungle"
+    },
+    {
+      "pixabay_id": 178732,
+      "title": "waterfall, jungle, halong bay, vietnam, saigon, hanoi, mocchau, sapa, ninhbinh, hagiang, water, travel",
+      "user": "Quankawa",
+      "duration": 6.041667,
+      "query": "waterfall jungle"
+    },
+    {
+      "pixabay_id": 284568,
+      "title": "namibia, nature, africa, drone, desert, sand, dunes",
+      "user": "antonlukin",
+      "duration": 6.041667,
+      "query": "desert dunes aerial"
+    }
+  ]
+}
