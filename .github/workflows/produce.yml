@@ -2,9 +2,14 @@ name: produce-episode
 
 on:
   schedule:
-    - cron: "17 12 * * *"     # todos los días 07:17 hora de Lima
+    - cron: "17 12 * * *"     # todos los días 07:17 hora de Lima; el canal depende del día (ver "Pick channel")
   workflow_dispatch:
     inputs:
+      channel:
+        description: "Canal (auto = el que toca hoy)"
+        type: choice
+        options: [auto, quiet-cosmos, estrato-nocturno]
+        default: auto
       topic:
         description: "Tema opcional (vacío = siguiente de la cola)"
         required: false
@@ -74,12 +79,29 @@ jobs:
           path: ~/.cache/huggingface
           key: hf-kokoro-depth-v3
 
+      - name: Pick channel
+        id: pick
+        run: |
+          CH="${{ inputs.channel }}"
+          if [ -z "$CH" ] || [ "$CH" = "auto" ]; then
+            # Quiet Cosmos: lunes, martes, jueves y sábado. Estrato Nocturno: miércoles, viernes y domingo.
+            # (alternar días mantiene cada canal a un ritmo creíble y no agota la cuota diaria de la API)
+            case "$(TZ=America/Lima date +%u)" in
+              3|5|7) CH=estrato-nocturno ;;
+              *)     CH=quiet-cosmos ;;
+            esac
+          fi
+          echo "channel=$CH" >> "$GITHUB_OUTPUT"
+          echo "Canal de hoy: $CH"
+
       - name: Produce episode
         env:
+          CHANNEL: ${{ steps.pick.outputs.channel }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN_NOCTURNO: ${{ secrets.YT_REFRESH_TOKEN_NOCTURNO }}
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}

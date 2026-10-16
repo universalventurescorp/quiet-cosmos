@@ -1,0 +1,19 @@
+# Estrato Nocturno — documentales para dormir en español (red Estrato).
+# Solo cambia lo que difiere de config.yaml; todo lo demás se hereda de Quiet Cosmos.
+channel:
+  name: "Estrato Nocturno"
+  language: es
+  wordmark: "ESTRATO NOCTURNO"
+  mark: none               # el logo de la luna es de Quiet Cosmos; Estrato tendrá su propio icono
+  about: >-
+    a Spanish-language YouTube channel of calm, long-form space documentaries to relax and fall asleep to
+    (planets, moons, the Sun, stars, nebulae, galaxies, black holes, and our own planet seen from space).
+    Audience: Latin America and Spain; prefer the subjects with the strongest search demand in Spanish
+
+voice:
+  id: ef_dora              # Kokoro, español. Alternativa masculina: em_alex
+  speed: 0.8               # el español suena más natural un poco menos lento que el inglés
+
+
+upload:
+  token_env: YT_REFRESH_TOKEN_NOCTURNO   # secreto de GitHub con el permiso de subida de ESTE canal

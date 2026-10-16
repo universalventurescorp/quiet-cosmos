@@ -91,14 +91,18 @@ def _glow(layer, radius, strength):
 
 def _signature(b, img, x, y, align="left"):
     """Small logo mark + QUIET COSMOS wordmark, the constant element across thumbnails."""
+    from .common import load_config
+    ch = load_config()["channel"]
     f = b.font("Jost.ttf", 22, 500)
-    word = "QUIET COSMOS"
+    word = ch.get("wordmark", "QUIET COSMOS")
     tw = b.tracked_width(word, f, 22 * 0.3)
-    mark = 46
+    show_mark = ch.get("mark", "quiet-cosmos") == "quiet-cosmos"     # the moon mark is Quiet Cosmos's own logo
+    mark = 46 if show_mark else -12
     total = mark + 12 + tw
     x0 = x if align == "left" else (x - total if align == "right" else x - total / 2)
     lay = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    b.draw_mark(lay, x0 + mark / 2, y, mark * 1.6)
+    if show_mark:
+        b.draw_mark(lay, x0 + mark / 2, y, mark * 1.6)
     b.tracked(ImageDraw.Draw(lay), (x0 + mark + 12, y - 15), word, f, b.STAR + (235,), 22 * 0.3)
     img.alpha_composite(_glow(lay, 6, 0.9))
     img.alpha_composite(lay)

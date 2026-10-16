@@ -40,7 +40,7 @@ def video_bench(cfg):
     out = ROOT / "outputs" / "video-bench"
     out.mkdir(parents=True, exist_ok=True)
     job = {"job_id": f"video-bench-{dt.datetime.utcnow():%Y%m%d%H%M%S}"}
-    prev_state = read_json(DATA / "diagnostics" / "video_bench" / "manifest.json", {}).get("push") or {}
+    prev_state = read_json(ROOT / "data" / "diagnostics" / "video_bench" / "manifest.json", {}).get("push") or {}
     if (prev_state.get("ok") and not prev_state.get("reused")
             and time.time() - prev_state.get("pushed_at", 0) < 4 * 3600):
         # a bench pushed in the last 4 h may still be running (or finished) on Kaggle: collect it
@@ -51,7 +51,7 @@ def video_bench(cfg):
     else:
         state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / "bench_video.py") if gpu.configured() else {}
     manifest = gpu.collect(out, cfg, wait_minutes=150) if state.get("ok") else None
-    prev = DATA / "diagnostics" / "video_bench"
+    prev = ROOT / "data" / "diagnostics" / "video_bench"
     prev.mkdir(parents=True, exist_ok=True)
     for f in prev.glob("*"):
         f.unlink()
@@ -101,7 +101,7 @@ def gpu_test(cfg):
         # small previews committed to the repo, to judge quality without downloading artifacts
         import subprocess
         from PIL import Image
-        prev = DATA / "diagnostics" / "gpu_test"
+        prev = ROOT / "data" / "diagnostics" / "gpu_test"
         prev.mkdir(parents=True, exist_ok=True)
         for f in prev.glob("*"):
             f.unlink()

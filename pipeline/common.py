@@ -1,4 +1,5 @@
 import json
+import os
 import pathlib
 import re
 import subprocess
@@ -6,12 +7,28 @@ import subprocess
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
+# One repo, several channels. CHANNEL picks channels/<name>.yaml (merged over config.yaml) and its own
+# data folder (topic queue, episodes done, media already used). Quiet Cosmos keeps the original paths.
+DEFAULT_CHANNEL = "quiet-cosmos"
+CHANNEL = (os.environ.get("CHANNEL") or DEFAULT_CHANNEL).strip()
+DATA = ROOT / "data" if CHANNEL == DEFAULT_CHANNEL else ROOT / "data" / "channels" / CHANNEL
 LANG_NAMES = {"en": "English", "es": "Spanish (neutral Latin American)"}
 
 
+def _merge(base, over):
+    for k, v in (over or {}).items():
+        base[k] = _merge(base.get(k, {}), v) if isinstance(v, dict) and isinstance(base.get(k), dict) else v
+    return base
+
+
 def load_config():
-    return yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+    cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+    if CHANNEL != DEFAULT_CHANNEL:
+        path = ROOT / "channels" / f"{CHANNEL}.yaml"
+        if not path.exists():
+            raise SystemExit(f"unknown channel '{CHANNEL}': {path} not found")
+        cfg = _merge(cfg, yaml.safe_load(path.read_text(encoding="utf-8")))
+    return cfg
 
 
 def read_json(path, default):

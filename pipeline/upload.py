@@ -5,15 +5,22 @@ SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
           "https://www.googleapis.com/auth/youtube.force-ssl"]
 
 
+def _token_env():
+    """Each channel names its own refresh-token secret (channels/<name>.yaml → upload.token_env), so a missing
+    secret means "no upload", never an upload to another channel's account."""
+    from .common import load_config
+    return load_config().get("upload", {}).get("token_env", "YT_REFRESH_TOKEN")
+
+
 def has_credentials():
-    return all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
+    return all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", _token_env()))
 
 
 def _client():
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
 
-    creds = Credentials(None, refresh_token=os.environ["YT_REFRESH_TOKEN"],
+    creds = Credentials(None, refresh_token=os.environ[_token_env()],
                         token_uri="https://oauth2.googleapis.com/token",
                         client_id=os.environ["YT_CLIENT_ID"],
                         client_secret=os.environ["YT_CLIENT_SECRET"], scopes=SCOPES)

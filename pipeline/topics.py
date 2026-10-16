@@ -21,7 +21,7 @@ def next_topic(cfg):
 
 def generate_topics(cfg, existing):
     ch = cfg["channel"]
-    prompt = f"""You plan episodes for "{ch['name']}", a YouTube channel of calm long-form space documentaries for relaxation and sleep, narrated in {LANG_NAMES[ch['language']]}.
+    prompt = f"""You plan episodes for "{ch['name']}", {ch.get('about', 'a YouTube channel of calm long-form space documentaries for relaxation and sleep')}, narrated in {LANG_NAMES[ch['language']]}.
 Episodes already made or planned: {json.dumps(existing[-100:], ensure_ascii=False)}
 
 Propose 20 NEW episode topics that (1) people actively search for on YouTube, (2) have enough real, well-established science for a {cfg['video']['target_minutes']}-minute episode, and (3) do not overlap with the list.
