@@ -5,6 +5,7 @@ topic -> script (+review) -> AI scene plan -> [Kaggle GPU paints scenes, in para
 Resumable: if a run dies, rerun with the same --topic and finished steps are skipped.
 """
 import argparse
+import json
 import datetime as dt
 import math
 import os
@@ -32,6 +33,54 @@ def build_description(script, timing, lang, used_ai=False):
     return f"{script['description']}\n\n{label}\n" + "\n".join(lines) + f"\n\n{credits}"
 
 
+def gpu_test(cfg):
+    from . import gpu
+    from .scenes import build_job
+    out = ROOT / "outputs" / "gpu-test"
+    out.mkdir(parents=True, exist_ok=True)
+    plan = {"sections": [{"id": "chapter_1", "scenes": [
+        {"anchor": "", "prompt": "the surface of Titan under an orange hazy sky, methane lakes and icy pebbles, "
+                                 "wide establishing shot from the ground", "motion": "slow push in, haze drifting",
+         "video": True},
+        {"anchor": "", "prompt": "Saturn with its rings seen from orbit, sunlight glinting on the ring plane"},
+        {"anchor": "", "prompt": "the Milky Way core rising over a dark rocky alien horizon, long exposure"},
+        {"anchor": "", "prompt": "a black hole with a glowing accretion disk bending light around it"}]}]}
+    job = build_job(plan, cfg, f"gpu-test-{dt.datetime.utcnow():%Y%m%d%H%M%S}", "gpu test")
+    job["budget_minutes"] = 45
+    write_json(out / "gpu_job.json", job)
+    print(f"GPU test: configured={gpu.configured()}")
+    state = gpu.launch(job, out, cfg) if gpu.configured() else {}
+    manifest = gpu.collect(out, cfg, wait_minutes=90) if state.get("ok") else None
+    if manifest:
+        from .scenes import prepare_ai_files
+        files = prepare_ai_files(out / "ai", cfg)
+        print(f"GPU test result: {len(files['images'])} images, {len(files['clips'])} clips")
+    save_diagnostics(out, {"gpu_test": True}, {"status": "ok" if manifest else "failed",
+                                               "errors": (manifest or {}).get("errors", [])})
+    print(json.dumps(read_json(DATA / "diagnostics" / "last_episode.json", {}), indent=1)[:6000])
+
+
+def save_diagnostics(out, report=None, ai_media=None):
+    """Small report committed to the repo (data/diagnostics/) so problems can be read without
+    downloading Actions artifacts."""
+    def tail(path, n=60):
+        return path.read_text(errors="ignore").splitlines()[-n:] if path.exists() else []
+    plan = read_json(out / "scenes.json", {"sections": []})
+    diag = {
+        "episode": out.name,
+        "date": dt.datetime.utcnow().isoformat(timespec="seconds"),
+        "qa": {k: v for k, v in (report or {}).items()},
+        "ai_status": (ai_media or {}).get("status"),
+        "ai_errors": [e[-1500:] for e in (ai_media or {}).get("errors", [])],
+        "scene_plan": {sec["id"]: len(sec["scenes"]) for sec in plan.get("sections", [])},
+        "gpu_job_images": len(read_json(out / "gpu_job.json", {}).get("images", [])),
+        "kaggle_push": read_json(out / "kaggle.json", {}),
+        "kaggle_manifest": read_json(out / "ai" / "manifest.json", None),
+        "kaggle_log": tail(out / "ai" / "log.txt"),
+    }
+    write_json(DATA / "diagnostics" / "last_episode.json", diag)
+
+
 def step(n, total, text):
     print(f"[{n}/{total}] {text}", flush=True)
 
@@ -42,7 +91,10 @@ def main():
     ap.add_argument("--no-upload", action="store_true")
     ap.add_argument("--no-shorts", action="store_true")
     ap.add_argument("--no-ai", action="store_true", help="v2 look: NASA imagery only, no Kaggle GPU")
+    ap.add_argument("--gpu-test", action="store_true", help="only test Kaggle: 4 images + 1 clip (~20 min)")
     args = ap.parse_args()
+    if args.gpu_test:
+        return gpu_test(load_config())
 
     cfg = load_config()
     v = cfg["video"]
@@ -85,7 +137,10 @@ def main():
             job = build_job(plan, cfg, f"{slugify(topic)}-{dt.datetime.utcnow():%Y%m%d%H%M%S}", topic)
             write_json(out / "gpu_job.json", job)
             print(f"   sending {len(job['images'])} images + {len(job['videos'])} clips to Kaggle")
-            gpu_state = gpu.launch(job, out, cfg)
+            if job["images"]:
+                gpu_state = gpu.launch(job, out, cfg)
+            else:
+                print("   Claude returned no scene prompts: NASA imagery only")
 
     # 3. narration + captions
     timing = read_json(out / "timing.json", None)
@@ -145,7 +200,10 @@ def main():
                 files = prepare_ai_files(out / "ai", cfg)
                 placed = place_scenes(read_json(out / "scenes.json", {"sections": []}), files,
                                       read_srt(out / "captions.srt"), timing, min_gap=v["seconds_per_image"])
-                ai_media = {"placed": placed, "status": "ok", "errors": manifest.get("errors", []),
+                n_placed = sum(len(x) for x in placed.values())
+                status = "ok" if n_placed else (
+                    f"kaggle returned {len(files['images'])} images, {n_placed} placed")
+                ai_media = {"placed": placed, "status": status, "errors": manifest.get("errors", []),
                             "gpus": manifest.get("gpus", []), "gpu_minutes": manifest.get("minutes"),
                             "images": len(files["images"]), "clips": len(files["clips"])}
             else:
@@ -235,6 +293,7 @@ def main():
                else "upload disabled")
         step(12, N, f"upload skipped ({why})")
 
+    save_diagnostics(out, report, ai_media)
     done = read_json(DATA / "done.json", [])
     done.append({"topic": topic, "title": script["title"], "video_id": video_id, "shorts": short_ids,
                  "minutes": round(timing["duration"] / 60, 1), "qa_ok": report["ok"],

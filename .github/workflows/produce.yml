@@ -20,6 +20,10 @@ on:
         description: "Escenas IA en Kaggle (v3)"
         type: boolean
         default: true
+      gpu_test:
+        description: "Solo probar la GPU de Kaggle (4 imágenes + 1 clip, ~20 min, no produce episodio)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -80,6 +84,7 @@ jobs:
           ARGS=""
           [ "${{ inputs.shorts }}" = "false" ] && ARGS="$ARGS --no-shorts"
           [ "${{ inputs.ai }}" = "false" ] && ARGS="$ARGS --no-ai"
+          [ "${{ inputs.gpu_test }}" = "true" ] && ARGS="--gpu-test"
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch
