@@ -200,12 +200,9 @@ try:
             model = ChatterboxMultilingualTTS.from_pretrained(device="cuda")
             res["version"] = "v2 (installed package has no v3)"
         log(f"loaded {res['version']}")
-        for g in ("f", "m"):
-            ref = OUT / f"ref_voxcpm_{g}.wav"
+        for name in ("voxcpm_f", "voxcpm_m", "qwen_f", "qwen_m"):
+            ref = OUT / f"ref_{name}.wav"
             if not ref.exists():
-                ref = OUT / f"ref_qwen_{g}.wav"
-            if not ref.exists():
-                res["errors"].append(f"chatterbox {g}: no reference clip")
                 continue
             def fn(s, ref=ref):
                 try:
@@ -213,7 +210,7 @@ try:
                                           cfg_weight=0.4)
                 except TypeError:
                     return model.generate(s, language_id="es", audio_prompt_path=str(ref))
-            run_variant(f"chatterbox_{g}", fn, S, model.sr)
+            run_variant(f"chatterbox_{name.split('_')[0]}ref_{name[-1]}", fn, S, model.sr)
 
     elif engine == "score":
         import re, unicodedata
@@ -277,7 +274,8 @@ ENGINES = {
     "kokoro": ("3.11", ["kokoro>=0.9.4", "soundfile", "misaki[en]"], ["espeak-ng"]),
     "voxcpm": ("3.11", ["voxcpm", "soundfile"], []),
     "qwen": ("3.12", ["qwen-tts", "soundfile"], ["sox"]),
-    "chatterbox": ("3.11", ["chatterbox-tts", "soundfile"], []),
+    "chatterbox": ("3.11", ["chatterbox-tts @ git+https://github.com/resemble-ai/chatterbox.git", "setuptools<81",
+                            "soundfile"], []),
     "score": ("3.11", ["torch", "torchaudio", "transformers>=4.45", "accelerate", "librosa", "num2words", "soundfile"], []),
 }
 
@@ -366,8 +364,15 @@ def main():
             M["gpus"] = []
         log(f"GPUs {M['gpus']}")
         save()
-        a = threading.Thread(target=lane, args=(["voxcpm", "chatterbox"], 0))
-        b = threading.Thread(target=lane, args=(["kokoro", "qwen"], 1 if len(M["gpus"]) > 1 else 0))
+        # reference clips from an earlier bench (lets a partial rerun clone the same designed voices)
+        for name, b64 in job.get("refs", {}).items():
+            mp3 = OUT / f"ref_{name}.mp3"
+            mp3.write_bytes(base64.b64decode(b64))
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), str(mp3.with_suffix(".wav"))])
+        want = job.get("engines") or list(ENGINES)
+        a = threading.Thread(target=lane, args=([e for e in ("voxcpm", "chatterbox") if e in want], 0))
+        b = threading.Thread(target=lane, args=([e for e in ("kokoro", "qwen") if e in want],
+                                                1 if len(M["gpus"]) > 1 else 0))
         a.start()
         time.sleep(5)
         b.start()

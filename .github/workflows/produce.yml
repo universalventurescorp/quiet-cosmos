@@ -118,6 +118,7 @@ jobs:
           [ "${{ inputs.gpu_test }}" = "true" ] && ARGS="--gpu-test"
           [ "${{ inputs.video_bench }}" = "true" ] && ARGS="--video-bench"
           [ "${{ inputs.voice_bench }}" = "true" ] && ARGS="--voice-bench"
+          export BENCH_ENGINES="${{ vars.BENCH_ENGINES }}"
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch

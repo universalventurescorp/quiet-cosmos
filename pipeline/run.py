@@ -42,8 +42,14 @@ def video_bench(cfg, kind="video"):
     out = ROOT / "outputs" / f"{kind}-bench"
     out.mkdir(parents=True, exist_ok=True)
     job = {"job_id": f"{kind}-bench-{dt.datetime.utcnow():%Y%m%d%H%M%S}"}
+    prev = ROOT / "data" / "diagnostics" / f"{kind}_bench"
+    if kind == "voice" and os.environ.get("BENCH_ENGINES"):
+        # partial rerun: only these engines, reusing the designed reference voices already in the repo
+        import base64
+        job["engines"] = os.environ["BENCH_ENGINES"].split(",")
+        job["refs"] = {p.stem[4:]: base64.b64encode(p.read_bytes()).decode() for p in prev.glob("ref_*.mp3")}
     prev_state = read_json(ROOT / "data" / "diagnostics" / f"{kind}_bench" / "manifest.json", {}).get("push") or {}
-    if (prev_state.get("ok") and not prev_state.get("reused")
+    if (prev_state.get("ok") and not prev_state.get("reused") and not job.get("engines")
             and time.time() - prev_state.get("pushed_at", 0) < 4 * 3600):
         # a bench pushed in the last 4 h may still be running (or finished) on Kaggle: collect it
         # instead of spending GPU quota on a new one
@@ -53,16 +59,19 @@ def video_bench(cfg, kind="video"):
     else:
         state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / f"bench_{kind}.py") if gpu.configured() else {}
     manifest = gpu.collect(out, cfg, wait_minutes=180) if state.get("ok") else None
-    prev = ROOT / "data" / "diagnostics" / f"{kind}_bench"
     prev.mkdir(parents=True, exist_ok=True)
+    old_scores = read_json(prev / "scores.json", {})
     for f in prev.glob("*"):
-        f.unlink()
+        if not (job.get("engines") and f.suffix == ".mp3"):     # a partial voice rerun keeps the earlier audio
+            f.unlink()
     ai = out / "ai"
     if manifest is not None:
         manifest["push"] = state
     for p in (sorted(ai.glob("*.mp3")) + sorted(ai.glob("scores.json")) + sorted(ai.glob("*.log"))
               + sorted(ai.glob("log.txt"))) if ai.exists() else []:
         shutil.copy(p, prev / p.name)          # voice bench: listening files, scores, per-engine logs
+    if job.get("engines") and (prev / "scores.json").exists():
+        write_json(prev / "scores.json", {**old_scores, **read_json(prev / "scores.json", {})})
     for p in sorted(ai.glob("*.jpg")) if ai.exists() else []:
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(p), "-vf", "scale=640:-2", str(prev / p.name)])
     for p in sorted(ai.glob("*.mp4")) if ai.exists() else []:
