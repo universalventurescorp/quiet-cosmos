@@ -48,6 +48,9 @@ def video_bench(cfg, kind="video"):
         import base64
         job["engines"] = os.environ["BENCH_ENGINES"].split(",")
         job["refs"] = {p.stem[4:]: base64.b64encode(p.read_bytes()).decode() for p in prev.glob("ref_*.mp3")}
+        if os.environ.get("BENCH_DESIGNS") == "true":     # round 2: new narrator voices from kaggle/voice_designs.json
+            job["design"] = read_json(ROOT / "kaggle" / "voice_designs.json", {})
+            job["refs"] = {}
     prev_state = read_json(ROOT / "data" / "diagnostics" / f"{kind}_bench" / "manifest.json", {}).get("push") or {}
     if (prev_state.get("ok") and not prev_state.get("reused") and not job.get("engines")
             and time.time() - prev_state.get("pushed_at", 0) < 4 * 3600):

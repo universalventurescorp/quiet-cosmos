@@ -122,6 +122,7 @@ jobs:
           [ "${{ inputs.video_bench }}" = "true" ] && ARGS="--video-bench"
           [ "${{ inputs.voice_bench }}" = "true" ] && ARGS="--voice-bench"
           export BENCH_ENGINES="${{ inputs.bench_engines }}"
+          [ "${{ inputs.bench_engines }}" = "qwen-designs" ] && export BENCH_ENGINES="qwen,score" BENCH_DESIGNS=true
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch

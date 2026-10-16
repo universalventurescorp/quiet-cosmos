@@ -160,7 +160,7 @@ try:
         design = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", **kw)
         log(f"design model loaded; languages={getattr(design, 'get_supported_languages', lambda: '?')()}")
         refs = {}
-        for g in ("f", "m"):
+        for g in DESIGN:
             try:
                 wavs, sr = design.generate_voice_design(text=REF_TEXT, language="Spanish", instruct=DESIGN[g])
                 w = to_np(wavs[0])
@@ -181,6 +181,8 @@ try:
                 clone_sr["sr"] = sr
                 return wavs[0]
             run_variant(f"qwen3_{g}", fn, S, lambda: clone_sr["sr"])
+        if cfg.get("design_only"):
+            refs = {}
         # the same engine cloning the VoxCPM refs (same timbre, different engine)
         for g in ("f", "m"):
             ref = OUT / f"ref_voxcpm_{g}.wav"
@@ -256,7 +258,19 @@ try:
                              "seconds": round(len(w) / sr, 1)})
             if rows:
                 wpm = 60 * sum(len(S[r["i"]].split()) for r in rows) / max(sum(r["seconds"] for r in rows), .1)
-                scores[vdir.name] = {"mean_cer": round(sum(r["cer"] for r in rows) / len(rows), 4),
+                pitch = {}
+                try:
+                    full, fsr = sf.read(OUT / f"{vdir.name}.wav", dtype="float32")
+                    full = librosa.resample(full, orig_sr=fsr, target_sr=16000)[:16000 * 60]
+                    f0, vflag, _ = librosa.pyin(full, fmin=55, fmax=320, sr=16000, frame_length=1024)
+                    f0 = f0[vflag & np.isfinite(f0)]
+                    st = 12 * np.log2(f0 / np.median(f0))
+                    pitch = {"f0_median_hz": round(float(np.median(f0))),
+                             "pitch_var_st": round(float(np.std(st)), 2),
+                             "pitch_range_st": round(float(np.percentile(st, 95) - np.percentile(st, 5)), 1)}
+                except Exception as e:
+                    pitch = {"pitch_error": str(e)[:200]}
+                scores[vdir.name] = {**pitch, "mean_cer": round(sum(r["cer"] for r in rows) / len(rows), 4),
                                      "max_cer": max(r["cer"] for r in rows),
                                      "mean_mos": round(sum(r["mos"] for r in rows) / len(rows), 3),
                                      "words_per_min": round(wpm), "sentences": rows}
@@ -321,7 +335,8 @@ def run_engine(engine, gpu, timeout=60 * 60):
         log(f"{engine}: installed in {(time.time() - t) / 60:.1f} min on GPU {gpu}")
         cfgf = WORK / f"cfg_{engine}.json"
         cfgf.write_text(json.dumps({"engine": engine, "out": str(OUT), "sentences": SENTENCES, "ref_text": REF_TEXT,
-                                    "design": DESIGN}, ensure_ascii=False))
+                                    "design": M["design"], "design_only": M.get("design_only", False)},
+                                   ensure_ascii=False))
         env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "HF_HUB_ENABLE_HF_TRANSFER": "0",
                "PYTHONUNBUFFERED": "1"}
         with open(OUT / f"stdout_{engine}.log", "w") as fo:
@@ -352,7 +367,7 @@ def main():
     WORK.mkdir(parents=True, exist_ok=True)
     job = json.loads(base64.b64decode(JOB_B64))
     M.update({"job_id": job["job_id"], "errors": [], "engines": {}, "sentences": SENTENCES, "ref_text": REF_TEXT,
-              "design": DESIGN})
+              "design": job.get("design") or DESIGN, "design_only": bool(job.get("design"))})
     try:
         (WORK / "worker.py").write_text(WORKER)
         subprocess.run([sys.executable, "-m", "pip", "install", "-q", "uv"], capture_output=True)
