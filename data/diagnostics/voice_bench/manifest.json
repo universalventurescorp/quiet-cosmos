@@ -1,37 +1,18 @@
 {
-  "job_id": "voice-bench-20261017002515",
+  "job_id": "voice-bench-20261017063202",
   "errors": [],
   "engines": {
-    "qwen": {
+    "qwenref": {
       "status": "done",
       "gpu": 1,
-      "install_min": 0.8,
+      "install_min": 0.9,
       "returncode": 0,
-      "minutes": 16.9,
+      "minutes": 4.8,
       "variants": {
-        "qwen3_w1": {
+        "emo_plana": {
           "sr": 24000,
-          "speech_seconds": 81.0,
-          "gen_seconds": 202.9,
-          "rtf": 2.504
-        },
-        "qwen3_w2": {
-          "sr": 24000,
-          "speech_seconds": 79.4,
-          "gen_seconds": 190.9,
-          "rtf": 2.406
-        },
-        "qwen3_w3": {
-          "sr": 24000,
-          "speech_seconds": 78.0,
-          "gen_seconds": 186.3,
-          "rtf": 2.388
-        },
-        "qwen3_w4": {
-          "sr": 24000,
-          "speech_seconds": 77.8,
-          "gen_seconds": 185.8,
-          "rtf": 2.389
+          "speech_seconds": 73.0,
+          "gen_seconds": 188.6
         }
       },
       "errors": [],
@@ -39,12 +20,73 @@
       "cuda": true,
       "version": null
     },
+    "stepedit": {
+      "status": "done",
+      "gpu": 0,
+      "install_min": 3.1,
+      "returncode": 0,
+      "minutes": 7.2,
+      "variants": {
+        "emo_dirigida": {
+          "sr": 24000,
+          "speech_seconds": 75.2,
+          "gen_seconds": 88.7,
+          "lines": [
+            "plana",
+            "plana",
+            "serious 28s",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "whisper 44s",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "gentle 17s",
+            "error->sin cambio"
+          ],
+          "backend": "transformers"
+        },
+        "emo_fuerte": {
+          "sr": 24000,
+          "speech_seconds": 75.5,
+          "gen_seconds": 34.6,
+          "lines": [
+            "plana",
+            "plana",
+            "serious 11s",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "error->sin cambio",
+            "gentle 23s",
+            "error->sin cambio"
+          ],
+          "backend": "transformers"
+        }
+      },
+      "errors": [
+        "emo_fuerte s10: el_bins=80, dither=0, sample_frequency=16000)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/stepx/.venv/lib/python3.12/site-packages/torchaudio/compliance/kaldi.py\", line 591, in fbank\n    waveform, window_shift, window_size, padded_window_size = _get_waveform_and_window_properties(\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/stepx/.venv/lib/python3.12/site-packages/torchaudio/compliance/kaldi.py\", line 142, in _get_waveform_and_window_properties\n    assert 2 <= window_size <= len(waveform), \"choose a window size {} that is [2, {}]\".format(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: choose a window size 400 that is [2, 0]\n",
+        "emo_fuerte s11: el_bins=80, dither=0, sample_frequency=16000)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/stepx/.venv/lib/python3.12/site-packages/torchaudio/compliance/kaldi.py\", line 591, in fbank\n    waveform, window_shift, window_size, padded_window_size = _get_waveform_and_window_properties(\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/stepx/.venv/lib/python3.12/site-packages/torchaudio/compliance/kaldi.py\", line 142, in _get_waveform_and_window_properties\n    assert 2 <= window_size <= len(waveform), \"choose a window size {} that is [2, {}]\".format(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: choose a window size 400 that is [2, 0]\n",
+        "emo_fuerte s13: el_bins=80, dither=0, sample_frequency=16000)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/stepx/.venv/lib/python3.12/site-packages/torchaudio/compliance/kaldi.py\", line 591, in fbank\n    waveform, window_shift, window_size, padded_window_size = _get_waveform_and_window_properties(\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/tmp/voicebench/stepx/.venv/lib/python3.12/site-packages/torchaudio/compliance/kaldi.py\", line 142, in _get_waveform_and_window_properties\n    assert 2 <= window_size <= len(waveform), \"choose a window size {} that is [2, {}]\".format(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: choose a window size 400 that is [2, 0]\n"
+      ],
+      "torch": "2.9.1+cu128",
+      "cuda": true,
+      "version": null
+    },
     "score": {
       "status": "done",
       "gpu": 1,
-      "install_min": 0.4,
+      "install_min": 0.2,
       "returncode": 0,
-      "minutes": 2.2,
+      "minutes": 2.6,
       "variants": {},
       "errors": [],
       "torch": "2.14.1+cu130",
@@ -53,98 +95,246 @@
     }
   },
   "sentences": [
-    "Imagina que flotas en silencio, muy lejos de casa, mientras un mundo inmenso aparece poco a poco frente a ti.",
-    "Es Júpiter, el planeta más grande de nuestro sistema solar, tan enorme que en su interior cabrían más de mil trescientas Tierras.",
-    "Sus nubes forman franjas de color crema, ocre y marrón, que giran sin descanso alrededor del planeta.",
-    "Y entre ellas, como un ojo que nunca se cierra, gira la Gran Mancha Roja: una tormenta más ancha que nuestro propio mundo.",
-    "Los astrónomos la observan desde hace más de 150 años, y quizá lleva girando mucho más tiempo.",
-    "En enero de 1610, Galileo Galilei apuntó su pequeño telescopio hacia Júpiter y descubrió cuatro lunas que giraban a su alrededor.",
-    "Hoy las llamamos Ío, Europa, Ganímedes y Calisto.",
-    "Bajo el hielo de Europa podría esconderse un océano de agua líquida, más profundo que cualquier mar de la Tierra.",
-    "La sonda Juno, lanzada por la NASA, sigue dando vueltas a su alrededor, enviándonos imágenes que nadie había visto antes.",
-    "Respira despacio. Aquí, a casi ochocientos millones de kilómetros del Sol, el tiempo parece avanzar más lento."
+    "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz.",
+    "Al principio parece una estrella más.",
+    "Pero no lo es.",
+    "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido.",
+    "Durante siglos, nadie imaginó lo que escondía.",
+    "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos.",
+    "Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
+    "Años después, la sonda Galileo midió algo extraño: el campo magnético de Júpiter se torcía al pasar por Europa.",
+    "Y solo había una explicación posible.",
+    "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra.",
+    "Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+    "Allí abajo, en la oscuridad total, quizá exista vida.",
+    "Nadie lo sabe todavía.",
+    "Respira despacio. La luz de Europa sigue ahí, esperando."
   ],
   "ref_text": "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma.",
   "design": {
-    "w1": "Wise elderly male narrator in his late sixties, very deep resonant bass voice with natural gravitas and a hint of gentle rasp, neutral Latin American Spanish, speaks slowly and thoughtfully like an ancient sage revealing the secrets of the universe, warm, intimate and expressive.",
-    "w2": "Deep, powerful yet soft-spoken mature male narrator with a resonant chest voice and great gravitas, wise and serene, neutral Latin American Spanish, unhurried documentary storytelling with meaningful pauses and expressive emphasis, conveying awe and wisdom.",
-    "w3": "Old wise storyteller with a deep, warm, slightly husky bass-baritone voice, neutral Latin American Spanish, calm, profound and reassuring, as if he had witnessed the whole history of the cosmos, expressive intonation.",
-    "w4": "Legendary documentary narrator: deep, rich, resonant mature male voice, neutral Latin American Spanish, authoritative but gentle, slow measured delivery where every word carries weight and meaning."
+    "f": "A warm, calm, soft-spoken female narrator in her forties, speaking neutral Latin American Spanish slowly and gently, with a soothing low voice, like a bedtime nature documentary.",
+    "m": "A deep, warm, calm male narrator in his fifties, speaking neutral Latin American Spanish slowly and softly, with a rich velvety voice, like a bedtime nature documentary."
   },
-  "design_only": true,
+  "design_only": false,
+  "emo": [
+    [
+      null,
+      1.0,
+      0
+    ],
+    [
+      null,
+      0.7,
+      0
+    ],
+    [
+      [
+        "style",
+        "serious"
+      ],
+      1.1,
+      0
+    ],
+    [
+      [
+        "emotion",
+        "admiration"
+      ],
+      0.9,
+      0.5
+    ],
+    [
+      [
+        "style",
+        "murmur"
+      ],
+      1.2,
+      -2
+    ],
+    [
+      [
+        "style",
+        "story"
+      ],
+      0.8,
+      0
+    ],
+    [
+      [
+        "emotion",
+        "surprised"
+      ],
+      1.0,
+      0.5
+    ],
+    [
+      [
+        "style",
+        "vivid"
+      ],
+      0.9,
+      1
+    ],
+    [
+      [
+        "style",
+        "whisper"
+      ],
+      1.6,
+      -3
+    ],
+    [
+      [
+        "emotion",
+        "excited"
+      ],
+      1.2,
+      2
+    ],
+    [
+      [
+        "emotion",
+        "admiration"
+      ],
+      1.1,
+      1
+    ],
+    [
+      [
+        "style",
+        "soulful"
+      ],
+      1.5,
+      -1
+    ],
+    [
+      [
+        "style",
+        "gentle"
+      ],
+      1.2,
+      -2
+    ],
+    [
+      [
+        "style",
+        "comfort"
+      ],
+      1.5,
+      -2
+    ]
+  ],
+  "narrator_ref_text": "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma.",
+  "emotion": true,
   "gpus": [
     "Tesla T4",
     "Tesla T4"
   ],
-  "minutes": 19.7,
+  "minutes": 15.0,
   "files": [
+    "emo_dirigida.mp3",
+    "emo_dirigida.wav",
+    "emo_fuerte.mp3",
+    "emo_fuerte.wav",
+    "emo_plana.mp3",
+    "emo_plana.wav",
+    "emo_segura.mp3",
+    "emo_segura.wav",
     "log.txt",
     "manifest.json",
-    "qwen3_w1.mp3",
-    "qwen3_w1.wav",
-    "qwen3_w2.mp3",
-    "qwen3_w2.wav",
-    "qwen3_w3.mp3",
-    "qwen3_w3.wav",
-    "qwen3_w4.mp3",
-    "qwen3_w4.wav",
-    "ref_qwen_w1.mp3",
-    "ref_qwen_w1.wav",
-    "ref_qwen_w2.mp3",
-    "ref_qwen_w2.wav",
-    "ref_qwen_w3.mp3",
-    "ref_qwen_w3.wav",
-    "ref_qwen_w4.mp3",
-    "ref_qwen_w4.wav",
-    "res_qwen.json",
+    "ref_narrador.mp3",
+    "ref_narrador.wav",
+    "res_qwenref.json",
     "res_score.json",
+    "res_stepedit.json",
     "scores.json",
-    "stdout_qwen.log",
-    "stdout_score.log"
+    "stdout_qwenref.log",
+    "stdout_score.log",
+    "stdout_stepedit.log"
   ],
   "scores": {
-    "qwen3_w1": {
-      "f0_median_hz": 78,
-      "pitch_var_st": 2.27,
-      "pitch_range_st": 7.4,
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 3.772,
-      "words_per_min": 137
+    "emo_dirigida": {
+      "f0_median_hz": 99,
+      "pitch_var_st": 3.32,
+      "pitch_range_st": 11.2,
+      "between_lines_st": 1.24,
+      "between_lines_span_st": 4.5,
+      "within_line_range_st": 10.0,
+      "loudness_span_db": 8.1,
+      "mean_sim": 0.769,
+      "min_sim": 0.414,
+      "mean_cer": 0.004,
+      "max_cer": 0.0556,
+      "mean_mos": 4.163,
+      "words_per_min": 131
     },
-    "qwen3_w2": {
-      "f0_median_hz": 90,
-      "pitch_var_st": 2.12,
-      "pitch_range_st": 7.1,
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 3.923,
-      "words_per_min": 140
+    "emo_fuerte": {
+      "f0_median_hz": 99,
+      "pitch_var_st": 3.31,
+      "pitch_range_st": 11.1,
+      "between_lines_st": 1.24,
+      "between_lines_span_st": 4.5,
+      "within_line_range_st": 9.8,
+      "loudness_span_db": 7.3,
+      "mean_sim": 0.749,
+      "min_sim": 0.263,
+      "mean_cer": 0.004,
+      "max_cer": 0.0556,
+      "mean_mos": 4.182,
+      "words_per_min": 130
     },
-    "qwen3_w3": {
-      "f0_median_hz": 104,
-      "pitch_var_st": 2.34,
-      "pitch_range_st": 7.6,
-      "mean_cer": 0.0032,
-      "max_cer": 0.0317,
-      "mean_mos": 3.767,
-      "words_per_min": 142
+    "emo_plana": {
+      "f0_median_hz": 100,
+      "pitch_var_st": 3.29,
+      "pitch_range_st": 10.9,
+      "between_lines_st": 0.77,
+      "between_lines_span_st": 2.8,
+      "within_line_range_st": 10.8,
+      "loudness_span_db": 5.0,
+      "mean_sim": 0.849,
+      "min_sim": 0.771,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.197,
+      "words_per_min": 134
     },
-    "qwen3_w4": {
-      "f0_median_hz": 81,
-      "pitch_var_st": 2.43,
-      "pitch_range_st": 8.0,
-      "mean_cer": 0.0025,
-      "max_cer": 0.0171,
-      "mean_mos": 3.761,
-      "words_per_min": 143
+    "emo_segura": {
+      "f0_median_hz": 100,
+      "pitch_var_st": 3.31,
+      "pitch_range_st": 11.1,
+      "between_lines_st": 0.77,
+      "between_lines_span_st": 2.8,
+      "within_line_range_st": 10.8,
+      "loudness_span_db": 5.0,
+      "mean_sim": 0.849,
+      "min_sim": 0.771,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.197,
+      "words_per_min": 134,
+      "pick": [
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_fuerte",
+        "emo_fuerte",
+        "emo_fuerte",
+        "emo_fuerte",
+        "emo_fuerte",
+        "emo_plana",
+        "emo_fuerte",
+        "emo_fuerte",
+        "emo_fuerte",
+        "emo_plana",
+        "emo_fuerte"
+      ]
     }
   },
   "push": {
-    "job_id": "voice-bench-20261017002515",
+    "job_id": "voice-bench-20261017063202",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792196716.996411,
+    "pushed_at": 1792218724.3845341,
     "ok": true,
-    "push_output": "Kernel version 16 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 20 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   }
 }
