@@ -296,7 +296,9 @@ try:
         import torchaudio
 
         def _load(path, *a, **k):          # soundfile instead of torchcodec (gave empty audio for some files)
-            w, sr = sf.read(str(path), dtype="float32", always_2d=True)
+            if hasattr(path, "seek"):
+                path.seek(0)
+            w, sr = sf.read(path if hasattr(path, "read") else str(path), dtype="float32", always_2d=True)
             return torch.from_numpy(np.ascontiguousarray(w.T)), sr
         torchaudio.load = _load
         stepx_tts.torchaudio.load = _load
