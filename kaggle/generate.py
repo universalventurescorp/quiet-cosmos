@@ -399,17 +399,12 @@ def run_narration(job):
                         "-ac", "1", "-ar", "24000", str(ref)], check=True)
         (work / "tts_worker.py").write_text(TTS_WORKER)
         log(role, f"Qwen3-TTS ready, {st['total']} sentences")
-        # split by characters: GPU 1 takes more (it has nothing else to do until the clips start)
-        items = sorted(nar["items"], key=lambda it: -len(it[1]))
-        shards, load = ([], []), [0.0, 0.0]
-        share = (0.4, 0.6)
-        for it in items:
-            k = min((0, 1), key=lambda g: load[g] / share[g])
-            shards[k].append(it)
-            load[k] += len(it[1])
+        # all on GPU 1: GPU 0 is busy with SDXL (both together run out of memory on a T4), and batched
+        # Qwen3-TTS is fast enough alone; the clips start on GPU 1 once the voice is done
+        import torch
+        shards = ([], list(nar["items"])) if torch.cuda.device_count() > 1 else (list(nar["items"]), [])
         out = OUT / "narration"
         procs = []
-        import torch
         n_gpu = torch.cuda.device_count()
         for g, shard in enumerate(shards):
             if not shard:
@@ -419,7 +414,7 @@ def run_narration(job):
             cfgf.write_text(json.dumps({"model": nar["model"], "ref": str(ref), "ref_text": nar["ref_text"],
                                         "language": nar["language"], "items": shard, "out": str(out),
                                         "progress": str(work / f"progress_{g}.json"),
-                                        "batch": 4 if g == 0 else 8}, ensure_ascii=False))
+                                        "batch": 8}, ensure_ascii=False))
             env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "PYTHONUNBUFFERED": "1"}
             fo = open(OUT / f"voice_gpu{g}.log", "w")
             procs.append((g, subprocess.Popen([py, str(work / "tts_worker.py"), str(cfgf)], stdout=fo,
