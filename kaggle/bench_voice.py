@@ -269,6 +269,22 @@ try:
             chunks.append(resample(wavs[0], sr))
         save_emo("emo_plana", chunks, 24000, time.time() - t, directed=False)
 
+    elif engine == "qwenbank":
+        from qwen_tts import Qwen3TTSModel
+        base = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", device_map="cuda:0",
+                                             dtype=torch.float16, attn_implementation="sdpa")
+        t, chunks, used = time.time(), [], []
+        for i, s in enumerate(S):
+            tag = EMO[i][0] if i < len(EMO) else None
+            ref = OUT / f"bank_{tag[1]}.wav" if tag else None
+            if not ref or not ref.exists():
+                ref = OUT / "ref_narrador.wav"
+            wavs, sr = base.generate_voice_clone(text=s, language="Spanish", ref_audio=str(ref),
+                                                 ref_text=cfg["narrator_ref_text"])
+            chunks.append(resample(wavs[0], sr))
+            used.append(ref.stem)
+        save_emo("emo_banco", chunks, 24000, time.time() - t, extra={"lines": used})
+
     elif engine == "stepedit":
         # Step-Audio-EditX (Apache-2.0) re-performs each tagged line of the flat take with an emotion/style
         sys.path.insert(0, cfg["stepx_dir"])
@@ -277,6 +293,13 @@ try:
         from tokenizer import StepAudioTokenizer
         import tts as stepx_tts
         mdir = cfg["models_dir"]
+        import torchaudio
+
+        def _load(path, *a, **k):          # soundfile instead of torchcodec (gave empty audio for some files)
+            w, sr = sf.read(str(path), dtype="float32", always_2d=True)
+            return torch.from_numpy(np.ascontiguousarray(w.T)), sr
+        torchaudio.load = _load
+        stepx_tts.torchaudio.load = _load
         tok = StepAudioTokenizer(f"{mdir}/Step-Audio-Tokenizer", model_source="local")
         log("audio tokenizer loaded")
         kw = dict(model_source="local", dtype="float16", gpu_memory_utilization=0.55, max_model_len=4096,
@@ -301,11 +324,20 @@ try:
                     ids = torch.cat([ids, nxt.view(1, 1)], 1)
                 return [SimpleNamespace(outputs=[SimpleNamespace(token_ids=out)])]
 
-        try:
-            model = stepx_tts.StepAudioTTS(f"{mdir}/Step-Audio-EditX", tok, **kw)
-            res["backend"] = "vllm"
-        except Exception:
-            res["errors"].append("vllm load: " + traceback.format_exc()[-1500:])
+        model = None
+        for backend in ("TRITON_ATTN", "FLEX_ATTENTION"):    # FlashInfer has no ALiBi-sqrt; FA2 needs sm80
+            os.environ["VLLM_ATTENTION_BACKEND"] = backend
+            try:
+                model = stepx_tts.StepAudioTTS(f"{mdir}/Step-Audio-EditX", tok, **kw)
+                res["backend"] = f"vllm/{backend}"
+                break
+            except Exception:
+                res["errors"].append(f"vllm {backend}: " + traceback.format_exc()[-1200:])
+                log(f"vLLM with {backend} failed")
+                import gc
+                gc.collect()
+                torch.cuda.empty_cache()
+        if model is None:
             log("vLLM failed, falling back to transformers")
             torch.cuda.empty_cache()
             from transformers import AutoTokenizer
@@ -315,7 +347,18 @@ try:
             model = stepx_tts.StepAudioTTS(f"{mdir}/Step-Audio-EditX", tok, **kw)
             res["backend"] = "transformers"
         log(f"Step-Audio-EditX loaded ({res['backend']})")
-        tmp = OUT / "_tmp_edit.wav"
+        # emotion bank: the channel's reference clip re-performed in each emotion; Qwen then clones every line
+        # from the matching clip (the emotion rides on the reference, the timbre stays Qwen's clone)
+        for tag in {tuple(e[0]) for e in EMO if e[0]}:
+            try:
+                ts = time.time()
+                audio, osr = model.edit(prompt_wav_path=str(OUT / "ref_narrador.wav"),
+                                        prompt_text=cfg["narrator_ref_text"], edit_type=tag[0], edit_info=tag[1])
+                sf.write(OUT / f"bank_{tag[1]}.wav", resample(audio, osr), 24000)
+                log(f"bank {tag[1]}: {time.time() - ts:.0f}s")
+            except Exception:
+                res["errors"].append(f"bank {tag[1]}: {traceback.format_exc()[-2500:]}")
+                log(f"bank {tag[1]} failed: {traceback.format_exc()[-1500:]}")
         flat = OUT / "emo_plana"
         for variant, src_dir in (("emo_dirigida", flat), ("emo_fuerte", OUT / "emo_dirigida")):
             t, chunks, per = time.time(), [], []
@@ -333,7 +376,8 @@ try:
                     chunks.append(resample(audio, osr))
                     per.append(f"{tag[1]} {time.time() - ts:.0f}s")
                 except Exception:
-                    res["errors"].append(f"{variant} s{i}: {traceback.format_exc()[-800:]}")
+                    res["errors"].append(f"{variant} s{i}: {traceback.format_exc()[-2500:]}")
+                    log(f"{variant} s{i} failed: {traceback.format_exc()[-1500:]}")
                     chunks.append(resample(w, sr))
                     per.append("error->sin cambio")
             save_emo(variant, chunks, 24000, time.time() - t, extra={"lines": per, "backend": res["backend"]})
@@ -444,7 +488,7 @@ try:
             pick, chunks = [], []
             for i in range(len(S)):
                 choice = "emo_plana"
-                for cand in ("emo_fuerte", "emo_dirigida"):
+                for cand in ("emo_banco", "emo_fuerte", "emo_dirigida"):
                     r = next((x for x in all_rows.get(cand, []) if x["i"] == i), None)
                     b = base.get(i)
                     if not r or not b or EMO[i][0] is None:
@@ -519,6 +563,7 @@ ENGINES = {
                        "speechbrain"], []),
     # emotion bench
     "qwenref": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
+    "qwenbank": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
     "stepedit": ("3.12", [], ["sox", "git-lfs"]),     # installed from its own repo + uv.lock (see install_stepedit)
 }
 STEPX_REPO = "https://github.com/stepfun-ai/Step-Audio-EditX.git"
@@ -662,7 +707,8 @@ def main():
             # emotion bench: flat production voice -> directed re-performance -> scoring
             two = len(M["gpus"]) > 1
             run_engine("qwenref", 1 if two else 0, timeout=40 * 60)
-            run_engine("stepedit", 0, timeout=100 * 60)
+            run_engine("stepedit", 0, timeout=150 * 60)
+            run_engine("qwenbank", 1 if two else 0, timeout=40 * 60)
             run_engine("score", 1 if two else 0)
             want = []
         else:
