@@ -1,0 +1,14 @@
+{
+  "topic": "Júpiter: el gigante gaseoso, su Gran Mancha Roja y sus tormentas eternas",
+  "title": "MUESTRA · Júpiter y la Gran Mancha Roja | Documental Relajante para Dormir",
+  "video_id": "LoxytoxQ1Oc",
+  "qa_ok": true,
+  "minutes": 7.6,
+  "voice": {
+    "engine": "kokoro (fallback)",
+    "sentences": 64,
+    "voiced": 39,
+    "reason": "incomplete GPU narration"
+  },
+  "date": "2026-10-17"
+}
