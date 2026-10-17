@@ -1,10 +1,10 @@
-[   0.5 min] GPUs ['Tesla T4', 'Tesla T4']
-[   2.3 min] qwenref: installed in 1.8 min on GPU 1
-[   6.2 min] qwenref: done in 5.8 min
-[  10.1 min] stepedit: installed in 3.8 min on GPU 0
-[  12.0 min] stepedit: done in 5.7 min
-[  12.0 min] qwenbank: installed in 0.1 min on GPU 1
-[  15.8 min] qwenbank: done in 3.9 min
-[  16.2 min] score: installed in 0.4 min on GPU 1
-[  18.8 min] score: done in 3.0 min
-[  18.9 min] done
+[   0.3 min] GPUs ['Tesla T4', 'Tesla T4']
+[   3.7 min] qwenref: installed in 3.4 min on GPU 1
+[   7.4 min] qwenref: done in 7.1 min
+[  10.7 min] stepedit: installed in 3.3 min on GPU 0
+[  24.9 min] stepedit: done in 17.5 min
+[  24.9 min] qwenbank: installed in 0.1 min on GPU 1
+[  28.6 min] qwenbank: done in 3.8 min
+[  28.9 min] score: installed in 0.2 min on GPU 1
+[  31.5 min] score: done in 2.9 min
+[  31.7 min] done
