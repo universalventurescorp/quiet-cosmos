@@ -449,10 +449,24 @@ try:
         ref = OUT / "ref_narrador.wav"
         prompts = {mode: base.create_voice_clone_prompt(ref_audio=str(ref), ref_text=cfg["narrator_ref_text"],
                                                         x_vector_only_mode=mode) for mode in (False, True)}
-        texts = [" ".join(S[i] for i in p) for p in cfg["paragraphs"]]
-        plans = [(f"par_t{k}", False, 100 + k) for k in range(cfg.get("seeds", 3))]
-        plans += [(f"par_xv{k}", True, 200 + k) for k in range(2)]
-        for variant, xvec, seed in plans:
+        def spoken(idx, end):
+            """Inner sentence ends rewritten so the model keeps the thought open (captions keep the real text)."""
+            out = []
+            for k, i in enumerate(idx):
+                x = S[i]
+                if end and k < len(idx) - 1 and x.endswith("."):
+                    x = x[:-1] + end
+                out.append(x)
+            return " ".join(out)
+
+        # round 1 (17-oct): plain paragraphs fixed the rhythm but every sentence still closes with a full fall;
+        # round 2: same ICL clone, with the inner periods read as a comma / semicolon / suspension
+        plans = [(f"par_t{k}", False, 100 + k, None) for k in range(2)]
+        plans += [(f"par_coma{k}", False, 300 + k, ",") for k in range(2)]
+        plans += [(f"par_pc{k}", False, 400 + k, ";") for k in range(2)]
+        plans += [(f"par_susp{k}", False, 500 + k, "...") for k in range(2)]
+        for variant, xvec, seed, end in plans:
+            texts = [spoken(p, end) for p in cfg["paragraphs"]]
             try:
                 t, chunks = time.time(), []
                 for j, text in enumerate(texts):
