@@ -462,5 +462,21 @@ def main():
     print("done.")
 
 
+def _main_with_crash_report():
+    """Any crash leaves its traceback in data/.../diagnostics/last_crash.json (Actions logs are not
+    readable from the Claude session, the repo is)."""
+    import traceback
+    try:
+        main()
+    except SystemExit:
+        raise
+    except Exception:
+        write_json(DATA / "diagnostics" / "last_crash.json",
+                   {"date": dt.datetime.utcnow().isoformat(timespec="seconds"),
+                    "sample": os.environ.get("SAMPLE", "").lower() == "true",
+                    "topic": os.environ.get("TOPIC"), "traceback": traceback.format_exc()[-6000:]})
+        raise
+
+
 if __name__ == "__main__":
-    main()
+    _main_with_crash_report()
