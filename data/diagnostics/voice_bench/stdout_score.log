@@ -1,21 +1,18 @@
 [score] torch 2.14.1+cu130 cuda=True
 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  45%|████▌     | 266/587 [00:00<00:00, 2659.25it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2958.06it/s]
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  44%|████▍     | 261/587 [00:00<00:00, 2607.34it/s]Loading weights:  89%|████████▉ | 522/587 [00:00<00:00, 2601.80it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2619.77it/s]
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 Downloading: "https://github.com/tarepan/SpeechMOS/zipball/v1.2.0" to /root/.cache/torch/hub/v1.2.0.zip
 /kaggle/tmp/voicebench/venv_score/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Downloading: "https://github.com/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt" to /root/.cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt
-  0%|          | 0.00/392M [00:00<?, ?B/s]  0%|          | 384k/392M [00:00<01:52, 3.64MB/s]  1%|          | 3.50M/392M [00:00<00:20, 20.1MB/s]  7%|▋         | 26.1M/392M [00:00<00:03, 116MB/s]  15%|█▌        | 60.4M/392M [00:00<00:01, 210MB/s] 23%|██▎       | 91.6M/392M [00:00<00:01, 251MB/s] 34%|███▍      | 133M/392M [00:00<00:00, 311MB/s]  42%|████▏     | 163M/392M [00:01<00:01, 127MB/s] 50%|█████     | 197M/392M [00:01<00:01, 164MB/s] 59%|█████▉    | 233M/392M [00:01<00:00, 203MB/s] 69%|██████▉   | 271M/392M [00:01<00:00, 240MB/s] 78%|███████▊  | 306M/392M [00:01<00:00, 265MB/s] 86%|████████▌ | 337M/392M [00:01<00:00, 270MB/s] 94%|█████████▍| 370M/392M [00:01<00:00, 289MB/s]100%|██████████| 392M/392M [00:01<00:00, 223MB/s]
+  0%|          | 0.00/392M [00:00<?, ?B/s]  3%|▎         | 10.1M/392M [00:00<00:04, 96.3MB/s]  8%|▊         | 30.1M/392M [00:00<00:02, 147MB/s]  11%|█▏        | 44.9M/392M [00:00<00:02, 150MB/s] 15%|█▌        | 60.1M/392M [00:00<00:02, 141MB/s] 19%|█▉        | 74.6M/392M [00:00<00:02, 145MB/s] 23%|██▎       | 89.8M/392M [00:00<00:02, 149MB/s] 27%|██▋       | 104M/392M [00:00<00:02, 136MB/s]  31%|███       | 120M/392M [00:00<00:02, 138MB/s] 34%|███▍      | 133M/392M [00:01<00:02, 115MB/s] 38%|███▊      | 150M/392M [00:01<00:01, 130MB/s] 43%|████▎     | 170M/392M [00:01<00:01, 144MB/s] 47%|████▋     | 184M/392M [00:01<00:01, 134MB/s] 52%|█████▏    | 204M/392M [00:01<00:01, 150MB/s] 57%|█████▋    | 222M/392M [00:01<00:01, 161MB/s] 62%|██████▏   | 242M/392M [00:01<00:00, 174MB/s] 66%|██████▋   | 260M/392M [00:01<00:00, 179MB/s] 71%|███████   | 278M/392M [00:01<00:00, 181MB/s] 76%|███████▌  | 297M/392M [00:02<00:00, 188MB/s] 80%|████████  | 316M/392M [00:02<00:00, 186MB/s] 85%|████████▌ | 335M/392M [00:02<00:00, 191MB/s] 91%|█████████ | 356M/392M [00:02<00:00, 199MB/s] 96%|█████████▌| 377M/392M [00:02<00:00, 206MB/s]100%|██████████| 392M/392M [00:02<00:00, 162MB/s]
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 CategoricalEncoder.expect_len was never called: assuming category count of 107 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
 [transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-[score] emo_plana: CER 0.001  MOS 4.19
-[score] nat_co: CER 0.000  MOS 4.14
-[score] nat_doblaje: CER 0.000  MOS 4.06
-[score] nat_mx: CER 0.061  MOS 4.12
-[score] nat_pe: CER 0.000  MOS 4.08
-[score] emo_segura: CER 0.001  MOS 4.19
+[score] emo_plana: CER 0.000  MOS 4.18
+[score] nat_n1: CER 0.000  MOS 4.20
+[score] emo_segura: CER 0.000  MOS 4.18
