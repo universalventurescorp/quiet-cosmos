@@ -71,7 +71,7 @@ class PrecomputedVoice:
         return _trim(a)
 
 
-def narration_items(script, unit="sentence"):
+def narration_items(script, unit="sentence", inner_end=None):
     """Every text unit the episode will speak (episode + Shorts), each once, numbered. A unit is one sentence, or
     with unit="paragraph" up to 3 sentences of the same paragraph voiced in ONE generation (see units())."""
     texts = []
@@ -81,7 +81,7 @@ def narration_items(script, unit="sentence"):
     for b in blocks:
         for p in paragraphs(b or ""):
             for u in units(p, unit):
-                t = " ".join(u)
+                t = spoken(u, inner_end)
                 if t not in seen:
                     seen.add(t)
                     texts.append(t)
@@ -113,6 +113,18 @@ def units(paragraph, unit="sentence"):
     if len(groups) > 1 and len(groups[-1]) == 1 and len(groups[-2]) == 3:
         groups[-1].insert(0, groups[-2].pop())          # 3+1 -> 2+2
     return groups
+
+
+def spoken(group, inner_end=None):
+    """The text actually sent to the TTS for a group of sentences. With inner_end (",", ";" or "..."), the inner
+    periods are read as that mark, so the narrator keeps the thought open instead of closing every sentence;
+    captions always show the real sentences."""
+    out = []
+    for k, x in enumerate(group):
+        if inner_end and k < len(group) - 1 and x.endswith("."):
+            x = x[:-1] + inner_end
+        out.append(x)
+    return " ".join(out)
 
 
 def tighten(a, max_gap=0.85, keep=0.6):
@@ -241,7 +253,7 @@ class Track:
         self.n += len(audio)
         self.cues += timed_chunks(start, self.t, sentence, max_chars)
 
-    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84, unit="sentence"):
+    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84, unit="sentence", inner_end=None):
         paras = paragraphs(text)
         for pi, p in enumerate(paras):
             groups = units(p, unit)
@@ -249,7 +261,7 @@ class Track:
                 if len(g) == 1:
                     self.speech(voice.say(g[0]), g[0], max_chars)
                 else:
-                    a = tighten(voice.say(" ".join(g)))
+                    a = tighten(voice.say(spoken(g, inner_end)))
                     start = self.t
                     self.parts.append(a)
                     self.n += len(a)
@@ -283,11 +295,13 @@ def synthesize(script, cfg, out_dir, voice=None):
     tr = Track()
     timing = {"chapters": []}
     unit = v.get("unit", "sentence") if isinstance(voice, PrecomputedVoice) else "sentence"
+    inner_end = v.get("inner_end") if unit == "paragraph" else None
 
     tr.silence(LEAD)
     if script.get("cold_open"):
         s = tr.t
-        tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8, v["pause_paragraph"] * 0.8, unit=unit)
+        tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8, v["pause_paragraph"] * 0.8, unit=unit,
+                inner_end=inner_end)
         timing["cold_open"] = {"start": s, "end": tr.t}
         print(f"  voiced cold open ({tr.t:.0f} s)")
     s = tr.t + 0.6
@@ -297,7 +311,8 @@ def synthesize(script, cfg, out_dir, voice=None):
     for ci, ch in enumerate(script["chapters"]):
         start = tr.t
         tr.silence(CHAPTER_LEAD)
-        tr.text(voice, ch["text"], v["pause_sentence"], v["pause_paragraph"], unit=unit)
+        tr.text(voice, ch["text"], v["pause_sentence"], v["pause_paragraph"], unit=unit,
+                inner_end=inner_end)
         if ci < len(script["chapters"]) - 1:
             tr.silence(v["pause_chapter"])
         timing["chapters"].append({"title": ch["title"], "start": start, "end": tr.t})
@@ -320,7 +335,8 @@ def synthesize_short(text, cfg, out_wav, speed=1.0, voice=None):
     tr = Track()
     tr.silence(0.25)
     unit = cfg["voice"].get("unit", "sentence") if isinstance(voice, PrecomputedVoice) else "sentence"
-    tr.text(voice, text, 0.22, 0.35, max_chars=22, unit=unit)
+    inner_end = cfg["voice"].get("inner_end") if unit == "paragraph" else None
+    tr.text(voice, text, 0.22, 0.35, max_chars=22, unit=unit, inner_end=inner_end)
     tr.silence(0.9)
     sf.write(out_wav, tr.audio(), SR)
     return tr.t, tr.cues

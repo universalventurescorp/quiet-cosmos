@@ -183,7 +183,8 @@ def narration_job(script, cfg):
     return {"model": vc.get("model", "Qwen/Qwen3-TTS-12Hz-1.7B-Base"),
             "language": {"es": "Spanish", "en": "English"}[cfg["channel"]["language"]],
             "ref_text": vc["ref_text"], "ref_b64": base64.b64encode(ref.read_bytes()).decode(),
-            "items": narration_items(script, vc.get("unit", "sentence"))}
+            "items": narration_items(script, vc.get("unit", "sentence"),
+                                            vc.get("inner_end") if vc.get("unit") == "paragraph" else None)}
 
 
 def load_gpu_voice(out, cfg, gpu_state):
