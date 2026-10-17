@@ -69,7 +69,7 @@ def video_bench(cfg, kind="video"):
         print(f"   collecting the bench already on Kaggle: {state['job_id']}")
     else:
         state = gpu.launch(job, out, cfg, worker=ROOT / "kaggle" / f"bench_{kind}.py") if gpu.configured() else {}
-    manifest = gpu.collect(out, cfg, wait_minutes=180) if state.get("ok") else None
+    manifest = gpu.collect(out, cfg, wait_minutes=330 if job.get("native") else 180) if state.get("ok") else None
     prev.mkdir(parents=True, exist_ok=True)
     old_scores = read_json(prev / "scores.json", {})
     for f in prev.glob("*"):

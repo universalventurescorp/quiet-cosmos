@@ -830,7 +830,7 @@ def main():
             two = len(M["gpus"]) > 1
             t1 = threading.Thread(target=run_engine, args=("qwenref", 1 if two else 0, 40 * 60))
             t1.start()
-            run_engine("natdesign", 0, timeout=150 * 60)
+            run_engine("natdesign", 0, timeout=280 * 60)
             t1.join()
             run_engine("score", 1 if two else 0)
             want = []
