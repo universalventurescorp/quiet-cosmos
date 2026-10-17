@@ -460,6 +460,12 @@ def main():
         subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y", "-q", "torchao"],
                        capture_output=True, text=True)
         log("main", "packages ready")
+        # import diffusers once here: two threads importing it (and peft) at the same time deadlock
+        try:
+            import diffusers  # noqa: F401
+            from diffusers import AutoencoderKL, LTXImageToVideoPipeline, StableDiffusionXLPipeline  # noqa: F401
+        except Exception as exc:                        # noqa: BLE001
+            manifest["errors"].append(f"diffusers import: {str(exc)[-600:]}")
         import torch
         n = torch.cuda.device_count()
         manifest["gpus"] = [torch.cuda.get_device_name(i) for i in range(n)]
