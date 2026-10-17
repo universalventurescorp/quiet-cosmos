@@ -129,6 +129,7 @@ jobs:
           export BENCH_ENGINES="${{ inputs.bench_engines }}"
           [ "${{ inputs.bench_engines }}" = "qwen-designs" ] && export BENCH_ENGINES="qwen,score" BENCH_DESIGNS=true
           [ "${{ inputs.bench_engines }}" = "emotion" ] && export BENCH_EMOTION=true
+          [ "${{ inputs.bench_engines }}" = "native" ] && export BENCH_NATIVE=true
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch

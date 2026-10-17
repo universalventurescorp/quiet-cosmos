@@ -81,6 +81,36 @@ EMO_SCRIPT = [
     ("Respira despacio. La luz de Europa sigue ahí, esperando.", ("style", "comfort"), 1.5, -2),
 ]
 
+# ---------------------------------------------------------------- native-accent round (Qwen only)
+# Each candidate narrator is DESIGNED by Qwen3 VoiceDesign once neutral and once per emotion group (same
+# description + the emotion), keeping the take most similar to the neutral clip; then the Base model clones each
+# line from the clip of its emotion. No Step-Audio: its re-performance leaked a foreign accent.
+NATIVE_BASE = ("Native Spanish speaker, no foreign accent at all, no English or American accent; "
+               "pronounces every Spanish vowel and the r exactly like a native. ")
+NATIVE_DESIGNS = {
+    "mx": NATIVE_BASE + "Mexican voice actor from Mexico City in his fifties, the classic Latin American "
+          "documentary dubbing voice: deep, warm, velvety baritone, clear diction, neutral Latin American Spanish, "
+          "slow and calm nature-documentary storytelling.",
+    "pe": NATIVE_BASE + "Peruvian male narrator from Lima in his fifties, deep warm baritone, very clear neutral "
+          "Latin American Spanish, calm, wise and intimate, slow nature-documentary storytelling.",
+    "co": NATIVE_BASE + "Colombian male narrator from Bogota in his fifties, deep resonant baritone, precise and "
+          "elegant neutral Latin American Spanish, serene, warm documentary storytelling.",
+    "doblaje": NATIVE_BASE + "Veteran Latin American dubbing actor, deep rich bass-baritone with gravitas, the voice "
+               "of great science documentaries, neutral Latin American Spanish, unhurried, every word carries "
+               "meaning, warm and expressive.",
+}
+EMO_GROUPS = {   # Step-style tag in EMO_SCRIPT -> emotion group -> how to say it in the design instruction
+    "calma": "Speaking calmly and gently.",
+    "misterio": "Speaking softly in a low, hushed, mysterious tone, as if revealing a secret.",
+    "solemne": "Speaking in a serious, solemn and weighty tone, slowly.",
+    "asombro": "Speaking with genuine wonder and admiration, voice opening up with awe.",
+    "emocion": "Speaking with rising excitement and emotion, voice brighter and stronger, building to a climax.",
+    "intimo": "Speaking very warmly and intimately, tender and reassuring, almost whispering.",
+}
+TAG_GROUP = {"serious": "solemne", "admiration": "asombro", "murmur": "misterio", "story": "calma",
+             "surprised": "asombro", "vivid": "emocion", "whisper": "misterio", "excited": "emocion",
+             "soulful": "intimo", "gentle": "intimo", "comfort": "intimo"}
+
 # ---------------------------------------------------------------- worker (runs inside each engine's venv)
 WORKER = r'''
 import json, os, sys, time, traceback, pathlib
@@ -269,6 +299,69 @@ try:
             chunks.append(resample(wavs[0], sr))
         save_emo("emo_plana", chunks, 24000, time.time() - t, directed=False)
 
+    elif engine == "natdesign":
+        from qwen_tts import Qwen3TTSModel
+        from speechbrain.inference.speaker import EncoderClassifier
+        import librosa
+        kw = dict(device_map="cuda:0", dtype=torch.float16, attn_implementation="sdpa")
+        design = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", **kw)
+        base = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", **kw)
+        spk = EncoderClassifier.from_hparams("speechbrain/spkrec-ecapa-voxceleb", run_opts={"device": "cuda"},
+                                             savedir=str(OUT.parent / "ecapa_nat"))
+        log("models loaded")
+
+        def emb(w, sr):
+            w16 = librosa.resample(to_np(w), orig_sr=sr, target_sr=16000)
+            with torch.no_grad():
+                return spk.encode_batch(torch.from_numpy(w16).unsqueeze(0)).squeeze().float()
+
+        def designed(instruct, seed):
+            torch.manual_seed(seed)
+            wavs, sr = design.generate_voice_design(text=REF_TEXT, language="Spanish", instruct=instruct)
+            w = to_np(wavs[0])
+            if not np.isfinite(w).all() or np.max(np.abs(w)) < 1e-3:
+                raise RuntimeError("NaN/silence")
+            return w, sr
+
+        groups, tag_group = cfg["emo_groups"], cfg["tag_group"]
+        for cid, desc in cfg["native_designs"].items():
+            try:
+                t = time.time()
+                neutral, sr = designed(desc + " " + groups["calma"], 0)
+                sf.write(OUT / f"nat_ref_{cid}_calma.wav", neutral, sr)
+                e0 = emb(neutral, sr)
+                bank, sims = {"calma": OUT / f"nat_ref_{cid}_calma.wav"}, {}
+                for g, how in groups.items():
+                    if g == "calma":
+                        continue
+                    best = None
+                    for seed in range(3):       # 3 takes, keep the one that is most the SAME narrator
+                        try:
+                            w, wsr = designed(desc + " " + how, seed)
+                        except Exception:
+                            continue
+                        sim = float(torch.nn.functional.cosine_similarity(emb(w, wsr), e0, dim=0))
+                        if best is None or sim > best[0]:
+                            best = (sim, w, wsr)
+                    if best and best[0] >= 0.55:
+                        f = OUT / f"nat_ref_{cid}_{g}.wav"
+                        sf.write(f, best[1], best[2])
+                        bank[g], sims[g] = f, round(best[0], 3)
+                chunks, used = [], []
+                for i, line in enumerate(S):
+                    tag = EMO[i][0] if i < len(EMO) else None
+                    g = tag_group.get(tag[1], "calma") if tag else "calma"
+                    ref = bank.get(g, bank["calma"])
+                    wavs, csr = base.generate_voice_clone(text=line, language="Spanish", ref_audio=str(ref),
+                                                          ref_text=REF_TEXT)
+                    chunks.append(resample(wavs[0], csr))
+                    used.append(ref.stem.split("_")[-1])
+                save_emo(f"nat_{cid}", chunks, 24000, time.time() - t,
+                         extra={"lines": used, "bank_sim": sims, "design": desc})
+            except Exception:
+                res["errors"].append(f"nat {cid}: {traceback.format_exc()[-1500:]}")
+                log(f"nat {cid} failed: {traceback.format_exc()[-800:]}")
+
     elif engine == "qwenbank":
         from qwen_tts import Qwen3TTSModel
         base = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", device_map="cuda:0",
@@ -447,6 +540,19 @@ try:
                 res["errors"].append("speaker sim: " + traceback.format_exc()[-800:])
                 spk = None
 
+        lid = None
+        if EMO:
+            try:
+                from speechbrain.inference.classifiers import EncoderClassifier as LangID
+                lid = LangID.from_hparams("speechbrain/lang-id-voxlingua107-ecapa", run_opts={"device": "cuda"},
+                                          savedir=str(OUT.parent / "langid"))
+                labels = lid.hparams.label_encoder
+                i_es = labels.encode_label([l for l in labels.lab2ind if l.startswith("es")][0])
+                i_en = labels.encode_label([l for l in labels.lab2ind if l.startswith("en")][0])
+            except Exception:
+                res["errors"].append("lang id: " + traceback.format_exc()[-800:])
+                lid = None
+
         def sentence_f0(w16):
             f0, vflag, _ = librosa.pyin(w16, fmin=55, fmax=320, sr=16000, frame_length=1024)
             f0 = f0[vflag & np.isfinite(f0)]
@@ -473,6 +579,13 @@ try:
                         st = 12 * np.log2(f0 / np.median(f0))
                         row["range_st"] = round(float(np.percentile(st, 95) - np.percentile(st, 5)), 1)
                     row["db"] = round(float(20 * np.log10(np.sqrt(np.mean(w16 ** 2)) + 1e-9)), 1)
+                    if lid is not None:
+                        with torch.no_grad():
+                            out = lid.classify_batch(torch.from_numpy(w16).unsqueeze(0))
+                        logp = out[0].squeeze().float()
+                        p = torch.softmax(logp, -1) if logp.max() > 0 or logp.min() < -50 else logp.exp()
+                        row["p_es"] = round(float(p[i_es]), 3)
+                        row["p_en"] = round(float(p[i_en]), 3)
                     if spk is not None:
                         with torch.no_grad():
                             e = spk.encode_batch(torch.from_numpy(w16).unsqueeze(0)).squeeze().float()
@@ -536,6 +649,10 @@ try:
                         pitch["between_lines_span_st"] = round(float(lv.max() - lv.min()), 1)
                     pitch["within_line_range_st"] = round(float(np.mean([r.get("range_st", 0) for r in rows])), 1)
                     pitch["loudness_span_db"] = round(max(r["db"] for r in rows) - min(r["db"] for r in rows), 1)
+                    if any("p_es" in r for r in rows):
+                        pitch["accent_p_es"] = round(float(np.mean([r["p_es"] for r in rows if "p_es" in r])), 3)
+                        pitch["accent_min_p_es"] = min(r["p_es"] for r in rows if "p_es" in r)
+                        pitch["accent_p_en"] = round(float(np.mean([r["p_en"] for r in rows if "p_en" in r])), 3)
                     if any("sim" in r for r in rows):
                         pitch["mean_sim"] = round(float(np.mean([r["sim"] for r in rows if "sim" in r])), 3)
                         pitch["min_sim"] = min(r["sim"] for r in rows if "sim" in r)
@@ -566,6 +683,7 @@ ENGINES = {
     # emotion bench
     "qwenref": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
     "qwenbank": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
+    "natdesign": ("3.12", ["qwen-tts", "soundfile", "librosa", "speechbrain"], ["sox"]),
     "stepedit": ("3.12", [], ["sox", "git-lfs"]),     # installed from its own repo + uv.lock (see install_stepedit)
 }
 STEPX_REPO = "https://github.com/stepfun-ai/Step-Audio-EditX.git"
@@ -618,6 +736,8 @@ def run_engine(engine, gpu, timeout=60 * 60):
         cfgf.write_text(json.dumps({"engine": engine, "out": str(OUT), "sentences": M["sentences"], "ref_text": REF_TEXT,
                                     "design": M["design"], "design_only": M.get("design_only", False),
                                     "emo": M.get("emo"), "narrator_ref_text": M.get("narrator_ref_text"),
+                                    "native_designs": NATIVE_DESIGNS, "emo_groups": EMO_GROUPS,
+                                    "tag_group": TAG_GROUP,
                                     "stepx_dir": str(WORK / "stepx"), "models_dir": str(WORK / "stepx_models")},
                                    ensure_ascii=False))
         env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "HF_HUB_ENABLE_HF_TRANSFER": "0",
@@ -705,7 +825,16 @@ def main():
             mp3 = OUT / f"ref_{name}.mp3"
             mp3.write_bytes(base64.b64decode(b64))
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), str(mp3.with_suffix(".wav"))])
-        if job.get("emotion"):
+        if job.get("native"):
+            # native-accent round: current narrator (flat) + 4 Qwen-designed native narrators with emotion banks
+            two = len(M["gpus"]) > 1
+            t1 = threading.Thread(target=run_engine, args=("qwenref", 1 if two else 0, 40 * 60))
+            t1.start()
+            run_engine("natdesign", 0, timeout=150 * 60)
+            t1.join()
+            run_engine("score", 1 if two else 0)
+            want = []
+        elif job.get("emotion"):
             # emotion bench: flat production voice -> directed re-performance -> scoring
             two = len(M["gpus"]) > 1
             run_engine("qwenref", 1 if two else 0, timeout=40 * 60)
