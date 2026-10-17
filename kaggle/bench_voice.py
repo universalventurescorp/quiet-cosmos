@@ -107,6 +107,20 @@ EMO_GROUPS = {   # Step-style tag in EMO_SCRIPT -> emotion group -> how to say i
     "emocion": "Speaking with rising excitement and emotion, voice brighter and stronger, building to a climax.",
     "intimo": "Speaking very warmly and intimately, tender and reassuring, almost whispering.",
 }
+# "nocturno" round: the channel's own narrator (n1, chosen by Luis). Neutral = the real channel reference clip;
+# the other moods are SUBTLE shades of the same calm voice (no stuck-on acting), kept only if they are clearly the
+# same man (ECAPA similarity to the channel clip >= 0.75).
+N1_DESIGN = ("Deep, resonant baritone male narrator in his fifties, neutral Latin American Spanish, calm and "
+             "authoritative like a classic nature documentary voice-over, warm chest voice, close microphone, "
+             "natural unhurried pace.")
+SUBTLE_GROUPS = {
+    "calma": "Speaking calmly and gently.",
+    "misterio": "Same calm voice, a little softer and lower, with a subtle hint of mystery.",
+    "solemne": "Same calm voice, slightly slower and more serious, with quiet gravity.",
+    "asombro": "Same calm voice, with a gentle touch of wonder; the voice opens up slightly.",
+    "emocion": "Same calm voice, a little warmer and more energetic, with restrained excitement.",
+    "intimo": "Same calm voice, closer and more intimate, warm and tender, slightly quieter.",
+}
 TAG_GROUP = {"serious": "solemne", "admiration": "asombro", "murmur": "misterio", "story": "calma",
              "surprised": "asombro", "vivid": "emocion", "whisper": "misterio", "excited": "emocion",
              "soulful": "intimo", "gentle": "intimo", "comfort": "intimo"}
@@ -324,10 +338,16 @@ try:
             return w, sr
 
         groups, tag_group = cfg["emo_groups"], cfg["tag_group"]
+        anchor = cfg.get("anchor_ref")
+        min_sim, seeds = cfg.get("min_sim", 0.55), cfg.get("seeds", 3)
         for cid, desc in cfg["native_designs"].items():
             try:
                 t = time.time()
-                neutral, sr = designed(desc + " " + groups["calma"], 0)
+                if anchor:      # the channel's real narrator clip is the neutral voice and the identity anchor
+                    neutral, sr = sf.read(anchor, dtype="float32")
+                    neutral = neutral if neutral.ndim == 1 else neutral.mean(1)
+                else:
+                    neutral, sr = designed(desc + " " + groups["calma"], 0)
                 sf.write(OUT / f"nat_ref_{cid}_calma.wav", neutral, sr)
                 e0 = emb(neutral, sr)
                 bank, sims = {"calma": OUT / f"nat_ref_{cid}_calma.wav"}, {}
@@ -335,7 +355,7 @@ try:
                     if g == "calma":
                         continue
                     best = None
-                    for seed in range(3):       # 3 takes, keep the one that is most the SAME narrator
+                    for seed in range(seeds):   # several takes, keep the one that is most the SAME narrator
                         try:
                             w, wsr = designed(desc + " " + how, seed)
                         except Exception:
@@ -343,7 +363,7 @@ try:
                         sim = float(torch.nn.functional.cosine_similarity(emb(w, wsr), e0, dim=0))
                         if best is None or sim > best[0]:
                             best = (sim, w, wsr)
-                    if best and best[0] >= 0.55:
+                    if best and best[0] >= min_sim:
                         f = OUT / f"nat_ref_{cid}_{g}.wav"
                         sf.write(f, best[1], best[2])
                         bank[g], sims[g] = f, round(best[0], 3)
@@ -736,8 +756,10 @@ def run_engine(engine, gpu, timeout=60 * 60):
         cfgf.write_text(json.dumps({"engine": engine, "out": str(OUT), "sentences": M["sentences"], "ref_text": REF_TEXT,
                                     "design": M["design"], "design_only": M.get("design_only", False),
                                     "emo": M.get("emo"), "narrator_ref_text": M.get("narrator_ref_text"),
-                                    "native_designs": NATIVE_DESIGNS, "emo_groups": EMO_GROUPS,
-                                    "tag_group": TAG_GROUP,
+                                    "native_designs": M.get("native_designs", NATIVE_DESIGNS),
+                                    "emo_groups": M.get("emo_groups", EMO_GROUPS), "tag_group": TAG_GROUP,
+                                    "anchor_ref": M.get("anchor_ref"), "min_sim": M.get("min_sim", 0.55),
+                                    "seeds": M.get("seeds", 3),
                                     "stepx_dir": str(WORK / "stepx"), "models_dir": str(WORK / "stepx_models")},
                                    ensure_ascii=False))
         env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "HF_HUB_ENABLE_HF_TRANSFER": "0",
@@ -825,6 +847,9 @@ def main():
             mp3 = OUT / f"ref_{name}.mp3"
             mp3.write_bytes(base64.b64decode(b64))
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), str(mp3.with_suffix(".wav"))])
+        if job.get("nocturno"):
+            M.update(native_designs={"n1": N1_DESIGN}, emo_groups=SUBTLE_GROUPS, min_sim=0.75, seeds=5,
+                     anchor_ref=str(OUT / "ref_narrador.wav"))
         if job.get("native"):
             # native-accent round: current narrator (flat) + 4 Qwen-designed native narrators with emotion banks
             two = len(M["gpus"]) > 1
