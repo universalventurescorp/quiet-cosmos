@@ -1,28 +1,21 @@
 {
   "episode": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-muestra",
-  "date": "2026-10-17T03:34:01",
+  "date": "2026-10-17T05:03:44",
   "qa": {
     "ok": true,
     "fails": [],
-    "warnings": [
-      "AI scenes: kaggle returned 0 images, 0 placed (episode used NASA imagery only)",
-      "Kaggle: o import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):\nFailed to import diffusers.loaders.peft because of the following error (look up to see its traceback):\ndeadlock detected by _ModuleLock('peft.tuners.tuners_utils') at 133544873625296\n",
-      "Kaggle: ):\nFailed to import diffusers.loaders.lora_pipeline because of the following error (look up to see its traceback):\ncannot import name 'MixedModel' from partially initialized module 'peft.tuners' (most likely due to a circular import) (/usr/local/lib/python3.13/dist-packages/peft/tuners/__init__.py)\n"
-    ],
-    "minutes": 6.9,
+    "warnings": [],
+    "minutes": 6.8,
     "lufs": -16.2,
-    "shots": 39,
-    "clips": 0,
-    "ai_scenes": 0,
-    "ai_clips": 0,
-    "ai_status": "kaggle returned 0 images, 0 placed",
-    "gpu_minutes": 5.0
+    "shots": 41,
+    "clips": 3,
+    "ai_scenes": 14,
+    "ai_clips": 3,
+    "ai_status": "ok",
+    "gpu_minutes": 30.0
   },
-  "ai_status": "kaggle returned 0 images, 0 placed",
-  "ai_errors": [
-    " e\nRuntimeError: Failed to import diffusers.loaders.peft because of the following error (look up to see its traceback):\ndeadlock detected by _ModuleLock('peft.tuners.tuners_utils') at 133544873625296\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 184, in run_images\n    pipe, kind = load_image_pipe(job, device, gpu, role)\n                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/src/script.py\", line 139, in load_image_pipe\n    from diffusers import AutoencoderKL, DPMSolverMultistepScheduler, StableDiffusionXLPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):\nFailed to import diffusers.loaders.peft because of the following error (look up to see its traceback):\ndeadlock detected by _ModuleLock('peft.tuners.tuners_utils') at 133544873625296\n",
-    "dModel' from partially initialized module 'peft.tuners' (most likely due to a circular import) (/usr/local/lib/python3.13/dist-packages/peft/tuners/__init__.py)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 250, in run_videos\n    from diffusers import LTXImageToVideoPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.pipelines.ltx.pipeline_ltx_image2video because of the following error (look up to see its traceback):\nFailed to import diffusers.loaders.lora_pipeline because of the following error (look up to see its traceback):\ncannot import name 'MixedModel' from partially initialized module 'peft.tuners' (most likely due to a circular import) (/usr/local/lib/python3.13/dist-packages/peft/tuners/__init__.py)\n"
-  ],
+  "ai_status": "ok",
+  "ai_errors": [],
   "scene_plan": {
     "cold_open": 3,
     "chapter_1": 6,
@@ -30,106 +23,79 @@
   },
   "gpu_job_images": 16,
   "kaggle_push": {
-    "job_id": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-20261017032229",
+    "job_id": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-20261017041919",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792207351.7910032,
+    "pushed_at": 1792210761.6367416,
     "ok": true,
-    "push_output": "Kernel version 18 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 19 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   },
   "kaggle_manifest": {
-    "job_id": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-20261017032229",
-    "errors": [
-      "images:  .unet_2d_blocks import UNetMidBlock2D, get_down_block, get_up_block\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/unets/unet_2d_blocks.py\", line 36, in <module>\n    from ..transformers.dual_transformer_2d import DualTransformer2DModel\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/transformers/__init__.py\", line 5, in <module>\n    from .ace_step_transformer import AceStepTransformer1DModel\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/transformers/ace_step_transformer.py\", line 24, in <module>\n    from ...loaders import PeftAdapterMixin\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.loaders.peft because of the following error (look up to see its traceback):\ndeadlock detected by _ModuleLock('peft.tuners.tuners_utils') at 133544873625296\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 184, in run_images\n    pipe, kind = load_image_pipe(job, device, gpu, role)\n                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/src/script.py\", line 139, in load_image_pipe\n    from diffusers import AutoencoderKL, DPMSolverMultistepScheduler, StableDiffusionXLPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):\nFailed to import diffusers.loaders.peft because of the following error (look up to see its traceback):\ndeadlock detected by _ModuleLock('peft.tuners.tuners_utils') at 133544873625296\n",
-      "videos: 1, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 1023, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 24, in <module>\n    from ...loaders import FromSingleFileMixin, LTXVideoLoraLoaderMixin\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.loaders.lora_pipeline because of the following error (look up to see its traceback):\ncannot import name 'MixedModel' from partially initialized module 'peft.tuners' (most likely due to a circular import) (/usr/local/lib/python3.13/dist-packages/peft/tuners/__init__.py)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 250, in run_videos\n    from diffusers import LTXImageToVideoPipeline\n  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__\n    value = getattr(module, name)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module\n    raise RuntimeError(\n    ...<2 lines>...\n    ) from e\nRuntimeError: Failed to import diffusers.pipelines.ltx.pipeline_ltx_image2video because of the following error (look up to see its traceback):\nFailed to import diffusers.loaders.lora_pipeline because of the following error (look up to see its traceback):\ncannot import name 'MixedModel' from partially initialized module 'peft.tuners' (most likely due to a circular import) (/usr/local/lib/python3.13/dist-packages/peft/tuners/__init__.py)\n"
-    ],
+    "job_id": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-20261017041919",
+    "errors": [],
     "gpus": [
       "Tesla T4",
       "Tesla T4"
     ],
     "images_status": {
-      "done": 0,
+      "done": 16,
       "failed": 0,
-      "skipped": 0
+      "skipped": 0,
+      "model": "sdxl"
     },
     "videos_status": {
-      "done": 0,
+      "done": 3,
       "failed": 0,
       "skipped": 0
     },
     "voice_status": {
-      "done": 71,
-      "total": 71
+      "done": 70,
+      "total": 70
     },
-    "images": [],
-    "videos": [],
-    "minutes": 5.0
+    "images": [
+      "chapter_1_00.jpg",
+      "chapter_1_01.jpg",
+      "chapter_1_02.jpg",
+      "chapter_1_03.jpg",
+      "chapter_1_04.jpg",
+      "chapter_1_05.jpg",
+      "chapter_2_00.jpg",
+      "chapter_2_01.jpg",
+      "chapter_2_02.jpg",
+      "chapter_2_03.jpg",
+      "chapter_2_04.jpg",
+      "chapter_2_05.jpg",
+      "chapter_2_06.jpg",
+      "cold_open_00.jpg",
+      "cold_open_01.jpg",
+      "cold_open_02.jpg"
+    ],
+    "videos": [
+      "chapter_1_05.mp4",
+      "chapter_2_01.mp4",
+      "cold_open_00.mp4"
+    ],
+    "minutes": 30.0
   },
   "kaggle_log": [
-    "",
-    "Traceback (most recent call last):",
-    "  File \"/kaggle/src/script.py\", line 184, in run_images",
-    "    pipe, kind = load_image_pipe(job, device, gpu, role)",
-    "                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^",
-    "  File \"/kaggle/src/script.py\", line 139, in load_image_pipe",
-    "    from diffusers import AutoencoderKL, DPMSolverMultistepScheduler, StableDiffusionXLPipeline",
-    "  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__",
-    "    value = getattr(module, name)",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__",
-    "    module = self._get_module(self._class_to_module[name])",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module",
-    "    raise RuntimeError(",
-    "    ...<2 lines>...",
-    "    ) from e",
-    "RuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):",
-    "Failed to import diffusers.loaders.peft because of the following error (look up to see its traceback):",
-    "deadlock detected by _ModuleLock('peft.tuners.tuners_utils') at 133544873625296",
-    "",
-    "[   1.5 min] videos: 1, in _find_and_load_unlocked",
-    "  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked",
-    "  File \"<frozen importlib._bootstrap_external>\", line 1023, in exec_module",
-    "  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 24, in <module>",
-    "    from ...loaders import FromSingleFileMixin, LTXVideoLoraLoaderMixin",
-    "  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__",
-    "    module = self._get_module(self._class_to_module[name])",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module",
-    "    raise RuntimeError(",
-    "    ...<2 lines>...",
-    "    ) from e",
-    "RuntimeError: Failed to import diffusers.loaders.lora_pipeline because of the following error (look up to see its traceback):",
-    "cannot import name 'MixedModel' from partially initialized module 'peft.tuners' (most likely due to a circular import) (/usr/local/lib/python3.13/dist-packages/peft/tuners/__init__.py)",
-    "",
-    "The above exception was the direct cause of the following exception:",
-    "",
-    "Traceback (most recent call last):",
-    "  File \"/kaggle/src/script.py\", line 250, in run_videos",
-    "    from diffusers import LTXImageToVideoPipeline",
-    "  File \"<frozen importlib._bootstrap>\", line 1420, in _handle_fromlist",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__",
-    "    value = getattr(module, name)",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1006, in __getattr__",
-    "    value = getattr(module, name)",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1005, in __getattr__",
-    "    module = self._get_module(self._class_to_module[name])",
-    "  File \"/usr/local/lib/python3.13/dist-packages/diffusers/utils/import_utils.py\", line 1017, in _get_module",
-    "    raise RuntimeError(",
-    "    ...<2 lines>...",
-    "    ) from e",
-    "RuntimeError: Failed to import diffusers.pipelines.ltx.pipeline_ltx_image2video because of the following error (look up to see its traceback):",
-    "Failed to import diffusers.loaders.lora_pipeline because of the following error (look up to see its traceback):",
-    "cannot import name 'MixedModel' from partially initialized module 'peft.tuners' (most likely due to a circular import) (/usr/local/lib/python3.13/dist-packages/peft/tuners/__init__.py)",
-    "",
-    "[   1.5 min] voice: Qwen3-TTS ready, 71 sentences",
-    "[   5.0 min] voice: GPU 1 narration finished (exit 0)",
-    "[   5.0 min] voice: narration: 71/71 sentences",
-    "[   5.0 min] main: finished: 0 images, 0 clips"
+    "[   0.4 min] main: packages ready",
+    "[   0.9 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
+    "[   2.7 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
+    "[   2.9 min] voice: Qwen3-TTS ready, 70 sentences",
+    "[   3.7 min] images: 1/16 images (50.8 s each)",
+    "[   6.4 min] voice: GPU 1 narration finished (exit 0)",
+    "[   6.4 min] videos: GPU free after narration, starting clips",
+    "[   6.4 min] voice: narration: 70/70 sentences",
+    "[   8.5 min] images: 11/16 images (27.9 s each)",
+    "[  10.2 min] videos: video model: Lightricks/LTX-Video (torch.float16)",
+    "[  16.8 min] videos: clip 1/3 in 399.7 s",
+    "[  23.4 min] videos: clip 2/3 in 392.6 s",
+    "[  30.0 min] videos: clip 3/3 in 396.7 s",
+    "[  30.0 min] main: finished: 16 images, 3 clips"
   ],
   "voice": {
     "engine": "qwen",
-    "sentences": 71,
-    "voiced": 71
+    "sentences": 70,
+    "voiced": 70
   },
   "voice_logs": {
     "voice_gpu1.log": [
@@ -144,19 +110,19 @@
       "    ",
       "",
       "Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]",
-      "Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  4.11it/s]",
-      "Fetching 4 files: 100%|██████████| 4/4 [00:01<00:00,  2.40it/s]",
-      "Fetching 4 files: 100%|██████████| 4/4 [00:01<00:00,  2.40it/s]",
+      "Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  6.41it/s]",
+      "Fetching 4 files: 100%|██████████| 4/4 [00:01<00:00,  2.10it/s]",
+      "Fetching 4 files: 100%|██████████| 4/4 [00:01<00:00,  2.10it/s]",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "[W1017 03:25:42.275876729 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2545942528 bytes (free: 1431109632, total: 15636037632).",
+      "[W1017 04:23:58.992996420 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2468347904 bytes (free: 1867317248, total: 15636037632).",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "[W1017 03:26:50.117309062 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3042967552 bytes (free: 214761472, total: 15636037632).",
+      "[W1017 04:25:12.021339222 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3070230528 bytes (free: 235732992, total: 15636037632).",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation."
     ]
   },
