@@ -1,50 +1,42 @@
-[natdesign] torch 2.14.1+cu130 cuda=True
+[qwenpara] torch 2.14.1+cu130 cuda=True
 
 ********
 Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
 ********
  
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  4.36it/s]Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.46it/s]Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.46it/s]
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 2096.89it/s]
-Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
-[natdesign] models loaded
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.57it/s]Fetching 4 files: 100%|██████████| 4/4 [00:09<00:00,  2.48s/it]Fetching 4 files: 100%|██████████| 4/4 [00:09<00:00,  2.48s/it]
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+[qwenpara] par_t0: 69 s of speech in 172 s
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+[qwenpara] par_t1: 68 s of speech in 163 s
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+[qwenpara] par_t2: 69 s of speech in 168 s
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+[qwenpara] par_xv0: 66 s of speech in 155 s
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[natdesign] nat_n1: 75 s of speech in 775 s
+[qwenpara] par_xv1: 65 s of speech in 155 s
