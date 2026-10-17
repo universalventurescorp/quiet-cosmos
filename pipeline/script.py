@@ -100,7 +100,7 @@ def write_script(topic, cfg):
     outline = ask_json(
         fill("outline.md", CHANNEL=ch["name"], LANGUAGE=lang, TOPIC=topic,
              MINUTES=minutes, CHAPTERS=n_chapters),
-        lambda d: isinstance(d, dict) and d.get("title") and len(d.get("chapters", [])) >= 3)
+        lambda d: isinstance(d, dict) and d.get("title") and len(d.get("chapters", [])) >= min(3, n_chapters))
     chapters = outline["chapters"]
     for c in chapters:
         c.setdefault("video_queries", [])
