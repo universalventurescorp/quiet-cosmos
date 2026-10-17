@@ -51,6 +51,11 @@ def video_bench(cfg, kind="video"):
         if os.environ.get("BENCH_DESIGNS") == "true":     # round 2: new narrator voices from kaggle/voice_designs.json
             job["design"] = read_json(ROOT / "kaggle" / "voice_designs.json", {})
             job["refs"] = {}
+        if os.environ.get("BENCH_EMOTION") == "true":     # "voz dirigida": the channel narrator + emotion edits
+            import yaml
+            ch = yaml.safe_load((ROOT / "channels" / "estrato-nocturno.yaml").read_text(encoding="utf-8"))
+            job.update(emotion=True, narrator_ref_text=ch["voice"]["ref_text"],
+                       refs={"narrador": base64.b64encode((ROOT / ch["voice"]["ref_audio"]).read_bytes()).decode()})
     prev_state = read_json(ROOT / "data" / "diagnostics" / f"{kind}_bench" / "manifest.json", {}).get("push") or {}
     if (prev_state.get("ok") and not prev_state.get("reused") and not job.get("engines")
             and time.time() - prev_state.get("pushed_at", 0) < 4 * 3600):
