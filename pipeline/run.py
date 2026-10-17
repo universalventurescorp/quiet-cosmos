@@ -153,8 +153,51 @@ def save_diagnostics(out, report=None, ai_media=None):
         "kaggle_push": read_json(out / "kaggle.json", {}),
         "kaggle_manifest": read_json(out / "ai" / "manifest.json", None),
         "kaggle_log": tail(out / "ai" / "log.txt"),
+        "voice": (ai_media or {}).get("voice"),
+        "voice_logs": {f.name: tail(f, 25) for f in sorted((out / "ai").glob("voice_gpu*.log"))},
+        "sample": os.environ.get("SAMPLE", "").lower() == "true",
     }
     write_json(DATA / "diagnostics" / "last_episode.json", diag)
+
+
+def narration_job(script, cfg):
+    """What Kaggle needs to voice the episode with the channel's narrator (Qwen3-TTS voice clone)."""
+    import base64
+    from .voice import narration_items
+    vc = cfg["voice"]
+    ref = ROOT / vc["ref_audio"]
+    return {"model": vc.get("model", "Qwen/Qwen3-TTS-12Hz-1.7B-Base"),
+            "language": {"es": "Spanish", "en": "English"}[cfg["channel"]["language"]],
+            "ref_text": vc["ref_text"], "ref_b64": base64.b64encode(ref.read_bytes()).decode(),
+            "items": narration_items(script)}
+
+
+def load_gpu_voice(out, cfg, gpu_state):
+    """Wait for Kaggle and return (voice, info). Falls back to Kokoro if the GPU narration is incomplete."""
+    from . import gpu
+    from .voice import PrecomputedVoice, Voice
+    vc = cfg["voice"]
+    job = read_json(out / "gpu_job.json", {})
+    items = [tuple(x) for x in (job.get("narration") or {}).get("items", [])]
+    fb = vc.get("fallback_id", "em_alex")
+    if not (gpu_state and gpu_state.get("ok") and items):
+        print(f"   GPU narration not available: Kokoro {fb}")
+        vc["id"] = fb
+        return None, {"engine": "kokoro (fallback)", "reason": "kaggle not launched"}
+    print("   waiting for the narrator voice from Kaggle", flush=True)
+    gpu.collect(out, cfg)
+    folder = out / "ai" / "narration"
+    have = sum((folder / f"{i:05d}.wav").exists() for i, _ in items)
+    info = {"engine": "qwen", "sentences": len(items), "voiced": have}
+    if have == len(items):
+        return PrecomputedVoice(folder, items), info
+    if have >= 0.97 * len(items):
+        print(f"   {len(items) - have} sentences missing: Kokoro {fb} fills them")
+        info["filled_with_kokoro"] = len(items) - have
+        return PrecomputedVoice(folder, items, fallback=Voice(fb, vc.get("speed", 0.8))), info
+    print(f"   GPU narration incomplete ({have}/{len(items)}): whole episode with Kokoro {fb}")
+    vc["id"] = fb
+    return None, {**info, "engine": "kokoro (fallback)", "reason": "incomplete GPU narration"}
 
 
 def step(n, total, text):
@@ -170,7 +213,12 @@ def main():
     ap.add_argument("--gpu-test", action="store_true", help="only test Kaggle: 4 images + 1 clip (~20 min)")
     ap.add_argument("--video-bench", action="store_true", help="benchmark image-to-video models on Kaggle")
     ap.add_argument("--voice-bench", action="store_true", help="benchmark Spanish TTS voices on Kaggle")
+    ap.add_argument("--sample", action="store_true",
+                    help="short preview episode (SAMPLE_MINUTES, 2 chapters, no Shorts), uploaded private as MUESTRA")
     args = ap.parse_args()
+    sample = args.sample or os.environ.get("SAMPLE", "").lower() == "true"
+    if sample:
+        os.environ["SAMPLE"] = "true"
     if args.video_bench:
         return video_bench(load_config())
     if args.voice_bench:
@@ -183,10 +231,18 @@ def main():
     lang = cfg["channel"]["language"]
     assert lang in LANG_NAMES, f"unsupported language {lang}"
     from .topics import next_topic
-    topic = args.topic or os.environ.get("TOPIC") or next_topic(cfg)
+    topic = args.topic or os.environ.get("TOPIC") or (None if sample else next_topic(cfg))
+    if not topic:
+        raise SystemExit("a sample needs an explicit topic (TOPIC)")
     do_upload = not args.no_upload and os.environ.get("UPLOAD", "").lower() != "false"
-    do_shorts = not args.no_shorts and cfg.get("shorts", {}).get("count", 0) > 0
-    out = ROOT / "outputs" / slugify(topic)
+    do_shorts = not args.no_shorts and cfg.get("shorts", {}).get("count", 0) > 0 and not sample
+    if sample:
+        v["target_minutes"] = float(os.environ.get("SAMPLE_MINUTES") or 5)
+        v["chapters"] = 2
+        cfg.setdefault("kaggle", {})["gpu_budget_minutes"] = 60
+    voice_cfg = cfg["voice"]
+    gpu_voice = voice_cfg.get("engine", "kokoro") == "qwen"
+    out = ROOT / "outputs" / (slugify(topic) + ("-muestra" if sample else ""))
     out.mkdir(parents=True, exist_ok=True)
     N = 12
     ai_cfg = cfg.get("ai", {})
@@ -217,19 +273,25 @@ def main():
             print("   Kaggle not configured (KAGGLE_USERNAME / KAGGLE_KEY): NASA imagery only")
         elif not gpu_state or not gpu_state.get("ok"):
             job = build_job(plan, cfg, f"{slugify(topic)}-{dt.datetime.utcnow():%Y%m%d%H%M%S}", topic)
+            if gpu_voice:
+                job["narration"] = narration_job(script, cfg)
             write_json(out / "gpu_job.json", job)
-            print(f"   sending {len(job['images'])} images + {len(job['videos'])} clips to Kaggle")
-            if job["images"]:
+            print(f"   sending {len(job['images'])} images + {len(job['videos'])} clips"
+                  + (f" + {len(job['narration']['items'])} sentences to voice" if gpu_voice else "") + " to Kaggle")
+            if job["images"] or job.get("narration"):
                 gpu_state = gpu.launch(job, out, cfg)
             else:
                 print("   Claude returned no scene prompts: NASA imagery only")
 
     # 3. narration + captions
     timing = read_json(out / "timing.json", None)
+    gpu_voice_obj, voice_info = None, {"engine": "kokoro"}
+    if gpu_voice:
+        gpu_voice_obj, voice_info = load_gpu_voice(out, cfg, gpu_state)
     if not timing or not (out / "narration.wav").exists():
         from .voice import synthesize
-        step(3, N, "narrating")
-        timing = synthesize(script, cfg, out)
+        step(3, N, f"narrating ({voice_info['engine']})")
+        timing = synthesize(script, cfg, out, voice=gpu_voice_obj)
         write_json(out / "timing.json", timing)
     print(f"   narration: {timing['duration'] / 60:.1f} min")
 
@@ -257,9 +319,12 @@ def main():
     # 5. score
     music = out / "music.wav"
     if not music.exists():
-        from .music import make_ambient
+        from .music import make_ambient, make_score
         step(5, N, "composing ambient score")
-        make_ambient(music, seed=zlib.crc32(topic.encode()))
+        if cfg["mix"].get("score") == "chapters":
+            make_score(music, timing, seed=zlib.crc32(topic.encode()))
+        else:
+            make_ambient(music, seed=zlib.crc32(topic.encode()))
 
     # 6. final audio
     audio = out / "audio.wav"
@@ -267,7 +332,8 @@ def main():
         from .mix import mix
         step(6, N, "mixing voice and score")
         mix(out / "narration.wav", music, audio, timing["duration"],
-            music_volume=cfg["mix"]["music_volume"], lufs=cfg["mix"]["lufs"])
+            music_volume=cfg["mix"]["music_volume"], lufs=cfg["mix"]["lufs"],
+            voice_eq=cfg["mix"].get("voice_eq", "clean"))
 
     # 7. AI scenes back from the GPU: depth maps for 2.5D, slowed clips, placed on their sentences
     ai_media = read_json(out / "ai_media.json", None)
@@ -293,6 +359,7 @@ def main():
         elif use_ai:
             ai_media["status"] = "kaggle push failed" if gpu_state else "kaggle not configured"
         write_json(out / "ai_media.json", ai_media)
+    ai_media["voice"] = voice_info
     placed = ai_media.get("placed", {})
     used_ai = any(placed.values())
     if use_ai and not used_ai:
@@ -319,7 +386,8 @@ def main():
     all_imgs = [it["path"] for k in ("cold_open", "chapter_1") for it in placed.get(k, [])] + all_imgs
     texts = script.get("thumbnail_texts") or [script.get("thumbnail_text", script["title"])]
     thumbs = make_thumbnails(all_imgs, texts, out)
-    meta = {"title": script["title"], "tags": script.get("tags", []),
+    title = f"MUESTRA · {script['title']}"[:100] if sample else script["title"]
+    meta = {"title": title, "tags": script.get("tags", []),
             "description": build_description(script, timing, lang, used_ai), "synthetic": used_ai}
     write_json(out / "metadata.json", meta)
 
@@ -333,7 +401,7 @@ def main():
             fallback = [i for m in media for i in m["images"]]
             for k, s in enumerate(script["shorts"], 1):
                 try:
-                    r = produce_short(s, k, cfg, out / "shorts", used, music, fallback)
+                    r = produce_short(s, k, cfg, out / "shorts", used, music, fallback, voice=gpu_voice_obj)
                     if r:
                         shorts.append(r)
                 except Exception as exc:
@@ -376,6 +444,13 @@ def main():
         step(12, N, f"upload skipped ({why})")
 
     save_diagnostics(out, report, ai_media)
+    if sample:
+        write_json(DATA / "diagnostics" / "last_sample.json",
+                   {"topic": topic, "title": meta["title"], "video_id": video_id, "qa_ok": report["ok"],
+                    "minutes": round(timing["duration"] / 60, 1), "voice": voice_info,
+                    "date": dt.date.today().isoformat()})
+        print(f"sample done: https://youtu.be/{video_id}" if video_id else "sample done (not uploaded)")
+        return
     done = read_json(DATA / "done.json", [])
     done.append({"topic": topic, "title": script["title"], "video_id": video_id, "shorts": short_ids,
                  "minutes": round(timing["duration"] / 60, 1), "qa_ok": report["ok"],

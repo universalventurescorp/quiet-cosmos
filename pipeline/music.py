@@ -73,3 +73,35 @@ def make_ambient(path, seed, seconds=360, sr=22050):
     out = np.stack(chans, axis=1)
     out = out / np.abs(out).max() * 0.7
     sf.write(path, out.astype(np.float32), sr)
+
+
+def make_score(path, timing, seed, sr=22050, xfade=6.0):
+    """A score that follows the story: each part (opening, every chapter) gets its own key, chords and
+    colour, crossfading during the silent chapter leads; the opening title card blooms with no voice on it."""
+    import pathlib
+    import tempfile
+    marks = [0.0] + [c["start"] for c in timing["chapters"][1:]] + [timing["duration"]]
+    first = timing["chapters"][0]["start"] if timing["chapters"] else timing["duration"]
+    marks[1:1] = [first] if len(timing["chapters"]) > 1 else []
+    marks = sorted(set(round(m, 3) for m in marks))
+    total = int(round(timing["duration"] * sr)) + sr
+    out = np.zeros((total, 2), np.float32)
+    fade = int(xfade * sr)
+    with tempfile.TemporaryDirectory() as tmp:
+        for i, (a, b) in enumerate(zip(marks[:-1], marks[1:])):
+            seconds = int(min(360, max(30, b - a + xfade + 2)))
+            p = pathlib.Path(tmp) / f"part{i}.wav"
+            make_ambient(p, seed=seed + 7919 * i, seconds=seconds, sr=sr)
+            part = sf.read(p, dtype="float32")[0]
+            s0 = max(0, int(a * sr) - (fade // 2 if i else 0))
+            s1 = min(total, int(b * sr) + fade // 2)
+            n = s1 - s0
+            seg = np.tile(part, (n // len(part) + 1, 1))[:n]
+            env = np.ones(n, np.float32)
+            if i:
+                env[:fade] = np.sin(np.linspace(0, np.pi / 2, fade)) ** 2
+            if s1 < total:
+                env[-fade:] = np.minimum(env[-fade:], np.cos(np.linspace(0, np.pi / 2, fade)) ** 2)
+            out[s0:s1] += seg * env[:, None]
+    out = out / max(1e-6, np.abs(out).max()) * 0.7
+    sf.write(path, out, sr)

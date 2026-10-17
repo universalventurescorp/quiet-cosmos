@@ -252,6 +252,9 @@ def run_videos(job, gpu, images_thread):
         device = f"cuda:{gpu}"
         major = torch.cuda.get_device_capability(gpu)[0]
         dtype = torch.bfloat16 if major >= 8 else torch.float16
+        if job.get("narration"):
+            NARRATION_GPU1_FREE.wait()          # the voice comes first: the episode cannot be made without it
+            log(role, "GPU free after narration, starting clips")
         with _load_lock:
             pipe = LTXImageToVideoPipeline.from_pretrained(job["video_model"], torch_dtype=dtype)
             pipe.enable_model_cpu_offload(gpu_id=gpu)
@@ -314,6 +317,139 @@ def run_videos(job, gpu, images_thread):
     save_status(role, st)
 
 
+
+# ---------------------------------------------------------------- narration (Qwen3-TTS voice clone)
+TTS_WORKER = r"""
+import json, sys, time, pathlib
+import numpy as np, soundfile as sf, torch
+cfg = json.load(open(sys.argv[1]))
+out = pathlib.Path(cfg["out"]); out.mkdir(parents=True, exist_ok=True)
+prog = pathlib.Path(cfg["progress"])
+from qwen_tts import Qwen3TTSModel
+model = Qwen3TTSModel.from_pretrained(cfg["model"], device_map="cuda:0", dtype=torch.float16,
+                                      attn_implementation="sdpa")
+prompt = model.create_voice_clone_prompt(ref_audio=cfg["ref"], ref_text=cfg["ref_text"], x_vector_only_mode=False)
+lang = cfg["language"]
+todo = [it for it in cfg["items"] if not (out / f"{it[0]:05d}.wav").exists()]
+todo.sort(key=lambda it: len(it[1]))          # similar lengths batch together
+B = cfg.get("batch", 8)
+done, retried, t0 = 0, 0, time.time()
+
+def ok(w, sr, text):
+    d = len(w) / sr
+    exp = len(text.split()) / 2.4
+    return bool(np.isfinite(w).all() and np.abs(w).max() > 0.01 and 0.35 * exp < d < 2.2 * exp + 1.5)
+
+def gen(texts):
+    wavs, sr = model.generate_voice_clone(text=texts, language=[lang] * len(texts), voice_clone_prompt=prompt,
+                                          max_new_tokens=2048)
+    return [np.asarray(w, np.float32).squeeze() for w in wavs], sr
+
+i = 0
+while i < len(todo):
+    chunk = todo[i:i + B]
+    try:
+        wavs, sr = gen([t for _, t in chunk])
+    except torch.cuda.OutOfMemoryError:
+        torch.cuda.empty_cache()
+        if B == 1:
+            raise
+        B = max(1, B // 2)
+        continue
+    for (idx, text), w in zip(chunk, wavs):
+        tries = 0
+        while not ok(w, sr, text) and tries < 3:
+            tries += 1; retried += 1
+            torch.manual_seed(1000 + idx * 7 + tries)
+            w = gen([text])[0][0]
+        sf.write(out / f"{idx:05d}.wav", w, sr)
+        done += 1
+    i += len(chunk)
+    prog.write_text(json.dumps({"done": done, "total": len(todo), "retried": retried, "batch": B,
+                                "minutes": round((time.time() - t0) / 60, 1)}))
+"""
+
+NARRATION_GPU1_FREE = threading.Event()
+
+
+def run_narration(job):
+    """Voice every sentence on BOTH GPUs (in parallel with the images); GPU 1 is freed for the clips after."""
+    role = "voice"
+    nar = job["narration"]
+    st = {"done": 0, "total": len(nar["items"]), "error": None}
+    try:
+        work = pathlib.Path("/kaggle/tmp/tts")
+        work.mkdir(parents=True, exist_ok=True)
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "uv"], capture_output=True)
+        venv = work / "venv"
+        r = subprocess.run([sys.executable, "-m", "uv", "venv", "-q", "--python", "3.12", str(venv)],
+                           capture_output=True, text=True)
+        if r.returncode:
+            raise RuntimeError("uv venv: " + r.stderr[-600:])
+        py = str(venv / "bin" / "python")
+        r = subprocess.run([sys.executable, "-m", "uv", "pip", "install", "-q", "--python", py, "qwen-tts",
+                            "soundfile"], capture_output=True, text=True, timeout=1800)
+        if r.returncode:
+            raise RuntimeError("pip qwen-tts: " + r.stderr[-1200:])
+        ref_mp3 = work / "ref.mp3"
+        ref_mp3.write_bytes(base64.b64decode(nar["ref_b64"]))
+        import imageio_ffmpeg
+        ref = work / "ref.wav"
+        subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error", "-i", str(ref_mp3),
+                        "-ac", "1", "-ar", "24000", str(ref)], check=True)
+        (work / "tts_worker.py").write_text(TTS_WORKER)
+        log(role, f"Qwen3-TTS ready, {st['total']} sentences")
+        # split by characters: GPU 1 takes more (it has nothing else to do until the clips start)
+        items = sorted(nar["items"], key=lambda it: -len(it[1]))
+        shards, load = ([], []), [0.0, 0.0]
+        share = (0.4, 0.6)
+        for it in items:
+            k = min((0, 1), key=lambda g: load[g] / share[g])
+            shards[k].append(it)
+            load[k] += len(it[1])
+        out = OUT / "narration"
+        procs = []
+        import torch
+        n_gpu = torch.cuda.device_count()
+        for g, shard in enumerate(shards):
+            if not shard:
+                continue
+            gpu = g if n_gpu > 1 else 0
+            cfgf = work / f"cfg_{g}.json"
+            cfgf.write_text(json.dumps({"model": nar["model"], "ref": str(ref), "ref_text": nar["ref_text"],
+                                        "language": nar["language"], "items": shard, "out": str(out),
+                                        "progress": str(work / f"progress_{g}.json"),
+                                        "batch": 4 if g == 0 else 8}, ensure_ascii=False))
+            env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "PYTHONUNBUFFERED": "1"}
+            fo = open(OUT / f"voice_gpu{g}.log", "w")
+            procs.append((g, subprocess.Popen([py, str(work / "tts_worker.py"), str(cfgf)], stdout=fo,
+                                              stderr=subprocess.STDOUT, env=env), fo))
+        pending = list(procs)
+        while pending:
+            time.sleep(30)
+            for p in list(pending):
+                g, proc, fo = p
+                if proc.poll() is not None:
+                    fo.close()
+                    pending.remove(p)
+                    log(role, f"GPU {g} narration finished (exit {proc.returncode})")
+                    if g == 1 or n_gpu < 2:
+                        NARRATION_GPU1_FREE.set()
+            st["done"] = len(list(out.glob("*.wav"))) if out.exists() else 0
+            save_status(role, st)
+        for g, proc, _ in procs:
+            if proc.returncode:
+                tail = (OUT / f"voice_gpu{g}.log").read_text(errors="ignore").splitlines()[-25:]
+                st["error"] = (st["error"] or "") + f"GPU {g} exit {proc.returncode}: " + "\n".join(tail)[-1500:]
+        st["done"] = len(list(out.glob("*.wav"))) if out.exists() else 0
+        log(role, f"narration: {st['done']}/{st['total']} sentences")
+    except Exception:                                   # noqa: BLE001
+        st["error"] = traceback.format_exc()[-2500:]
+        log(role, st["error"])
+    NARRATION_GPU1_FREE.set()
+    save_status(role, st)
+
+
 # ---------------------------------------------------------------- main
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
@@ -337,6 +473,10 @@ def main():
             raise RuntimeError("no GPU in this Kaggle session (the account must be phone-verified "
                                "and the kernel pushed with a GPU accelerator)")
         do_video = bool(job["videos"] and job.get("video_model"))
+        tn = None
+        if job.get("narration"):
+            tn = threading.Thread(target=run_narration, args=(job,))
+            tn.start()
         ti = threading.Thread(target=run_images, args=(job, 0))
         ti.start()
         if do_video and n >= 2:
@@ -346,13 +486,15 @@ def main():
         ti.join()
         if do_video and n < 2:
             run_videos(job, 0, ti)
+        if tn:
+            tn.join()
     except Exception:                                   # noqa: BLE001
         manifest["errors"].append(traceback.format_exc()[-2500:])
-    for role in ("images", "videos"):
+    for role in ("images", "videos", "voice"):
         p = OUT / f"status_{role}.json"
         if p.exists():
             st = json.loads(p.read_text())
-            manifest[role + "_status"] = {k: st[k] for k in ("done", "failed", "skipped", "model") if k in st}
+            manifest[role + "_status"] = {k: st[k] for k in ("done", "failed", "skipped", "model", "total") if k in st}
             if st.get("error"):
                 manifest["errors"].append(f"{role}: {st['error']}")
     manifest["images"] = sorted(p.name for p in OUT.glob("*.jpg") if not p.name.startswith("."))

@@ -14,4 +14,6 @@ Write 110 to 150 words that:
 - End with a quiet line that leads into the journey (the title card appears right after it).
 - Stay calm and intimate, never hype. No exclamation marks.
 
+<<STYLE>>
+
 Text-to-speech rules: spell out numbers and units as spoken, no abbreviations, no parentheses, no headings, no stage directions. Return ONLY the narration text.

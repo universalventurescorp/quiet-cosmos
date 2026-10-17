@@ -9,10 +9,38 @@ channel:
     a Spanish-language YouTube channel of calm, long-form space documentaries to relax and fall asleep to
     (planets, moons, the Sun, stars, nebulae, galaxies, black holes, and our own planet seen from space).
     Audience: Latin America and Spain; prefer the subjects with the strongest search demand in Spanish
+  narrator_style: >-
+    The narrator is a wise, warm storyteller with a deep voice who has spent a lifetime looking at the sky,
+    speaking intimately to ONE listener (in Spanish address them as "tú", never "ustedes"). Tell the science as
+    a story, not a lecture: set a scene, let a small mystery appear, let the discovery unfold step by step
+    (who looked, what they saw, why it mattered), then pause on its meaning and on the listener's place in it.
+    Use rhythm: an occasional very short sentence for emphasis, a gentle rhetorical question, a quiet moment of
+    awe. Each chapter is a chapter of one story, with a small tension that resolves. Concrete sensory images
+    (what you would see, hear, feel if you were there). Warm, never pompous, never hype, no exclamations:
+    the listener is drifting off to sleep. Natural neutral Latin American Spanish; avoid Spain-only words.
 
 voice:
-  id: ef_dora              # Kokoro, español. Alternativa masculina: em_alex
-  speed: 0.8               # el español suena más natural un poco menos lento que el inglés
+  # Narrador del canal (elegido el 16-oct-2026 tras 4 rondas de pruebas): voz diseñada con Qwen3-TTS
+  # (Apache-2.0) y clonada frase por frase en la GPU de Kaggle a partir de este clip de referencia.
+  engine: qwen
+  model: Qwen/Qwen3-TTS-12Hz-1.7B-Base
+  ref_audio: assets/voices/estrato_narrador.mp3
+  ref_text: "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma."
+  fallback_id: em_alex     # Kokoro, si la GPU falla
+  id: em_alex
+  speed: 0.8
+  wpm: 118                 # ~141 ppm al hablar, menos las pausas
+
+mix:
+  voice_eq: documentary    # voz cálida, con cuerpo y agudos suaves (sin reverb)
+  score: chapters          # la música cambia de tonalidad y color en cada capítulo
+
+shorts:
+  gpu_voice_tempo: 1.1     # los Shorts van un poco más rápidos que el episodio
+
+kaggle:
+  gpu_budget_minutes: 170  # narración (ambas GPU) + escenas IA
+  wait_minutes: 260
 
 
 upload:

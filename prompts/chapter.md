@@ -19,5 +19,6 @@ Voice and style:
 - Vary how chapters open. Do NOT start with "Imagine", and do not reuse the opening move of earlier chapters (a scene, a fact, a date, a question, a quiet observation, a person's discovery all work).
 - End real questions with a question mark so the voice rises naturally. Prefer short and medium sentences; a sleepy listener loses very long ones.
 - <<ENDING_RULE>>
+<<STYLE>>
 
 Return ONLY the narration text.

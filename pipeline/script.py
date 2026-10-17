@@ -91,8 +91,10 @@ def write_script(topic, cfg):
     global MODEL
     MODEL = (cfg.get("claude") or {}).get("model", MODEL)
     ch, minutes = cfg["channel"], cfg["video"]["target_minutes"]
-    n_chapters = max(5, round(minutes / 6.5))
+    n_chapters = cfg["video"].get("chapters") or max(5, round(minutes / 6.5))
     lang = LANG_NAMES[ch["language"]]
+    style = ch.get("narrator_style", "").strip()
+    style = f"\nNarrator persona for this channel (it overrides the generic style above where they differ):\n{style}" if style else ""
 
     print("  outline")
     outline = ask_json(
@@ -118,7 +120,7 @@ def write_script(topic, cfg):
             "chapter.md", CHANNEL=ch["name"], LANGUAGE=lang, OUTLINE=plan, N=i,
             TOTAL=len(chapters), CHAPTER_TITLE=c["title"], BEATS="; ".join(c["beats"]),
             WORDS=words, PREVIOUS=previous, ENDING_RULE=ending,
-            OPENINGS="; ".join(openings) or "(none yet)")), c["title"])
+            OPENINGS="; ".join(openings) or "(none yet)", STYLE=style)), c["title"])
         c["text"] = text
         previous = text.split("\n\n")[-1][-500:]
         openings.append(f'"{_first_words(text)}..."')
@@ -128,7 +130,7 @@ def write_script(topic, cfg):
     outline["cold_open"] = clean(ask_claude(fill(
         "cold_open.md", CHANNEL=ch["name"], LANGUAGE=lang, TITLE=outline["title"],
         PROMISE=outline.get("hook_promise", ""), CHAPTERS="; ".join(c["title"] for c in chapters),
-        FIRST=_first_words(chapters[0]["text"], 30))))
+        FIRST=_first_words(chapters[0]["text"], 30), STYLE=style)))
 
     print("  science & TTS review")
     sections = {"cold_open": outline["cold_open"]}

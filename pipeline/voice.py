@@ -1,4 +1,9 @@
-"""Narration with Kokoro (open-source TTS, Apache-2.0, runs on CPU) + exact subtitle timings.
+"""Narration + exact subtitle timings.
+
+Two engines (voice.engine in the channel config):
+  kokoro  open-source TTS (Apache-2.0) on the CPU of the GitHub runner
+  qwen    Qwen3-TTS (Apache-2.0) cloning the channel's narrator voice, run on Kaggle's GPUs together with the
+          AI scenes (pipeline/gpu.py); here we only read back one wav per sentence (PrecomputedVoice)
 
 Episode layout:
   [lead] cold open  [opening title card + music]  chapter 1 ... chapter N  [end card]
@@ -33,6 +38,52 @@ class Voice:
                 chunks.append(np.asarray(audio, dtype=np.float32).reshape(-1))
         audio = np.concatenate(chunks) if chunks else np.zeros(int(SR * 0.1), np.float32)
         return _trim(audio)
+
+
+class PrecomputedVoice:
+    """Sentences already voiced on the GPU: say(text) returns that sentence's audio at SR."""
+
+    def __init__(self, folder, items, fallback=None):
+        self.folder, self.fallback = folder, fallback
+        self.index = {text: idx for idx, text in items}
+        self.missing = []
+
+    def path(self, text):
+        idx = self.index.get(" ".join(text.split()))
+        return None if idx is None else self.folder / f"{idx:05d}.wav"
+
+    def say(self, text, speed=None):
+        import soundfile as sf
+        p = self.path(text)
+        if p is None or not p.exists():
+            self.missing.append(text)
+            if self.fallback is None:
+                raise RuntimeError(f"no narration for: {text[:80]}")
+            return self.fallback.say(text, speed)
+        a, sr = sf.read(p, dtype="float32")
+        if a.ndim > 1:
+            a = a.mean(axis=1)
+        if sr != SR:
+            from scipy.signal import resample_poly
+            from math import gcd
+            g = gcd(sr, SR)
+            a = resample_poly(a, SR // g, sr // g).astype(np.float32)
+        return _trim(a)
+
+
+def narration_items(script):
+    """Every sentence the episode will speak (episode + Shorts), each once, numbered."""
+    texts = []
+    blocks = [script.get("cold_open", "")] + [c["text"] for c in script["chapters"]]
+    blocks += [s.get("narration", "") for s in script.get("shorts", [])]
+    seen = set()
+    for b in blocks:
+        for p in paragraphs(b or ""):
+            for sent in split_sentences(p):
+                if sent not in seen:
+                    seen.add(sent)
+                    texts.append(sent)
+    return list(enumerate(texts))
 
 
 def _trim(a, thresh=0.004):
@@ -122,11 +173,11 @@ def write_srt(cues, path):
             f.write(f"{i}\n{srt_time(a)} --> {srt_time(b)}\n{text}\n\n")
 
 
-def synthesize(script, cfg, out_dir):
+def synthesize(script, cfg, out_dir, voice=None):
     import soundfile as sf
 
     v = cfg["voice"]
-    voice = Voice(v["id"], v["speed"])
+    voice = voice or Voice(v["id"], v["speed"])
     tr = Track()
     timing = {"chapters": []}
 
@@ -158,11 +209,11 @@ def synthesize(script, cfg, out_dir):
     return timing
 
 
-def synthesize_short(text, cfg, out_wav, speed=1.0):
+def synthesize_short(text, cfg, out_wav, speed=1.0, voice=None):
     """Shorts voice: normal pace, tight pauses. Returns (duration, caption cues)."""
     import soundfile as sf
 
-    voice = Voice(cfg["voice"]["id"], speed)
+    voice = voice or Voice(cfg["voice"]["id"], speed)
     tr = Track()
     tr.silence(0.25)
     tr.text(voice, text, 0.22, 0.35, max_chars=22)

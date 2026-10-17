@@ -37,6 +37,10 @@ on:
         description: "Comparar voces IA en español en Kaggle (no produce episodio)"
         type: boolean
         default: false
+      sample:
+        description: "Muestra corta (5 min, 2 capítulos, sin Shorts) que se sube en privado como MUESTRA; requiere tema"
+        type: boolean
+        default: false
       bench_engines:
         description: "Prueba de voces: solo estos motores (ej. chatterbox,qwen; vacío = todos)"
         required: false
@@ -118,6 +122,7 @@ jobs:
           ARGS=""
           [ "${{ inputs.shorts }}" = "false" ] && ARGS="$ARGS --no-shorts"
           [ "${{ inputs.ai }}" = "false" ] && ARGS="$ARGS --no-ai"
+          [ "${{ inputs.sample }}" = "true" ] && ARGS="$ARGS --sample --no-shorts"
           [ "${{ inputs.gpu_test }}" = "true" ] && ARGS="--gpu-test"
           [ "${{ inputs.video_bench }}" = "true" ] && ARGS="--video-bench"
           [ "${{ inputs.voice_bench }}" = "true" ] && ARGS="--voice-bench"
