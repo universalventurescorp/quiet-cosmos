@@ -1,11 +1,483 @@
 {
-  "error": "no result",
+  "job_id": "voice-bench-20261017211008",
+  "errors": [],
+  "engines": {
+    "qwenref": {
+      "status": "done",
+      "gpu": 1,
+      "install_min": 1.4,
+      "returncode": 0,
+      "minutes": 5.8,
+      "variants": {
+        "emo_plana": {
+          "sr": 24000,
+          "speech_seconds": 73.8,
+          "gen_seconds": 179.9
+        }
+      },
+      "errors": [],
+      "torch": "2.14.1+cu130",
+      "cuda": true,
+      "version": null
+    },
+    "natdesign": {
+      "status": "done",
+      "gpu": 0,
+      "install_min": 1.4,
+      "returncode": 0,
+      "minutes": 42.1,
+      "variants": {
+        "nat_mx": {
+          "sr": 24000,
+          "speech_seconds": 77.0,
+          "gen_seconds": 601.4,
+          "lines": [
+            "calma",
+            "calma",
+            "solemne",
+            "asombro",
+            "misterio",
+            "calma",
+            "asombro",
+            "calma",
+            "misterio",
+            "calma",
+            "asombro",
+            "intimo",
+            "intimo",
+            "intimo"
+          ],
+          "bank_sim": {
+            "misterio": 0.673,
+            "solemne": 0.722,
+            "asombro": 0.741,
+            "intimo": 0.655
+          },
+          "design": "Native Spanish speaker, no foreign accent at all, no English or American accent; pronounces every Spanish vowel and the r exactly like a native. Mexican voice actor from Mexico City in his fifties, the classic Latin American documentary dubbing voice: deep, warm, velvety baritone, clear diction, neutral Latin American Spanish, slow and calm nature-documentary storytelling."
+        },
+        "nat_pe": {
+          "sr": 24000,
+          "speech_seconds": 74.1,
+          "gen_seconds": 578.5,
+          "lines": [
+            "calma",
+            "calma",
+            "solemne",
+            "asombro",
+            "misterio",
+            "calma",
+            "asombro",
+            "emocion",
+            "misterio",
+            "emocion",
+            "asombro",
+            "intimo",
+            "intimo",
+            "intimo"
+          ],
+          "bank_sim": {
+            "misterio": 0.802,
+            "solemne": 0.775,
+            "asombro": 0.752,
+            "emocion": 0.561,
+            "intimo": 0.823
+          },
+          "design": "Native Spanish speaker, no foreign accent at all, no English or American accent; pronounces every Spanish vowel and the r exactly like a native. Peruvian male narrator from Lima in his fifties, deep warm baritone, very clear neutral Latin American Spanish, calm, wise and intimate, slow nature-documentary storytelling."
+        },
+        "nat_co": {
+          "sr": 24000,
+          "speech_seconds": 74.2,
+          "gen_seconds": 580.2,
+          "lines": [
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma",
+            "calma"
+          ],
+          "bank_sim": {},
+          "design": "Native Spanish speaker, no foreign accent at all, no English or American accent; pronounces every Spanish vowel and the r exactly like a native. Colombian male narrator from Bogota in his fifties, deep resonant baritone, precise and elegant neutral Latin American Spanish, serene, warm documentary storytelling."
+        },
+        "nat_doblaje": {
+          "sr": 24000,
+          "speech_seconds": 75.2,
+          "gen_seconds": 587.4,
+          "lines": [
+            "calma",
+            "calma",
+            "solemne",
+            "asombro",
+            "misterio",
+            "calma",
+            "asombro",
+            "calma",
+            "misterio",
+            "calma",
+            "asombro",
+            "calma",
+            "calma",
+            "calma"
+          ],
+          "bank_sim": {
+            "misterio": 0.725,
+            "solemne": 0.62,
+            "asombro": 0.732
+          },
+          "design": "Native Spanish speaker, no foreign accent at all, no English or American accent; pronounces every Spanish vowel and the r exactly like a native. Veteran Latin American dubbing actor, deep rich bass-baritone with gravitas, the voice of great science documentaries, neutral Latin American Spanish, unhurried, every word carries meaning, warm and expressive."
+        }
+      },
+      "errors": [],
+      "torch": "2.14.1+cu130",
+      "cuda": true,
+      "version": null
+    },
+    "score": {
+      "status": "done",
+      "gpu": 1,
+      "install_min": 0.4,
+      "returncode": 0,
+      "minutes": 3.3,
+      "variants": {},
+      "errors": [],
+      "torch": "2.14.1+cu130",
+      "cuda": true,
+      "version": null
+    }
+  },
+  "sentences": [
+    "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz.",
+    "Al principio parece una estrella más.",
+    "Pero no lo es.",
+    "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido.",
+    "Durante siglos, nadie imaginó lo que escondía.",
+    "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos.",
+    "Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
+    "Años después, la sonda Galileo midió algo extraño: el campo magnético de Júpiter se torcía al pasar por Europa.",
+    "Y solo había una explicación posible.",
+    "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra.",
+    "Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+    "Allí abajo, en la oscuridad total, quizá exista vida.",
+    "Nadie lo sabe todavía.",
+    "Respira despacio. La luz de Europa sigue ahí, esperando."
+  ],
+  "ref_text": "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma.",
+  "design": {
+    "f": "A warm, calm, soft-spoken female narrator in her forties, speaking neutral Latin American Spanish slowly and gently, with a soothing low voice, like a bedtime nature documentary.",
+    "m": "A deep, warm, calm male narrator in his fifties, speaking neutral Latin American Spanish slowly and softly, with a rich velvety voice, like a bedtime nature documentary."
+  },
+  "design_only": false,
+  "emo": [
+    [
+      null,
+      1.0,
+      0
+    ],
+    [
+      null,
+      0.7,
+      0
+    ],
+    [
+      [
+        "style",
+        "serious"
+      ],
+      1.1,
+      0
+    ],
+    [
+      [
+        "emotion",
+        "admiration"
+      ],
+      0.9,
+      0.5
+    ],
+    [
+      [
+        "style",
+        "murmur"
+      ],
+      1.2,
+      -2
+    ],
+    [
+      [
+        "style",
+        "story"
+      ],
+      0.8,
+      0
+    ],
+    [
+      [
+        "emotion",
+        "surprised"
+      ],
+      1.0,
+      0.5
+    ],
+    [
+      [
+        "style",
+        "vivid"
+      ],
+      0.9,
+      1
+    ],
+    [
+      [
+        "style",
+        "whisper"
+      ],
+      1.6,
+      -3
+    ],
+    [
+      [
+        "emotion",
+        "excited"
+      ],
+      1.2,
+      2
+    ],
+    [
+      [
+        "emotion",
+        "admiration"
+      ],
+      1.1,
+      1
+    ],
+    [
+      [
+        "style",
+        "soulful"
+      ],
+      1.5,
+      -1
+    ],
+    [
+      [
+        "style",
+        "gentle"
+      ],
+      1.2,
+      -2
+    ],
+    [
+      [
+        "style",
+        "comfort"
+      ],
+      1.5,
+      -2
+    ]
+  ],
+  "narrator_ref_text": "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma.",
+  "emotion": true,
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "minutes": 45.9,
+  "files": [
+    "emo_plana.mp3",
+    "emo_plana.wav",
+    "emo_segura.mp3",
+    "emo_segura.wav",
+    "log.txt",
+    "manifest.json",
+    "nat_co.mp3",
+    "nat_co.wav",
+    "nat_doblaje.mp3",
+    "nat_doblaje.wav",
+    "nat_mx.mp3",
+    "nat_mx.wav",
+    "nat_pe.mp3",
+    "nat_pe.wav",
+    "nat_ref_co_calma.mp3",
+    "nat_ref_co_calma.wav",
+    "nat_ref_doblaje_asombro.mp3",
+    "nat_ref_doblaje_asombro.wav",
+    "nat_ref_doblaje_calma.mp3",
+    "nat_ref_doblaje_calma.wav",
+    "nat_ref_doblaje_misterio.mp3",
+    "nat_ref_doblaje_misterio.wav",
+    "nat_ref_doblaje_solemne.mp3",
+    "nat_ref_doblaje_solemne.wav",
+    "nat_ref_mx_asombro.mp3",
+    "nat_ref_mx_asombro.wav",
+    "nat_ref_mx_calma.mp3",
+    "nat_ref_mx_calma.wav",
+    "nat_ref_mx_intimo.mp3",
+    "nat_ref_mx_intimo.wav",
+    "nat_ref_mx_misterio.mp3",
+    "nat_ref_mx_misterio.wav",
+    "nat_ref_mx_solemne.mp3",
+    "nat_ref_mx_solemne.wav",
+    "nat_ref_pe_asombro.mp3",
+    "nat_ref_pe_asombro.wav",
+    "nat_ref_pe_calma.mp3",
+    "nat_ref_pe_calma.wav",
+    "nat_ref_pe_emocion.mp3",
+    "nat_ref_pe_emocion.wav",
+    "nat_ref_pe_intimo.mp3",
+    "nat_ref_pe_intimo.wav",
+    "nat_ref_pe_misterio.mp3",
+    "nat_ref_pe_misterio.wav",
+    "nat_ref_pe_solemne.mp3",
+    "nat_ref_pe_solemne.wav",
+    "ref_narrador.mp3",
+    "ref_narrador.wav",
+    "res_natdesign.json",
+    "res_qwenref.json",
+    "res_score.json",
+    "scores.json",
+    "stdout_natdesign.log",
+    "stdout_qwenref.log",
+    "stdout_score.log"
+  ],
+  "scores": {
+    "emo_plana": {
+      "f0_median_hz": 103,
+      "pitch_var_st": 3.22,
+      "pitch_range_st": 10.9,
+      "between_lines_st": 1.09,
+      "between_lines_span_st": 4.0,
+      "within_line_range_st": 9.9,
+      "loudness_span_db": 2.8,
+      "accent_p_es": 0.946,
+      "accent_min_p_es": 0.677,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.859,
+      "min_sim": 0.715,
+      "mean_cer": 0.0006,
+      "max_cer": 0.0079,
+      "mean_mos": 4.192,
+      "words_per_min": 133
+    },
+    "nat_co": {
+      "f0_median_hz": 109,
+      "pitch_var_st": 3.9,
+      "pitch_range_st": 13.4,
+      "between_lines_st": 1.63,
+      "between_lines_span_st": 5.9,
+      "within_line_range_st": 11.5,
+      "loudness_span_db": 3.0,
+      "accent_p_es": 0.801,
+      "accent_min_p_es": 0.019,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.268,
+      "min_sim": 0.19,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.137,
+      "words_per_min": 132
+    },
+    "nat_doblaje": {
+      "f0_median_hz": 104,
+      "pitch_var_st": 2.81,
+      "pitch_range_st": 9.4,
+      "between_lines_st": 1.09,
+      "between_lines_span_st": 3.6,
+      "within_line_range_st": 8.0,
+      "loudness_span_db": 3.8,
+      "accent_p_es": 0.662,
+      "accent_min_p_es": 0.168,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.273,
+      "min_sim": 0.144,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.064,
+      "words_per_min": 131
+    },
+    "nat_mx": {
+      "f0_median_hz": 119,
+      "pitch_var_st": 4.38,
+      "pitch_range_st": 15.0,
+      "between_lines_st": 2.15,
+      "between_lines_span_st": 8.6,
+      "within_line_range_st": 10.9,
+      "loudness_span_db": 160.8,
+      "accent_p_es": 0.606,
+      "accent_min_p_es": 0.006,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.204,
+      "min_sim": -0.011,
+      "mean_cer": 0.0612,
+      "max_cer": 0.8571,
+      "mean_mos": 4.118,
+      "words_per_min": 128
+    },
+    "nat_pe": {
+      "f0_median_hz": 111,
+      "pitch_var_st": 3.32,
+      "pitch_range_st": 11.2,
+      "between_lines_st": 1.95,
+      "between_lines_span_st": 8.0,
+      "within_line_range_st": 9.1,
+      "loudness_span_db": 8.2,
+      "accent_p_es": 0.876,
+      "accent_min_p_es": 0.008,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.309,
+      "min_sim": 0.162,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.077,
+      "words_per_min": 133
+    },
+    "emo_segura": {
+      "f0_median_hz": 102,
+      "pitch_var_st": 3.18,
+      "pitch_range_st": 10.3,
+      "between_lines_st": 1.09,
+      "between_lines_span_st": 4.0,
+      "within_line_range_st": 9.9,
+      "loudness_span_db": 2.8,
+      "accent_p_es": 0.946,
+      "accent_min_p_es": 0.677,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.859,
+      "min_sim": 0.715,
+      "mean_cer": 0.0006,
+      "max_cer": 0.0079,
+      "mean_mos": 4.192,
+      "words_per_min": 133,
+      "pick": [
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana",
+        "emo_plana"
+      ]
+    }
+  },
   "push": {
-    "job_id": "voice-bench-20261017151911",
+    "job_id": "voice-bench-20261017211008",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792250353.1667628,
+    "pushed_at": 1792271411.0673268,
     "ok": true,
-    "push_output": "Kernel version 23 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen",
-    "final_status": "universalventures/quiet-cosmos-gen has status \"KernelWorkerStatus.QUEUED\""
+    "push_output": "Kernel version 25 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   }
 }
