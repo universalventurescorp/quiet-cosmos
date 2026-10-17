@@ -1,17 +1,18 @@
 [score] torch 2.14.1+cu130 cuda=True
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 253/587 [00:00<00:00, 2525.44it/s]Loading weights:  86%|████████▌ | 506/587 [00:00<00:00, 2392.74it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2428.32it/s]
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 247/587 [00:00<00:00, 2465.18it/s]Loading weights:  84%|████████▍ | 494/587 [00:00<00:00, 2435.98it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2461.48it/s]
 Downloading: "https://github.com/tarepan/SpeechMOS/zipball/v1.2.0" to /root/.cache/torch/hub/v1.2.0.zip
 /kaggle/tmp/voicebench/venv_score/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Downloading: "https://github.com/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt" to /root/.cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt
-  0%|          | 0.00/392M [00:00<?, ?B/s]  8%|▊         | 31.4M/392M [00:00<00:01, 328MB/s] 18%|█▊        | 70.1M/392M [00:00<00:00, 364MB/s] 28%|██▊       | 110M/392M [00:00<00:00, 386MB/s]  37%|███▋      | 146M/392M [00:00<00:00, 369MB/s] 46%|████▋     | 182M/392M [00:00<00:00, 364MB/s] 57%|█████▋    | 224M/392M [00:00<00:00, 389MB/s] 67%|██████▋   | 263M/392M [00:00<00:00, 395MB/s] 77%|███████▋  | 301M/392M [00:00<00:00, 396MB/s] 88%|████████▊ | 345M/392M [00:00<00:00, 415MB/s] 99%|█████████▉| 389M/392M [00:01<00:00, 429MB/s]100%|██████████| 392M/392M [00:01<00:00, 400MB/s]
+  0%|          | 0.00/392M [00:00<?, ?B/s]  2%|▏         | 8.38M/392M [00:00<00:04, 87.7MB/s] 13%|█▎        | 49.4M/392M [00:00<00:01, 289MB/s]  21%|██▏       | 83.4M/392M [00:00<00:01, 319MB/s] 30%|██▉       | 118M/392M [00:00<00:00, 334MB/s]  39%|███▉      | 152M/392M [00:00<00:00, 345MB/s] 47%|████▋     | 185M/392M [00:00<00:00, 315MB/s] 55%|█████▌    | 216M/392M [00:00<00:00, 295MB/s] 62%|██████▏   | 244M/392M [00:00<00:00, 285MB/s] 69%|██████▉   | 272M/392M [00:00<00:00, 278MB/s] 76%|███████▌  | 299M/392M [00:01<00:00, 274MB/s] 83%|████████▎ | 325M/392M [00:01<00:00, 272MB/s] 90%|████████▉ | 351M/392M [00:01<00:00, 271MB/s] 96%|█████████▌| 377M/392M [00:01<00:00, 270MB/s]100%|██████████| 392M/392M [00:01<00:00, 284MB/s]
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 [transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
 [transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-[score] emo_dirigida: CER 0.004  MOS 4.16
-[score] emo_fuerte: CER 0.004  MOS 4.18
+[score] emo_banco: CER 0.000  MOS 4.23
+[score] emo_dirigida: CER 0.000  MOS 4.20
+[score] emo_fuerte: CER 0.000  MOS 4.20
 [score] emo_plana: CER 0.000  MOS 4.20
-[score] emo_segura: CER 0.000  MOS 4.20
+[score] emo_segura: CER 0.000  MOS 4.22
