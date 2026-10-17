@@ -1,49 +1,37 @@
 {
-  "job_id": "voice-bench-20261016232454",
+  "job_id": "voice-bench-20261017002515",
   "errors": [],
   "engines": {
     "qwen": {
       "status": "done",
       "gpu": 1,
-      "install_min": 1.1,
+      "install_min": 0.8,
       "returncode": 0,
-      "minutes": 22.2,
+      "minutes": 16.9,
       "variants": {
-        "qwen3_n1": {
+        "qwen3_w1": {
           "sr": 24000,
-          "speech_seconds": 78.5,
-          "gen_seconds": 177.6,
-          "rtf": 2.264
+          "speech_seconds": 81.0,
+          "gen_seconds": 202.9,
+          "rtf": 2.504
         },
-        "qwen3_n2": {
+        "qwen3_w2": {
           "sr": 24000,
-          "speech_seconds": 79.0,
-          "gen_seconds": 179.0,
-          "rtf": 2.267
+          "speech_seconds": 79.4,
+          "gen_seconds": 190.9,
+          "rtf": 2.406
         },
-        "qwen3_n3": {
+        "qwen3_w3": {
           "sr": 24000,
-          "speech_seconds": 74.7,
-          "gen_seconds": 168.7,
-          "rtf": 2.258
+          "speech_seconds": 78.0,
+          "gen_seconds": 186.3,
+          "rtf": 2.388
         },
-        "qwen3_n4": {
+        "qwen3_w4": {
           "sr": 24000,
-          "speech_seconds": 81.4,
-          "gen_seconds": 184.4,
-          "rtf": 2.266
-        },
-        "qwen3_n5": {
-          "sr": 24000,
-          "speech_seconds": 71.8,
-          "gen_seconds": 161.8,
-          "rtf": 2.252
-        },
-        "qwen3_n6": {
-          "sr": 24000,
-          "speech_seconds": 69.4,
-          "gen_seconds": 154.5,
-          "rtf": 2.227
+          "speech_seconds": 77.8,
+          "gen_seconds": 185.8,
+          "rtf": 2.389
         }
       },
       "errors": [],
@@ -56,7 +44,7 @@
       "gpu": 1,
       "install_min": 0.4,
       "returncode": 0,
-      "minutes": 2.6,
+      "minutes": 2.2,
       "variants": {},
       "errors": [],
       "torch": "2.14.1+cu130",
@@ -78,46 +66,36 @@
   ],
   "ref_text": "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma.",
   "design": {
-    "n1": "Deep, resonant baritone male narrator in his fifties, neutral Latin American Spanish, calm and authoritative like a classic nature documentary voice-over, warm chest voice, close microphone, natural unhurried pace.",
-    "n2": "Mature male bass-baritone documentary narrator, neutral Latin American Spanish, warm with a slight gravelly texture, deliberate delivery with gentle emphasis on key words, intimate and soothing.",
-    "n3": "Professional male voice-over artist in his forties, deep and smooth, neutral Latin American Spanish dubbing style, storytelling documentary narration, expressive yet calm, a hint of wonder in the voice.",
-    "n4": "Wise older male narrator around sixty, deep, soft and warm, neutral Latin American Spanish, speaks slowly and tenderly as if telling a bedtime story about the universe.",
-    "n5": "Cinematic male narrator with a deep, rich, velvety voice, neutral Latin American Spanish, epic yet calm documentary tone, crisp clear diction, natural pacing.",
-    "n6": "Deep warm male radio announcer voice, neutral Latin American Spanish, polished and calm, slow-paced science documentary narration with a reassuring tone."
+    "w1": "Wise elderly male narrator in his late sixties, very deep resonant bass voice with natural gravitas and a hint of gentle rasp, neutral Latin American Spanish, speaks slowly and thoughtfully like an ancient sage revealing the secrets of the universe, warm, intimate and expressive.",
+    "w2": "Deep, powerful yet soft-spoken mature male narrator with a resonant chest voice and great gravitas, wise and serene, neutral Latin American Spanish, unhurried documentary storytelling with meaningful pauses and expressive emphasis, conveying awe and wisdom.",
+    "w3": "Old wise storyteller with a deep, warm, slightly husky bass-baritone voice, neutral Latin American Spanish, calm, profound and reassuring, as if he had witnessed the whole history of the cosmos, expressive intonation.",
+    "w4": "Legendary documentary narrator: deep, rich, resonant mature male voice, neutral Latin American Spanish, authoritative but gentle, slow measured delivery where every word carries weight and meaning."
   },
   "design_only": true,
   "gpus": [
     "Tesla T4",
     "Tesla T4"
   ],
-  "minutes": 25.3,
+  "minutes": 19.7,
   "files": [
     "log.txt",
     "manifest.json",
-    "qwen3_n1.mp3",
-    "qwen3_n1.wav",
-    "qwen3_n2.mp3",
-    "qwen3_n2.wav",
-    "qwen3_n3.mp3",
-    "qwen3_n3.wav",
-    "qwen3_n4.mp3",
-    "qwen3_n4.wav",
-    "qwen3_n5.mp3",
-    "qwen3_n5.wav",
-    "qwen3_n6.mp3",
-    "qwen3_n6.wav",
-    "ref_qwen_n1.mp3",
-    "ref_qwen_n1.wav",
-    "ref_qwen_n2.mp3",
-    "ref_qwen_n2.wav",
-    "ref_qwen_n3.mp3",
-    "ref_qwen_n3.wav",
-    "ref_qwen_n4.mp3",
-    "ref_qwen_n4.wav",
-    "ref_qwen_n5.mp3",
-    "ref_qwen_n5.wav",
-    "ref_qwen_n6.mp3",
-    "ref_qwen_n6.wav",
+    "qwen3_w1.mp3",
+    "qwen3_w1.wav",
+    "qwen3_w2.mp3",
+    "qwen3_w2.wav",
+    "qwen3_w3.mp3",
+    "qwen3_w3.wav",
+    "qwen3_w4.mp3",
+    "qwen3_w4.wav",
+    "ref_qwen_w1.mp3",
+    "ref_qwen_w1.wav",
+    "ref_qwen_w2.mp3",
+    "ref_qwen_w2.wav",
+    "ref_qwen_w3.mp3",
+    "ref_qwen_w3.wav",
+    "ref_qwen_w4.mp3",
+    "ref_qwen_w4.wav",
     "res_qwen.json",
     "res_score.json",
     "scores.json",
@@ -125,66 +103,48 @@
     "stdout_score.log"
   ],
   "scores": {
-    "qwen3_n1": {
-      "f0_median_hz": 101,
-      "pitch_var_st": 3.16,
-      "pitch_range_st": 10.9,
+    "qwen3_w1": {
+      "f0_median_hz": 78,
+      "pitch_var_st": 2.27,
+      "pitch_range_st": 7.4,
       "mean_cer": 0.0008,
       "max_cer": 0.0079,
-      "mean_mos": 4.164,
-      "words_per_min": 141
+      "mean_mos": 3.772,
+      "words_per_min": 137
     },
-    "qwen3_n2": {
-      "f0_median_hz": 134,
-      "pitch_var_st": 2.21,
+    "qwen3_w2": {
+      "f0_median_hz": 90,
+      "pitch_var_st": 2.12,
       "pitch_range_st": 7.1,
-      "mean_cer": 0.0032,
-      "max_cer": 0.0317,
-      "mean_mos": 4.05,
+      "mean_cer": 0.0008,
+      "max_cer": 0.0079,
+      "mean_mos": 3.923,
       "words_per_min": 140
     },
-    "qwen3_n3": {
-      "f0_median_hz": 79,
-      "pitch_var_st": 1.92,
-      "pitch_range_st": 6.5,
+    "qwen3_w3": {
+      "f0_median_hz": 104,
+      "pitch_var_st": 2.34,
+      "pitch_range_st": 7.6,
+      "mean_cer": 0.0032,
+      "max_cer": 0.0317,
+      "mean_mos": 3.767,
+      "words_per_min": 142
+    },
+    "qwen3_w4": {
+      "f0_median_hz": 81,
+      "pitch_var_st": 2.43,
+      "pitch_range_st": 8.0,
       "mean_cer": 0.0025,
       "max_cer": 0.0171,
-      "mean_mos": 3.949,
-      "words_per_min": 149
-    },
-    "qwen3_n4": {
-      "f0_median_hz": 85,
-      "pitch_var_st": 2.5,
-      "pitch_range_st": 8.6,
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 4.022,
-      "words_per_min": 136
-    },
-    "qwen3_n5": {
-      "f0_median_hz": 101,
-      "pitch_var_st": 3.15,
-      "pitch_range_st": 10.1,
-      "mean_cer": 0.0008,
-      "max_cer": 0.0079,
-      "mean_mos": 4.149,
-      "words_per_min": 155
-    },
-    "qwen3_n6": {
-      "f0_median_hz": 93,
-      "pitch_var_st": 2.64,
-      "pitch_range_st": 8.9,
-      "mean_cer": 0.003,
-      "max_cer": 0.0217,
-      "mean_mos": 3.956,
-      "words_per_min": 160
+      "mean_mos": 3.761,
+      "words_per_min": 143
     }
   },
   "push": {
-    "job_id": "voice-bench-20261016232454",
+    "job_id": "voice-bench-20261017002515",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792193096.1730778,
+    "pushed_at": 1792196716.996411,
     "ok": true,
-    "push_output": "Kernel version 14 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 16 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   }
 }
