@@ -71,19 +71,113 @@ class PrecomputedVoice:
         return _trim(a)
 
 
-def narration_items(script):
-    """Every sentence the episode will speak (episode + Shorts), each once, numbered."""
+def narration_items(script, unit="sentence"):
+    """Every text unit the episode will speak (episode + Shorts), each once, numbered. A unit is one sentence, or
+    with unit="paragraph" up to 3 sentences of the same paragraph voiced in ONE generation (see units())."""
     texts = []
     blocks = [script.get("cold_open", "")] + [c["text"] for c in script["chapters"]]
     blocks += [s.get("narration", "") for s in script.get("shorts", [])]
     seen = set()
     for b in blocks:
         for p in paragraphs(b or ""):
-            for sent in split_sentences(p):
-                if sent not in seen:
-                    seen.add(sent)
-                    texts.append(sent)
+            for u in units(p, unit):
+                t = " ".join(u)
+                if t not in seen:
+                    seen.add(t)
+                    texts.append(t)
     return list(enumerate(texts))
+
+
+UNIT_MAX_SENTENCES = 3
+UNIT_MAX_CHARS = 330
+
+
+def units(paragraph, unit="sentence"):
+    """Group a paragraph's sentences into the pieces voiced in one generation.
+
+    Sentence by sentence, the TTS ends EVERY sentence with a full final fall (~-5 st, measured), so each one sounds
+    like the last and the narration feels boxed in. A real documentary narrator keeps the voice suspended across a
+    thought (Planeta Antiguo: ~-0.6 st at phrase ends) - voicing 2-3 sentences together gives the model the context
+    to do the same. Long paragraphs are split into balanced groups (no 1-sentence leftovers when avoidable)."""
+    sents = split_sentences(paragraph)
+    if unit != "paragraph" or len(sents) < 2:
+        return [[s] for s in sents]
+    groups, cur = [], []
+    for s in sents:
+        if cur and (len(cur) >= UNIT_MAX_SENTENCES or len(" ".join(cur + [s])) > UNIT_MAX_CHARS):
+            groups.append(cur)
+            cur = []
+        cur.append(s)
+    if cur:
+        groups.append(cur)
+    if len(groups) > 1 and len(groups[-1]) == 1 and len(groups[-2]) == 3:
+        groups[-1].insert(0, groups[-2].pop())          # 3+1 -> 2+2
+    return groups
+
+
+def tighten(a, max_gap=0.85, keep=0.6):
+    """Shorten any silence inside a multi-sentence take longer than max_gap to `keep` seconds."""
+    hop = int(SR * 0.01)
+    n = len(a) // hop
+    if n < 20:
+        return a
+    e = 20 * np.log10(np.sqrt((a[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+    quiet = e < e.max() - 42
+    out, i = [], 0
+    while i < n:
+        j = i
+        while j < n and quiet[j] == quiet[i]:
+            j += 1
+        if quiet[i] and 0 < i and j < n and (j - i) / 100 > max_gap:
+            k = int(keep * 100 / 2)
+            out += [a[i * hop:(i + k) * hop], a[(j - k) * hop:j * hop]]
+        else:
+            out.append(a[i * hop:j * hop])
+        i = j
+    out.append(a[n * hop:])
+    return np.concatenate(out)
+
+
+def sentence_bounds(a, sents):
+    """Where each sentence of a multi-sentence take starts/ends (for the captions): the expected split by text
+    length, snapped to the nearest real pause in the audio."""
+    dur = len(a) / SR
+    if len(sents) < 2:
+        return [(0.0, dur)]
+    hop = int(SR * 0.01)
+    n = len(a) // hop
+    e = 20 * np.log10(np.sqrt((a[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+    quiet = e < e.max() - 35
+    gaps, i = [], 0
+    while i < n:
+        if quiet[i]:
+            j = i
+            while j < n and quiet[j]:
+                j += 1
+            if j - i >= 12 and i > 0 and j < n:          # >= 120 ms inside the take
+                gaps.append(((i + j) / 200, i / 100, j / 100))
+            i = j
+        else:
+            i += 1
+    total = sum(len(s) + 1 for s in sents)
+    cuts, acc, used = [], 0, set()
+    for s in sents[:-1]:
+        acc += len(s) + 1
+        want = dur * acc / total
+        near = [g for k, g in enumerate(gaps) if k not in used and abs(g[0] - want) < max(0.8, 0.15 * dur)]
+        if near:
+            g = min(near, key=lambda g: abs(g[0] - want))
+            used.add(gaps.index(g))
+            cuts.append((g[1], g[2]))
+        else:
+            cuts.append((want, want))
+    cuts.sort()
+    bounds, t = [], 0.0
+    for c0, c1 in cuts:
+        bounds.append((t, max(t + 0.1, c0)))
+        t = c1
+    bounds.append((t, dur))
+    return bounds
 
 
 def _trim(a, thresh=0.004):
@@ -147,15 +241,23 @@ class Track:
         self.n += len(audio)
         self.cues += timed_chunks(start, self.t, sentence, max_chars)
 
-    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84):
+    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84, unit="sentence"):
         paras = paragraphs(text)
         for pi, p in enumerate(paras):
-            sents = split_sentences(p)
-            for si, s in enumerate(sents):
-                self.speech(voice.say(s), s, max_chars)
-                last_s = si == len(sents) - 1
-                if not (last_s and pi == len(paras) - 1):
-                    self.silence(pause_paragraph if last_s else pause_sentence)
+            groups = units(p, unit)
+            for gi, g in enumerate(groups):
+                if len(g) == 1:
+                    self.speech(voice.say(g[0]), g[0], max_chars)
+                else:
+                    a = tighten(voice.say(" ".join(g)))
+                    start = self.t
+                    self.parts.append(a)
+                    self.n += len(a)
+                    for s, (b0, b1) in zip(g, sentence_bounds(a, g)):
+                        self.cues += timed_chunks(start + b0, start + b1, s, max_chars)
+                last = gi == len(groups) - 1
+                if not (last and pi == len(paras) - 1):
+                    self.silence(pause_paragraph if last else pause_sentence)
 
     def audio(self, peak=0.89):
         a = np.concatenate(self.parts) if self.parts else np.zeros(1, np.float32)
@@ -180,11 +282,12 @@ def synthesize(script, cfg, out_dir, voice=None):
     voice = voice or Voice(v["id"], v["speed"])
     tr = Track()
     timing = {"chapters": []}
+    unit = v.get("unit", "sentence") if isinstance(voice, PrecomputedVoice) else "sentence"
 
     tr.silence(LEAD)
     if script.get("cold_open"):
         s = tr.t
-        tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8, v["pause_paragraph"] * 0.8)
+        tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8, v["pause_paragraph"] * 0.8, unit=unit)
         timing["cold_open"] = {"start": s, "end": tr.t}
         print(f"  voiced cold open ({tr.t:.0f} s)")
     s = tr.t + 0.6
@@ -194,7 +297,7 @@ def synthesize(script, cfg, out_dir, voice=None):
     for ci, ch in enumerate(script["chapters"]):
         start = tr.t
         tr.silence(CHAPTER_LEAD)
-        tr.text(voice, ch["text"], v["pause_sentence"], v["pause_paragraph"])
+        tr.text(voice, ch["text"], v["pause_sentence"], v["pause_paragraph"], unit=unit)
         if ci < len(script["chapters"]) - 1:
             tr.silence(v["pause_chapter"])
         timing["chapters"].append({"title": ch["title"], "start": start, "end": tr.t})
@@ -216,7 +319,8 @@ def synthesize_short(text, cfg, out_wav, speed=1.0, voice=None):
     voice = voice or Voice(cfg["voice"]["id"], speed)
     tr = Track()
     tr.silence(0.25)
-    tr.text(voice, text, 0.22, 0.35, max_chars=22)
+    unit = cfg["voice"].get("unit", "sentence") if isinstance(voice, PrecomputedVoice) else "sentence"
+    tr.text(voice, text, 0.22, 0.35, max_chars=22, unit=unit)
     tr.silence(0.9)
     sf.write(out_wav, tr.audio(), SR)
     return tr.t, tr.cues

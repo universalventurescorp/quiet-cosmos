@@ -121,6 +121,13 @@ SUBTLE_GROUPS = {
     "emocion": "Same calm voice, a little warmer and more energetic, with restrained excitement.",
     "intimo": "Same calm voice, closer and more intimate, warm and tender, slightly quieter.",
 }
+# "parrafo" round: the SAME narrator (n1 clip), but voiced a whole paragraph (2-3 sentences) per generation instead
+# of sentence by sentence. Measured on a Planeta Antiguo episode: its narrator keeps the pitch suspended inside a
+# thought (declination ~-0.35 st/s, phrase ends ~-0.6 st, 27-35 % of phrases end rising), while our sentence-by-
+# sentence voice drops ~-5 st at the end of EVERY sentence (each one sounds like the last) -> the "rectangle".
+PARAGRAPHS = [[0, 1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12, 13]]
+PARA_PAUSE = [1.1, 1.2, 1.0, 1.6, 1.1, 1.5]       # silence after each paragraph (longer before a revelation)
+
 TAG_GROUP = {"serious": "solemne", "admiration": "asombro", "murmur": "misterio", "story": "calma",
              "surprised": "asombro", "vivid": "emocion", "whisper": "misterio", "excited": "emocion",
              "soulful": "intimo", "gentle": "intimo", "comfort": "intimo"}
@@ -214,6 +221,57 @@ def save_emo(variant, chunks, sr, gen_seconds, directed=True, extra=None):
     secs = sum(len(to_np(c)) for c in chunks) / sr
     res["variants"][variant] = {"sr": sr, "speech_seconds": round(secs, 1), "gen_seconds": round(gen_seconds, 1),
                                 **(extra or {})}
+    json.dump(res, open(OUT / f"res_{engine}.json", "w"), indent=1)
+    log(f"{variant}: {secs:.0f} s of speech in {gen_seconds:.0f} s")
+
+def tighten(w, sr, max_gap=0.85, keep=0.6, lead=0.02, tail=0.12):
+    """Trim the ends and shorten any silence inside a paragraph longer than max_gap to `keep` seconds (a reference
+    narrator rarely stops for more than ~1.1 s mid-thought)."""
+    w = to_np(w)
+    hop = int(sr * 0.01)
+    n = len(w) // hop
+    if n < 10:
+        return w
+    e = 20 * np.log10(np.sqrt((w[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+    loud = e > e.max() - 42
+    idx = np.flatnonzero(loud)
+    if not idx.size:
+        return w
+    a, b = max(0, idx[0] - int(lead * 100)), min(n, idx[-1] + int(tail * 100))
+    out, i = [], a
+    while i < b:
+        if loud[i]:
+            j = i
+            while j < b and loud[j]:
+                j += 1
+        else:
+            j = i
+            while j < b and not loud[j]:
+                j += 1
+            if (j - i) / 100 > max_gap:          # keep the head and tail of a long gap (breaths fade out/in)
+                k = int(keep * 100 / 2)
+                out.append(w[i * hop:(i + k) * hop])
+                out.append(w[(j - k) * hop:j * hop])
+                i = j
+                continue
+        out.append(w[i * hop:j * hop])
+        i = j
+    return np.concatenate(out) if out else w
+
+def save_para(variant, chunks, sr, gen_seconds, pauses):
+    d = OUT / variant
+    d.mkdir(parents=True, exist_ok=True)
+    parts = []
+    for i, c in enumerate(chunks):
+        c = to_np(c)
+        sf.write(d / f"s{i:02d}.wav", c, sr)
+        rms = float(np.sqrt(np.mean(c ** 2))) if c.size else 0
+        if rms > 0:
+            c = c * (10 ** (-20 / 20) / rms)
+        parts += [np.clip(c, -0.98, 0.98), np.zeros(int(sr * (pauses[i] if i < len(pauses) else 1.0)), np.float32)]
+    sf.write(OUT / f"{variant}.wav", np.concatenate(parts), sr)
+    secs = sum(len(to_np(c)) for c in chunks) / sr
+    res["variants"][variant] = {"sr": sr, "speech_seconds": round(secs, 1), "gen_seconds": round(gen_seconds, 1)}
     json.dump(res, open(OUT / f"res_{engine}.json", "w"), indent=1)
     log(f"{variant}: {secs:.0f} s of speech in {gen_seconds:.0f} s")
 
@@ -381,6 +439,31 @@ try:
             except Exception:
                 res["errors"].append(f"nat {cid}: {traceback.format_exc()[-1500:]}")
                 log(f"nat {cid} failed: {traceback.format_exc()[-800:]}")
+
+    elif engine == "qwenpara":
+        # the channel narrator voiced one PARAGRAPH per generation (intonation flows across the sentences); a few
+        # seeds per paragraph, ICL clone (timbre + delivery of the clip) and x-vector-only (timbre, free delivery)
+        from qwen_tts import Qwen3TTSModel
+        base = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", device_map="cuda:0",
+                                             dtype=torch.float16, attn_implementation="sdpa")
+        ref = OUT / "ref_narrador.wav"
+        prompts = {mode: base.create_voice_clone_prompt(ref_audio=str(ref), ref_text=cfg["narrator_ref_text"],
+                                                        x_vector_only_mode=mode) for mode in (False, True)}
+        texts = [" ".join(S[i] for i in p) for p in cfg["paragraphs"]]
+        plans = [(f"par_t{k}", False, 100 + k) for k in range(cfg.get("seeds", 3))]
+        plans += [(f"par_xv{k}", True, 200 + k) for k in range(2)]
+        for variant, xvec, seed in plans:
+            try:
+                t, chunks = time.time(), []
+                for j, text in enumerate(texts):
+                    torch.manual_seed(seed * 100 + j)
+                    wavs, sr = base.generate_voice_clone(text=text, language="Spanish",
+                                                         voice_clone_prompt=prompts[xvec], max_new_tokens=4096)
+                    chunks.append(tighten(resample(wavs[0], sr), 24000))
+                save_para(variant, chunks, 24000, time.time() - t, cfg["para_pause"])
+            except Exception:
+                res["errors"].append(f"{variant}: {traceback.format_exc()[-1500:]}")
+                log(f"{variant} failed: {traceback.format_exc()[-800:]}")
 
     elif engine == "qwenbank":
         from qwen_tts import Qwen3TTSModel
@@ -578,9 +661,48 @@ try:
             f0 = f0[vflag & np.isfinite(f0)]
             return f0
 
+        PARA_TEXTS = [" ".join(S[i] for i in p) for p in cfg.get("paragraphs") or []]
+
+        def texts_of(name):
+            return PARA_TEXTS if name.startswith("par_") else S
+
+        def prosody(w, sr):
+            """Narrator-style intonation: phrases split at pauses >= 0.18 s; per phrase the pitch slope (st/s) and
+            how far the voice falls at the end (st). Reference (Planeta Antiguo): -0.35 st/s, -0.6 st, ~30 % rising."""
+            w16 = librosa.resample(w, orig_sr=sr, target_sr=16000) if sr != 16000 else w
+            f0, vflag, _ = librosa.pyin(w16, fmin=60, fmax=300, sr=16000, frame_length=1024, hop_length=160)
+            hop = 160
+            n = min(len(f0), len(w16) // hop)
+            e = 20 * np.log10(np.sqrt((w16[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+            sp = np.convolve((e > np.percentile(e, 90) - 18).astype(float), np.ones(15) / 15, "same") > 0.3
+            edges = np.flatnonzero(np.diff(np.concatenate([[0], sp.astype(int), [0]])))
+            ph = []
+            for s0, e0 in zip(edges[::2], edges[1::2]):
+                if ph and s0 - ph[-1][1] < 18:
+                    ph[-1][1] = e0
+                else:
+                    ph.append([s0, e0])
+            fv = np.where(vflag[:n] & np.isfinite(f0[:n]), f0[:n], np.nan)
+            med = np.nanmedian(fv)
+            slopes, falls = [], []
+            for s0, e0 in ph:
+                seg = fv[s0:e0]
+                ok = ~np.isnan(seg)
+                if e0 - s0 < 40 or ok.sum() < 15:
+                    continue
+                st = 12 * np.log2(seg[ok] / med)
+                t = np.flatnonzero(ok) / 100
+                slopes.append(float(np.polyfit(t, st, 1)[0]))
+                q = max(3, ok.sum() // 5)
+                falls.append(float(np.median(st[-q:]) - np.median(st[:q])))
+            if not falls:
+                return {}
+            return {"declination_st_s": round(float(np.median(slopes)), 2), "final_fall_st": round(float(np.median(falls)), 2),
+                    "pct_rising": round(100 * float(np.mean(np.array(falls) > 1)), 1), "phrases": len(falls)}
+
         def score_rows(vdir):
             rows = []
-            for i, s in enumerate(S):
+            for i, s in enumerate(texts_of(vdir.name)):
                 f = vdir / f"s{i:02d}.wav"
                 if not f.exists():
                     continue
@@ -616,7 +738,7 @@ try:
         scores = {}
         dirs = sorted(p for p in OUT.iterdir() if p.is_dir() and (p / "s00.wav").exists())
         all_rows = {vdir.name: score_rows(vdir) for vdir in dirs}
-        if EMO and "emo_plana" in all_rows:
+        if EMO and "emo_plana" in all_rows and not PARA_TEXTS:
             # "voz dirigida segura": per line, the strongest take that is still as clear, as natural and as much
             # the same narrator as the flat take; otherwise the flat line (an episode can never get worse)
             base = {r["i"]: r for r in all_rows["emo_plana"]}
@@ -643,10 +765,44 @@ try:
             assemble("emo_segura", chunks, 24000, directed=True)
             all_rows["emo_segura"] = score_rows(d)
             res["segura_pick"] = pick
+        para_prosody = {}
+        if PARA_TEXTS:
+            # "par_mejor": per paragraph, among the takes that are clear (CER), natural (MOS) and still the same
+            # narrator (speaker similarity), the one whose intonation is closest to the reference narrator
+            takes = [n for n in all_rows if n.startswith("par_") and n != "par_mejor"]
+            pick, chunks = [], []
+            for j in range(len(PARA_TEXTS)):
+                cand = []
+                for n in takes:
+                    r = next((x for x in all_rows[n] if x["i"] == j), None)
+                    if not r:
+                        continue
+                    w, sr = sf.read(OUT / n / f"s{j:02d}.wav", dtype="float32")
+                    pr = prosody(w, sr)
+                    para_prosody[f"{n}/{j}"] = pr
+                    cand.append((n, r, pr, w, sr))
+                if not cand:
+                    continue
+                best_cer = min(c[1]["cer"] for c in cand)
+                best_mos = max(c[1]["mos"] for c in cand)
+                ok = [c for c in cand if c[1]["cer"] <= best_cer + 0.02 and c[1]["mos"] >= best_mos - 0.3
+                      and c[1].get("sim", 1) >= 0.70] or sorted(cand, key=lambda c: c[1]["cer"])[:1]
+                def dist(c):
+                    pr = c[2]
+                    if not pr:
+                        return 99
+                    return abs(pr["final_fall_st"] + 0.6) + 0.5 * abs(pr["declination_st_s"] + 0.35)
+                n, r, pr, w, sr = min(ok, key=dist)
+                pick.append(n)
+                chunks.append(librosa.resample(w, orig_sr=sr, target_sr=24000) if sr != 24000 else w)
+            if chunks:
+                save_para("par_mejor", chunks, 24000, 0, cfg["para_pause"])
+                all_rows["par_mejor"] = score_rows(OUT / "par_mejor")
+                res["par_pick"] = pick
         for name, rows in all_rows.items():
             vdir = OUT / name
             if rows:
-                wpm = 60 * sum(len(S[r["i"]].split()) for r in rows) / max(sum(r["seconds"] for r in rows), .1)
+                wpm = 60 * sum(len(texts_of(name)[r["i"]].split()) for r in rows) / max(sum(r["seconds"] for r in rows), .1)
                 pitch = {}
                 try:
                     full, fsr = sf.read(OUT / f"{vdir.name}.wav", dtype="float32")
@@ -676,11 +832,19 @@ try:
                     if any("sim" in r for r in rows):
                         pitch["mean_sim"] = round(float(np.mean([r["sim"] for r in rows if "sim" in r])), 3)
                         pitch["min_sim"] = min(r["sim"] for r in rows if "sim" in r)
+                try:
+                    full, fsr = sf.read(OUT / f"{vdir.name}.wav", dtype="float32")
+                    pitch.update(prosody(full, fsr))
+                except Exception as e:
+                    pitch["prosody_error"] = str(e)[:200]
                 scores[vdir.name] = {**pitch, "mean_cer": round(sum(r["cer"] for r in rows) / len(rows), 4),
                                      "max_cer": max(r["cer"] for r in rows),
                                      "mean_mos": round(sum(r["mos"] for r in rows) / len(rows), 3),
                                      "words_per_min": round(wpm), "sentences": rows}
                 log(f"{vdir.name}: CER {scores[vdir.name]['mean_cer']:.3f}  MOS {scores[vdir.name]['mean_mos']:.2f}")
+        if res.get("par_pick") and "par_mejor" in scores:
+            scores["par_mejor"]["pick"] = res["par_pick"]
+            scores["_para_prosody"] = para_prosody
         if res.get("segura_pick") and "emo_segura" in scores:
             scores["emo_segura"]["pick"] = res["segura_pick"]
         json.dump(scores, open(OUT / "scores.json", "w"), indent=1, ensure_ascii=False)
@@ -702,6 +866,7 @@ ENGINES = {
                        "speechbrain"], []),
     # emotion bench
     "qwenref": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
+    "qwenpara": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
     "qwenbank": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
     "natdesign": ("3.12", ["qwen-tts", "soundfile", "librosa", "speechbrain"], ["sox"]),
     "stepedit": ("3.12", [], ["sox", "git-lfs"]),     # installed from its own repo + uv.lock (see install_stepedit)
@@ -760,6 +925,7 @@ def run_engine(engine, gpu, timeout=60 * 60):
                                     "emo_groups": M.get("emo_groups", EMO_GROUPS), "tag_group": TAG_GROUP,
                                     "anchor_ref": M.get("anchor_ref"), "min_sim": M.get("min_sim", 0.55),
                                     "seeds": M.get("seeds", 3),
+                                    "paragraphs": M.get("paragraphs"), "para_pause": M.get("para_pause"),
                                     "stepx_dir": str(WORK / "stepx"), "models_dir": str(WORK / "stepx_models")},
                                    ensure_ascii=False))
         env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "HF_HUB_ENABLE_HF_TRANSFER": "0",
@@ -850,7 +1016,17 @@ def main():
         if job.get("nocturno"):
             M.update(native_designs={"n1": N1_DESIGN}, emo_groups=SUBTLE_GROUPS, min_sim=0.75, seeds=5,
                      anchor_ref=str(OUT / "ref_narrador.wav"))
-        if job.get("native"):
+        if job.get("parrafo"):
+            # paragraph round: the channel narrator sentence by sentence (today) vs paragraph by paragraph
+            M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE, seeds=3)
+            two = len(M["gpus"]) > 1
+            t1 = threading.Thread(target=run_engine, args=("qwenref", 1 if two else 0, 40 * 60))
+            t1.start()
+            run_engine("qwenpara", 0, timeout=120 * 60)
+            t1.join()
+            run_engine("score", 1 if two else 0)
+            want = []
+        elif job.get("native"):
             # native-accent round: current narrator (flat) + 4 Qwen-designed native narrators with emotion banks
             two = len(M["gpus"]) > 1
             t1 = threading.Thread(target=run_engine, args=("qwenref", 1 if two else 0, 40 * 60))

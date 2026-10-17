@@ -51,6 +51,9 @@ def video_bench(cfg, kind="video"):
         if os.environ.get("BENCH_DESIGNS") == "true":     # round 2: new narrator voices from kaggle/voice_designs.json
             job["design"] = read_json(ROOT / "kaggle" / "voice_designs.json", {})
             job["refs"] = {}
+        if os.environ.get("BENCH_PARRAFO") == "true":       # same narrator, voiced paragraph by paragraph
+            os.environ["BENCH_EMOTION"] = "true"
+            job["parrafo"] = True
         if os.environ.get("BENCH_NOCTURNO") == "true":
             os.environ["BENCH_NATIVE"] = "true"
             job["nocturno"] = True
@@ -180,7 +183,7 @@ def narration_job(script, cfg):
     return {"model": vc.get("model", "Qwen/Qwen3-TTS-12Hz-1.7B-Base"),
             "language": {"es": "Spanish", "en": "English"}[cfg["channel"]["language"]],
             "ref_text": vc["ref_text"], "ref_b64": base64.b64encode(ref.read_bytes()).decode(),
-            "items": narration_items(script)}
+            "items": narration_items(script, vc.get("unit", "sentence"))}
 
 
 def load_gpu_voice(out, cfg, gpu_state):
