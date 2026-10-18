@@ -37,7 +37,7 @@ def check_episode(out, script, timing, media, shots, video, ai_media=None):
     lufs = loudness(video)
     if lufs is None:
         fails.append("no audio stream")
-    elif not -22 <= lufs <= -11:
+    elif not -22 <= lufs <= -9.5:
         fails.append(f"loudness {lufs} LUFS outside safe range")
     for i, m in enumerate(media, 1):
         if len(m["images"]) < 3:

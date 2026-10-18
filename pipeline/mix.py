@@ -21,6 +21,12 @@ VOICE_EQ = {
 }
 
 
+# "documentary_max" (18-oct-2026): Luis's voice E at the highest volume that does not distort: the documentary chain
+# plus a two-stage compressor (dense, steady voice); pair with mix.lufs -10.5 and voice.quiet_breaths
+VOICE_EQ["documentary_max"] = (VOICE_EQ["documentary"]
+                               + ",acompressor=threshold=-30dB:ratio=5:attack=5:release=150:makeup=4,"
+                               "acompressor=threshold=-14dB:ratio=3:attack=3:release=100")
+
 # "clara" (18-oct-2026): Luis's favourite take (E, by paragraphs) sounded a bit low and dull; same warm documentary
 # chain plus less boxiness (350 Hz), presence (2.5 kHz) and air (6 kHz)
 VOICE_EQ["clara"] = VOICE_EQ["documentary"].replace(
@@ -39,7 +45,23 @@ def mix(narration, music, out, total, music_volume=0.16, lufs=-16, fade_out=6.0,
         return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, 0.0, 0.0)
 
 
+def _measure_lufs(path):
+    import subprocess
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-af", "ebur128", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    vals = [l.split()[1] for l in r.stderr.splitlines() if l.strip().startswith("I:")]
+    return float(vals[-1]) if vals else None
+
+
 def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st, voice_size_st):
+    # loudnorm cannot push a mix above ~-13 LUFS (it backs off to protect peaks): for "loud" targets the mix is
+    # rendered plain, measured, then raised with a gain + limiter (two passes)
+    loud = lufs > -13
+    final = "anull" if loud else f"loudnorm=I={lufs}:TP=-1.5:LRA=11"
+    if loud:
+        import pathlib
+        final_out = pathlib.Path(out)
+        out = str(final_out.with_name(final_out.stem + "_premaster.wav"))
     voice = VOICE_EQ.get(voice_eq, VOICE_EQ["clean"]) + ",aformat=channel_layouts=stereo"
     if voice_size_st:
         # "bigger" voice (18-oct, Luis: like an older adult, more voice): resonances (formants) lowered by
@@ -59,15 +81,23 @@ def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice
                  f"[m][sc]sidechaincompress=threshold=0.04:ratio=3:attack=400:release=2500:makeup=1[md];"
                  f"[v][md]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
                  f"afade=t=out:st={max(0, total - fade_out):.3f}:d={fade_out},"
-                 f"loudnorm=I={lufs}:TP=-1.5:LRA=11,aresample=48000[a]")
+                 f"{final},aresample=48000[a]")
     else:
         graph = (f"[0:a]{voice}[v];"
                  f"[1:a]aresample=48000,aformat=channel_layouts=stereo,volume={music_volume},afade=t=in:d=1[m];"
                  f"[v][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
                  f"afade=t=out:st={max(0, total - fade_out):.3f}:d={fade_out},"
-                 f"loudnorm=I={lufs}:TP=-1.5:LRA=11,aresample=48000[a]")
+                 f"{final},aresample=48000[a]")
     run(["ffmpeg", "-y", "-loglevel", "error",
          "-i", narration, "-stream_loop", "-1", "-i", music,
          "-filter_complex", graph, "-map", "[a]", "-t", f"{total:.3f}",
          "-c:a", "pcm_s16le", out])
+    if loud:
+        have = _measure_lufs(out)
+        gain = (lufs - have) if have is not None else 0.0
+        run(["ffmpeg", "-y", "-loglevel", "error", "-i", out, "-af",
+             f"volume={gain:.2f}dB,alimiter=limit=0.89:attack=3:release=60:level=false,aresample=48000",
+             "-c:a", "pcm_s16le", final_out])
+        print(f"   master: {have} LUFS -> {_measure_lufs(final_out)} LUFS")
+        return final_out
     return out

@@ -275,9 +275,39 @@ class Track:
                 if not (last and pi == len(paras) - 1):
                     self.silence(pause_paragraph if last else pause_sentence)
 
-    def audio(self, peak=0.89):
+    def audio(self, peak=0.89, quiet_breaths=False):
         a = np.concatenate(self.parts) if self.parts else np.zeros(1, np.float32)
+        if quiet_breaths:
+            a = quiet_pauses(a)
         return a / max(1e-6, np.abs(a).max()) * peak
+
+
+def quiet_pauses(x, below=24, min_ms=120, atten_db=-24, fade_ms=15):
+    """Breaths and noise INSIDE pauses (> `below` dB under the speech level for >= min_ms) turned down; words are
+    never touched (20 ms kept next to them). Needed once the voice is compressed hard for a high volume: the
+    compressor lifts the TTS in-breaths at the end of phrases (Luis: "se escucha como que toma aire")."""
+    hop = int(SR * 0.01)
+    n = len(x) // hop
+    if n < 10:
+        return x
+    e = 20 * np.log10(np.sqrt((x[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+    q = e < np.percentile(e, 90) - below
+    g = np.ones(n)
+    i = 0
+    while i < n:
+        if q[i]:
+            j = i
+            while j < n and q[j]:
+                j += 1
+            if (j - i) * 10 >= min_ms and j - 2 > i + 2:
+                g[i + 2:j - 2] = 10 ** (atten_db / 20)
+            i = j
+        else:
+            i += 1
+    k = max(1, fade_ms // 10)
+    g = np.convolve(g, np.ones(k) / k, "same")
+    gs = np.concatenate([np.repeat(g, hop), np.ones(len(x) - n * hop)])
+    return (x * gs).astype(np.float32)
 
 
 def srt_time(t):
@@ -327,7 +357,7 @@ def synthesize(script, cfg, out_dir, voice=None):
     tr.silence(OUTRO)
     timing["outro"] = {"start": s, "end": tr.t}
     timing["duration"] = tr.t
-    sf.write(out_dir / "narration.wav", tr.audio(), SR)
+    sf.write(out_dir / "narration.wav", tr.audio(quiet_breaths=v.get("quiet_breaths", False)), SR)
     write_srt(tr.cues, out_dir / "captions.srt")
     return timing
 
@@ -344,5 +374,5 @@ def synthesize_short(text, cfg, out_wav, speed=1.0, voice=None):
     pitch_edit = cfg["voice"].get("pitch_edit") if unit == "paragraph" else None
     tr.text(voice, text, 0.22, 0.35, max_chars=22, unit=unit, inner_end=inner_end, pitch_edit=pitch_edit)
     tr.silence(0.9)
-    sf.write(out_wav, tr.audio(), SR)
+    sf.write(out_wav, tr.audio(quiet_breaths=cfg["voice"].get("quiet_breaths", False)), SR)
     return tr.t, tr.cues
