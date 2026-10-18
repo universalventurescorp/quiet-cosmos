@@ -102,12 +102,20 @@ def _cap_animals(plan, cap):
 def gpu_job(plan, cfg, job_id, topic):
     """Kaggle job in the same format as scenes.build_job: animal shots first (they also need a clip)."""
     from .scenes import build_job
-    scene_plan = {"sections": [{"id": sec["id"], "scenes": [
-        {"prompt": s["prompt"], "motion": s.get("motion", ""), "video": s["type"] == "animal"}
-        for s in sec["shots"] if s["type"] in ("animal", "still")]} for sec in plan["sections"]]}
+    scene_plan = {"sections": []}
+    for sec in plan["sections"]:
+        scenes = []
+        for s in sec["shots"]:
+            if s["type"] in ("animal", "still"):
+                s["ai_id"] = f"{sec['id']}_{len(scenes):02d}"        # the id build_job gives this scene
+                scenes.append({"prompt": s["prompt"], "motion": s.get("motion", ""), "video": s["type"] == "animal"})
+        scene_plan["sections"].append({"id": sec["id"], "scenes": scenes})
     job = build_job(scene_plan, cfg, job_id, topic)
-    vf = cfg.get("movie", {}).get("video_frames", 97)               # 97 frames @24 fps = 4 s, one shot
-    job.update({"video_frames": vf, "max_videos": len(job["videos"])})
+    m = cfg.get("movie", {})
+    job.update({"video_frames": m.get("video_frames", 97),          # 97 frames @24 fps = 4 s, one shot
+                "video_kind": m.get("video_kind", "distilled"),
+                "video_style": m.get("video_style", "Natural, realistic movement, steady cinematic camera."),
+                "max_videos": len(job["videos"])})
     return job
 
 

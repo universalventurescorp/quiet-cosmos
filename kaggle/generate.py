@@ -255,20 +255,33 @@ def run_videos(job, gpu, images_thread):
         if job.get("narration"):
             NARRATION_GPU1_FREE.wait()          # the voice comes first: the episode cannot be made without it
             log(role, "GPU free after narration, starting clips")
+        distilled = job.get("video_kind") == "distilled"
         with _load_lock:
-            pipe = LTXImageToVideoPipeline.from_pretrained(job["video_model"], torch_dtype=dtype)
+            if distilled:
+                # LTX-Video 0.9.8 distilled: 8 steps, ~6x faster than the base model on a T4 (bench 16-oct-2026:
+                # ~60 s per 4-second clip instead of ~175 s). Used for the many short animal shots of movie mode.
+                from diffusers import LTXConditionPipeline
+                from transformers import T5EncoderModel, T5TokenizerFast
+                te = T5EncoderModel.from_pretrained("Lightricks/LTX-Video", subfolder="text_encoder",
+                                                    torch_dtype=torch.float16)
+                tok = T5TokenizerFast.from_pretrained("Lightricks/LTX-Video", subfolder="tokenizer")
+                pipe = LTXConditionPipeline.from_single_file(
+                    "https://huggingface.co/Lightricks/LTX-Video/blob/main/ltxv-2b-0.9.8-distilled.safetensors",
+                    text_encoder=te, tokenizer=tok, torch_dtype=torch.float16)
+            else:
+                pipe = LTXImageToVideoPipeline.from_pretrained(job["video_model"], torch_dtype=dtype)
             pipe.enable_model_cpu_offload(gpu_id=gpu)
         try:
             pipe.vae.enable_tiling()
         except Exception:                                # noqa: BLE001
             pass
         pipe.set_progress_bar_config(disable=True)
-        log(role, f"video model: {job['video_model']} ({dtype})")
+        log(role, f"video model: {'LTX 0.9.8 distilled' if distilled else job['video_model']} ({dtype})")
         with _load_lock:
             up = try_upscaler(device, role) if job.get("upscale") else None
         W, H = job["video_width"], job["video_height"]
         for n, v in enumerate(job["videos"]):
-            est = max(st["seconds"]) if st["seconds"] else 600
+            est = max(st["seconds"]) if st["seconds"] else (150 if distilled else 600)
             src = OUT / f"{v['image']}.jpg"
             while not src.exists() and time.time() < deadline(job) and images_thread.is_alive():
                 time.sleep(10)
@@ -285,10 +298,19 @@ def run_videos(job, gpu, images_thread):
             t = time.time()
             try:
                 img = cover(Image.open(src).convert("RGB"), W, H)
-                frames = pipe(image=img, prompt=f"{v['prompt']}. Slow, calm, cinematic.",
-                              negative_prompt=VIDEO_NEGATIVE, width=W, height=H,
-                              num_frames=job["video_frames"], num_inference_steps=job["video_steps"],
-                              guidance_scale=3.0, generator=torch.Generator("cpu").manual_seed(v["seed"])).frames[0]
+                if distilled:
+                    frames = pipe(image=img, frame_index=0, strength=1.0,
+                                  prompt=f"{v['prompt']}. {job.get('video_style', 'Slow, calm, cinematic.')}",
+                                  negative_prompt=VIDEO_NEGATIVE, width=W, height=H, num_frames=job["video_frames"],
+                                  timesteps=[1000, 993, 987, 981, 975, 909, 725, 0.03],
+                                  guidance_scale=1.0, guidance_rescale=0.7, image_cond_noise_scale=0.0,
+                                  decode_timestep=0.05, decode_noise_scale=0.025,
+                                  generator=torch.Generator("cpu").manual_seed(v["seed"])).frames[0]
+                else:
+                    frames = pipe(image=img, prompt=f"{v['prompt']}. Slow, calm, cinematic.",
+                                  negative_prompt=VIDEO_NEGATIVE, width=W, height=H,
+                                  num_frames=job["video_frames"], num_inference_steps=job["video_steps"],
+                                  guidance_scale=3.0, generator=torch.Generator("cpu").manual_seed(v["seed"])).frames[0]
                 if not (valid(frames[len(frames) // 2]) and valid(frames[-1])):
                     st["failed"] += 1
                     log(role, f"{v['id']}: invalid frames")
