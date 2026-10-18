@@ -26,6 +26,11 @@ voice:
   model: Qwen/Qwen3-TTS-12Hz-1.7B-Base
   ref_audio: assets/voices/estrato_narrador.mp3
   ref_text: "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma."
+  # Por párrafos (18-oct-2026): 2-3 frases por generación, y los puntos internos se leen como "..." para que la voz
+  # no cierre cada frase como si fuera la última (el efecto "rectángulo"). Medido contra Planeta Antiguo: habla más
+  # seguido (pausas ~0,5 s), menos caída al final de frase, acento más limpio. Volver a "sentence" = frase por frase.
+  unit: paragraph
+  inner_end: "..."
   fallback_id: em_alex     # Kokoro, si la GPU falla
   id: em_alex
   speed: 0.8
