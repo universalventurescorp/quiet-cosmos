@@ -1,18 +1,34 @@
 {
-  "job_id": "voice-bench-20261018044700",
+  "job_id": "voice-bench-20261018052729",
   "errors": [],
   "engines": {
+    "refedit": {
+      "status": "done",
+      "gpu": 0,
+      "install_min": 0.0,
+      "returncode": 0,
+      "minutes": 0.1,
+      "variants": {
+        "refedit": {
+          "n": 2
+        }
+      },
+      "errors": [],
+      "torch": null,
+      "cuda": null,
+      "version": null
+    },
     "qwenref": {
       "status": "done",
       "gpu": 1,
-      "install_min": 0.7,
+      "install_min": 0.6,
       "returncode": 0,
-      "minutes": 4.8,
+      "minutes": 4.7,
       "variants": {
         "emo_plana": {
           "sr": 24000,
-          "speech_seconds": 72.0,
-          "gen_seconds": 183.8
+          "speech_seconds": 74.1,
+          "gen_seconds": 188.5
         }
       },
       "errors": [],
@@ -23,39 +39,59 @@
     "qwenpara": {
       "status": "done",
       "gpu": 0,
-      "install_min": 0.7,
+      "install_min": 0.6,
       "returncode": 0,
-      "minutes": 18.7,
+      "minutes": 28.8,
       "variants": {
+        "par_t0": {
+          "sr": 24000,
+          "speech_seconds": 68.8,
+          "gen_seconds": 171.4
+        },
         "par_susp0": {
           "sr": 24000,
           "speech_seconds": 68.8,
-          "gen_seconds": 173.2
+          "gen_seconds": 165.7
         },
-        "par_susp1": {
+        "par_r0_t0": {
           "sr": 24000,
-          "speech_seconds": 68.2,
-          "gen_seconds": 168.5
+          "speech_seconds": 69.9,
+          "gen_seconds": 165.5
         },
-        "par_susp2": {
+        "par_r0_t1": {
           "sr": 24000,
-          "speech_seconds": 68.3,
-          "gen_seconds": 165.9
+          "speech_seconds": 68.7,
+          "gen_seconds": 161.8
         },
-        "par_susp3": {
+        "par_r0_s0": {
           "sr": 24000,
           "speech_seconds": 69.1,
-          "gen_seconds": 165.1
+          "gen_seconds": 165.9
         },
-        "par_susp4": {
+        "par_r0_s1": {
           "sr": 24000,
-          "speech_seconds": 68.9,
-          "gen_seconds": 166.0
+          "speech_seconds": 69.0,
+          "gen_seconds": 160.3
         },
-        "par_susp5": {
+        "par_r1_t0": {
           "sr": 24000,
-          "speech_seconds": 70.2,
-          "gen_seconds": 170.9
+          "speech_seconds": 69.2,
+          "gen_seconds": 158.0
+        },
+        "par_r1_t1": {
+          "sr": 24000,
+          "speech_seconds": 67.8,
+          "gen_seconds": 155.6
+        },
+        "par_r1_s0": {
+          "sr": 24000,
+          "speech_seconds": 69.0,
+          "gen_seconds": 158.7
+        },
+        "par_r1_s1": {
+          "sr": 24000,
+          "speech_seconds": 69.1,
+          "gen_seconds": 162.8
         }
       },
       "errors": [],
@@ -63,119 +99,16 @@
       "cuda": true,
       "version": null
     },
-    "prosodyfix": {
-      "status": "done",
-      "gpu": 1,
-      "install_min": 0.1,
-      "returncode": 0,
-      "minutes": 0.6,
-      "variants": {
-        "par_fixC_susp0": {
-          "sr": 24000,
-          "speech_seconds": 68.8,
-          "gen_seconds": 1.5
-        },
-        "par_fixD_susp0": {
-          "sr": 24000,
-          "speech_seconds": 68.8,
-          "gen_seconds": 1.7
-        },
-        "par_fixE_susp0": {
-          "sr": 24000,
-          "speech_seconds": 68.8,
-          "gen_seconds": 1.7
-        },
-        "par_fixC_susp1": {
-          "sr": 24000,
-          "speech_seconds": 68.2,
-          "gen_seconds": 1.4
-        },
-        "par_fixD_susp1": {
-          "sr": 24000,
-          "speech_seconds": 68.2,
-          "gen_seconds": 1.8
-        },
-        "par_fixE_susp1": {
-          "sr": 24000,
-          "speech_seconds": 68.2,
-          "gen_seconds": 1.7
-        },
-        "par_fixC_susp2": {
-          "sr": 24000,
-          "speech_seconds": 68.3,
-          "gen_seconds": 1.4
-        },
-        "par_fixD_susp2": {
-          "sr": 24000,
-          "speech_seconds": 68.3,
-          "gen_seconds": 1.7
-        },
-        "par_fixE_susp2": {
-          "sr": 24000,
-          "speech_seconds": 68.3,
-          "gen_seconds": 1.7
-        },
-        "par_fixC_susp3": {
-          "sr": 24000,
-          "speech_seconds": 69.1,
-          "gen_seconds": 1.4
-        },
-        "par_fixD_susp3": {
-          "sr": 24000,
-          "speech_seconds": 69.1,
-          "gen_seconds": 1.7
-        },
-        "par_fixE_susp3": {
-          "sr": 24000,
-          "speech_seconds": 69.1,
-          "gen_seconds": 1.8
-        },
-        "par_fixC_susp4": {
-          "sr": 24000,
-          "speech_seconds": 68.9,
-          "gen_seconds": 1.4
-        },
-        "par_fixD_susp4": {
-          "sr": 24000,
-          "speech_seconds": 68.9,
-          "gen_seconds": 1.7
-        },
-        "par_fixE_susp4": {
-          "sr": 24000,
-          "speech_seconds": 68.9,
-          "gen_seconds": 1.7
-        },
-        "par_fixC_susp5": {
-          "sr": 24000,
-          "speech_seconds": 70.2,
-          "gen_seconds": 1.4
-        },
-        "par_fixD_susp5": {
-          "sr": 24000,
-          "speech_seconds": 70.2,
-          "gen_seconds": 1.7
-        },
-        "par_fixE_susp5": {
-          "sr": 24000,
-          "speech_seconds": 70.2,
-          "gen_seconds": 1.7
-        }
-      },
-      "errors": [],
-      "torch": null,
-      "cuda": null,
-      "version": null
-    },
     "score": {
       "status": "done",
       "gpu": 1,
       "install_min": 0.2,
       "returncode": 0,
-      "minutes": 14.3,
+      "minutes": 7.1,
       "variants": {
         "par_mejor": {
           "sr": 24000,
-          "speech_seconds": 67.8,
+          "speech_seconds": 67.6,
           "gen_seconds": 0
         }
       },
@@ -321,72 +254,49 @@
     "Tesla T4",
     "Tesla T4"
   ],
-  "minutes": 34.4,
+  "minutes": 36.4,
   "files": [
     "emo_plana.mp3",
     "emo_plana.wav",
     "log.txt",
     "manifest.json",
-    "par_fixC_susp0.mp3",
-    "par_fixC_susp0.wav",
-    "par_fixC_susp1.mp3",
-    "par_fixC_susp1.wav",
-    "par_fixC_susp2.mp3",
-    "par_fixC_susp2.wav",
-    "par_fixC_susp3.mp3",
-    "par_fixC_susp3.wav",
-    "par_fixC_susp4.mp3",
-    "par_fixC_susp4.wav",
-    "par_fixC_susp5.mp3",
-    "par_fixC_susp5.wav",
-    "par_fixD_susp0.mp3",
-    "par_fixD_susp0.wav",
-    "par_fixD_susp1.mp3",
-    "par_fixD_susp1.wav",
-    "par_fixD_susp2.mp3",
-    "par_fixD_susp2.wav",
-    "par_fixD_susp3.mp3",
-    "par_fixD_susp3.wav",
-    "par_fixD_susp4.mp3",
-    "par_fixD_susp4.wav",
-    "par_fixD_susp5.mp3",
-    "par_fixD_susp5.wav",
-    "par_fixE_susp0.mp3",
-    "par_fixE_susp0.wav",
-    "par_fixE_susp1.mp3",
-    "par_fixE_susp1.wav",
-    "par_fixE_susp2.mp3",
-    "par_fixE_susp2.wav",
-    "par_fixE_susp3.mp3",
-    "par_fixE_susp3.wav",
-    "par_fixE_susp4.mp3",
-    "par_fixE_susp4.wav",
-    "par_fixE_susp5.mp3",
-    "par_fixE_susp5.wav",
     "par_mejor.mp3",
     "par_mejor.wav",
+    "par_r0_s0.mp3",
+    "par_r0_s0.wav",
+    "par_r0_s1.mp3",
+    "par_r0_s1.wav",
+    "par_r0_t0.mp3",
+    "par_r0_t0.wav",
+    "par_r0_t1.mp3",
+    "par_r0_t1.wav",
+    "par_r1_s0.mp3",
+    "par_r1_s0.wav",
+    "par_r1_s1.mp3",
+    "par_r1_s1.wav",
+    "par_r1_t0.mp3",
+    "par_r1_t0.wav",
+    "par_r1_t1.mp3",
+    "par_r1_t1.wav",
     "par_susp0.mp3",
     "par_susp0.wav",
-    "par_susp1.mp3",
-    "par_susp1.wav",
-    "par_susp2.mp3",
-    "par_susp2.wav",
-    "par_susp3.mp3",
-    "par_susp3.wav",
-    "par_susp4.mp3",
-    "par_susp4.wav",
-    "par_susp5.mp3",
-    "par_susp5.wav",
+    "par_t0.mp3",
+    "par_t0.wav",
+    "ref_editada_C.mp3",
+    "ref_editada_C.wav",
+    "ref_editada_REF.mp3",
+    "ref_editada_REF.wav",
     "ref_narrador.mp3",
     "ref_narrador.wav",
-    "res_prosodyfix.json",
+    "refpick.json",
     "res_qwenpara.json",
     "res_qwenref.json",
+    "res_refedit.json",
     "res_score.json",
     "scores.json",
-    "stdout_prosodyfix.log",
     "stdout_qwenpara.log",
     "stdout_qwenref.log",
+    "stdout_refedit.log",
     "stdout_score.log"
   ],
   "paragraphs": [
@@ -425,432 +335,205 @@
     1.1,
     1.5
   ],
-  "para_seeds": 6,
-  "prosody_src": "\"\"\"Narrator intonation editing (Praat PSOLA via parselmouth): the voice's timbre is untouched, only its melody.\n\nMeasured on a reference Spanish documentary narrator (Planeta Antiguo): inside a thought the voice stays up (phrase\nends ~-0.6 semitones, declination ~-0.35 st/s, ~30 % continuation rises), while a TTS closes every phrase as if it\nwere the last (-3 to -6 st). For each multi-sentence take we lift the end of every phrase except the last one\ntoward the level the phrase started at, with a continuation rise at comma-length pauses. The take's LAST phrase\nkeeps its natural final fall.\n\nMode \"C\" (17-oct) reached the reference numbers but Luis heard a TREMOR at the phrase endings: the whole take was\nre-synthesized, the target melody copied every measurement wobble of the creaky, fading syllable at the end of a\nphrase, and the biggest shifts (up to 4 st) landed exactly there. Modes \"D\"/\"E\" (18-oct):\n  - the target melody is a smoothed, outlier-free version of the original (no jitter or octave errors copied);\n  - nothing is moved in the quiet tail of a phrase (> 12 dB under its peak: creak/decay) - the lift is reached on\n    the last full vowel and then held;\n  - shifts are capped (D: 2.5 st, E: 1.8 st) and the rise is gentler;\n  - only the edited spans take the re-synthesized audio (20 ms crossfades); everything else is the original take.\n\"\"\"\nimport numpy as np\n\n# mode: (strength, comma rise st, inner-end target st, max shift st, tilt halving, careful)\nMODES = {\n    \"B\": (1.0, None, -0.6, 4.0, False, False),\n    \"C\": (0.8, 1.5, -0.6, 4.0, True, False),\n    \"D\": (0.9, 1.2, -0.8, 2.5, True, True),\n    \"E\": (0.7, 1.0, -1.0, 1.8, True, True),\n}\n\n\ndef _phrases(w, sr):\n    hop = int(sr * 0.01)\n    n = len(w) // hop\n    if n < 50:\n        return [], None\n    e = 20 * np.log10(np.sqrt((w[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)\n    sp = np.convolve((e > np.percentile(e, 90) - 18).astype(float), np.ones(15) / 15, \"same\") > 0.3\n    edges = np.flatnonzero(np.diff(np.concatenate([[0], sp.astype(int), [0]])))\n    ph = []\n    for a, b in zip(edges[::2], edges[1::2]):\n        if ph and a - ph[-1][1] < 18:\n            ph[-1][1] = b\n        else:\n            ph.append([a, b])\n    return [(a / 100, b / 100) for a, b in ph if b - a >= 40], e\n\n\ndef _smooth_f0(times, f0):\n    \"\"\"Median-smoothed contour without octave errors (target melody must not copy measurement wobble).\"\"\"\n    v = f0 > 0\n    st = np.full(len(f0), np.nan)\n    st[v] = 12 * np.log2(f0[v] / 100.0)\n    out = st.copy()\n    for i in np.flatnonzero(v):\n        win = st[max(0, i - 3):i + 4]\n        win = win[~np.isnan(win)]\n        med = np.median(win)\n        out[i] = med if abs(st[i] - med) > 2.5 else np.mean(win[np.abs(win - med) <= 2.5])\n    return np.where(v, 100.0 * 2 ** (out / 12), 0.0)\n\n\ndef edit(w, sr, mode=\"E\", seed=7):\n    \"\"\"Return the take with narrator intonation (float32, same length). Falls back to the input on any problem.\"\"\"\n    if mode not in MODES:\n        return w\n    strength, rise_st, inner_st, cap, tilt_half, careful = MODES[mode]\n    try:\n        import parselmouth\n        from parselmouth.praat import call\n    except ImportError:\n        return w\n    try:\n        w = np.asarray(w, np.float32)\n        rng = np.random.default_rng(seed)\n        snd = parselmouth.Sound(w.astype(np.float64), sampling_frequency=sr)\n        pitch = snd.to_pitch_ac(time_step=0.01, pitch_floor=60, pitch_ceiling=300)\n        times = pitch.xs()\n        f0 = pitch.selected_array[\"frequency\"]\n        if (f0 > 0).sum() < 30:\n            return w\n        if careful:\n            f0 = _smooth_f0(times, f0)\n        med = np.median(f0[f0 > 0])\n        ph, e = _phrases(w, sr)\n        if len(ph) < 2:\n            return w\n        eidx = np.clip((times * 100).astype(int), 0, len(e) - 1)\n        shift = np.zeros_like(f0)\n        for pi, (a, b) in enumerate(ph[:-1]):\n            inph = (times >= a) & (times <= b + 0.05)\n            m = inph & (f0 > 0)\n            if careful:                                   # only full-voice frames count (no creaky decay)\n                peak = e[int(a * 100):int(b * 100)].max()\n                m &= e[eidx] > peak - 12\n            if m.sum() < 15:\n                continue\n            st = 12 * np.log2(f0[m] / med)\n            q = max(3, m.sum() // 5)\n            head, end = np.median(st[:q]), np.median(st[-q:])\n            nxt_pause = ph[pi + 1][0] - b\n            if rise_st is not None:\n                rise = nxt_pause < 0.45\n                target = head + (rise_st if rise else inner_st)\n            else:\n                rise = rng.random() < 0.33 and nxt_pause < 0.7\n                target = head + (1.0 if rise else inner_st)\n            if tilt_half:\n                tt = times[m] - a\n                slope = np.polyfit(tt, st, 1)[0] if len(tt) > 5 else 0\n                if slope < 0:\n                    mid = (b - a) / 2\n                    shift = np.where(inph, shift + np.clip(-0.5 * slope * ((times - a) - mid), -cap, cap), shift)\n            delta = float(np.clip((target - end) * strength, 0, cap))\n            if delta > 0.2:\n                t0 = a + 0.55 * (b - a)\n                t1 = times[m][-1] if careful else b      # lift reached on the last full vowel, then held\n                r = np.clip((times - t0) / max(t1 - t0, 0.05), 0, 1)\n                shift = np.where(inph, shift + delta * r, shift)\n        shift = np.clip(shift, -cap, cap)\n        if not np.any(np.abs(shift) > 0.05):\n            return w\n        manip = call(snd, \"To Manipulation\", 0.01, 60, 300)\n        tier = call(\"Create PitchTier\", \"narrador\", snd.xmin, snd.xmax)\n        for t, f, d in zip(times, f0, shift):\n            if f > 0:\n                call(tier, \"Add point\", float(t), float(f * 2 ** (d / 12)))\n        call([tier, manip], \"Replace pitch tier\")\n        y = np.asarray(call(manip, \"Get resynthesis (overlap-add)\").values[0], np.float32)[:len(w)]\n        if len(y) < len(w):\n            y = np.concatenate([y, w[len(y):]])\n        if not (np.isfinite(y).all() and np.abs(y).max() > 1e-3):\n            return w\n        if not careful:\n            return y\n        # splice: re-synthesized audio only where the melody moved, original take everywhere else\n        hop = int(sr * 0.01)\n        edited = np.zeros(len(w), np.float32)\n        for t, d in zip(times, shift):\n            if abs(d) > 0.05:\n                i = int(t * sr)\n                edited[max(0, i - 4 * hop):i + 4 * hop] = 1.0\n        k = int(0.02 * sr)\n        mix = np.convolve(edited, np.ones(k) / k, \"same\")\n        return (mix * y + (1 - mix) * w).astype(np.float32)\n    except Exception as exc:                    # noqa: BLE001 - a melody edit must never break an episode\n        print(f\"   pitch edit skipped: {str(exc)[:120]}\")\n        return w\n",
-  "prosody_modes": [
-    "C",
-    "D",
-    "E"
-  ],
-  "pick_mos_tol": 0.12,
+  "prosody_src": "\"\"\"Narrator intonation editing (Praat PSOLA via parselmouth): the voice's timbre is untouched, only its melody.\n\nMeasured on a reference Spanish documentary narrator (Planeta Antiguo): inside a thought the voice stays up (phrase\nends ~-0.6 semitones, declination ~-0.35 st/s, ~30 % continuation rises), while a TTS closes every phrase as if it\nwere the last (-3 to -6 st). For each multi-sentence take we lift the end of every phrase except the last one\ntoward the level the phrase started at, with a continuation rise at comma-length pauses. The take's LAST phrase\nkeeps its natural final fall.\n\nMode \"C\" (17-oct) reached the reference numbers but Luis heard a TREMOR at the phrase endings: the whole take was\nre-synthesized, the target melody copied every measurement wobble of the creaky, fading syllable at the end of a\nphrase, and the biggest shifts (up to 4 st) landed exactly there. Modes \"D\"/\"E\" (18-oct):\n  - the target melody is a smoothed, outlier-free version of the original (no jitter or octave errors copied);\n  - nothing is moved in the quiet tail of a phrase (> 12 dB under its peak: creak/decay) - the lift is reached on\n    the last full vowel and then held;\n  - shifts are capped (D: 2.5 st, E: 1.8 st) and the rise is gentler;\n  - only the edited spans take the re-synthesized audio (20 ms crossfades); everything else is the original take.\n\"\"\"\nimport numpy as np\n\n# mode: (strength, comma rise st, inner-end target st, max shift st, tilt halving, careful)\nMODES = {\n    \"B\": (1.0, None, -0.6, 4.0, False, False),\n    \"C\": (0.8, 1.5, -0.6, 4.0, True, False),\n    \"D\": (0.9, 1.2, -0.8, 2.5, True, True),\n    \"E\": (0.7, 1.0, -1.0, 1.8, True, True),\n    # only for the 10-second REFERENCE clip the voice clone imitates (never for episode audio): a strong storyteller\n    # melody, so the TTS itself speaks that way and the episode audio needs no editing at all\n    \"REF\": (1.0, 2.0, -0.3, 4.0, True, False),\n}\n\n\ndef _phrases(w, sr):\n    hop = int(sr * 0.01)\n    n = len(w) // hop\n    if n < 50:\n        return [], None\n    e = 20 * np.log10(np.sqrt((w[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)\n    sp = np.convolve((e > np.percentile(e, 90) - 18).astype(float), np.ones(15) / 15, \"same\") > 0.3\n    edges = np.flatnonzero(np.diff(np.concatenate([[0], sp.astype(int), [0]])))\n    ph = []\n    for a, b in zip(edges[::2], edges[1::2]):\n        if ph and a - ph[-1][1] < 18:\n            ph[-1][1] = b\n        else:\n            ph.append([a, b])\n    return [(a / 100, b / 100) for a, b in ph if b - a >= 40], e\n\n\ndef _smooth_f0(times, f0):\n    \"\"\"Median-smoothed contour without octave errors (target melody must not copy measurement wobble).\"\"\"\n    v = f0 > 0\n    st = np.full(len(f0), np.nan)\n    st[v] = 12 * np.log2(f0[v] / 100.0)\n    out = st.copy()\n    for i in np.flatnonzero(v):\n        win = st[max(0, i - 3):i + 4]\n        win = win[~np.isnan(win)]\n        med = np.median(win)\n        out[i] = med if abs(st[i] - med) > 2.5 else np.mean(win[np.abs(win - med) <= 2.5])\n    return np.where(v, 100.0 * 2 ** (out / 12), 0.0)\n\n\ndef edit(w, sr, mode=\"E\", seed=7):\n    \"\"\"Return the take with narrator intonation (float32, same length). Falls back to the input on any problem.\"\"\"\n    if mode not in MODES:\n        return w\n    strength, rise_st, inner_st, cap, tilt_half, careful = MODES[mode]\n    try:\n        import parselmouth\n        from parselmouth.praat import call\n    except ImportError:\n        return w\n    try:\n        w = np.asarray(w, np.float32)\n        rng = np.random.default_rng(seed)\n        snd = parselmouth.Sound(w.astype(np.float64), sampling_frequency=sr)\n        pitch = snd.to_pitch_ac(time_step=0.01, pitch_floor=60, pitch_ceiling=300)\n        times = pitch.xs()\n        f0 = pitch.selected_array[\"frequency\"]\n        if (f0 > 0).sum() < 30:\n            return w\n        if careful:\n            f0 = _smooth_f0(times, f0)\n        med = np.median(f0[f0 > 0])\n        ph, e = _phrases(w, sr)\n        if len(ph) < 2:\n            return w\n        eidx = np.clip((times * 100).astype(int), 0, len(e) - 1)\n        shift = np.zeros_like(f0)\n        for pi, (a, b) in enumerate(ph[:-1]):\n            inph = (times >= a) & (times <= b + 0.05)\n            m = inph & (f0 > 0)\n            if careful:                                   # only full-voice frames count (no creaky decay)\n                peak = e[int(a * 100):int(b * 100)].max()\n                m &= e[eidx] > peak - 12\n            if m.sum() < 15:\n                continue\n            st = 12 * np.log2(f0[m] / med)\n            q = max(3, m.sum() // 5)\n            head, end = np.median(st[:q]), np.median(st[-q:])\n            nxt_pause = ph[pi + 1][0] - b\n            if rise_st is not None:\n                rise = nxt_pause < 0.45\n                target = head + (rise_st if rise else inner_st)\n            else:\n                rise = rng.random() < 0.33 and nxt_pause < 0.7\n                target = head + (1.0 if rise else inner_st)\n            if tilt_half:\n                tt = times[m] - a\n                slope = np.polyfit(tt, st, 1)[0] if len(tt) > 5 else 0\n                if slope < 0:\n                    mid = (b - a) / 2\n                    shift = np.where(inph, shift + np.clip(-0.5 * slope * ((times - a) - mid), -cap, cap), shift)\n            delta = float(np.clip((target - end) * strength, 0, cap))\n            if delta > 0.2:\n                t0 = a + 0.55 * (b - a)\n                t1 = times[m][-1] if careful else b      # lift reached on the last full vowel, then held\n                r = np.clip((times - t0) / max(t1 - t0, 0.05), 0, 1)\n                shift = np.where(inph, shift + delta * r, shift)\n        shift = np.clip(shift, -cap, cap)\n        if not np.any(np.abs(shift) > 0.05):\n            return w\n        manip = call(snd, \"To Manipulation\", 0.01, 60, 300)\n        tier = call(\"Create PitchTier\", \"narrador\", snd.xmin, snd.xmax)\n        for t, f, d in zip(times, f0, shift):\n            if f > 0:\n                call(tier, \"Add point\", float(t), float(f * 2 ** (d / 12)))\n        call([tier, manip], \"Replace pitch tier\")\n        y = np.asarray(call(manip, \"Get resynthesis (overlap-add)\").values[0], np.float32)[:len(w)]\n        if len(y) < len(w):\n            y = np.concatenate([y, w[len(y):]])\n        if not (np.isfinite(y).all() and np.abs(y).max() > 1e-3):\n            return w\n        if not careful:\n            return y\n        # splice: re-synthesized audio only where the melody moved, original take everywhere else\n        hop = int(sr * 0.01)\n        edited = np.zeros(len(w), np.float32)\n        for t, d in zip(times, shift):\n            if abs(d) > 0.05:\n                i = int(t * sr)\n                edited[max(0, i - 4 * hop):i + 4 * hop] = 1.0\n        k = int(0.02 * sr)\n        mix = np.convolve(edited, np.ones(k) / k, \"same\")\n        return (mix * y + (1 - mix) * w).astype(np.float32)\n    except Exception as exc:                    # noqa: BLE001 - a melody edit must never break an episode\n        print(f\"   pitch edit skipped: {str(exc)[:120]}\")\n        return w\n",
   "scores": {
     "emo_plana": {
       "f0_median_hz": 99,
-      "pitch_var_st": 3.13,
-      "pitch_range_st": 10.7,
-      "between_lines_st": 0.8,
-      "between_lines_span_st": 3.6,
-      "within_line_range_st": 9.8,
-      "loudness_span_db": 4.1,
-      "accent_p_es": 0.935,
-      "accent_min_p_es": 0.128,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.848,
-      "min_sim": 0.652,
-      "declination_st_s": -4.44,
-      "final_fall_st": -5.8,
-      "pct_rising": 6.5,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 4.206,
-      "words_per_min": 136
-    },
-    "par_fixC_susp0": {
-      "f0_median_hz": 100,
-      "pitch_var_st": 2.35,
-      "pitch_range_st": 7.5,
-      "between_lines_st": 0.45,
-      "between_lines_span_st": 1.2,
-      "within_line_range_st": 8.0,
-      "loudness_span_db": 1.8,
-      "accent_p_es": 0.994,
-      "accent_min_p_es": 0.987,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.897,
-      "min_sim": 0.859,
-      "declination_st_s": -0.53,
-      "final_fall_st": -1.45,
-      "pct_rising": 9.7,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.92,
-      "words_per_min": 143
-    },
-    "par_fixC_susp1": {
-      "f0_median_hz": 102,
-      "pitch_var_st": 2.6,
-      "pitch_range_st": 8.3,
-      "between_lines_st": 0.59,
-      "between_lines_span_st": 1.8,
-      "within_line_range_st": 7.9,
-      "loudness_span_db": 1.9,
-      "accent_p_es": 0.989,
-      "accent_min_p_es": 0.952,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.897,
-      "min_sim": 0.867,
-      "declination_st_s": -0.62,
-      "final_fall_st": -1.0,
-      "pct_rising": 9.7,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.933,
-      "words_per_min": 144
-    },
-    "par_fixC_susp2": {
-      "f0_median_hz": 100,
-      "pitch_var_st": 2.58,
-      "pitch_range_st": 7.9,
-      "between_lines_st": 0.65,
-      "between_lines_span_st": 2.1,
-      "within_line_range_st": 7.8,
-      "loudness_span_db": 1.4,
-      "accent_p_es": 0.996,
-      "accent_min_p_es": 0.991,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.898,
-      "min_sim": 0.878,
-      "declination_st_s": -0.35,
-      "final_fall_st": -1.05,
-      "pct_rising": 19.4,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.957,
-      "words_per_min": 144
-    },
-    "par_fixC_susp3": {
-      "f0_median_hz": 106,
-      "pitch_var_st": 2.59,
-      "pitch_range_st": 8.1,
+      "pitch_var_st": 3.14,
+      "pitch_range_st": 10.9,
       "between_lines_st": 0.73,
-      "between_lines_span_st": 2.0,
-      "within_line_range_st": 8.1,
-      "loudness_span_db": 4.2,
-      "accent_p_es": 0.996,
-      "accent_min_p_es": 0.987,
+      "between_lines_span_st": 3.1,
+      "within_line_range_st": 9.9,
+      "loudness_span_db": 3.0,
+      "accent_p_es": 0.927,
+      "accent_min_p_es": 0.054,
       "accent_p_en": 0.0,
-      "mean_sim": 0.894,
-      "min_sim": 0.872,
-      "declination_st_s": -0.22,
-      "final_fall_st": -0.9,
-      "pct_rising": 13.3,
-      "phrases": 30,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.941,
-      "words_per_min": 142
-    },
-    "par_fixC_susp4": {
-      "f0_median_hz": 103,
-      "pitch_var_st": 2.68,
-      "pitch_range_st": 9.1,
-      "between_lines_st": 0.65,
-      "between_lines_span_st": 2.1,
-      "within_line_range_st": 8.7,
-      "loudness_span_db": 1.3,
-      "accent_p_es": 0.993,
-      "accent_min_p_es": 0.981,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.887,
-      "min_sim": 0.843,
-      "declination_st_s": -0.97,
-      "final_fall_st": -1.4,
-      "pct_rising": 6.5,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.964,
-      "words_per_min": 143
-    },
-    "par_fixC_susp5": {
-      "f0_median_hz": 104,
-      "pitch_var_st": 2.66,
-      "pitch_range_st": 8.6,
-      "between_lines_st": 0.67,
-      "between_lines_span_st": 2.3,
-      "within_line_range_st": 8.5,
-      "loudness_span_db": 2.2,
-      "accent_p_es": 0.997,
-      "accent_min_p_es": 0.995,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.904,
-      "min_sim": 0.879,
-      "declination_st_s": -0.79,
-      "final_fall_st": -1.4,
-      "pct_rising": 6.9,
-      "phrases": 29,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.98,
-      "words_per_min": 140
-    },
-    "par_fixD_susp0": {
-      "f0_median_hz": 98,
-      "pitch_var_st": 2.5,
-      "pitch_range_st": 8.5,
-      "between_lines_st": 0.45,
-      "between_lines_span_st": 1.2,
-      "within_line_range_st": 8.8,
-      "loudness_span_db": 1.7,
-      "accent_p_es": 0.994,
-      "accent_min_p_es": 0.989,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.898,
-      "min_sim": 0.861,
-      "declination_st_s": -1.55,
-      "final_fall_st": -3.0,
-      "pct_rising": 12.9,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.936,
-      "words_per_min": 143
-    },
-    "par_fixD_susp1": {
-      "f0_median_hz": 100,
-      "pitch_var_st": 2.66,
-      "pitch_range_st": 8.6,
-      "between_lines_st": 0.64,
-      "between_lines_span_st": 2.0,
-      "within_line_range_st": 8.1,
-      "loudness_span_db": 1.9,
-      "accent_p_es": 0.986,
-      "accent_min_p_es": 0.948,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.9,
-      "min_sim": 0.865,
-      "declination_st_s": -1.94,
-      "final_fall_st": -2.7,
-      "pct_rising": 0.0,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.885,
-      "words_per_min": 144
-    },
-    "par_fixD_susp2": {
-      "f0_median_hz": 99,
-      "pitch_var_st": 2.61,
-      "pitch_range_st": 8.5,
-      "between_lines_st": 0.62,
-      "between_lines_span_st": 2.1,
-      "within_line_range_st": 8.2,
-      "loudness_span_db": 1.3,
-      "accent_p_es": 0.992,
-      "accent_min_p_es": 0.982,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.902,
-      "min_sim": 0.884,
-      "declination_st_s": -1.51,
-      "final_fall_st": -2.2,
-      "pct_rising": 12.9,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.995,
-      "words_per_min": 144
-    },
-    "par_fixD_susp3": {
-      "f0_median_hz": 103,
-      "pitch_var_st": 2.7,
-      "pitch_range_st": 9.2,
-      "between_lines_st": 0.68,
-      "between_lines_span_st": 1.9,
-      "within_line_range_st": 8.8,
-      "loudness_span_db": 4.2,
-      "accent_p_es": 0.995,
-      "accent_min_p_es": 0.989,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.9,
-      "min_sim": 0.88,
-      "declination_st_s": -1.75,
-      "final_fall_st": -3.35,
-      "pct_rising": 3.3,
-      "phrases": 30,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.912,
-      "words_per_min": 142
-    },
-    "par_fixD_susp4": {
-      "f0_median_hz": 101,
-      "pitch_var_st": 2.79,
-      "pitch_range_st": 9.6,
-      "between_lines_st": 0.77,
-      "between_lines_span_st": 2.5,
-      "within_line_range_st": 9.2,
-      "loudness_span_db": 1.3,
-      "accent_p_es": 0.992,
-      "accent_min_p_es": 0.976,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.888,
-      "min_sim": 0.851,
-      "declination_st_s": -2.01,
-      "final_fall_st": -3.05,
-      "pct_rising": 6.5,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 4.014,
-      "words_per_min": 143
-    },
-    "par_fixD_susp5": {
-      "f0_median_hz": 102,
-      "pitch_var_st": 2.76,
-      "pitch_range_st": 9.4,
-      "between_lines_st": 0.7,
-      "between_lines_span_st": 2.3,
-      "within_line_range_st": 8.8,
-      "loudness_span_db": 2.2,
-      "accent_p_es": 0.997,
-      "accent_min_p_es": 0.993,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.901,
-      "min_sim": 0.873,
-      "declination_st_s": -2.01,
-      "final_fall_st": -3.4,
-      "pct_rising": 0.0,
-      "phrases": 29,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.988,
-      "words_per_min": 140
-    },
-    "par_fixE_susp0": {
-      "f0_median_hz": 97,
-      "pitch_var_st": 2.59,
-      "pitch_range_st": 8.9,
-      "between_lines_st": 0.37,
-      "between_lines_span_st": 1.0,
-      "within_line_range_st": 9.1,
-      "loudness_span_db": 1.7,
-      "accent_p_es": 0.995,
-      "accent_min_p_es": 0.988,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.901,
-      "min_sim": 0.867,
-      "declination_st_s": -1.89,
-      "final_fall_st": -3.25,
-      "pct_rising": 6.5,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.944,
-      "words_per_min": 143
-    },
-    "par_fixE_susp1": {
-      "f0_median_hz": 100,
-      "pitch_var_st": 2.73,
-      "pitch_range_st": 9.2,
-      "between_lines_st": 0.57,
-      "between_lines_span_st": 1.7,
-      "within_line_range_st": 8.8,
-      "loudness_span_db": 1.9,
-      "accent_p_es": 0.99,
-      "accent_min_p_es": 0.968,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.9,
-      "min_sim": 0.87,
-      "declination_st_s": -1.88,
-      "final_fall_st": -2.75,
+      "mean_sim": 0.863,
+      "min_sim": 0.738,
+      "declination_st_s": -3.88,
+      "final_fall_st": -4.75,
       "pct_rising": 3.2,
       "phrases": 31,
       "mean_cer": 0.0,
       "max_cer": 0.0,
-      "mean_mos": 3.993,
-      "words_per_min": 144
+      "mean_mos": 4.207,
+      "words_per_min": 132
     },
-    "par_fixE_susp2": {
-      "f0_median_hz": 98,
-      "pitch_var_st": 2.66,
-      "pitch_range_st": 8.8,
-      "between_lines_st": 0.6,
-      "between_lines_span_st": 2.0,
-      "within_line_range_st": 8.6,
-      "loudness_span_db": 1.4,
-      "accent_p_es": 0.994,
-      "accent_min_p_es": 0.987,
+    "par_r0_s0": {
+      "f0_median_hz": 101,
+      "pitch_var_st": 2.79,
+      "pitch_range_st": 9.2,
+      "between_lines_st": 0.8,
+      "between_lines_span_st": 2.6,
+      "within_line_range_st": 9.1,
+      "loudness_span_db": 2.5,
+      "accent_p_es": 0.997,
+      "accent_min_p_es": 0.995,
       "accent_p_en": 0.0,
-      "mean_sim": 0.901,
-      "min_sim": 0.88,
-      "declination_st_s": -1.52,
-      "final_fall_st": -3.05,
-      "pct_rising": 12.9,
+      "mean_sim": 0.898,
+      "min_sim": 0.859,
+      "declination_st_s": -3.0,
+      "final_fall_st": -4.1,
+      "pct_rising": 3.2,
       "phrases": 31,
       "mean_cer": 0.0,
       "max_cer": 0.0,
-      "mean_mos": 4.03,
-      "words_per_min": 144
-    },
-    "par_fixE_susp3": {
-      "f0_median_hz": 102,
-      "pitch_var_st": 2.83,
-      "pitch_range_st": 9.8,
-      "between_lines_st": 0.62,
-      "between_lines_span_st": 1.7,
-      "within_line_range_st": 9.3,
-      "loudness_span_db": 4.2,
-      "accent_p_es": 0.994,
-      "accent_min_p_es": 0.982,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.896,
-      "min_sim": 0.865,
-      "declination_st_s": -2.06,
-      "final_fall_st": -3.5,
-      "pct_rising": 0.0,
-      "phrases": 30,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 3.945,
+      "mean_mos": 4.127,
       "words_per_min": 142
     },
-    "par_fixE_susp4": {
-      "f0_median_hz": 100,
-      "pitch_var_st": 2.88,
-      "pitch_range_st": 9.9,
-      "between_lines_st": 0.79,
-      "between_lines_span_st": 2.5,
-      "within_line_range_st": 9.5,
-      "loudness_span_db": 1.3,
-      "accent_p_es": 0.995,
-      "accent_min_p_es": 0.983,
+    "par_r0_s1": {
+      "f0_median_hz": 98,
+      "pitch_var_st": 2.85,
+      "pitch_range_st": 9.5,
+      "between_lines_st": 0.36,
+      "between_lines_span_st": 0.9,
+      "within_line_range_st": 9.6,
+      "loudness_span_db": 2.1,
+      "accent_p_es": 0.998,
+      "accent_min_p_es": 0.996,
       "accent_p_en": 0.0,
-      "mean_sim": 0.889,
-      "min_sim": 0.856,
-      "declination_st_s": -2.33,
-      "final_fall_st": -3.6,
+      "mean_sim": 0.903,
+      "min_sim": 0.874,
+      "declination_st_s": -3.22,
+      "final_fall_st": -4.7,
+      "pct_rising": 3.1,
+      "phrases": 32,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.112,
+      "words_per_min": 143
+    },
+    "par_r0_t0": {
+      "f0_median_hz": 100,
+      "pitch_var_st": 2.8,
+      "pitch_range_st": 9.3,
+      "between_lines_st": 0.34,
+      "between_lines_span_st": 1.0,
+      "within_line_range_st": 9.9,
+      "loudness_span_db": 1.4,
+      "accent_p_es": 0.999,
+      "accent_min_p_es": 0.996,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.905,
+      "min_sim": 0.888,
+      "declination_st_s": -2.91,
+      "final_fall_st": -5.45,
+      "pct_rising": 15.6,
+      "phrases": 32,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.146,
+      "words_per_min": 141
+    },
+    "par_r0_t1": {
+      "f0_median_hz": 99,
+      "pitch_var_st": 2.54,
+      "pitch_range_st": 8.4,
+      "between_lines_st": 0.51,
+      "between_lines_span_st": 1.5,
+      "within_line_range_st": 8.5,
+      "loudness_span_db": 1.3,
+      "accent_p_es": 0.998,
+      "accent_min_p_es": 0.995,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.903,
+      "min_sim": 0.866,
+      "declination_st_s": -2.72,
+      "final_fall_st": -4.3,
       "pct_rising": 6.5,
       "phrases": 31,
       "mean_cer": 0.0,
       "max_cer": 0.0,
-      "mean_mos": 4.075,
+      "mean_mos": 4.145,
       "words_per_min": 143
     },
-    "par_fixE_susp5": {
-      "f0_median_hz": 101,
-      "pitch_var_st": 2.85,
-      "pitch_range_st": 9.9,
-      "between_lines_st": 0.69,
-      "between_lines_span_st": 2.3,
-      "within_line_range_st": 9.0,
-      "loudness_span_db": 2.2,
-      "accent_p_es": 0.996,
-      "accent_min_p_es": 0.991,
+    "par_r1_s0": {
+      "f0_median_hz": 99,
+      "pitch_var_st": 2.84,
+      "pitch_range_st": 9.2,
+      "between_lines_st": 0.56,
+      "between_lines_span_st": 1.6,
+      "within_line_range_st": 9.3,
+      "loudness_span_db": 1.9,
+      "accent_p_es": 0.998,
+      "accent_min_p_es": 0.992,
       "accent_p_en": 0.0,
-      "mean_sim": 0.9,
-      "min_sim": 0.868,
-      "declination_st_s": -2.6,
-      "final_fall_st": -4.3,
+      "mean_sim": 0.902,
+      "min_sim": 0.882,
+      "declination_st_s": -3.38,
+      "final_fall_st": -4.0,
       "pct_rising": 0.0,
-      "phrases": 29,
+      "phrases": 30,
+      "mean_cer": 0.0008,
+      "max_cer": 0.0047,
+      "mean_mos": 4.119,
+      "words_per_min": 143
+    },
+    "par_r1_s1": {
+      "f0_median_hz": 99,
+      "pitch_var_st": 2.68,
+      "pitch_range_st": 9.4,
+      "between_lines_st": 0.5,
+      "between_lines_span_st": 1.5,
+      "within_line_range_st": 9.4,
+      "loudness_span_db": 2.0,
+      "accent_p_es": 0.999,
+      "accent_min_p_es": 0.997,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.894,
+      "min_sim": 0.877,
+      "declination_st_s": -3.32,
+      "final_fall_st": -4.17,
+      "pct_rising": 10.0,
+      "phrases": 30,
       "mean_cer": 0.0,
       "max_cer": 0.0,
-      "mean_mos": 3.982,
-      "words_per_min": 140
+      "mean_mos": 4.106,
+      "words_per_min": 142
+    },
+    "par_r1_t0": {
+      "f0_median_hz": 101,
+      "pitch_var_st": 3.34,
+      "pitch_range_st": 11.4,
+      "between_lines_st": 0.7,
+      "between_lines_span_st": 2.1,
+      "within_line_range_st": 10.9,
+      "loudness_span_db": 1.8,
+      "accent_p_es": 0.998,
+      "accent_min_p_es": 0.991,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.899,
+      "min_sim": 0.866,
+      "declination_st_s": -3.23,
+      "final_fall_st": -5.3,
+      "pct_rising": 6.5,
+      "phrases": 31,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.188,
+      "words_per_min": 142
+    },
+    "par_r1_t1": {
+      "f0_median_hz": 99,
+      "pitch_var_st": 3.48,
+      "pitch_range_st": 11.4,
+      "between_lines_st": 1.19,
+      "between_lines_span_st": 3.9,
+      "within_line_range_st": 10.8,
+      "loudness_span_db": 2.0,
+      "accent_p_es": 0.996,
+      "accent_min_p_es": 0.99,
+      "accent_p_en": 0.0,
+      "mean_sim": 0.888,
+      "min_sim": 0.849,
+      "declination_st_s": -3.43,
+      "final_fall_st": -4.18,
+      "pct_rising": 3.1,
+      "phrases": 32,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.152,
+      "words_per_min": 145
     },
     "par_susp0": {
       "f0_median_hz": 96,
@@ -874,252 +557,104 @@
       "mean_mos": 4.178,
       "words_per_min": 143
     },
-    "par_susp1": {
-      "f0_median_hz": 99,
-      "pitch_var_st": 3.25,
-      "pitch_range_st": 11.4,
-      "between_lines_st": 0.59,
-      "between_lines_span_st": 1.8,
-      "within_line_range_st": 10.5,
-      "loudness_span_db": 1.8,
-      "accent_p_es": 0.995,
-      "accent_min_p_es": 0.979,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.908,
-      "min_sim": 0.876,
-      "declination_st_s": -3.05,
-      "final_fall_st": -4.9,
-      "pct_rising": 0.0,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 4.176,
-      "words_per_min": 144
-    },
-    "par_susp2": {
-      "f0_median_hz": 97,
-      "pitch_var_st": 3.27,
-      "pitch_range_st": 10.7,
-      "between_lines_st": 0.71,
-      "between_lines_span_st": 2.4,
-      "within_line_range_st": 10.4,
-      "loudness_span_db": 1.2,
+    "par_t0": {
+      "f0_median_hz": 103,
+      "pitch_var_st": 3.67,
+      "pitch_range_st": 12.5,
+      "between_lines_st": 0.81,
+      "between_lines_span_st": 1.9,
+      "within_line_range_st": 11.9,
+      "loudness_span_db": 1.9,
       "accent_p_es": 0.998,
-      "accent_min_p_es": 0.996,
+      "accent_min_p_es": 0.994,
       "accent_p_en": 0.0,
-      "mean_sim": 0.909,
-      "min_sim": 0.884,
-      "declination_st_s": -3.6,
-      "final_fall_st": -5.3,
-      "pct_rising": 9.7,
-      "phrases": 31,
+      "mean_sim": 0.894,
+      "min_sim": 0.868,
+      "declination_st_s": -4.98,
+      "final_fall_st": -6.5,
+      "pct_rising": 3.4,
+      "phrases": 29,
       "mean_cer": 0.0,
       "max_cer": 0.0,
       "mean_mos": 4.189,
-      "words_per_min": 144
+      "words_per_min": 143
     },
-    "par_susp3": {
-      "f0_median_hz": 101,
-      "pitch_var_st": 3.23,
-      "pitch_range_st": 11.1,
-      "between_lines_st": 0.49,
+    "par_mejor": {
+      "f0_median_hz": 99,
+      "pitch_var_st": 2.86,
+      "pitch_range_st": 9.7,
+      "between_lines_st": 0.39,
       "between_lines_span_st": 1.3,
-      "within_line_range_st": 10.8,
-      "loudness_span_db": 4.3,
+      "within_line_range_st": 10.1,
+      "loudness_span_db": 2.2,
       "accent_p_es": 0.998,
-      "accent_min_p_es": 0.992,
+      "accent_min_p_es": 0.996,
       "accent_p_en": 0.0,
-      "mean_sim": 0.902,
-      "min_sim": 0.871,
-      "declination_st_s": -4.05,
-      "final_fall_st": -5.9,
-      "pct_rising": 3.3,
+      "mean_sim": 0.893,
+      "min_sim": 0.866,
+      "declination_st_s": -2.05,
+      "final_fall_st": -2.42,
+      "pct_rising": 13.3,
       "phrases": 30,
       "mean_cer": 0.0,
       "max_cer": 0.0,
-      "mean_mos": 4.205,
-      "words_per_min": 142
-    },
-    "par_susp4": {
-      "f0_median_hz": 99,
-      "pitch_var_st": 3.39,
-      "pitch_range_st": 11.3,
-      "between_lines_st": 0.77,
-      "between_lines_span_st": 2.5,
-      "within_line_range_st": 11.6,
-      "loudness_span_db": 1.4,
-      "accent_p_es": 0.998,
-      "accent_min_p_es": 0.995,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.898,
-      "min_sim": 0.859,
-      "declination_st_s": -5.31,
-      "final_fall_st": -6.3,
-      "pct_rising": 6.5,
-      "phrases": 31,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 4.229,
-      "words_per_min": 143
-    },
-    "par_susp5": {
-      "f0_median_hz": 101,
-      "pitch_var_st": 3.34,
-      "pitch_range_st": 11.1,
-      "between_lines_st": 0.66,
-      "between_lines_span_st": 2.2,
-      "within_line_range_st": 10.3,
-      "loudness_span_db": 2.2,
-      "accent_p_es": 0.998,
-      "accent_min_p_es": 0.997,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.906,
-      "min_sim": 0.886,
-      "declination_st_s": -5.02,
-      "final_fall_st": -5.3,
-      "pct_rising": 0.0,
-      "phrases": 29,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 4.21,
-      "words_per_min": 140
-    },
-    "par_mejor": {
-      "f0_median_hz": 97,
-      "pitch_var_st": 3.05,
-      "pitch_range_st": 10.0,
-      "between_lines_st": 0.69,
-      "between_lines_span_st": 2.0,
-      "within_line_range_st": 9.5,
-      "loudness_span_db": 2.0,
-      "accent_p_es": 0.994,
-      "accent_min_p_es": 0.979,
-      "accent_p_en": 0.0,
-      "mean_sim": 0.911,
-      "min_sim": 0.891,
-      "declination_st_s": -2.71,
-      "final_fall_st": -3.6,
-      "pct_rising": 6.9,
-      "phrases": 29,
-      "mean_cer": 0.0,
-      "max_cer": 0.0,
-      "mean_mos": 4.177,
+      "mean_mos": 4.079,
       "words_per_min": 145,
       "pick": [
-        "par_susp0",
-        "par_susp1",
-        "par_susp3",
-        "par_susp3",
-        "par_fixD_susp2",
-        "par_susp1"
+        "par_r1_t1",
+        "par_r1_t1",
+        "par_r0_s0",
+        "par_r0_t0",
+        "par_r0_s0",
+        "par_r1_t0"
       ]
     },
     "_para_prosody": {
-      "par_fixC_susp0/0": {
-        "declination_st_s": -0.23,
-        "final_fall_st": 0.45,
-        "pct_rising": 25.0,
-        "phrases": 4
+      "par_r0_s0/0": {
+        "declination_st_s": -3.52,
+        "final_fall_st": -4.85,
+        "pct_rising": 0.0,
+        "phrases": 5
       },
-      "par_fixC_susp1/0": {
-        "declination_st_s": -0.14,
-        "final_fall_st": -0.4,
+      "par_r0_s1/0": {
+        "declination_st_s": -1.91,
+        "final_fall_st": -5.3,
+        "pct_rising": 0.0,
+        "phrases": 5
+      },
+      "par_r0_t0/0": {
+        "declination_st_s": -2.64,
+        "final_fall_st": -5.4,
         "pct_rising": 20.0,
         "phrases": 5
       },
-      "par_fixC_susp2/0": {
-        "declination_st_s": -0.18,
-        "final_fall_st": -0.2,
+      "par_r0_t1/0": {
+        "declination_st_s": -2.61,
+        "final_fall_st": -3.9,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixC_susp3/0": {
-        "declination_st_s": -0.13,
-        "final_fall_st": -0.45,
-        "pct_rising": 20.0,
-        "phrases": 5
-      },
-      "par_fixC_susp4/0": {
-        "declination_st_s": -0.35,
-        "final_fall_st": -0.1,
+      "par_r1_s0/0": {
+        "declination_st_s": -2.66,
+        "final_fall_st": -3.6,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixC_susp5/0": {
-        "declination_st_s": -1.45,
-        "final_fall_st": -0.85,
-        "pct_rising": 20.0,
-        "phrases": 5
-      },
-      "par_fixD_susp0/0": {
-        "declination_st_s": -1.42,
-        "final_fall_st": -2.2,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixD_susp1/0": {
-        "declination_st_s": -1.34,
-        "final_fall_st": -1.95,
+      "par_r1_s1/0": {
+        "declination_st_s": -3.15,
+        "final_fall_st": -4.2,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixD_susp2/0": {
-        "declination_st_s": -0.69,
-        "final_fall_st": -1.1,
+      "par_r1_t0/0": {
+        "declination_st_s": -2.95,
+        "final_fall_st": -4.65,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixD_susp3/0": {
-        "declination_st_s": -1.71,
-        "final_fall_st": -3.1,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixD_susp4/0": {
-        "declination_st_s": -1.75,
-        "final_fall_st": -0.75,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixD_susp5/0": {
-        "declination_st_s": -3.08,
-        "final_fall_st": -3.75,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp0/0": {
-        "declination_st_s": -1.48,
-        "final_fall_st": -2.2,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixE_susp1/0": {
-        "declination_st_s": -1.88,
-        "final_fall_st": -2.6,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp2/0": {
-        "declination_st_s": -1.1,
-        "final_fall_st": -1.6,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp3/0": {
-        "declination_st_s": -2.19,
+      "par_r1_t1/0": {
+        "declination_st_s": -2.28,
         "final_fall_st": -3.5,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp4/0": {
-        "declination_st_s": -2.22,
-        "final_fall_st": -1.55,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp5/0": {
-        "declination_st_s": -3.57,
-        "final_fall_st": -4.3,
         "pct_rising": 0.0,
         "phrases": 5
       },
@@ -1129,141 +664,57 @@
         "pct_rising": 25.0,
         "phrases": 4
       },
-      "par_susp1/0": {
-        "declination_st_s": -2.07,
-        "final_fall_st": -4.9,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_susp2/0": {
-        "declination_st_s": -3.13,
-        "final_fall_st": -5.2,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_susp3/0": {
-        "declination_st_s": -4.03,
-        "final_fall_st": -5.75,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_susp4/0": {
-        "declination_st_s": -3.4,
-        "final_fall_st": -4.1,
+      "par_t0/0": {
+        "declination_st_s": -4.84,
+        "final_fall_st": -6.15,
         "pct_rising": 20.0,
         "phrases": 5
       },
-      "par_susp5/0": {
-        "declination_st_s": -5.85,
-        "final_fall_st": -4.25,
+      "par_r0_s0/1": {
+        "declination_st_s": -3.9,
+        "final_fall_st": -5.15,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixC_susp0/1": {
-        "declination_st_s": -0.51,
-        "final_fall_st": -0.7,
+      "par_r0_s1/1": {
+        "declination_st_s": -3.02,
+        "final_fall_st": -4.8,
+        "pct_rising": 0.0,
+        "phrases": 5
+      },
+      "par_r0_t0/1": {
+        "declination_st_s": -2.83,
+        "final_fall_st": -4.75,
         "pct_rising": 20.0,
         "phrases": 5
       },
-      "par_fixC_susp1/1": {
-        "declination_st_s": -0.16,
-        "final_fall_st": -0.9,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixC_susp2/1": {
-        "declination_st_s": 0.04,
-        "final_fall_st": -1.75,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixC_susp3/1": {
-        "declination_st_s": -0.1,
-        "final_fall_st": -2.2,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixC_susp4/1": {
-        "declination_st_s": -0.72,
-        "final_fall_st": -1.98,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixC_susp5/1": {
-        "declination_st_s": -0.74,
-        "final_fall_st": -1.85,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixD_susp0/1": {
-        "declination_st_s": -0.91,
-        "final_fall_st": -1.9,
+      "par_r0_t1/1": {
+        "declination_st_s": -1.75,
+        "final_fall_st": -3.15,
         "pct_rising": 20.0,
         "phrases": 5
       },
-      "par_fixD_susp1/1": {
-        "declination_st_s": -0.6,
-        "final_fall_st": -2.2,
+      "par_r1_s0/1": {
+        "declination_st_s": -3.14,
+        "final_fall_st": -4.7,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixD_susp2/1": {
-        "declination_st_s": -3.95,
-        "final_fall_st": -3.75,
+      "par_r1_s1/1": {
+        "declination_st_s": -3.61,
+        "final_fall_st": -5.45,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixD_susp3/1": {
-        "declination_st_s": -1.64,
-        "final_fall_st": -3.9,
-        "pct_rising": 20.0,
-        "phrases": 5
-      },
-      "par_fixD_susp4/1": {
-        "declination_st_s": -2.47,
-        "final_fall_st": -5.05,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixD_susp5/1": {
-        "declination_st_s": -4.48,
-        "final_fall_st": -3.4,
+      "par_r1_t0/1": {
+        "declination_st_s": -6.23,
+        "final_fall_st": -5.6,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixE_susp0/1": {
-        "declination_st_s": -2.44,
-        "final_fall_st": -4.0,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp1/1": {
-        "declination_st_s": -0.3,
-        "final_fall_st": -1.2,
-        "pct_rising": 20.0,
-        "phrases": 5
-      },
-      "par_fixE_susp2/1": {
-        "declination_st_s": -3.95,
-        "final_fall_st": -4.3,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp3/1": {
-        "declination_st_s": -1.96,
-        "final_fall_st": -5.0,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp4/1": {
-        "declination_st_s": -2.8,
-        "final_fall_st": -5.52,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixE_susp5/1": {
-        "declination_st_s": -2.57,
-        "final_fall_st": -4.65,
+      "par_r1_t1/1": {
+        "declination_st_s": -3.05,
+        "final_fall_st": -2.1,
         "pct_rising": 0.0,
         "phrases": 5
       },
@@ -1273,143 +724,59 @@
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_susp1/1": {
-        "declination_st_s": -2.32,
-        "final_fall_st": -3.6,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_susp2/1": {
-        "declination_st_s": -3.13,
+      "par_t0/1": {
+        "declination_st_s": -5.63,
         "final_fall_st": -6.8,
-        "pct_rising": 20.0,
-        "phrases": 5
-      },
-      "par_susp3/1": {
-        "declination_st_s": -2.83,
-        "final_fall_st": -6.5,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_susp4/1": {
-        "declination_st_s": -3.59,
-        "final_fall_st": -6.17,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_susp5/1": {
-        "declination_st_s": -5.73,
-        "final_fall_st": -7.6,
+      "par_r0_s0/2": {
+        "declination_st_s": -2.03,
+        "final_fall_st": -2.15,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixC_susp0/2": {
-        "declination_st_s": -0.21,
-        "final_fall_st": -1.45,
+      "par_r0_s1/2": {
+        "declination_st_s": -2.34,
+        "final_fall_st": -4.9,
+        "pct_rising": 0.0,
+        "phrases": 6
+      },
+      "par_r0_t0/2": {
+        "declination_st_s": -1.95,
+        "final_fall_st": -3.4,
         "pct_rising": 16.7,
         "phrases": 6
       },
-      "par_fixC_susp1/2": {
-        "declination_st_s": -1.07,
-        "final_fall_st": -1.75,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_fixC_susp2/2": {
-        "declination_st_s": -1.19,
-        "final_fall_st": -3.15,
-        "pct_rising": 16.7,
-        "phrases": 6
-      },
-      "par_fixC_susp3/2": {
-        "declination_st_s": -0.32,
-        "final_fall_st": -1.2,
-        "pct_rising": 20.0,
-        "phrases": 5
-      },
-      "par_fixC_susp4/2": {
-        "declination_st_s": -0.55,
-        "final_fall_st": -1.25,
-        "pct_rising": 16.7,
-        "phrases": 6
-      },
-      "par_fixC_susp5/2": {
-        "declination_st_s": -2.07,
-        "final_fall_st": -2.5,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixD_susp0/2": {
-        "declination_st_s": -0.85,
-        "final_fall_st": -2.7,
-        "pct_rising": 16.7,
-        "phrases": 6
-      },
-      "par_fixD_susp1/2": {
-        "declination_st_s": -1.72,
-        "final_fall_st": -3.12,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_fixD_susp2/2": {
-        "declination_st_s": -2.25,
-        "final_fall_st": -4.85,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_fixD_susp3/2": {
-        "declination_st_s": -1.62,
-        "final_fall_st": -2.45,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixD_susp4/2": {
-        "declination_st_s": -1.71,
-        "final_fall_st": -3.25,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_fixD_susp5/2": {
-        "declination_st_s": -3.47,
-        "final_fall_st": -4.0,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp0/2": {
-        "declination_st_s": -1.63,
+      "par_r0_t1/2": {
+        "declination_st_s": -2.72,
         "final_fall_st": -3.2,
         "pct_rising": 0.0,
-        "phrases": 6
+        "phrases": 5
       },
-      "par_fixE_susp1/2": {
-        "declination_st_s": -1.37,
-        "final_fall_st": -3.0,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_fixE_susp2/2": {
-        "declination_st_s": -3.12,
-        "final_fall_st": -5.32,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_fixE_susp3/2": {
-        "declination_st_s": -2.03,
-        "final_fall_st": -3.05,
+      "par_r1_s0/2": {
+        "declination_st_s": -3.39,
+        "final_fall_st": -2.0,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixE_susp4/2": {
-        "declination_st_s": -2.15,
-        "final_fall_st": -4.05,
+      "par_r1_s1/2": {
+        "declination_st_s": -3.49,
+        "final_fall_st": -2.85,
+        "pct_rising": 20.0,
+        "phrases": 5
+      },
+      "par_r1_t0/2": {
+        "declination_st_s": -3.36,
+        "final_fall_st": -6.85,
         "pct_rising": 0.0,
         "phrases": 6
       },
-      "par_fixE_susp5/2": {
-        "declination_st_s": -3.95,
-        "final_fall_st": -4.0,
+      "par_r1_t1/2": {
+        "declination_st_s": -3.92,
+        "final_fall_st": -4.28,
         "pct_rising": 0.0,
-        "phrases": 5
+        "phrases": 6
       },
       "par_susp0/2": {
         "declination_st_s": -3.37,
@@ -1417,143 +784,59 @@
         "pct_rising": 0.0,
         "phrases": 6
       },
-      "par_susp1/2": {
-        "declination_st_s": -3.15,
-        "final_fall_st": -5.17,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_susp2/2": {
-        "declination_st_s": -6.29,
-        "final_fall_st": -7.9,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_susp3/2": {
-        "declination_st_s": -3.05,
-        "final_fall_st": -3.85,
+      "par_t0/2": {
+        "declination_st_s": -6.18,
+        "final_fall_st": -4.7,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_susp4/2": {
-        "declination_st_s": -4.48,
-        "final_fall_st": -6.6,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_susp5/2": {
-        "declination_st_s": -5.38,
-        "final_fall_st": -5.5,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixC_susp0/3": {
-        "declination_st_s": -0.39,
-        "final_fall_st": -0.7,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixC_susp1/3": {
-        "declination_st_s": -1.58,
-        "final_fall_st": -1.9,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixC_susp2/3": {
-        "declination_st_s": -0.22,
-        "final_fall_st": -2.23,
-        "pct_rising": 25.0,
-        "phrases": 4
-      },
-      "par_fixC_susp3/3": {
-        "declination_st_s": 0.02,
-        "final_fall_st": 0.05,
-        "pct_rising": 25.0,
-        "phrases": 4
-      },
-      "par_fixC_susp4/3": {
-        "declination_st_s": -2.18,
-        "final_fall_st": -2.45,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixC_susp5/3": {
-        "declination_st_s": -0.08,
-        "final_fall_st": -1.4,
-        "pct_rising": 0.0,
-        "phrases": 3
-      },
-      "par_fixD_susp0/3": {
-        "declination_st_s": -1.1,
-        "final_fall_st": -1.0,
+      "par_r0_s0/3": {
+        "declination_st_s": -2.33,
+        "final_fall_st": -4.45,
         "pct_rising": 20.0,
         "phrases": 5
       },
-      "par_fixD_susp1/3": {
-        "declination_st_s": -1.95,
-        "final_fall_st": -5.35,
+      "par_r0_s1/3": {
+        "declination_st_s": -2.54,
+        "final_fall_st": -4.4,
         "pct_rising": 0.0,
+        "phrases": 5
+      },
+      "par_r0_t0/3": {
+        "declination_st_s": -0.13,
+        "final_fall_st": -0.47,
+        "pct_rising": 50.0,
         "phrases": 4
       },
-      "par_fixD_susp2/3": {
-        "declination_st_s": -0.74,
-        "final_fall_st": -3.45,
-        "pct_rising": 25.0,
-        "phrases": 4
-      },
-      "par_fixD_susp3/3": {
-        "declination_st_s": -1.42,
-        "final_fall_st": -2.8,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixD_susp4/3": {
-        "declination_st_s": -1.43,
-        "final_fall_st": -1.7,
-        "pct_rising": 25.0,
-        "phrases": 4
-      },
-      "par_fixD_susp5/3": {
-        "declination_st_s": -0.71,
-        "final_fall_st": -2.3,
-        "pct_rising": 0.0,
-        "phrases": 3
-      },
-      "par_fixE_susp0/3": {
-        "declination_st_s": -1.52,
-        "final_fall_st": -1.2,
+      "par_r0_t1/3": {
+        "declination_st_s": -1.71,
+        "final_fall_st": -2.2,
         "pct_rising": 20.0,
         "phrases": 5
       },
-      "par_fixE_susp1/3": {
-        "declination_st_s": -2.84,
-        "final_fall_st": -3.28,
+      "par_r1_s0/3": {
+        "declination_st_s": -4.36,
+        "final_fall_st": -5.03,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixE_susp2/3": {
-        "declination_st_s": -0.96,
-        "final_fall_st": -4.2,
+      "par_r1_s1/3": {
+        "declination_st_s": -1.38,
+        "final_fall_st": -2.55,
         "pct_rising": 25.0,
         "phrases": 4
       },
-      "par_fixE_susp3/3": {
-        "declination_st_s": -1.44,
-        "final_fall_st": -2.65,
+      "par_r1_t0/3": {
+        "declination_st_s": -2.24,
+        "final_fall_st": -3.92,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixE_susp4/3": {
-        "declination_st_s": -2.09,
-        "final_fall_st": -2.37,
+      "par_r1_t1/3": {
+        "declination_st_s": -1.94,
+        "final_fall_st": -5.27,
         "pct_rising": 25.0,
         "phrases": 4
-      },
-      "par_fixE_susp5/3": {
-        "declination_st_s": -0.84,
-        "final_fall_st": -3.3,
-        "pct_rising": 0.0,
-        "phrases": 3
       },
       "par_susp0/3": {
         "declination_st_s": -2.87,
@@ -1561,143 +844,59 @@
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_susp1/3": {
-        "declination_st_s": -6.05,
-        "final_fall_st": -7.1,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_susp2/3": {
-        "declination_st_s": -2.61,
-        "final_fall_st": -7.15,
-        "pct_rising": 25.0,
-        "phrases": 4
-      },
-      "par_susp3/3": {
-        "declination_st_s": -2.07,
-        "final_fall_st": -3.55,
-        "pct_rising": 25.0,
-        "phrases": 4
-      },
-      "par_susp4/3": {
-        "declination_st_s": -5.2,
-        "final_fall_st": -5.72,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_susp5/3": {
-        "declination_st_s": -1.33,
-        "final_fall_st": -4.2,
+      "par_t0/3": {
+        "declination_st_s": -1.78,
+        "final_fall_st": -6.5,
         "pct_rising": 0.0,
         "phrases": 3
       },
-      "par_fixC_susp0/4": {
-        "declination_st_s": -1.23,
-        "final_fall_st": -2.8,
+      "par_r0_s0/4": {
+        "declination_st_s": -1.34,
+        "final_fall_st": -3.2,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixC_susp1/4": {
-        "declination_st_s": -1.18,
-        "final_fall_st": -2.33,
+      "par_r0_s1/4": {
+        "declination_st_s": -4.69,
+        "final_fall_st": -6.65,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixC_susp2/4": {
-        "declination_st_s": -0.89,
-        "final_fall_st": -0.83,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixC_susp3/4": {
-        "declination_st_s": -1.65,
-        "final_fall_st": -3.17,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixC_susp4/4": {
-        "declination_st_s": -1.38,
-        "final_fall_st": -3.3,
+      "par_r0_t0/4": {
+        "declination_st_s": -3.85,
+        "final_fall_st": -6.35,
         "pct_rising": 0.0,
         "phrases": 5
       },
-      "par_fixC_susp5/4": {
-        "declination_st_s": -0.9,
-        "final_fall_st": -2.75,
+      "par_r0_t1/4": {
+        "declination_st_s": -3.41,
+        "final_fall_st": -5.85,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixD_susp0/4": {
-        "declination_st_s": -1.85,
-        "final_fall_st": -4.1,
+      "par_r1_s0/4": {
+        "declination_st_s": -2.44,
+        "final_fall_st": -5.87,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixD_susp1/4": {
-        "declination_st_s": -2.17,
-        "final_fall_st": -4.25,
+      "par_r1_s1/4": {
+        "declination_st_s": -3.32,
+        "final_fall_st": -5.7,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixD_susp2/4": {
-        "declination_st_s": -1.29,
-        "final_fall_st": -2.47,
+      "par_r1_t0/4": {
+        "declination_st_s": -3.98,
+        "final_fall_st": -6.8,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_fixD_susp3/4": {
-        "declination_st_s": -2.48,
-        "final_fall_st": -4.97,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixD_susp4/4": {
-        "declination_st_s": -1.84,
-        "final_fall_st": -4.15,
+      "par_r1_t1/4": {
+        "declination_st_s": -3.98,
+        "final_fall_st": -5.4,
         "pct_rising": 0.0,
         "phrases": 5
-      },
-      "par_fixD_susp5/4": {
-        "declination_st_s": -1.56,
-        "final_fall_st": -4.45,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixE_susp0/4": {
-        "declination_st_s": -1.96,
-        "final_fall_st": -4.68,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixE_susp1/4": {
-        "declination_st_s": -2.42,
-        "final_fall_st": -4.95,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixE_susp2/4": {
-        "declination_st_s": -1.52,
-        "final_fall_st": -2.92,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixE_susp3/4": {
-        "declination_st_s": -3.06,
-        "final_fall_st": -6.1,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixE_susp4/4": {
-        "declination_st_s": -2.24,
-        "final_fall_st": -4.4,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_fixE_susp5/4": {
-        "declination_st_s": -1.71,
-        "final_fall_st": -4.85,
-        "pct_rising": 0.0,
-        "phrases": 4
       },
       "par_susp0/4": {
         "declination_st_s": -3.98,
@@ -1705,141 +904,57 @@
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_susp1/4": {
-        "declination_st_s": -5.55,
-        "final_fall_st": -7.83,
+      "par_t0/4": {
+        "declination_st_s": -3.95,
+        "final_fall_st": -7.0,
         "pct_rising": 0.0,
         "phrases": 4
       },
-      "par_susp2/4": {
-        "declination_st_s": -3.26,
-        "final_fall_st": -4.92,
+      "par_r0_s0/5": {
+        "declination_st_s": -5.43,
+        "final_fall_st": -4.6,
         "pct_rising": 0.0,
-        "phrases": 4
+        "phrases": 7
       },
-      "par_susp3/4": {
-        "declination_st_s": -5.66,
-        "final_fall_st": -8.45,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_susp4/4": {
-        "declination_st_s": -6.59,
-        "final_fall_st": -6.3,
-        "pct_rising": 0.0,
-        "phrases": 5
-      },
-      "par_susp5/4": {
-        "declination_st_s": -3.62,
-        "final_fall_st": -6.72,
-        "pct_rising": 0.0,
-        "phrases": 4
-      },
-      "par_fixC_susp0/5": {
-        "declination_st_s": -2.39,
-        "final_fall_st": -1.9,
+      "par_r0_s1/5": {
+        "declination_st_s": -4.53,
+        "final_fall_st": -3.9,
         "pct_rising": 14.3,
         "phrases": 7
       },
-      "par_fixC_susp1/5": {
-        "declination_st_s": -0.35,
-        "final_fall_st": 0.0,
-        "pct_rising": 28.6,
-        "phrases": 7
-      },
-      "par_fixC_susp2/5": {
-        "declination_st_s": 0.21,
-        "final_fall_st": 1.2,
-        "pct_rising": 57.1,
-        "phrases": 7
-      },
-      "par_fixC_susp3/5": {
-        "declination_st_s": -0.01,
-        "final_fall_st": 0.6,
-        "pct_rising": 14.3,
-        "phrases": 7
-      },
-      "par_fixC_susp4/5": {
-        "declination_st_s": -1.44,
-        "final_fall_st": -1.0,
-        "pct_rising": 28.6,
-        "phrases": 7
-      },
-      "par_fixC_susp5/5": {
-        "declination_st_s": 0.33,
-        "final_fall_st": -0.4,
-        "pct_rising": 14.3,
-        "phrases": 7
-      },
-      "par_fixD_susp0/5": {
-        "declination_st_s": -2.11,
-        "final_fall_st": -1.25,
-        "pct_rising": 14.3,
-        "phrases": 7
-      },
-      "par_fixD_susp1/5": {
-        "declination_st_s": -1.2,
-        "final_fall_st": -0.7,
+      "par_r0_t0/5": {
+        "declination_st_s": -6.64,
+        "final_fall_st": -5.1,
         "pct_rising": 0.0,
         "phrases": 7
       },
-      "par_fixD_susp2/5": {
-        "declination_st_s": -2.26,
-        "final_fall_st": -1.45,
-        "pct_rising": 42.9,
-        "phrases": 7
-      },
-      "par_fixD_susp3/5": {
-        "declination_st_s": -1.8,
-        "final_fall_st": -2.8,
+      "par_r0_t1/5": {
+        "declination_st_s": -3.12,
+        "final_fall_st": -4.4,
         "pct_rising": 0.0,
         "phrases": 7
       },
-      "par_fixD_susp4/5": {
-        "declination_st_s": -3.2,
-        "final_fall_st": -2.5,
+      "par_r1_s0/5": {
+        "declination_st_s": -3.67,
+        "final_fall_st": -3.7,
+        "pct_rising": 0.0,
+        "phrases": 7
+      },
+      "par_r1_s1/5": {
+        "declination_st_s": -4.99,
+        "final_fall_st": -3.85,
         "pct_rising": 14.3,
         "phrases": 7
       },
-      "par_fixD_susp5/5": {
-        "declination_st_s": -1.47,
-        "final_fall_st": -1.5,
-        "pct_rising": 0.0,
-        "phrases": 7
-      },
-      "par_fixE_susp0/5": {
-        "declination_st_s": -3.64,
-        "final_fall_st": -1.8,
-        "pct_rising": 14.3,
-        "phrases": 7
-      },
-      "par_fixE_susp1/5": {
-        "declination_st_s": -2.12,
-        "final_fall_st": -0.7,
-        "pct_rising": 0.0,
-        "phrases": 7
-      },
-      "par_fixE_susp2/5": {
-        "declination_st_s": -2.7,
+      "par_r1_t0/5": {
+        "declination_st_s": -2.82,
         "final_fall_st": -2.0,
-        "pct_rising": 42.9,
+        "pct_rising": 28.6,
         "phrases": 7
       },
-      "par_fixE_susp3/5": {
-        "declination_st_s": -1.84,
-        "final_fall_st": -2.2,
-        "pct_rising": 0.0,
-        "phrases": 7
-      },
-      "par_fixE_susp4/5": {
-        "declination_st_s": -2.81,
-        "final_fall_st": -3.0,
-        "pct_rising": 14.3,
-        "phrases": 7
-      },
-      "par_fixE_susp5/5": {
-        "declination_st_s": -2.59,
-        "final_fall_st": -3.2,
+      "par_r1_t1/5": {
+        "declination_st_s": -6.08,
+        "final_fall_st": -4.6,
         "pct_rising": 0.0,
         "phrases": 7
       },
@@ -1849,43 +964,19 @@
         "pct_rising": 0.0,
         "phrases": 7
       },
-      "par_susp1/5": {
-        "declination_st_s": -2.75,
-        "final_fall_st": -2.5,
-        "pct_rising": 0.0,
-        "phrases": 7
-      },
-      "par_susp2/5": {
-        "declination_st_s": -4.82,
-        "final_fall_st": -2.2,
-        "pct_rising": 14.3,
-        "phrases": 7
-      },
-      "par_susp3/5": {
-        "declination_st_s": -5.96,
-        "final_fall_st": -5.55,
-        "pct_rising": 0.0,
-        "phrases": 6
-      },
-      "par_susp4/5": {
-        "declination_st_s": -6.45,
-        "final_fall_st": -6.35,
-        "pct_rising": 14.3,
-        "phrases": 7
-      },
-      "par_susp5/5": {
-        "declination_st_s": -4.68,
-        "final_fall_st": -5.0,
+      "par_t0/5": {
+        "declination_st_s": -5.63,
+        "final_fall_st": -4.8,
         "pct_rising": 0.0,
         "phrases": 7
       }
     }
   },
   "push": {
-    "job_id": "voice-bench-20261018044700",
+    "job_id": "voice-bench-20261018052729",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792298822.1388113,
+    "pushed_at": 1792301251.351456,
     "ok": true,
-    "push_output": "Kernel version 34 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 35 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   }
 }
