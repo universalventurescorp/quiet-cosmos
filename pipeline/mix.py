@@ -12,6 +12,12 @@ VOICE_EQ = {
     "documentary": ("aresample=48000,highpass=f=60,lowshelf=f=180:g=4,equalizer=f=500:t=q:w=1.0:g=-1.5,"
                     "equalizer=f=1600:t=q:w=1.0:g=1,highshelf=f=4000:g=-4,deesser=i=0.3,"
                     "acompressor=threshold=-24dB:ratio=3:attack=10:release=220:makeup=3"),
+    # "estudio" (18-oct-2026): fitted on voiced frames against the reference documentary narrator (third-octave
+    # long-term spectrum): less boxy 300-500 Hz (the "inside a box" colour), chest at ~190 Hz, a little presence and
+    # air; spectral distance to the reference 2.5 -> 1.8 dB (smoothed 1.6 -> 1.0)
+    "estudio": ("aresample=48000,highpass=f=80,equalizer=f=190:t=q:w=0.8:g=4,equalizer=f=350:t=q:w=0.7:g=-5,"
+                "equalizer=f=1800:t=q:w=0.8:g=1.5,equalizer=f=3500:t=q:w=1:g=-2,highshelf=f=5000:g=2.5,"
+                "deesser=i=0.4,acompressor=threshold=-24dB:ratio=3:attack=10:release=220:makeup=3"),
 }
 
 
