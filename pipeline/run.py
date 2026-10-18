@@ -51,6 +51,9 @@ def video_bench(cfg, kind="video"):
         if os.environ.get("BENCH_DESIGNS") == "true":     # round 2: new narrator voices from kaggle/voice_designs.json
             job["design"] = read_json(ROOT / "kaggle" / "voice_designs.json", {})
             job["refs"] = {}
+        if os.environ.get("BENCH_MEJOR") == "true":         # paragraphs + FireRedTTS3 + pitch-contour editing
+            os.environ["BENCH_EMOTION"] = "true"
+            job["mejor"] = True
         if os.environ.get("BENCH_PARRAFO") == "true":       # same narrator, voiced paragraph by paragraph
             os.environ["BENCH_EMOTION"] = "true"
             job["parrafo"] = True

@@ -520,6 +520,8 @@ try:
         # phrase (-2 to -8 st, no rises) and the clone copies that delivery. Round 3: same voice, new reference
         # clips chosen for a storyteller's intonation (refcand/refpick), vs the original clip.
         plans = [("par_t0", "orig", 100, None), ("par_susp0", "orig", 500, "...")]
+        if not picked:
+            plans += [("par_t1", "orig", 101, None), ("par_susp1", "orig", 501, "...")]
         for k in range(len(picked)):
             plans += [(f"par_r{k}_t{n}", f"r{k}", 600 + 10 * k + n, None) for n in range(2)]
             plans += [(f"par_r{k}_s{n}", f"r{k}", 700 + 10 * k + n, "...") for n in range(2)]
@@ -626,6 +628,105 @@ try:
             shutil.copy(OUT / r["file"], OUT / f"ref_nueva_{k}.wav")
         res["scored"] = [r["file"] for r in picked]
         log(f"picked {[(r['file'], r['dist'], r['sim']) for r in picked]} out of {len(ok)}/{len(rows)} usable")
+
+    elif engine == "fireredtts3":
+        # FireRedTTS3-Base (Apache-2.0, Aug 2026, 24 languages incl. Spanish): zero-shot clone of the channel clip,
+        # one paragraph per call. Patched for the T4: SDPA attention instead of flash-attention-2.
+        sys.path.insert(0, cfg["fr3_dir"])
+        from fireredtts3.core import FireRedTTS3
+        import torchaudio
+        tts = FireRedTTS3(cfg["fr3_models"], use_fasttext=False, use_wetext=False, use_llm_tn=False)
+        log("FireRedTTS3 loaded")
+        pw, psr = sf.read(OUT / "ref_narrador.wav", dtype="float32")
+        pw = torch.from_numpy(pw if pw.ndim == 1 else pw.mean(1)).unsqueeze(0)
+        texts = [" ".join(S[i] for i in p) for p in cfg["paragraphs"]]
+        for k in range(2):
+            variant = f"par_fr_t{k}"
+            try:
+                t, chunks = time.time(), []
+                for j, text in enumerate(texts):
+                    w, sr = tts.generate(text=text, language="Spanish", prompt_text=cfg["narrator_ref_text"],
+                                         prompt_audio=pw, prompt_audio_sr=psr, seed=1234 + 100 * k + j,
+                                         do_tn=False)   # wetext only normalizes zh/en: it would read 1979 in English
+                    chunks.append(tighten(resample(w.float().cpu().numpy().squeeze(), sr), 24000))
+                save_para(variant, chunks, 24000, time.time() - t, cfg["para_pause"])
+            except Exception:
+                res["errors"].append(f"{variant}: {traceback.format_exc()[-1500:]}")
+                log(f"{variant} failed: {traceback.format_exc()[-1200:]}")
+                break
+
+    elif engine == "prosodyfix":
+        # "voz de narrador": edit the pitch contour of each paragraph take (Praat PSOLA, timbre untouched). Inner
+        # phrases stop sounding final: their end is lifted toward the phrase's own starting level (reference
+        # narrator: ~-0.6 st) and about 1 in 3 gets a light continuation rise; the paragraph's LAST phrase keeps its
+        # natural final fall. Strength A = 60 % of the correction, B = 100 %.
+        import parselmouth
+        from parselmouth.praat import call
+
+        def phrases_of(w, sr):
+            hop = int(sr * 0.01)
+            n = len(w) // hop
+            e = 20 * np.log10(np.sqrt((w[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+            sp = np.convolve((e > np.percentile(e, 90) - 18).astype(float), np.ones(15) / 15, "same") > 0.3
+            edges = np.flatnonzero(np.diff(np.concatenate([[0], sp.astype(int), [0]])))
+            ph = []
+            for a, b in zip(edges[::2], edges[1::2]):
+                if ph and a - ph[-1][1] < 18:
+                    ph[-1][1] = b
+                else:
+                    ph.append([a, b])
+            return [(a / 100, b / 100) for a, b in ph if b - a >= 40]
+
+        def fix(w, sr, strength, rng):
+            snd = parselmouth.Sound(w.astype(np.float64), sampling_frequency=sr)
+            pitch = snd.to_pitch_ac(time_step=0.01, pitch_floor=60, pitch_ceiling=300)
+            times = pitch.xs()
+            f0 = pitch.selected_array["frequency"]
+            ph = phrases_of(w, sr)
+            shift = np.zeros_like(f0)            # semitones per pitch frame
+            for pi, (a, b) in enumerate(ph[:-1]):          # last phrase: natural ending
+                m = (times >= a) & (times <= b) & (f0 > 0)
+                if m.sum() < 15:
+                    continue
+                st = 12 * np.log2(f0[m] / np.median(f0[f0 > 0]))
+                q = max(3, m.sum() // 5)
+                head, end = np.median(st[:q]), np.median(st[-q:])
+                nxt_pause = ph[pi + 1][0] - b
+                rise = rng.random() < 0.33 and nxt_pause < 0.7
+                target = head + (1.0 if rise else -0.6)
+                delta = float(np.clip((target - end) * strength, 0, 4.0))
+                if delta <= 0.2:
+                    continue
+                t0 = a + 0.55 * (b - a)
+                r = np.clip((times - t0) / max(b - t0, 0.05), 0, 1)
+                shift = np.where((times >= a) & (times <= b + 0.05), shift + delta * r, shift)
+            manip = call(snd, "To Manipulation", 0.01, 60, 300)
+            tier = call("Create PitchTier", "fixed", snd.xmin, snd.xmax)
+            for t, f, d in zip(times, f0, shift):
+                if f > 0:
+                    call(tier, "Add point", float(t), float(f * 2 ** (d / 12)))
+            call([tier, manip], "Replace pitch tier")
+            out = call(manip, "Get resynthesis (overlap-add)")
+            return np.asarray(out.values[0], np.float32), float(np.mean(shift[shift > 0])) if (shift > 0).any() else 0
+
+        sources = sorted(p.name for p in OUT.iterdir() if p.is_dir() and p.name.startswith("par_")
+                         and (p / "s00.wav").exists() and "fix" not in p.name)
+        for src in sources:
+            for tag, strength in (("A", 0.6), ("B", 1.0)):
+                variant = f"par_fix{tag}_{src[4:]}"
+                try:
+                    rng = np.random.default_rng(7)
+                    t, chunks, lifts = time.time(), [], []
+                    for j in range(len(cfg["paragraphs"])):
+                        w, sr = sf.read(OUT / src / f"s{j:02d}.wav", dtype="float32")
+                        y, lift = fix(w, sr, strength, rng)
+                        chunks.append(resample(y, sr))
+                        lifts.append(round(lift, 2))
+                    save_para(variant, chunks, 24000, time.time() - t, cfg["para_pause"])
+                    res["variants"][variant]["mean_lift_st"] = lifts
+                except Exception:
+                    res["errors"].append(f"{variant}: {traceback.format_exc()[-1500:]}")
+                    log(f"{variant} failed: {traceback.format_exc()[-800:]}")
 
     elif engine == "qwenbank":
         from qwen_tts import Qwen3TTSModel
@@ -992,6 +1093,8 @@ ENGINES = {
                             "soundfile"], []),
     "score": ("3.11", ["torch", "torchaudio", "transformers>=4.45", "accelerate", "librosa", "num2words", "soundfile",
                        "speechbrain"], []),
+    "prosodyfix": ("3.11", ["numpy", "soundfile", "librosa", "praat-parselmouth"], []),
+    "fireredtts3": ("3.11", [], ["sox"]),          # installed from its repo (see install_fireredtts3)
     # emotion bench
     "qwenref": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
     "qwenpara": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
@@ -1040,10 +1143,13 @@ def run_engine(engine, gpu, timeout=60 * 60):
             if r.returncode:
                 raise RuntimeError(f"uv venv: {r.stderr[-800:]}")
             pyexe = str(venv / "bin" / "python")
-            r = subprocess.run([sys.executable, "-m", "uv", "pip", "install", "-q", "--python", pyexe, *pkgs],
-                               capture_output=True, text=True, timeout=1800)
-            if r.returncode:
-                raise RuntimeError(f"pip: {r.stderr[-1500:]}")
+            if engine == "fireredtts3":
+                install_fireredtts3(pyexe)
+            else:
+                r = subprocess.run([sys.executable, "-m", "uv", "pip", "install", "-q", "--python", pyexe, *pkgs],
+                                   capture_output=True, text=True, timeout=1800)
+                if r.returncode:
+                    raise RuntimeError(f"pip: {r.stderr[-1500:]}")
         M["engines"][engine]["install_min"] = round((time.time() - t) / 60, 1)
         M["engines"][engine]["status"] = "running"
         save()
@@ -1058,6 +1164,7 @@ def run_engine(engine, gpu, timeout=60 * 60):
                                     "seeds": M.get("seeds", 3),
                                     "paragraphs": M.get("paragraphs"), "para_pause": M.get("para_pause"),
                                     "ref_texts": M.get("ref_texts"), "ref_takes": M.get("ref_takes", 10),
+                                    "fr3_dir": str(WORK / "fr3"), "fr3_models": str(WORK / "fr3_models"),
                                     "stepx_dir": str(WORK / "stepx"), "models_dir": str(WORK / "stepx_models")},
                                    ensure_ascii=False))
         env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "HF_HUB_ENABLE_HF_TRANSFER": "0",
@@ -1114,6 +1221,37 @@ def install_stepedit():
     return pyexe
 
 
+FR3_REPO = "https://github.com/FireRedTeam/FireRedTTS3.git"
+
+
+def install_fireredtts3(venv_py):
+    """Repo + pinned stack minus flash-attn (no FA2 on the T4: attention patched to SDPA), then the weights."""
+    repo = WORK / "fr3"
+    if not (repo / "fireredtts3").exists():
+        r = subprocess.run(["git", "clone", "--depth", "1", FR3_REPO, str(repo)], capture_output=True, text=True,
+                           timeout=600)
+        if r.returncode:
+            raise RuntimeError(f"git clone: {r.stderr[-800:]}")
+    for f in repo.rglob("*.py"):
+        t = f.read_text(encoding="utf-8")
+        t2 = t.replace('"flash_attention_2"', '"sdpa"').replace("'flash_attention_2'", "'sdpa'")
+        if t2 != t:
+            f.write_text(t2, encoding="utf-8")
+    reqs = [l.strip() for l in (repo / "requirements.txt").read_text().splitlines()
+            if l.strip() and not l.startswith("#")
+            and not l.lower().startswith(("flash_attn", "flash-attn", "fasttext", "faster-whisper"))]
+    r = subprocess.run([sys.executable, "-m", "uv", "pip", "install", "-q", "--python", venv_py, *reqs, "soundfile",
+                        "librosa", "huggingface_hub"], capture_output=True, text=True, timeout=2400)
+    if r.returncode:
+        raise RuntimeError(f"pip fr3: {r.stderr[-1500:]}")
+    models = WORK / "fr3_models"
+    r = subprocess.run([venv_py, "-c", f"from huggingface_hub import snapshot_download as d; "
+                                        f"d('FireRedTeam/FireRedTTS3', local_dir='{models}')"],
+                       capture_output=True, text=True, timeout=2400, env={**os.environ, "HF_HUB_ENABLE_HF_TRANSFER": "0"})
+    if r.returncode:
+        raise RuntimeError(f"fr3 weights: {r.stderr[-1200:]}")
+
+
 def lane(engines, gpu):
     for e in engines:
         run_engine(e, gpu)
@@ -1148,7 +1286,19 @@ def main():
         if job.get("nocturno"):
             M.update(native_designs={"n1": N1_DESIGN}, emo_groups=SUBTLE_GROUPS, min_sim=0.75, seeds=5,
                      anchor_ref=str(OUT / "ref_narrador.wav"))
-        if job.get("parrafo"):
+        if job.get("mejor"):
+            # "mejor que Planeta Antiguo" round: paragraphs from the channel clip (Qwen) + FireRedTTS3 clone, then
+            # every take with its pitch contour edited (PSOLA), then scoring/picking
+            M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE)
+            two = len(M["gpus"]) > 1
+            t1 = threading.Thread(target=lane, args=(["qwenref", "qwenpara"], 1 if two else 0))
+            t1.start()
+            run_engine("fireredtts3", 0, timeout=120 * 60)
+            t1.join()
+            run_engine("prosodyfix", 0, timeout=60 * 60)
+            run_engine("score", 1 if two else 0)
+            want = []
+        elif job.get("parrafo"):
             # paragraph round: the channel narrator sentence by sentence (today) vs paragraph by paragraph
             M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE, seeds=3, ref_texts=REF_TEXTS, ref_takes=10)
             two = len(M["gpus"]) > 1

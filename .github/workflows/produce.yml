@@ -132,6 +132,7 @@ jobs:
           [ "${{ inputs.bench_engines }}" = "native" ] && export BENCH_NATIVE=true
           [ "${{ inputs.bench_engines }}" = "nocturno" ] && export BENCH_NOCTURNO=true
           [ "${{ inputs.bench_engines }}" = "parrafo" ] && export BENCH_PARRAFO=true
+          [ "${{ inputs.bench_engines }}" = "mejor" ] && export BENCH_MEJOR=true
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch
