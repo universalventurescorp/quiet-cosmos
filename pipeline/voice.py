@@ -249,9 +249,16 @@ def timed_chunks(start, end, sentence, max_chars):
     return out
 
 
+def is_reveal(paragraph, index):
+    """A "reveal line": a paragraph that is ONE short sentence (the writer isolates the payoff of a build-up this
+    way, prompts/chapter.md). The narrator pauses a little longer before it and the sound design breathes into it."""
+    s = split_sentences(paragraph)
+    return index > 0 and len(s) == 1 and len(s[0].split()) <= 14
+
+
 class Track:
     def __init__(self):
-        self.parts, self.n, self.cues = [], 0, []
+        self.parts, self.n, self.cues, self.reveals = [], 0, [], []
 
     @property
     def t(self):
@@ -269,9 +276,12 @@ class Track:
         self.cues += timed_chunks(start, self.t, sentence, max_chars)
 
     def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84, unit="sentence", inner_end=None,
-             pitch_edit=None):
+             pitch_edit=None, reveal_pause=0.0):
         paras = paragraphs(text)
         for pi, p in enumerate(paras):
+            if reveal_pause and is_reveal(p, pi):
+                self.silence(reveal_pause)          # the beat before the payoff
+                self.reveals.append(round(self.t, 3))
             groups = units(p, unit)
             for gi, g in enumerate(groups):
                 if len(g) == 1:
@@ -368,7 +378,7 @@ def synthesize(script, cfg, out_dir, voice=None):
     if script.get("cold_open"):
         s = tr.t
         tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8, v["pause_paragraph"] * 0.8, unit=unit,
-                inner_end=inner_end, pitch_edit=pitch_edit)
+                inner_end=inner_end, pitch_edit=pitch_edit, reveal_pause=v.get("pause_reveal", 0.0))
         timing["cold_open"] = {"start": s, "end": tr.t}
         print(f"  voiced cold open ({tr.t:.0f} s)")
     s = tr.t + 0.6
@@ -379,7 +389,7 @@ def synthesize(script, cfg, out_dir, voice=None):
         start = tr.t
         tr.silence(CHAPTER_LEAD)
         tr.text(voice, ch["text"], v["pause_sentence"], v["pause_paragraph"], unit=unit,
-                inner_end=inner_end, pitch_edit=pitch_edit)
+                inner_end=inner_end, pitch_edit=pitch_edit, reveal_pause=v.get("pause_reveal", 0.0))
         if ci < len(script["chapters"]) - 1:
             tr.silence(v["pause_chapter"])
         timing["chapters"].append({"title": ch["title"], "start": start, "end": tr.t})
@@ -389,6 +399,7 @@ def synthesize(script, cfg, out_dir, voice=None):
     tr.silence(OUTRO)
     timing["outro"] = {"start": s, "end": tr.t}
     timing["duration"] = tr.t
+    timing["reveals"] = tr.reveals
     sf.write(out_dir / "narration.wav", tr.audio(quiet_breaths=v.get("quiet_breaths", False)), SR)
     write_srt(tr.cues, out_dir / "captions.srt")
     return timing

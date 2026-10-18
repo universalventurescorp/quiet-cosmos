@@ -34,15 +34,18 @@ VOICE_EQ["clara"] = VOICE_EQ["documentary"].replace(
 
 
 def mix(narration, music, out, total, music_volume=0.16, lufs=-16, fade_out=6.0, duck=True, voice_eq="clean",
-        voice_pitch_st=0.0, voice_size_st=0.0):
+        voice_pitch_st=0.0, voice_size_st=0.0, sfx=None, sfx_volume=1.0):
+    """sfx: optional sound-design track (pipeline/sfx.py), same length as the episode; it joins the music bus,
+    so it ducks under the narrator together with the score."""
     try:
         return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st,
-                    voice_size_st)
+                    voice_size_st, sfx, sfx_volume)
     except Exception:
         if not (voice_pitch_st or voice_size_st):
             raise
         print("   voice pitch/size change failed (no rubberband in ffmpeg?): mixing without it")
-        return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, 0.0, 0.0)
+        return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, 0.0, 0.0,
+                    sfx, sfx_volume)
 
 
 def _measure_lufs(path):
@@ -53,7 +56,8 @@ def _measure_lufs(path):
     return float(vals[-1]) if vals else None
 
 
-def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st, voice_size_st):
+def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st, voice_size_st,
+         sfx=None, sfx_volume=1.0):
     # loudnorm cannot push a mix above ~-13 LUFS (it backs off to protect peaks): for "loud" targets the mix is
     # rendered plain, measured, then raised with a gain + limiter (two passes)
     loud = lufs > -13
@@ -75,21 +79,26 @@ def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice
         # whole narration a little higher (formants kept, so it is the same man, not a chipmunk)
         voice = (f"rubberband=pitch={2 ** (voice_pitch_st / 12):.5f}:formant=preserved:pitchq=quality,"
                  + voice)
+    # music bus = score (+ sound design)
+    score = f"[1:a]aresample=48000,aformat=channel_layouts=stereo,volume={music_volume},afade=t=in:d={5 if duck else 1}"
+    if sfx:
+        bus = (f"{score}[m0];[2:a]aresample=48000,aformat=channel_layouts=stereo,volume={sfx_volume}[fx];"
+               f"[m0][fx]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[m];")
+    else:
+        bus = f"{score}[m];"
     if duck:
-        graph = (f"[0:a]{voice},asplit=2[v][sc];"
-                 f"[1:a]aresample=48000,aformat=channel_layouts=stereo,volume={music_volume},afade=t=in:d=5[m];"
+        graph = (f"[0:a]{voice},asplit=2[v][sc];" + bus +
                  f"[m][sc]sidechaincompress=threshold=0.04:ratio=3:attack=400:release=2500:makeup=1[md];"
                  f"[v][md]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
                  f"afade=t=out:st={max(0, total - fade_out):.3f}:d={fade_out},"
                  f"{final},aresample=48000[a]")
     else:
-        graph = (f"[0:a]{voice}[v];"
-                 f"[1:a]aresample=48000,aformat=channel_layouts=stereo,volume={music_volume},afade=t=in:d=1[m];"
+        graph = (f"[0:a]{voice}[v];" + bus +
                  f"[v][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
                  f"afade=t=out:st={max(0, total - fade_out):.3f}:d={fade_out},"
                  f"{final},aresample=48000[a]")
     run(["ffmpeg", "-y", "-loglevel", "error",
-         "-i", narration, "-stream_loop", "-1", "-i", music,
+         "-i", narration, "-stream_loop", "-1", "-i", music] + (["-i", str(sfx)] if sfx else []) + [
          "-filter_complex", graph, "-map", "[a]", "-t", f"{total:.3f}",
          "-c:a", "pcm_s16le", out])
     if loud:

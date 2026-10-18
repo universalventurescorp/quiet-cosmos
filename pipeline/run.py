@@ -182,8 +182,13 @@ def save_diagnostics(out, report=None, ai_media=None):
         "voice": (ai_media or {}).get("voice"),
         "voice_logs": {f.name: tail(f, 25) for f in sorted((out / "ai").glob("voice_gpu*.log"))},
         "sample": os.environ.get("SAMPLE", "").lower() == "true",
+        "sound_design": read_json(out / "sfx.json", None),
+        "reveals": len(read_json(out / "timing.json", {}).get("reveals", [])),
     }
     write_json(DATA / "diagnostics" / "last_episode.json", diag)
+    # the script itself, so the writing can be reviewed from the repo (Actions artifacts are not reachable)
+    if (out / "script.json").exists():
+        write_json(DATA / "diagnostics" / "last_script.json", read_json(out / "script.json", {}))
 
 
 def narration_job(script, cfg):
@@ -363,15 +368,29 @@ def main():
         else:
             make_ambient(music, seed=zlib.crc32(topic.encode()))
 
+    # 5b. sound design: ambience per chapter + cinematic hits in the moments without voice
+    sfx = out / "sfx.wav"
+    if cfg["mix"].get("sfx") and not sfx.exists():
+        from .sfx import make_sfx
+        print("   sound design", flush=True)
+        try:
+            info = make_sfx(sfx, timing, script, seed=zlib.crc32(topic.encode()) % 100000)
+            write_json(out / "sfx.json", info)
+            print(f"   ambiences {info['beds']}, hits {info['hits']}")
+        except Exception as exc:          # never lose an episode over the sound design
+            print(f"   sound design skipped: {exc}")
+            sfx.unlink(missing_ok=True)
+
     # 6. final audio
     audio = out / "audio.wav"
     if not audio.exists():
         from .mix import mix
-        step(6, N, "mixing voice and score")
+        step(6, N, "mixing voice, score and sound design")
         mix(out / "narration.wav", music, audio, timing["duration"],
             music_volume=cfg["mix"]["music_volume"], lufs=cfg["mix"]["lufs"],
             voice_eq=cfg["mix"].get("voice_eq", "clean"), voice_pitch_st=cfg["mix"].get("voice_pitch_st", 0.0),
-            voice_size_st=cfg["mix"].get("voice_size_st", 0.0))
+            voice_size_st=cfg["mix"].get("voice_size_st", 0.0),
+            sfx=sfx if sfx.exists() else None, sfx_volume=cfg["mix"].get("sfx_volume", 1.0))
 
     # 7. AI scenes back from the GPU: depth maps for 2.5D, slowed clips, placed on their sentences
     ai_media = read_json(out / "ai_media.json", None)

@@ -16,4 +16,5 @@ Rules for every scene:
 - Never: text, letters, logos, flags, brand names, real people, faces in close-up, hands, astronauts in close-up, cartoons.
 - Vary shot types and colours across scenes; never two near-identical prompts.
 - motion: 6 to 15 words describing slow, calm movement for an image-to-video model (e.g. "slow push in, dust drifting, clouds of the gas giant flowing gently"). No fast motion, no explosions, no camera shake.
+- Reveal lines (a paragraph made of one short sentence) are the payoffs of the story, with a pause and a sound swell before them: give each one a scene anchored on it (anchor = its first words, or the whole line if shorter), and prefer them for the video scenes.
 - video: true for exactly as many scenes as the section's "videos" number (choose its most breathtaking moments), false for the rest.
