@@ -1,13 +1,13 @@
 {
-  "topic": "Júpiter: el gigante gaseoso, su Gran Mancha Roja y sus tormentas eternas",
-  "title": "MUESTRA · Júpiter: la Gran Mancha Roja y sus Tormentas Eternas | Documental Relajante para Dormir",
-  "video_id": "PnuSm0hVqzU",
+  "topic": "Europa, el océano escondido bajo el hielo de Júpiter",
+  "title": "MUESTRA · Europa: el océano escondido bajo el hielo | Documental relajante para dormir",
+  "video_id": "XRkWzAve7ZQ",
   "qa_ok": true,
   "minutes": 6.8,
   "voice": {
     "engine": "qwen",
-    "sentences": 70,
-    "voiced": 70
+    "sentences": 30,
+    "voiced": 30
   },
-  "date": "2026-10-17"
+  "date": "2026-10-18"
 }

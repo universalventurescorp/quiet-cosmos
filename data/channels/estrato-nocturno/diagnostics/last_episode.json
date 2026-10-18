@@ -1,43 +1,43 @@
 {
-  "episode": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-muestra",
-  "date": "2026-10-17T05:03:44",
+  "episode": "europa-el-oc-ano-escondido-bajo-el-hielo-de-j-piter-muestra",
+  "date": "2026-10-18T02:08:47",
   "qa": {
     "ok": true,
     "fails": [],
     "warnings": [],
     "minutes": 6.8,
-    "lufs": -16.2,
-    "shots": 41,
-    "clips": 3,
+    "lufs": -16.1,
+    "shots": 39,
+    "clips": 1,
     "ai_scenes": 14,
-    "ai_clips": 3,
+    "ai_clips": 1,
     "ai_status": "ok",
-    "gpu_minutes": 30.0
+    "gpu_minutes": 31.4
   },
   "ai_status": "ok",
   "ai_errors": [],
   "scene_plan": {
     "cold_open": 3,
     "chapter_1": 6,
-    "chapter_2": 7
+    "chapter_2": 8
   },
-  "gpu_job_images": 16,
+  "gpu_job_images": 17,
   "kaggle_push": {
-    "job_id": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-20261017041919",
+    "job_id": "europa-el-oc-ano-escondido-bajo-el-hielo-de-j-piter-20261018011917",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792210761.6367416,
+    "pushed_at": 1792286359.835611,
     "ok": true,
-    "push_output": "Kernel version 19 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 30 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   },
   "kaggle_manifest": {
-    "job_id": "j-piter-el-gigante-gaseoso-su-gran-mancha-roja-y-sus-torment-20261017041919",
+    "job_id": "europa-el-oc-ano-escondido-bajo-el-hielo-de-j-piter-20261018011917",
     "errors": [],
     "gpus": [
       "Tesla T4",
       "Tesla T4"
     ],
     "images_status": {
-      "done": 16,
+      "done": 17,
       "failed": 0,
       "skipped": 0,
       "model": "sdxl"
@@ -48,8 +48,8 @@
       "skipped": 0
     },
     "voice_status": {
-      "done": 70,
-      "total": 70
+      "done": 30,
+      "total": 30
     },
     "images": [
       "chapter_1_00.jpg",
@@ -65,40 +65,46 @@
       "chapter_2_04.jpg",
       "chapter_2_05.jpg",
       "chapter_2_06.jpg",
+      "chapter_2_07.jpg",
       "cold_open_00.jpg",
       "cold_open_01.jpg",
       "cold_open_02.jpg"
     ],
     "videos": [
-      "chapter_1_05.mp4",
-      "chapter_2_01.mp4",
+      "chapter_1_00.mp4",
+      "chapter_2_03.mp4",
       "cold_open_00.mp4"
     ],
-    "minutes": 30.0
+    "minutes": 31.4
   },
   "kaggle_log": [
     "[   0.4 min] main: packages ready",
     "[   0.9 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
-    "[   2.7 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
-    "[   2.9 min] voice: Qwen3-TTS ready, 70 sentences",
-    "[   3.7 min] images: 1/16 images (50.8 s each)",
-    "[   6.4 min] voice: GPU 1 narration finished (exit 0)",
-    "[   6.4 min] videos: GPU free after narration, starting clips",
-    "[   6.4 min] voice: narration: 70/70 sentences",
-    "[   8.5 min] images: 11/16 images (27.9 s each)",
-    "[  10.2 min] videos: video model: Lightricks/LTX-Video (torch.float16)",
-    "[  16.8 min] videos: clip 1/3 in 399.7 s",
-    "[  23.4 min] videos: clip 2/3 in 392.6 s",
-    "[  30.0 min] videos: clip 3/3 in 396.7 s",
-    "[  30.0 min] main: finished: 16 images, 3 clips"
+    "[   2.9 min] voice: Qwen3-TTS ready, 30 sentences",
+    "[   3.4 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
+    "[   4.1 min] images: 1/17 images (39.8 s each)",
+    "[   6.9 min] voice: GPU 1 narration finished (exit 0)",
+    "[   6.9 min] videos: GPU free after narration, starting clips",
+    "[   6.9 min] voice: narration: 30/30 sentences",
+    "[  10.3 min] images: 11/17 images (31.8 s each)",
+    "[  10.8 min] videos: video model: Lightricks/LTX-Video (torch.float16)",
+    "[  17.7 min] videos: clip 1/3 in 411.6 s",
+    "[  24.5 min] videos: clip 2/3 in 410.6 s",
+    "[  31.4 min] videos: clip 3/3 in 414.9 s",
+    "[  31.4 min] main: finished: 17 images, 3 clips"
   ],
   "voice": {
     "engine": "qwen",
-    "sentences": 70,
-    "voiced": 70
+    "sentences": 30,
+    "voiced": 30
   },
   "voice_logs": {
     "voice_gpu1.log": [
+      "",
+      "********",
+      "Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.",
+      "********",
+      " ",
       "/bin/sh: 1: sox: not found",
       "SoX could not be found!",
       "",
@@ -110,19 +116,14 @@
       "    ",
       "",
       "Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]",
-      "Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  6.41it/s]",
-      "Fetching 4 files: 100%|██████████| 4/4 [00:01<00:00,  2.10it/s]",
-      "Fetching 4 files: 100%|██████████| 4/4 [00:01<00:00,  2.10it/s]",
+      "Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.93it/s]",
+      "Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.83it/s]",
+      "Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.83it/s]",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
+      "[W1018 01:24:36.524343942 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3554672640 bytes (free: 2941059072, total: 15636037632).",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "[W1017 04:23:58.992996420 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2468347904 bytes (free: 1867317248, total: 15636037632).",
-      "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "[W1017 04:25:12.021339222 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3070230528 bytes (free: 235732992, total: 15636037632).",
+      "[W1018 01:25:12.022103637 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3835691008 bytes (free: 1691156480, total: 15636037632).",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation."
     ]
   },
