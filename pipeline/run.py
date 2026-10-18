@@ -256,6 +256,14 @@ def main():
         v["chapters"] = 2
         cfg.setdefault("kaggle", {})["gpu_budget_minutes"] = 60
     voice_cfg = cfg["voice"]
+    opt = os.environ.get("BENCH_ENGINES", "")
+    if not args.voice_bench and opt.startswith("voz="):
+        # try a narration mode on one run without touching the channel config: bench_engines = "voz=parrafo" or
+        # "voz=parrafo..." (paragraphs, inner sentence ends read as a suspension)
+        mode = opt[4:]
+        voice_cfg["unit"] = "paragraph" if mode.startswith("parrafo") else "sentence"
+        voice_cfg["inner_end"] = mode[len("parrafo"):] or None if mode.startswith("parrafo") else None
+        print(f"   voice mode for this run: {voice_cfg['unit']} {voice_cfg.get('inner_end') or ''}")
     gpu_voice = voice_cfg.get("engine", "kokoro") == "qwen"
     out = ROOT / "outputs" / (slugify(topic) + ("-muestra" if sample else ""))
     out.mkdir(parents=True, exist_ok=True)
