@@ -135,6 +135,7 @@ jobs:
           [ "${{ inputs.bench_engines }}" = "mejor" ] && export BENCH_MEJOR=true
           [ "${{ inputs.bench_engines }}" = "mejor2" ] && export BENCH_MEJOR2=true
           [ "${{ inputs.bench_engines }}" = "mejor3" ] && export BENCH_MEJOR3=true
+          [ "${{ inputs.bench_engines }}" = "mejor4" ] && export BENCH_MEJOR4=true
           python -m pipeline.run $ARGS
 
       - name: Make a 10-minute preview to watch

@@ -23,6 +23,9 @@ MODES = {
     "C": (0.8, 1.5, -0.6, 4.0, True, False),
     "D": (0.9, 1.2, -0.8, 2.5, True, True),
     "E": (0.7, 1.0, -1.0, 1.8, True, True),
+    # "F" (18-oct): C's strength (measured on every voiced frame) with D's hygiene, and the shift fades back to 0
+    # over the quiet creaky tail instead of pushing it (careful level 2)
+    "F": (0.9, 1.5, -0.6, 3.0, True, 2),
     # only for the 10-second REFERENCE clip the voice clone imitates (never for episode audio): a strong storyteller
     # melody, so the TTS itself speaks that way and the episode audio needs no editing at all
     "REF": (1.0, 2.0, -0.3, 4.0, True, False),
@@ -60,7 +63,19 @@ def _smooth_f0(times, f0):
     return np.where(v, 100.0 * 2 ** (out / 12), 0.0)
 
 
-def edit(w, sr, mode="E", seed=7):
+def _world(w, sr, times, shift):
+    """Same melody change with the WORLD vocoder (pyworld) instead of PSOLA."""
+    import pyworld as pw
+    x = np.asarray(w, np.float64)
+    f0, t = pw.harvest(x, sr, f0_floor=60, f0_ceil=300, frame_period=5.0)
+    sp = pw.cheaptrick(x, f0, t, sr)
+    ap = pw.d4c(x, f0, t, sr)
+    d = np.interp(t, times, shift)
+    y = pw.synthesize(f0 * 2 ** (d / 12), sp, ap, sr, 5.0)
+    return np.asarray(y[:len(w)], np.float32)
+
+
+def edit(w, sr, mode="E", seed=7, method="psola"):
     """Return the take with narrator intonation (float32, same length). Falls back to the input on any problem."""
     if mode not in MODES:
         return w
@@ -90,9 +105,10 @@ def edit(w, sr, mode="E", seed=7):
         for pi, (a, b) in enumerate(ph[:-1]):
             inph = (times >= a) & (times <= b + 0.05)
             m = inph & (f0 > 0)
-            if careful:                                   # only full-voice frames count (no creaky decay)
-                peak = e[int(a * 100):int(b * 100)].max()
-                m &= e[eidx] > peak - 12
+            peak = e[int(a * 100):int(b * 100)].max()
+            full = m & (e[eidx] > peak - 12)
+            if careful == 1:                              # only full-voice frames count (no creaky decay)
+                m = full
             if m.sum() < 15:
                 continue
             st = 12 * np.log2(f0[m] / med)
@@ -114,12 +130,28 @@ def edit(w, sr, mode="E", seed=7):
             delta = float(np.clip((target - end) * strength, 0, cap))
             if delta > 0.2:
                 t0 = a + 0.55 * (b - a)
-                t1 = times[m][-1] if careful else b      # lift reached on the last full vowel, then held
+                t1 = times[full][-1] if (careful and full.any()) else b   # lift reached on the last full vowel
                 r = np.clip((times - t0) / max(t1 - t0, 0.05), 0, 1)
+                if careful == 2 and full.any():          # then fades out over the quiet creaky tail
+                    r = np.where(times > t1, np.clip(1 - (times - t1) / max(b + 0.05 - t1, 0.05), 0, 1), r)
                 shift = np.where(inph, shift + delta * r, shift)
         shift = np.clip(shift, -cap, cap)
         if not np.any(np.abs(shift) > 0.05):
             return w
+        if method == "world":
+            y = _world(w, sr, times, shift)
+            if len(y) < len(w):
+                y = np.concatenate([y, w[len(y):]])
+            careful = careful or 1
+            hop = int(sr * 0.01)
+            edited = np.zeros(len(w), np.float32)
+            for t, d in zip(times, shift):
+                if abs(d) > 0.05:
+                    i = int(t * sr)
+                    edited[max(0, i - 4 * hop):i + 4 * hop] = 1.0
+            k = int(0.02 * sr)
+            mix = np.convolve(edited, np.ones(k) / k, "same")
+            return (mix * y + (1 - mix) * w).astype(np.float32)
         manip = call(snd, "To Manipulation", 0.01, 60, 300)
         tier = call("Create PitchTier", "narrador", snd.xmin, snd.xmax)
         for t, f, d in zip(times, f0, shift):

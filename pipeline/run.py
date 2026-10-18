@@ -51,6 +51,9 @@ def video_bench(cfg, kind="video"):
         if os.environ.get("BENCH_DESIGNS") == "true":     # round 2: new narrator voices from kaggle/voice_designs.json
             job["design"] = read_json(ROOT / "kaggle" / "voice_designs.json", {})
             job["refs"] = {}
+        if os.environ.get("BENCH_MEJOR4") == "true":        # strong melody edit: PSOLA vs WORLD, no tremor
+            os.environ["BENCH_EMOTION"] = "true"
+            job.update(mejor4=True, prosody_src=(ROOT / "pipeline" / "prosody.py").read_text(encoding="utf-8"))
         if os.environ.get("BENCH_MEJOR3") == "true":        # re-intoned reference clip, untouched episode audio
             os.environ["BENCH_EMOTION"] = "true"
             job.update(mejor3=True, prosody_src=(ROOT / "pipeline" / "prosody.py").read_text(encoding="utf-8"))

@@ -750,13 +750,15 @@ try:
             pmod = {}
             exec(cfg["prosody_src"], pmod)
             for src in sources:
-                for tag in cfg.get("prosody_modes", ["D", "E"]):
-                    variant = f"par_fix{tag}_{src[4:]}"
+                for spec in cfg.get("prosody_modes", ["D", "E"]):
+                    tag, _, method = spec.partition(":")
+                    method = method or "psola"
+                    variant = f"par_fix{tag}{'w' if method == 'world' else ''}_{src[4:]}"
                     try:
                         t, chunks = time.time(), []
                         for j in range(len(cfg["paragraphs"])):
                             w, sr = sf.read(OUT / src / f"s{j:02d}.wav", dtype="float32")
-                            chunks.append(resample(pmod["edit"](w, sr, tag), sr))
+                            chunks.append(resample(pmod["edit"](w, sr, tag, method=method), sr))
                         save_para(variant, chunks, 24000, time.time() - t, cfg["para_pause"])
                     except Exception:
                         res["errors"].append(f"{variant}: {traceback.format_exc()[-1500:]}")
@@ -1145,7 +1147,7 @@ ENGINES = {
                             "soundfile"], []),
     "score": ("3.11", ["torch", "torchaudio", "transformers>=4.45", "accelerate", "librosa", "num2words", "soundfile",
                        "speechbrain"], []),
-    "prosodyfix": ("3.11", ["numpy", "soundfile", "librosa", "praat-parselmouth"], []),
+    "prosodyfix": ("3.11", ["numpy", "soundfile", "librosa", "praat-parselmouth", "pyworld"], []),
     "refedit": ("3.11", ["numpy", "soundfile", "praat-parselmouth"], []),
     "fireredtts3": ("3.11", [], ["sox"]),          # installed from its repo (see install_fireredtts3)
     # emotion bench
@@ -1341,7 +1343,19 @@ def main():
         if job.get("nocturno"):
             M.update(native_designs={"n1": N1_DESIGN}, emo_groups=SUBTLE_GROUPS, min_sim=0.75, seeds=5,
                      anchor_ref=str(OUT / "ref_narrador.wav"))
-        if job.get("mejor3"):
+        if job.get("mejor4"):
+            # strong melody edit without tremor: F with PSOLA vs F with the WORLD vocoder, on 3 takes
+            M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE, para_seeds=3, prosody_src=job.get("prosody_src"),
+                     prosody_modes=["C", "F", "F:world"], pick_mos_tol=0.3)
+            two = len(M["gpus"]) > 1
+            t1 = threading.Thread(target=run_engine, args=("qwenref", 1 if two else 0, 40 * 60))
+            t1.start()
+            run_engine("qwenpara", 0, timeout=150 * 60)
+            t1.join()
+            run_engine("prosodyfix", 1 if two else 0, timeout=60 * 60)
+            run_engine("score", 1 if two else 0)
+            want = []
+        elif job.get("mejor3"):
             # the reference clip re-intoned (C / REF), then paragraphs cloned from it: natural audio, new melody
             M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE, prosody_src=job.get("prosody_src"))
             run_engine("refedit", 0, timeout=20 * 60)
