@@ -38,6 +38,7 @@ voice:
 
 mix:
   voice_eq: documentary    # voz cálida, con cuerpo y agudos suaves (sin reverb) = la "E" que eligió Luis
+  lufs: -14                # más volumen (18-oct: Luis eligió E tal cual, solo más fuerte)
   score: chapters          # la música cambia de tonalidad y color en cada capítulo
 
 shorts:
