@@ -1,6 +1,0 @@
-[fireredtts3] torch 2.8.0+cu128 cuda=True
-Loading weights:   0%|          | 0/458 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 54/458 [00:00<00:00, 515.64it/s]Loading weights:  23%|██▎       | 106/458 [00:00<00:00, 428.16it/s]Loading weights:  33%|███▎      | 150/458 [00:00<00:00, 404.75it/s]Loading weights:  42%|████▏     | 191/458 [00:00<00:00, 386.21it/s]Loading weights: 100%|██████████| 458/458 [00:00<00:00, 846.57it/s]
-Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]Loading weights:   6%|▌         | 39/677 [00:00<00:01, 376.90it/s]Loading weights:  11%|█▏        | 77/677 [00:00<00:01, 316.91it/s]Loading weights:  19%|█▊        | 126/677 [00:00<00:01, 379.45it/s]Loading weights:  25%|██▌       | 171/677 [00:00<00:01, 404.56it/s]Loading weights:  43%|████▎     | 294/677 [00:00<00:00, 686.53it/s]Loading weights: 100%|██████████| 677/677 [00:00<00:00, 1075.68it/s]
-[fireredtts3] FireRedTTS3 loaded
-[fireredtts3] par_fr_t0: 71 s of speech in 131 s
-[fireredtts3] par_fr_t1: 71 s of speech in 133 s
