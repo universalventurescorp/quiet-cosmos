@@ -37,9 +37,7 @@ voice:
   wpm: 118                 # ~141 ppm al hablar, menos las pausas
 
 mix:
-  voice_eq: clara          # cálida y sin reverb, más clara y presente (18-oct: Luis, "que no sea tan bajo")
-  voice_pitch_st: 1.5      # toda la narración 1,5 semitonos más aguda (103 -> 110 Hz), mismo timbre
-  lufs: -14                # un poco más de volumen (estándar de YouTube)
+  voice_eq: documentary    # voz cálida, con cuerpo y agudos suaves (sin reverb) = la "E" que eligió Luis
   score: chapters          # la música cambia de tonalidad y color en cada capítulo
 
 shorts:
