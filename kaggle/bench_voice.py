@@ -327,10 +327,13 @@ def pa_distance(pr):
     return abs(pr["final_fall_st"] + 0.6) + 0.5 * abs(pr["declination_st_s"] + 0.35) - 0.03 * pr["pct_rising"]
 
 try:
-    import torch
-    res["torch"] = torch.__version__
-    res["cuda"] = torch.cuda.is_available()
-    log(f"torch {torch.__version__} cuda={torch.cuda.is_available()}")
+    try:
+        import torch
+        res["torch"] = torch.__version__
+        res["cuda"] = torch.cuda.is_available()
+        log(f"torch {torch.__version__} cuda={torch.cuda.is_available()}")
+    except ImportError:                 # CPU-only engines (prosodyfix) do not need torch
+        torch = None
 
     if engine == "kokoro":
         from kokoro import KPipeline
