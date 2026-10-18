@@ -1147,7 +1147,7 @@ ENGINES = {
                             "soundfile"], []),
     "score": ("3.11", ["torch", "torchaudio", "transformers>=4.45", "accelerate", "librosa", "num2words", "soundfile",
                        "speechbrain"], []),
-    "prosodyfix": ("3.11", ["numpy", "soundfile", "librosa", "praat-parselmouth", "pyworld"], []),
+    "prosodyfix": ("3.11", ["numpy", "soundfile", "librosa", "praat-parselmouth", "pyworld", "setuptools<81"], []),
     "refedit": ("3.11", ["numpy", "soundfile", "praat-parselmouth"], []),
     "fireredtts3": ("3.11", [], ["sox"]),          # installed from its repo (see install_fireredtts3)
     # emotion bench
