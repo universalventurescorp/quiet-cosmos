@@ -4,7 +4,7 @@
 Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
 ********
  
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.31it/s]Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.80it/s]Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.80it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  4.68it/s]Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  2.00it/s]Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  2.00it/s]
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
@@ -19,4 +19,4 @@ Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenref] emo_plana: 74 s of speech in 188 s
+[qwenref] emo_plana: 72 s of speech in 181 s

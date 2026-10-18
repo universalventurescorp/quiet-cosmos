@@ -1,28 +1,30 @@
 [score] torch 2.14.1+cu130 cuda=True
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 255/587 [00:00<00:00, 2548.16it/s]Loading weights:  87%|████████▋ | 512/587 [00:00<00:00, 2557.19it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2592.28it/s]
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 277/587 [00:00<00:00, 2747.98it/s]Loading weights:  94%|█████████▍| 552/587 [00:00<00:00, 2684.25it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2727.46it/s]
 Downloading: "https://github.com/tarepan/SpeechMOS/zipball/v1.2.0" to /root/.cache/torch/hub/v1.2.0.zip
 /kaggle/tmp/voicebench/venv_score/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Downloading: "https://github.com/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt" to /root/.cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt
-  0%|          | 0.00/392M [00:00<?, ?B/s]  3%|▎         | 10.1M/392M [00:00<00:04, 88.2MB/s]  5%|▌         | 20.1M/392M [00:00<00:04, 97.2MB/s]  8%|▊         | 30.1M/392M [00:00<00:03, 97.1MB/s] 10%|█         | 41.0M/392M [00:00<00:03, 103MB/s]  13%|█▎        | 52.2M/392M [00:00<00:03, 108MB/s] 16%|█▌        | 62.8M/392M [00:00<00:05, 67.0MB/s] 18%|█▊        | 72.0M/392M [00:00<00:04, 73.7MB/s] 21%|██        | 81.6M/392M [00:01<00:04, 80.2MB/s] 23%|██▎       | 91.4M/392M [00:01<00:03, 85.9MB/s] 26%|██▌       | 100M/392M [00:01<00:03, 87.7MB/s]  28%|██▊       | 110M/392M [00:01<00:03, 86.0MB/s] 31%|███       | 120M/392M [00:01<00:03, 91.0MB/s] 33%|███▎      | 130M/392M [00:01<00:02, 95.9MB/s] 36%|███▌      | 141M/392M [00:01<00:02, 98.8MB/s] 39%|███▊      | 152M/392M [00:01<00:02, 104MB/s]  41%|████▏     | 162M/392M [00:01<00:02, 105MB/s] 44%|████▍     | 172M/392M [00:01<00:02, 105MB/s] 47%|████▋     | 183M/392M [00:02<00:02, 106MB/s] 49%|████▉     | 194M/392M [00:02<00:01, 109MB/s] 52%|█████▏    | 205M/392M [00:02<00:01, 111MB/s] 55%|█████▌    | 216M/392M [00:02<00:01, 112MB/s] 58%|█████▊    | 226M/392M [00:02<00:01, 110MB/s] 61%|██████    | 238M/392M [00:02<00:01, 112MB/s] 63%|██████▎   | 248M/392M [00:02<00:01, 111MB/s] 66%|██████▋   | 260M/392M [00:02<00:01, 96.2MB/s] 69%|██████▉   | 272M/392M [00:02<00:01, 104MB/s]  72%|███████▏  | 282M/392M [00:03<00:01, 103MB/s] 75%|███████▍  | 294M/392M [00:03<00:00, 108MB/s] 78%|███████▊  | 304M/392M [00:03<00:01, 71.2MB/s] 80%|███████▉  | 313M/392M [00:03<00:01, 73.3MB/s] 82%|████████▏ | 323M/392M [00:03<00:00, 80.8MB/s] 85%|████████▍ | 333M/392M [00:03<00:00, 87.9MB/s] 87%|████████▋ | 343M/392M [00:03<00:00, 90.1MB/s] 90%|████████▉ | 352M/392M [00:03<00:00, 92.3MB/s] 93%|█████████▎| 365M/392M [00:04<00:00, 105MB/s]  96%|█████████▌| 376M/392M [00:04<00:00, 108MB/s] 99%|█████████▊| 387M/392M [00:04<00:00, 110MB/s]100%|██████████| 392M/392M [00:04<00:00, 95.3MB/s]
+  0%|          | 0.00/392M [00:00<?, ?B/s]  3%|▎         | 10.1M/392M [00:00<00:04, 96.4MB/s] 10%|▉         | 37.6M/392M [00:00<00:01, 203MB/s]  15%|█▌        | 60.2M/392M [00:00<00:01, 218MB/s] 21%|██▏       | 83.4M/392M [00:00<00:01, 227MB/s] 27%|██▋       | 106M/392M [00:00<00:01, 231MB/s]  33%|███▎      | 130M/392M [00:00<00:01, 236MB/s] 39%|███▉      | 153M/392M [00:00<00:01, 238MB/s] 45%|████▍     | 176M/392M [00:00<00:00, 241MB/s] 51%|█████     | 200M/392M [00:00<00:00, 243MB/s] 57%|█████▋    | 224M/392M [00:01<00:00, 244MB/s] 63%|██████▎   | 247M/392M [00:01<00:00, 227MB/s] 69%|██████▉   | 271M/392M [00:01<00:00, 234MB/s] 75%|███████▌  | 296M/392M [00:01<00:00, 240MB/s] 82%|████████▏ | 320M/392M [00:01<00:00, 243MB/s] 88%|████████▊ | 344M/392M [00:01<00:00, 247MB/s] 94%|█████████▍| 368M/392M [00:01<00:00, 212MB/s] 99%|█████████▉| 389M/392M [00:01<00:00, 177MB/s]100%|██████████| 392M/392M [00:01<00:00, 216MB/s]
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 CategoricalEncoder.expect_len was never called: assuming category count of 107 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
 [transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-[score] par_mejor: 68 s of speech in 0 s
-[score] emo_plana: CER 0.000  MOS 4.21
-[score] par_r0_s0: CER 0.000  MOS 4.13
-[score] par_r0_s1: CER 0.000  MOS 4.11
-[score] par_r0_t0: CER 0.000  MOS 4.15
-[score] par_r0_t1: CER 0.000  MOS 4.14
-[score] par_r1_s0: CER 0.001  MOS 4.12
-[score] par_r1_s1: CER 0.000  MOS 4.11
-[score] par_r1_t0: CER 0.000  MOS 4.19
-[score] par_r1_t1: CER 0.000  MOS 4.15
+[score] par_mejor: 69 s of speech in 0 s
+[score] emo_plana: CER 0.000  MOS 4.16
+[score] par_fixC_susp0: CER 0.000  MOS 3.92
+[score] par_fixC_susp1: CER 0.000  MOS 3.93
+[score] par_fixC_susp2: CER 0.000  MOS 3.96
+[score] par_fixF_susp0: CER 0.000  MOS 3.88
+[score] par_fixF_susp1: CER 0.000  MOS 3.89
+[score] par_fixF_susp2: CER 0.000  MOS 3.94
+[score] par_fixFw_susp0: CER 0.000  MOS 4.18
+[score] par_fixFw_susp1: CER 0.000  MOS 4.18
+[score] par_fixFw_susp2: CER 0.000  MOS 4.19
 [score] par_susp0: CER 0.000  MOS 4.18
-[score] par_t0: CER 0.000  MOS 4.19
-[score] par_mejor: CER 0.000  MOS 4.08
+[score] par_susp1: CER 0.000  MOS 4.18
+[score] par_susp2: CER 0.000  MOS 4.19
+[score] par_mejor: CER 0.000  MOS 4.02
