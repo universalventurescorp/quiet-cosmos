@@ -11,8 +11,9 @@ Write 110 to 150 words that:
 - Open with one striking, true, concrete image or fact in the very first sentence. No greeting, no channel name, no "welcome", no "in this video".
 - Raise one deep question the episode will answer, and hint at two or three wonders the viewer will see along the way, in the order they appear.
 - Promise the experience: unhurried, beautiful, real science, nothing to do but listen.
-- End with a quiet line that leads into the journey (the title card appears right after it).
-- Stay calm and intimate, never hype. No exclamation marks.
+- End with a quiet line that leads into the journey (the title card appears right after it, with a deep cinematic hit). Put that last line alone as its own one-sentence paragraph of at most twelve words.
+- Write it like the opening of a great documentary trailer, but calm: short sentences, one strong contrast ("We thought... But..."), and one moment of silence (one other short line alone as its own paragraph).
+- Stay calm and intimate, never hype. No exclamation marks. Avoid clichés such as "the vastness of the cosmos", "cosmic dance", "tapestry", "majestic", "breathtaking", and do not start with "Imagine".
 
 <<STYLE>>
 

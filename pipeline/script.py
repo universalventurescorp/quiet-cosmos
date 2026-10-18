@@ -15,6 +15,7 @@ INSTRUCTION = ("Follow the instructions in the input exactly. Reply with only th
 
 
 MODEL = "sonnet"            # set from config.yaml (claude.model) by write_script
+AMBIENCES = ("deep_space", "wind", "storm", "sea", "ice", "sun", "lava", "none")   # pipeline/sfx.py beds
 LIMIT_WORDS = ("hit your weekly limit", "hit your usage limit", "usage limit reached", "limit · resets")
 
 
@@ -105,6 +106,8 @@ def write_script(topic, cfg):
     for c in chapters:
         c.setdefault("video_queries", [])
         c.setdefault("image_queries", [])
+        if c.get("ambience") not in AMBIENCES:
+            c["ambience"] = "deep_space"
     words = int(minutes * cfg["voice"]["wpm"] / len(chapters))
     plan = json.dumps({"title": outline["title"],
                        "chapters": [{"title": c["title"], "beats": c["beats"]} for c in chapters]},
@@ -119,6 +122,8 @@ def write_script(topic, cfg):
         text = clean(ask_claude(fill(
             "chapter.md", CHANNEL=ch["name"], LANGUAGE=lang, OUTLINE=plan, N=i,
             TOTAL=len(chapters), CHAPTER_TITLE=c["title"], BEATS="; ".join(c["beats"]),
+            QUESTION=c.get("question") or "(choose one from the beats)",
+            REVEAL=c.get("reveal") or "(the most surprising true point among the beats)",
             WORDS=words, PREVIOUS=previous, ENDING_RULE=ending,
             OPENINGS="; ".join(openings) or "(none yet)", STYLE=style)), c["title"])
         c["text"] = text

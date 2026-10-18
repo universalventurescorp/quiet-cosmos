@@ -14,6 +14,7 @@ voice:
   pause_sentence: 0.8
   pause_paragraph: 1.8
   pause_chapter: 4.0
+  pause_reveal: 0.7       # pausa extra antes de cada "frase revelación" (párrafo de una sola frase corta)
 
 video:
   target_minutes: 60      # duración objetivo de la narración (más minutos = más horas de visualización)
@@ -29,6 +30,8 @@ video:
 mix:
   music_volume: 0.16      # música bajo la voz (baja sola cuando habla la voz y sube en las pausas)
   lufs: -16               # volumen final
+  sfx: true               # diseño sonoro: ambiente por capítulo + golpe de título, barridos y subidas (pipeline/sfx.py)
+  sfx_volume: 1.0         # volumen del diseño sonoro (0.5 = la mitad, 0 = sin efectos)
 
 shorts:
   count: 2                # Shorts verticales por episodio (0 = desactivar)
