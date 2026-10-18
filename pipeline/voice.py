@@ -142,7 +142,11 @@ def tighten(a, max_gap=0.85, keep=0.6):
             j += 1
         if quiet[i] and 0 < i and j < n and (j - i) / 100 > max_gap:
             k = int(keep * 100 / 2)
-            out += [a[i * hop:(i + k) * hop], a[(j - k) * hop:j * hop]]
+            head, tail = a[i * hop:(i + k) * hop].copy(), a[(j - k) * hop:j * hop].copy()
+            x = min(len(head), len(tail), int(0.03 * SR))          # 30 ms equal-power crossfade, no click
+            r = np.linspace(0, np.pi / 2, x)
+            mid = head[-x:] * np.cos(r) + tail[:x] * np.sin(r)
+            out += [head[:-x], mid, tail[x:]]
         else:
             out.append(a[i * hop:j * hop])
         i = j
@@ -193,12 +197,23 @@ def sentence_bounds(a, sents):
 
 
 def _trim(a, thresh=0.004):
-    """Remove leading/trailing near-silence so our own pauses are exact."""
+    """Remove leading/trailing near-silence so our own pauses are exact. Keeps 50 ms before the first sound and
+    150 ms after the last (soft consonants and the natural decay), with short fades so a join never clicks."""
     idx = np.where(np.abs(a) > thresh)[0]
     if len(idx) == 0:
         return a
-    s, e = max(0, idx[0] - int(0.02 * SR)), min(len(a), idx[-1] + int(0.08 * SR))
-    return a[s:e]
+    s, e = max(0, idx[0] - int(0.05 * SR)), min(len(a), idx[-1] + int(0.15 * SR))
+    return _edge_fades(a[s:e].astype(np.float32))
+
+
+def _edge_fades(a, fade_in=0.01, fade_out=0.06):
+    a = a.copy()
+    fi, fo = min(len(a) // 4, int(fade_in * SR)), min(len(a) // 4, int(fade_out * SR))
+    if fi:
+        a[:fi] *= np.sin(np.linspace(0, np.pi / 2, fi)) ** 2
+    if fo:
+        a[-fo:] *= np.cos(np.linspace(0, np.pi / 2, fo)) ** 2
+    return a
 
 
 def split_sentences(paragraph):
@@ -292,31 +307,48 @@ class Track:
         return a / max(1e-6, np.abs(a).max()) * peak
 
 
-def quiet_pauses(x, below=24, min_ms=120, atten_db=-24, fade_ms=15):
-    """Breaths and noise INSIDE pauses (> `below` dB under the speech level for >= min_ms) turned down; words are
-    never touched (20 ms kept next to them). Needed once the voice is compressed hard for a high volume: the
-    compressor lifts the TTS in-breaths at the end of phrases (Luis: "se escucha como que toma aire")."""
+def quiet_pauses(x, below=24, min_ms=120, atten_db=-24, hold_ms=160, pre_ms=70, close_ms=140, open_ms=40):
+    """Breaths and noise INSIDE pauses (> `below` dB under the speech level for >= min_ms) turned down (Luis: "se
+    escucha como que toma aire"), without ever chopping a word: the natural decay of the last syllable is kept for
+    hold_ms and then faded down over close_ms; the gain is fully back pre_ms before the next word (soft onsets like
+    "s", "f", "h" stay whole). 18-oct: the first version kept only 20 ms and closed in 15 ms, which cut the tails
+    of words at every join ("suena como que algo se corta")."""
     hop = int(SR * 0.01)
     n = len(x) // hop
     if n < 10:
         return x
     e = 20 * np.log10(np.sqrt((x[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
     q = e < np.percentile(e, 90) - below
-    g = np.ones(n)
+    speech = ~q
+    # short quiet runs are part of speech
     i = 0
     while i < n:
         if q[i]:
             j = i
             while j < n and q[j]:
                 j += 1
-            if (j - i) * 10 >= min_ms and j - 2 > i + 2:
-                g[i + 2:j - 2] = 10 ** (atten_db / 20)
+            if (j - i) * 10 < min_ms:
+                speech[i:j] = True
             i = j
         else:
             i += 1
-    k = max(1, fade_ms // 10)
-    g = np.convolve(g, np.ones(k) / k, "same")
-    gs = np.concatenate([np.repeat(g, hop), np.ones(len(x) - n * hop)])
+    # keep the word tails and the run-up to the next word
+    keep = speech.copy()
+    hold, pre = hold_ms // 10, pre_ms // 10
+    idx = np.where(speech)[0]
+    for k in idx:
+        keep[k:k + hold + 1] = True
+        keep[max(0, k - pre):k] = True
+    target = np.where(keep, 0.0, float(atten_db))
+    # gain in dB moves at most this fast per 10 ms frame: slow close, quicker open (finished before the word)
+    down, up = -atten_db / max(1, close_ms // 10), -atten_db / max(1, open_ms // 10)
+    g = np.zeros(n)
+    cur = 0.0
+    for k in range(n):
+        cur = max(target[k], cur - down) if target[k] < cur else min(target[k], cur + up)
+        g[k] = cur
+    centers = (np.arange(n) + 0.5) * hop
+    gs = 10 ** (np.interp(np.arange(len(x)), centers, g) / 20)
     return (x * gs).astype(np.float32)
 
 

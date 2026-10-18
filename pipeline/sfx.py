@@ -177,10 +177,10 @@ def make_hit(kind, seed):
             mono += _shaped_noise(rng, d, _band(lo, hi, 2)) * env / (1 + 0.4 * k)
         st = _pan(mono, -0.7, 0.7)
     elif kind == "swell":
-        d = int(SR * 1.9)
+        rise, fall = 1.6, 0.7                                  # rises into the reveal, then melts away under it
+        d = int(SR * (rise + fall))
         t = np.arange(d) / SR
-        env = (t / t[-1]) ** 3.2                               # reversed-cymbal rise
-        env[-int(0.03 * SR):] *= np.linspace(1, 0, int(0.03 * SR))
+        env = np.where(t < rise, (t / rise) ** 3.2, np.cos(np.clip((t - rise) / fall, 0, 1) * np.pi / 2) ** 2)
         hiss = _shaped_noise(rng, d, _band(3000, 11000, 2)) + 0.5 * _shaped_noise(rng, d, _band(900, 3000, 2))
         sub = 0.6 * np.sin(2 * np.pi * 45 * t) * env
         mono = hiss * env + sub
@@ -207,7 +207,7 @@ def plan(timing, script):
     for mark in chapters[1:]:
         hits.append((max(0.0, mark["start"] - 1.3), "whoosh"))      # peaks as the chapter card appears
     for r in timing.get("reveals", []):
-        hits.append((max(0.0, r - 1.9), "swell"))                    # lands exactly on the reveal line
+        hits.append((max(0.0, r - 1.6), "swell"))                    # peaks as the reveal line starts
     if timing.get("outro"):
         hits.append((timing["outro"]["start"] + 0.4, "boom_soft"))
     return sections, sorted(hits)
