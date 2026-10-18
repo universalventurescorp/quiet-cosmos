@@ -525,6 +525,8 @@ try:
         plans = [("par_t0", "orig", 100, None), ("par_susp0", "orig", 500, "...")]
         if not picked:
             plans += [("par_t1", "orig", 101, None), ("par_susp1", "orig", 501, "...")]
+        if cfg.get("para_seeds"):          # "mejor2": many takes of the production setting, to pick from
+            plans = [(f"par_susp{k}", "orig", 500 + k, "...") for k in range(cfg["para_seeds"])]
         for k in range(len(picked)):
             plans += [(f"par_r{k}_t{n}", f"r{k}", 600 + 10 * k + n, None) for n in range(2)]
             plans += [(f"par_r{k}_s{n}", f"r{k}", 700 + 10 * k + n, "...") for n in range(2)]
@@ -727,6 +729,22 @@ try:
 
         sources = sorted(p.name for p in OUT.iterdir() if p.is_dir() and p.name.startswith("par_")
                          and (p / "s00.wav").exists() and "fix" not in p.name)
+        if cfg.get("prosody_src"):         # the production module itself (pipeline/prosody.py)
+            pmod = {}
+            exec(cfg["prosody_src"], pmod)
+            for src in sources:
+                for tag in cfg.get("prosody_modes", ["D", "E"]):
+                    variant = f"par_fix{tag}_{src[4:]}"
+                    try:
+                        t, chunks = time.time(), []
+                        for j in range(len(cfg["paragraphs"])):
+                            w, sr = sf.read(OUT / src / f"s{j:02d}.wav", dtype="float32")
+                            chunks.append(resample(pmod["edit"](w, sr, tag), sr))
+                        save_para(variant, chunks, 24000, time.time() - t, cfg["para_pause"])
+                    except Exception:
+                        res["errors"].append(f"{variant}: {traceback.format_exc()[-1500:]}")
+                        log(f"{variant} failed: {traceback.format_exc()[-800:]}")
+            sources = []
         for src in sources:
             for tag, strength, cr in (("B", 1.0, False), ("C", 0.8, True)):
                 variant = f"par_fix{tag}_{src[4:]}"
@@ -1030,7 +1048,8 @@ try:
                     continue
                 best_cer = min(c[1]["cer"] for c in cand)
                 best_mos = max(c[1]["mos"] for c in cand)
-                ok = [c for c in cand if c[1]["cer"] <= best_cer + 0.02 and c[1]["mos"] >= best_mos - 0.3
+                ok = [c for c in cand if c[1]["cer"] <= best_cer + 0.02
+                      and c[1]["mos"] >= best_mos - cfg.get("pick_mos_tol", 0.3)
                       and c[1].get("sim", 1) >= 0.70] or sorted(cand, key=lambda c: c[1]["cer"])[:1]
                 def dist(c):
                     pr = c[2]
@@ -1181,6 +1200,8 @@ def run_engine(engine, gpu, timeout=60 * 60):
                                     "paragraphs": M.get("paragraphs"), "para_pause": M.get("para_pause"),
                                     "ref_texts": M.get("ref_texts"), "ref_takes": M.get("ref_takes", 10),
                                     "fr3_dir": str(WORK / "fr3"), "fr3_models": str(WORK / "fr3_models"),
+                                    "para_seeds": M.get("para_seeds"), "prosody_src": M.get("prosody_src"),
+                                    "prosody_modes": M.get("prosody_modes"), "pick_mos_tol": M.get("pick_mos_tol", 0.3),
                                     "stepx_dir": str(WORK / "stepx"), "models_dir": str(WORK / "stepx_models")},
                                    ensure_ascii=False))
         env = {**os.environ, "CUDA_VISIBLE_DEVICES": str(gpu), "HF_HUB_ENABLE_HF_TRANSFER": "0",
@@ -1302,7 +1323,20 @@ def main():
         if job.get("nocturno"):
             M.update(native_designs={"n1": N1_DESIGN}, emo_groups=SUBTLE_GROUPS, min_sim=0.75, seeds=5,
                      anchor_ref=str(OUT / "ref_narrador.wav"))
-        if job.get("mejor"):
+        if job.get("mejor2"):
+            # no tremor: many takes of the production setting + the production melody edit (D/E, spliced), picked
+            # per paragraph only if it is as natural as the best untouched take (MOS within 0.12)
+            M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE, para_seeds=6, prosody_src=job.get("prosody_src"),
+                     prosody_modes=["C", "D", "E"], pick_mos_tol=0.12)
+            two = len(M["gpus"]) > 1
+            t1 = threading.Thread(target=run_engine, args=("qwenref", 1 if two else 0, 40 * 60))
+            t1.start()
+            run_engine("qwenpara", 0, timeout=150 * 60)
+            t1.join()
+            run_engine("prosodyfix", 1 if two else 0, timeout=60 * 60)
+            run_engine("score", 1 if two else 0)
+            want = []
+        elif job.get("mejor"):
             # "mejor que Planeta Antiguo" round: paragraphs from the channel clip (Qwen) + FireRedTTS3 clone, then
             # every take with its pitch contour edited (PSOLA), then scoring/picking
             M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE)
