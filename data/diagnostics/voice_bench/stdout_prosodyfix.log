@@ -1,27 +1,11 @@
 [prosodyfix] par_fixC_susp0: 69 s of speech in 2 s
 [prosodyfix] par_fixF_susp0: 69 s of speech in 2 s
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-[prosodyfix] par_fixFw_susp0: 69 s of speech in 0 s
+/kaggle/tmp/voicebench/venv_prosodyfix/lib/python3.11/site-packages/pyworld/__init__.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[prosodyfix] par_fixFw_susp0: 69 s of speech in 30 s
 [prosodyfix] par_fixC_susp1: 68 s of speech in 1 s
 [prosodyfix] par_fixF_susp1: 68 s of speech in 2 s
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-[prosodyfix] par_fixFw_susp1: 68 s of speech in 0 s
+[prosodyfix] par_fixFw_susp1: 68 s of speech in 29 s
 [prosodyfix] par_fixC_susp2: 68 s of speech in 1 s
 [prosodyfix] par_fixF_susp2: 68 s of speech in 2 s
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-   pitch edit skipped: No module named 'pkg_resources'
-[prosodyfix] par_fixFw_susp2: 68 s of speech in 0 s
+[prosodyfix] par_fixFw_susp2: 68 s of speech in 29 s

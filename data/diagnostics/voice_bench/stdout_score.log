@@ -1,29 +1,29 @@
 [score] torch 2.14.1+cu130 cuda=True
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 277/587 [00:00<00:00, 2747.98it/s]Loading weights:  94%|█████████▍| 552/587 [00:00<00:00, 2684.25it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2727.46it/s]
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  41%|████      | 241/587 [00:00<00:00, 2380.59it/s]Loading weights:  82%|████████▏ | 480/587 [00:00<00:00, 2306.43it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2354.17it/s]
 Downloading: "https://github.com/tarepan/SpeechMOS/zipball/v1.2.0" to /root/.cache/torch/hub/v1.2.0.zip
 /kaggle/tmp/voicebench/venv_score/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Downloading: "https://github.com/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt" to /root/.cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt
-  0%|          | 0.00/392M [00:00<?, ?B/s]  3%|▎         | 10.1M/392M [00:00<00:04, 96.4MB/s] 10%|▉         | 37.6M/392M [00:00<00:01, 203MB/s]  15%|█▌        | 60.2M/392M [00:00<00:01, 218MB/s] 21%|██▏       | 83.4M/392M [00:00<00:01, 227MB/s] 27%|██▋       | 106M/392M [00:00<00:01, 231MB/s]  33%|███▎      | 130M/392M [00:00<00:01, 236MB/s] 39%|███▉      | 153M/392M [00:00<00:01, 238MB/s] 45%|████▍     | 176M/392M [00:00<00:00, 241MB/s] 51%|█████     | 200M/392M [00:00<00:00, 243MB/s] 57%|█████▋    | 224M/392M [00:01<00:00, 244MB/s] 63%|██████▎   | 247M/392M [00:01<00:00, 227MB/s] 69%|██████▉   | 271M/392M [00:01<00:00, 234MB/s] 75%|███████▌  | 296M/392M [00:01<00:00, 240MB/s] 82%|████████▏ | 320M/392M [00:01<00:00, 243MB/s] 88%|████████▊ | 344M/392M [00:01<00:00, 247MB/s] 94%|█████████▍| 368M/392M [00:01<00:00, 212MB/s] 99%|█████████▉| 389M/392M [00:01<00:00, 177MB/s]100%|██████████| 392M/392M [00:01<00:00, 216MB/s]
+  0%|          | 0.00/392M [00:00<?, ?B/s]  3%|▎         | 10.1M/392M [00:00<00:05, 78.4MB/s]  5%|▌         | 20.1M/392M [00:00<00:04, 91.7MB/s]  8%|▊         | 33.2M/392M [00:00<00:03, 111MB/s]  12%|█▏        | 45.1M/392M [00:00<00:03, 116MB/s] 14%|█▍        | 56.4M/392M [00:00<00:03, 113MB/s] 17%|█▋        | 68.2M/392M [00:00<00:02, 116MB/s] 20%|██        | 80.1M/392M [00:00<00:03, 104MB/s] 23%|██▎       | 90.4M/392M [00:00<00:03, 104MB/s] 26%|██▋       | 103M/392M [00:00<00:02, 113MB/s]  29%|██▉       | 114M/392M [00:01<00:02, 112MB/s] 32%|███▏      | 125M/392M [00:01<00:02, 111MB/s] 35%|███▌      | 138M/392M [00:01<00:02, 116MB/s] 38%|███▊      | 150M/392M [00:01<00:02, 106MB/s] 42%|████▏     | 163M/392M [00:01<00:02, 115MB/s] 45%|████▍     | 175M/392M [00:01<00:01, 118MB/s] 48%|████▊     | 187M/392M [00:01<00:01, 117MB/s] 51%|█████     | 200M/392M [00:01<00:01, 110MB/s] 54%|█████▍    | 211M/392M [00:02<00:01, 109MB/s] 56%|█████▋    | 222M/392M [00:02<00:01, 109MB/s] 60%|█████▉    | 234M/392M [00:02<00:01, 113MB/s] 63%|██████▎   | 246M/392M [00:02<00:01, 118MB/s] 66%|██████▌   | 259M/392M [00:02<00:01, 123MB/s] 69%|██████▉   | 271M/392M [00:02<00:01, 109MB/s] 72%|███████▏  | 284M/392M [00:02<00:00, 118MB/s] 75%|███████▌  | 296M/392M [00:02<00:00, 119MB/s] 79%|███████▉  | 309M/392M [00:02<00:00, 125MB/s] 82%|████████▏ | 321M/392M [00:03<00:00, 99.8MB/s] 85%|████████▍ | 332M/392M [00:03<00:00, 101MB/s]  87%|████████▋ | 342M/392M [00:03<00:00, 104MB/s] 90%|█████████ | 355M/392M [00:03<00:00, 110MB/s] 93%|█████████▎| 366M/392M [00:03<00:00, 114MB/s] 96%|█████████▋| 378M/392M [00:03<00:00, 116MB/s] 99%|█████████▉| 389M/392M [00:03<00:00, 107MB/s]100%|██████████| 392M/392M [00:03<00:00, 109MB/s]
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 CategoricalEncoder.expect_len was never called: assuming category count of 107 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
 [transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
 [score] par_mejor: 69 s of speech in 0 s
-[score] emo_plana: CER 0.000  MOS 4.16
+[score] emo_plana: CER 0.000  MOS 4.17
 [score] par_fixC_susp0: CER 0.000  MOS 3.92
 [score] par_fixC_susp1: CER 0.000  MOS 3.93
 [score] par_fixC_susp2: CER 0.000  MOS 3.96
 [score] par_fixF_susp0: CER 0.000  MOS 3.88
 [score] par_fixF_susp1: CER 0.000  MOS 3.89
 [score] par_fixF_susp2: CER 0.000  MOS 3.94
-[score] par_fixFw_susp0: CER 0.000  MOS 4.18
-[score] par_fixFw_susp1: CER 0.000  MOS 4.18
-[score] par_fixFw_susp2: CER 0.000  MOS 4.19
+[score] par_fixFw_susp0: CER 0.000  MOS 3.43
+[score] par_fixFw_susp1: CER 0.000  MOS 3.39
+[score] par_fixFw_susp2: CER 0.000  MOS 3.39
 [score] par_susp0: CER 0.000  MOS 4.18
 [score] par_susp1: CER 0.000  MOS 4.18
 [score] par_susp2: CER 0.000  MOS 4.19
