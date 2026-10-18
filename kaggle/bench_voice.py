@@ -680,7 +680,7 @@ try:
                     ph.append([a, b])
             return [(a / 100, b / 100) for a, b in ph if b - a >= 40]
 
-        def fix(w, sr, strength, rng):
+        def fix(w, sr, strength, rng, comma_rise=False):
             snd = parselmouth.Sound(w.astype(np.float64), sampling_frequency=sr)
             pitch = snd.to_pitch_ac(time_step=0.01, pitch_floor=60, pitch_ceiling=300)
             times = pitch.xs()
@@ -695,8 +695,21 @@ try:
                 q = max(3, m.sum() // 5)
                 head, end = np.median(st[:q]), np.median(st[-q:])
                 nxt_pause = ph[pi + 1][0] - b
-                rise = rng.random() < 0.33 and nxt_pause < 0.7
-                target = head + (1.0 if rise else -0.6)
+                if comma_rise:
+                    # "C": a short breath-pause (comma) gets a continuation rise, a sentence end inside the
+                    # paragraph stays level; and the downward tilt inside the phrase is halved
+                    rise = nxt_pause < 0.45
+                    target = head + (1.5 if rise else -0.6)
+                    tt = (times[m] - a)
+                    slope = np.polyfit(tt, st, 1)[0] if len(tt) > 5 else 0
+                    if slope < 0:
+                        mid = (b - a) / 2
+                        inph = (times >= a) & (times <= b + 0.05)
+                        tilt = np.clip(-0.5 * slope * ((times - a) - mid), -2.0, 2.0)
+                        shift = np.where(inph, shift + tilt, shift)
+                else:
+                    rise = rng.random() < 0.33 and nxt_pause < 0.7
+                    target = head + (1.0 if rise else -0.6)
                 delta = float(np.clip((target - end) * strength, 0, 4.0))
                 if delta <= 0.2:
                     continue
@@ -715,14 +728,14 @@ try:
         sources = sorted(p.name for p in OUT.iterdir() if p.is_dir() and p.name.startswith("par_")
                          and (p / "s00.wav").exists() and "fix" not in p.name)
         for src in sources:
-            for tag, strength in (("A", 0.6), ("B", 1.0)):
+            for tag, strength, cr in (("B", 1.0, False), ("C", 0.8, True)):
                 variant = f"par_fix{tag}_{src[4:]}"
                 try:
                     rng = np.random.default_rng(7)
                     t, chunks, lifts = time.time(), [], []
                     for j in range(len(cfg["paragraphs"])):
                         w, sr = sf.read(OUT / src / f"s{j:02d}.wav", dtype="float32")
-                        y, lift = fix(w, sr, strength, rng)
+                        y, lift = fix(w, sr, strength, rng, cr)
                         chunks.append(resample(y, sr))
                         lifts.append(round(lift, 2))
                     save_para(variant, chunks, 24000, time.time() - t, cfg["para_pause"])
