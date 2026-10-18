@@ -4,74 +4,32 @@
 Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
 ********
  
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1961.56it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1641.12it/s]
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_t0: 69 s of speech in 166 s
+[qwenpara] par_t0: 69 s of speech in 169 s
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_susp0: 69 s of speech in 167 s
+[qwenpara] par_susp0: 69 s of speech in 168 s
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r0_t0: 70 s of speech in 166 s
+[qwenpara] par_t1: 68 s of speech in 165 s
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r0_t1: 69 s of speech in 167 s
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r0_s0: 71 s of speech in 171 s
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r0_s1: 69 s of speech in 169 s
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r1_t0: 65 s of speech in 157 s
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r1_t1: 67 s of speech in 161 s
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r1_s0: 69 s of speech in 166 s
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-[qwenpara] par_r1_s1: 67 s of speech in 161 s
+[qwenpara] par_susp1: 68 s of speech in 169 s

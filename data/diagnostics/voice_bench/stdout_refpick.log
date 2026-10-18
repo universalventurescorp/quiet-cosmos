@@ -1,14 +1,0 @@
-[refpick] torch 2.14.1+cu130 cuda=True
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 273/587 [00:00<00:00, 2721.02it/s]Loading weights:  93%|█████████▎| 546/587 [00:00<00:00, 2706.51it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2740.72it/s]
-Downloading: "https://github.com/tarepan/SpeechMOS/zipball/v1.2.0" to /root/.cache/torch/hub/v1.2.0.zip
-/kaggle/tmp/voicebench/venv_refpick/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
-  WeightNorm.apply(module, name, dim)
-Downloading: "https://github.com/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt" to /root/.cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt
-  0%|          | 0.00/392M [00:00<?, ?B/s]  0%|          | 384k/392M [00:00<02:01, 3.38MB/s]  1%|          | 2.88M/392M [00:00<00:25, 15.9MB/s]  5%|▌         | 21.0M/392M [00:00<00:04, 91.0MB/s] 13%|█▎        | 52.2M/392M [00:00<00:02, 177MB/s]  21%|██▏       | 84.0M/392M [00:00<00:01, 231MB/s] 29%|██▉       | 114M/392M [00:00<00:01, 257MB/s]  36%|███▋      | 142M/392M [00:00<00:00, 269MB/s] 44%|████▎     | 171M/392M [00:00<00:00, 280MB/s] 51%|█████     | 200M/392M [00:00<00:00, 285MB/s] 58%|█████▊    | 229M/392M [00:01<00:00, 293MB/s] 66%|██████▌   | 258M/392M [00:01<00:00, 293MB/s] 73%|███████▎  | 287M/392M [00:01<00:00, 295MB/s] 82%|████████▏ | 320M/392M [00:01<00:00, 303MB/s] 90%|█████████ | 354M/392M [00:01<00:00, 316MB/s] 98%|█████████▊| 384M/392M [00:01<00:00, 301MB/s]100%|██████████| 392M/392M [00:01<00:00, 258MB/s]
-Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
-[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
-[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
-[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-[refpick] picked [('refcand_2_05.wav', 1.0, 0.897), ('refcand_1_07.wav', 5.405, 0.896)] out of 30/30 usable

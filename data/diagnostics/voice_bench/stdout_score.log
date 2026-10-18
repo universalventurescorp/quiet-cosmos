@@ -1,26 +1,24 @@
 [score] torch 2.14.1+cu130 cuda=True
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 274/587 [00:00<00:00, 2732.53it/s]Loading weights:  93%|█████████▎| 548/587 [00:00<00:00, 2688.71it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2738.26it/s]
-Using cache found in /root/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  44%|████▍     | 259/587 [00:00<00:00, 2576.29it/s]Loading weights:  88%|████████▊ | 517/587 [00:00<00:00, 2539.50it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2589.93it/s]
+Downloading: "https://github.com/tarepan/SpeechMOS/zipball/v1.2.0" to /root/.cache/torch/hub/v1.2.0.zip
 /kaggle/tmp/voicebench/venv_score/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Downloading: "https://github.com/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt" to /root/.cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt
+  0%|          | 0.00/392M [00:00<?, ?B/s]  0%|          | 384k/392M [00:00<01:58, 3.47MB/s]  1%|          | 3.50M/392M [00:00<00:20, 19.7MB/s]  3%|▎         | 10.1M/392M [00:00<00:13, 29.8MB/s]  5%|▌         | 20.1M/392M [00:00<00:09, 42.4MB/s]  8%|▊         | 30.1M/392M [00:00<00:07, 49.7MB/s] 10%|█         | 40.1M/392M [00:00<00:06, 53.3MB/s] 13%|█▎        | 50.1M/392M [00:01<00:06, 55.9MB/s] 15%|█▌        | 60.1M/392M [00:01<00:06, 56.5MB/s] 18%|█▊        | 70.1M/392M [00:01<00:05, 56.7MB/s] 20%|██        | 80.1M/392M [00:01<00:05, 57.5MB/s] 23%|██▎       | 90.1M/392M [00:01<00:05, 57.1MB/s] 26%|██▌       | 100M/392M [00:02<00:05, 55.6MB/s]  28%|██▊       | 110M/392M [00:02<00:05, 57.1MB/s] 31%|███       | 120M/392M [00:02<00:05, 54.8MB/s] 33%|███▎      | 130M/392M [00:02<00:04, 55.2MB/s] 36%|███▌      | 140M/392M [00:02<00:04, 56.4MB/s] 38%|███▊      | 150M/392M [00:02<00:04, 57.2MB/s] 41%|████      | 160M/392M [00:03<00:04, 57.4MB/s] 43%|████▎     | 170M/392M [00:03<00:03, 58.2MB/s] 46%|████▌     | 180M/392M [00:03<00:03, 58.6MB/s] 48%|████▊     | 190M/392M [00:03<00:03, 56.4MB/s] 51%|█████     | 200M/392M [00:03<00:03, 58.2MB/s] 54%|█████▎    | 210M/392M [00:04<00:03, 57.9MB/s] 56%|█████▌    | 220M/392M [00:04<00:03, 57.1MB/s] 59%|█████▊    | 230M/392M [00:04<00:02, 56.8MB/s] 61%|██████    | 240M/392M [00:04<00:02, 57.2MB/s] 64%|██████▍   | 250M/392M [00:04<00:02, 57.4MB/s] 66%|██████▋   | 260M/392M [00:04<00:02, 57.8MB/s] 69%|██████▉   | 270M/392M [00:05<00:02, 57.9MB/s] 71%|███████▏  | 280M/392M [00:05<00:02, 58.2MB/s] 74%|███████▍  | 290M/392M [00:05<00:01, 59.0MB/s] 77%|███████▋  | 300M/392M [00:05<00:01, 58.8MB/s] 79%|███████▉  | 310M/392M [00:05<00:01, 58.9MB/s] 82%|████████▏ | 320M/392M [00:06<00:01, 57.1MB/s] 84%|████████▍ | 330M/392M [00:06<00:01, 37.5MB/s] 87%|████████▋ | 340M/392M [00:06<00:01, 41.7MB/s] 89%|████████▊ | 347M/392M [00:06<00:01, 46.3MB/s] 90%|████████▉ | 353M/392M [00:07<00:01, 41.1MB/s] 92%|█████████▏| 360M/392M [00:07<00:00, 42.9MB/s] 94%|█████████▍| 370M/392M [00:07<00:00, 46.7MB/s] 97%|█████████▋| 380M/392M [00:07<00:00, 50.7MB/s] 99%|█████████▉| 390M/392M [00:07<00:00, 48.7MB/s]100%|██████████| 392M/392M [00:07<00:00, 52.8MB/s]
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 CategoricalEncoder.expect_len was never called: assuming category count of 107 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
 [transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-[score] par_mejor: 69 s of speech in 0 s
+[score] par_mejor: 70 s of speech in 0 s
 [score] emo_plana: CER 0.000  MOS 4.17
-[score] par_r0_s0: CER 0.000  MOS 4.28
-[score] par_r0_s1: CER 0.002  MOS 4.23
-[score] par_r0_t0: CER 0.002  MOS 4.26
-[score] par_r0_t1: CER 0.002  MOS 4.25
-[score] par_r1_s0: CER 0.000  MOS 4.24
-[score] par_r1_s1: CER 0.000  MOS 4.26
-[score] par_r1_t0: CER 0.001  MOS 4.20
-[score] par_r1_t1: CER 0.000  MOS 4.25
+[score] par_fr_t0: CER 0.000  MOS 4.02
+[score] par_fr_t1: CER 0.002  MOS 3.98
 [score] par_susp0: CER 0.000  MOS 4.18
+[score] par_susp1: CER 0.000  MOS 4.18
 [score] par_t0: CER 0.000  MOS 4.19
-[score] par_mejor: CER 0.000  MOS 4.22
+[score] par_t1: CER 0.000  MOS 4.17
+[score] par_mejor: CER 0.000  MOS 4.04
