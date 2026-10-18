@@ -28,18 +28,27 @@ VOICE_EQ["clara"] = VOICE_EQ["documentary"].replace(
 
 
 def mix(narration, music, out, total, music_volume=0.16, lufs=-16, fade_out=6.0, duck=True, voice_eq="clean",
-        voice_pitch_st=0.0):
+        voice_pitch_st=0.0, voice_size_st=0.0):
     try:
-        return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st)
+        return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st,
+                    voice_size_st)
     except Exception:
-        if not voice_pitch_st:
+        if not (voice_pitch_st or voice_size_st):
             raise
-        print("   voice pitch shift failed (no rubberband in ffmpeg?): mixing without it")
-        return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, 0.0)
+        print("   voice pitch/size change failed (no rubberband in ffmpeg?): mixing without it")
+        return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, 0.0, 0.0)
 
 
-def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st):
+def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st, voice_size_st):
     voice = VOICE_EQ.get(voice_eq, VOICE_EQ["clean"]) + ",aformat=channel_layouts=stereo"
+    if voice_size_st:
+        # "bigger" voice (18-oct, Luis: like an older adult, more voice): resonances (formants) lowered by
+        # voice_size_st semitones with the pitch unchanged, plus a little chest and density
+        d, u = 2 ** (-voice_size_st / 12), 2 ** (voice_size_st / 12)
+        voice = (f"rubberband=pitch={d:.5f}:formant=shifted:pitchq=quality,"
+                 f"rubberband=pitch={u:.5f}:formant=preserved:pitchq=quality,"
+                 + voice + ",equalizer=f=140:t=q:w=0.8:g=2.5,"
+                 "acompressor=threshold=-22dB:ratio=2:attack=15:release=250:makeup=1")
     if voice_pitch_st:
         # whole narration a little higher (formants kept, so it is the same man, not a chipmunk)
         voice = (f"rubberband=pitch={2 ** (voice_pitch_st / 12):.5f}:formant=preserved:pitchq=quality,"

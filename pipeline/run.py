@@ -370,7 +370,8 @@ def main():
         step(6, N, "mixing voice and score")
         mix(out / "narration.wav", music, audio, timing["duration"],
             music_volume=cfg["mix"]["music_volume"], lufs=cfg["mix"]["lufs"],
-            voice_eq=cfg["mix"].get("voice_eq", "clean"), voice_pitch_st=cfg["mix"].get("voice_pitch_st", 0.0))
+            voice_eq=cfg["mix"].get("voice_eq", "clean"), voice_pitch_st=cfg["mix"].get("voice_pitch_st", 0.0),
+            voice_size_st=cfg["mix"].get("voice_size_st", 0.0))
 
     # 7. AI scenes back from the GPU: depth maps for 2.5D, slowed clips, placed on their sentences
     ai_media = read_json(out / "ai_media.json", None)
