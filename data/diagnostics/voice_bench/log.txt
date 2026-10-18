@@ -1,12 +1,12 @@
 [   0.3 min] GPUs ['Tesla T4', 'Tesla T4']
-[   2.9 min] qwenref: installed in 2.6 min on GPU 1
-[   5.8 min] fireredtts3: installed in 5.5 min on GPU 0
-[   8.3 min] qwenref: done in 8.0 min
-[   8.4 min] qwenpara: installed in 0.1 min on GPU 1
-[  11.5 min] fireredtts3: done in 11.3 min
-[  20.6 min] qwenpara: done in 12.3 min
-[  20.6 min] prosodyfix: installed in 0.0 min on GPU 0
-[  20.9 min] prosodyfix: done in 0.3 min
-[  21.4 min] score: installed in 0.5 min on GPU 1
-[  32.6 min] score: done in 11.6 min
-[  32.8 min] done
+[   3.1 min] qwenref: installed in 2.8 min on GPU 1
+[   3.2 min] fireredtts3: installed in 2.9 min on GPU 0
+[   7.7 min] qwenref: done in 7.4 min
+[   7.8 min] qwenpara: installed in 0.1 min on GPU 1
+[   9.3 min] fireredtts3: done in 9.0 min
+[  19.5 min] qwenpara: done in 11.7 min
+[  19.5 min] prosodyfix: installed in 0.0 min on GPU 0
+[  19.8 min] prosodyfix: done in 0.3 min
+[  20.0 min] score: installed in 0.2 min on GPU 1
+[  31.2 min] score: done in 11.4 min
+[  31.4 min] done

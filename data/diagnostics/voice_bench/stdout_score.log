@@ -1,36 +1,36 @@
 [score] torch 2.14.1+cu130 cuda=True
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 253/587 [00:00<00:00, 2527.87it/s]Loading weights:  86%|████████▌ | 506/587 [00:00<00:00, 2364.55it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2400.92it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:  40%|████      | 236/587 [00:00<00:00, 2331.52it/s]Loading weights:  86%|████████▋ | 507/587 [00:00<00:00, 2550.85it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 2593.38it/s]
 Downloading: "https://github.com/tarepan/SpeechMOS/zipball/v1.2.0" to /root/.cache/torch/hub/v1.2.0.zip
 /kaggle/tmp/voicebench/venv_score/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Downloading: "https://github.com/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt" to /root/.cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt
-  0%|          | 0.00/392M [00:00<?, ?B/s]  3%|▎         | 10.1M/392M [00:00<00:03, 105MB/s]  6%|▋         | 25.0M/392M [00:00<00:02, 135MB/s] 11%|█         | 42.6M/392M [00:00<00:02, 157MB/s] 15%|█▌        | 60.6M/392M [00:00<00:02, 169MB/s] 20%|██        | 78.9M/392M [00:00<00:01, 177MB/s] 24%|██▍       | 95.9M/392M [00:00<00:03, 93.4MB/s] 28%|██▊       | 109M/392M [00:01<00:03, 78.1MB/s]  30%|███       | 119M/392M [00:01<00:04, 68.7MB/s] 33%|███▎      | 128M/392M [00:01<00:04, 63.8MB/s] 34%|███▍      | 135M/392M [00:01<00:04, 60.9MB/s] 36%|███▌      | 142M/392M [00:01<00:04, 58.2MB/s] 38%|███▊      | 148M/392M [00:01<00:04, 56.8MB/s] 39%|███▉      | 153M/392M [00:02<00:04, 56.5MB/s] 41%|████      | 159M/392M [00:02<00:04, 56.3MB/s] 42%|████▏     | 165M/392M [00:02<00:04, 56.1MB/s] 43%|████▎     | 170M/392M [00:02<00:04, 56.4MB/s] 45%|████▍     | 176M/392M [00:02<00:03, 56.9MB/s] 46%|████▋     | 181M/392M [00:02<00:03, 57.1MB/s] 48%|████▊     | 187M/392M [00:02<00:03, 57.7MB/s] 49%|████▉     | 193M/392M [00:02<00:03, 58.0MB/s] 51%|█████     | 198M/392M [00:02<00:03, 58.2MB/s] 52%|█████▏    | 204M/392M [00:02<00:03, 59.1MB/s] 54%|█████▎    | 210M/392M [00:03<00:03, 59.5MB/s] 55%|█████▌    | 216M/392M [00:03<00:03, 60.4MB/s] 57%|█████▋    | 222M/392M [00:03<00:02, 61.4MB/s] 58%|█████▊    | 228M/392M [00:03<00:02, 61.7MB/s] 60%|█████▉    | 234M/392M [00:03<00:02, 62.0MB/s] 61%|██████▏   | 241M/392M [00:03<00:02, 62.8MB/s] 63%|██████▎   | 247M/392M [00:03<00:02, 63.2MB/s] 65%|██████▍   | 253M/392M [00:03<00:02, 64.0MB/s] 66%|██████▌   | 260M/392M [00:03<00:02, 64.6MB/s] 68%|██████▊   | 266M/392M [00:03<00:02, 65.4MB/s] 70%|██████▉   | 273M/392M [00:04<00:01, 66.0MB/s] 71%|███████   | 279M/392M [00:04<00:01, 66.5MB/s] 73%|███████▎  | 286M/392M [00:04<00:01, 62.6MB/s] 74%|███████▍  | 292M/392M [00:04<00:01, 58.4MB/s] 76%|███████▌  | 298M/392M [00:04<00:01, 54.8MB/s] 77%|███████▋  | 303M/392M [00:04<00:01, 54.1MB/s] 79%|███████▊  | 308M/392M [00:04<00:01, 53.5MB/s] 80%|███████▉  | 313M/392M [00:04<00:01, 53.4MB/s] 81%|████████▏ | 319M/392M [00:04<00:01, 53.3MB/s] 83%|████████▎ | 324M/392M [00:05<00:01, 50.8MB/s] 84%|████████▍ | 329M/392M [00:05<00:01, 46.7MB/s] 85%|████████▍ | 333M/392M [00:05<00:01, 44.6MB/s] 86%|████████▌ | 338M/392M [00:05<00:01, 43.2MB/s] 87%|████████▋ | 342M/392M [00:05<00:01, 41.5MB/s] 88%|████████▊ | 346M/392M [00:05<00:01, 41.5MB/s] 89%|████████▉ | 350M/392M [00:05<00:01, 41.8MB/s] 90%|█████████ | 354M/392M [00:05<00:00, 42.4MB/s] 91%|█████████▏| 359M/392M [00:05<00:00, 42.8MB/s] 93%|█████████▎| 363M/392M [00:06<00:00, 43.4MB/s] 94%|█████████▎| 367M/392M [00:06<00:00, 40.2MB/s] 95%|█████████▍| 371M/392M [00:06<00:00, 37.6MB/s] 96%|█████████▌| 375M/392M [00:06<00:00, 31.7MB/s] 96%|█████████▋| 378M/392M [00:06<00:00, 26.2MB/s] 97%|█████████▋| 381M/392M [00:06<00:00, 23.8MB/s] 98%|█████████▊| 384M/392M [00:07<00:00, 22.8MB/s] 98%|█████████▊| 386M/392M [00:07<00:00, 22.0MB/s] 99%|█████████▉| 388M/392M [00:07<00:00, 20.3MB/s] 99%|█████████▉| 390M/392M [00:07<00:00, 16.9MB/s]100%|█████████▉| 392M/392M [00:07<00:00, 15.6MB/s]100%|██████████| 392M/392M [00:07<00:00, 53.9MB/s]
+  0%|          | 0.00/392M [00:00<?, ?B/s]  3%|▎         | 10.1M/392M [00:00<00:04, 80.6MB/s]  5%|▌         | 20.1M/392M [00:00<00:05, 70.6MB/s]  8%|▊         | 30.2M/392M [00:00<00:04, 82.6MB/s] 10%|█         | 40.1M/392M [00:00<00:04, 85.4MB/s] 13%|█▎        | 50.1M/392M [00:00<00:04, 82.4MB/s] 15%|█▌        | 60.1M/392M [00:00<00:04, 84.8MB/s] 18%|█▊        | 70.1M/392M [00:00<00:04, 83.6MB/s] 20%|██        | 79.1M/392M [00:00<00:03, 86.4MB/s] 22%|██▏       | 87.5M/392M [00:01<00:04, 75.6MB/s] 24%|██▍       | 95.1M/392M [00:01<00:04, 76.6MB/s] 27%|██▋       | 105M/392M [00:01<00:03, 83.2MB/s]  29%|██▉       | 113M/392M [00:01<00:03, 83.8MB/s] 31%|███       | 121M/392M [00:01<00:03, 76.0MB/s] 33%|███▎      | 130M/392M [00:01<00:03, 78.8MB/s] 36%|███▌      | 140M/392M [00:01<00:03, 80.0MB/s] 38%|███▊      | 150M/392M [00:01<00:02, 85.0MB/s] 41%|████      | 160M/392M [00:02<00:02, 85.0MB/s] 43%|████▎     | 170M/392M [00:02<00:02, 89.6MB/s] 46%|████▌     | 180M/392M [00:02<00:02, 84.7MB/s] 48%|████▊     | 190M/392M [00:02<00:02, 89.2MB/s] 51%|█████     | 200M/392M [00:02<00:02, 92.0MB/s] 54%|█████▎    | 210M/392M [00:02<00:02, 83.0MB/s] 56%|█████▌    | 220M/392M [00:02<00:02, 87.5MB/s] 60%|██████    | 236M/392M [00:02<00:01, 107MB/s]  63%|██████▎   | 246M/392M [00:03<00:01, 95.6MB/s] 65%|██████▌   | 256M/392M [00:03<00:01, 92.8MB/s] 68%|██████▊   | 265M/392M [00:03<00:01, 91.0MB/s] 70%|███████   | 275M/392M [00:03<00:01, 93.4MB/s] 72%|███████▏  | 284M/392M [00:03<00:01, 94.7MB/s] 75%|███████▍  | 293M/392M [00:03<00:01, 72.4MB/s] 77%|███████▋  | 301M/392M [00:03<00:01, 51.8MB/s] 79%|███████▉  | 311M/392M [00:04<00:01, 62.1MB/s] 82%|████████▏ | 321M/392M [00:04<00:01, 70.8MB/s] 84%|████████▍ | 330M/392M [00:04<00:00, 76.5MB/s] 87%|████████▋ | 340M/392M [00:04<00:00, 74.2MB/s] 89%|████████▉ | 350M/392M [00:04<00:00, 77.2MB/s] 92%|█████████▏| 360M/392M [00:04<00:00, 82.3MB/s] 94%|█████████▍| 370M/392M [00:04<00:00, 87.9MB/s] 97%|█████████▋| 380M/392M [00:04<00:00, 91.5MB/s] 99%|█████████▉| 390M/392M [00:04<00:00, 94.3MB/s]100%|██████████| 392M/392M [00:04<00:00, 83.1MB/s]
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 Could not parse CUDA device string 'cuda': not enough values to unpack (expected 2, got 1). Falling back to device 0.
 CategoricalEncoder.expect_len was never called: assuming category count of 107 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
 [transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
 [score] par_mejor: 69 s of speech in 0 s
-[score] emo_plana: CER 0.000  MOS 4.20
-[score] par_fixA_fr_t0: CER 0.000  MOS 3.88
-[score] par_fixA_fr_t1: CER 0.002  MOS 3.83
-[score] par_fixA_susp0: CER 0.000  MOS 4.04
-[score] par_fixA_susp1: CER 0.000  MOS 4.01
-[score] par_fixA_t0: CER 0.000  MOS 4.04
-[score] par_fixA_t1: CER 0.000  MOS 4.03
+[score] emo_plana: CER 0.000  MOS 4.18
 [score] par_fixB_fr_t0: CER 0.000  MOS 3.82
 [score] par_fixB_fr_t1: CER 0.002  MOS 3.80
 [score] par_fixB_susp0: CER 0.000  MOS 4.03
 [score] par_fixB_susp1: CER 0.000  MOS 4.01
 [score] par_fixB_t0: CER 0.000  MOS 4.03
 [score] par_fixB_t1: CER 0.000  MOS 4.00
+[score] par_fixC_fr_t0: CER 0.000  MOS 3.68
+[score] par_fixC_fr_t1: CER 0.002  MOS 3.70
+[score] par_fixC_susp0: CER 0.000  MOS 3.89
+[score] par_fixC_susp1: CER 0.000  MOS 3.88
+[score] par_fixC_t0: CER 0.000  MOS 3.90
+[score] par_fixC_t1: CER 0.000  MOS 3.91
 [score] par_fr_t0: CER 0.000  MOS 4.02
 [score] par_fr_t1: CER 0.002  MOS 3.98
 [score] par_susp0: CER 0.000  MOS 4.18
 [score] par_susp1: CER 0.000  MOS 4.18
 [score] par_t0: CER 0.000  MOS 4.19
 [score] par_t1: CER 0.000  MOS 4.17
-[score] par_mejor: CER 0.000  MOS 3.99
+[score] par_mejor: CER 0.000  MOS 3.97
