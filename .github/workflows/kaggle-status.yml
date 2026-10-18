@@ -1,0 +1,25 @@
+name: kaggle-status
+# Diagnóstico rápido (~1 min): estado del script de Kaggle. Los registros de Actions no se pueden leer
+# desde la sesión de Claude, así que el resultado se guarda en la rama "diag".
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  status:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: pip install -q kaggle
+      - env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          [ "${KAGGLE_KEY#KGAT_}" != "$KAGGLE_KEY" ] && export KAGGLE_API_TOKEN="$KAGGLE_KEY"
+          mkdir out
+          { date -u; echo "== status"; kaggle kernels status "$KAGGLE_USERNAME/quiet-cosmos-gen" 2>&1
+            echo "== mine"; kaggle kernels list --mine --sort-by dateRun --page-size 10 2>&1
+            echo "== output files"; mkdir o; kaggle kernels output "$KAGGLE_USERNAME/quiet-cosmos-gen" -p o 2>&1 | tail -5
+            find o -name manifest.json -exec head -c 600 {} \; ; echo; find o -name log.txt -exec tail -40 {} \; ; } > out/kaggle_status.txt
+          cd out && git init -q && git checkout -q -b diag && git add . && \
+            git -c user.name=bot -c user.email=actions@users.noreply.github.com commit -qm status && \
+            git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" diag
