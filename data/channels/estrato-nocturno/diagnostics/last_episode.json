@@ -1,36 +1,36 @@
 {
-  "episode": "europa-el-oc-ano-escondido-bajo-el-hielo-de-j-piter-muestra",
-  "date": "2026-10-18T02:08:47",
+  "episode": "saturno-y-sus-anillos-de-hielo-muestra",
+  "date": "2026-10-18T08:31:58",
   "qa": {
     "ok": true,
     "fails": [],
     "warnings": [],
     "minutes": 6.8,
-    "lufs": -16.1,
-    "shots": 39,
+    "lufs": -10.9,
+    "shots": 41,
     "clips": 1,
-    "ai_scenes": 14,
+    "ai_scenes": 13,
     "ai_clips": 1,
     "ai_status": "ok",
-    "gpu_minutes": 31.4
+    "gpu_minutes": 32.5
   },
   "ai_status": "ok",
   "ai_errors": [],
   "scene_plan": {
     "cold_open": 3,
-    "chapter_1": 6,
-    "chapter_2": 8
+    "chapter_1": 7,
+    "chapter_2": 7
   },
   "gpu_job_images": 17,
   "kaggle_push": {
-    "job_id": "europa-el-oc-ano-escondido-bajo-el-hielo-de-j-piter-20261018011917",
+    "job_id": "saturno-y-sus-anillos-de-hielo-20261018074314",
     "kernel": "universalventures/quiet-cosmos-gen",
-    "pushed_at": 1792286359.835611,
+    "pushed_at": 1792309396.8689885,
     "ok": true,
-    "push_output": "Kernel version 30 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+    "push_output": "Kernel version 38 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
   },
   "kaggle_manifest": {
-    "job_id": "europa-el-oc-ano-escondido-bajo-el-hielo-de-j-piter-20261018011917",
+    "job_id": "saturno-y-sus-anillos-de-hielo-20261018074314",
     "errors": [],
     "gpus": [
       "Tesla T4",
@@ -58,6 +58,7 @@
       "chapter_1_03.jpg",
       "chapter_1_04.jpg",
       "chapter_1_05.jpg",
+      "chapter_1_06.jpg",
       "chapter_2_00.jpg",
       "chapter_2_01.jpg",
       "chapter_2_02.jpg",
@@ -65,33 +66,32 @@
       "chapter_2_04.jpg",
       "chapter_2_05.jpg",
       "chapter_2_06.jpg",
-      "chapter_2_07.jpg",
       "cold_open_00.jpg",
       "cold_open_01.jpg",
       "cold_open_02.jpg"
     ],
     "videos": [
-      "chapter_1_00.mp4",
-      "chapter_2_03.mp4",
-      "cold_open_00.mp4"
+      "chapter_1_04.mp4",
+      "chapter_2_04.mp4",
+      "cold_open_01.mp4"
     ],
-    "minutes": 31.4
+    "minutes": 32.5
   },
   "kaggle_log": [
-    "[   0.4 min] main: packages ready",
-    "[   0.9 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
-    "[   2.9 min] voice: Qwen3-TTS ready, 30 sentences",
-    "[   3.4 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
-    "[   4.1 min] images: 1/17 images (39.8 s each)",
-    "[   6.9 min] voice: GPU 1 narration finished (exit 0)",
-    "[   6.9 min] videos: GPU free after narration, starting clips",
-    "[   6.9 min] voice: narration: 30/30 sentences",
-    "[  10.3 min] images: 11/17 images (31.8 s each)",
-    "[  10.8 min] videos: video model: Lightricks/LTX-Video (torch.float16)",
-    "[  17.7 min] videos: clip 1/3 in 411.6 s",
-    "[  24.5 min] videos: clip 2/3 in 410.6 s",
-    "[  31.4 min] videos: clip 3/3 in 414.9 s",
-    "[  31.4 min] main: finished: 17 images, 3 clips"
+    "[   0.5 min] main: packages ready",
+    "[   1.1 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
+    "[   3.2 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
+    "[   3.7 min] images: 1/17 images (28.2 s each)",
+    "[   4.2 min] voice: Qwen3-TTS ready, 30 sentences",
+    "[   8.2 min] voice: GPU 1 narration finished (exit 0)",
+    "[   8.2 min] videos: GPU free after narration, starting clips",
+    "[   8.2 min] voice: narration: 30/30 sentences",
+    "[   9.4 min] images: 11/17 images (55.6 s each)",
+    "[  11.9 min] videos: video model: Lightricks/LTX-Video (torch.float16)",
+    "[  18.7 min] videos: clip 1/3 in 407.5 s",
+    "[  25.6 min] videos: clip 2/3 in 410.3 s",
+    "[  32.5 min] videos: clip 3/3 in 412.7 s",
+    "[  32.5 min] main: finished: 17 images, 3 clips"
   ],
   "voice": {
     "engine": "qwen",
@@ -116,14 +116,13 @@
       "    ",
       "",
       "Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]",
-      "Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.93it/s]",
-      "Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.83it/s]",
-      "Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.83it/s]",
+      "Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  4.49it/s]",
+      "Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.37it/s]",
+      "Fetching 4 files: 100%|██████████| 4/4 [00:02<00:00,  1.37it/s]",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "[W1018 01:24:36.524343942 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3554672640 bytes (free: 2941059072, total: 15636037632).",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.",
-      "[W1018 01:25:12.022103637 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3835691008 bytes (free: 1691156480, total: 15636037632).",
+      "[W1018 07:50:22.225444542 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3835691008 bytes (free: 267190272, total: 15636037632).",
       "Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation."
     ]
   },
