@@ -1,6 +1,6 @@
 [fireredtts3] torch 2.8.0+cu128 cuda=True
-Loading weights:   0%|          | 0/458 [00:00<?, ?it/s]Loading weights:  10%|█         | 47/458 [00:00<00:00, 469.55it/s]Loading weights:  24%|██▍       | 112/458 [00:00<00:00, 558.50it/s]Loading weights:  37%|███▋      | 168/458 [00:00<00:00, 533.12it/s]Loading weights:  48%|████▊     | 222/458 [00:00<00:00, 509.85it/s]Loading weights: 100%|██████████| 458/458 [00:00<00:00, 997.99it/s]
-Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]Loading weights:   7%|▋         | 45/677 [00:00<00:04, 153.65it/s]Loading weights:  25%|██▍       | 166/677 [00:00<00:01, 499.93it/s]Loading weights:  37%|███▋      | 251/677 [00:00<00:00, 611.43it/s]Loading weights:  75%|███████▍  | 506/677 [00:00<00:00, 1217.89it/s]Loading weights: 100%|██████████| 677/677 [00:00<00:00, 1117.43it/s]
+Loading weights:   0%|          | 0/458 [00:00<?, ?it/s]Loading weights:   6%|▌         | 27/458 [00:00<00:01, 266.17it/s]Loading weights:  12%|█▏        | 55/458 [00:00<00:01, 271.76it/s]Loading weights:  18%|█▊        | 84/458 [00:00<00:01, 275.06it/s]Loading weights:  25%|██▍       | 114/458 [00:00<00:01, 279.73it/s]Loading weights:  34%|███▎      | 154/458 [00:00<00:00, 318.04it/s]Loading weights:  41%|████      | 187/458 [00:00<00:00, 320.41it/s]Loading weights: 100%|██████████| 458/458 [00:00<00:00, 659.18it/s]
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 79/677 [00:00<00:00, 752.69it/s]Loading weights:  23%|██▎       | 155/677 [00:00<00:00, 665.25it/s]Loading weights:  51%|█████     | 344/677 [00:00<00:00, 1178.57it/s]Loading weights: 100%|██████████| 677/677 [00:00<00:00, 1839.60it/s]
 [fireredtts3] FireRedTTS3 loaded
-[fireredtts3] par_fr_t0: 71 s of speech in 132 s
-[fireredtts3] par_fr_t1: 71 s of speech in 133 s
+[fireredtts3] par_fr_t0: 71 s of speech in 139 s
+[fireredtts3] par_fr_t1: 71 s of speech in 134 s

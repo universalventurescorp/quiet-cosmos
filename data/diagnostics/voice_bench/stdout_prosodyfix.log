@@ -1,5 +1,12 @@
-[prosodyfix] Traceback (most recent call last):
-  File "/kaggle/tmp/voicebench/worker.py", line 186, in <module>
-    import torch
-ModuleNotFoundError: No module named 'torch'
-
+[prosodyfix] par_fixA_fr_t0: 71 s of speech in 2 s
+[prosodyfix] par_fixB_fr_t0: 71 s of speech in 1 s
+[prosodyfix] par_fixA_fr_t1: 71 s of speech in 1 s
+[prosodyfix] par_fixB_fr_t1: 71 s of speech in 1 s
+[prosodyfix] par_fixA_susp0: 69 s of speech in 1 s
+[prosodyfix] par_fixB_susp0: 69 s of speech in 1 s
+[prosodyfix] par_fixA_susp1: 68 s of speech in 1 s
+[prosodyfix] par_fixB_susp1: 68 s of speech in 1 s
+[prosodyfix] par_fixA_t0: 69 s of speech in 1 s
+[prosodyfix] par_fixB_t0: 69 s of speech in 1 s
+[prosodyfix] par_fixA_t1: 68 s of speech in 1 s
+[prosodyfix] par_fixB_t1: 68 s of speech in 1 s
