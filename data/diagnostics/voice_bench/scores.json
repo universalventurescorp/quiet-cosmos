@@ -1,207 +1,207 @@
 {
   "emo_plana": {
-    "f0_median_hz": 99,
-    "pitch_var_st": 3.15,
-    "pitch_range_st": 10.5,
-    "between_lines_st": 0.69,
-    "between_lines_span_st": 2.5,
-    "within_line_range_st": 10.0,
-    "loudness_span_db": 3.5,
-    "accent_p_es": 0.928,
-    "accent_min_p_es": 0.192,
+    "f0_median_hz": 100,
+    "pitch_var_st": 3.22,
+    "pitch_range_st": 10.8,
+    "between_lines_st": 1.04,
+    "between_lines_span_st": 4.3,
+    "within_line_range_st": 10.4,
+    "loudness_span_db": 4.3,
+    "accent_p_es": 0.92,
+    "accent_min_p_es": 0.002,
     "accent_p_en": 0.0,
-    "mean_sim": 0.841,
-    "min_sim": 0.669,
-    "declination_st_s": -4.21,
-    "final_fall_st": -5.55,
-    "pct_rising": 6.2,
-    "phrases": 32,
+    "mean_sim": 0.84,
+    "min_sim": 0.623,
+    "declination_st_s": -4.68,
+    "final_fall_st": -5.4,
+    "pct_rising": 9.7,
+    "phrases": 31,
     "mean_cer": 0.0,
     "max_cer": 0.0,
-    "mean_mos": 4.171,
-    "words_per_min": 136,
+    "mean_mos": 4.191,
+    "words_per_min": 130,
     "sentences": [
       {
         "i": 0,
         "cer": 0.0,
-        "mos": 4.298,
+        "mos": 4.247,
         "heard": "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz.",
-        "seconds": 7.0,
-        "f0_hz": 97.4,
-        "range_st": 11.0,
-        "db": -20.9,
-        "p_es": 0.982,
+        "seconds": 7.8,
+        "f0_hz": 96.3,
+        "range_st": 10.4,
+        "db": -20.8,
+        "p_es": 0.997,
         "p_en": 0.0,
-        "sim": 0.899
+        "sim": 0.886
       },
       {
         "i": 1,
         "cer": 0.0,
-        "mos": 4.303,
+        "mos": 4.238,
         "heard": "Al principio parece una estrella más.",
-        "seconds": 2.8,
-        "f0_hz": 104.4,
-        "range_st": 12.0,
-        "db": -21.0,
-        "p_es": 0.915,
+        "seconds": 3.1,
+        "f0_hz": 103.2,
+        "range_st": 11.8,
+        "db": -19.9,
+        "p_es": 0.988,
         "p_en": 0.0,
-        "sim": 0.844
+        "sim": 0.816
       },
       {
         "i": 2,
         "cer": 0.0,
-        "mos": 3.932,
+        "mos": 3.981,
         "heard": "Pero no lo es.",
-        "seconds": 1.4,
-        "f0_hz": 90.4,
-        "range_st": 5.3,
-        "db": -22.2,
-        "p_es": 0.192,
+        "seconds": 1.5,
+        "f0_hz": 105.3,
+        "range_st": 9.6,
+        "db": -19.0,
+        "p_es": 0.002,
         "p_en": 0.0,
-        "sim": 0.669
+        "sim": 0.623
       },
       {
         "i": 3,
         "cer": 0.0,
-        "mos": 3.977,
+        "mos": 4.14,
         "heard": "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido.",
-        "seconds": 7.2,
-        "f0_hz": 95.2,
-        "range_st": 7.1,
-        "db": -20.7,
-        "p_es": 1.0,
+        "seconds": 7.1,
+        "f0_hz": 96.9,
+        "range_st": 8.0,
+        "db": -20.2,
+        "p_es": 0.999,
         "p_en": 0.0,
-        "sim": 0.873
+        "sim": 0.869
       },
       {
         "i": 4,
         "cer": 0.0,
-        "mos": 4.413,
+        "mos": 4.325,
         "heard": "Durante siglos, nadie imaginó lo que escondía.",
-        "seconds": 4.0,
-        "f0_hz": 95.2,
-        "range_st": 10.9,
-        "db": -21.4,
-        "p_es": 0.999,
+        "seconds": 3.3,
+        "f0_hz": 98.6,
+        "range_st": 11.2,
+        "db": -20.5,
+        "p_es": 1.0,
         "p_en": 0.0,
-        "sim": 0.814
+        "sim": 0.866
       },
       {
         "i": 5,
         "cer": 0.0,
-        "mos": 4.202,
+        "mos": 4.265,
         "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos.",
-        "seconds": 8.0,
-        "f0_hz": 101.5,
-        "range_st": 9.4,
-        "db": -19.8,
-        "p_es": 0.994,
+        "seconds": 9.0,
+        "f0_hz": 98.6,
+        "range_st": 10.3,
+        "db": -19.7,
+        "p_es": 0.977,
         "p_en": 0.0,
-        "sim": 0.897
+        "sim": 0.908
       },
       {
         "i": 6,
         "cer": 0.0,
-        "mos": 4.071,
+        "mos": 4.122,
         "heard": "Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
-        "seconds": 6.9,
-        "f0_hz": 99.1,
-        "range_st": 9.1,
-        "db": -20.0,
-        "p_es": 0.997,
+        "seconds": 7.0,
+        "f0_hz": 102.9,
+        "range_st": 9.2,
+        "db": -19.5,
+        "p_es": 0.999,
         "p_en": 0.0,
-        "sim": 0.875
+        "sim": 0.914
       },
       {
         "i": 7,
         "cer": 0.0,
-        "mos": 4.215,
+        "mos": 4.297,
         "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa.",
-        "seconds": 8.9,
-        "f0_hz": 99.1,
-        "range_st": 11.3,
-        "db": -20.0,
-        "p_es": 0.995,
+        "seconds": 8.8,
+        "f0_hz": 103.2,
+        "range_st": 12.6,
+        "db": -20.5,
+        "p_es": 0.999,
         "p_en": 0.0,
-        "sim": 0.889
+        "sim": 0.908
       },
       {
         "i": 8,
         "cer": 0.0,
-        "mos": 4.101,
+        "mos": 4.175,
         "heard": "Y solo había una explicación posible.",
-        "seconds": 2.7,
-        "f0_hz": 103.2,
-        "range_st": 9.5,
-        "db": -18.8,
-        "p_es": 0.976,
+        "seconds": 2.5,
+        "f0_hz": 107.5,
+        "range_st": 14.7,
+        "db": -19.4,
+        "p_es": 0.996,
         "p_en": 0.0,
-        "sim": 0.82
+        "sim": 0.785
       },
       {
         "i": 9,
         "cer": 0.0,
-        "mos": 4.214,
-        "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra.",
-        "seconds": 6.6,
-        "f0_hz": 102.9,
-        "range_st": 12.4,
-        "db": -19.2,
-        "p_es": 1.0,
+        "mos": 4.192,
+        "heard": "Bajo el hielo hay un océano, un océano de agua salada, más profundo que cualquier mar de la Tierra.",
+        "seconds": 7.7,
+        "f0_hz": 96.9,
+        "range_st": 11.3,
+        "db": -20.2,
+        "p_es": 0.998,
         "p_en": 0.0,
-        "sim": 0.882
+        "sim": 0.889
       },
       {
         "i": 10,
         "cer": 0.0,
-        "mos": 4.015,
+        "mos": 4.051,
         "heard": "Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
-        "seconds": 4.5,
-        "f0_hz": 95.8,
-        "range_st": 8.2,
-        "db": -19.6,
+        "seconds": 4.9,
+        "f0_hz": 96.9,
+        "range_st": 8.3,
+        "db": -20.5,
         "p_es": 1.0,
         "p_en": 0.0,
-        "sim": 0.885
+        "sim": 0.9
       },
       {
         "i": 11,
         "cer": 0.0,
-        "mos": 4.339,
+        "mos": 4.29,
         "heard": "Allí abajo, en la oscuridad total, quizá exista vida.",
-        "seconds": 5.0,
-        "f0_hz": 92.8,
-        "range_st": 11.1,
+        "seconds": 4.9,
+        "f0_hz": 93.3,
+        "range_st": 7.9,
         "db": -22.2,
-        "p_es": 0.986,
+        "p_es": 0.987,
         "p_en": 0.0,
-        "sim": 0.795
+        "sim": 0.788
       },
       {
         "i": 12,
         "cer": 0.0,
-        "mos": 4.21,
+        "mos": 4.149,
         "heard": "Nadie lo sabe todavía.",
-        "seconds": 2.0,
-        "f0_hz": 97.2,
-        "range_st": 11.9,
-        "db": -19.9,
-        "p_es": 0.986,
+        "seconds": 2.5,
+        "f0_hz": 83.8,
+        "range_st": 10.6,
+        "db": -23.3,
+        "p_es": 0.94,
         "p_en": 0.0,
-        "sim": 0.797
+        "sim": 0.793
       },
       {
         "i": 13,
         "cer": 0.0,
-        "mos": 4.111,
+        "mos": 4.207,
         "heard": "Respira despacio. La luz de Europa sigue ahí, esperando.",
-        "seconds": 5.4,
-        "f0_hz": 97.4,
-        "range_st": 10.4,
+        "seconds": 5.5,
+        "f0_hz": 94.4,
+        "range_st": 9.4,
         "db": -22.3,
-        "p_es": 0.972,
+        "p_es": 0.995,
         "p_en": 0.0,
-        "sim": 0.834
+        "sim": 0.808
       }
     ]
   },
@@ -1942,116 +1942,152 @@
     ]
   },
   "par_mejor": {
-    "f0_median_hz": 99,
-    "pitch_var_st": 3.56,
-    "pitch_range_st": 12.2,
-    "between_lines_st": 1.2,
-    "between_lines_span_st": 3.7,
-    "within_line_range_st": 11.6,
-    "loudness_span_db": 3.1,
-    "accent_p_es": 0.999,
-    "accent_min_p_es": 0.996,
+    "f0_median_hz": 96,
+    "pitch_var_st": 3.1,
+    "pitch_range_st": 10.7,
+    "between_lines_st": 0.28,
+    "between_lines_span_st": 0.9,
+    "within_line_range_st": 9.6,
+    "loudness_span_db": 1.7,
+    "accent_p_es": 0.995,
+    "accent_min_p_es": 0.979,
     "accent_p_en": 0.0,
-    "mean_sim": 0.883,
-    "min_sim": 0.858,
-    "declination_st_s": -4.38,
-    "final_fall_st": -5.33,
-    "pct_rising": 3.3,
-    "phrases": 30,
+    "mean_sim": 0.916,
+    "min_sim": 0.891,
+    "declination_st_s": -2.79,
+    "final_fall_st": -4.25,
+    "pct_rising": 0.0,
+    "phrases": 32,
     "mean_cer": 0.0,
     "max_cer": 0.0,
-    "mean_mos": 4.212,
-    "words_per_min": 147,
+    "mean_mos": 4.158,
+    "words_per_min": 144,
     "sentences": [
       {
         "i": 0,
         "cer": 0.0,
-        "mos": 4.364,
-        "heard": "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más, pero no lo es.",
-        "seconds": 9.9,
-        "f0_hz": 104.4,
-        "range_st": 14.7,
-        "db": -19.6,
-        "p_es": 0.996,
+        "mos": 4.183,
+        "heard": "Imagina que flotas en silencio muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más. Pero no lo es.",
+        "seconds": 10.3,
+        "f0_hz": 94.1,
+        "range_st": 8.6,
+        "db": -21.1,
+        "p_es": 0.995,
         "p_en": 0.0,
-        "sim": 0.861
+        "sim": 0.928
       },
       {
         "i": 1,
         "cer": 0.0,
-        "mos": 4.227,
+        "mos": 4.158,
         "heard": "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido. Durante siglos, nadie imaginó lo que escondía.",
-        "seconds": 11.1,
-        "f0_hz": 99.1,
-        "range_st": 12.3,
-        "db": -19.5,
-        "p_es": 1.0,
+        "seconds": 10.5,
+        "f0_hz": 95.2,
+        "range_st": 11.8,
+        "db": -19.8,
+        "p_es": 0.999,
         "p_en": 0.0,
-        "sim": 0.895
+        "sim": 0.907
       },
       {
         "i": 2,
         "cer": 0.0,
-        "mos": 4.07,
+        "mos": 3.983,
         "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos. Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
-        "seconds": 14.1,
-        "f0_hz": 107.5,
-        "range_st": 11.9,
-        "db": -18.5,
+        "seconds": 14.2,
+        "f0_hz": 96.9,
+        "range_st": 9.1,
+        "db": -19.6,
         "p_es": 1.0,
         "p_en": 0.0,
-        "sim": 0.906
+        "sim": 0.922
       },
       {
         "i": 3,
         "cer": 0.0,
-        "mos": 4.218,
+        "mos": 4.168,
         "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa. Y solo había una explicación posible.",
-        "seconds": 10.2,
-        "f0_hz": 97.4,
-        "range_st": 10.7,
-        "db": -19.2,
-        "p_es": 0.999,
+        "seconds": 10.8,
+        "f0_hz": 99.1,
+        "range_st": 10.0,
+        "db": -19.5,
+        "p_es": 0.998,
         "p_en": 0.0,
-        "sim": 0.894
+        "sim": 0.921
       },
       {
         "i": 4,
         "cer": 0.0,
-        "mos": 4.191,
+        "mos": 4.199,
         "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra. Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
-        "seconds": 11.2,
-        "f0_hz": 86.8,
-        "range_st": 9.5,
-        "db": -20.6,
+        "seconds": 11.8,
+        "f0_hz": 95.8,
+        "range_st": 9.8,
+        "db": -19.4,
         "p_es": 1.0,
         "p_en": 0.0,
-        "sim": 0.858
+        "sim": 0.93
       },
       {
         "i": 5,
         "cer": 0.0,
-        "mos": 4.205,
-        "heard": "Allí abajo, en la oscuridad total, quizá exista vida. Nadie lo sabe todavía. Respira despacio. La luz de Europa sigue ahí, esperando.",
-        "seconds": 10.3,
-        "f0_hz": 94.7,
-        "range_st": 10.6,
-        "db": -21.6,
-        "p_es": 0.998,
+        "mos": 4.258,
+        "heard": "Allí abajo, en la oscuridad total, quizá exista vida, nadie lo sabe todavía, respira despacio. La luz de Europa sigue ahí, esperando.",
+        "seconds": 10.6,
+        "f0_hz": 95.8,
+        "range_st": 8.5,
+        "db": -21.1,
+        "p_es": 0.979,
         "p_en": 0.0,
-        "sim": 0.884
+        "sim": 0.891
       }
     ],
     "pick": [
-      "par_xv1",
-      "par_t2",
-      "par_t0",
-      "par_t1",
-      "par_xv1",
-      "par_t1"
+      "par_susp0",
+      "par_susp1",
+      "par_susp0",
+      "par_susp0",
+      "par_coma0",
+      "par_susp1"
     ]
   },
   "_para_prosody": {
+    "par_coma0/0": {
+      "declination_st_s": -4.45,
+      "final_fall_st": -5.0,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
+    "par_coma1/0": {
+      "declination_st_s": -4.33,
+      "final_fall_st": -4.9,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
+    "par_pc0/0": {
+      "declination_st_s": -5.55,
+      "final_fall_st": -5.7,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
+    "par_pc1/0": {
+      "declination_st_s": -3.46,
+      "final_fall_st": -4.8,
+      "pct_rising": 20.0,
+      "phrases": 5
+    },
+    "par_susp0/0": {
+      "declination_st_s": -2.58,
+      "final_fall_st": -3.65,
+      "pct_rising": 25.0,
+      "phrases": 4
+    },
+    "par_susp1/0": {
+      "declination_st_s": -2.07,
+      "final_fall_st": -4.9,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
     "par_t0/0": {
       "declination_st_s": -4.84,
       "final_fall_st": -6.15,
@@ -2064,21 +2100,39 @@
       "pct_rising": 0.0,
       "phrases": 5
     },
-    "par_t2/0": {
-      "declination_st_s": -3.62,
-      "final_fall_st": -5.0,
+    "par_coma0/1": {
+      "declination_st_s": -3.91,
+      "final_fall_st": -5.95,
       "pct_rising": 0.0,
       "phrases": 5
     },
-    "par_xv0/0": {
-      "declination_st_s": -5.23,
-      "final_fall_st": -5.4,
+    "par_coma1/1": {
+      "declination_st_s": -4.89,
+      "final_fall_st": -4.8,
       "pct_rising": 0.0,
       "phrases": 5
     },
-    "par_xv1/0": {
-      "declination_st_s": -3.93,
-      "final_fall_st": -4.7,
+    "par_pc0/1": {
+      "declination_st_s": -5.28,
+      "final_fall_st": -5.9,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
+    "par_pc1/1": {
+      "declination_st_s": -4.07,
+      "final_fall_st": -6.9,
+      "pct_rising": 20.0,
+      "phrases": 5
+    },
+    "par_susp0/1": {
+      "declination_st_s": -3.46,
+      "final_fall_st": -5.85,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
+    "par_susp1/1": {
+      "declination_st_s": -2.32,
+      "final_fall_st": -3.6,
       "pct_rising": 0.0,
       "phrases": 5
     },
@@ -2094,23 +2148,41 @@
       "pct_rising": 0.0,
       "phrases": 5
     },
-    "par_t2/1": {
-      "declination_st_s": -5.75,
-      "final_fall_st": -5.45,
+    "par_coma0/2": {
+      "declination_st_s": -7.01,
+      "final_fall_st": -9.3,
       "pct_rising": 0.0,
       "phrases": 5
     },
-    "par_xv0/1": {
-      "declination_st_s": -5.73,
-      "final_fall_st": -7.0,
+    "par_coma1/2": {
+      "declination_st_s": -3.05,
+      "final_fall_st": -5.35,
       "pct_rising": 0.0,
       "phrases": 5
     },
-    "par_xv1/1": {
-      "declination_st_s": -4.83,
-      "final_fall_st": -8.0,
+    "par_pc0/2": {
+      "declination_st_s": -4.28,
+      "final_fall_st": -6.15,
+      "pct_rising": 0.0,
+      "phrases": 6
+    },
+    "par_pc1/2": {
+      "declination_st_s": -6.13,
+      "final_fall_st": -7.35,
       "pct_rising": 0.0,
       "phrases": 5
+    },
+    "par_susp0/2": {
+      "declination_st_s": -3.37,
+      "final_fall_st": -4.25,
+      "pct_rising": 0.0,
+      "phrases": 6
+    },
+    "par_susp1/2": {
+      "declination_st_s": -3.15,
+      "final_fall_st": -5.17,
+      "pct_rising": 0.0,
+      "phrases": 6
     },
     "par_t0/2": {
       "declination_st_s": -6.18,
@@ -2124,23 +2196,41 @@
       "pct_rising": 0.0,
       "phrases": 6
     },
-    "par_t2/2": {
-      "declination_st_s": -4.92,
-      "final_fall_st": -7.6,
-      "pct_rising": 16.7,
-      "phrases": 6
+    "par_coma0/3": {
+      "declination_st_s": -5.55,
+      "final_fall_st": -8.35,
+      "pct_rising": 0.0,
+      "phrases": 4
     },
-    "par_xv0/2": {
-      "declination_st_s": -6.43,
-      "final_fall_st": -7.15,
+    "par_coma1/3": {
+      "declination_st_s": -3.44,
+      "final_fall_st": -6.1,
+      "pct_rising": 25.0,
+      "phrases": 4
+    },
+    "par_pc0/3": {
+      "declination_st_s": -3.34,
+      "final_fall_st": -6.52,
+      "pct_rising": 0.0,
+      "phrases": 4
+    },
+    "par_pc1/3": {
+      "declination_st_s": -2.91,
+      "final_fall_st": -5.53,
+      "pct_rising": 25.0,
+      "phrases": 4
+    },
+    "par_susp0/3": {
+      "declination_st_s": -2.87,
+      "final_fall_st": -4.3,
       "pct_rising": 0.0,
       "phrases": 5
     },
-    "par_xv1/2": {
-      "declination_st_s": -7.63,
-      "final_fall_st": -7.4,
+    "par_susp1/3": {
+      "declination_st_s": -6.05,
+      "final_fall_st": -7.1,
       "pct_rising": 0.0,
-      "phrases": 5
+      "phrases": 4
     },
     "par_t0/3": {
       "declination_st_s": -1.78,
@@ -2154,21 +2244,39 @@
       "pct_rising": 0.0,
       "phrases": 4
     },
-    "par_t2/3": {
-      "declination_st_s": -4.08,
-      "final_fall_st": -9.0,
+    "par_coma0/4": {
+      "declination_st_s": -3.01,
+      "final_fall_st": -6.7,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
+    "par_coma1/4": {
+      "declination_st_s": -3.53,
+      "final_fall_st": -7.55,
       "pct_rising": 0.0,
       "phrases": 4
     },
-    "par_xv0/3": {
-      "declination_st_s": -4.42,
-      "final_fall_st": -8.6,
+    "par_pc0/4": {
+      "declination_st_s": -4.98,
+      "final_fall_st": -8.05,
       "pct_rising": 0.0,
       "phrases": 4
     },
-    "par_xv1/3": {
-      "declination_st_s": -3.45,
-      "final_fall_st": -8.72,
+    "par_pc1/4": {
+      "declination_st_s": -5.0,
+      "final_fall_st": -6.4,
+      "pct_rising": 0.0,
+      "phrases": 5
+    },
+    "par_susp0/4": {
+      "declination_st_s": -3.98,
+      "final_fall_st": -7.77,
+      "pct_rising": 0.0,
+      "phrases": 4
+    },
+    "par_susp1/4": {
+      "declination_st_s": -5.55,
+      "final_fall_st": -7.83,
       "pct_rising": 0.0,
       "phrases": 4
     },
@@ -2184,23 +2292,41 @@
       "pct_rising": 0.0,
       "phrases": 4
     },
-    "par_t2/4": {
-      "declination_st_s": -5.15,
-      "final_fall_st": -6.55,
+    "par_coma0/5": {
+      "declination_st_s": -5.08,
+      "final_fall_st": -5.05,
       "pct_rising": 0.0,
-      "phrases": 4
+      "phrases": 6
     },
-    "par_xv0/4": {
-      "declination_st_s": -5.2,
-      "final_fall_st": -7.65,
+    "par_coma1/5": {
+      "declination_st_s": -3.96,
+      "final_fall_st": -4.4,
       "pct_rising": 0.0,
-      "phrases": 4
+      "phrases": 6
     },
-    "par_xv1/4": {
-      "declination_st_s": -3.97,
-      "final_fall_st": -6.62,
+    "par_pc0/5": {
+      "declination_st_s": -5.78,
+      "final_fall_st": -3.1,
       "pct_rising": 0.0,
-      "phrases": 4
+      "phrases": 6
+    },
+    "par_pc1/5": {
+      "declination_st_s": -6.62,
+      "final_fall_st": -5.1,
+      "pct_rising": 0.0,
+      "phrases": 7
+    },
+    "par_susp0/5": {
+      "declination_st_s": -7.84,
+      "final_fall_st": -4.5,
+      "pct_rising": 0.0,
+      "phrases": 7
+    },
+    "par_susp1/5": {
+      "declination_st_s": -2.75,
+      "final_fall_st": -2.5,
+      "pct_rising": 0.0,
+      "phrases": 7
     },
     "par_t0/5": {
       "declination_st_s": -5.63,
@@ -2213,24 +2339,618 @@
       "final_fall_st": -4.0,
       "pct_rising": 14.3,
       "phrases": 7
-    },
-    "par_t2/5": {
-      "declination_st_s": -5.65,
-      "final_fall_st": -5.78,
-      "pct_rising": 0.0,
-      "phrases": 6
-    },
-    "par_xv0/5": {
-      "declination_st_s": -4.68,
-      "final_fall_st": -3.78,
-      "pct_rising": 0.0,
-      "phrases": 6
-    },
-    "par_xv1/5": {
-      "declination_st_s": -8.54,
-      "final_fall_st": -4.75,
-      "pct_rising": 0.0,
-      "phrases": 7
     }
+  },
+  "par_coma0": {
+    "f0_median_hz": 99,
+    "pitch_var_st": 3.33,
+    "pitch_range_st": 11.2,
+    "between_lines_st": 0.74,
+    "between_lines_span_st": 2.1,
+    "within_line_range_st": 11.0,
+    "loudness_span_db": 1.2,
+    "accent_p_es": 0.999,
+    "accent_min_p_es": 0.996,
+    "accent_p_en": 0.0,
+    "mean_sim": 0.904,
+    "min_sim": 0.881,
+    "declination_st_s": -5.07,
+    "final_fall_st": -5.88,
+    "pct_rising": 0.0,
+    "phrases": 30,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.219,
+    "words_per_min": 148,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.289,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más, pero no lo es.",
+        "seconds": 10.8,
+        "f0_hz": 108.4,
+        "range_st": 12.1,
+        "db": -19.7,
+        "p_es": 0.996,
+        "p_en": 0.0,
+        "sim": 0.904
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.211,
+        "heard": "Es Europa. Una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido. Durante siglos, nadie imaginó lo que escondía.",
+        "seconds": 10.1,
+        "f0_hz": 96.3,
+        "range_st": 9.0,
+        "db": -19.5,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.888
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.037,
+        "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos. Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
+        "seconds": 13.2,
+        "f0_hz": 97.4,
+        "range_st": 10.4,
+        "db": -19.8,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.916
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.309,
+        "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa, y solo había una explicación posible.",
+        "seconds": 10.3,
+        "f0_hz": 99.7,
+        "range_st": 13.0,
+        "db": -19.3,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.904
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.199,
+        "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra. Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+        "seconds": 11.8,
+        "f0_hz": 95.8,
+        "range_st": 9.8,
+        "db": -19.4,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.93
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.268,
+        "heard": "Allí abajo, en la oscuridad total, quizá exista vida, nadie lo sabe todavía. Respira despacio. La luz de Europa sigue ahí, esperando.",
+        "seconds": 10.2,
+        "f0_hz": 96.9,
+        "range_st": 11.6,
+        "db": -20.5,
+        "p_es": 0.998,
+        "p_en": 0.0,
+        "sim": 0.881
+      }
+    ]
+  },
+  "par_coma1": {
+    "f0_median_hz": 99,
+    "pitch_var_st": 3.13,
+    "pitch_range_st": 10.7,
+    "between_lines_st": 0.84,
+    "between_lines_span_st": 2.8,
+    "within_line_range_st": 10.4,
+    "loudness_span_db": 3.1,
+    "accent_p_es": 0.999,
+    "accent_min_p_es": 0.997,
+    "accent_p_en": 0.0,
+    "mean_sim": 0.898,
+    "min_sim": 0.869,
+    "declination_st_s": -4.33,
+    "final_fall_st": -5.1,
+    "pct_rising": 3.4,
+    "phrases": 29,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.191,
+    "words_per_min": 145,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.234,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más, pero no lo es.",
+        "seconds": 10.5,
+        "f0_hz": 99.7,
+        "range_st": 10.6,
+        "db": -20.5,
+        "p_es": 0.997,
+        "p_en": 0.0,
+        "sim": 0.897
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.161,
+        "heard": "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido, durante siglos nadie imaginó lo que escondía.",
+        "seconds": 10.5,
+        "f0_hz": 95.8,
+        "range_st": 9.3,
+        "db": -20.1,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.901
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.1,
+        "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos. Aquel hielo era demasiado liso. No tenía cráteres como si algo lo renovara desde abajo.",
+        "seconds": 13.2,
+        "f0_hz": 99.7,
+        "range_st": 9.9,
+        "db": -19.5,
+        "p_es": 0.998,
+        "p_en": 0.0,
+        "sim": 0.916
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.242,
+        "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa y solo había una explicación posible.",
+        "seconds": 10.3,
+        "f0_hz": 105.6,
+        "range_st": 11.7,
+        "db": -18.7,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.894
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.146,
+        "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra. Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+        "seconds": 11.8,
+        "f0_hz": 96.9,
+        "range_st": 10.8,
+        "db": -19.3,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.914
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.265,
+        "heard": "Allí abajo, en la oscuridad total, quizá exista vida. Nadie lo sabe todavía. Respira despacio. La luz de Europa sigue ahí, esperando.",
+        "seconds": 11.4,
+        "f0_hz": 89.9,
+        "range_st": 10.0,
+        "db": -21.8,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.869
+      }
+    ]
+  },
+  "par_pc0": {
+    "f0_median_hz": 100,
+    "pitch_var_st": 3.31,
+    "pitch_range_st": 11.4,
+    "between_lines_st": 0.55,
+    "between_lines_span_st": 1.7,
+    "within_line_range_st": 10.6,
+    "loudness_span_db": 2.2,
+    "accent_p_es": 0.999,
+    "accent_min_p_es": 0.998,
+    "accent_p_en": 0.0,
+    "mean_sim": 0.909,
+    "min_sim": 0.892,
+    "declination_st_s": -4.85,
+    "final_fall_st": -6.1,
+    "pct_rising": 0.0,
+    "phrases": 30,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.223,
+    "words_per_min": 147,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.293,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más, pero no lo es.",
+        "seconds": 10.3,
+        "f0_hz": 97.4,
+        "range_st": 12.1,
+        "db": -20.3,
+        "p_es": 0.998,
+        "p_en": 0.0,
+        "sim": 0.916
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.227,
+        "heard": "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido. Durante siglos, nadie imaginó lo que escondía.",
+        "seconds": 10.6,
+        "f0_hz": 101.5,
+        "range_st": 10.9,
+        "db": -19.9,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.892
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.132,
+        "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos. Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
+        "seconds": 14.3,
+        "f0_hz": 104.4,
+        "range_st": 9.3,
+        "db": -18.8,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.929
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.253,
+        "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa. Y solo había una explicación posible.",
+        "seconds": 10.0,
+        "f0_hz": 99.7,
+        "range_st": 11.2,
+        "db": -19.2,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.902
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.111,
+        "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra. Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+        "seconds": 10.9,
+        "f0_hz": 94.7,
+        "range_st": 10.4,
+        "db": -19.1,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.921
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.323,
+        "heard": "Allí abajo, en la oscuridad total, quizá exista vida. Nadie lo sabe todavía. Respira despacio. La luz de Europa sigue ahí, esperando.",
+        "seconds": 10.8,
+        "f0_hz": 97.4,
+        "range_st": 9.8,
+        "db": -21.0,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.894
+      }
+    ]
+  },
+  "par_pc1": {
+    "f0_median_hz": 99,
+    "pitch_var_st": 3.31,
+    "pitch_range_st": 11.2,
+    "between_lines_st": 0.4,
+    "between_lines_span_st": 1.2,
+    "within_line_range_st": 11.4,
+    "loudness_span_db": 2.1,
+    "accent_p_es": 0.998,
+    "accent_min_p_es": 0.994,
+    "accent_p_en": 0.0,
+    "mean_sim": 0.902,
+    "min_sim": 0.872,
+    "declination_st_s": -4.76,
+    "final_fall_st": -5.5,
+    "pct_rising": 9.7,
+    "phrases": 31,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.191,
+    "words_per_min": 143,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.242,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más. Pero no lo es.",
+        "seconds": 10.8,
+        "f0_hz": 99.7,
+        "range_st": 11.0,
+        "db": -21.0,
+        "p_es": 0.994,
+        "p_en": 0.0,
+        "sim": 0.905
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.219,
+        "heard": "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido. Durante siglos, nadie imaginó lo que escondía.",
+        "seconds": 11.2,
+        "f0_hz": 100.9,
+        "range_st": 11.4,
+        "db": -19.4,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.872
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.064,
+        "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos. Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
+        "seconds": 13.8,
+        "f0_hz": 96.0,
+        "range_st": 11.0,
+        "db": -19.3,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.917
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.15,
+        "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa. Y solo había una explicación posible.",
+        "seconds": 10.2,
+        "f0_hz": 98.6,
+        "range_st": 11.8,
+        "db": -19.8,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.916
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.219,
+        "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra. Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+        "seconds": 12.1,
+        "f0_hz": 97.2,
+        "range_st": 11.9,
+        "db": -19.9,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.925
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.253,
+        "heard": "Allí abajo, en la oscuridad total, quizá exista vida. Nadie lo sabe todavía. Respira despacio. La luz de Europa sigue ahí, esperando.",
+        "seconds": 10.7,
+        "f0_hz": 94.1,
+        "range_st": 11.1,
+        "db": -21.4,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.88
+      }
+    ]
+  },
+  "par_susp0": {
+    "f0_median_hz": 96,
+    "pitch_var_st": 3.04,
+    "pitch_range_st": 10.4,
+    "between_lines_st": 0.39,
+    "between_lines_span_st": 1.1,
+    "within_line_range_st": 10.6,
+    "loudness_span_db": 1.7,
+    "accent_p_es": 0.998,
+    "accent_min_p_es": 0.993,
+    "accent_p_en": 0.0,
+    "mean_sim": 0.904,
+    "min_sim": 0.869,
+    "declination_st_s": -3.74,
+    "final_fall_st": -4.95,
+    "pct_rising": 0.0,
+    "phrases": 31,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.178,
+    "words_per_min": 143,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.183,
+        "heard": "Imagina que flotas en silencio muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más. Pero no lo es.",
+        "seconds": 10.3,
+        "f0_hz": 94.1,
+        "range_st": 8.6,
+        "db": -21.1,
+        "p_es": 0.995,
+        "p_en": 0.0,
+        "sim": 0.928
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.236,
+        "heard": "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido. Durante siglos, nadie imaginó lo que escondía.",
+        "seconds": 10.7,
+        "f0_hz": 97.4,
+        "range_st": 11.5,
+        "db": -19.4,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.875
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 3.983,
+        "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos. Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
+        "seconds": 14.2,
+        "f0_hz": 96.9,
+        "range_st": 9.1,
+        "db": -19.6,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.922
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.168,
+        "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa. Y solo había una explicación posible.",
+        "seconds": 10.8,
+        "f0_hz": 99.1,
+        "range_st": 10.0,
+        "db": -19.5,
+        "p_es": 0.998,
+        "p_en": 0.0,
+        "sim": 0.921
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.193,
+        "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra, contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+        "seconds": 11.5,
+        "f0_hz": 93.0,
+        "range_st": 11.9,
+        "db": -19.4,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.912
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.307,
+        "heard": "Allí abajo, en la oscuridad total, quizá exista vida. Nadie lo sabe todavía. Respira despacio. La luz de Europa sigue ahí, esperando.",
+        "seconds": 11.3,
+        "f0_hz": 98.0,
+        "range_st": 12.3,
+        "db": -20.8,
+        "p_es": 0.993,
+        "p_en": 0.0,
+        "sim": 0.869
+      }
+    ]
+  },
+  "par_susp1": {
+    "f0_median_hz": 99,
+    "pitch_var_st": 3.25,
+    "pitch_range_st": 11.4,
+    "between_lines_st": 0.59,
+    "between_lines_span_st": 1.8,
+    "within_line_range_st": 10.5,
+    "loudness_span_db": 1.8,
+    "accent_p_es": 0.995,
+    "accent_min_p_es": 0.979,
+    "accent_p_en": 0.0,
+    "mean_sim": 0.908,
+    "min_sim": 0.876,
+    "declination_st_s": -3.05,
+    "final_fall_st": -4.9,
+    "pct_rising": 0.0,
+    "phrases": 31,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.176,
+    "words_per_min": 144,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.161,
+        "heard": "Imagina que flotas en silencio, muy lejos de casa, y frente a ti aparece un pequeño punto de luz. Al principio parece una estrella más, pero no lo es.",
+        "seconds": 10.7,
+        "f0_hz": 96.9,
+        "range_st": 9.1,
+        "db": -20.8,
+        "p_es": 0.993,
+        "p_en": 0.0,
+        "sim": 0.917
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.158,
+        "heard": "Es Europa, una luna de Júpiter cubierta por una corteza de hielo blanco, cruzada por grietas color óxido. Durante siglos, nadie imaginó lo que escondía.",
+        "seconds": 10.5,
+        "f0_hz": 95.2,
+        "range_st": 11.8,
+        "db": -19.8,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.907
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.05,
+        "heard": "En 1979, las sondas Voyager pasaron cerca y tomaron fotografías que desconcertaron a los científicos. Aquel hielo era demasiado liso. No tenía cráteres, como si algo lo renovara desde abajo.",
+        "seconds": 14.6,
+        "f0_hz": 98.6,
+        "range_st": 8.8,
+        "db": -19.7,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.928
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.258,
+        "heard": "Años después, la sonda Galileo midió algo extraño. El campo magnético de Júpiter se torcía al pasar por Europa. Y solo había una explicación posible.",
+        "seconds": 10.2,
+        "f0_hz": 105.6,
+        "range_st": 13.9,
+        "db": -19.7,
+        "p_es": 0.999,
+        "p_en": 0.0,
+        "sim": 0.876
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.173,
+        "heard": "Bajo el hielo hay un océano. Un océano de agua salada, más profundo que cualquier mar de la Tierra. Contiene más del doble de agua que todos los océanos de nuestro planeta juntos.",
+        "seconds": 11.7,
+        "f0_hz": 99.1,
+        "range_st": 10.9,
+        "db": -19.3,
+        "p_es": 1.0,
+        "p_en": 0.0,
+        "sim": 0.93
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.258,
+        "heard": "Allí abajo, en la oscuridad total, quizá exista vida, nadie lo sabe todavía, respira despacio. La luz de Europa sigue ahí, esperando.",
+        "seconds": 10.6,
+        "f0_hz": 95.8,
+        "range_st": 8.5,
+        "db": -21.1,
+        "p_es": 0.979,
+        "p_en": 0.0,
+        "sim": 0.891
+      }
+    ]
   }
 }
