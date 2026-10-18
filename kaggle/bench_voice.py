@@ -660,6 +660,23 @@ try:
                 log(f"{variant} failed: {traceback.format_exc()[-1200:]}")
                 break
 
+    elif engine == "refedit":
+        # the channel clip with a storyteller melody (pipeline/prosody.py, modes C and REF): the clone copies the
+        # delivery of its reference, so the episode audio itself is never processed (no PSOLA tremor)
+        pmod = {}
+        exec(cfg["prosody_src"], pmod)
+        w, sr = sf.read(OUT / "ref_narrador.wav", dtype="float32")
+        w = w if w.ndim == 1 else w.mean(1)
+        picked = []
+        for k, mode in enumerate(["C", "REF"]):
+            y = pmod["edit"](w, sr, mode)
+            f = f"ref_editada_{mode}.wav"
+            sf.write(OUT / f, y, sr)
+            picked.append({"file": f, "text": cfg["narrator_ref_text"], "mode": mode})
+        json.dump({"picked": picked}, open(OUT / "refpick.json", "w"), indent=1, ensure_ascii=False)
+        res["variants"]["refedit"] = {"n": len(picked)}
+        log("edited reference clips: " + ", ".join(p["file"] for p in picked))
+
     elif engine == "prosodyfix":
         # "voz de narrador": edit the pitch contour of each paragraph take (Praat PSOLA, timbre untouched). Inner
         # phrases stop sounding final: their end is lifted toward the phrase's own starting level (reference
@@ -1129,6 +1146,7 @@ ENGINES = {
     "score": ("3.11", ["torch", "torchaudio", "transformers>=4.45", "accelerate", "librosa", "num2words", "soundfile",
                        "speechbrain"], []),
     "prosodyfix": ("3.11", ["numpy", "soundfile", "librosa", "praat-parselmouth"], []),
+    "refedit": ("3.11", ["numpy", "soundfile", "praat-parselmouth"], []),
     "fireredtts3": ("3.11", [], ["sox"]),          # installed from its repo (see install_fireredtts3)
     # emotion bench
     "qwenref": ("3.12", ["qwen-tts", "soundfile", "librosa"], ["sox"]),
@@ -1323,7 +1341,18 @@ def main():
         if job.get("nocturno"):
             M.update(native_designs={"n1": N1_DESIGN}, emo_groups=SUBTLE_GROUPS, min_sim=0.75, seeds=5,
                      anchor_ref=str(OUT / "ref_narrador.wav"))
-        if job.get("mejor2"):
+        if job.get("mejor3"):
+            # the reference clip re-intoned (C / REF), then paragraphs cloned from it: natural audio, new melody
+            M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE, prosody_src=job.get("prosody_src"))
+            run_engine("refedit", 0, timeout=20 * 60)
+            two = len(M["gpus"]) > 1
+            t1 = threading.Thread(target=run_engine, args=("qwenref", 1 if two else 0, 40 * 60))
+            t1.start()
+            run_engine("qwenpara", 0, timeout=150 * 60)
+            t1.join()
+            run_engine("score", 1 if two else 0)
+            want = []
+        elif job.get("mejor2"):
             # no tremor: many takes of the production setting + the production melody edit (D/E, spliced), picked
             # per paragraph only if it is as natural as the best untouched take (MOS within 0.12)
             M.update(paragraphs=PARAGRAPHS, para_pause=PARA_PAUSE, para_seeds=6, prosody_src=job.get("prosody_src"),

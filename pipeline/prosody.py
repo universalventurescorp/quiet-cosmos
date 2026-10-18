@@ -23,6 +23,9 @@ MODES = {
     "C": (0.8, 1.5, -0.6, 4.0, True, False),
     "D": (0.9, 1.2, -0.8, 2.5, True, True),
     "E": (0.7, 1.0, -1.0, 1.8, True, True),
+    # only for the 10-second REFERENCE clip the voice clone imitates (never for episode audio): a strong storyteller
+    # melody, so the TTS itself speaks that way and the episode audio needs no editing at all
+    "REF": (1.0, 2.0, -0.3, 4.0, True, False),
 }
 
 
