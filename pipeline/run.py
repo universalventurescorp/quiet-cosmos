@@ -84,7 +84,7 @@ def video_bench(cfg, kind="video"):
     ai = out / "ai"
     if manifest is not None:
         manifest["push"] = state
-    for p in (sorted(ai.glob("*.mp3")) + sorted(ai.glob("scores.json")) + sorted(ai.glob("*.log"))
+    for p in (sorted(ai.glob("*.mp3")) + sorted(ai.glob("scores.json")) + sorted(ai.glob("refpick.json")) + sorted(ai.glob("*.log"))
               + sorted(ai.glob("log.txt"))) if ai.exists() else []:
         shutil.copy(p, prev / p.name)          # voice bench: listening files, scores, per-engine logs
     if job.get("engines") and (prev / "scores.json").exists():
