@@ -10,3 +10,4 @@ google-auth
 google-auth-oauthlib
 transformers>=4.45
 kaggle
+praat-parselmouth

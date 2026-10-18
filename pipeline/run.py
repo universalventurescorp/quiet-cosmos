@@ -263,10 +263,12 @@ def main():
     if not args.voice_bench and opt.startswith("voz="):
         # try a narration mode on one run without touching the channel config: bench_engines = "voz=parrafo" or
         # "voz=parrafo..." (paragraphs, inner sentence ends read as a suspension)
-        mode = opt[4:]
+        mode, _, pe = opt[4:].partition("+")       # "voz=parrafo...+C" also edits the melody (pipeline/prosody.py)
+        voice_cfg["pitch_edit"] = pe or None
         voice_cfg["unit"] = "paragraph" if mode.startswith("parrafo") else "sentence"
         voice_cfg["inner_end"] = mode[len("parrafo"):] or None if mode.startswith("parrafo") else None
-        print(f"   voice mode for this run: {voice_cfg['unit']} {voice_cfg.get('inner_end') or ''}")
+        print(f"   voice mode for this run: {voice_cfg['unit']} {voice_cfg.get('inner_end') or ''} "
+              f"pitch edit {voice_cfg.get('pitch_edit')}")
     gpu_voice = voice_cfg.get("engine", "kokoro") == "qwen"
     out = ROOT / "outputs" / (slugify(topic) + ("-muestra" if sample else ""))
     out.mkdir(parents=True, exist_ok=True)

@@ -253,7 +253,8 @@ class Track:
         self.n += len(audio)
         self.cues += timed_chunks(start, self.t, sentence, max_chars)
 
-    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84, unit="sentence", inner_end=None):
+    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84, unit="sentence", inner_end=None,
+             pitch_edit=None):
         paras = paragraphs(text)
         for pi, p in enumerate(paras):
             groups = units(p, unit)
@@ -262,6 +263,9 @@ class Track:
                     self.speech(voice.say(g[0]), g[0], max_chars)
                 else:
                     a = tighten(voice.say(spoken(g, inner_end)))
+                    if pitch_edit:
+                        from .prosody import edit
+                        a = edit(a, SR, pitch_edit)
                     start = self.t
                     self.parts.append(a)
                     self.n += len(a)
@@ -296,12 +300,13 @@ def synthesize(script, cfg, out_dir, voice=None):
     timing = {"chapters": []}
     unit = v.get("unit", "sentence") if isinstance(voice, PrecomputedVoice) else "sentence"
     inner_end = v.get("inner_end") if unit == "paragraph" else None
+    pitch_edit = v.get("pitch_edit") if unit == "paragraph" else None
 
     tr.silence(LEAD)
     if script.get("cold_open"):
         s = tr.t
         tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8, v["pause_paragraph"] * 0.8, unit=unit,
-                inner_end=inner_end)
+                inner_end=inner_end, pitch_edit=pitch_edit)
         timing["cold_open"] = {"start": s, "end": tr.t}
         print(f"  voiced cold open ({tr.t:.0f} s)")
     s = tr.t + 0.6
@@ -312,7 +317,7 @@ def synthesize(script, cfg, out_dir, voice=None):
         start = tr.t
         tr.silence(CHAPTER_LEAD)
         tr.text(voice, ch["text"], v["pause_sentence"], v["pause_paragraph"], unit=unit,
-                inner_end=inner_end)
+                inner_end=inner_end, pitch_edit=pitch_edit)
         if ci < len(script["chapters"]) - 1:
             tr.silence(v["pause_chapter"])
         timing["chapters"].append({"title": ch["title"], "start": start, "end": tr.t})
@@ -336,7 +341,8 @@ def synthesize_short(text, cfg, out_wav, speed=1.0, voice=None):
     tr.silence(0.25)
     unit = cfg["voice"].get("unit", "sentence") if isinstance(voice, PrecomputedVoice) else "sentence"
     inner_end = cfg["voice"].get("inner_end") if unit == "paragraph" else None
-    tr.text(voice, text, 0.22, 0.35, max_chars=22, unit=unit, inner_end=inner_end)
+    pitch_edit = cfg["voice"].get("pitch_edit") if unit == "paragraph" else None
+    tr.text(voice, text, 0.22, 0.35, max_chars=22, unit=unit, inner_end=inner_end, pitch_edit=pitch_edit)
     tr.silence(0.9)
     sf.write(out_wav, tr.audio(), SR)
     return tr.t, tr.cues
