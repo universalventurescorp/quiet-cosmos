@@ -68,5 +68,19 @@
     "ai_scenes": 103,
     "ai_status": "ok",
     "date": "2026-10-17"
+  },
+  {
+    "topic": "Jupiter's Great Red Spot and the storms of the giant planets",
+    "title": "Jupiter's Great Red Spot | A Calm Journey Through Giant Storms to Sleep To",
+    "video_id": "b7ir7J44ggs",
+    "shorts": [
+      "KXvRyJoLZac",
+      "i56jgmVRzYY"
+    ],
+    "minutes": 52.9,
+    "qa_ok": true,
+    "ai_scenes": 0,
+    "ai_status": "kaggle failed or timed out",
+    "date": "2026-10-19"
   }
 ]
