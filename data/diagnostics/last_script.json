@@ -1,557 +1,535 @@
 {
-  "title": "Jupiter's Great Red Spot | A Calm Journey Through Giant Storms to Sleep To",
-  "description": "Jupiter's Great Red Spot is the largest known storm in the solar system, a vast whirl of wind that has turned in the clouds of Jupiter for at least a century and a half, and probably far longer. In this calm, slow documentary we drift down through its clouds, follow the story of how it was discovered and measured, and then travel on to the storms of Saturn, Uranus and Neptune to see what weather looks like on worlds without a surface.\n\nTake your time and let the narration carry you. We stay with what the Hubble Space Telescope, Voyager, Galileo, Cassini, Juno and the James Webb Space Telescope have really measured, and we say plainly where the questions are still open. It is a gentle episode for relaxing, learning something real, and falling asleep to.",
+  "title": "The Life and Death of Stars | Relaxing Space Documentary for Sleep",
+  "description": "The life and death of stars is the longest story the universe tells, and this calm documentary walks through all of it, from a cold cloud of gas to a white dwarf, a neutron star or a black hole. Drift through glowing nebulae, watch a young star ignite, and follow the real images from Hubble, Webb, Chandra and other observatories that let us read each chapter of that story.\n\nSettle in and let the narration carry you at a slow pace through stellar nurseries, quiet decades of hydrogen burning, swollen red giants, planetary nebulae, supernova remnants and the strangest objects matter can become. Every fact comes from well-established science, and the open questions are marked as open. Come back to it whenever you want to learn something real and unwind.",
   "tags": [
-    "Great Red Spot",
-    "Jupiter's Great Red Spot",
-    "Jupiter storm",
-    "Jupiter documentary",
-    "space documentary for sleep",
+    "life and death of stars",
+    "stellar evolution documentary",
+    "how do stars form",
+    "how do stars die",
     "relaxing space documentary",
-    "giant planet storms",
-    "Saturn hexagon",
-    "Neptune Great Dark Spot",
-    "Juno mission Jupiter",
-    "Jupiter atmosphere",
-    "storms on other planets",
-    "calm space video to fall asleep",
-    "Jupiter Hubble",
-    "gas giants explained",
-    "solar system storms",
-    "Uranus weather",
-    "Jupiter clouds"
+    "space documentary for sleep",
+    "nebula to black hole",
+    "supernova explained",
+    "white dwarf",
+    "neutron star",
+    "black hole formation",
+    "star formation Hubble",
+    "Webb telescope nebula",
+    "calm space video",
+    "falling asleep space facts",
+    "life cycle of a star"
   ],
   "thumbnail_texts": [
-    "THE STORM THAT STAYS",
-    "A WIND WITHOUT A FLOOR",
-    "THREE CENTURIES OF RAIN"
+    "BORN FROM DARKNESS",
+    "THE LAST LIGHT",
+    "ASHES OF A STAR"
   ],
-  "hook_promise": "A single storm wider than Earth has been turning in Jupiter's clouds for at least 150 years, and the newest measurements show it is shrinking and reaching far deeper than anyone expected.",
+  "hook_promise": "Nearly every atom in your body, the calcium in your bones and the iron in your blood, was forged inside stars that lived and died long before the Sun existed.",
   "chapters": [
     {
-      "title": "The Eye of Jupiter",
-      "question": "What is that red oval staring back from the largest planet?",
-      "reveal": "The Great Red Spot is a storm wide enough to swallow Earth, spinning in a counter-clockwise turn once every several Earth days.",
+      "title": "A Cold Cloud in the Dark",
+      "question": "How can something as empty as a cloud of gas become a star?",
+      "reveal": "The space between the stars is not empty: it holds enormous cold clouds of gas and dust, and a star begins when a small part of one starts to collapse under its own gravity.",
       "beats": [
-        "Approach Jupiter from far away and see its colored bands of cloud",
-        "Scale of the planet: more than eleven Earth diameters across",
-        "The Great Red Spot appears on the southern edge of a band",
-        "Its size today compared with Earth",
-        "Winds circle it counter-clockwise, which marks it as a high-pressure system",
-        "Plant the curiosity: how long has it been there, and why does it not die?"
+        "Look at the dark lanes of the Milky Way, which are clouds of dust blocking the starlight behind them",
+        "Describe molecular clouds: very cold, mostly hydrogen, with dust grains and some simple molecules",
+        "Explain the balance between gas pressure and gravity, and how a shock wave or a nearby event can tip it",
+        "Show that infrared telescopes like Spitzer and Webb see through the dust to find the first hidden stages",
+        "Note that how exactly the sizes of stars are decided is still an active area of research",
+        "Land on the reveal: the raw material of every star is this faint, cold, patient cloud"
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Jupiter Great Red Spot Juno",
-        "Jupiter full disk Hubble",
-        "Jupiter Cassini portrait",
-        "Jupiter cloud bands Juno",
-        "Great Red Spot Voyager 1",
-        "Jupiter southern hemisphere Juno",
-        "Jupiter Hubble OPAL",
-        "Jupiter Great Red Spot close up",
-        "Jupiter Galileo spacecraft",
-        "Jupiter Voyager 2 approach"
+        "Barnard 68 dark nebula",
+        "Horsehead Nebula Hubble",
+        "Pipe Nebula",
+        "Coalsack Nebula",
+        "Cosmic Cliffs Carina Webb",
+        "Taurus molecular cloud",
+        "Rho Ophiuchi cloud complex",
+        "Eagle Nebula Pillars of Creation Webb",
+        "Lagoon Nebula Hubble",
+        "dark nebula infrared Spitzer"
       ],
       "video_queries": [
-        "Jupiter rotation animation Hubble",
-        "Jupiter flyover animation Juno",
-        "Great Red Spot visualization"
+        "Milky Way dark clouds visualization",
+        "nebula flythrough Hubble",
+        "Pillars of Creation Webb visualization"
       ],
-      "text": "Jupiter does not look like a planet at first. From far away, it looks like a small, striped marble, held very still against the dark.\n\nAs the distance closes, the stripes widen into bands. Cream and rust, pale brown and white, each one a river of cloud running east or west around the whole globe. The edges between them are not clean. They curl and fold into slow, feathered eddies, like cream stirred gently into tea.\n\nThen the size begins to register. Jupiter is more than eleven Earth diameters across. If you lined up Earths along its middle, like beads on a string, it would take more than eleven of them to span it. A jet airliner crossing that distance would be flying for about seven days.\n\nLook now toward the southern half of the planet, along the edge of one broad band. Something is there that does not belong to the pattern. A single oval, the color of old brick, sits among the pale clouds. It is not a shadow, and it is not a moon passing in front. It is part of the planet itself.\n\nWhat is that red oval, staring back from the largest world in the solar system?\n\nThe answer comes slowly, as the camera moves closer. The oval is wider than anything we are used to calling a storm. Today it measures a little over one Earth across. That is roughly thirteen thousand kilometers, about the distance from London to Sydney by air. It is still getting smaller, and in the past it was larger. Even now, our whole planet could be set down inside it, with room to spare around the edges.\n\nAbove that oval, the clouds are not still. They are turning. Watch the edges of the red, and you can see the paler clouds sliding around it. The motion runs counter-clockwise. That direction is a clue, and it matters.\n\nOn Earth, a hurricane in the northern hemisphere turns counter-clockwise. But a hurricane is a low-pressure system, where air rushes in toward the center and rises. In the southern hemisphere, the same kind of storm turns clockwise. Here, in Jupiter's south, the spin runs counter-clockwise. So this storm cannot be a low.\n\nIt must be the opposite. A high-pressure system, an anticyclone, with air pressed down and spiraling outward at its center. On Earth, such systems bring calm, clear skies. On Jupiter, the same kind of turning has grown to a size we have no word for.\n\nThe winds along its rim are fast. They blow at hundreds of kilometers an hour, as fast as the most extreme storms on Earth. Yet the storm moves around in a slow, patient circle. One full turn takes about six Earth days.\n\nSo here is what we are looking at.\n\nThe Great Red Spot is a storm wide enough to swallow Earth, turning counter-clockwise once every six days or so.\n\nIt is a strange thing to hold in the mind. Our whole world, with its oceans and mountains and cities, would sit inside it like a stone in a bowl. And the storm would simply keep turning, with no sense that anything had changed.\n\nThat might be the end of the surprise. But a storm of that size raises a quieter question. On Earth, a hurricane lives for a week or two. It meets land, or cooler water, and it falls apart. This one has been turning for far longer than anyone has been counting.\n\nHow long has it been there? And why does it not die?\n\nTo begin to answer that, we have to look back, past the spacecraft and the cameras, to the first people who pointed a small glass at Jupiter and noticed that something was there."
+      "text": "On a clear night, far from any city, look toward the middle of the Milky Way. You will see a river of pale light. And running through it, you will see dark rifts, as if someone had torn the glow in two.\n\nFor a long time, people took those dark lanes for holes. Gaps in the stars, windows onto an empty sky. Some astronomers in the eighteenth century described them that way. But the stars were still there, just hidden.\n\nSomething was standing in front of them. Clouds of fine dust, drifting between us and the light behind. Each grain is smaller than the smoke from a candle. Yet together, across hundreds of light-years, they block the glow of thousands of stars.\n\nThese clouds look thin, almost nothing. How can something so empty ever become a star?\n\nThe answer begins with what the clouds are made of. Astronomers call the densest ones molecular clouds. They are among the coldest places in the galaxy, at about minus two hundred and sixty degrees Celsius. That is only a few degrees above the coldest temperature that can exist.\n\nMost of the gas is hydrogen, the simplest atom there is. Mixed through it are tiny grains of dust, made of carbon and silicates, a little like soot and sand. And in the shelter of that dust, a few simple molecules survive, such as carbon monoxide and water. The cold and the dark protect them.\n\nYet \"dense\" is a relative word here. In the heart of one of these clouds, a cubic centimeter holds perhaps a few hundred or a few thousand molecules. The air in your room holds more than ten billion billion in the same space. By any human measure, this is a better vacuum than we can make on Earth.\n\nAnd still, it is enough. The cloud is huge. A single one can hold the mass of a hundred thousand Suns, spread across a distance that light needs many years to cross.\n\nNow, a cloud like this is not simply sitting there. It is held in a long, quiet struggle. Gravity pulls every bit of gas toward every other bit. Pushing back is the pressure of the gas itself, and the slow churning inside it. For long ages, the two sides roughly match.\n\nBut a balance can be tipped. The shock wave from an exploding star can sweep through and squeeze a region. The wind and radiation of a nearby young star can press on one edge. Even two clouds drifting into each other can do it. Where the gas is pressed hard enough, gravity begins to win.\n\nIt does not happen everywhere. Only in small clumps, deep inside. Most of the cloud stays as it was.\n\nFor a long time, this early stage was invisible. The dust that hides the stars also hides the birth of new ones. Visible light simply cannot get out.\n\nInfrared light can. Longer waves slip around the grains, the way low sounds pass through a wall. So astronomers built telescopes to see in the infrared. The Spitzer Space Telescope, launched in two thousand and three, found glowing knots of warmth inside dark clouds that had looked like nothing at all.\n\nThen came the James Webb Space Telescope, with a far larger mirror and sharper eyes. It looks into the same dark lanes and finds faint points, small and red, still wrapped in their cocoons of gas.\n\nThose points are stars that have not yet become stars.\n\nThere is one thing no one can yet say for certain. Why do some clumps become stars far smaller than the Sun, while others grow tens of times heavier? How the sizes of stars are decided is still an active area of research. Astronomers have good ideas, involving turbulence, magnetic fields and the way clumps break apart. But the full answer is not settled.\n\nWhat is settled is where it starts. The space between the stars is not empty. It holds enormous cold clouds of gas and dust, and a star begins when a small part of one starts to collapse under its own gravity.\n\nEvery star you can see tonight began this way. So did the Sun. The atoms in your own body, at least the lightest of them, were once part of such a cloud. Something faint, and cold, and patient.\n\nPatient, because nothing in it hurries. Collapse takes a very long time, and it is only the first step. In some of these clouds, in a place about seven thousand light-years away, the gas has already begun to take shape. Tall columns of it stand in the light of stars that are newly born."
     },
     {
-      "title": "Who Saw It First",
-      "question": "Who first noticed this spot, and is it the same storm we see today?",
-      "reveal": "Observers have recorded a spot on Jupiter since the seventeenth century, but the storm of today may not be the same one, and its continuous history reaches back at least to the eighteen-thirties.",
+      "title": "Pillars of Creation",
+      "question": "What does the birth of stars actually look like up close?",
+      "reveal": "Inside the towering pillars of the Eagle Nebula, newborn stars are ejecting jets of gas into the surrounding cloud, and light takes years to travel from the top to the bottom of a single pillar.",
       "beats": [
-        "Early telescope observers and the first records of a spot on Jupiter",
-        "Gaps in the historical record and the debate over a 'Permanent Spot'",
-        "Nineteenth-century drawings and the growing certainty it was a lasting feature",
-        "How the spot was much longer and larger in the past",
-        "Modern historians comparing old sketches with measurements",
-        "Open question: whether the earliest spot and today's storm are one and the same"
+        "Approach the Eagle Nebula and the famous pillars as Hubble first showed them",
+        "Explain how the radiation of nearby hot stars erodes the cloud and leaves dense fingers standing",
+        "Show the Webb infrared view and the young stars still embedded in the columns",
+        "Introduce protostars, and how the collapsing gas heats up and spins into a disk",
+        "Mention Herbig-Haro jets, glowing streams of gas shot out by infant stars",
+        "Reveal the scale of the pillars in light-years, and note that this region is a snapshot of a process that takes millions of years",
+        "Plant the curiosity: what happens in the center of a protostar that finally turns it on?"
+      ],
+      "ambience": "deep_space",
+      "image_queries": [
+        "Pillars of Creation Hubble",
+        "Pillars of Creation Webb",
+        "Eagle Nebula Hubble",
+        "Herbig-Haro object Hubble",
+        "HH 211 Webb",
+        "protostar Webb",
+        "Orion Nebula Hubble",
+        "Orion Nebula Webb",
+        "Carina Nebula Hubble",
+        "young star cluster Webb"
+      ],
+      "video_queries": [
+        "Pillars of Creation flythrough",
+        "Orion Nebula visualization",
+        "protostar jet animation"
+      ],
+      "text": "The tallest of the columns is a dark shape against a glowing red background, and it looks almost like a mountain at sunset. It is not rock. It is gas and dust, lit by stars that are only a few million years old.\n\nHubble took the picture that made these columns famous in nineteen ninety-five. It showed three fingers of brown, dusty gas, rising out of a bright cloud, with wispy edges that seem to smoke. People called them the Pillars of Creation. But a picture of a place where stars are born raises a plain question. What does birth actually look like, up close?\n\nThe first clue is in the shape itself. The Eagle Nebula is crowded with hot, young, massive stars, and they pour out ultraviolet light. That radiation hits the cloud and strips it away, grain by grain, like wind wearing down a sandbank.\n\nNot everything erodes at the same speed. Thin gas is blown away quickly. Dense knots of gas resist, and they act like shields. Behind each shield, a trail of denser material is left standing, and over time it becomes a column.\n\nSo the pillars are what remains after the sculpting. They are the parts of the cloud that were too thick to disappear.\n\nHubble saw the outline. To see inside, astronomers needed a different kind of light. In twenty twenty-two, the Webb telescope looked at the same columns in the infrared, and the dust that looked solid became thin and ghostly. The pillars turned into translucent red towers, and through them, stars appeared.\n\nSome of those stars are still wrapped in their gas. They sit inside the columns, at the tips and along the edges, like seeds still in the soil. Hubble could not show them. Webb could.\n\nHere is what is happening to each one. Inside a dense clump, gravity pulls the gas inward. As it falls, it grows denser and hotter, and the clump becomes a glowing ball called a protostar. It is not yet a true star. It shines only because it is squeezing itself.\n\nThe gas that falls in is never perfectly still. It carries a little spin, and as the cloud shrinks, the spin grows faster, the way a skater turns faster when they pull in their arms. The gas flattens into a spinning disk around the protostar. Most of the material arrives through that disk. Later, in some disks, the leftover dust will gather into planets.\n\nAnd then something unexpected happens. A protostar does not only take in gas. It also throws some back out.\n\nAlong the spin axis, in two opposite directions, narrow streams of gas shoot away at speeds of many kilometers every second. They plow into the cloud and light it up. Astronomers call these glowing streams Herbig-Haro jets. In the Webb image, small red flames flicker at the edges of the pillars, and some of them are the jets of stars that have only just begun.\n\nSo the birth of a star is not quiet in the way it looks. Gas falls in, a disk spins, and jets fly out, all at once.\n\nNow the scale. The tallest pillar is about four light-years from base to tip. That is roughly the distance from our Sun to the nearest other star. Light, the fastest thing there is, needs about four years to cross a single column.\n\nYet this is only a moment. The pillars are being worn away even as we look, and they will last perhaps a few million years more. Each protostar inside takes a million years or more to grow. We are seeing one frame from a film that is far too slow to watch.\n\nStill, in that one frame, the gas is hot, the disks are turning, and the jets are glowing. But none of these young objects is a star yet. Each protostar is only warm from its own collapse. Something has to change deep inside it, in a core that no telescope can see directly. What happens there that finally turns it on?"
+    },
+    {
+      "title": "The Day a Star Ignites",
+      "question": "What actually switches a star on?",
+      "reveal": "A star begins to shine when its core becomes hot and dense enough for hydrogen nuclei to fuse into helium, and from then on it holds itself up against its own gravity.",
+      "beats": [
+        "Follow the contracting protostar as its core heats up",
+        "Explain the idea of nuclear fusion in plain words, with hydrogen turning to helium and a tiny amount of mass turning into light",
+        "Explain hydrostatic balance, with gravity pulling in and the heat of fusion pushing out",
+        "Mention T Tauri stars as young, variable stars still settling down",
+        "Describe brown dwarfs as the objects that are too small to ignite hydrogen fusion",
+        "Reveal the moment of ignition as the start of a long equilibrium",
+        "Plant the curiosity: why do small stars live so much longer than big ones?"
+      ],
+      "ambience": "sun",
+      "image_queries": [
+        "T Tauri star",
+        "young star disk ALMA",
+        "HL Tauri protoplanetary disk",
+        "protoplanetary disk Webb",
+        "brown dwarf Webb",
+        "Pleiades Hubble",
+        "NGC 346 Webb",
+        "Westerlund 1 Webb",
+        "star forming region Chandra",
+        "Sun SDO"
+      ],
+      "video_queries": [
+        "SDO sun ultra high definition",
+        "Sun close up solar flare",
+        "protoplanetary disk animation"
+      ],
+      "text": "Deep inside a protostar, nothing can be seen. The gas above it is too thick, and the light it makes is too weak to escape. So astronomers have to work out what happens in there from physics, and from the young stars they can see around it.\n\nStart with the plain fact. A protostar keeps shrinking. As it shrinks, gravity squeezes the gas, and squeezed gas gets hot. The center, which began as a cloud colder than a freezer, climbs to thousands of degrees. Then to hundreds of thousands. Still, it is not a star.\n\nThe number that matters is about ten million degrees Celsius. That is far hotter than the surface of the Sun, which is only about five and a half thousand. At ten million degrees, the hydrogen in the core is no longer made of ordinary atoms. It is a thick, glowing soup of bare nuclei and loose electrons, packed together tighter than lead.\n\nThe nuclei of hydrogen are positively charged, so they repel one another. Normally they never touch. But in this heat they move so fast that, now and then, two of them get close enough to collide and stick.\n\nThat is nuclear fusion. Through a short chain of steps, four hydrogen nuclei become one helium nucleus. And here is the strange part. The helium weighs slightly less than the four hydrogens that made it. About seven thousandths of the mass goes missing.\n\nIt does not vanish. It becomes energy, in the form of light and heat. One of the simplest equations in physics tells us how much. A speck of mass becomes a great deal of light.\n\nEach single fusion is tiny. But the core of a star holds almost unimaginable numbers of nuclei. In our Sun, about four million tons of matter are turned into light every second. That is roughly the weight of forty aircraft carriers, every second, for billions of years.\n\nWhen fusion begins, something else begins with it.\n\nThe new heat pushes outward. Until now, gravity had been winning, and the protostar kept falling inward. Now the core pushes back. If the star shrinks a little, the core gets hotter, fusion speeds up, and the pressure rises. If the star swells a little, the core cools, fusion slows, and gravity pulls it back.\n\nAstronomers call this hydrostatic balance. It is a kind of thermostat, built from nothing but gas and gravity. No one adjusts it. It simply holds.\n\nNot every young star finds this balance quickly. Some, called T Tauri stars, are still settling. They flicker. Their brightness drifts up and down over days and weeks, as gas falls onto them and spots form on their surfaces. They are stars in the way a fledgling is a bird, real, but still unsteady.\n\nAnd some objects never make it at all.\n\nIf the collapsing ball of gas is too small, its core never reaches ten million degrees. Gravity can squeeze it only so far. Below about eight percent of the mass of the Sun, ordinary hydrogen fusion cannot begin. These objects are called brown dwarfs. They glow faintly, with leftover heat, and then slowly fade. Some are only a little larger than Jupiter.\n\nA brown dwarf is what a star would be if the cloud had simply held a little less.\n\nSo the answer to the question is a matter of temperature and crowding. A star begins to shine when its core grows hot and dense enough for hydrogen nuclei to fuse into helium. From that moment, it no longer falls. It holds itself up.\n\nThis is the quiet turning point. After millions of years of collapse, the falling stops. The light that leaves the surface was made at the center, and the star settles into a balance that will last longer than anything humans have ever built.\n\nBut how long it lasts depends on something strange. The biggest stars have the most fuel, yet they burn out first. The smallest have hardly any, and they last almost forever. Why would a star with less to burn live so much longer?"
+    },
+    {
+      "title": "The Long Quiet Middle",
+      "question": "Why do some stars live for trillions of years while others last only a few million?",
+      "reveal": "The most massive stars burn through their fuel so fast that they die within a few million years, while the smallest red dwarfs burn so slowly that they can shine for trillions of years, longer than the universe has existed so far.",
+      "beats": [
+        "Introduce the main sequence as the long, stable adult phase of a star",
+        "Use our Sun as the example, with about ten billion years in total and roughly halfway through",
+        "Compare blue giants, which are hot and bright and short-lived, with red dwarfs, which are cool, dim and extremely long-lived",
+        "Explain that more mass means a hotter core and much faster fusion",
+        "Mention that no red dwarf has yet had time to die, because the universe is not old enough",
+        "Show the stellar neighborhood: most stars around us are red dwarfs",
+        "Feel the pace: a long, calm stretch in which the star simply shines"
+      ],
+      "ambience": "sun",
+      "image_queries": [
+        "Sun Solar Dynamics Observatory",
+        "Proxima Centauri Hubble",
+        "Sirius A and B Hubble",
+        "Rigel star",
+        "Pleiades blue stars",
+        "Alpha Centauri Hubble",
+        "Betelgeuse Hubble",
+        "Omega Centauri Hubble",
+        "globular cluster 47 Tucanae",
+        "star cluster Hubble"
+      ],
+      "video_queries": [
+        "Sun time-lapse SDO",
+        "star cluster zoom visualization",
+        "Milky Way star field Hubble"
+      ],
+      "text": "The Sun's closest neighbors are almost all invisible to you. Of the stars within about fifteen light-years of Earth, most cannot be seen without a telescope. They are small, red, and so dim that they hide in plain sight.\n\nYet they are the most common stars there are. And they may outlast every bright star you have ever named.\n\nA star that has finished collapsing and has lit its core enters what astronomers call the main sequence. This is the adult life of a star. Nothing dramatic happens here. Gravity pulls inward, fusion pushes outward, and the two stay in balance for a very long time.\n\nOur Sun is in this phase now. It has been shining steadily for about four point six billion years. Its whole main sequence will last about ten billion, so it is roughly halfway through. Every sunrise you have ever seen belongs to this long, even middle.\n\nNow look at the other end of the scale. A blue giant, a star many times heavier than the Sun, shines with a hot white-blue light. It can pour out tens of thousands of times the Sun's brightness. It burns hot and blue-white, and it does not last. Some of these stars live only a few million years, which is hardly longer than the time humans have been walking upright.\n\nA red dwarf is the opposite. It is cool, dim, and a deep orange-red. Its light is so faint that a planet would need to huddle close to feel any warmth. But it burns so slowly that it can shine for trillions of years.\n\nHere is the strange part. The blue giant starts with far more fuel. By any simple reckoning, it should last longer.\n\nIt spends its fuel like a fire made of gasoline.\n\nThe reason is weight. A heavier star presses down harder on its own center. That squeeze raises the temperature of the core, and fusion is extremely sensitive to temperature. A little more heat means far more reactions. So a star with ten times the Sun's mass does not burn ten times faster. It burns thousands of times faster.\n\nThink of two travelers crossing a desert. One carries a little water and walks slowly, sipping. The other carries a great deal, but runs. The runner is empty long before the walker has even grown thirsty. A red dwarf is the walker. Its core is gentle, and it uses its hydrogen so sparingly that very little is wasted. It also mixes its whole interior, so it can draw on almost all of its fuel, not only the part at the center.\n\nThis leads to a quiet fact that is easy to pass over. No red dwarf has ever died. Not one. The universe is about thirteen point eight billion years old, and the smallest red dwarfs need many times that long to run down. Every red dwarf that has ever formed is still burning, still young, still near the start of its life.\n\nSo the neighborhood around us looks different from the night sky. Among all the stars in our galaxy, roughly three out of four are red dwarfs. Proxima Centauri, the nearest star to the Sun, is one of them. You cannot see it with the naked eye, even though it is only a little over four light-years away. The bright stars we notice are the rare ones.\n\nAnd what does a star do through all this time? It shines. That is nearly all. Light leaves its surface, and new energy rises from the core to replace it. Year after year the pressure and the heat stay matched. Nothing is ending and nothing is beginning.\n\nThe Sun's brightness changes by only a tiny fraction over millions of years. Whole species have risen and faded beneath it without noticing any change at all. Some of that light is warming the ground you stand on now.\n\nWeight sets the pace of a star's whole life.\n\nA star's fate is written in its weight, long before it ever ignites. But even the steadiest star cannot shine forever. At some point, deep in the core, the hydrogen starts to run low, and something quietly begins to change."
+    },
+    {
+      "title": "When the Fuel Runs Low",
+      "question": "What will happen to the Sun when its hydrogen runs out?",
+      "reveal": "In about five billion years the Sun will swell into a red giant large enough to swallow Mercury and Venus, and Earth's fate at that stage is uncertain.",
+      "beats": [
+        "Describe the helium core that builds up as hydrogen is used up",
+        "Explain hydrogen shell burning and why the outer layers expand and cool, turning red",
+        "Give the scale: the Sun becoming a red giant hundreds of times its current size",
+        "Note that long before then, the Sun's slow brightening will make Earth too hot for oceans",
+        "Show real red giants like Betelgeuse and Mira as portraits of what is to come",
+        "Describe the helium flash and the horizontal branch in simple terms",
+        "Be honest that whether Earth is engulfed is an open question, and that it will certainly be scorched"
+      ],
+      "ambience": "sun",
+      "image_queries": [
+        "Betelgeuse ALMA",
+        "Mira variable star Hubble",
+        "red giant star",
+        "Antares",
+        "Arcturus",
+        "Aldebaran",
+        "R Leonis",
+        "W Hydrae ALMA",
+        "Sun red giant artist concept",
+        "V838 Monocerotis light echo"
+      ],
+      "video_queries": [
+        "red giant star animation",
+        "Betelgeuse visualization",
+        "Sun evolution animation"
+      ],
+      "text": "Deep in the Sun, at this very moment, a quiet kind of bookkeeping is under way. Every second, the core turns hydrogen into helium and light. It has done this for billions of years, and the hydrogen is slowly, steadily, being used up.\n\nThe work goes on without any fuss. The Sun's core is a crowded place, hot enough that hydrogen nuclei fuse into helium and fall into a settled routine. But helium does not burn at these temperatures. It simply collects, like ash in a hearth, and the core grows a little heavier with each passing million years.\n\nSo what happens to a star when its hydrogen runs out?\n\nThe answer begins with a small shift in geometry. Once the core is mostly helium, fusion can no longer happen at the center. It moves outward into a thin shell of hydrogen wrapped around the helium core. This is called hydrogen shell burning, and it runs hotter and faster than the old fire ever did.\n\nThe star responds in a surprising way. The core, starved of its own heat, shrinks under its own weight. The shell around it burns fiercely. And the outer layers, pushed by all that extra energy, swell outward and cool.\n\nA cooler surface glows a different color. Not white-yellow, but a deep orange, then red.\n\nHere is the scale of it. The Sun today is about one point four million kilometers across. As a red giant, it would grow to roughly two hundred times that width. If you stood on a hilltop and watched it rise, it would fill much of the sky, a dull red wall hanging over the horizon.\n\nLong before that, though, Earth will feel the change. The Sun is already brightening, very slowly, by about ten percent every billion years. In roughly one to two billion years, the oceans will begin to evaporate. The air will fill with steam, and the blue planet will turn pale and dry.\n\nThat is the quiet part of the story. The loud part comes later.\n\nWe do not have to guess what a red giant looks like. We can look up. In the shoulder of Orion, Betelgeuse burns a reddish orange, a star so large that if it sat where the Sun is, it would reach out past the orbit of Mars. And in the constellation of the Whale, there is Mira, a red giant that swells and shrinks over about three hundred and thirty days, brightening and fading as if it were breathing.\n\nThese are not strange monsters. They are portraits of a future Sun.\n\nInside such a star, one more event waits. The helium core keeps shrinking and heating, until it reaches about one hundred million degrees. Then, in a matter of moments, the helium ignites all at once. Astronomers call it the helium flash. But it happens so deep within the star that nothing of it shows on the surface.\n\nAfterward, the star settles again. It shrinks, grows a little hotter, and burns helium into carbon and oxygen in its core. Astronomers call this stage the horizontal branch, a calmer interlude before the final stages begin.\n\nNow comes the question people most want answered. Will the Sun swallow the Earth?\n\nMercury and Venus, almost certainly, will be taken. The Sun will grow to reach their orbits, and they will spiral into its outer atmosphere and be lost.\n\nEarth is harder to say. As the Sun sheds mass, its gravity weakens, and the planets drift outward. At the same time, the swollen star may drag on Earth and pull it inward. Some calculations say Earth escapes by a narrow margin. Others say it does not. Science has not settled the matter.\n\nWhat we can say is simple.\n\nWhether Earth is swallowed or not, it will be scorched, its rock baked and its seas long gone.\n\nIn about five billion years, the Sun will swell into a red giant. And that red giant cannot hold on forever. Its outer layers are already loosening, and they are about to drift away."
+    },
+    {
+      "title": "A Gentle Farewell: Planetary Nebulae",
+      "question": "How does a star like the Sun leave the stage?",
+      "reveal": "A Sun-like star sheds its outer layers into a glowing shell called a planetary nebula, which has nothing to do with planets, and leaves its hot core behind as a white dwarf.",
+      "beats": [
+        "Explain how a red giant pulses and throws off its outer atmosphere",
+        "Show the Ring Nebula, the Cat's Eye Nebula and the Helix Nebula, each with a different shape",
+        "Explain why they are called planetary nebulae: early telescopes made them look like round planet-like disks",
+        "Explain how the exposed hot core lights up the shell with ultraviolet light and makes it glow",
+        "Reveal that the shell lasts only about tens of thousands of years, a blink in the life of a star",
+        "Note that Webb's new images show the structure of these shells in extraordinary detail",
+        "Carry the listener forward to the small, hot core left in the center"
+      ],
+      "ambience": "deep_space",
+      "image_queries": [
+        "Ring Nebula Hubble",
+        "Ring Nebula Webb",
+        "Cat's Eye Nebula Hubble",
+        "Helix Nebula Hubble",
+        "Southern Ring Nebula Webb",
+        "Butterfly Nebula NGC 6302 Hubble",
+        "Eskimo Nebula Hubble",
+        "Red Rectangle Nebula",
+        "Hourglass Nebula Hubble",
+        "NGC 7027 Hubble"
+      ],
+      "video_queries": [
+        "planetary nebula visualization",
+        "Helix Nebula flythrough",
+        "Ring Nebula Webb zoom"
+      ],
+      "text": "Through a small telescope, the Ring Nebula looks like a faint smoke ring floating among the stars. It sits in the constellation Lyra, and on a dark night you can find it with modest equipment. It does not move. It does not flicker. It simply hangs there, pale and perfectly round, like a breath held in the cold.\n\nFor a long time, nobody knew what such things were. They were not stars, and they were not galaxies. So what were these glowing shells, and what did they have to do with the death of a star like our Sun?\n\nStart with the red giant we left a moment ago. A red giant is not stable. Its core is dense and hot, but its outer layers are enormously swollen, and they are only loosely held by gravity. Deep inside, the fusion in the shells around the core flares and fades. The whole star begins to pulse, swelling and shrinking over months and years.\n\nEach pulse lifts the outer atmosphere a little higher. A steady wind of gas streams away from the surface, and over thousands of years the star loses a large part of its mass. Some of the gas escapes in gentle puffs. Some leaves in slow, heavy waves.\n\nEventually the star has shed most of its outer layers, and what it has thrown away spreads outward into space.\n\nNow the shapes begin to appear. The Ring Nebula looks like a ring because we may be seeing a barrel of gas almost end-on, with the hollow center pointing toward us. The Cat's Eye Nebula, in the constellation Draco, is far more tangled. The Hubble Space Telescope revealed it as a set of nested shells, jets and knots, like the iris of an eye. And the Helix Nebula, one of the nearest of all, is about six hundred and fifty light-years away. Its shape resembles a coiled spring, and its glow stretches nearly as wide as the full Moon.\n\nEach one is different, and astronomers are still working out why. A companion star, a magnetic field, or a pair of orbiting stars may shape the gas. The honest answer is that no single explanation covers them all.\n\nThe name is older than the understanding. In the seventeen hundreds, astronomers peered through small telescopes and saw soft, round disks. Some of them looked a little like the planet Uranus. So the astronomer William Herschel called them planetary nebulae.\n\nThe name stuck. But these objects have nothing to do with planets.\n\nThey are shells of gas, thrown off by dying stars. The word is simply a fossil of what the early telescopes could see, and what they could not.\n\nSo why do the shells glow? The gas by itself would be dark and cold. But as the star sheds its layers, it exposes its core. That core is extremely hot, at well over a hundred thousand degrees. It shines mostly in ultraviolet light, which our eyes cannot see.\n\nThat ultraviolet light strikes the surrounding gas and strips electrons from the atoms. When the electrons fall back, the atoms give off visible light. Oxygen glows a soft green. Hydrogen and nitrogen glow red. The shell is like a lamp shade lit from inside by a light we cannot see.\n\nAnd the glow does not last. A planetary nebula expands, thins and fades in about ten thousand to twenty thousand years. That is longer than all of recorded human history. But next to the ten billion years of a Sun-like star, it is a single blink.\n\nWe are lucky to be here at a time when so many are shining.\n\nThe James Webb Space Telescope has now looked at several of these shells in infrared light. In the Ring Nebula, it found thousands of dense clumps of gas, and fine arcs spreading outward like ripples. In the Southern Ring Nebula, it showed two stars at the center, one of them hidden in its own dust. Details that earlier telescopes blurred are now sharp.\n\nBut the shell is only the farewell. The real story lies in the center of each nebula, where a tiny blue-white point of light is burning. It is all that remains of the star's core. It is small, extremely dense, and still hotter than anything around it.\n\nIt no longer has any fuel to burn. And yet it will go on shining for a very, very long time."
+    },
+    {
+      "title": "The Cooling Ember: White Dwarfs",
+      "question": "What is left of a star after it has stopped burning?",
+      "reveal": "A white dwarf packs about the mass of the Sun into a ball the size of Earth, and it will spend trillions of years slowly cooling, a process that has not yet had time to finish anywhere in the universe.",
+      "beats": [
+        "Describe the white dwarf as the dense, hot remnant core of a Sun-like star",
+        "Give the density comparison: a teaspoon of its material would weigh as much as an elephant or more",
+        "Explain electron degeneracy pressure in simple words, as the quantum effect that keeps it from collapsing",
+        "Show Sirius B, the nearest well-known white dwarf, and explain how it was found by its pull on Sirius",
+        "Introduce the Chandrasekhar limit, a maximum mass of about 1.4 Suns, and plant the question of what happens beyond it",
+        "Mention that some white dwarfs are surrounded by debris from destroyed planets",
+        "Look ahead to the far future: a white dwarf cooling toward a so-called black dwarf, which is purely theoretical because the universe is too young"
       ],
       "ambience": "none",
       "image_queries": [
-        "Jupiter Great Red Spot Hubble",
-        "Jupiter Great Red Spot Voyager",
-        "Jupiter Pioneer 10",
-        "Jupiter Pioneer 11 Great Red Spot",
-        "Jupiter Hubble 1995",
-        "Jupiter Hubble 2014 Great Red Spot",
-        "Jupiter Galileo Great Red Spot",
-        "Jupiter Great Red Spot New Horizons",
-        "Jupiter Hubble 1990s",
-        "Jupiter ground telescope amateur NASA"
+        "Sirius B Hubble",
+        "white dwarf Hubble",
+        "white dwarf cluster NGC 6397",
+        "white dwarf debris disk",
+        "Messier 4 white dwarfs Hubble",
+        "white dwarf artist concept NASA",
+        "Helix Nebula central white dwarf",
+        "Procyon B",
+        "Gaia white dwarf",
+        "globular cluster white dwarfs Hubble"
       ],
       "video_queries": [
-        "Great Red Spot history animation",
-        "Jupiter Hubble time-lapse",
-        "Jupiter Voyager flyby footage"
+        "white dwarf animation",
+        "white dwarf planet debris visualization",
+        "Sirius star system visualization"
       ],
-      "text": "In sixteen sixty-five, the Italian astronomer Giovanni Cassini looked through a long, thin telescope at Jupiter and saw a dark spot on its face. He watched it for days, and he saw it drift slowly across the disk as the planet turned.\n\nA spot on Jupiter. It sounds simple enough. But which spot was it, and is it the one we know?\n\nThe telescopes of that age were crude. Their lenses blurred color into fringes, and the views shook with every breath of wind. An observer might stand outside on a cold night for an hour, and come away with a single pencil sketch.\n\nCassini and others kept looking, and for a few years they kept noting a spot. Then the records thin out. For long stretches there is almost nothing, as if the planet had simply been forgotten.\n\nThat silence made some astronomers doubt. Perhaps these were not the same marking at all. Perhaps a spot had appeared, faded, and later another had formed in its place.\n\nSome argued the opposite. They called it the Permanent Spot, a single feature that had stayed hidden in the gaps of the record. Neither side could prove it, because the sketches were too few and too rough.\n\nThen, in the eighteen-thirties, the drawings grow more careful. An amateur observer in Germany, Samuel Heinrich Schwabe, sketched a clear oval on Jupiter's southern side in eighteen thirty-one. Others noticed it too, and the pictures began to agree with each other.\n\nBy the middle of the century, the spot was no longer a rumor. It had a place and a shape, and observers could find it again from night to night. Slowly, a sense settled in that this was a lasting thing.\n\nAnd it was not the spot we see now.\n\nIn those old drawings, the feature is long. In the late eighteen hundreds it was about twice as long as it is today, stretched like a lozenge along its band of cloud. Roughly three Earths could have fit inside it, side by side.\n\nIts color was different too. In eighteen seventy-eight, it flushed a strong brick red, and people wrote about it in newspapers. Then the color faded, and came back, and faded again, over the following decades.\n\nThis is where the work of historians begins. Today, a few researchers sit with old sketches laid beside modern measurements. They check where the spot sat, how fast it drifted, and how long it was.\n\nIt is slow, patient work. A drawing is only as good as the eye and the hand that made it, and a seventeenth century sketch has no scale at all.\n\nStill, their results have a shape. One careful study concluded that the spot Cassini saw was probably not the one we have now. The older spot may have faded away, and a newer storm may have formed later, in the eighteenth or nineteenth century.\n\nOther researchers are less sure. The records are so thin, they say, that a single storm lasting nearly four hundred years cannot be ruled out. It would be a storm older than the United States.\n\nThat is where the evidence stands. Observers have recorded a spot on Jupiter since the seventeenth century.\n\nYet the storm of today may not be that one.\n\nWhat we can say is this. A continuous record of the red spot reaches back to the eighteen-thirties. That is almost two hundred years of one storm turning in the same place. No hurricane on Earth has ever lasted much longer than a month.\n\nAnd so the question changes shape. We may not know how old the spot truly is, but we can ask how a storm survives even for two centuries. For that, we have to leave the old sketches behind, and go down into the clouds."
+      "text": "In the constellation of Canis Major, the brightest star in the night sky has a companion that almost no one has ever seen. Sirius shines so fiercely that a small telescope shows only a glare. Somewhere inside that glare sits a tiny, pale point of light, about ten thousand times fainter.\n\nIt is the nearest well-known remnant of a dead star. And it raises a simple question. What is left of a star after it has stopped burning?\n\nThe answer lies in the core we left glowing at the heart of the nebula. When a Sun-like star sheds its outer layers, the center remains. It is the old heart of the star, stripped bare. We call it a white dwarf. It is hot, far hotter than the surface of the Sun at first, and it glows white from stored heat alone.\n\nThen comes the strange part. A white dwarf holds about as much matter as the Sun, packed into a ball roughly the size of Earth. You could fit more than a million such balls inside the Sun's volume. A single teaspoon of this material would weigh as much as an elephant, perhaps more.\n\nMatter should not be able to survive this. Gravity here is crushing, and nothing is burning to push back. So what holds the star up?\n\nThe answer comes from the quantum world. Electrons, the tiny particles in every atom, refuse to share the same state when they are crowded together. Squeeze them tightly enough, and they begin to push back, not because of heat, but because there is simply no room left for them to settle. Physicists call this electron degeneracy pressure.\n\nIt is a little like a crowded train platform at night. Everyone is already standing as close as they can. No one else can step in.\n\nSirius B was the first place where this was understood. In the eighteen forties, the astronomer Friedrich Bessel noticed that Sirius was not moving in a straight line. It wobbled, slowly, over decades. Something unseen was tugging on it. Years later, in eighteen sixty-two, the telescope maker Alvan Clark finally spotted the faint companion responsible.\n\nThen came the shock. Sirius B weighs about as much as the Sun, yet it is tiny and faint. Nothing in the astronomy of that time could explain it.\n\nFor a while, the idea seemed almost absurd. Later, quantum physics gave it a shape.\n\nAnd in nineteen thirty, a young physicist named Subrahmanyan Chandrasekhar worked out a limit. On a ship sailing toward England, he calculated that electron pressure can only hold up so much weight.\n\nA white dwarf cannot be heavier than about one point four times the mass of the Sun.\n\nBeyond that, the electrons give way. What happens to a star that passes this line? We will come back to that.\n\nFor now, most white dwarfs sit well below it, quietly and undisturbed. Some are not entirely alone, though. Astronomers have studied white dwarfs whose thin atmospheres are polluted with iron, magnesium and silicon. These are heavy elements that should have sunk out of sight long ago. The best explanation is that they are the shredded remains of asteroids, and perhaps whole planets, torn apart by the white dwarf's gravity and rained onto its surface. Some of these stars are circled by rings of dusty debris. It may be a preview of what awaits our own inner solar system.\n\nA white dwarf has no way to make new heat. It can only give away what it already has. Slowly, its glow turns from white to yellow, then orange, then a deep dull red. The cooling is gradual beyond any human scale. It will take trillions of years.\n\nThe universe is only about fourteen billion years old. That is not nearly enough time. So the last stage of this fading, a cold, dark, invisible sphere that some call a black dwarf, exists only in theory.\n\nNo white dwarf anywhere has cooled that far. Not one.\n\nEvery white dwarf in the sky tonight is still an ember, still warm, still waiting at the very beginning of a very long night. But not every star ends this gently, and not every core is small enough to rest."
     },
     {
-      "title": "Falling Into the Clouds",
-      "question": "What would you see if you sank into the storm?",
-      "reveal": "The spot rises several kilometers above the neighboring clouds, and Juno's measurements show its roots extend about three hundred to five hundred kilometers below.",
+      "title": "The Violent End of Giants",
+      "question": "How can a star explode so brightly that it outshines its whole galaxy?",
+      "reveal": "When a massive star builds an iron core, fusion can no longer support it, and in less than a second the core collapses and the star explodes as a supernova, briefly shining as bright as billions of Suns.",
       "beats": [
-        "Begin in the thin, cold upper haze of Jupiter",
-        "The storm's cloud tops stand higher and colder than their surroundings",
-        "Pressure and temperature rise as we sink",
-        "Juno's microwave radiometer sees into the deep atmosphere",
-        "The storm reaches far deeper than the water clouds",
-        "Darkness, pressure, and no solid floor below"
-      ],
-      "ambience": "storm",
-      "image_queries": [
-        "Jupiter Great Red Spot Juno close",
-        "Jupiter clouds Juno JunoCam",
-        "Jupiter swirling clouds",
-        "Jupiter storm Juno",
-        "Jupiter atmosphere Galileo probe",
-        "Jupiter cyclones Juno",
-        "Jupiter turbulent clouds",
-        "Jupiter southern storms",
-        "Jupiter ovals Hubble",
-        "Jupiter infrared Great Red Spot"
-      ],
-      "video_queries": [
-        "Juno Great Red Spot flyby",
-        "Jupiter atmosphere descent animation",
-        "Jupiter clouds time-lapse"
-      ],
-      "text": "The air up here is almost nothing. At the very top of Jupiter's atmosphere, the haze is thin, cold, and pale, and the light from the distant Sun comes in sideways, soft and orange. There is no ground to stand on, only a slow drift downward. And somewhere below us, a storm is waiting.\n\nSo what would you see if you sank into it?\n\nAt first, very little changes. The haze thickens a little, like breath on a window. Then, ahead and below, the cloud deck begins to rise. It is not a hole in the planet, as it can look from far away. It is a hill of cloud, and its top stands well above everything around it.\n\nMeasurements say the Great Red Spot towers several kilometers higher than the clouds beside it. That is a good fraction of the height of Earth's tallest mountains. And the summit is colder than its surroundings, because the air there has been lifted into thinner, chillier layers. A high, cold cloud top is what a high-pressure storm looks like from the side.\n\nNow we sink. Slowly, the air gets heavier. The pressure climbs, and so does the temperature. Where the pressure equals what we feel at the surface of the Earth, the air is already about as cold as a winter night in Antarctica. A little deeper, it becomes mild. Deeper still, it grows hot, and the light from above fades to a deep brown.\n\nWe cannot actually fall this way, of course. No probe has ever flown into the Great Red Spot. The only craft that ever dived into Jupiter's atmosphere, the Galileo probe in nineteen ninety-five, entered far from the storm. It lasted only about an hour.\n\nYet we know something about what lies beneath the Spot. The knowledge comes from a spacecraft that never touches the clouds at all.\n\nIt is called Juno. It circles Jupiter in a long, looping orbit, and every few weeks it swings low over the cloud tops. On board is an instrument called a microwave radiometer. It does not take pictures. It listens, in a way, to faint radio glow rising from deep inside the planet.\n\nDifferent wavelengths of that glow come from different depths. Long waves travel up from far below. Short waves come from nearer the top. By comparing them, scientists can build a slice through the atmosphere, layer by layer, as a doctor might read a scan.\n\nWhen Juno passed over the Great Red Spot in two thousand nineteen, that slice looked unlike anything on Earth.\n\nJupiter has clouds made of water, far below the visible tops. On Earth, storms are shallow things, a thin skin on the air. The Great Red Spot is not. Its roots go down far past the water clouds.\n\nJuno's measurements show the storm reaching at least three hundred kilometers below the cloud tops, and perhaps as far as five hundred.\n\nThat is roughly the distance from one large city to the next, but pointed straight down. It means the Spot is not a surface feature at all. It is a column of turning gas, far deeper than it is tall.\n\nLet us follow the column down once more. The brown light is gone now. There is no sunrise here, no horizon, nothing to measure distance by. The pressure is crushing, far beyond even the deepest ocean trench on Earth. The gas around us is hot and dense, and slowly thickening, yet nowhere does it turn into a floor.\n\nJupiter has no ground. The air simply becomes denser and denser, until it behaves less like a gas and more like a fluid, and goes on that way, deeper than any instrument can see.\n\nA storm that deep is not easily pushed over. It holds a great weight of turning air, and it is held in turn by the world beneath it. Which raises a better question than how deep it goes. What keeps it spinning at all, century after century, when every storm we know on Earth runs out of strength within days?"
-    },
-    {
-      "title": "Why a Storm Can Last for Centuries",
-      "question": "On Earth, hurricanes die within weeks, so why does this one persist?",
-      "reveal": "Jupiter has no land to drag a storm to a halt, and the Great Red Spot keeps itself alive by absorbing the smaller storms that drift into it.",
-      "beats": [
-        "How hurricanes on Earth fade over land and cold water",
-        "Jupiter has no continents and no ocean surface",
-        "Jet streams on either side of the spot hold it between them",
-        "Smaller vortices are swallowed and feed the larger one",
-        "Internal heat from Jupiter keeps the atmosphere turning",
-        "Open question: how the storm will evolve and for how long"
-      ],
-      "ambience": "storm",
-      "image_queries": [
-        "Jupiter Great Red Spot Hubble 2018",
-        "Jupiter jet streams",
-        "Jupiter Oval BA",
-        "Jupiter white ovals",
-        "Jupiter Red Jr",
-        "Jupiter storms merging Hubble",
-        "Jupiter Great Red Spot wind",
-        "Hurricane Earth ISS",
-        "Jupiter zones and belts",
-        "Jupiter Great Red Spot flyby"
-      ],
-      "video_queries": [
-        "Jupiter wind speeds Hubble animation",
-        "Hurricane from space time-lapse",
-        "Jupiter storms merging"
-      ],
-      "text": "A hurricane on Earth has a short life. It forms over warm water, grows for a few days, and then begins to come apart. Most are gone within a week or two.\n\nSome of the longest ever recorded lasted about a month. Then they, too, fell apart, as every one of them does.\n\nNow look at the great red oval turning below us. People have watched it for almost two centuries, and perhaps much longer. The same kind of spinning storm, yet it has not stopped. Why does this one persist?\n\nStart with how an Earth hurricane dies. It feeds on warm ocean water, drawing heat and moisture up from the surface. When it drifts over cold water, the fuel runs out. When it crosses a coastline, it loses the ocean altogether. Hills, forests and towns drag at the bottom of the storm, and the spinning slows like a wheel with a hand pressed against it.\n\nSo an Earth storm is always fighting its own surroundings. Sooner or later, the ground or the cold sea wins.\n\nJupiter offers no such opponent. There are no continents here. There is no coast, no mountain range, no shallow sea. The atmosphere simply grows denser as it goes down, gas blending into hotter and thicker gas, with no surface to scrape against.\n\nThe Great Red Spot has nothing to run aground on.\n\nThat removes the thing that kills our storms. But it does not explain what keeps this one alive. A storm with no brake can still spread out and fade, like a ripple on a pond.\n\nHere the bands we saw from far away matter. Jupiter's clouds are stretched into stripes, and the stripes are moving. On the northern side of the spot, a jet stream blows toward the west. On the southern side, another blows toward the east. The two currents run in opposite directions, and the spot sits between them.\n\nPicture two rivers flowing past each other, with a slow whirlpool in the gap. The opposing flows roll the whirlpool like a ball between two palms. They keep it spinning, and they keep it from drifting away or spreading thin.\n\nThere is a second source of strength. Jupiter is crowded with smaller storms. Many are only a few hundred kilometers across, tiny beside the giant. They form in the bands, and they are carried along by the winds. Some of them drift toward the spot.\n\nAstronomers have watched this happen in images from Hubble and from spacecraft. A small vortex comes close, is stretched, and is pulled in. Sometimes it passes through the edge of the great storm and is gone within days. Researchers think each such meeting gives the larger storm a little of the smaller one's spin.\n\nThe Great Red Spot survives because it eats the storms that drift too near.\n\nIt is not a perfect feast. Models suggest the spot may lose more energy to friction with the surrounding winds than it gains. But the meals seem to help. They may be part of the reason it has not faded.\n\nOne more ingredient sits underneath everything. Jupiter is still warm from its birth. It gives off about one and a half times the heat it takes from the Sun, and that heat rises from the deep interior all the time. Warm gas climbs, cooler gas sinks, and the whole atmosphere keeps turning over. On Earth, the Sun does nearly all of this work. On Jupiter, the planet itself does much of it.\n\nSo the engine does not shut off at night, or in winter, or when the storm drifts somewhere unlucky. It simply runs.\n\nNone of this means the storm is permanent. It is shrinking, and the reasons are not fully understood. It could break into smaller storms. It could settle into a smaller, steadier shape. Or it could stay for centuries more. Nobody knows which, and the models do not agree.\n\nWhat we do know is that the storm has been losing size for as long as we have measured it. And that raises a question about the spot's edges, and about how much of it is left to lose."
-    },
-    {
-      "title": "The Shrinking Red Spot",
-      "question": "Is the great storm slowly fading away?",
-      "reveal": "Measurements show the spot has shrunk from spanning more than three Earths in the late nineteenth century to a bit more than one, and it has become rounder.",
-      "beats": [
-        "Nineteenth-century estimates of the spot's width",
-        "Voyager and Hubble measurements in the modern era",
-        "The shape changing from a long oval to a rounder one",
-        "Hubble's repeated pictures tracking the change",
-        "Possible reasons are still debated",
-        "Open question: will the storm shrink into something smaller or stabilize"
-      ],
-      "ambience": "storm",
-      "image_queries": [
-        "Great Red Spot shrinking Hubble",
-        "Jupiter Great Red Spot 2019 Hubble",
-        "Jupiter Hubble yearly portraits",
-        "Jupiter Great Red Spot Voyager 2",
-        "Jupiter Great Red Spot 2020",
-        "Jupiter Great Red Spot 2021",
-        "Jupiter Great Red Spot flake",
-        "Jupiter Hubble 2017 portrait",
-        "Jupiter Hubble Great Red Spot comparison",
-        "Jupiter Juno Great Red Spot 2019"
-      ],
-      "video_queries": [
-        "Great Red Spot shrinking animation",
-        "Hubble Jupiter time-lapse",
-        "Jupiter Great Red Spot rotation"
-      ],
-      "text": "An observer sits at an eyepiece in the autumn of eighteen seventy-eight, sketching a red oval on a page. By their reckoning, the spot is about forty thousand kilometers long.\n\nThat is a hard number to hold in the mind. It is roughly the distance around the whole Earth at the equator. Three Earths, set end to end, could have fit inside that single storm.\n\nNow look at the same place today. The oval is still there, still red, still turning. But it seems smaller than those old drawings suggest. So is the great storm slowly fading away?\n\nMeasurements from the nineteenth century were made by eye, with a small mark on a glass and a steady hand. They were good for their time. Different observers gave different widths, but they agreed on the main point. The spot was enormous, and it was long and narrow, like a stretched egg lying on its side.\n\nThe first close measurements came in the late nineteen seventies. Two Voyager spacecraft flew past Jupiter within a few months of one another. Their cameras recorded the spot as a sharp, detailed shape, and astronomers could finally measure its width from real pictures. It was already smaller, spanning roughly two Earths.\n\nThen the Hubble Space Telescope took over the watch. Since the early nineteen nineties, it has photographed Jupiter again and again, year after year, with the same eye and the same care. Each image is a single frame. Together they are a slow film of a storm changing shape.\n\nThe film shows two things. The spot keeps getting shorter, and it keeps getting rounder. The long oval of the old drawings has been gradually drawn in at both ends. Today the storm looks less like a stretched egg and more like a plate, set a little wider than tall.\n\nIts length has been shrinking by a small amount every year. In the early two thousands, the change looked slow. In the following years it seemed to speed up for a while. Put into a human scale, it is like a lake whose shore moves a little each spring, too little to notice in a day, but plain over a lifetime.\n\nThen came the numbers that seemed to settle the matter.\n\nMeasurements show the spot has shrunk from about three Earths wide to a bit more than one.\n\nThat is a loss of about two thirds of its length in a century and a half. Most of that change has happened in a single human lifetime of careful watching.\n\nWhy? Here, honestly, nobody is certain. One idea says the jet streams on either side of the spot have shifted, squeezing the storm from north and south. Another says the storm is absorbing fewer of the smaller vortices that once fed it, so it is losing more than it gains. A third looks at the spot's height. As it shrinks sideways, it seems to grow taller, and that may change how the winds inside it behave.\n\nEach idea explains some of what the pictures show. None of them explains all of it. The deep atmosphere that drives the storm is hidden under clouds, and we have only started to look inside.\n\nThere is also the matter of the early drawings. If the spot seen in the eighteen hundreds was a different storm from this one, then the shrinking we measure may be only one chapter in a longer story. A storm can be born, grow large, and shrink again, and Jupiter may do this many times.\n\nSo what comes next? The spot might keep shrinking until it becomes a small, tight vortex, and perhaps fade altogether. Or it might settle at a smaller size and hold there for centuries more. Some of the numbers suggest the shrinking has slowed in recent years. Others suggest it has not.\n\nFor now, the red oval keeps its place, turning once every few Earth days. Its edges are closer than they used to be. And somewhere beneath those edges, the winds are still deciding what the storm will be."
-    },
-    {
-      "title": "The Hexagon of Saturn",
-      "question": "Could a storm ever sit on a planet's pole and have six straight sides?",
-      "reveal": "At Saturn's north pole, a hexagonal jet stream wider than two Earths has persisted for decades, with a hurricane-like vortex at its center.",
-      "beats": [
-        "Leave Jupiter and cross to Saturn, a paler, quieter world",
-        "Voyager's first glimpse of a six-sided cloud pattern",
-        "Cassini flies over the pole and shows the vortex at its center",
-        "How the hexagon stays fixed while clouds move",
-        "Laboratory experiments that make polygon patterns in spinning fluids",
-        "Open question: precisely what holds the corners in place"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Saturn hexagon Cassini",
-        "Saturn north pole vortex Cassini",
-        "Saturn polar storm",
-        "Saturn hexagon infrared",
-        "Saturn pole clouds",
-        "Saturn aurora Cassini",
-        "Saturn rings and hexagon",
-        "Saturn Cassini north pole",
-        "Saturn atmosphere Cassini",
-        "Saturn Voyager hexagon"
-      ],
-      "video_queries": [
-        "Saturn hexagon flyover Cassini",
-        "Saturn north pole animation",
-        "Saturn storm time-lapse Cassini"
-      ],
-      "text": "Saturn is quieter than Jupiter. Its face is pale gold, smooth as cream, with bands so faint you have to look twice to find them. After the red oval and its crowded edges, the calm is almost a relief. The light here is about one hundredth of what reaches Earth, and the cloud tops are colder than one hundred and seventy degrees below zero Celsius.\n\nNothing in these clouds suggests geometry. Storms are round, or stretched, or ragged. We expect them to be soft at the edges, like a swirl of milk in tea.\n\nSo the picture that came back in nineteen eighty-one was strange. Voyager one was passing the planet, and its cameras were pointed at the far north. There, around the pole, the clouds seemed to form a shape with straight sides. Voyager two saw it again nine months later.\n\nScientists looked at it for a long time. A ring of clouds, ruled with a straightedge, with six corners.\n\nCould a storm ever sit on a planet's pole and have six straight sides?\n\nFor more than twenty years, no one could look closer. The pole stays in winter darkness for years at a time, and the spacecraft that followed flew by at too low an angle. Then the Cassini spacecraft arrived and settled into orbit around Saturn in two thousand and four. Its instruments could see heat as well as light, so the dark did not stop it. Later, its path was tilted to carry it high above the poles.\n\nWhat it found was larger than anyone had pictured. The hexagon is a jet stream, a river of wind that runs around the pole. Each of its six sides is about as long as the diameter of Earth. Across the whole shape, you could fit about two Earths side by side.\n\nAnd at its center, there was something else. A vortex, turning in the middle of the pole like the eye of a hurricane. Its clouds formed a wall, and the wall plunged down into a clear, dark center. The eye is about two thousand kilometers across, roughly the distance from Madrid to Moscow. Winds at its edge blow faster than any hurricane on Earth.\n\nThe hexagon is also very steady. Over decades, the clouds inside it have been carried around by the wind. But the corners themselves have barely moved. Cassini, and Voyager before it, measured the same turning rate for the shape, close to the length of a Saturn day as the deep interior spins. The clouds race. The pattern stays.\n\nSo the hexagon is a wave, not an object. Think of the ripple that stays fixed in a stream behind a rock. The water rushes through it, but the ripple stays put. Here, the wind rushes through the six corners and the shape remains.\n\nStill, why six?\n\nAn answer came from a laboratory, and a very ordinary one. In the nineteen nineties and again in two thousand and ten, researchers filled a round tank with water and set it spinning on a turntable. Inside, a ring rotated a little faster than the fluid around it. At first the edge of the current was smooth. Then it began to wobble.\n\nThe wobble settled into a shape with corners. Slow the ring or speed it up, and the number of corners changed. Three, four, five, six. Triangles, squares, pentagons, all made from water, turning.\n\nThe experiment shows that a spinning current can carve straight lines into itself without anything solid to hold it. That is a real result. It tells us that the hexagon is not impossible, and not even strange, once the right conditions exist.\n\nBut a tank is not a planet. Saturn has no walls to keep the jet in place. The tank has no deep, hot, gaseous interior, and no sunlight fading through a long winter. Scientists still do not know exactly what fixes the corners where they are. Some think the answer lies deep below the clouds, in how the winds reach far into the planet. Others look to the way the jet bends against its neighbors.\n\nFor now, a great six-sided ring turns at the top of Saturn, and the cause is unfinished. And Saturn, it seems, has another way of making weather. One that arrives only rarely, and all at once."
-    },
-    {
-      "title": "Saturn's Great White Storms",
-      "question": "Why does Saturn sometimes erupt with a storm that wraps the whole planet?",
-      "reveal": "Roughly every Saturn year, a giant white storm breaks out and can grow until it encircles the planet, as Cassini watched in 2010 and 2011.",
-      "beats": [
-        "Saturn's calm, butter-colored face",
-        "The great white storm that appeared in 2010",
-        "Cassini follows the head and the long tail growing around the planet",
-        "Lightning flashes seen in the storm",
-        "Ammonia and water-rich clouds rising from below",
-        "Open question: what triggers these eruptions so rarely"
-      ],
-      "ambience": "storm",
-      "image_queries": [
-        "Saturn great white storm Cassini",
-        "Saturn storm 2010",
-        "Saturn northern storm Cassini",
-        "Saturn lightning",
-        "Saturn storm Hubble",
-        "Saturn Cassini storm tail",
-        "Saturn clouds Cassini",
-        "Saturn northern hemisphere",
-        "Saturn Hubble OPAL",
-        "Saturn Cassini mosaic"
-      ],
-      "video_queries": [
-        "Saturn storm animation Cassini",
-        "Saturn Hubble rotation",
-        "Saturn Cassini flyby"
-      ],
-      "text": "Late in the year twenty ten, the astronomers who watch Saturn through Earth's telescopes noticed something wrong with its face. A small white mark had appeared in the northern hemisphere, where nothing had been the day before.\n\nUntil then, the planet had looked the way it always does. Soft bands of pale gold and cream, laid one above another, with almost no contrast between them. Seen from far away, it could be a painted ball of butter. Nothing on it seems to move.\n\nThen the white mark began to grow. And a question came with it. Why does a planet this quiet sometimes erupt with a storm that wraps all the way around it?\n\nThe Cassini spacecraft was already there, in orbit, close enough to look. Its cameras watched the bright spot spread over days and then weeks. The front of the storm, the head, pushed on in one direction. Behind it, a long tail of white cloud stretched out and followed.\n\nThe head moved with the planet's winds. The tail kept lengthening. In a few months the storm was wide enough that Earth would have fit inside it many times over. By the following year, the tail had reached around the whole planet and met the head again.\n\nSaturn was wearing a belt of cloud, circling its entire northern middle. That is a distance longer than a hundred thousand kilometers, and you would not walk it in a lifetime of walking.\n\nIt took a long time to fade. The pale scar was still visible for months afterward, stretched and slowly smoothing, until the winds had mixed it into the bands around it.\n\nAnd inside the storm, there was light.\n\nCassini's instruments picked up flashes, and so did cameras on the night side of the planet. Lightning was flickering through the clouds, far more often than on Earth. Each bolt is enormous, many times stronger than what we see in our own sky. On Saturn, thunderstorms can rage for weeks, and the radio crackle from them can be heard from space.\n\nLightning needs water. That was the first hint of what lay below.\n\nThe white clouds themselves were made of ammonia ice, frozen crystals of a gas you might know from household cleaners. Ammonia normally sits deep beneath the visible cloud tops, hidden under a haze. Here, it had been carried upward, fast and in bulk. Spectrometers also found signs of water ice mixed in, from still deeper down.\n\nSo the storm was a kind of fountain. Warm, moist air rose from far beneath the surface, through layers that normally stay calm, and burst out into the cold above. It punched through the quiet haze and spread across the sky.\n\nOver many years, Saturn seems to hold that moisture down below. The deep layer of water clouds gets heavier and heavier, and the air above it stays sealed, like a lid. Then, at some point, the lid gives way.\n\nGiant white storms break out on Saturn roughly once every Saturn year, which is about thirty Earth years. Astronomers have recorded them in eighteen seventy-six, nineteen thirty-three, nineteen ninety, and twenty ten. Cassini watched the last one from beginning to end, as it grew until it encircled the planet.\n\nWhy that rhythm? Nobody knows for certain. The deep water may build up slowly, until the layer becomes unstable. The slow change of seasons on Saturn, as it leans toward and away from the Sun, may play a part. Neither idea has been proven.\n\nThink of how rare this is. In one human lifetime, a person might see only two or three of these storms. Most people on Earth will never look up and know that one is under way.\n\nAnd yet the planet that makes them has more to show, in the places where its light is hardest to catch. Out beyond Saturn, the Sun is a bright star and little more. The next worlds are colder, darker, and farther than anything yet."
-    },
-    {
-      "title": "Winds at the Edge of the Sun's Reach",
-      "question": "Do the farthest planets, faint and cold, still have weather?",
-      "reveal": "Neptune, which receives almost no sunlight, has some of the fastest winds measured in the solar system, and its dark storms appear and vanish in only a few years.",
-      "beats": [
-        "Travel outward to Uranus, pale blue-green and tilted on its side",
-        "Uranus shows few storms, but Hubble and Webb find bright clouds and a polar cap",
-        "Voyager 2 finds Neptune's Great Dark Spot in 1989",
-        "Hubble later sees that spot gone and new ones appear elsewhere",
-        "Neptune's supersonic winds measured in its clouds",
-        "Open question: how so distant a planet can power such weather"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Neptune Great Dark Spot Voyager 2",
-        "Neptune Hubble",
-        "Neptune Webb",
-        "Uranus Webb",
-        "Uranus Hubble",
-        "Uranus Voyager 2",
-        "Neptune clouds Voyager",
-        "Neptune rings Webb",
-        "Uranus rings Webb",
-        "Neptune dark spot Hubble"
-      ],
-      "video_queries": [
-        "Neptune rotation animation",
-        "Uranus Voyager 2 flyby",
-        "Neptune Hubble storm animation"
-      ],
-      "text": "Out past Saturn, the Sun shrinks to a point of light. At Uranus it is nearly four hundred times fainter than it is on Earth. Noon there would feel like deep twilight.\n\nUranus itself looks calm. It is a pale blue-green ball, smooth as a polished stone. And it lies tipped on its side, rolling around the Sun like a barrel, so that each pole faces the Sun for decades at a time. When Voyager two flew past in nineteen eighty-six, the cameras found almost nothing to look at. A few faint clouds, and little else.\n\nSo here is the question. Do the farthest planets, faint and cold, still have weather?\n\nFor Uranus, the answer came slowly. Later, Hubble watched it year after year and caught bright clouds drifting through its atmosphere. Some were made of methane ice, high and white against the blue. The Webb telescope then looked in infrared light and saw something new. Over the pole that faces the Sun, a bright cap of haze, like a pale hood. Near its edge, a ring of small, bright storms.\n\nUranus, then, is not dead. It is quiet, and that is a different thing. Its weather is thin and slow, and it takes patient eyes to find it.\n\nThen Voyager two kept going, three more years, across a distance that no other spacecraft has crossed since. In August of nineteen eighty-nine, it reached Neptune.\n\nNeptune is a deeper blue than Uranus, a color like ink in clear water. And on its southern side, the cameras found a dark oval. It was about as wide as Earth. Around it ran streaks of white cloud, stretched out like brushstrokes. Scientists named it the Great Dark Spot, and they thought they had found a cousin of Jupiter's storm.\n\nThey had not quite. In nineteen ninety-four, Hubble turned toward Neptune and looked for the spot.\n\nIt was gone.\n\nNothing remained of it. Not a smudge, not a shadow. A storm as large as our world had faded away in a few years. Not long afterward, a new dark spot appeared in the northern half of the planet. Others have come since, and left again. Some lasted a couple of years, some a little longer. Compare that with Jupiter's storm, which has turned for centuries.\n\nThe winds are stranger still. Astronomers measure them by following the clouds from one picture to the next. On Neptune, the fastest gusts reach roughly two thousand kilometers an hour. That is faster than the speed of sound in the air we breathe, and about nine times the strength of the worst hurricane on Earth. Yet the air on Neptune is so thin and cold that you would feel it more as a push than a roar.\n\nAnd this is the strange part. Neptune sits about thirty times farther from the Sun than we do. It receives almost no sunlight at all.\n\nIts winds are among the fastest ever measured in the solar system.\n\nWhere does the energy come from? Neptune does give off more heat than it takes in, so some warmth must rise from deep inside. But that is not a full answer. Other planets have heat too, and their winds are slower. Cold air may also meet less friction there, letting the wind run free. Scientists have ideas, but no one can yet say for sure. How can so distant a planet power weather like this?\n\nFor now, it keeps turning, far out in the dark. A faint blue point, with storms that come and go. And all the while, the same three ingredients, found again and again on every giant world we have seen."
-    },
-    {
-      "title": "The Weather of Every World",
-      "question": "What does a storm tell us about the planet it lives on?",
-      "reveal": "The same laws of spinning, heated air shape every storm we know, from a hurricane on Earth to a world-wide whirl on Jupiter, and Webb now lets us watch weather on planets around other stars.",
-      "beats": [
-        "Return to the sweep of all four giant planets",
-        "Rotation, heat, and a deep atmosphere as the ingredients of every storm",
-        "Earth's hurricanes compared in miniature",
-        "Webb and Hubble reading clouds and winds on planets around other stars",
-        "Juno and later missions continuing to probe Jupiter's depths",
-        "Come back to the Great Red Spot, still turning as the camera drifts away"
+        "Return to the massive stars and how they fuse heavier elements in layers, like an onion, up to iron",
+        "Explain why fusing iron does not release energy, so the support is lost",
+        "Describe the core collapse and the rebound that drives the explosion, and the flood of neutrinos",
+        "Mention SN 1987A, the nearby supernova whose neutrinos were detected on Earth hours before the light arrived",
+        "Show the Crab Nebula, remains of the supernova seen by astronomers in 1054, and Cassiopeia A",
+        "Reveal that the explosion and earlier star winds scatter carbon, oxygen, calcium and iron, which are the elements in our bodies",
+        "Mention Type Ia supernovae, caused by white dwarfs pushed past their limit, as the second kind of stellar explosion",
+        "Be clear that some details of how the explosion is driven are still being studied"
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Jupiter Great Red Spot Juno",
-        "Saturn Cassini portrait",
-        "Neptune Voyager 2",
-        "Uranus Webb",
-        "Hot Jupiter exoplanet Webb",
-        "WASP-39b Webb",
-        "Earth hurricane ISS",
-        "Jupiter and moons Juno",
-        "Solar system family portrait",
-        "Jupiter Hubble Great Red Spot"
+        "Crab Nebula Hubble",
+        "Crab Nebula Webb",
+        "Cassiopeia A Webb",
+        "Cassiopeia A Chandra",
+        "SN 1987A Webb",
+        "SN 1987A Hubble",
+        "Veil Nebula Hubble",
+        "Tycho supernova remnant Chandra",
+        "Kepler supernova remnant",
+        "supernova remnant N132D"
       ],
       "video_queries": [
-        "exoplanet atmosphere animation Webb",
-        "Jupiter Juno flyby animation",
-        "Solar system tour animation"
+        "supernova explosion animation",
+        "Cassiopeia A Chandra visualization",
+        "Crab Nebula zoom Hubble"
       ],
-      "text": "A telescope on a mountain in Chile turns toward a star that has no name, only a catalogue number. The star is far too dim to see with the eye. But beside it, something faint is passing in front, and the light is changing.\n\nAstronomers have learned to read that change. When starlight slips through the air of a distant planet, some colors are taken out of it. What remains is a kind of fingerprint, written in water, in sand, in haze.\n\nSo here is a quiet question. What does a storm tell us about the planet it lives on?\n\nWe have now seen four of them up close. Jupiter, with its red eye, turning for centuries. Saturn, with its six-sided crown and its rare white storms. Uranus, pale and mostly still. Neptune, with dark spots that come and go in the blue.\n\nThey look nothing alike. Yet they share a pattern. Each one is a large ball of gas, spinning fast, warmed from below, with no ground to slow the air.\n\nRotation is the first ingredient. Jupiter turns once in about ten hours, so a day there is shorter than a night's sleep. That spin bends every moving current into a circle, and stretches the winds into long bands.\n\nHeat is the second. Deep inside, each giant still holds warmth left from its birth, and Jupiter and Saturn give off more than they receive from the Sun. Warm gas rises, cool gas sinks, and the air never rests.\n\nThe third is depth. An atmosphere thousands of kilometers thick has room to build a storm that can stretch, and settle, and stay.\n\nEarth has all three, only smaller. A hurricane is born over warm water, spinning with the planet, fed by heat rising from the sea. The strongest ones can be about the width of a country like Spain. The Great Red Spot, at its widest, could hold Earth itself.\n\nBut the laws are the same. Air that spins and rises will gather into a vortex, if nothing stops it.\n\nOn Earth, something always does. A hurricane crosses a coast, and its fuel is gone within days. On Jupiter there is no coast.\n\nThe same laws shape every storm we know.\n\nThat idea has now left our own system. The James Webb Space Telescope looks at planets circling other stars, and it can split their light into thin slices of color. In some, it has found water vapor. In others, clouds of sand, and the signs of sulfur made by sunlight in the upper air.\n\nHubble helped to begin this work, and Webb has carried it much further. On some of these worlds, astronomers have measured how the temperature changes from one side to the other. On a few, they have seen signs of winds, carrying heat around the planet at speeds no hurricane has ever reached.\n\nWe cannot see a distant storm as a picture. But we can see that the air is moving, and that the clouds are changing. Weather, it turns out, is not a local habit of Earth. It is what happens whenever a world has air and a fire to stir it.\n\nCloser to home, the study goes on. The Juno spacecraft still circles Jupiter, passing low over the clouds, listening to the deep atmosphere with its instruments. Each pass shows a little more of what lies beneath the red. Later missions may go further, perhaps reaching into the layers where pressure grows too great to picture.\n\nNobody yet knows exactly how deep the roots of the storm go, or how long it will last. That question is still open. It may be answered in our lifetimes, or in someone else's.\n\nNow the camera lifts away. The bands of Jupiter grow narrow, cream and rust and white. The planet shrinks, and the great oval at its southern edge becomes a single red mark.\n\nIt is still turning. It was turning before the first telescope, and before anyone looked up and wrote it down.\n\nDown here, a gentle wind moves across a sleeping field. It is made of the same laws. The same turning, the same warmth, the same patient air.\n\nYou have crossed a long way tonight, through clouds and cold and light. There is nothing left to chase. Let the planets keep turning, as they always have.\n\nGoodnight."
+      "text": "In the year ten fifty-four, court astronomers in China wrote down a strange new light in the constellation of Taurus. They called it a guest star. It was bright enough to see in daylight, and it stayed visible for nearly two years.\n\nA single star, shining brighter than every other star in the sky. For a few weeks, some explosions of this kind give off about as much light as all the billions of stars in their home galaxy together. How can one star do that?\n\nStart with the giants. A star many times heavier than the Sun burns through its hydrogen quickly, in only a few million years. When the hydrogen in its core is gone, the core shrinks and heats up. Then it begins to fuse helium into carbon and oxygen.\n\nThat is not the end of the story. Each time one fuel runs out, the core squeezes tighter and gets hotter, and the next fuel catches fire. Carbon burns, then neon, then oxygen, then silicon. The star ends up built in layers, like an onion. Hydrogen lies on the outside, and heavier ashes lie deeper and deeper inside.\n\nThe last stage is almost absurdly quick. Silicon burns for only about a day. And what it makes is iron.\n\nIron is different from everything before it. Fusing lighter atoms releases energy, and that energy is what holds a star up. But fusing iron takes energy instead of giving it. The furnace has nothing left to burn.\n\nUntil now, the star has been in balance. Gravity pulls in, and the heat of fusion pushes out. Now the push is gone, and the core is about the size of Earth, weighing more than the Sun.\n\nIt begins to fall.\n\nIn less than a second, the core collapses from the size of a planet to a ball only tens of kilometers across. The matter is squeezed until it cannot be squeezed any further. Then it stops, and the falling gas from above strikes it like a hammer striking a wall. The rebound sends a shock wave outward.\n\nAt the same moment, the core releases a flood of neutrinos. These are particles so light, and so unwilling to interact, that they pass through a planet as if it were not there. Most of the energy of the whole event leaves as neutrinos, in just a few seconds.\n\nWe know this because we caught some. In February of nineteen eighty-seven, a star exploded in the Large Magellanic Cloud, a small galaxy beside our own. Detectors deep underground registered a brief burst of neutrinos. About twenty of them, in total. Hours later, the light arrived, and the supernova now called nineteen eighty-seven A brightened in the southern sky.\n\nThe neutrinos had come first, because they escaped the star before the shock wave could. It was the first time people had seen a star's death announced by something other than light.\n\nToday the debris of old explosions is still visible. The Crab Nebula is what remains of the star that the Chinese astronomers saw in ten fifty-four. It is a tangle of glowing filaments, still expanding, with a spinning stellar core at its center. Cassiopeia A is younger, with light from its explosion reaching Earth in the late sixteen hundreds. It looks like a ragged shell of gas, glowing in X-rays and infrared, still hot after more than three hundred years.\n\nThese shells are not just wreckage. The star's winds, and then the explosion, scatter carbon, oxygen, calcium and iron into space. The oxygen in your lungs was made this way. So was the calcium in your bones, and the iron in your blood.\n\nThere is a second kind of stellar explosion. A white dwarf in a close pair can pull gas from its companion, or merge with another white dwarf, until it is pushed past its limit. Then it burns out of control and is torn apart. These are called Type one A supernovae, and they are an important source of iron.\n\nSome details are still unsettled. Computer models show that the rebound alone is often not strong enough to blow the star apart. Neutrinos, turbulence and rotation all seem to help, but exactly how they work together is still being studied.\n\nWhat we know for certain is what is left behind. Sometimes the core survives the blast as something almost impossible to picture."
+    },
+    {
+      "title": "Neutron Stars and Black Holes",
+      "question": "What can possibly remain after a supernova?",
+      "reveal": "The core left behind may be a neutron star, a city-sized ball of matter denser than an atomic nucleus, or if the core is massive enough, a black hole, and in 2017 we heard two neutron stars collide and forge gold.",
+      "beats": [
+        "Explain how the collapsing core can be squeezed into a neutron star only about twenty kilometers across",
+        "Describe pulsars, the spinning neutron stars whose beams sweep past Earth like a lighthouse, discovered in 1967",
+        "Mention magnetars, neutron stars with the strongest magnetic fields known",
+        "Explain how a core that is massive enough cannot be stopped and becomes a stellar black hole",
+        "Show the evidence: Cygnus X-1, the X-ray glow of matter falling in, and gravitational waves detected by LIGO",
+        "Describe the 2017 neutron star merger observed in both gravitational waves and light, and its role in making heavy elements like gold",
+        "Mention that exactly where the mass boundary between neutron star and black hole lies is still being measured",
+        "Close the arc: the dust and gas of these deaths drift into new clouds, which one day collapse into new stars and planets, and so the story returns to chapter one"
+      ],
+      "ambience": "deep_space",
+      "image_queries": [
+        "Vela pulsar Chandra",
+        "Crab pulsar Chandra",
+        "neutron star artist concept NASA",
+        "magnetar artist concept",
+        "Cygnus X-1 Chandra",
+        "black hole accretion disk artist concept",
+        "kilonova GW170817 Hubble",
+        "M87 black hole",
+        "Sagittarius A* Chandra",
+        "black hole gravitational lensing visualization"
+      ],
+      "video_queries": [
+        "neutron star merger visualization",
+        "black hole accretion disk animation",
+        "pulsar lighthouse animation"
+      ],
+      "text": "Radio telescopes can hear a clock that is not a clock. In nineteen sixty-seven, a graduate student named Jocelyn Bell was reading long paper charts from a field of antennas in England. Along the pen trails she noticed a faint scruff of signal, repeating again and again, about once every one point three seconds.\n\nIt was too regular to be natural noise. For a short while, the team half joked that it might be a message. But the pulse kept time with the stars, not with the clocks on Earth, and that meant it came from far beyond us. So the question grew harder. After a star explodes, what can possibly remain?\n\nThink of the iron core we left falling inward. When the iron core of a massive star collapses, it does not stop at the size of a white dwarf. Electrons are crushed into protons, and the whole core turns almost entirely to neutrons.\n\nWhat remains is a neutron star. It holds more matter than our Sun, squeezed into a ball only about twenty kilometers across. That is roughly the width of a city, a drive you could finish in half an hour. A single teaspoon of it would weigh billions of tons, about as dense as the nucleus of an atom.\n\nJocelyn Bell had found one. The pulse was a beam of radio waves, swept around the sky by a neutron star spinning on its axis. Each time the beam crossed the Earth, her antennas heard a pulse, the way a ship sees a lighthouse. We call these objects pulsars, and some of them spin hundreds of times every second, with a steadiness that rivals our best atomic clocks.\n\nOther neutron stars are stranger still. A few carry magnetic fields a thousand trillion times stronger than the Earth's. These are the magnetars. Their crusts can crack like a frozen lake, and the quake sends a flash of radiation across the galaxy, one we can measure here, in the quiet of our own night.\n\nYet there is a limit to what a neutron star can bear. If the collapsing core is heavy enough, even the pressure of neutrons gives way. Nothing known can hold it up. The core keeps falling, until gravity is so strong that not even light escapes.\n\nIt becomes a black hole.\n\nHow can we know, if a black hole gives off no light of its own? We watch what is near it. In the constellation of Cygnus, a bright blue star circles an unseen partner, and gas streams away from the star toward it. That gas heats as it falls, and glows in X-rays. This source, Cygnus X-one, holds about twenty times the mass of the Sun, in a space far too small to be a star.\n\nA second kind of proof arrived in September of twenty fifteen. Two black holes, far away, had spiraled together and merged. The ripple in space they made crossed over a billion years of distance. At the American gravitational wave detectors, it shifted a long, straight arm by less than the width of a proton.\n\nThen, in August of twenty seventeen, the detectors felt something different. It was a longer, rising chirp, from two neutron stars locked in their final orbit. Less than two seconds after the ripple, telescopes saw a flash of gamma rays. Over the following days and weeks, observatories around the world watched the glow change, and found the fingerprints of freshly made heavy elements, among them gold.\n\nSo some of the gold in a ring or a crown may have been forged in collisions like this one. It was made in a moment we could, in a sense, hear.\n\nScientists are still measuring exactly where the line falls between the heaviest neutron stars and the lightest black holes. Each new discovery narrows the gap a little. The answer is not yet settled.\n\nMeanwhile, the cycle goes on. Every one of these deaths sends carbon, oxygen, iron and more drifting outward. The gas cools and spreads, and in time it gathers into a cold, dark cloud, patient and faint. One day, a part of that cloud will begin to fall inward, and a new star will wake.\n\nSome of those stars will have planets. On one, perhaps, someone will look up at the night and wonder where it all came from.\n\nWe know now that they are looking at the answer. Their bones and their blood were made in stars, and returned to the dark.\n\nThe Sun is still shining tonight, and the old clouds are still waiting. You have traveled with the stars from their first cold breath to their last glow. Let them rest now, and rest with them. Goodnight."
     }
   ],
-  "cold_open": "A storm wider than Earth has been turning in Jupiter's clouds for at least one hundred and fifty years.\n\nWe thought it was a surface mark, a red eye painted on a distant world. But the newest measurements say it is shrinking. They also say it reaches far deeper than anyone expected.\n\nHow does a storm last for centuries? What keeps it alive?\n\nTonight, we drift toward Jupiter until its stripes become rivers of cloud. We fall into the storm itself. Then we cross to Saturn, to a hexagon of wind at its pole and white storms that wrap the whole planet.\n\nNothing here is rushed. Every image is real, and every word is true.\n\nThere is nothing for you to do but listen.\n\nLet's begin with the eye of Jupiter.",
+  "cold_open": "Look up on a dark night, and the pale river you see is made of suns, each one burning through its own fuel.\n\nWe thought the stars were fixed, eternal lights hung over a still world. But every one of them is born, lives, and dies.\n\nSo here is the question. Where did you come from?\n\nIn the next hour, you will drift through a cold cloud in the dark, and past glowing pillars where new suns take shape. You will watch a star ignite, and then a gentle shell of gas drift away from a dying one. You will see the last glow of a white dwarf, and the violent end of a giant.\n\nNothing here will hurry. Every word is real science, and all you have to do is listen.\n\nNearly every atom in you was forged inside a star.\n\nLet's begin where the first of them began.",
   "review": {
-    "suggested": 33,
-    "applied": 33,
+    "suggested": 28,
+    "applied": 28,
     "fixes": [
       {
-        "section": "cold_open",
-        "find": "We thought it was a surface mark, a red eye painted on a distant world. But the newest measurements say it is shrinking, and that it reaches far deeper than anyone expected.",
-        "replace": "We thought it was a surface mark, a red eye painted on a distant world. But the newest measurements say it is shrinking. They also say it reaches far deeper than anyone expected.",
-        "reason": "spoken rhythm"
+        "section": "chapter_1",
+        "find": "So here is the question. These clouds look thin, almost nothing. How can something so empty ever become a star?",
+        "replace": "These clouds look thin, almost nothing. How can something so empty ever become a star?",
+        "reason": "repeated phrase"
       },
       {
         "section": "chapter_1",
-        "find": "Jupiter is more than eleven Earth diameters across. If you lined up Earths along its middle, like beads on a string, you would need more than eleven of them to reach from one edge to the other.",
-        "replace": "Jupiter is more than eleven Earth diameters across. If you lined up Earths along its middle, like beads on a string, it would take more than eleven of them to span it.",
+        "find": "Why do some clumps become stars as small as a candle flame next to the Sun, while others grow tens of times heavier?",
+        "replace": "Why do some clumps become stars far smaller than the Sun, while others grow tens of times heavier?",
+        "reason": "odd, imprecise comparison"
+      },
+      {
+        "section": "chapter_2",
+        "find": "It is gas and dust, and it is standing there in the light of stars that are only a few million years old.",
+        "replace": "It is gas and dust, lit by stars that are only a few million years old.",
+        "reason": "repeats previous chapter's ending"
+      },
+      {
+        "section": "chapter_3",
+        "find": "That is roughly the weight of a thousand large ships, every second, for billions of years.",
+        "replace": "That is roughly the weight of forty aircraft carriers, every second, for billions of years.",
+        "reason": "wrong comparison"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Look up at the sky tonight, and the Sun's closest neighbors are almost all invisible to you.",
+        "replace": "The Sun's closest neighbors are almost all invisible to you.",
+        "reason": "repeated opening"
+      },
+      {
+        "section": "chapter_4",
+        "find": "It is a magnificent thing to see, and it does not last.",
+        "replace": "It burns hot and blue-white, and it does not last.",
+        "reason": "stock phrase"
+      },
+      {
+        "section": "chapter_4",
+        "find": "The most massive stars burn through their fuel and die within a few million years. The smallest red dwarfs may shine for trillions, longer than the universe has existed so far.",
+        "replace": "Weight sets the pace of a star's whole life.",
         "reason": "repetition"
       },
       {
-        "section": "chapter_1",
-        "find": "A spacecraft crossing that distance at the speed of a fast airliner would still be flying for months.",
-        "replace": "A jet airliner crossing that distance would be flying for about seven days.",
-        "reason": "unsupported claim; 140,000 km at 900 km/h is about 6.5 days"
-      },
-      {
-        "section": "chapter_1",
-        "find": "That is roughly thirteen thousand kilometers, about the distance from London to Sydney by air, and it is still getting smaller. In the past it was larger.",
-        "replace": "That is roughly thirteen thousand kilometers, about the distance from London to Sydney by air. It is still getting smaller, and in the past it was larger.",
-        "reason": "flow"
-      },
-      {
-        "section": "chapter_1",
-        "find": "On Earth, a hurricane in the northern hemisphere turns counter-clockwise too. But a hurricane is a low-pressure system. Air rushes in toward its center and rises. In the southern hemisphere, the same low-pressure storm turns the other way, clockwise. Here, in Jupiter's south, the spin runs counter-clockwise. So this storm cannot be a low.",
-        "replace": "On Earth, a hurricane in the northern hemisphere turns counter-clockwise. But a hurricane is a low-pressure system, where air rushes in toward the center and rises. In the southern hemisphere, the same kind of storm turns clockwise. Here, in Jupiter's south, the spin runs counter-clockwise. So this storm cannot be a low.",
-        "reason": "clarity, fix wording"
-      },
-      {
-        "section": "chapter_1",
-        "find": "The winds along its rim are fast. They blow at hundreds of kilometers an hour, faster than any hurricane on Earth has ever managed.",
-        "replace": "The winds along its rim are fast. They blow at hundreds of kilometers an hour, as fast as the most extreme storms on Earth.",
-        "reason": "overstated; Earth's strongest hurricanes reach about 300 km/h"
-      },
-      {
-        "section": "chapter_1",
-        "find": "One full turn takes about six Earth days. A person standing at its edge would be carried around for nearly a week before returning to the same place.",
-        "replace": "One full turn takes about six Earth days.",
-        "reason": "redundant"
-      },
-      {
-        "section": "chapter_1",
-        "find": "The Great Red Spot is a storm wide enough to swallow Earth, turning counter-clockwise once every several days.",
-        "replace": "The Great Red Spot is a storm wide enough to swallow Earth, turning counter-clockwise once every six days or so.",
-        "reason": "consistency"
-      },
-      {
-        "section": "chapter_2",
-        "find": "In sixteen sixty-five, an Italian astronomer named Giovanni Cassini looked through a long, thin telescope at Jupiter and saw a dark spot on its face.",
-        "replace": "In sixteen sixty-five, the Italian astronomer Giovanni Cassini looked through a long, thin telescope at Jupiter and saw a dark spot on its face.",
-        "reason": "minor; keep date"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Then, in the eighteen-thirties, the drawings grow more careful. An amateur observer in Germany, Samuel Heinrich Schwabe, sketched a clear, dark oval on Jupiter's southern side.",
-        "replace": "Then, in the eighteen-thirties, the drawings grow more careful. An amateur observer in Germany, Samuel Heinrich Schwabe, sketched a clear oval on Jupiter's southern side in eighteen thirty-one.",
-        "reason": "accuracy: Schwabe's 1831 drawing"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Some later estimates put it at around twice the length it has today, stretched like a lozenge along its band of cloud. You could have fit about three Earths inside it, side by side, with room to spare.",
-        "replace": "In the late eighteen hundreds it was about twice as long as it is today, stretched like a lozenge along its band of cloud. Roughly three Earths could have fit inside it, side by side.",
-        "reason": "accuracy and consistency"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Today, a few researchers sit with old sketches laid beside modern measurements. They check where the spot sat on the planet, how fast it drifted, and how long it was in each year.",
-        "replace": "Today, a few researchers sit with old sketches laid beside modern measurements. They check where the spot sat, how fast it drifted, and how long it was.",
-        "reason": "concision"
-      },
-      {
-        "section": "chapter_2",
-        "find": "No hurricane on Earth has ever lasted a week longer than a month.",
-        "replace": "No hurricane on Earth has ever lasted much longer than a month.",
-        "reason": "garbled and unclear"
-      },
-      {
-        "section": "chapter_2",
-        "find": "It would be a storm older than the United States, older than the piano.",
-        "replace": "It would be a storm older than the United States.",
-        "reason": "piano claim dubious"
-      },
-      {
-        "section": "chapter_2",
-        "find": "What we can say is this. A continuous history of the red spot reaches back to the eighteen-thirties, and that is already almost two hundred years of one storm turning in the same place.",
-        "replace": "What we can say is this. A continuous record of the red spot reaches back to the eighteen-thirties. That is almost two hundred years of one storm turning in the same place.",
-        "reason": "split long sentence"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Measurements say the Great Red Spot towers several kilometers higher than the clouds beside it. That is a little less than the height of the tallest peaks on Earth.",
-        "replace": "Measurements say the Great Red Spot towers several kilometers higher than the clouds beside it. That is a good fraction of the height of Earth's tallest mountains.",
-        "reason": "vague and imprecise comparison"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Somewhere near the level where the pressure equals what we feel at the surface of the Earth, the air is already about as cold as a winter night in Antarctica.",
-        "replace": "Where the pressure equals what we feel at the surface of the Earth, the air is already about as cold as a winter night in Antarctica.",
-        "reason": "concision"
-      },
-      {
-        "section": "chapter_3",
-        "find": "The only craft that ever dived into Jupiter's atmosphere, the Galileo probe in nineteen ninety-five, entered far from the storm, and it lasted only about an hour.",
-        "replace": "The only craft that ever dived into Jupiter's atmosphere, the Galileo probe in nineteen ninety-five, entered far from the storm. It lasted only about an hour.",
-        "reason": "split sentence"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Jupiter has clouds made of water, far below the visible tops. On our own planet, almost all weather lives at that level or above it. Storms are shallow things, a thin skin on the air. The Great Red Spot was not. Its roots go down far past the water clouds.",
-        "replace": "Jupiter has clouds made of water, far below the visible tops. On Earth, storms are shallow things, a thin skin on the air. The Great Red Spot is not. Its roots go down far past the water clouds.",
-        "reason": "clarity"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Juno's measurements show the storm reaching about three hundred to five hundred kilometers below the cloud tops.",
-        "replace": "Juno's measurements show the storm reaching at least three hundred kilometers below the cloud tops, and perhaps as far as five hundred.",
-        "reason": "smoother, hedged"
-      },
-      {
-        "section": "chapter_3",
-        "find": "That is roughly the distance from one large city to the next, but pointed straight down. It means the Spot is not a surface feature at all. It is a column of turning gas, taller beneath than above, and wider than our whole planet across its face.",
-        "replace": "That is roughly the distance from one large city to the next, but pointed straight down. It means the Spot is not a surface feature at all. It is a column of turning gas, far deeper than it is tall.",
-        "reason": "clarity; remove repetition"
-      },
-      {
-        "section": "chapter_3",
-        "find": "The pressure is crushing, many times what the deepest ocean trench on Earth could bear.",
-        "replace": "The pressure is crushing, far beyond even the deepest ocean trench on Earth.",
-        "reason": "unsupported claim"
-      },
-      {
-        "section": "chapter_4",
-        "find": "Now look at the great red oval turning below us. People have watched it for well over a century, and perhaps much longer.",
-        "replace": "Now look at the great red oval turning below us. People have watched it for almost two centuries, and perhaps much longer.",
-        "reason": "consistency with chapter two"
-      },
-      {
-        "section": "chapter_4",
-        "find": "It is not a perfect feast, and models suggest the spot may lose more energy to friction with the surrounding winds than it gains. But the meals seem to help.",
-        "replace": "It is not a perfect feast. Models suggest the spot may lose more energy to friction with the surrounding winds than it gains. But the meals seem to help.",
-        "reason": "split sentence"
-      },
-      {
-        "section": "chapter_4",
-        "find": "Jupiter is still warm from its birth. It gives off roughly as much heat as it takes from the Sun, and that heat rises from the deep interior all the time.",
-        "replace": "Jupiter is still warm from its birth. It gives off about one and a half times the heat it takes from the Sun, and that heat rises from the deep interior all the time.",
-        "reason": "factual correction"
-      },
-      {
-        "section": "chapter_4",
-        "find": "On Earth, the Sun does nearly all of this work. On Jupiter, the planet itself does a great deal of it, and the Sun's faint light matters far less.",
-        "replace": "On Earth, the Sun does nearly all of this work. On Jupiter, the planet itself does much of it.",
-        "reason": "concision; avoid overclaim"
+        "section": "chapter_5",
+        "find": "Every second, the core turns about four million tons of matter into light. It has done this for four and a half billion years, and the hydrogen is slowly, steadily, being used up.",
+        "replace": "Every second, the core turns hydrogen into helium and light. It has done this for billions of years, and the hydrogen is slowly, steadily, being used up.",
+        "reason": "repeated fact"
       },
       {
         "section": "chapter_5",
-        "find": "A man sits at an eyepiece in the autumn of eighteen seventy-eight, sketching a pale red oval on a page. He measures it as carefully as his instruments allow. By his reckoning, the spot is about forty thousand kilometers long.",
-        "replace": "An observer sits at an eyepiece in the autumn of eighteen seventy-eight, sketching a red oval on a page. By their reckoning, the spot is about forty thousand kilometers long.",
-        "reason": "unsupported detail; pronouns"
+        "find": "Nothing about this is hurried.",
+        "replace": "The work goes on without any fuss.",
+        "reason": "repeated phrase"
       },
       {
         "section": "chapter_5",
-        "find": "Two Voyager spacecraft flew past Jupiter in sixteen months of one another.",
-        "replace": "Two Voyager spacecraft flew past Jupiter within a few months of one another.",
-        "reason": "factual: 1979 flybys four months apart"
+        "find": "As a red giant, it would grow to hundreds of times that width.",
+        "replace": "As a red giant, it would grow to roughly two hundred times that width.",
+        "reason": "precision"
       },
       {
         "section": "chapter_5",
-        "find": "It was already smaller. It spanned a little over two Earths.",
-        "replace": "It was already smaller, spanning roughly two Earths.",
-        "reason": "concision"
+        "find": "In roughly one billion years, the oceans will begin to evaporate.",
+        "replace": "In roughly one to two billion years, the oceans will begin to evaporate.",
+        "reason": "soften uncertain timing"
       },
       {
         "section": "chapter_5",
-        "find": "Measurements show the spot has shrunk from more than three Earths wide to a bit more than one.",
-        "replace": "Measurements show the spot has shrunk from about three Earths wide to a bit more than one.",
-        "reason": "consistency"
+        "find": "swells and shrinks over about three hundred days",
+        "replace": "swells and shrinks over about three hundred and thirty days",
+        "reason": "Mira period"
+      },
+      {
+        "section": "chapter_5",
+        "find": "Yet it happens so deep within the star that nothing of it shows on the surface.",
+        "replace": "But it happens so deep within the star that nothing of it shows on the surface.",
+        "reason": "wrong connective"
+      },
+      {
+        "section": "chapter_5",
+        "find": "a calmer interlude before the final chapters begin.",
+        "replace": "a calmer interlude before the final stages begin.",
+        "reason": "leftover chapter wording"
       },
       {
         "section": "chapter_6",
-        "find": "The light here is about one hundredth of what reaches Earth, and the air is minus one hundred and seventy degrees Celsius.",
-        "replace": "The light here is about one hundredth of what reaches Earth, and the cloud tops are colder than one hundred and seventy degrees below zero Celsius.",
-        "reason": "clarity and accuracy"
+        "find": "The answer begins with the red giant we left at the end of the last chapter.",
+        "replace": "Start with the red giant we left a moment ago.",
+        "reason": "repeated opener, chapter label"
       },
       {
         "section": "chapter_6",
-        "find": "Each of its six sides is longer than the diameter of Earth. Across the whole shape, you could fit about two Earths side by side.",
-        "replace": "Each of its six sides is about as long as the diameter of Earth. Across the whole shape, you could fit about two Earths side by side.",
-        "reason": "accuracy"
+        "find": "its glow stretches wider than the full Moon",
+        "replace": "its glow stretches nearly as wide as the full Moon",
+        "reason": "factual error"
+      },
+      {
+        "section": "chapter_6",
+        "find": "Some of them looked a little like the planets Uranus and Neptune.",
+        "replace": "Some of them looked a little like the planet Uranus.",
+        "reason": "Neptune not yet discovered"
       },
       {
         "section": "chapter_7",
-        "find": "Roughly once every Saturn year, a giant white storm breaks out. That is about thirty Earth years. Astronomers have recorded such storms in eighteen seventy-six, eighteen ninety, nineteen thirty-three, nineteen ninety, and twenty ten.",
-        "replace": "Giant white storms break out on Saturn roughly once every Saturn year, which is about thirty Earth years. Astronomers have recorded them in eighteen seventy-six, nineteen thirty-three, nineteen ninety, and twenty ten.",
-        "reason": "1890 storm uncertain; sentence stack"
+        "find": "The answer begins with the core we left behind at the end of the last chapter.",
+        "replace": "The answer lies in the core we left glowing at the heart of the nebula.",
+        "reason": "repeated opener, chapter label"
+      },
+      {
+        "section": "chapter_7",
+        "find": "You could fit more than a hundred thousand such balls inside the Sun's volume.",
+        "replace": "You could fit more than a million such balls inside the Sun's volume.",
+        "reason": "numeric error"
+      },
+      {
+        "section": "chapter_8",
+        "find": "some explosions of this kind give off more light than all the billions of stars in their home galaxy together.",
+        "replace": "some explosions of this kind give off about as much light as all the billions of stars in their home galaxy together.",
+        "reason": "overstated"
+      },
+      {
+        "section": "chapter_8",
+        "find": "The answer begins with the giants.",
+        "replace": "Start with the giants.",
+        "reason": "repeated opener"
+      },
+      {
+        "section": "chapter_8",
+        "find": "and the supernova named SN 1987A brightened in the southern sky.",
+        "replace": "and the supernova now called nineteen eighty-seven A brightened in the southern sky.",
+        "reason": "TTS designation"
+      },
+      {
+        "section": "chapter_8",
+        "find": "These are called Type Ia supernovae",
+        "replace": "These are called Type one A supernovae",
+        "reason": "TTS"
+      },
+      {
+        "section": "chapter_9",
+        "find": "But the pulse arrived with the stars, on sidereal time, and that meant it came from far beyond the Earth.",
+        "replace": "But the pulse kept time with the stars, not with the clocks on Earth, and that meant it came from far beyond us.",
+        "reason": "jargon"
+      },
+      {
+        "section": "chapter_9",
+        "find": "The answer begins with the core we left falling inward at the end of the last chapter.",
+        "replace": "Think of the iron core we left falling inward.",
+        "reason": "repeated opener, chapter label"
+      },
+      {
+        "section": "chapter_9",
+        "find": "denser than the nucleus of any atom you have ever touched.",
+        "replace": "about as dense as the nucleus of an atom.",
+        "reason": "factual error"
+      },
+      {
+        "section": "chapter_9",
+        "find": "At the LIGO detectors, it shifted a long, straight arm by less than the width of a proton.",
+        "replace": "At the American gravitational wave detectors, it shifted a long, straight arm by less than the width of a proton.",
+        "reason": "acronym for TTS"
+      },
+      {
+        "section": "chapter_9",
+        "find": "The calcium in their bones and the iron in their blood were made in stars, and returned to the dark.",
+        "replace": "Their bones and their blood were made in stars, and returned to the dark.",
+        "reason": "repetition"
       }
     ]
   },
-  "topic": "Jupiter's Great Red Spot and the storms of the giant planets",
+  "topic": "The life and death of stars: from nebula to white dwarf, neutron star or black hole",
   "shorts": [
     {
-      "title": "A Storm Wide Enough to Swallow Earth",
-      "hook": "A storm bigger than Earth",
-      "narration": "There is a storm on Jupiter wide enough to swallow our entire planet, and it has been turning for almost two centuries. It is called the Great Red Spot. Today it measures a little over one Earth across, about thirteen thousand kilometers, roughly the distance from London to Sydney. Set our whole world down inside it, with its oceans, mountains and cities, and it would sit there like a stone in a bowl. Winds along its rim blow at hundreds of kilometers an hour, yet one full turn takes about six days. On Earth, a hurricane dies within a week or two. Jupiter has no coastline to end it. The full journey through the giant storms is waiting on the channel.",
+      "title": "The Sun Loses 4 Million Tons Every Second",
+      "hook": "Four million tons. Every second.",
+      "narration": "Every second, the Sun destroys four million tons of itself. It is not an accident, and it is not dying. It is simply shining. Deep in the core, the heat is so extreme that four hydrogen nuclei fuse into one helium nucleus, and a tiny fraction of the mass goes missing. That missing mass becomes light. The loss is about the weight of forty aircraft carriers, vanishing every single second. And it has been happening for four point six billion years. Yet the Sun is so enormous that it is barely smaller for it. Some of that light is warming the ground you stand on right now. The full journey through the life and death of stars is waiting on the channel.",
       "image_queries": [
-        "Jupiter Great Red Spot",
-        "Great Red Spot Juno close up",
-        "Jupiter Great Red Spot Hubble",
-        "Jupiter cloud bands storm"
+        "Sun surface solar flare close up",
+        "Solar Dynamics Observatory Sun ultraviolet",
+        "Sun corona eclipse",
+        "Sun glowing star disk"
       ],
       "video_queries": [
-        "Jupiter Great Red Spot flyover",
-        "Jupiter rotating Great Red Spot"
+        "Sun solar dynamics observatory timelapse",
+        "Sun surface plasma eruption"
       ]
     },
     {
-      "title": "Saturn's Six-Sided Storm at the Pole",
-      "hook": "Saturn has a hexagon",
-      "narration": "At the top of Saturn sits a storm with six perfectly straight sides. Voyager first saw it in nineteen eighty-one, and scientists stared at it for a long time. A ring of clouds, ruled as if with a straightedge. Each side is about as long as the diameter of Earth, so two whole planets could fit across it. At its center turns a vortex with an eye about two thousand kilometers wide. The clouds race around the shape, yet the six corners barely move, like a ripple staying fixed in a stream behind a rock. Researchers can make hexagons in a spinning tank of water, but nobody knows exactly why Saturn holds this one. The full journey is waiting on the channel.",
+      "title": "A Teaspoon of Neutron Star Weighs Billions of Tons",
+      "hook": "A city-sized ball heavier than the Sun",
+      "narration": "There is a star as wide as a city that weighs more than our Sun. It is called a neutron star, and it is what can remain after a giant star explodes. When the iron core collapses, electrons are crushed into protons, and almost everything turns into neutrons. The result is a ball only about twenty kilometers across, a drive you could finish in half an hour. A single teaspoon of it would weigh billions of tons, as dense as the nucleus of an atom. Some of these stars spin hundreds of times every second, sweeping beams of radio waves across the dark like a lighthouse. The full journey through the life and death of stars is waiting on the channel.",
       "image_queries": [
-        "Saturn north pole hexagon",
-        "Saturn hexagon Cassini",
-        "Saturn polar vortex eye",
-        "Saturn hexagon storm clouds"
+        "neutron star artist illustration",
+        "pulsar radio beams illustration",
+        "Crab Nebula pulsar remnant",
+        "supernova remnant Cassiopeia A"
       ],
       "video_queries": [
-        "Saturn hexagon Cassini animation",
-        "Saturn north pole hexagon movie"
+        "neutron star pulsar animation",
+        "supernova explosion collapse animation"
       ]
     }
   ]

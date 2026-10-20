@@ -82,5 +82,19 @@
     "ai_scenes": 0,
     "ai_status": "kaggle failed or timed out",
     "date": "2026-10-19"
+  },
+  {
+    "topic": "The life and death of stars: from nebula to white dwarf, neutron star or black hole",
+    "title": "The Life and Death of Stars | Relaxing Space Documentary for Sleep",
+    "video_id": "YsdLNma7DBA",
+    "shorts": [
+      "tqL6gYZzymc",
+      "0ar-QxI3z1w"
+    ],
+    "minutes": 57.2,
+    "qa_ok": true,
+    "ai_scenes": 102,
+    "ai_status": "ok",
+    "date": "2026-10-20"
   }
 ]
