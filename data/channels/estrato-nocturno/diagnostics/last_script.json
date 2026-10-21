@@ -1,0 +1,498 @@
+{
+  "title": "Marte, el Planeta Rojo | Documental Relajante para Dormir",
+  "description": "Marte, el planeta rojo, es el hilo de este documental relajante para dormir: un viaje lento y sereno por sus volcanes gigantes, sus cañones inmensos y la búsqueda de agua antigua. Con imágenes reales de misiones de la NASA, recorremos la superficie desde el polvo rojizo hasta los valles que un día pudieron guardar ríos y lagos.\n\nEn nueve capítulos pausados, descubrirás por qué Marte es rojo, qué esconde el Monte Olimpo, cómo se abrió el Valles Marineris y qué pistas han encontrado los róveres sobre su pasado húmedo. Una narración tranquila, pensada para aprender algo real mientras te dejas llevar hacia el sueño.",
+  "tags": [
+    "Marte documental",
+    "planeta rojo",
+    "documental de Marte para dormir",
+    "documental relajante espacio",
+    "Monte Olimpo",
+    "Valles Marineris",
+    "agua en Marte",
+    "vida en Marte",
+    "róveres de Marte",
+    "Perseverance Marte",
+    "Curiosity Marte",
+    "documental espacio para dormir",
+    "viaje por el sistema solar",
+    "Marte NASA",
+    "cómo es Marte",
+    "volcanes de Marte",
+    "historia de Marte",
+    "Marte explicado"
+  ],
+  "thumbnail_texts": [
+    "EL MAR PERDIDO",
+    "POLVO Y SILENCIO",
+    "DONDE FLUYÓ EL AGUA"
+  ],
+  "hook_promise": "Marte guarda un volcán casi tres veces más alto que el Everest y un cañón que recorre una distancia comparable a la de un continente, y aun así lo más asombroso es que sus valles muestran huellas de ríos que corrieron hace miles de millones de años.",
+  "chapters": [
+    {
+      "title": "Un punto rojo en el cielo nocturno",
+      "question": "¿Por qué los humanos llevan miles de años mirando a Marte con inquietud y curiosidad?",
+      "reveal": "Marte es visible a simple vista porque su luz rojiza es reflejo del óxido de hierro en su superficie, y su color fue lo primero que lo hizo inolvidable para todas las culturas.",
+      "beats": [
+        "Marte aparece en el cielo como una luz rojiza que no parpadea tanto como las estrellas",
+        "Los antiguos observadores notaron que a veces parece detenerse y retroceder entre las estrellas",
+        "Ese movimiento retrógrado es un efecto de perspectiva al ser alcanzado por la Tierra en su órbita",
+        "Las culturas antiguas lo asociaron con la guerra, el fuego y la sangre por su color",
+        "El telescopio revela casquetes polares y manchas oscuras cambiantes",
+        "Su tono viene del óxido de hierro presente en el polvo y las rocas"
+      ],
+      "ambience": "none",
+      "image_queries": [
+        "Mars Hubble",
+        "Mars full disk Viking",
+        "Mars global view Mars Reconnaissance Orbiter",
+        "Mars opposition Hubble",
+        "Mars polar cap Hubble",
+        "Mars Mars Global Surveyor",
+        "Mars Earth Moon comparison",
+        "Mars rotating globe",
+        "Mars from orbit Mars Express",
+        "Mars dust storm Hubble"
+      ],
+      "video_queries": [
+        "Mars rotation visualization",
+        "Mars flyover animation",
+        "Mars Hubble time-lapse"
+      ],
+      "text": "Si sales a mirar el cielo una noche despejada, en ciertos meses del año, verás una luz que no se parece a las demás. No es blanca ni azulada. Es de un naranja apagado, como una brasa que alguien dejó encendida muy lejos.\n\nEsa luz es Marte. Y si la observas con paciencia, notarás algo más. Las estrellas titilan, cambian de brillo a cada instante, como si respiraran. Marte, en cambio, brilla con más calma, con una firmeza serena.\n\nHay una razón sencilla. Las estrellas están tan lejos que su luz llega como un solo punto diminuto, y el aire de nuestra atmósfera lo agita con facilidad. Marte está mucho más cerca. Su luz llega como un disco muy pequeño, y esa pequeña diferencia lo hace más estable.\n\nPero hay algo más extraño que su color. Hace miles de años, quienes miraban el cielo noche tras noche descubrieron que Marte no se comportaba como las estrellas. Durante semanas avanzaba despacio entre ellas, siempre hacia el mismo lado. Y entonces, un día, parecía detenerse.\n\nDespués retrocedía.\n\nDurante algunas semanas caminaba hacia atrás por el cielo, como alguien que duda en un sendero. Luego se detenía otra vez y retomaba su rumbo original. Para los observadores antiguos, aquello debía de ser inquietante. ¿Por qué un astro vagaría sin decidirse?\n\nLa explicación llegó mucho después, y es muy humilde. Marte no retrocede. Lo que cambia es el lugar desde donde lo miramos. La Tierra y Marte giran alrededor del Sol, pero la Tierra está más cerca y se mueve más rápido. Una vez cada dos años, aproximadamente, la Tierra alcanza a Marte y lo rebasa.\n\nPiensa en dos autos en una carretera. Si tú vas en el más veloz y adelantas al otro, por un instante parece que el otro se queda atrás, que va marcha atrás. No es cierto. Es solo perspectiva. Eso mismo ocurre con Marte, y el cielo entero es el paisaje al fondo.\n\nEsa explicación no estaba al alcance de las culturas antiguas. Lo que sí tenían era el color. Y el color lo decía todo.\n\nPara los babilonios, aquella luz era Nergal, un dios ligado a la guerra y a la peste. Los griegos la llamaron Ares. Los romanos, Marte, su dios de las batallas. En otras tierras se le llamó la estrella de fuego. Casi en todas partes, la misma idea: sangre, llamas, advertencia.\n\nNadie se puso de acuerdo para ello. Cada pueblo miró hacia arriba, vio el mismo rojo inquieto, y sintió lo mismo.\n\nDurante milenios, eso fue todo lo que se supo. Una luz roja, un camino que dudaba, y muchas historias para explicarlos. Hasta que, en el siglo diecisiete, Galileo apuntó un telescopio hacia el cielo, y otros después de él lo siguieron.\n\nLo que apareció en el ocular fue un pequeño disco anaranjado. Con mejores instrumentos, y con noches de buena calma, los observadores empezaron a distinguir detalles. En los extremos del disco, manchas blancas y brillantes: los casquetes polares. Y en el centro, regiones oscuras que parecían cambiar con las estaciones, como si algo en la superficie respirara al ritmo del año.\n\nAquellas manchas oscuras alimentaron durante siglos la imaginación de quienes miraban. Se pensó en vegetación, en mares, en canales. Hoy sabemos que eran sombras de roca y polvo, movidas por el viento. Aun así, aquel primer vistazo ya mostraba que Marte era un lugar, y no solo una luz.\n\nEntonces, ¿de dónde viene ese rojo que ha inquietado a tantas generaciones?\n\nViene del hierro. Las rocas de Marte y el fino polvo que las cubre contienen mucho óxido de hierro. Es el mismo compuesto que tiñe de marrón un clavo olvidado bajo la lluvia. En Marte, durante eones, el hierro de la superficie se oxidó, y todo el planeta quedó teñido de herrumbre.\n\nMarte es un mundo oxidado.\n\nY esa herrumbre refleja la luz del Sol de regreso al espacio. Por eso lo ves a simple vista, y por eso lo ves rojizo. Cada vez que levantas la mirada hacia ese punto anaranjado, estás viendo luz solar que rebotó en polvo de hierro, a muchos millones de kilómetros de tu ventana.\n\nEse color fue lo primero que lo hizo inolvidable. Antes de cualquier telescopio, antes de cualquier número, bastó el rojo para que cada cultura le diera un nombre y un temor. Pero el hierro no se oxida solo. Necesita algo más, y esa pregunta nos espera en el propio planeta, mucho más cerca de lo que parece."
+    },
+    {
+      "title": "Un mundo pequeño y helado",
+      "question": "¿Qué tan distinto es Marte de la Tierra a pesar de parecerse tanto?",
+      "reveal": "Marte tiene aproximadamente la mitad del diámetro de la Tierra y un día de poco más de 24 horas y media, por lo que sus mañanas y tardes se sentirían extrañamente familiares.",
+      "beats": [
+        "Marte mide cerca de la mitad del diámetro de la Tierra y tiene mucha menos gravedad",
+        "Su día, llamado sol, dura unos 24 horas y 40 minutos",
+        "Su eje inclinado produce estaciones parecidas a las terrestres, aunque más largas",
+        "Su atmósfera es muy delgada y compuesta sobre todo de dióxido de carbono",
+        "La temperatura media es muy baja, con grandes diferencias entre día y noche",
+        "Sus dos pequeñas lunas, Fobos y Deimos, son rocas irregulares que giran cerca"
+      ],
+      "ambience": "wind",
+      "image_queries": [
+        "Mars Earth size comparison",
+        "Phobos Mars Reconnaissance Orbiter",
+        "Deimos Mars Reconnaissance Orbiter",
+        "Mars sunrise Curiosity",
+        "Mars sunset Spirit",
+        "Mars sky Pathfinder",
+        "Mars horizon Opportunity",
+        "Mars atmosphere limb Viking",
+        "Mars seasons Hubble",
+        "Mars sky blue sunset Curiosity"
+      ],
+      "video_queries": [
+        "Phobos orbit animation",
+        "Mars seasons visualization",
+        "Mars sunset time-lapse Curiosity"
+      ],
+      "text": "Hay una hora, justo antes del amanecer, en que Marte se vuelve un punto fijo sobre el horizonte. Quien lo mira entonces suele pensar que se parece mucho a nuestro propio mundo. Tiene polos blancos, desiertos, nubes delgadas y estaciones. Hasta tiene un día que casi coincide con el nuestro.\n\nPero ¿qué tan parecido es en realidad? ¿Qué tan distinto puede ser un mundo que, visto de lejos, parece un primo de la Tierra?\n\nEmpecemos por lo más simple, el tamaño. Si pudieras poner la Tierra y Marte uno junto al otro, Marte parecería una versión reducida. Su diámetro es cerca de la mitad del nuestro. Un avión comercial tardaría cerca de un día en rodearlo, y a la Tierra le da la vuelta en unas cuarenta horas.\n\nEse tamaño pequeño tiene una consecuencia que se siente en el cuerpo. La gravedad de Marte es mucho menor, de apenas poco más de un tercio de la terrestre. Una persona de setenta kilos pesaría allí unos veintiséis. Tus pasos serían más lentos al caer, y una mochila pesada se sentiría como un abrigo.\n\nAhora viene la primera sorpresa. Mientras el tamaño cambia tanto, el tiempo casi no cambia.\n\nMarte gira sobre su eje y completa una vuelta en poco más de veinticuatro horas y media. Los científicos llaman sol a ese día marciano, para no confundirlo con el nuestro. Un sol dura unas veinticuatro horas y treinta y siete minutos, menos de una hora más que una jornada terrestre.\n\nPiensa en lo que eso significa. Te levantarías con una luz que sube despacio y almorzarías cuando el Sol está alto. Al final de la tarde verías cómo se apaga el día, y la noche llegaría casi a la misma hora a la que estás acostumbrado.\n\nLos equipos que manejan los róveres desde la Tierra lo saben bien. Cada día sus relojes se atrasan un poco respecto al horario normal, y con las semanas terminan trabajando de madrugada.\n\nEl eje de Marte también se inclina, casi lo mismo que el de la Tierra. Esa inclinación produce estaciones, con primaveras, veranos, otoños e inviernos. Pero el año marciano dura casi el doble que el nuestro, así que cada estación se queda unos seis meses terrestres o más. Un invierno allí sería largo, y la primavera tardaría en llegar.\n\nHasta aquí, todo suena casi hogareño. Y entonces miras hacia arriba.\n\nEl aire de Marte es extremadamente delgado. Su presión es menos del uno por ciento de la que sientes al nivel del mar. Y casi todo lo que lo forma es dióxido de carbono, el mismo gas que tú exhalas. No hay suficiente oxígeno para respirar, ni suficiente presión para que el agua permanezca líquida mucho tiempo en la superficie.\n\nEsa capa tan fina casi no retiene el calor. Por eso la temperatura media ronda los sesenta grados bajo cero. Pero el promedio esconde algo más extremo. En un día de verano, cerca del ecuador, el suelo puede acercarse a los veinte grados sobre cero. Esa misma noche puede caer a más de cien grados bajo cero.\n\nEs decir, podrías sentir un poco de tibieza en las botas y, a la vez, congelarte en los hombros. El aire no alcanza para repartir el calor.\n\nPor último, levanta la vista al cielo marciano. No encontrarías una Luna redonda y brillante como la nuestra. Marte tiene dos lunas pequeñas, Fobos y Deimos.\n\nFobos mide unos veintidós kilómetros, el largo de una caminata de medio día. Deimos es todavía más pequeño. Ambas son rocas irregulares, con forma de papas oscuras y llenas de cráteres. Fobos gira tan cerca del planeta que da varias vueltas en un solo día marciano. Cruzaría el cielo rápido, y saldría por el oeste.\n\nAlgunos científicos creen que son asteroides capturados. Otros piensan que nacieron de los restos de un choque antiguo. Todavía no hay una respuesta definitiva.\n\nAsí que la pregunta del principio tiene una respuesta suave y un poco extraña.\n\nMarte tiene la mitad del tamaño de la Tierra y un día casi idéntico al tuyo.\n\nSus mañanas y sus tardes te resultarían familiares. Lo demás, el peso, el aire y el frío, sería de otro mundo. Es como entrar en una casa que tiene tu mismo horario, pero donde todo lo demás está cambiado de lugar.\n\nY queda una duda pendiente. Si este mundo pequeño tiene polos blancos, ¿de qué están hechos? ¿Y qué pasa con ellos cuando llega el verano?"
+    },
+    {
+      "title": "Los casquetes de hielo y el polvo en movimiento",
+      "question": "¿Qué esconden las capas de hielo que cubren los polos de Marte?",
+      "reveal": "Los casquetes polares de Marte están formados por capas de hielo de agua y dióxido de carbono que funcionan como un archivo de los cambios climáticos del planeta.",
+      "beats": [
+        "Los polos de Marte brillan en blanco incluso desde telescopios terrestres",
+        "Hay hielo de agua permanente y una capa estacional de hielo de dióxido de carbono",
+        "Las sondas orbitales han fotografiado capas apiladas como páginas de un libro",
+        "Esas capas probablemente registran ciclos climáticos de largo plazo",
+        "Los vientos levantan polvo y forman remolinos que dejan huellas oscuras en la superficie",
+        "Las tormentas globales de polvo pueden cubrir casi todo el planeta durante semanas"
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Mars north polar cap Mars Reconnaissance Orbiter",
+        "Mars south polar cap Mars Global Surveyor",
+        "Mars polar layers HiRISE",
+        "Mars dust devil HiRISE",
+        "Mars polar dunes HiRISE",
+        "Mars ice cap Mars Express",
+        "Mars polar spiral troughs",
+        "Mars dust storm Mars Global Surveyor",
+        "Mars frost Viking Lander",
+        "Mars north pole Phoenix"
+      ],
+      "video_queries": [
+        "Mars polar cap animation",
+        "Mars dust devil video",
+        "Mars global dust storm time-lapse"
+      ],
+      "text": "Desde un jardín cualquiera, con un telescopio pequeño, puedes ver algo curioso en Marte. En la parte de arriba del disco rojizo hay una mancha blanca, brillante, como una gota de cal.\n\nEs un polo. A decenas de millones de kilómetros de distancia, todavía se deja ver. Los astrónomos lo notaron hace más de tres siglos, y también notaron algo más. La mancha cambiaba de tamaño con las estaciones. Crecía en invierno y se encogía en verano.\n\nAlgo se congelaba y algo se evaporaba, año tras año. ¿Y qué guardan, debajo de esa pátina blanca, las capas de hielo que cubren los polos de Marte?\n\nLa primera respuesta es que no todo ese hielo es igual. Hay dos clases, y se comportan de maneras muy distintas.\n\nLa más profunda es hielo de agua. Es permanente. Dura todo el año, y probablemente ha durado millones de años, como el hielo que cubre Groenlandia. Sobre él, cada invierno se posa una segunda capa, hecha de dióxido de carbono congelado. Es el dióxido de carbono de la atmósfera, a unos ciento veinte grados bajo cero.\n\nEse hielo seco es delgado. Piensa en una escarcha gruesa, de la altura de una persona, más o menos. Cuando llega la primavera, el Sol lo calienta y se convierte directamente en gas, sin pasar por el estado líquido. Es lo que hace que la mancha blanca se encoja.\n\nY así, dos veces en cada año marciano, una parte de la atmósfera del planeta se congela y vuelve a liberarse.\n\nPero el hielo permanente seguía sin contar su historia. Hizo falta mirar desde arriba, muy de cerca.\n\nCuando las sondas orbitales llegaron a Marte, giraron una y otra vez sobre los polos. Sus cámaras revelaron algo que ningún telescopio habría podido mostrar. En los bordes del casquete, donde el hielo se corta en acantilados y valles, aparecían capas.\n\nMuchas capas. Claras y oscuras, una sobre otra, como las páginas de un libro cerrado, visto de canto.\n\nCada capa es más delgada que un edificio. Algunas son de hielo casi puro. Otras llevan mezclado el polvo fino del planeta, y por eso se ven más oscuras. Alguna vez el aire de Marte cargó más polvo, y alguna vez menos.\n\nEntonces surge la pregunta natural. ¿Por qué cambia ese polvo, y por qué cambia el hielo?\n\nLos científicos creen que la respuesta está en la inclinación del propio planeta. El eje de Marte no se mantiene fijo para siempre. Se balancea despacio, a lo largo de cientos de miles de años, mucho más que la Tierra. Cuando se inclina más, los polos reciben más luz y el hielo se derrite o se evapora. Cuando se endereza, el hielo vuelve a acumularse.\n\nCada ciclo deja una marca. Cada marca se entierra bajo la siguiente.\n\nLos casquetes polares no son solo hielo. Son un archivo, escrito capa a capa, de cómo ha cambiado el clima de Marte.\n\nAún no sabemos leerlo del todo. Cuánto tiempo representa cada página sigue siendo una cuestión abierta. Pero el libro está ahí, y es enorme.\n\nLejos de los polos, el paisaje cuenta otra historia, mucho más inquieta.\n\nEl viento marciano es débil, porque el aire es muy delgado. Aun así, levanta polvo tan fino como el humo de una vela. En las llanuras, el suelo se calienta, el aire sube y empieza a girar. Nace un remolino.\n\nAlgunos miden cientos de metros de alto. Caminan sobre la superficie durante minutos y luego se desvanecen. A su paso arrastran la capa clara de polvo y dejan al descubierto el suelo oscuro de abajo. Desde la órbita se ven largas huellas, trazadas como con un lápiz suave, que el viento borrará con el tiempo.\n\nSi estuvieras allí, no sentirías casi nada. Un empujón leve, una brisa seca. El aire es tan delgado que ni siquiera haría sonar una hoja.\n\nY sin embargo, a veces ese mismo viento se multiplica.\n\nCada pocos años marcianos, una tormenta local crece más de lo normal. El polvo calienta el aire, el aire se mueve con más fuerza, y la fuerza levanta todavía más polvo.\n\nEntonces el cielo cambia de color.\n\nEn las tormentas más grandes, el polvo cubre casi todo el planeta. Desde la Tierra, un telescopio ya no distingue las manchas oscuras. El disco entero se vuelve un velo anaranjado. Y puede durar semanas, o incluso meses, antes de que el polvo vuelva a posarse.\n\nLo más extraño es lo que sucede después. Ese polvo cae despacio, sobre las llanuras, sobre los volcanes, sobre los mismos casquetes de hielo. Y quizás, en alguna de esas capas del polo, ya está quedando escrita esa tormenta.\n\nHay otro lugar donde el planeta guarda su memoria, mucho más cerca del ecuador. Es una herida abierta de miles de kilómetros."
+    },
+    {
+      "title": "El gigante de las llanuras: Monte Olimpo",
+      "question": "¿Cómo pudo formarse un volcán tan inmenso que no cabría en ningún paisaje terrestre?",
+      "reveal": "El Monte Olimpo es el volcán más alto conocido del sistema solar y su base es tan ancha que, de pie sobre él, no verías su pendiente.",
+      "beats": [
+        "Olympus Mons es un volcán en escudo de unos 22 kilómetros de altura",
+        "Su base es enorme, comparable en tamaño a un país mediano",
+        "Sus pendientes son tan suaves que un viajero no notaría la subida",
+        "En la cima hay una caldera formada por colapsos de cámaras de magma",
+        "Marte no tiene placas tectónicas móviles como la Tierra, así que el volcán creció en el mismo punto",
+        "Su menor gravedad permitió que se elevara a alturas que serían imposibles aquí"
+      ],
+      "ambience": "lava",
+      "image_queries": [
+        "Olympus Mons Mars Express",
+        "Olympus Mons Viking",
+        "Olympus Mons caldera",
+        "Olympus Mons Mars Global Surveyor",
+        "Tharsis volcanoes Mars",
+        "Olympus Mons escarpment",
+        "Arsia Mons Mars",
+        "Pavonis Mons Mars",
+        "Ascraeus Mons Mars",
+        "Mars Tharsis region Mars Reconnaissance Orbiter"
+      ],
+      "video_queries": [
+        "Olympus Mons flyover animation",
+        "Mars volcano visualization",
+        "Tharsis region flyover Mars Express"
+      ],
+      "text": "Un geólogo camina por una ladera de Hawái, con la mano apoyada en la roca negra todavía tibia. Está sobre el volcán más grande de la Tierra, y sin embargo la montaña no se parece a una montaña. Es una cuesta ancha y tranquila, que sube sin prisa hacia un cielo vacío.\n\nAhora piensa en un volcán todavía mayor. Uno que, puesto en cualquier paisaje terrestre, no cabría. ¿Cómo pudo formarse algo así?\n\nLos primeros astrónomos que apuntaron sus telescopios a Marte vieron, hace más de un siglo, una mancha clara que a veces destacaba sobre el polvo rojizo. La llamaron Nix Olympica, la nieve del Olimpo. Pensaron que era una nube, o un campo de hielo. Nadie sospechaba que fuera una montaña.\n\nEntonces, en mil novecientos setenta y uno, llegó la sonda Mariner Nueve. Una tormenta de polvo cubría todo el planeta. Durante semanas, la cámara solo vio una niebla rojiza y plana.\n\nPero en esa niebla asomaban cuatro puntos oscuros. Eran cimas. Y la más alta de todas, la que antes parecía una nube, era una cumbre de roca que atravesaba el polvo.\n\nHoy sabemos que el Monte Olimpo mide unos veintidós kilómetros de altura. Es como poner dos veces y media la altura del Everest, una sobre otra. Un avión comercial, volando a su altura de crucero, pasaría muy por debajo de la cima.\n\nEs el volcán más alto conocido del sistema solar.\n\nPero la altura es solo una parte de la historia. Lo asombroso es lo ancho que es. Su base se extiende a lo largo de unos seiscientos kilómetros. Eso es más o menos la distancia entre dos ciudades que uno tardaría medio día en recorrer en carro. Podría cubrir un país mediano, con sus ciudades, sus ríos y sus fronteras.\n\nPor eso un viajero que caminara por sus faldas no notaría la subida. La pendiente es de apenas unos cinco grados, como una rampa suave. Caminarías horas, quizá días, con la sensación de avanzar por una llanura. El horizonte, además, se curva tan cerca en Marte que nunca verías la montaña entera. Estarías dentro de ella sin saberlo.\n\nY al final de esa larga cuesta, encontrarías algo distinto. En la cima hay una caldera, un hundimiento enorme de forma irregular. Se formó cuando las cámaras de magma, allá abajo, se vaciaron y el suelo se desplomó sobre ellas. Ocurrió no una vez, sino varias, en distintas épocas. Los bordes de esos círculos superpuestos aún se ven desde el espacio, como anillos dejados por una taza.\n\nQueda la pregunta de fondo. ¿Por qué creció tanto?\n\nLa primera pista está bajo nuestros pies, en la Tierra. Nuestra corteza está rota en placas que se desplazan despacio, unos centímetros al año, como uñas que crecen. Los volcanes de Hawái nacen sobre un punto caliente del manto. Pero la placa se mueve, y el volcán es arrastrado lejos de su fuente. Entonces nace otro, y otro más. Así se forma una cadena de islas.\n\nEn Marte no ocurre esto.\n\nMarte no tiene placas móviles como la Tierra. Su corteza es una sola pieza quieta. El punto caliente quedó siempre bajo el mismo lugar, y la lava siguió brotando en el mismo sitio. Capa sobre capa, durante cientos de millones de años, quizá más. Un volcán que no fue arrastrado a ninguna parte, y que siguió creciendo.\n\nLa segunda pista es la gravedad. En Marte es apenas un poco más de un tercio de la terrestre. Una montaña de roca se sostiene sobre su propio peso, y en la Tierra ese peso la hundiría y la aplastaría mucho antes de llegar tan alto. En Marte la roca pesa menos, y la base aguanta más.\n\nAsí que el Monte Olimpo no es un capricho. Es el resultado natural de un mundo quieto, con poco peso y mucho tiempo.\n\nEs un volcán tan ancho que, de pie sobre él, no verías su pendiente.\n\nPiensa en eso un momento. Hay lugares donde la mayor obra de un planeta es invisible desde dentro. Solo desde lejos, desde el cielo, se entiende lo que uno pisa. Y quizá eso nos pasa también con la Tierra.\n\nPero Marte aún guarda otra forma de herida, y esta no apunta hacia arriba. Muy cerca de ese gigante hay una región donde la corteza se levantó, y al levantarse, algo se rompió."
+    },
+    {
+      "title": "La cicatriz de Marte: Valles Marineris",
+      "question": "¿Qué fuerza abrió una grieta capaz de atravesar gran parte del planeta?",
+      "reveal": "Valles Marineris se extiende a lo largo de unos 4000 kilómetros y alcanza profundidades de varios kilómetros, mucho más que el Gran Cañón.",
+      "beats": [
+        "Valles Marineris corre cerca del ecuador marciano a lo largo de miles de kilómetros",
+        "Es mucho más largo y profundo que el Gran Cañón del Colorado",
+        "Se cree que se abrió por el estiramiento y fractura de la corteza junto a la región volcánica de Tharsis",
+        "Sus paredes muestran capas de roca que cuentan la historia geológica",
+        "Hay deslizamientos enormes y depósitos en sus laderas",
+        "Algunos sectores muestran posibles huellas de agua que lo moldeó después"
+      ],
+      "ambience": "wind",
+      "image_queries": [
+        "Valles Marineris Viking",
+        "Valles Marineris Mars Express",
+        "Valles Marineris Mars Reconnaissance Orbiter",
+        "Ius Chasma Mars",
+        "Melas Chasma Mars",
+        "Candor Chasma layers Mars",
+        "Valles Marineris landslide HiRISE",
+        "Coprates Chasma Mars",
+        "Ophir Chasma Mars",
+        "Valles Marineris THEMIS"
+      ],
+      "video_queries": [
+        "Valles Marineris flyover animation",
+        "Mars canyon flight Mars Express",
+        "Valles Marineris 3D visualization"
+      ],
+      "text": "Hay un lugar en Marte donde el suelo simplemente se acaba. Si pudieras caminar hasta su borde, verías que la tierra roja corta en seco. Debajo de tus pies se abre un vacío tan hondo que el fondo parece pertenecer a otro paisaje. Del otro lado, a muchos kilómetros, apenas se adivina la pared opuesta, suavizada por la distancia y por una bruma fina.\n\nA este lugar se le llama Valles Marineris. Corre cerca del ecuador marciano, y no es un valle cualquiera. Es una herida abierta en la piel del planeta, que se alarga hacia el horizonte hasta perderse de vista.\n\nEntonces surge la pregunta. ¿Qué fuerza pudo abrir una grieta capaz de recorrer una porción tan grande de un mundo?\n\nPara sentir su tamaño, piensa en el Gran Cañón del Colorado. Es uno de los lugares más impresionantes de la Tierra, y tardarías días en recorrerlo a pie. Pues bien, Valles Marineris es mucho más largo y mucho más profundo. Podrías colocar el Gran Cañón dentro de uno de sus brazos laterales, y aún sobraría espacio.\n\nLas sondas que llegaron a Marte en los años setenta fueron las primeras en descubrirlo. El nombre se le dio en honor a la Mariner Nueve, la nave que lo fotografió. Las imágenes mostraron una franja oscura, larga como un tajo, que cruzaba toda una región del planeta.\n\nPero la clave no estaba en el cañón mismo. Estaba en lo que había a su lado.\n\nAl oeste se levanta una enorme región abultada, llamada Tharsis. Allí viven los volcanes gigantes, los mismos que acabamos de visitar. Durante millones de años, esa zona fue empujada hacia arriba por el calor del interior del planeta. Y una corteza que se levanta tanto no puede quedarse intacta.\n\nSe estiró. Se tensó, como la masa de un pan que se hincha. Y al final se fracturó.\n\nEso es lo que se cree hoy: que Valles Marineris nació del estiramiento y la ruptura de la corteza, junto al peso y la presión de Tharsis. No fue un golpe venido del cielo, ni un río que cavó durante siglos. Fue el propio planeta, rompiéndose despacio desde dentro.\n\nSu tamaño, medido con cuidado, es difícil de abarcar. Se extiende a lo largo de unos cuatro mil kilómetros, más o menos como cruzar de costa a costa los Estados Unidos. Y en sus partes más hondas alcanza varios kilómetros de profundidad, mucho más que cualquier cañón terrestre.\n\nCuatro mil kilómetros de cicatriz, en un planeta que cabría muchas veces dentro del nuestro.\n\nSi te asomaras a sus paredes, verías que no son lisas. Están hechas de capas, una sobre otra, como los estratos de un corte en la montaña. Cada capa es un momento distinto: una erupción, una época de polvo, un tiempo en que el planeta fue otro. Los geólogos las leen de arriba abajo, y así recorren la historia de Marte sin moverse de lugar.\n\nCon el tiempo, esas paredes también cedieron. En las laderas hay deslizamientos enormes, donde montañas enteras se desprendieron y fluyeron hacia el fondo. Todavía se ven los depósitos que dejaron, extendidos como lenguas de roca quebrada. Algunos son tan grandes que podrían ocultar una ciudad completa.\n\nY hay algo más, que se dice en voz baja. En ciertos sectores del cañón aparecen formas que sugieren la huella del agua. Son depósitos en capas, y minerales que parecen haberse formado en presencia de humedad. Podría ser que, mucho después de abrirse la grieta, el agua llegara a moldear sus orillas.\n\nNadie lo sabe con certeza. Las señales están ahí, pero hay que leerlas con paciencia.\n\nY quizá por eso mismo la pregunta siguiente se vuelve inevitable. Si hubo agua aquí, en algún momento, ¿hacia dónde corría? ¿Qué caminos dejó, al marcharse, sobre esta tierra tan seca?"
+    },
+    {
+      "title": "Cauces secos: las huellas de antiguos ríos",
+      "question": "¿Cómo sabemos que alguna vez corrió agua líquida sobre Marte?",
+      "reveal": "Desde la órbita se ven valles ramificados y deltas fosilizados que muestran que el agua líquida fluyó y se acumuló sobre la superficie durante épocas antiguas.",
+      "beats": [
+        "Las primeras sondas orbitales revelaron canales y valles que parecían cauces secos",
+        "Hay valles ramificados que se asemejan a redes de ríos terrestres",
+        "Los grandes canales de desagüe sugieren inundaciones catastróficas en el pasado",
+        "El cráter Jezero conserva un delta antiguo con sedimentos en abanico",
+        "Minerales como arcillas se forman en presencia de agua líquida",
+        "Los científicos aún debaten cuánto duraron esos periodos húmedos y qué tan cálido fue el clima"
+      ],
+      "ambience": "sea",
+      "image_queries": [
+        "Jezero crater delta Mars",
+        "Nili Fossae Mars",
+        "Ares Vallis Mars",
+        "Mars valley networks Viking",
+        "Mars outflow channel Mars Express",
+        "Mars ancient river Mars Reconnaissance Orbiter",
+        "Mars delta Eberswalde",
+        "Mars clay minerals CRISM",
+        "Mars Kasei Valles",
+        "Mars Mawrth Vallis"
+      ],
+      "video_queries": [
+        "Jezero crater flyover animation",
+        "Mars ancient water visualization",
+        "Mars ancient lake animation"
+      ],
+      "text": "Volvamos un momento a la Mariner Nueve, esperando entre el polvo de aquella tormenta.\n\nLos ingenieros esperaron. Poco a poco el polvo se asentó, y la superficie fue apareciendo. Primero asomaron las cumbres de los volcanes. Después, imágenes más nítidas, y en ellas algo que nadie esperaba: líneas largas y sinuosas, grabadas en la tierra como cicatrices de un río.\n\n¿Podía ser? ¿Cómo sabemos que alguna vez corrió agua líquida sobre un mundo tan seco?\n\nAl principio nadie se atrevió a decirlo en voz alta. Se habló de lava, de viento, de grietas. Pero las formas seguían ahí, y se parecían demasiado a algo que conocemos bien. Eran canales con curvas suaves, orillas definidas y fondos planos, como los que deja una corriente tranquila en una llanura.\n\nCon los años, otras sondas se acercaron más. Y vieron valles que se ramifican. Pequeños surcos se juntan en arroyos, los arroyos en cauces mayores, y los cauces mayores en un solo valle ancho. Si alguna vez has mirado un río desde un avión, reconocerás ese dibujo. Es el mismo árbol, con las raíces hacia arriba. La lluvia, o el deshielo, o el agua que brota del suelo, siempre construye redes así.\n\nHabía además otras huellas, mucho más grandes. En ciertas regiones, enormes canales nacen de pronto en terreno quebrado y se extienden cientos de kilómetros. Tienen islas con forma de lágrima, talladas por una corriente que las rodeó. Esas formas no hablan de un riachuelo constante. Hablan de una inundación violenta, de un volumen de agua que debió soltarse de golpe, quizá desde bajo la superficie. Algo así como vaciar un lago en pocos días.\n\nY sin embargo, la pregunta seguía abierta. Un cauce seco puede ser una cicatriz de un solo evento. Para saber si el agua se había quedado, hacía falta encontrar el lugar donde descansó.\n\nEse lugar existe. Se llama Jezero, y es un cráter de unos cuarenta y cinco kilómetros de ancho, más o menos lo que tardarías en cruzar en bicicleta en una mañana tranquila.\n\nDesde la órbita, en el borde occidental del cráter, se ve algo que cualquier geólogo reconoce de inmediato. Un valle desemboca en el cráter, y justo allí el terreno se abre en forma de abanico. Capas finas de sedimento se extienden hacia el interior, una sobre otra, como los dedos de una mano abierta.\n\nAsí se forma un delta. Un río llega a un lago, pierde fuerza, y suelta poco a poco la arena y el barro que traía consigo. Durante mucho tiempo, aquí, el agua entró y se quedó.\n\nDesde la órbita se ven valles ramificados y deltas fosilizados.\n\nPero hay otra pista, más silenciosa, que no depende de la forma del paisaje. Está en la propia roca. Instrumentos en órbita detectaron en muchas regiones minerales llamados arcillas. Las arcillas no se forman en la roca seca. Nacen cuando el agua líquida permanece largo tiempo en contacto con la piedra y la transforma, grano a grano, durante siglos. Es una huella química, tan discreta como la sal que deja el mar al evaporarse.\n\nAsí que las pistas coinciden. La forma de los valles, la de los canales, el abanico del delta, la composición de las rocas. Todas cuentan la misma historia, desde ángulos distintos. El agua líquida corrió sobre Marte, y en algunos lugares se acumuló.\n\nEso cambia la manera de mirarlo. Ese punto rojizo que ves en el cielo no fue siempre un desierto. Hubo orillas, y hubo corrientes, quizá bajo un cielo parecido al nuestro en algún aspecto que todavía no entendemos del todo.\n\nPorque aquí es donde la ciencia se detiene y dice la verdad: no lo sabemos todo. ¿Cuánto duraron esas épocas húmedas? ¿Fueron siglos, o millones de años? ¿Hizo calor suficiente para que lloviera, o el agua corrió bajo un manto de hielo, en un clima frío que apenas permitía el deshielo? Los científicos discuten, con datos en la mano y paciencia de sobra.\n\nLo que sí sabemos es que el agua dejó su firma. Y una firma así invita a otra pregunta, más tranquila y más antigua. Si el agua estuvo allí, y si se quedó el tiempo suficiente, ¿alguien fue a mirar de cerca lo que quedó en esas orillas?"
+    },
+    {
+      "title": "Los róveres: exploradores en tierra roja",
+      "question": "¿Qué han descubierto los róveres al tocar directamente el suelo marciano?",
+      "reveal": "Los róveres han encontrado rocas formadas en agua, minerales que se depositan en lagos y compuestos orgánicos, lo que confirma que Marte tuvo ambientes potencialmente habitables.",
+      "beats": [
+        "Sojourner fue el primer róver, pequeño como un carrito, en 1997",
+        "Spirit y Opportunity encontraron minerales formados por agua y esférulas de hematita",
+        "Curiosity exploró el cráter Gale y halló rocas de un antiguo lago con ingredientes químicos para la vida",
+        "Perseverance recoge muestras selladas en el cráter Jezero para una futura posible devolución a la Tierra",
+        "El helicóptero Ingenuity demostró que se puede volar en la delgada atmósfera marciana",
+        "Aún no se ha confirmado vida pasada: es una pregunta abierta"
+      ],
+      "ambience": "wind",
+      "image_queries": [
+        "Curiosity rover selfie Mars",
+        "Perseverance rover Jezero",
+        "Opportunity rover Mars",
+        "Spirit rover Mars",
+        "Sojourner rover Pathfinder",
+        "Ingenuity helicopter Mars",
+        "Mount Sharp Gale crater Curiosity",
+        "Endeavour crater Opportunity",
+        "Mars rock sample Perseverance",
+        "Mars panorama Curiosity"
+      ],
+      "video_queries": [
+        "Perseverance rover Mars footage",
+        "Curiosity rover drive Mars",
+        "Ingenuity helicopter flight video"
+      ],
+      "text": "En mil novecientos noventa y siete, un robot del tamaño de un carrito de supermercado bajó una rampa y tocó el suelo de Marte. Se llamaba Sojourner. Avanzaba tan despacio que en un día entero recorría apenas la distancia entre dos casas vecinas.\n\nHasta ese momento, todo lo que sabíamos del planeta venía de la distancia. Fotografías desde la órbita, colores vistos por telescopio, sombras de cauces secos. Pero una imagen no es una piedra. Así que la pregunta era sencilla: ¿qué encontraríamos al tocar directamente el suelo marciano?\n\nSojourner no encontró respuestas completas. Midió la composición de unas pocas rocas con un pequeño instrumento y demostró algo más modesto y más importante. Una máquina podía moverse por allí, de piedra en piedra, y decidir a dónde ir.\n\nSiete años después, en dos mil cuatro, llegaron dos gemelos. Se llamaban Spirit y Opportunity, y cada uno pesaba unos ciento ochenta kilos. Fueron enviados a lugares distintos, a lados opuestos del planeta.\n\nOpportunity se detuvo en una llanura plana y vio algo extraño en el suelo. Había pequeñas esferas, del tamaño de granos de pimienta, esparcidas como si alguien las hubiera sembrado. Eran esférulas de hematita, un mineral de hierro.\n\nEn la Tierra, la hematita así se forma muchas veces dentro de rocas empapadas en agua. Y las rocas de alrededor mostraban sales y capas finas, con el aspecto de sedimentos depositados despacio. Spirit, al otro lado del mundo, halló también minerales que solo nacen donde el agua ha estado.\n\nYa no era una sombra vista desde arriba. Era una roca sostenida, medida, tocada con un brazo de metal.\n\nDespués vino Curiosity, en dos mil doce. Es un róver del tamaño de un automóvil pequeño, y aterrizó dentro del cráter Gale. En el centro del cráter se levanta una montaña de capas, y los científicos querían leerla de abajo hacia arriba, como quien lee un libro de las páginas más antiguas a las más nuevas.\n\nCuriosity perforó una roca de grano muy fino, un lodo endurecido hace miles de millones de años. El análisis mostró arcillas, y mostró también carbono, nitrógeno y azufre, entre otros elementos. Son ingredientes que la vida terrestre necesita. Allí hubo un lago, con agua que no era ni demasiado ácida ni demasiado salada.\n\nUn lago tranquilo, en una tierra que hoy está helada y seca.\n\nMás tarde, Curiosity detectó también moléculas orgánicas, compuestos de carbono guardados dentro de esas rocas antiguas. Conviene decirlo con calma. Orgánico no significa vivo. Esas moléculas también pueden llegar en meteoritos o formarse sin ayuda de ningún ser vivo. Pero que hayan sobrevivido tanto tiempo ya dice algo.\n\nEn dos mil veintiuno llegó Perseverance, al cráter Jezero, donde hubo un delta. Allí trabaja con un taladro delicado y llena tubos de titanio con trozos de roca del tamaño de un lápiz. Cada tubo se sella y se deja en el suelo, como una carta guardada para alguien que todavía no ha llegado.\n\nLa idea es que una futura misión los recoja y los traiga a la Tierra. Solo en laboratorios de aquí podríamos mirar esas rocas con instrumentos que no caben en ningún róver. Ese regreso es posible, pero aún no está asegurado.\n\nPerseverance llevó además un pasajero pequeño, un helicóptero llamado Ingenuity. El aire de Marte es tan delgado que casi no sostiene un ala. Las aspas giraban con una rapidez enorme para encontrar algo de dónde apoyarse.\n\nY se elevó.\n\nFue un vuelo breve, apenas unos metros sobre el polvo, pero era el primer vuelo controlado en otro mundo. Después siguió volando decenas de veces, mucho más de lo que nadie esperaba.\n\nAhora podemos responder lo que preguntábamos al principio. Los róveres han encontrado rocas formadas en agua, minerales que se depositan en lagos y compuestos orgánicos. Marte tuvo ambientes que pudieron ser habitables.\n\nEso es lo que sabemos. No sabemos si alguna vez algo vivió allí. Ninguna de esas rocas ha mostrado todavía una señal que no pueda explicarse de otra manera, y la pregunta sigue abierta, tan tranquila como el paisaje.\n\nQuizá te des cuenta de lo que significa. Mirar esas orillas secas es mirar un lugar donde la vida pudo empezar, tal como empezó aquí, en aguas que también eran tibias y quietas. Pero si el agua se fue de la superficie, ¿adónde fue todo lo que quedó?"
+    },
+    {
+      "title": "El agua que aún queda bajo la superficie",
+      "question": "¿Dónde puede estar hoy el agua de Marte si su superficie parece tan seca?",
+      "reveal": "Hay hielo de agua enterrado bajo el suelo en latitudes medias y señales de posible agua líquida salobre en profundidad, un resto de aquel pasado húmedo.",
+      "beats": [
+        "La sonda Phoenix excavó hielo de agua justo bajo el polvo cerca del polo norte",
+        "Radares orbitales detectan hielo enterrado en latitudes medias",
+        "Cráteres recientes han dejado al descubierto hielo brillante",
+        "Las líneas oscuras estacionales en pendientes han sido objeto de debate y no prueban agua líquida estable",
+        "Mediciones sísmicas de InSight revelaron la estructura interna del planeta",
+        "La detección de agua líquida profunda sigue siendo una cuestión abierta y debatida"
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Phoenix lander Mars ice",
+        "Mars ice exposed crater HiRISE",
+        "Mars recurring slope lineae",
+        "Mars subsurface ice radar",
+        "InSight lander Mars",
+        "Mars Arcadia Planitia ice",
+        "Mars Phoenix trench",
+        "Mars glaciers Mars Reconnaissance Orbiter",
+        "Mars lobate debris apron",
+        "Mars Mars Odyssey ice map"
+      ],
+      "video_queries": [
+        "Mars subsurface ice animation",
+        "InSight lander Mars footage",
+        "Mars water history visualization"
+      ],
+      "text": "El brazo robótico de la sonda Phoenix terminaba en una pala del tamaño de una mano. En dos mil ocho rascó el suelo helado cerca del polo norte de Marte, a pocos centímetros de profundidad. Debajo del polvo rojizo apareció algo blanco y liso.\n\nLos científicos no sabían qué era. Marte parece un desierto sin una sola gota, y sin embargo ahí había algo que no encajaba. ¿Dónde puede estar hoy el agua de este planeta, si su superficie parece tan seca?\n\nCuatro días después, la respuesta empezó a hacerse visible. Los trocitos blancos habían desaparecido. Se habían evaporado, uno a uno, en el aire frío y delgado, como lo haría el hielo olvidado en un congelador abierto.\n\nEra hielo de agua, escondido bajo un palmo de polvo.\n\nPero Phoenix solo había rascado un punto, muy cerca del polo. Quedaba una pregunta más grande. ¿Había hielo también lejos de allí, donde el planeta recibe más luz del Sol?\n\nPara saberlo, los astrónomos usaron un método distinto. Algunas sondas que giran alrededor de Marte llevan radares que envían ondas hacia el suelo. Las ondas atraviesan la roca seca, pero rebotan de otra manera al chocar con hielo. Así, desde cientos de kilómetros de altura, esos radares encontraron enormes depósitos enterrados en las latitudes medias. Algunos tienen decenas de metros de espesor, y están cubiertos por una capa fina de polvo y piedras.\n\nHay otra pista, y esta se puede ver con los ojos. A veces un meteorito golpea Marte y abre un cráter nuevo. Cuando el impacto es lo bastante profundo, la fotografía desde la órbita muestra algo extraño: manchas de un blanco azulado, brillantes sobre el suelo oscuro. Es hielo recién desenterrado. Con los meses, el hielo se va evaporando y el color vuelve a apagarse.\n\nEl hielo está ahí, bajo nuestros pies imaginarios, esperando a que algo lo descubra.\n\nSin embargo, no todas las pistas son tan claras. En algunas laderas calientes de Marte aparecen líneas oscuras que crecen en primavera y se desvanecen en invierno. Al principio se pensó que eran hilos de agua líquida deslizándose cuesta abajo. Parecía una idea hermosa, y todavía se discute. Hoy muchos investigadores creen que podrían formarse por polvo y arena que se deslizan, sin agua. Estas líneas no prueban que corra agua líquida estable por la superficie.\n\nEntonces queda la pregunta de lo que hay más hondo. Y allí la mirada cambia, porque ya no se mira el suelo, sino el interior.\n\nEn dos mil dieciocho llegó a Marte una sonda llamada InSight. No tenía ruedas ni cámaras para explorar. Su trabajo era quedarse quieta y escuchar. Apoyó un sismómetro sobre la tierra roja y esperó, durante años, a que el planeta temblara.\n\nY Marte tembló. Cada sacudida enviaba ondas a través de la corteza, el manto y el núcleo. Al ver cómo cambiaban de velocidad, los científicos dibujaron por primera vez el interior de otro planeta con cierto detalle. Descubrieron que la corteza es más delgada de lo esperado en algunos lugares, y que el núcleo de hierro es líquido y bastante grande.\n\nAlgunos analistas fueron más lejos. Al estudiar esas ondas, propusieron que, a kilómetros de profundidad, las rocas fracturadas podrían guardar agua líquida, quizá salada, atrapada en sus poros. Salada, porque la sal mantiene líquida el agua a temperaturas muy bajas. La idea no tiene aún consenso. Otros expertos creen que los datos pueden explicarse de otras formas.\n\nAsí que la ciencia todavía no sabe si existe esa agua profunda. Es una pregunta abierta, y quizá lo siga siendo durante mucho tiempo.\n\nPero esto sí lo sabemos. Una parte del agua de Marte no se perdió del todo. Está congelada bajo el suelo, a la espera, y quizá una parte siga líquida, muy abajo, en la oscuridad.\n\nEs un resto de aquel pasado húmedo, guardado en silencio.\n\nY si el agua se quedó, aunque sea escondida, surge otra pregunta más serena. ¿Cómo se sentiría estar parado allí, sobre ese suelo, cuando la luz del día apenas comienza a llegar?"
+    },
+    {
+      "title": "Un amanecer en Marte",
+      "question": "¿Cómo sería quedarse de pie en Marte y mirar el cielo?",
+      "reveal": "Al atardecer el cielo marciano se vuelve azul alrededor del Sol, lo contrario de la Tierra, y bajo ese resplandor tranquilo comprendemos que Marte fue otro mundo en otra época.",
+      "beats": [
+        "Al llegar, el silencio sería casi total y el aire demasiado delgado para transportar mucho sonido",
+        "El horizonte rojizo se extiende bajo un cielo pálido de tonos canela",
+        "Las fotografías de los róveres muestran atardeceres de halo azul alrededor del Sol",
+        "La gravedad más débil haría que cada paso se sintiera más ligero",
+        "Desde allí, la Tierra sería apenas un punto brillante en el cielo",
+        "El viaje termina con la idea de que Marte, un mundo antes más húmedo, sigue guardando preguntas abiertas"
+      ],
+      "ambience": "wind",
+      "image_queries": [
+        "Mars sunset Curiosity",
+        "Mars sunset Spirit rover",
+        "Mars panorama Pathfinder",
+        "Mars sky Earth seen from Mars",
+        "Mars twilight Curiosity",
+        "Mars landscape Opportunity",
+        "Mars dunes Curiosity",
+        "Mars horizon Perseverance",
+        "Mars sky dust Pathfinder",
+        "Mars Gale crater panorama"
+      ],
+      "video_queries": [
+        "Mars surface panorama video",
+        "Mars sunset visualization",
+        "Mars rover timelapse NASA"
+      ],
+      "text": "Al llegar, lo primero que notarías es que no se oye nada. Ni viento fuerte, ni pájaros, ni el rumor lejano de una ciudad. Solo el roce de tu propio traje y tu respiración dentro del casco.\n\nEl aire de Marte existe, pero es demasiado delgado. Lleva el sonido muy mal, como una voz que se apaga en una habitación vacía. Un viento fuerte allí apenas sería un susurro. Los micrófonos de los róveres han registrado ese silencio, interrumpido por ráfagas suaves y por el crujir de sus propias ruedas.\n\nEntonces levantas la vista. ¿Cómo sería quedarse de pie en Marte y mirar el cielo?\n\nLo primero que ves es el suelo. Un horizonte rojizo se extiende en todas direcciones, con piedras oscuras esparcidas sobre arena fina. Es el óxido de hierro, el mismo que viste desde la Tierra como un punto rojo y quieto. Ahora lo tienes bajo los pies.\n\nSobre esa llanura, el cielo no es negro, como quizás esperabas. Tampoco es azul. Es pálido, de un tono canela, como papel viejo iluminado desde atrás. Ese color viene del polvo fino que flota en el aire y que atrapa la luz del Sol.\n\nDurante la mayor parte del día, así se ve Marte. Un cielo color arena sobre un suelo color óxido.\n\nPero los róveres se quedaron a mirar hasta el final de la tarde. Y las fotografías que enviaron, desde Spirit, desde Opportunity, desde Curiosity, muestran algo que parece un error. Cuando el Sol baja hacia el horizonte, a su alrededor aparece un halo azul.\n\nEs un azul frío y sereno, que se abre en torno al disco del Sol. Y más lejos, el cielo sigue siendo canela.\n\nEn la Tierra ocurre lo contrario. Nuestro cielo es azul durante el día, y al atardecer se tiñe de naranja y rojo junto al Sol. En Marte, el polvo dispersa la luz de otro modo. Deja pasar el azul hacia adelante, y lo concentra justo alrededor de la luz.\n\nPor eso un atardecer marciano es como un atardecer terrestre visto en un espejo.\n\nMientras el Sol se hunde, das un paso. Y el cuerpo te sorprende. La gravedad de Marte es poco más de un tercio de la que conoces. Cada paso se sentiría más ligero, casi como si el suelo te devolviera un poco del impulso. Subir una pendiente cansaría menos. Dejar caer una piedra sería verla caer despacio, con una calma que no tiene la Tierra.\n\nCuando el azul se oscurece, aparecen las primeras estrellas. Y entre ellas, una luz que no parpadea. Es blanca, con un tinte azulado, algo más brillante que las otras.\n\nEs la Tierra.\n\nDesde allí, nuestro mundo sería un punto. Un solo punto, tan pequeño que cabría detrás de la uña de tu dedo. Y en ese punto están todos los mares, todas las ciudades. Ahí están todas las personas que alguna vez miraron hacia arriba y vieron a Marte como una luz roja en el cielo.\n\nQuizás por eso este lugar nos habla en voz baja. Hace mucho, hace miles de millones de años, aquí hubo ríos. Hubo un delta en Jezero, hubo lagos en Gale, hubo arcillas nacidas del agua. Hoy queda hielo bajo el polvo, y un silencio que lo cubre todo.\n\n¿Hubo vida en esas aguas? Todavía no lo sabemos. Las muestras esperan, selladas en tubos, a que alguien aprenda a leerlas. Quizás la respuesta llegue en tu vida. Quizás tarde mucho más.\n\nY está bien que así sea. Un mundo que guarda preguntas abiertas no está muerto. Solo está esperando, con paciencia, bajo su cielo canela.\n\nLa última luz azul se apaga sobre el horizonte. El viento, si lo hay, no hace ruido. Las estrellas se vuelven más nítidas, y la pequeña luz de la Tierra sigue allí, firme y cálida.\n\nHas recorrido un largo camino esta noche. Has visto polos blancos, un volcán gigante, una grieta que cruza un mundo, cauces que ya no llevan agua. Todo eso sigue allí, en la oscuridad tranquila, mientras tú descansas.\n\nRespira despacio. Deja que el cielo se oscurezca. Buenas noches."
+    }
+  ],
+  "cold_open": "Marte es un punto rojo que lleva millones de años mirándote desde lo alto de la noche. Y en su superficie hay un volcán más de dos veces más alto que el Everest.\n\nHay también un cañón que se extiende unos cuatro mil kilómetros.\n\nDurante siglos creímos que era un desierto muerto, quieto desde siempre. Pero sus valles guardan las huellas de ríos que corrieron hace miles de millones de años.\n\n¿Qué pasó con esa agua? ¿Adónde se fue un mundo que alguna vez pudo tener orillas?\n\nEsta noche vamos a recorrerlo despacio. Empezaremos en el cielo, bajaremos hasta las llanuras heladas, subiremos al gigante Monte Olimpo y nos asomaremos a la gran cicatriz de Valles Marineris.\n\nTodo lo que verás es real. Todo lo que escucharás es ciencia.\n\nNada de esto tiene prisa.\n\nTú no tienes que hacer nada, solo quedarte y escuchar.\n\nEmpecemos por esa luz roja.",
+  "review": {
+    "suggested": 23,
+    "applied": 23,
+    "fixes": [
+      {
+        "section": "cold_open",
+        "find": "un volcán casi tres veces más alto que el Everest",
+        "replace": "un volcán más de dos veces más alto que el Everest",
+        "reason": "wrong ratio"
+      },
+      {
+        "section": "cold_open",
+        "find": "que se extiende a lo largo de una distancia comparable a la de un continente",
+        "replace": "que se extiende unos cuatro mil kilómetros",
+        "reason": "overstated, specific"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Un avión comercial tardaría unas diez horas en rodearlo, y a la Tierra le da la vuelta en unas cuarenta.",
+        "replace": "Un avión comercial tardaría cerca de un día en rodearlo, y a la Tierra le da la vuelta en unas cuarenta horas.",
+        "reason": "wrong figure"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Un sol dura unas veinticuatro horas y cuarenta minutos, apenas cuarenta minutos más que una jornada terrestre.",
+        "replace": "Un sol dura unas veinticuatro horas y treinta y siete minutos, menos de una hora más que una jornada terrestre.",
+        "reason": "precision, repetition"
+      },
+      {
+        "section": "chapter_3",
+        "find": "A cien millones de kilómetros de distancia, todavía se deja ver.",
+        "replace": "A decenas de millones de kilómetros de distancia, todavía se deja ver.",
+        "reason": "distance varies"
+      },
+      {
+        "section": "chapter_3",
+        "find": "Es el mismo gas que tú exhalas, pero a una temperatura de unos menos ciento veinte grados Celsius.",
+        "replace": "Es el dióxido de carbono de la atmósfera, a unos ciento veinte grados bajo cero.",
+        "reason": "repetition, TTS"
+      },
+      {
+        "section": "chapter_3",
+        "find": "se convierte directamente en gas, sin pasar por el agua.",
+        "replace": "se convierte directamente en gas, sin pasar por el estado líquido.",
+        "reason": "accuracy"
+      },
+      {
+        "section": "chapter_3",
+        "find": "Cada capa es más o menos delgada que un edificio.",
+        "replace": "Cada capa es más delgada que un edificio.",
+        "reason": "nonsense comparison"
+      },
+      {
+        "section": "chapter_3",
+        "find": "mucho más al sur de esas capas blancas. Es una herida abierta, larga como un continente.",
+        "replace": "mucho más cerca del ecuador. Es una herida abierta de miles de kilómetros.",
+        "reason": "geography, overstatement"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Eso es más o menos la distancia entre dos ciudades que uno tardaría un día entero en recorrer en carro.",
+        "replace": "Eso es más o menos la distancia entre dos ciudades que uno tardaría medio día en recorrer en carro.",
+        "reason": "wrong travel time"
+      },
+      {
+        "section": "chapter_5",
+        "find": "verías que la tierra roja corta en seco, y que debajo de tus pies se abre un vacío tan hondo",
+        "replace": "verías que la tierra roja corta en seco. Debajo de tus pies se abre un vacío tan hondo",
+        "reason": "long sentence"
+      },
+      {
+        "section": "chapter_5",
+        "find": "capaz de atravesar gran parte de un mundo",
+        "replace": "capaz de recorrer una porción tan grande de un mundo",
+        "reason": "overstatement"
+      },
+      {
+        "section": "chapter_5",
+        "find": "los mismos que viste crecer en el capítulo anterior",
+        "replace": "los mismos que acabamos de visitar",
+        "reason": "chapter reference"
+      },
+      {
+        "section": "chapter_5",
+        "find": "más o menos la distancia que separa a Ciudad de México de Buenos Aires… o casi, si dieras la vuelta por tierra.",
+        "replace": "más o menos como cruzar de costa a costa los Estados Unidos.",
+        "reason": "wrong comparison"
+      },
+      {
+        "section": "chapter_5",
+        "find": "como páginas de un libro muy antiguo",
+        "replace": "como los estratos de un corte en la montaña",
+        "reason": "repeated image"
+      },
+      {
+        "section": "chapter_6",
+        "find": "En mil novecientos setenta y uno, una sonda llamada Mariner Nueve llegó a Marte y no vio nada. Una tormenta de polvo cubría el planeta entero, y durante semanas la cámara solo registró un velo anaranjado y liso.",
+        "replace": "Volvamos un momento a la Mariner Nueve, esperando entre el polvo de aquella tormenta.",
+        "reason": "repeats chapter 4"
+      },
+      {
+        "section": "chapter_7",
+        "find": "cada uno pesaba lo que un par de pandas pequeños",
+        "replace": "cada uno pesaba unos ciento ochenta kilos",
+        "reason": "bad comparison"
+      },
+      {
+        "section": "chapter_7",
+        "find": "como quien lee un libro por el final de cada página",
+        "replace": "como quien lee un libro de las páginas más antiguas a las más nuevas",
+        "reason": "unclear image"
+      },
+      {
+        "section": "chapter_7",
+        "find": "mostró también carbono, hidrógeno, oxígeno, nitrógeno, fósforo y azufre. Son los ingredientes que la vida terrestre necesita.",
+        "replace": "mostró también carbono, nitrógeno y azufre, entre otros elementos. Son ingredientes que la vida terrestre necesita.",
+        "reason": "list stack"
+      },
+      {
+        "section": "chapter_8",
+        "find": "Así que la ciencia todavía no sabe si ese océano oculto existe.",
+        "replace": "Así que la ciencia todavía no sabe si existe esa agua profunda.",
+        "reason": "overstated ocean"
+      },
+      {
+        "section": "chapter_8",
+        "find": "Gran parte del agua de Marte no se perdió del todo. Está congelada bajo el suelo",
+        "replace": "Una parte del agua de Marte no se perdió del todo. Está congelada bajo el suelo",
+        "reason": "overstated certainty"
+      },
+      {
+        "section": "chapter_9",
+        "find": "Las micrófonos de los róveres han registrado",
+        "replace": "Los micrófonos de los róveres han registrado",
+        "reason": "grammar"
+      },
+      {
+        "section": "chapter_9",
+        "find": "todas las ciudades, todas las personas que alguna vez miraron hacia arriba y vieron a Marte como una luz roja en el cielo.",
+        "replace": "todas las ciudades. Ahí están todas las personas que alguna vez miraron hacia arriba y vieron a Marte como una luz roja en el cielo.",
+        "reason": "long sentence"
+      }
+    ]
+  },
+  "topic": "Marte: el planeta rojo, sus volcanes, cañones y la búsqueda de agua antigua",
+  "shorts": [
+    {
+      "title": "El volcán tan ancho que no verías su pendiente",
+      "hook": "Una montaña que no puedes ver",
+      "narration": "Hay una montaña en Marte tan enorme que, parado sobre ella, no te darías cuenta de que estás subiendo. Se llama Monte Olimpo y mide unos veintidós kilómetros de altura, dos veces y media el Everest. Pero lo asombroso es su ancho: su base se extiende unos seiscientos kilómetros, lo bastante para cubrir un país mediano. Su pendiente es de apenas cinco grados, como una rampa suave. Caminarías horas con la sensación de cruzar una llanura, y el horizonte se curva tan cerca que nunca verías la montaña entera. Estarías dentro de ella sin saberlo. Creció así porque Marte no tiene placas móviles, y la lava brotó siempre en el mismo lugar durante cientos de millones de años. El viaje completo por el planeta rojo te espera en el canal.",
+      "image_queries": [
+        "Olympus Mons Mars volcano",
+        "Olympus Mons caldera orbit",
+        "Mars Tharsis volcanoes",
+        "Mariner 9 Olympus Mons dust storm"
+      ],
+      "video_queries": [
+        "Olympus Mons Mars flyover",
+        "Mars volcano Olympus Mons animation"
+      ]
+    },
+    {
+      "title": "El cielo de Marte tiene un atardecer azul",
+      "hook": "En Marte el atardecer es azul",
+      "narration": "En Marte, el atardecer se ve azul. Durante el día, el cielo marciano es de un tono canela, como papel viejo iluminado desde atrás. Pero cuando el Sol baja hacia el horizonte, a su alrededor aparece un halo azul, frío y sereno. Los róveres Spirit, Opportunity y Curiosity lo fotografiaron. Es justo lo contrario de la Tierra, donde el cielo es azul de día y se tiñe de naranja al atardecer. Allí el polvo fino dispersa la luz de otro modo y concentra el azul alrededor del Sol. Es como un atardecer terrestre visto en un espejo. Y cuando cae la noche, entre las estrellas brilla un punto: la Tierra. El viaje completo a Marte te espera en el canal.",
+      "image_queries": [
+        "Mars sunset blue Spirit rover",
+        "Curiosity rover sunset Mars Gale crater",
+        "Mars sky butterscotch color panorama",
+        "Opportunity rover Mars twilight"
+      ],
+      "video_queries": [
+        "Mars sunset rover footage",
+        "Mars surface panorama rover"
+      ]
+    }
+  ]
+}
