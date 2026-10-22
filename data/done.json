@@ -96,5 +96,19 @@
     "ai_scenes": 102,
     "ai_status": "ok",
     "date": "2026-10-20"
+  },
+  {
+    "topic": "Voyager 1 and 2: the long journey into interstellar space",
+    "title": "Voyager 1 and 2: Journey Into Interstellar Space | Relaxing Space Documentary",
+    "video_id": "PUINjDgQl_s",
+    "shorts": [
+      "hnELQ11i268",
+      "QH6Ymf2vZLM"
+    ],
+    "minutes": 58.3,
+    "qa_ok": true,
+    "ai_scenes": 109,
+    "ai_status": "ok",
+    "date": "2026-10-22"
   }
 ]
