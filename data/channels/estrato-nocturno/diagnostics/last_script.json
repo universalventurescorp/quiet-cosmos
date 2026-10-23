@@ -1,497 +1,496 @@
 {
-  "title": "Marte, el Planeta Rojo | Documental Relajante para Dormir",
-  "description": "Marte, el planeta rojo, es el hilo de este documental relajante para dormir: un viaje lento y sereno por sus volcanes gigantes, sus cañones inmensos y la búsqueda de agua antigua. Con imágenes reales de misiones de la NASA, recorremos la superficie desde el polvo rojizo hasta los valles que un día pudieron guardar ríos y lagos.\n\nEn nueve capítulos pausados, descubrirás por qué Marte es rojo, qué esconde el Monte Olimpo, cómo se abrió el Valles Marineris y qué pistas han encontrado los róveres sobre su pasado húmedo. Una narración tranquila, pensada para aprender algo real mientras te dejas llevar hacia el sueño.",
+  "title": "Venus: el infierno brillante | Documental relajante para dormir",
+  "description": "Venus: el infierno brillante bajo nubes de ácido sulfúrico es un viaje calmado y cinematográfico por el planeta más caliente del sistema solar, pensado para relajarte, aprender ciencia real y quedarte dormido mientras la voz te acompaña. Recorreremos su cielo cubierto, su superficie de roca al rojo, sus volcanes, su pasado quizá oceánico y las sondas que lograron asomarse a su interior.\n\nUna hora de narración tranquila con las mejores imágenes reales de la NASA, la ESA y otras agencias: desde el lucero del atardecer de los antiguos hasta las misiones que volverán a Venus. Apaga las luces, respira hondo y deja que el planeta gemelo de la Tierra te cuente cómo un mundo parecido al nuestro terminó convertido en un horno.",
   "tags": [
-    "Marte documental",
-    "planeta rojo",
-    "documental de Marte para dormir",
-    "documental relajante espacio",
-    "Monte Olimpo",
-    "Valles Marineris",
-    "agua en Marte",
-    "vida en Marte",
-    "róveres de Marte",
-    "Perseverance Marte",
-    "Curiosity Marte",
+    "Venus documental",
+    "Venus planeta",
     "documental espacio para dormir",
-    "viaje por el sistema solar",
-    "Marte NASA",
-    "cómo es Marte",
-    "volcanes de Marte",
-    "historia de Marte",
-    "Marte explicado"
+    "documental relajante espacio",
+    "cómo es Venus",
+    "Venus ácido sulfúrico",
+    "Venus superficie",
+    "Venus efecto invernadero",
+    "Venus Magallanes",
+    "Venus Venera sondas",
+    "planeta más caliente del sistema solar",
+    "documental sistema solar",
+    "espacio para dormir",
+    "viaje por el espacio relajante",
+    "Venus y la Tierra gemelos",
+    "Akatsuki Venus",
+    "DAVINCI Venus"
   ],
   "thumbnail_texts": [
-    "EL MAR PERDIDO",
-    "POLVO Y SILENCIO",
-    "DONDE FLUYÓ EL AGUA"
+    "BAJO LAS NUBES",
+    "EL GEMELO CALCINADO",
+    "LLUEVE ÁCIDO"
   ],
-  "hook_promise": "Marte guarda un volcán casi tres veces más alto que el Everest y un cañón que recorre una distancia comparable a la de un continente, y aun así lo más asombroso es que sus valles muestran huellas de ríos que corrieron hace miles de millones de años.",
+  "hook_promise": "Venus, casi del tamaño de la Tierra, pudo haber tenido océanos templados durante miles de millones de años antes de convertirse en un mundo de roca a 465 °C donde las sondas soviéticas sobrevivieron apenas el tiempo de enviar unas fotos de su suelo.",
   "chapters": [
     {
-      "title": "Un punto rojo en el cielo nocturno",
-      "question": "¿Por qué los humanos llevan miles de años mirando a Marte con inquietud y curiosidad?",
-      "reveal": "Marte es visible a simple vista porque su luz rojiza es reflejo del óxido de hierro en su superficie, y su color fue lo primero que lo hizo inolvidable para todas las culturas.",
+      "title": "El lucero que nunca se apaga",
+      "question": "¿Por qué el astro más brillante del cielo después de la Luna parece un faro tranquilo y no revela nada de lo que esconde?",
+      "reveal": "Esa luz serena es luz solar reflejada por una capa de nubes tan espesa que oculta por completo la superficie del planeta.",
       "beats": [
-        "Marte aparece en el cielo como una luz rojiza que no parpadea tanto como las estrellas",
-        "Los antiguos observadores notaron que a veces parece detenerse y retroceder entre las estrellas",
-        "Ese movimiento retrógrado es un efecto de perspectiva al ser alcanzado por la Tierra en su órbita",
-        "Las culturas antiguas lo asociaron con la guerra, el fuego y la sangre por su color",
-        "El telescopio revela casquetes polares y manchas oscuras cambiantes",
-        "Su tono viene del óxido de hierro presente en el polvo y las rocas"
+        "Venus como lucero del alba y del atardecer, visible a simple vista desde siempre",
+        "Los antiguos creyeron que eran dos astros distintos; las culturas mesoamericanas, babilonias y griegas lo observaron con detalle",
+        "Sus fases vistas por Galileo, una prueba a favor de que los planetas giran en torno al Sol",
+        "Por qué brilla tanto: cercanía y un albedo muy alto por las nubes",
+        "Los telescopios solo mostraban un disco blanco sin rasgos",
+        "Durante siglos se imaginaron selvas y océanos bajo esa cubierta, hasta que la ciencia lo desmintió"
       ],
       "ambience": "none",
       "image_queries": [
-        "Mars Hubble",
-        "Mars full disk Viking",
-        "Mars global view Mars Reconnaissance Orbiter",
-        "Mars opposition Hubble",
-        "Mars polar cap Hubble",
-        "Mars Mars Global Surveyor",
-        "Mars Earth Moon comparison",
-        "Mars rotating globe",
-        "Mars from orbit Mars Express",
-        "Mars dust storm Hubble"
+        "Venus planet Mariner 10",
+        "Venus full disk clouds",
+        "Venus crescent Akatsuki",
+        "Venus Magellan global view",
+        "Venus evening sky Earth",
+        "Venus ultraviolet clouds",
+        "Venus Pioneer Venus orbiter",
+        "Venus Hubble",
+        "Venus Earth comparison size",
+        "Venus night side glow"
       ],
       "video_queries": [
-        "Mars rotation visualization",
-        "Mars flyover animation",
-        "Mars Hubble time-lapse"
+        "Venus rotation visualization NASA",
+        "Venus Akatsuki clouds animation",
+        "Solar system planets orbit animation"
       ],
-      "text": "Si sales a mirar el cielo una noche despejada, en ciertos meses del año, verás una luz que no se parece a las demás. No es blanca ni azulada. Es de un naranja apagado, como una brasa que alguien dejó encendida muy lejos.\n\nEsa luz es Marte. Y si la observas con paciencia, notarás algo más. Las estrellas titilan, cambian de brillo a cada instante, como si respiraran. Marte, en cambio, brilla con más calma, con una firmeza serena.\n\nHay una razón sencilla. Las estrellas están tan lejos que su luz llega como un solo punto diminuto, y el aire de nuestra atmósfera lo agita con facilidad. Marte está mucho más cerca. Su luz llega como un disco muy pequeño, y esa pequeña diferencia lo hace más estable.\n\nPero hay algo más extraño que su color. Hace miles de años, quienes miraban el cielo noche tras noche descubrieron que Marte no se comportaba como las estrellas. Durante semanas avanzaba despacio entre ellas, siempre hacia el mismo lado. Y entonces, un día, parecía detenerse.\n\nDespués retrocedía.\n\nDurante algunas semanas caminaba hacia atrás por el cielo, como alguien que duda en un sendero. Luego se detenía otra vez y retomaba su rumbo original. Para los observadores antiguos, aquello debía de ser inquietante. ¿Por qué un astro vagaría sin decidirse?\n\nLa explicación llegó mucho después, y es muy humilde. Marte no retrocede. Lo que cambia es el lugar desde donde lo miramos. La Tierra y Marte giran alrededor del Sol, pero la Tierra está más cerca y se mueve más rápido. Una vez cada dos años, aproximadamente, la Tierra alcanza a Marte y lo rebasa.\n\nPiensa en dos autos en una carretera. Si tú vas en el más veloz y adelantas al otro, por un instante parece que el otro se queda atrás, que va marcha atrás. No es cierto. Es solo perspectiva. Eso mismo ocurre con Marte, y el cielo entero es el paisaje al fondo.\n\nEsa explicación no estaba al alcance de las culturas antiguas. Lo que sí tenían era el color. Y el color lo decía todo.\n\nPara los babilonios, aquella luz era Nergal, un dios ligado a la guerra y a la peste. Los griegos la llamaron Ares. Los romanos, Marte, su dios de las batallas. En otras tierras se le llamó la estrella de fuego. Casi en todas partes, la misma idea: sangre, llamas, advertencia.\n\nNadie se puso de acuerdo para ello. Cada pueblo miró hacia arriba, vio el mismo rojo inquieto, y sintió lo mismo.\n\nDurante milenios, eso fue todo lo que se supo. Una luz roja, un camino que dudaba, y muchas historias para explicarlos. Hasta que, en el siglo diecisiete, Galileo apuntó un telescopio hacia el cielo, y otros después de él lo siguieron.\n\nLo que apareció en el ocular fue un pequeño disco anaranjado. Con mejores instrumentos, y con noches de buena calma, los observadores empezaron a distinguir detalles. En los extremos del disco, manchas blancas y brillantes: los casquetes polares. Y en el centro, regiones oscuras que parecían cambiar con las estaciones, como si algo en la superficie respirara al ritmo del año.\n\nAquellas manchas oscuras alimentaron durante siglos la imaginación de quienes miraban. Se pensó en vegetación, en mares, en canales. Hoy sabemos que eran sombras de roca y polvo, movidas por el viento. Aun así, aquel primer vistazo ya mostraba que Marte era un lugar, y no solo una luz.\n\nEntonces, ¿de dónde viene ese rojo que ha inquietado a tantas generaciones?\n\nViene del hierro. Las rocas de Marte y el fino polvo que las cubre contienen mucho óxido de hierro. Es el mismo compuesto que tiñe de marrón un clavo olvidado bajo la lluvia. En Marte, durante eones, el hierro de la superficie se oxidó, y todo el planeta quedó teñido de herrumbre.\n\nMarte es un mundo oxidado.\n\nY esa herrumbre refleja la luz del Sol de regreso al espacio. Por eso lo ves a simple vista, y por eso lo ves rojizo. Cada vez que levantas la mirada hacia ese punto anaranjado, estás viendo luz solar que rebotó en polvo de hierro, a muchos millones de kilómetros de tu ventana.\n\nEse color fue lo primero que lo hizo inolvidable. Antes de cualquier telescopio, antes de cualquier número, bastó el rojo para que cada cultura le diera un nombre y un temor. Pero el hierro no se oxida solo. Necesita algo más, y esa pregunta nos espera en el propio planeta, mucho más cerca de lo que parece."
+      "text": "Hay una hora, justo después de la puesta del Sol, en que el cielo aún conserva un azul pálido y las estrellas no se han decidido a salir. Entonces, sobre el horizonte del oeste, aparece un punto de luz blanca. No parpadea. No tiembla. Está ahí, firme y sereno, como un faro que alguien dejó encendido para ti.\n\nEs Venus. Después de la Luna, ningún otro astro brilla tanto en el cielo nocturno. Y sin embargo, esa luz tan clara parece no decir nada de sí misma. ¿Por qué una luz tan brillante se muestra tan tranquila, y no deja ver nada de lo que esconde?\n\nDurante toda la historia humana, nadie necesitó un telescopio para verlo. Unas veces aparece al atardecer, y se le llama lucero de la tarde. Otras veces aparece antes del amanecer, y se le llama lucero del alba. Así ha sido desde que hay ojos mirando hacia arriba.\n\nLos antiguos creyeron que eran dos astros distintos. Uno acompañaba a la noche que llegaba, y el otro anunciaba el día. Pero los observadores más pacientes notaron algo. Cuando uno desaparecía, el otro tardaba en aparecer, y nunca se veían a la vez.\n\nLos babilonios llevaron registros de Venus durante siglos, grabados en tablillas de arcilla. Los pueblos mesoamericanos, entre ellos los mayas, siguieron sus apariciones con tanta exactitud que calcularon su ciclo con un error muy pequeño. Los griegos, por su parte, terminaron por entender que ambos luceros eran un mismo mundo, que cambiaba de lado respecto al Sol.\n\nAun así, nadie sabía qué era Venus. Hacia el año mil seiscientos diez, Galileo Galilei apuntó su pequeño telescopio hacia él. Y vio algo que ningún ojo humano había visto antes.\n\nVenus tenía fases, igual que la Luna.\n\nUnas veces era una media luna delgada. Otras, un disco casi completo, pero más pequeño y lejano. Esto solo tenía sentido si Venus giraba alrededor del Sol, y no alrededor de la Tierra. Era una de las pruebas más claras de que los planetas daban vueltas en torno a nuestra estrella. Una luz de la tarde había cambiado la forma en que entendemos el cielo.\n\nPero queda la pregunta de su brillo. Venus es el planeta que más se acerca a nosotros, y en algunos momentos pasa a unos cuarenta millones de kilómetros. Eso es poco, a escala del sistema solar. Pero la cercanía no basta para explicarlo.\n\nEl otro motivo es lo que hay en su superficie visible. Venus refleja cerca de las tres cuartas partes de la luz del Sol que recibe. Es como un espejo opaco y muy blanco. La Tierra, con sus océanos oscuros y sus nubes cambiantes, refleja apenas cerca de un tercio.\n\nCon los telescopios, ese brillo se volvía un enigma. Por más que se mejoraran las lentes, Venus seguía siendo un disco blanco, liso, sin una mancha, sin una montaña, sin una costa. Los astrónomos lo miraban noche tras noche, y el planeta no les daba nada.\n\nY donde no hay datos, la imaginación trabaja. Durante siglos, muchos pensaron que bajo esa cubierta debía haber un mundo parecido al nuestro. Se hablaba de selvas densas, de pantanos tibios, de océanos enormes. Incluso se escribieron novelas con criaturas que vivían allí, bajo un cielo permanentemente nublado.\n\nEra una idea cálida, casi amable. Venus como una Tierra más húmeda, esperando bajo su manto blanco.\n\nPero la ciencia, poco a poco, la fue desmintiendo.\n\nLo que veías aquella tarde, ese punto sereno sobre el horizonte, no era el brillo de un mundo en calma. Era luz del Sol, rebotada en una capa de nubes tan espesa que oculta por completo la superficie. Ninguna mirada, ni siquiera la de un telescopio, podía atravesarla.\n\nAsí que esa quietud no era paz. Era un velo. Y detrás de él, el planeta guardaba algo que nadie había imaginado, y que tardaríamos mucho en descubrir."
     },
     {
-      "title": "Un mundo pequeño y helado",
-      "question": "¿Qué tan distinto es Marte de la Tierra a pesar de parecerse tanto?",
-      "reveal": "Marte tiene aproximadamente la mitad del diámetro de la Tierra y un día de poco más de 24 horas y media, por lo que sus mañanas y tardes se sentirían extrañamente familiares.",
+      "title": "Un gemelo que no se parece",
+      "question": "Si Venus es casi del mismo tamaño y masa que la Tierra, ¿por qué es tan distinto?",
+      "reveal": "Venus y la Tierra nacieron como mundos muy parecidos, y solo pequeñas diferencias en su historia los separaron en destinos opuestos.",
       "beats": [
-        "Marte mide cerca de la mitad del diámetro de la Tierra y tiene mucha menos gravedad",
-        "Su día, llamado sol, dura unos 24 horas y 40 minutos",
-        "Su eje inclinado produce estaciones parecidas a las terrestres, aunque más largas",
-        "Su atmósfera es muy delgada y compuesta sobre todo de dióxido de carbono",
-        "La temperatura media es muy baja, con grandes diferencias entre día y noche",
-        "Sus dos pequeñas lunas, Fobos y Deimos, son rocas irregulares que giran cerca"
+        "Comparación de diámetro, masa y gravedad: Venus tiene cerca del 95 % del diámetro terrestre",
+        "Nacimiento de ambos planetas en el disco de gas y polvo alrededor del joven Sol",
+        "Composición rocosa y núcleo metálico similares, según los modelos",
+        "Venus recibe más luz solar, pero no es la única razón de la diferencia",
+        "Qué nos enseña un gemelo fallido sobre qué hace habitable a un planeta",
+        "Plantamos la pregunta: ¿pudo Venus haber sido habitable?"
+      ],
+      "ambience": "deep_space",
+      "image_queries": [
+        "Venus Earth comparison",
+        "Earth Venus Mars Mercury comparison",
+        "Solar system formation protoplanetary disk",
+        "Protoplanetary disk ALMA",
+        "Venus Mariner 2",
+        "Venus Magellan radar",
+        "Earth Blue Marble",
+        "Venus interior illustration",
+        "Young Sun protoplanetary disk Hubble",
+        "Terrestrial planets inner solar system"
+      ],
+      "video_queries": [
+        "Inner solar system planets size comparison",
+        "Protoplanetary disk formation visualization",
+        "Earth rotating from space NASA"
+      ],
+      "text": "En el museo de historia natural de una ciudad cualquiera, dos esferas descansan una junto a la otra, sobre una mesa baja. Una es azul y blanca. La otra es de un amarillo pálido, casi liso. Si las miras de lejos, apenas notas la diferencia de tamaño.\n\nEsa es la primera sorpresa. Venus mide cerca del noventa y cinco por ciento del diámetro de la Tierra. Si pudieras caminar alrededor de cada uno, el paseo por Venus sería apenas un poco más corto. Su masa llega a unos ocho de cada diez de la nuestra, y la gravedad en su superficie es casi la misma. Un objeto que dejas caer allí cae casi igual que aquí. Tu cuerpo apenas notaría el cambio.\n\nEntonces aparece la pregunta que incomoda. Si Venus es casi del mismo tamaño y de una masa tan parecida, ¿por qué es un mundo tan distinto?\n\nPara buscar la respuesta, hay que volver al principio. Hace unos cuatro mil seiscientos millones de años, el Sol era una estrella recién encendida. A su alrededor giraba un disco enorme de gas y polvo, plano y lento, como el remolino que deja una cuchara en el café. En ese disco, los granos de polvo se rozaban, se pegaban y crecían. Primero fueron guijarros. Después, rocas del tamaño de una montaña. Al final, mundos enteros.\n\nVenus y la Tierra se formaron en la misma región de ese disco, a poca distancia una de otra. Comieron del mismo material. Eran, en el sentido más literal, hermanas de una misma cuna.\n\nLos modelos dicen que por dentro también se parecen. No podemos perforar Venus, y ningún sismógrafo ha escuchado todavía su interior. Pero por su tamaño y su densidad, los científicos calculan que tiene un manto de roca y, en el centro, un núcleo de hierro y níquel, quizá en parte líquido. Es la misma estructura que late bajo tus pies, en capas, como una cebolla enterrada.\n\nHasta aquí, todo apunta a dos gemelas. Y sin embargo, una tiene océanos, nubes de agua y un cielo azul. La otra tiene un suelo capaz de fundir el plomo.\n\nPodrías pensar que la culpa es de la distancia. Venus está más cerca del Sol, y recibe cerca del doble de luz que la Tierra. Pero esa no es toda la historia. Gracias a sus nubes tan brillantes, Venus devuelve al espacio la mayor parte de esa luz. En realidad, absorbe menos energía solar que nosotros. Con las cuentas simples, su superficie debería ser fría.\n\nNo lo es. Algo ocurrió en su atmósfera, y ese algo no depende solo de cuánta luz llega.\n\nAquí está lo que un gemelo fallido puede enseñarnos. Un planeta no es habitable por su tamaño, ni solo por su lugar en el mapa. Importa cuánta agua conserva, hacia dónde va su carbono, cómo respira su interior. Importan pequeñas cosas que se suman durante millones de años, hasta que ya no hay vuelta atrás.\n\nEsa es la lección que Venus guarda para nosotros.\n\nVenus y la Tierra nacieron como mundos muy parecidos, y solo pequeñas diferencias en su historia los separaron en destinos opuestos.\n\nPiénsalo despacio. Nada en su nacimiento condenaba a Venus. Nada aseguraba que la Tierra se salvara. El cielo azul que ves por la ventana es, en parte, fruto de un equilibrio frágil, que pudo romperse de otro modo.\n\nY eso nos deja ante una pregunta más grande. Si empezaron tan parecidas, ¿pudo Venus haber sido alguna vez un lugar habitable? ¿Hubo, hace mucho, un tiempo en que alguien, parado en su orilla, habría visto un mar tranquilo bajo un cielo suave?\n\nNadie lo sabe con certeza. Pero hay huellas en el aire de Venus, pequeñas y casi borradas, que podrían contarnos si ese mar existió."
+    },
+    {
+      "title": "Cómo se descubrió el infierno",
+      "question": "¿Cómo supimos qué hay bajo las nubes si ninguna cámara podía verlo?",
+      "reveal": "Los radiotelescopios y las primeras sondas midieron que la superficie estaba a unos 465 °C, mucho más caliente que un horno doméstico y que el plomo derretido.",
+      "beats": [
+        "Las primeras hipótesis de un Venus tropical y húmedo",
+        "Mediciones con radiotelescopios en los años 50 que sugerían temperaturas muy altas",
+        "Mariner 2 en 1962, la primera sonda en sobrevolar otro planeta, confirma el calor",
+        "Las misiones soviéticas Venera descienden y miden la presión, unas 90 veces la terrestre",
+        "Venera 7 transmite desde la superficie en 1970",
+        "Venera 13 y 14 envían las primeras fotos en color del suelo en 1982"
+      ],
+      "ambience": "none",
+      "image_queries": [
+        "Mariner 2 Venus",
+        "Venera 13 surface Venus",
+        "Venera 14 panorama",
+        "Venus surface Venera lander",
+        "Pioneer Venus multiprobe",
+        "Magellan spacecraft Venus",
+        "Venus radar image Magellan",
+        "Arecibo radio telescope",
+        "Goldstone radio telescope",
+        "Venus surface rocks Venera"
+      ],
+      "video_queries": [
+        "Venus mission history animation",
+        "Magellan radar Venus flyover",
+        "Venera lander descent animation"
+      ],
+      "text": "Durante siglos, quien miraba Venus a través de un telescopio veía lo mismo: un disco blanco, liso, sin una sola sombra. Ninguna montaña, ningún mar, ni siquiera una grieta entre las nubes. Era como mirar una bola de algodón iluminada por detrás.\n\nY sin embargo, la gente seguía imaginando. Durante buena parte de los años de mil novecientos veinte y treinta, muchos científicos pensaban en un mundo tibio, húmedo, quizá cubierto de pantanos. Una Tierra algo más calurosa, con lluvias constantes y vegetación espesa. Era una idea razonable, porque Venus está más cerca del Sol y tiene casi nuestro tamaño.\n\nPero había un problema. Nadie podía comprobarlo. La luz visible rebota en las nubes y no llega más abajo. Entonces, ¿cómo supimos qué hay bajo esas nubes, si ninguna cámara podía verlo?\n\nLa respuesta llegó por otro camino. No con luz que podemos ver, sino con ondas de radio. Hacia mil novecientos cincuenta y tantos, los astrónomos apuntaron radiotelescopios hacia Venus y escucharon. Todo objeto caliente emite una débil radiación en esas frecuencias. Y las ondas de radio atraviesan las nubes sin demasiado esfuerzo.\n\nLo que captaron no cuadraba con ningún pantano. La señal era demasiado fuerte. Si venía de la superficie, esa superficie estaba mucho más caliente que cualquier lugar de la Tierra. Algunos colegas dudaron. Quizá la señal venía de la atmósfera, o de descargas eléctricas en las nubes. La discusión duró unos años.\n\nHacía falta ir a mirar de cerca.\n\nEn diciembre de mil novecientos sesenta y dos, una sonda estadounidense llamada Mariner Dos pasó a unos treinta y cinco mil kilómetros de Venus. Fue la primera nave en sobrevolar otro planeta. Tardó casi cuatro meses en llegar, y durante unos cuarenta minutos apuntó sus instrumentos hacia las nubes. Midió el calor que subía desde abajo. Y confirmó lo que decían los radiotelescopios: el suelo de Venus ardía.\n\nEntonces los soviéticos decidieron bajar. Su serie de sondas Venera era una apuesta difícil. Las primeras se aplastaron o se quedaron mudas en el camino, porque nadie sabía bien cuánta presión iban a encontrar. Los ingenieros fueron reforzándolas, una misión tras otra, con la paciencia de quien sube una escalera a oscuras.\n\nPor fin las cifras empezaron a llegar. El aire de Venus pesa unas noventa veces más que el de la Tierra. Para que lo sientas: es la presión que hay a casi un kilómetro de profundidad en el océano. Una nave de paredes delgadas no resistiría. Tenía que ser un pequeño submarino hecho para caer en el cielo.\n\nEn diciembre de mil novecientos setenta, Venera Siete descendió con su paracaídas. Se rompió algo en la caída, y la señal se volvió débil, casi un susurro entre el ruido. Pero los científicos la siguieron escuchando, y encontraron que seguía allí. Durante unos veintitrés minutos, la sonda habló desde el suelo.\n\nEra la primera vez que una nave enviaba datos desde la superficie de otro planeta.\n\nY lo que decían esos datos era claro. Unos cuatrocientos sesenta y cinco grados Celsius. Un horno doméstico, el más potente, apenas pasa de doscientos cincuenta. El plomo se derrite a unos trescientos veintisiete. En Venus, el plomo sería un charco brillante en el suelo.\n\nNo importa si es de día o de noche, ni si estás en el ecuador o cerca de un polo. Casi todo el planeta vive bajo ese mismo calor. La densa atmósfera lo reparte como una manta que no se levanta nunca.\n\nFaltaba algo, sin embargo. Sabíamos la temperatura y la presión, pero nadie había visto el paisaje. Doce años después, en marzo de mil novecientos ochenta y dos, Venera Trece y Venera Catorce aterrizaron con pocos días de diferencia. Cada una llevaba cámaras con filtros de color, y cada una giró su mirada sobre el suelo.\n\nLas imágenes llegaron cuadro a cuadro, lentas, como un telegrama escrito con luz. Había piedras planas y quebradas, un suelo de tono ocre, y a lo lejos el borde de un horizonte curvo. Todo bañado de naranja. No había selvas ni océanos. Había roca, quieta, bajo un cielo que nadie había visto jamás.\n\nY las sondas, claro, no aguantaron mucho. Pero no hizo falta. Ya habían dicho lo esencial: debajo de aquel disco blanco y liso había un mundo, y era muy distinto del que habíamos soñado.\n\nQuedaba entender cómo era ese lugar por dentro, y qué había encima de él. Porque antes de llegar al suelo, esas sondas tuvieron que atravesar algo más. Una capa tras otra de nubes que nadie había recorrido."
+    },
+    {
+      "title": "Descenso a través de las nubes",
+      "question": "¿Qué pasaría si pudiéramos bajar lentamente desde lo alto del cielo de Venus hasta el suelo?",
+      "reveal": "A unos 50 kilómetros de altura Venus tiene presión y temperaturas parecidas a las de la Tierra, el lugar menos hostil del planeta.",
+      "beats": [
+        "Arriba: una capa de neblina y vientos que rodean el planeta en pocos días",
+        "Las nubes de gotas de ácido sulfúrico entre unos 48 y 70 km de altura",
+        "La lluvia ácida que se evapora antes de tocar el suelo, un fenómeno llamado virga",
+        "A 50 km, la presión y la temperatura son similares a las de la Tierra",
+        "Más abajo, el aire se vuelve denso y cada vez más caliente",
+        "Un descenso hasta una luz anaranjada y quieta cerca del suelo"
+      ],
+      "ambience": "storm",
+      "image_queries": [
+        "Venus clouds Akatsuki",
+        "Venus atmosphere layers",
+        "Venus clouds ultraviolet Pioneer",
+        "Venus polar vortex",
+        "Venus atmosphere Venus Express",
+        "Venus sulfuric acid clouds",
+        "Venus cloud tops",
+        "Venus Mariner 10 ultraviolet",
+        "Venus night glow airglow",
+        "Venus atmosphere illustration"
+      ],
+      "video_queries": [
+        "Venus atmosphere animation NASA",
+        "Venus clouds super rotation",
+        "Venus cloud layer flythrough"
+      ],
+      "text": "Si pudieras bajar despacio desde lo más alto del cielo de Venus, lo primero que notarías es el silencio de la luz. Estás por encima de todo, a unos setenta kilómetros del suelo. Debajo se extiende una neblina pálida, y sobre ella solo hay un cielo oscuro y limpio.\n\nEsa neblina se mueve. Los vientos de esta altura empujan las nubes alrededor del planeta entero en solo cuatro días terrestres. Es una vuelta entera en menos de una semana. Y sin embargo, el planeta de abajo casi no gira.\n\nEntonces surge la pregunta. ¿Qué pasaría si pudiéramos bajar lentamente desde aquí hasta el suelo? ¿Qué encontraría quien atravesara, capa tras capa, ese cielo que nadie ha recorrido por completo?\n\nEmpiezas a hundirte en la neblina, y el mundo se vuelve blanco amarillento. No es vapor de agua, como las nubes que conoces. Son gotas diminutas de ácido sulfúrico, suspendidas en el aire como un rocío muy fino. Forman capas que van desde unos setenta kilómetros de altura hasta unos cuarenta y ocho.\n\nEsa distancia es más o menos la que recorrerías caminando durante cuatro horas. Aquí la cubres en el aire, sin tocar nada, rodeado de una luz difusa que no viene de ninguna parte en particular.\n\nMás abajo, en la parte baja de las nubes, ocurre algo hermoso y extraño. Caen gotas de ácido, una lluvia lenta que se desprende de la base de la capa. Pero esa lluvia no llega al suelo. Al bajar, el aire se calienta tanto que las gotas se evaporan en pleno camino.\n\nLos científicos llaman virga a este fenómeno. En la Tierra también existe: a veces ves cortinas grises colgando de una nube que se desvanecen antes de tocar el desierto.\n\nEn Venus, la lluvia nunca moja la roca.\n\nSigues bajando, y las nubes empiezan a quedar arriba. A unos cincuenta kilómetros de altura, algo cambia. La presión del aire se parece a la que sientes a nivel del mar. La temperatura también es suave, de unas pocas decenas de grados, como la de un día cálido.\n\nPuedes detenerte aquí. Un globo lleno de aire respirable flotaría sin hundirse, porque ese aire es más ligero que el gas que lo rodea. Aun así, no podrías respirar este aire, y las gotas de ácido seguirían muy cerca. Pero ninguna otra altura del planeta se acerca tanto a lo que conoces.\n\nA cincuenta kilómetros del suelo, Venus tiene la presión y la temperatura más parecidas a las de la Tierra. Es el lugar menos hostil de todo el planeta.\n\nPiensa un momento en eso. El mundo que llamamos infierno guarda en su cielo una franja tranquila, casi familiar. Y esa franja nos recuerda lo cerca que estuvieron estos dos gemelos de parecerse.\n\nPero no puedes quedarte. Debajo de ti, el planeta sigue llamando.\n\nAl descender, el aire cambia de carácter. Se vuelve denso, pesado, como una manta que cada metro pesa un poco más. La temperatura sube sin pausa: treinta grados, cien, doscientos, y después más. La presión crece contigo, y el aire empieza a sentirse casi como un líquido espeso.\n\nLas nubes quedan atrás, ya muy arriba. La neblina se disuelve. Por fin ves hacia abajo, y el paisaje no es negro ni rojo vivo, como tal vez esperabas.\n\nCerca del suelo, la luz es anaranjada y quieta. Llega filtrada por todo el cielo que acabas de atravesar, tenue como el último rato de una tarde de otoño. Nada se mueve. El aire parece detenido, y la luz no tiene sombras duras.\n\nAhí abajo te espera la roca. Y aquellas sondas soviéticas, hace décadas, llegaron hasta ella con muy poco tiempo para mirar."
+    },
+    {
+      "title": "La superficie de roca al rojo",
+      "question": "¿Cómo es estar de pie sobre el suelo de Venus?",
+      "reveal": "Con 465 °C y una presión de unas 90 atmósferas, el aire es tan denso que se comporta casi como un fluido, y aun así las fotos de Venera muestran un paisaje de rocas planas y quietas.",
+      "beats": [
+        "La luz tenue y anaranjada que llega filtrada por las nubes",
+        "El aire, casi todo dióxido de carbono, es un fluido supercrítico cerca del suelo en ciertas condiciones",
+        "Las fotos de Venera 13 con rocas laminares y suelo claro",
+        "Sin vientos fuertes en la superficie: se mueve lento, como bajo el agua",
+        "El peso de la atmósfera sobre el cuerpo, equivalente a estar a unos 900 m bajo el mar",
+        "Cuánto duraron las sondas: de cerca de 23 minutos a unas dos horas"
       ],
       "ambience": "wind",
       "image_queries": [
-        "Mars Earth size comparison",
-        "Phobos Mars Reconnaissance Orbiter",
-        "Deimos Mars Reconnaissance Orbiter",
-        "Mars sunrise Curiosity",
-        "Mars sunset Spirit",
-        "Mars sky Pathfinder",
-        "Mars horizon Opportunity",
-        "Mars atmosphere limb Viking",
-        "Mars seasons Hubble",
-        "Mars sky blue sunset Curiosity"
+        "Venera 13 color image Venus surface",
+        "Venera 14 surface",
+        "Venus surface Magellan 3D",
+        "Venus landscape radar",
+        "Venus lava plains Magellan",
+        "Venus rocky surface lander",
+        "Venus highlands Maxwell Montes",
+        "Venus sunset surface illustration",
+        "Venus Magellan perspective",
+        "Venus impact crater"
       ],
       "video_queries": [
-        "Phobos orbit animation",
-        "Mars seasons visualization",
-        "Mars sunset time-lapse Curiosity"
+        "Venus surface flyover Magellan",
+        "Venus virtual landscape NASA",
+        "Venus radar topography animation"
       ],
-      "text": "Hay una hora, justo antes del amanecer, en que Marte se vuelve un punto fijo sobre el horizonte. Quien lo mira entonces suele pensar que se parece mucho a nuestro propio mundo. Tiene polos blancos, desiertos, nubes delgadas y estaciones. Hasta tiene un día que casi coincide con el nuestro.\n\nPero ¿qué tan parecido es en realidad? ¿Qué tan distinto puede ser un mundo que, visto de lejos, parece un primo de la Tierra?\n\nEmpecemos por lo más simple, el tamaño. Si pudieras poner la Tierra y Marte uno junto al otro, Marte parecería una versión reducida. Su diámetro es cerca de la mitad del nuestro. Un avión comercial tardaría cerca de un día en rodearlo, y a la Tierra le da la vuelta en unas cuarenta horas.\n\nEse tamaño pequeño tiene una consecuencia que se siente en el cuerpo. La gravedad de Marte es mucho menor, de apenas poco más de un tercio de la terrestre. Una persona de setenta kilos pesaría allí unos veintiséis. Tus pasos serían más lentos al caer, y una mochila pesada se sentiría como un abrigo.\n\nAhora viene la primera sorpresa. Mientras el tamaño cambia tanto, el tiempo casi no cambia.\n\nMarte gira sobre su eje y completa una vuelta en poco más de veinticuatro horas y media. Los científicos llaman sol a ese día marciano, para no confundirlo con el nuestro. Un sol dura unas veinticuatro horas y treinta y siete minutos, menos de una hora más que una jornada terrestre.\n\nPiensa en lo que eso significa. Te levantarías con una luz que sube despacio y almorzarías cuando el Sol está alto. Al final de la tarde verías cómo se apaga el día, y la noche llegaría casi a la misma hora a la que estás acostumbrado.\n\nLos equipos que manejan los róveres desde la Tierra lo saben bien. Cada día sus relojes se atrasan un poco respecto al horario normal, y con las semanas terminan trabajando de madrugada.\n\nEl eje de Marte también se inclina, casi lo mismo que el de la Tierra. Esa inclinación produce estaciones, con primaveras, veranos, otoños e inviernos. Pero el año marciano dura casi el doble que el nuestro, así que cada estación se queda unos seis meses terrestres o más. Un invierno allí sería largo, y la primavera tardaría en llegar.\n\nHasta aquí, todo suena casi hogareño. Y entonces miras hacia arriba.\n\nEl aire de Marte es extremadamente delgado. Su presión es menos del uno por ciento de la que sientes al nivel del mar. Y casi todo lo que lo forma es dióxido de carbono, el mismo gas que tú exhalas. No hay suficiente oxígeno para respirar, ni suficiente presión para que el agua permanezca líquida mucho tiempo en la superficie.\n\nEsa capa tan fina casi no retiene el calor. Por eso la temperatura media ronda los sesenta grados bajo cero. Pero el promedio esconde algo más extremo. En un día de verano, cerca del ecuador, el suelo puede acercarse a los veinte grados sobre cero. Esa misma noche puede caer a más de cien grados bajo cero.\n\nEs decir, podrías sentir un poco de tibieza en las botas y, a la vez, congelarte en los hombros. El aire no alcanza para repartir el calor.\n\nPor último, levanta la vista al cielo marciano. No encontrarías una Luna redonda y brillante como la nuestra. Marte tiene dos lunas pequeñas, Fobos y Deimos.\n\nFobos mide unos veintidós kilómetros, el largo de una caminata de medio día. Deimos es todavía más pequeño. Ambas son rocas irregulares, con forma de papas oscuras y llenas de cráteres. Fobos gira tan cerca del planeta que da varias vueltas en un solo día marciano. Cruzaría el cielo rápido, y saldría por el oeste.\n\nAlgunos científicos creen que son asteroides capturados. Otros piensan que nacieron de los restos de un choque antiguo. Todavía no hay una respuesta definitiva.\n\nAsí que la pregunta del principio tiene una respuesta suave y un poco extraña.\n\nMarte tiene la mitad del tamaño de la Tierra y un día casi idéntico al tuyo.\n\nSus mañanas y sus tardes te resultarían familiares. Lo demás, el peso, el aire y el frío, sería de otro mundo. Es como entrar en una casa que tiene tu mismo horario, pero donde todo lo demás está cambiado de lugar.\n\nY queda una duda pendiente. Si este mundo pequeño tiene polos blancos, ¿de qué están hechos? ¿Y qué pasa con ellos cuando llega el verano?"
+      "text": "Un fotógrafo de la Unión Soviética, en mil novecientos ochenta y dos, habría visto aparecer una imagen lenta en una pantalla. Una línea de píxeles, luego otra. Y poco a poco, un horizonte torcido, con rocas.\n\nEs una escena extraña, porque ese horizonte no se parece a nada de lo que esperabas. Pregúntate cómo sería estar de pie ahí, sobre el suelo de Venus. ¿Qué verías? ¿Qué sentirías en el cuerpo?\n\nEmpecemos por la luz. Arriba, las nubes ocupan todo el cielo y no dejan ver el Sol. Pero la luz pasa, filtrada y difusa. Llega tenue y de un color anaranjado, como el de una tarde de mucho polvo. No hay sombras marcadas. Todo se ve parejo, bajo una especie de crepúsculo que no termina nunca.\n\nAhora el aire. Casi todo es dióxido de carbono, el mismo gas que tú exhalas, pero en una cantidad enorme. Cerca del suelo, la presión es tan alta que en ciertas condiciones ese gas se vuelve un fluido supercrítico. No es del todo gas ni del todo líquido. Es algo intermedio, denso, que ocupa el espacio como lo hace un caldo espeso.\n\nEsto lo sabemos porque alguien llegó hasta allá. La sonda soviética Venera Trece descendió en marzo de mil novecientos ochenta y dos. Sus cámaras giraron despacio y enviaron las primeras fotos en color de la superficie. Muestran un suelo de tono claro, cubierto de fragmentos. Y entre ellos, rocas planas, apiladas en láminas, como pizarra rota. Parte del paisaje parece teñido de naranja por la luz. Pero la roca, en el fondo, es gris.\n\nFíjate en lo que no hay. No hay dunas levantadas por tormentas. No hay polvo en el aire ni vientos que silben. Arriba, las nubes corren a una velocidad enorme. Abajo, el aire apenas se mueve, a una marcha de unos pocos kilómetros por hora. Sería como caminar con el paso de alguien que va despacio, pero con un detalle: el aire es tan denso que cada brisa empuja como una corriente de agua.\n\nY ahí entra el peso. Sobre tu cuerpo descansaría la atmósfera entera, unas noventa veces más que sobre la Tierra. Equivale a la presión que sentirías a unos novecientos metros bajo el mar. Esa es una profundidad a la que casi ningún buceador llega. Cada paso exigiría un esfuerzo, como si el aire te sostuviera y te frenara al mismo tiempo.\n\nY todo esto con un calor que supera el de cualquier horno de cocina.\n\nPor eso las sondas duraron tan poco. La más breve resistió cerca de veintitrés minutos. Las más longevas, como las de mil novecientos ochenta y dos, aguantaron unas dos horas. Cada una fue un cuerpo diseñado para morir despacio, con una cápsula enfriada de antemano y aislada como una botella térmica. Dos horas, en total. Lo que dura una película.\n\nY esas dos horas bastaron para enviar fotos.\n\nBajo esa presión y ese calor, el aire es casi un fluido, y aun así las rocas siguen ahí, planas y quietas.\n\nQuizá eso sea lo que más impresiona de ese suelo: no es un paisaje en llamas. Es un paisaje en reposo. Parece un lugar que lleva mucho tiempo sin cambiar.\n\n¿Será cierto? Esas láminas de roca, ese suelo claro, ¿llevan ahí mil años, o mil millones? Para responder, habría que ver el planeta desde arriba, entero, con ojos que atraviesen las nubes."
     },
     {
-      "title": "Los casquetes de hielo y el polvo en movimiento",
-      "question": "¿Qué esconden las capas de hielo que cubren los polos de Marte?",
-      "reveal": "Los casquetes polares de Marte están formados por capas de hielo de agua y dióxido de carbono que funcionan como un archivo de los cambios climáticos del planeta.",
+      "title": "Volcanes, coronas y un planeta joven",
+      "question": "¿Está Venus todavía vivo geológicamente?",
+      "reveal": "Los datos más recientes apuntan a que algunos volcanes de Venus han estado activos hace muy poco tiempo, quizá incluso hoy.",
       "beats": [
-        "Los polos de Marte brillan en blanco incluso desde telescopios terrestres",
-        "Hay hielo de agua permanente y una capa estacional de hielo de dióxido de carbono",
-        "Las sondas orbitales han fotografiado capas apiladas como páginas de un libro",
-        "Esas capas probablemente registran ciclos climáticos de largo plazo",
-        "Los vientos levantan polvo y forman remolinos que dejan huellas oscuras en la superficie",
-        "Las tormentas globales de polvo pueden cubrir casi todo el planeta durante semanas"
-      ],
-      "ambience": "ice",
-      "image_queries": [
-        "Mars north polar cap Mars Reconnaissance Orbiter",
-        "Mars south polar cap Mars Global Surveyor",
-        "Mars polar layers HiRISE",
-        "Mars dust devil HiRISE",
-        "Mars polar dunes HiRISE",
-        "Mars ice cap Mars Express",
-        "Mars polar spiral troughs",
-        "Mars dust storm Mars Global Surveyor",
-        "Mars frost Viking Lander",
-        "Mars north pole Phoenix"
-      ],
-      "video_queries": [
-        "Mars polar cap animation",
-        "Mars dust devil video",
-        "Mars global dust storm time-lapse"
-      ],
-      "text": "Desde un jardín cualquiera, con un telescopio pequeño, puedes ver algo curioso en Marte. En la parte de arriba del disco rojizo hay una mancha blanca, brillante, como una gota de cal.\n\nEs un polo. A decenas de millones de kilómetros de distancia, todavía se deja ver. Los astrónomos lo notaron hace más de tres siglos, y también notaron algo más. La mancha cambiaba de tamaño con las estaciones. Crecía en invierno y se encogía en verano.\n\nAlgo se congelaba y algo se evaporaba, año tras año. ¿Y qué guardan, debajo de esa pátina blanca, las capas de hielo que cubren los polos de Marte?\n\nLa primera respuesta es que no todo ese hielo es igual. Hay dos clases, y se comportan de maneras muy distintas.\n\nLa más profunda es hielo de agua. Es permanente. Dura todo el año, y probablemente ha durado millones de años, como el hielo que cubre Groenlandia. Sobre él, cada invierno se posa una segunda capa, hecha de dióxido de carbono congelado. Es el dióxido de carbono de la atmósfera, a unos ciento veinte grados bajo cero.\n\nEse hielo seco es delgado. Piensa en una escarcha gruesa, de la altura de una persona, más o menos. Cuando llega la primavera, el Sol lo calienta y se convierte directamente en gas, sin pasar por el estado líquido. Es lo que hace que la mancha blanca se encoja.\n\nY así, dos veces en cada año marciano, una parte de la atmósfera del planeta se congela y vuelve a liberarse.\n\nPero el hielo permanente seguía sin contar su historia. Hizo falta mirar desde arriba, muy de cerca.\n\nCuando las sondas orbitales llegaron a Marte, giraron una y otra vez sobre los polos. Sus cámaras revelaron algo que ningún telescopio habría podido mostrar. En los bordes del casquete, donde el hielo se corta en acantilados y valles, aparecían capas.\n\nMuchas capas. Claras y oscuras, una sobre otra, como las páginas de un libro cerrado, visto de canto.\n\nCada capa es más delgada que un edificio. Algunas son de hielo casi puro. Otras llevan mezclado el polvo fino del planeta, y por eso se ven más oscuras. Alguna vez el aire de Marte cargó más polvo, y alguna vez menos.\n\nEntonces surge la pregunta natural. ¿Por qué cambia ese polvo, y por qué cambia el hielo?\n\nLos científicos creen que la respuesta está en la inclinación del propio planeta. El eje de Marte no se mantiene fijo para siempre. Se balancea despacio, a lo largo de cientos de miles de años, mucho más que la Tierra. Cuando se inclina más, los polos reciben más luz y el hielo se derrite o se evapora. Cuando se endereza, el hielo vuelve a acumularse.\n\nCada ciclo deja una marca. Cada marca se entierra bajo la siguiente.\n\nLos casquetes polares no son solo hielo. Son un archivo, escrito capa a capa, de cómo ha cambiado el clima de Marte.\n\nAún no sabemos leerlo del todo. Cuánto tiempo representa cada página sigue siendo una cuestión abierta. Pero el libro está ahí, y es enorme.\n\nLejos de los polos, el paisaje cuenta otra historia, mucho más inquieta.\n\nEl viento marciano es débil, porque el aire es muy delgado. Aun así, levanta polvo tan fino como el humo de una vela. En las llanuras, el suelo se calienta, el aire sube y empieza a girar. Nace un remolino.\n\nAlgunos miden cientos de metros de alto. Caminan sobre la superficie durante minutos y luego se desvanecen. A su paso arrastran la capa clara de polvo y dejan al descubierto el suelo oscuro de abajo. Desde la órbita se ven largas huellas, trazadas como con un lápiz suave, que el viento borrará con el tiempo.\n\nSi estuvieras allí, no sentirías casi nada. Un empujón leve, una brisa seca. El aire es tan delgado que ni siquiera haría sonar una hoja.\n\nY sin embargo, a veces ese mismo viento se multiplica.\n\nCada pocos años marcianos, una tormenta local crece más de lo normal. El polvo calienta el aire, el aire se mueve con más fuerza, y la fuerza levanta todavía más polvo.\n\nEntonces el cielo cambia de color.\n\nEn las tormentas más grandes, el polvo cubre casi todo el planeta. Desde la Tierra, un telescopio ya no distingue las manchas oscuras. El disco entero se vuelve un velo anaranjado. Y puede durar semanas, o incluso meses, antes de que el polvo vuelva a posarse.\n\nLo más extraño es lo que sucede después. Ese polvo cae despacio, sobre las llanuras, sobre los volcanes, sobre los mismos casquetes de hielo. Y quizás, en alguna de esas capas del polo, ya está quedando escrita esa tormenta.\n\nHay otro lugar donde el planeta guarda su memoria, mucho más cerca del ecuador. Es una herida abierta de miles de kilómetros."
-    },
-    {
-      "title": "El gigante de las llanuras: Monte Olimpo",
-      "question": "¿Cómo pudo formarse un volcán tan inmenso que no cabría en ningún paisaje terrestre?",
-      "reveal": "El Monte Olimpo es el volcán más alto conocido del sistema solar y su base es tan ancha que, de pie sobre él, no verías su pendiente.",
-      "beats": [
-        "Olympus Mons es un volcán en escudo de unos 22 kilómetros de altura",
-        "Su base es enorme, comparable en tamaño a un país mediano",
-        "Sus pendientes son tan suaves que un viajero no notaría la subida",
-        "En la cima hay una caldera formada por colapsos de cámaras de magma",
-        "Marte no tiene placas tectónicas móviles como la Tierra, así que el volcán creció en el mismo punto",
-        "Su menor gravedad permitió que se elevara a alturas que serían imposibles aquí"
+        "Magellan mapeó casi toda la superficie con radar entre 1990 y 1992",
+        "Miles de volcanes, grandes llanuras de lava y estructuras únicas llamadas coronas",
+        "Pocos cráteres: la superficie parece geológicamente joven, de unos cientos de millones de años",
+        "No hay placas tectónicas como las de la Tierra, pero sí rasgos de deformación",
+        "Imágenes recientes de Magellan que muestran una boca volcánica cambiando en pocos meses",
+        "Variaciones químicas de la atmósfera como posible señal de actividad volcánica"
       ],
       "ambience": "lava",
       "image_queries": [
-        "Olympus Mons Mars Express",
-        "Olympus Mons Viking",
-        "Olympus Mons caldera",
-        "Olympus Mons Mars Global Surveyor",
-        "Tharsis volcanoes Mars",
-        "Olympus Mons escarpment",
-        "Arsia Mons Mars",
-        "Pavonis Mons Mars",
-        "Ascraeus Mons Mars",
-        "Mars Tharsis region Mars Reconnaissance Orbiter"
+        "Maat Mons Venus",
+        "Sif Mons Magellan",
+        "Venus volcano radar",
+        "Venus coronae Magellan",
+        "Venus lava flows",
+        "Venus Alpha Regio",
+        "Venus pancake domes",
+        "Venus impact craters Magellan",
+        "Venus tessera terrain",
+        "Venus Ovda Regio"
       ],
       "video_queries": [
-        "Olympus Mons flyover animation",
-        "Mars volcano visualization",
-        "Tharsis region flyover Mars Express"
+        "Maat Mons Venus animation",
+        "Venus volcano flyover",
+        "Magellan Venus radar mapping"
       ],
-      "text": "Un geólogo camina por una ladera de Hawái, con la mano apoyada en la roca negra todavía tibia. Está sobre el volcán más grande de la Tierra, y sin embargo la montaña no se parece a una montaña. Es una cuesta ancha y tranquila, que sube sin prisa hacia un cielo vacío.\n\nAhora piensa en un volcán todavía mayor. Uno que, puesto en cualquier paisaje terrestre, no cabría. ¿Cómo pudo formarse algo así?\n\nLos primeros astrónomos que apuntaron sus telescopios a Marte vieron, hace más de un siglo, una mancha clara que a veces destacaba sobre el polvo rojizo. La llamaron Nix Olympica, la nieve del Olimpo. Pensaron que era una nube, o un campo de hielo. Nadie sospechaba que fuera una montaña.\n\nEntonces, en mil novecientos setenta y uno, llegó la sonda Mariner Nueve. Una tormenta de polvo cubría todo el planeta. Durante semanas, la cámara solo vio una niebla rojiza y plana.\n\nPero en esa niebla asomaban cuatro puntos oscuros. Eran cimas. Y la más alta de todas, la que antes parecía una nube, era una cumbre de roca que atravesaba el polvo.\n\nHoy sabemos que el Monte Olimpo mide unos veintidós kilómetros de altura. Es como poner dos veces y media la altura del Everest, una sobre otra. Un avión comercial, volando a su altura de crucero, pasaría muy por debajo de la cima.\n\nEs el volcán más alto conocido del sistema solar.\n\nPero la altura es solo una parte de la historia. Lo asombroso es lo ancho que es. Su base se extiende a lo largo de unos seiscientos kilómetros. Eso es más o menos la distancia entre dos ciudades que uno tardaría medio día en recorrer en carro. Podría cubrir un país mediano, con sus ciudades, sus ríos y sus fronteras.\n\nPor eso un viajero que caminara por sus faldas no notaría la subida. La pendiente es de apenas unos cinco grados, como una rampa suave. Caminarías horas, quizá días, con la sensación de avanzar por una llanura. El horizonte, además, se curva tan cerca en Marte que nunca verías la montaña entera. Estarías dentro de ella sin saberlo.\n\nY al final de esa larga cuesta, encontrarías algo distinto. En la cima hay una caldera, un hundimiento enorme de forma irregular. Se formó cuando las cámaras de magma, allá abajo, se vaciaron y el suelo se desplomó sobre ellas. Ocurrió no una vez, sino varias, en distintas épocas. Los bordes de esos círculos superpuestos aún se ven desde el espacio, como anillos dejados por una taza.\n\nQueda la pregunta de fondo. ¿Por qué creció tanto?\n\nLa primera pista está bajo nuestros pies, en la Tierra. Nuestra corteza está rota en placas que se desplazan despacio, unos centímetros al año, como uñas que crecen. Los volcanes de Hawái nacen sobre un punto caliente del manto. Pero la placa se mueve, y el volcán es arrastrado lejos de su fuente. Entonces nace otro, y otro más. Así se forma una cadena de islas.\n\nEn Marte no ocurre esto.\n\nMarte no tiene placas móviles como la Tierra. Su corteza es una sola pieza quieta. El punto caliente quedó siempre bajo el mismo lugar, y la lava siguió brotando en el mismo sitio. Capa sobre capa, durante cientos de millones de años, quizá más. Un volcán que no fue arrastrado a ninguna parte, y que siguió creciendo.\n\nLa segunda pista es la gravedad. En Marte es apenas un poco más de un tercio de la terrestre. Una montaña de roca se sostiene sobre su propio peso, y en la Tierra ese peso la hundiría y la aplastaría mucho antes de llegar tan alto. En Marte la roca pesa menos, y la base aguanta más.\n\nAsí que el Monte Olimpo no es un capricho. Es el resultado natural de un mundo quieto, con poco peso y mucho tiempo.\n\nEs un volcán tan ancho que, de pie sobre él, no verías su pendiente.\n\nPiensa en eso un momento. Hay lugares donde la mayor obra de un planeta es invisible desde dentro. Solo desde lejos, desde el cielo, se entiende lo que uno pisa. Y quizá eso nos pasa también con la Tierra.\n\nPero Marte aún guarda otra forma de herida, y esta no apunta hacia arriba. Muy cerca de ese gigante hay una región donde la corteza se levantó, y al levantarse, algo se rompió."
+      "text": "En mil novecientos noventa y uno, en un laboratorio de California, alguien se inclinó sobre una pantalla y vio algo que no esperaba. Era una franja de imagen gris, fina como una cinta, que llegaba desde una nave a miles de kilómetros de la Tierra. Y en esa cinta, por primera vez, aparecía el suelo de Venus.\n\nLa sonda se llamaba Magellan. Entre mil novecientos noventa y mil novecientos noventa y dos, dio vueltas al planeta una y otra vez. Su radar atravesaba las nubes como si no existieran. Así fue dibujando, franja tras franja, casi toda la superficie. Casi toda la superficie de Venus quedó cartografiada con buen detalle.\n\nY lo que apareció fue un mundo lleno de fuego antiguo. Había miles de volcanes, desde conos pequeños que caben en un pueblo hasta escudos enormes como regiones enteras. Había llanuras de lava tan extensas que se pueden recorrer cientos de kilómetros sin salir de ellas. Y había formas que no se ven en ningún otro lugar, las coronas.\n\nUna corona es un anillo grande, a veces de cientos de kilómetros, rodeado de grietas y pliegues. Parece que el suelo se hinchó desde abajo, como una masa que sube, y luego se hundió. Roca caliente empujando desde el interior. Nadie ha visto nacer una, pero eso es lo que sugieren los modelos.\n\nEntonces los científicos contaron los cráteres. En la Luna, los cráteres cubren todo, porque la superficie lleva miles de millones de años recibiendo golpes. En Venus hay muy pocos, unos novecientos en todo el planeta. Y están repartidos al azar, sin zonas viejas ni zonas nuevas.\n\nEso significa algo. La superficie venusiana no puede ser muy antigua. Tiene quizá unos cuantos cientos de millones de años, una edad corta para un planeta de cuatro mil quinientos millones. Algo la borró, o la cubrió de lava, y empezó de nuevo.\n\nPero ¿cómo? En la Tierra, la superficie se renueva con placas que se hunden y se separan. En Venus no hay nada parecido. No se ven esas largas cadenas de montañas ni esas dorsales en el fondo del mar. Sin embargo, sí hay pliegues, fracturas y regiones comprimidas, señales de que la corteza se deforma. Es un planeta que se mueve, pero a su manera.\n\nY de pronto la pregunta se vuelve más cercana. Si Venus renovó su rostro hace tan poco, ¿está todavía vivo por dentro?\n\nDurante treinta años, nadie pudo responder.\n\nLuego, hace pocos años, un grupo de investigadores volvió a mirar las imágenes de Magellan. Tenían dos tomas del mismo lugar, hechas con ocho meses de diferencia. Se trataba de una zona llamada Maat Mons, uno de los volcanes más altos del planeta. Compararon una con otra, con paciencia, casi píxel por píxel.\n\nLa boca del volcán había cambiado. En la primera imagen era un hueco más o menos redondo. En la segunda, el hueco era más grande, de forma distinta, y parecía lleno a medias de material nuevo. Algo había pasado dentro, en pocos meses. Pudo ser un derrumbe, o lava que rebosó y volvió a hundirse.\n\nEl cambio medía apenas unos pocos kilómetros. Pero en un planeta donde todo parecía congelado en el tiempo, era como ver moverse una piedra.\n\nHay otra pista, y viene del aire. La atmósfera de Venus contiene dióxido de azufre, un gas que el Sol destruye con rapidez. Si nadie lo repusiera, desaparecería en muy poco tiempo. Y sin embargo, las sondas lo han medido una y otra vez, y su cantidad sube y baja con los años. Una erupción grande podría explicarlo, porque los volcanes lo expulsan junto con la lava.\n\nNo es una prueba. Otros procesos de la atmósfera también pueden hacer variar ese gas, y los científicos lo saben. Pero todo apunta en la misma dirección.\n\nVenus, entonces, no es un museo de roca apagada. Algunos de sus volcanes han estado activos hace muy poco tiempo, quizá incluso hoy, mientras tú respiras tranquilo a millones de kilómetros.\n\nUn mundo gemelo del nuestro que todavía respira fuego por dentro. Y que quizá, en su pasado, tuvo algo más que fuego."
     },
     {
-      "title": "La cicatriz de Marte: Valles Marineris",
-      "question": "¿Qué fuerza abrió una grieta capaz de atravesar gran parte del planeta?",
-      "reveal": "Valles Marineris se extiende a lo largo de unos 4000 kilómetros y alcanza profundidades de varios kilómetros, mucho más que el Gran Cañón.",
+      "title": "El océano que quizá existió",
+      "question": "¿Pudo Venus tener océanos y un clima agradable?",
+      "reveal": "Los modelos climáticos sugieren que Venus pudo tener agua líquida durante miles de millones de años antes de perderla.",
       "beats": [
-        "Valles Marineris corre cerca del ecuador marciano a lo largo de miles de kilómetros",
-        "Es mucho más largo y profundo que el Gran Cañón del Colorado",
-        "Se cree que se abrió por el estiramiento y fractura de la corteza junto a la región volcánica de Tharsis",
-        "Sus paredes muestran capas de roca que cuentan la historia geológica",
-        "Hay deslizamientos enormes y depósitos en sus laderas",
-        "Algunos sectores muestran posibles huellas de agua que lo moldeó después"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Valles Marineris Viking",
-        "Valles Marineris Mars Express",
-        "Valles Marineris Mars Reconnaissance Orbiter",
-        "Ius Chasma Mars",
-        "Melas Chasma Mars",
-        "Candor Chasma layers Mars",
-        "Valles Marineris landslide HiRISE",
-        "Coprates Chasma Mars",
-        "Ophir Chasma Mars",
-        "Valles Marineris THEMIS"
-      ],
-      "video_queries": [
-        "Valles Marineris flyover animation",
-        "Mars canyon flight Mars Express",
-        "Valles Marineris 3D visualization"
-      ],
-      "text": "Hay un lugar en Marte donde el suelo simplemente se acaba. Si pudieras caminar hasta su borde, verías que la tierra roja corta en seco. Debajo de tus pies se abre un vacío tan hondo que el fondo parece pertenecer a otro paisaje. Del otro lado, a muchos kilómetros, apenas se adivina la pared opuesta, suavizada por la distancia y por una bruma fina.\n\nA este lugar se le llama Valles Marineris. Corre cerca del ecuador marciano, y no es un valle cualquiera. Es una herida abierta en la piel del planeta, que se alarga hacia el horizonte hasta perderse de vista.\n\nEntonces surge la pregunta. ¿Qué fuerza pudo abrir una grieta capaz de recorrer una porción tan grande de un mundo?\n\nPara sentir su tamaño, piensa en el Gran Cañón del Colorado. Es uno de los lugares más impresionantes de la Tierra, y tardarías días en recorrerlo a pie. Pues bien, Valles Marineris es mucho más largo y mucho más profundo. Podrías colocar el Gran Cañón dentro de uno de sus brazos laterales, y aún sobraría espacio.\n\nLas sondas que llegaron a Marte en los años setenta fueron las primeras en descubrirlo. El nombre se le dio en honor a la Mariner Nueve, la nave que lo fotografió. Las imágenes mostraron una franja oscura, larga como un tajo, que cruzaba toda una región del planeta.\n\nPero la clave no estaba en el cañón mismo. Estaba en lo que había a su lado.\n\nAl oeste se levanta una enorme región abultada, llamada Tharsis. Allí viven los volcanes gigantes, los mismos que acabamos de visitar. Durante millones de años, esa zona fue empujada hacia arriba por el calor del interior del planeta. Y una corteza que se levanta tanto no puede quedarse intacta.\n\nSe estiró. Se tensó, como la masa de un pan que se hincha. Y al final se fracturó.\n\nEso es lo que se cree hoy: que Valles Marineris nació del estiramiento y la ruptura de la corteza, junto al peso y la presión de Tharsis. No fue un golpe venido del cielo, ni un río que cavó durante siglos. Fue el propio planeta, rompiéndose despacio desde dentro.\n\nSu tamaño, medido con cuidado, es difícil de abarcar. Se extiende a lo largo de unos cuatro mil kilómetros, más o menos como cruzar de costa a costa los Estados Unidos. Y en sus partes más hondas alcanza varios kilómetros de profundidad, mucho más que cualquier cañón terrestre.\n\nCuatro mil kilómetros de cicatriz, en un planeta que cabría muchas veces dentro del nuestro.\n\nSi te asomaras a sus paredes, verías que no son lisas. Están hechas de capas, una sobre otra, como los estratos de un corte en la montaña. Cada capa es un momento distinto: una erupción, una época de polvo, un tiempo en que el planeta fue otro. Los geólogos las leen de arriba abajo, y así recorren la historia de Marte sin moverse de lugar.\n\nCon el tiempo, esas paredes también cedieron. En las laderas hay deslizamientos enormes, donde montañas enteras se desprendieron y fluyeron hacia el fondo. Todavía se ven los depósitos que dejaron, extendidos como lenguas de roca quebrada. Algunos son tan grandes que podrían ocultar una ciudad completa.\n\nY hay algo más, que se dice en voz baja. En ciertos sectores del cañón aparecen formas que sugieren la huella del agua. Son depósitos en capas, y minerales que parecen haberse formado en presencia de humedad. Podría ser que, mucho después de abrirse la grieta, el agua llegara a moldear sus orillas.\n\nNadie lo sabe con certeza. Las señales están ahí, pero hay que leerlas con paciencia.\n\nY quizá por eso mismo la pregunta siguiente se vuelve inevitable. Si hubo agua aquí, en algún momento, ¿hacia dónde corría? ¿Qué caminos dejó, al marcharse, sobre esta tierra tan seca?"
-    },
-    {
-      "title": "Cauces secos: las huellas de antiguos ríos",
-      "question": "¿Cómo sabemos que alguna vez corrió agua líquida sobre Marte?",
-      "reveal": "Desde la órbita se ven valles ramificados y deltas fosilizados que muestran que el agua líquida fluyó y se acumuló sobre la superficie durante épocas antiguas.",
-      "beats": [
-        "Las primeras sondas orbitales revelaron canales y valles que parecían cauces secos",
-        "Hay valles ramificados que se asemejan a redes de ríos terrestres",
-        "Los grandes canales de desagüe sugieren inundaciones catastróficas en el pasado",
-        "El cráter Jezero conserva un delta antiguo con sedimentos en abanico",
-        "Minerales como arcillas se forman en presencia de agua líquida",
-        "Los científicos aún debaten cuánto duraron esos periodos húmedos y qué tan cálido fue el clima"
+        "El Sol joven era más tenue, lo que daba más margen a Venus",
+        "La relación entre deuterio e hidrógeno en la atmósfera, huella de agua perdida",
+        "Modelos que proponen un océano posible, aunque sigue siendo debatido",
+        "La retroalimentación del efecto invernadero: más calor, más vapor, más calor",
+        "El vapor sube, la luz ultravioleta lo rompe y el hidrógeno escapa al espacio",
+        "Un planeta cuyo mar pudo desaparecer y que hoy se estudia para entender mundos fuera del sistema solar"
       ],
       "ambience": "sea",
       "image_queries": [
-        "Jezero crater delta Mars",
-        "Nili Fossae Mars",
-        "Ares Vallis Mars",
-        "Mars valley networks Viking",
-        "Mars outflow channel Mars Express",
-        "Mars ancient river Mars Reconnaissance Orbiter",
-        "Mars delta Eberswalde",
-        "Mars clay minerals CRISM",
-        "Mars Kasei Valles",
-        "Mars Mawrth Vallis"
+        "Venus ancient ocean illustration",
+        "Venus water vapor atmosphere",
+        "Venus Express atmosphere",
+        "Early Earth ocean illustration",
+        "Venus deuterium hydrogen",
+        "Exoplanet Venus-like illustration",
+        "Venus greenhouse effect",
+        "Venus surface radar tessera",
+        "Earth ocean from space",
+        "Young Sun illustration"
       ],
       "video_queries": [
-        "Jezero crater flyover animation",
-        "Mars ancient water visualization",
-        "Mars ancient lake animation"
+        "Venus ancient ocean animation NASA",
+        "Runaway greenhouse effect visualization",
+        "Earth ocean planet animation"
       ],
-      "text": "Volvamos un momento a la Mariner Nueve, esperando entre el polvo de aquella tormenta.\n\nLos ingenieros esperaron. Poco a poco el polvo se asentó, y la superficie fue apareciendo. Primero asomaron las cumbres de los volcanes. Después, imágenes más nítidas, y en ellas algo que nadie esperaba: líneas largas y sinuosas, grabadas en la tierra como cicatrices de un río.\n\n¿Podía ser? ¿Cómo sabemos que alguna vez corrió agua líquida sobre un mundo tan seco?\n\nAl principio nadie se atrevió a decirlo en voz alta. Se habló de lava, de viento, de grietas. Pero las formas seguían ahí, y se parecían demasiado a algo que conocemos bien. Eran canales con curvas suaves, orillas definidas y fondos planos, como los que deja una corriente tranquila en una llanura.\n\nCon los años, otras sondas se acercaron más. Y vieron valles que se ramifican. Pequeños surcos se juntan en arroyos, los arroyos en cauces mayores, y los cauces mayores en un solo valle ancho. Si alguna vez has mirado un río desde un avión, reconocerás ese dibujo. Es el mismo árbol, con las raíces hacia arriba. La lluvia, o el deshielo, o el agua que brota del suelo, siempre construye redes así.\n\nHabía además otras huellas, mucho más grandes. En ciertas regiones, enormes canales nacen de pronto en terreno quebrado y se extienden cientos de kilómetros. Tienen islas con forma de lágrima, talladas por una corriente que las rodeó. Esas formas no hablan de un riachuelo constante. Hablan de una inundación violenta, de un volumen de agua que debió soltarse de golpe, quizá desde bajo la superficie. Algo así como vaciar un lago en pocos días.\n\nY sin embargo, la pregunta seguía abierta. Un cauce seco puede ser una cicatriz de un solo evento. Para saber si el agua se había quedado, hacía falta encontrar el lugar donde descansó.\n\nEse lugar existe. Se llama Jezero, y es un cráter de unos cuarenta y cinco kilómetros de ancho, más o menos lo que tardarías en cruzar en bicicleta en una mañana tranquila.\n\nDesde la órbita, en el borde occidental del cráter, se ve algo que cualquier geólogo reconoce de inmediato. Un valle desemboca en el cráter, y justo allí el terreno se abre en forma de abanico. Capas finas de sedimento se extienden hacia el interior, una sobre otra, como los dedos de una mano abierta.\n\nAsí se forma un delta. Un río llega a un lago, pierde fuerza, y suelta poco a poco la arena y el barro que traía consigo. Durante mucho tiempo, aquí, el agua entró y se quedó.\n\nDesde la órbita se ven valles ramificados y deltas fosilizados.\n\nPero hay otra pista, más silenciosa, que no depende de la forma del paisaje. Está en la propia roca. Instrumentos en órbita detectaron en muchas regiones minerales llamados arcillas. Las arcillas no se forman en la roca seca. Nacen cuando el agua líquida permanece largo tiempo en contacto con la piedra y la transforma, grano a grano, durante siglos. Es una huella química, tan discreta como la sal que deja el mar al evaporarse.\n\nAsí que las pistas coinciden. La forma de los valles, la de los canales, el abanico del delta, la composición de las rocas. Todas cuentan la misma historia, desde ángulos distintos. El agua líquida corrió sobre Marte, y en algunos lugares se acumuló.\n\nEso cambia la manera de mirarlo. Ese punto rojizo que ves en el cielo no fue siempre un desierto. Hubo orillas, y hubo corrientes, quizá bajo un cielo parecido al nuestro en algún aspecto que todavía no entendemos del todo.\n\nPorque aquí es donde la ciencia se detiene y dice la verdad: no lo sabemos todo. ¿Cuánto duraron esas épocas húmedas? ¿Fueron siglos, o millones de años? ¿Hizo calor suficiente para que lloviera, o el agua corrió bajo un manto de hielo, en un clima frío que apenas permitía el deshielo? Los científicos discuten, con datos en la mano y paciencia de sobra.\n\nLo que sí sabemos es que el agua dejó su firma. Y una firma así invita a otra pregunta, más tranquila y más antigua. Si el agua estuvo allí, y si se quedó el tiempo suficiente, ¿alguien fue a mirar de cerca lo que quedó en esas orillas?"
+      "text": "Los astrónomos tienen una costumbre curiosa: cuando quieren saber cuánta agua perdió un mundo, no buscan agua. Buscan un átomo muy raro, escondido en el aire.\n\nEse átomo es el deuterio. Es hidrógeno con un neutrón de más, un poco más pesado, un poco más perezoso. En la Tierra, por cada millón de átomos de hidrógeno ordinario, hay unos ciento cincuenta de deuterio. Es una proporción pequeña y muy estable.\n\nEn Venus no lo es. En su atmósfera hay más de cien veces más deuterio, en proporción, que en nuestros océanos. Las sondas lo midieron una y otra vez, desde las Pioneer hasta Venus Express. Y las cifras siempre fueron del mismo orden.\n\n¿Por qué un planeta guardaría tanto del hidrógeno pesado? ¿Y por qué parece que le faltó casi todo el ligero?\n\nPara entenderlo, hay que volver atrás. Hace unos cuatro mil millones de años, el Sol era más débil que hoy. Daba cerca de un setenta por ciento de la luz actual. Visto desde la Tierra, habría sido un disco algo más pálido en un cielo más tranquilo.\n\nEse Sol tímido le dio a Venus un margen. Aunque estaba más cerca de él que nosotros, la luz que recibía quizá no bastaba para hervir su superficie. Una superficie templada, con cielos nublados, podía conservar agua líquida.\n\nEsa es la idea de algunos modelos climáticos. Simulan un Venus joven, con una atmósfera todavía delgada, y lo dejan evolucionar. En varios de ellos, el planeta se enfría lo suficiente para formar lluvia. La lluvia se junta en cuencas. Y las cuencas se llenan.\n\nUn mar, quizá. Poco profundo, tibio, bajo un cielo cubierto.\n\nHay que decirlo con honestidad: no todos los científicos coinciden. Otros modelos sostienen que Venus nunca se enfrió tanto, y que el agua se mantuvo siempre como vapor, flotando en el aire caliente. Las rocas de la superficie podrían decidirlo, pero ninguna sonda ha vivido allí el tiempo suficiente para contarlo.\n\nAun así, si hubo océanos, lo que sigue es una historia lenta y muy conocida por los climatólogos. El Sol fue ganando brillo, poco a poco, a lo largo de cientos de millones de años. Cada vez llegaba un poco más de calor. El agua se evaporaba un poco más.\n\nY el vapor de agua es un gas de efecto invernadero. Atrapa el calor que la superficie intenta devolver al espacio. Más calor, más vapor. Más vapor, más calor. Un círculo que se alimenta a sí mismo, sin que nadie lo empuje.\n\nLlega un punto en que el océano ya no se sostiene. Se evapora entero, o casi, y todo ese vapor sube hasta las capas altas del cielo.\n\nAllí arriba, la luz ultravioleta del Sol golpea las moléculas de agua y las rompe. El oxígeno se queda, o se une a las rocas. El hidrógeno, el más ligero de todos los átomos, escapa hacia el espacio.\n\nEl deuterio, más pesado, se escapa con mucha más dificultad. Se queda atrás, acumulándose durante eones, como el sedimento en el fondo de una taza. Esa es la huella que miden hoy las sondas.\n\nEs una evidencia indirecta, pero muy elocuente.\n\nLos modelos más favorables calculan que Venus pudo tener agua líquida durante dos o tres mil millones de años. Casi todo el tiempo que la vida necesitó, en la Tierra, para dar sus primeros pasos.\n\nPiensa en lo que eso significa. Un planeta del tamaño del nuestro, con lluvia y mares, y un clima que quizá habrías podido soportar. Y luego, sin culpables, sin catástrofe repentina, el lento ascenso de un termómetro.\n\nPor eso los astrónomos de exoplanetas miran a Venus con tanta atención. Cada vez que encuentran un mundo rocoso en otra estrella, deben preguntarse de qué lado de esa línea se encuentra. Venus es su caso de estudio más cercano. Un ejemplo real de cómo se cruza el límite.\n\nY queda una pregunta que el hidrógeno perdido no responde. Si Venus tuvo mares, ¿qué más pudo haber tenido en ellos?"
     },
     {
-      "title": "Los róveres: exploradores en tierra roja",
-      "question": "¿Qué han descubierto los róveres al tocar directamente el suelo marciano?",
-      "reveal": "Los róveres han encontrado rocas formadas en agua, minerales que se depositan en lagos y compuestos orgánicos, lo que confirma que Marte tuvo ambientes potencialmente habitables.",
+      "title": "Vientos que giran más rápido que el planeta",
+      "question": "¿Cómo puede una atmósfera girar mucho más rápido que el suelo que tiene debajo?",
+      "reveal": "Las nubes de Venus dan la vuelta al planeta en unos 4 días terrestres, mientras que el suelo tarda unos 243 días en completar una rotación.",
       "beats": [
-        "Sojourner fue el primer róver, pequeño como un carrito, en 1997",
-        "Spirit y Opportunity encontraron minerales formados por agua y esférulas de hematita",
-        "Curiosity exploró el cráter Gale y halló rocas de un antiguo lago con ingredientes químicos para la vida",
-        "Perseverance recoge muestras selladas en el cráter Jezero para una futura posible devolución a la Tierra",
-        "El helicóptero Ingenuity demostró que se puede volar en la delgada atmósfera marciana",
-        "Aún no se ha confirmado vida pasada: es una pregunta abierta"
+        "Venus gira muy lento y en sentido contrario a casi todos los planetas",
+        "Un día sideral de unos 243 días terrestres, más largo que su año de unos 225 días",
+        "La superrotación de la atmósfera, aún estudiada por Akatsuki y Venus Express",
+        "Vórtices dobles en los polos con forma de ocho",
+        "Estructuras de ondas visibles en el ultravioleta, como un arco gigante",
+        "Un misterio abierto: el mecanismo completo de la superrotación"
       ],
-      "ambience": "wind",
+      "ambience": "storm",
       "image_queries": [
-        "Curiosity rover selfie Mars",
-        "Perseverance rover Jezero",
-        "Opportunity rover Mars",
-        "Spirit rover Mars",
-        "Sojourner rover Pathfinder",
-        "Ingenuity helicopter Mars",
-        "Mount Sharp Gale crater Curiosity",
-        "Endeavour crater Opportunity",
-        "Mars rock sample Perseverance",
-        "Mars panorama Curiosity"
+        "Venus polar vortex Venus Express",
+        "Venus south pole vortex",
+        "Venus Akatsuki UV",
+        "Venus atmosphere waves",
+        "Venus Mariner 10 ultraviolet clouds",
+        "Venus bow shaped wave",
+        "Venus infrared night",
+        "Venus VIRTIS",
+        "Venus clouds animation",
+        "Venus Pioneer ultraviolet"
       ],
       "video_queries": [
-        "Perseverance rover Mars footage",
-        "Curiosity rover drive Mars",
-        "Ingenuity helicopter flight video"
+        "Venus super rotation animation",
+        "Venus polar vortex visualization",
+        "Venus Akatsuki cloud movie"
       ],
-      "text": "En mil novecientos noventa y siete, un robot del tamaño de un carrito de supermercado bajó una rampa y tocó el suelo de Marte. Se llamaba Sojourner. Avanzaba tan despacio que en un día entero recorría apenas la distancia entre dos casas vecinas.\n\nHasta ese momento, todo lo que sabíamos del planeta venía de la distancia. Fotografías desde la órbita, colores vistos por telescopio, sombras de cauces secos. Pero una imagen no es una piedra. Así que la pregunta era sencilla: ¿qué encontraríamos al tocar directamente el suelo marciano?\n\nSojourner no encontró respuestas completas. Midió la composición de unas pocas rocas con un pequeño instrumento y demostró algo más modesto y más importante. Una máquina podía moverse por allí, de piedra en piedra, y decidir a dónde ir.\n\nSiete años después, en dos mil cuatro, llegaron dos gemelos. Se llamaban Spirit y Opportunity, y cada uno pesaba unos ciento ochenta kilos. Fueron enviados a lugares distintos, a lados opuestos del planeta.\n\nOpportunity se detuvo en una llanura plana y vio algo extraño en el suelo. Había pequeñas esferas, del tamaño de granos de pimienta, esparcidas como si alguien las hubiera sembrado. Eran esférulas de hematita, un mineral de hierro.\n\nEn la Tierra, la hematita así se forma muchas veces dentro de rocas empapadas en agua. Y las rocas de alrededor mostraban sales y capas finas, con el aspecto de sedimentos depositados despacio. Spirit, al otro lado del mundo, halló también minerales que solo nacen donde el agua ha estado.\n\nYa no era una sombra vista desde arriba. Era una roca sostenida, medida, tocada con un brazo de metal.\n\nDespués vino Curiosity, en dos mil doce. Es un róver del tamaño de un automóvil pequeño, y aterrizó dentro del cráter Gale. En el centro del cráter se levanta una montaña de capas, y los científicos querían leerla de abajo hacia arriba, como quien lee un libro de las páginas más antiguas a las más nuevas.\n\nCuriosity perforó una roca de grano muy fino, un lodo endurecido hace miles de millones de años. El análisis mostró arcillas, y mostró también carbono, nitrógeno y azufre, entre otros elementos. Son ingredientes que la vida terrestre necesita. Allí hubo un lago, con agua que no era ni demasiado ácida ni demasiado salada.\n\nUn lago tranquilo, en una tierra que hoy está helada y seca.\n\nMás tarde, Curiosity detectó también moléculas orgánicas, compuestos de carbono guardados dentro de esas rocas antiguas. Conviene decirlo con calma. Orgánico no significa vivo. Esas moléculas también pueden llegar en meteoritos o formarse sin ayuda de ningún ser vivo. Pero que hayan sobrevivido tanto tiempo ya dice algo.\n\nEn dos mil veintiuno llegó Perseverance, al cráter Jezero, donde hubo un delta. Allí trabaja con un taladro delicado y llena tubos de titanio con trozos de roca del tamaño de un lápiz. Cada tubo se sella y se deja en el suelo, como una carta guardada para alguien que todavía no ha llegado.\n\nLa idea es que una futura misión los recoja y los traiga a la Tierra. Solo en laboratorios de aquí podríamos mirar esas rocas con instrumentos que no caben en ningún róver. Ese regreso es posible, pero aún no está asegurado.\n\nPerseverance llevó además un pasajero pequeño, un helicóptero llamado Ingenuity. El aire de Marte es tan delgado que casi no sostiene un ala. Las aspas giraban con una rapidez enorme para encontrar algo de dónde apoyarse.\n\nY se elevó.\n\nFue un vuelo breve, apenas unos metros sobre el polvo, pero era el primer vuelo controlado en otro mundo. Después siguió volando decenas de veces, mucho más de lo que nadie esperaba.\n\nAhora podemos responder lo que preguntábamos al principio. Los róveres han encontrado rocas formadas en agua, minerales que se depositan en lagos y compuestos orgánicos. Marte tuvo ambientes que pudieron ser habitables.\n\nEso es lo que sabemos. No sabemos si alguna vez algo vivió allí. Ninguna de esas rocas ha mostrado todavía una señal que no pueda explicarse de otra manera, y la pregunta sigue abierta, tan tranquila como el paisaje.\n\nQuizá te des cuenta de lo que significa. Mirar esas orillas secas es mirar un lugar donde la vida pudo empezar, tal como empezó aquí, en aguas que también eran tibias y quietas. Pero si el agua se fue de la superficie, ¿adónde fue todo lo que quedó?"
+      "text": "En lo alto de la atmósfera de Venus, una nube avanza sobre el planeta como una cinta que nunca se detiene. Si pudieras seguirla desde una nave, verías que va dejando atrás el suelo, mucho más abajo, con una facilidad extraña. Es como mirar a un corredor que adelanta a la tierra misma.\n\nY ahí aparece la pregunta. ¿Cómo puede una atmósfera girar mucho más rápido que el suelo que tiene debajo?\n\nPara sentir lo raro que es esto, conviene empezar por el planeta. Venus gira sobre sí mismo con una lentitud casi incómoda. Un día sideral, es decir, una vuelta completa respecto a las estrellas, dura unos doscientos cuarenta y tres días terrestres. Es más tiempo del que Venus necesita para dar una vuelta alrededor del Sol, que son unos doscientos veinticinco días.\n\nAsí que en Venus un día es más largo que un año. Lo sabemos por mediciones de radar hechas desde la Tierra, que lograron atravesar las nubes y seguir el movimiento de los relieves.\n\nHay otro detalle, y es todavía más curioso. Casi todos los planetas giran en el mismo sentido en que orbitan, de oeste a este. Venus lo hace al revés. Si pudieras pararte en su suelo, y el cielo se dejara ver, el Sol saldría por el oeste, muy despacio, y tardaría semanas en cruzar el cielo.\n\nNadie sabe con certeza por qué Venus gira así. Quizá un choque antiguo, quizá el tirón constante de las mareas que produce su propia atmósfera densa. Las dos ideas siguen sobre la mesa.\n\nAhora sube otra vez a las nubes. Las sondas que estudiaron esa capa vieron algo que no encajaba con un planeta tan lento. Seguían las manchas oscuras de las nubes, fotografía tras fotografía, y las manchas se movían deprisa. Muy deprisa.\n\nLa sonda europea Venus Express las observó durante años, desde dos mil seis. La japonesa Akatsuki, que llegó en dos mil quince, las observó hasta hace poco. Con esas imágenes se pudo medir el viento a la altura de las nubes. Sopla a más de cien metros por segundo, más fuerte que cualquier huracán de la Tierra.\n\nY la consecuencia es sencilla de decir.\n\nLas nubes de Venus dan la vuelta al planeta en unos cuatro días terrestres.\n\nEl suelo, mientras tanto, tarda unos doscientos cuarenta y tres. Piensa en un reloj donde la aguja de los minutos girara tan rápido que la de las horas pareciera inmóvil. A este fenómeno se le llama superrotación. La atmósfera entera, o buena parte de ella, se mueve mucho más rápido que el cuerpo sólido que la sostiene.\n\nCerca de los polos, el viento dibuja figuras que parecen hechas a propósito. En cada polo hay un vórtice, una espiral enorme de nubes. Pero no es un remolino sencillo. Tiene dos centros que giran uno en torno al otro, y desde arriba la forma recuerda a un ocho, o a un par de ojos que se abren despacio. Esa forma cambia, se estira y se deshace con los días.\n\nEn las imágenes ultravioleta, que muestran contrastes que el ojo no ve, aparece otra estructura. Una gran franja oscura en forma de arco cruza buena parte del planeta, de un lado al otro. Los científicos creen que es una onda que viaja por la atmósfera, como la ondulación que deja una piedra en un estanque. Solo que esta ondulación mide miles de kilómetros, una distancia parecida a la que separa dos países enteros.\n\nDurante un tiempo se pensó que todo esto ya tenía una explicación redonda. Las ondas, las mareas del calor solar y las corrientes que suben del ecuador hacia los polos parecen empujar el aire, poco a poco, siempre en la misma dirección. Cada una aporta algo. Ninguna lo explica todo.\n\nLos modelos por computadora logran imitar una parte del movimiento. Pero cuando se suma cada pieza, la cuenta todavía no cierra del todo. No sabemos con exactitud cómo el planeta consigue sostener ese viento durante tanto tiempo sin que el roce con el suelo lo frene.\n\nY eso es lo hermoso de mirar un mundo tan cercano. Venus es el planeta que más se acerca a nosotros, y aun así guarda un enigma de física que no hemos resuelto.\n\nPor eso las agencias vuelven a mirarlo. Quienes estudian estas nubes saben que las respuestas no se van a quedar en los vientos. Quizá hagan falta sondas que bajen, que toquen ese aire y lo midan por dentro. Y quizá, allí, entre las gotas de ácido, haya algo más que viento."
     },
     {
-      "title": "El agua que aún queda bajo la superficie",
-      "question": "¿Dónde puede estar hoy el agua de Marte si su superficie parece tan seca?",
-      "reveal": "Hay hielo de agua enterrado bajo el suelo en latitudes medias y señales de posible agua líquida salobre en profundidad, un resto de aquel pasado húmedo.",
+      "title": "Regresar a Venus",
+      "question": "¿Qué quedan por descubrir en Venus y quién volverá a mirar?",
+      "reveal": "Nuevas misiones descenderán a través de la atmósfera para medir su composición y volverán a cartografiar su superficie con una precisión nunca vista.",
       "beats": [
-        "La sonda Phoenix excavó hielo de agua justo bajo el polvo cerca del polo norte",
-        "Radares orbitales detectan hielo enterrado en latitudes medias",
-        "Cráteres recientes han dejado al descubierto hielo brillante",
-        "Las líneas oscuras estacionales en pendientes han sido objeto de debate y no prueban agua líquida estable",
-        "Mediciones sísmicas de InSight revelaron la estructura interna del planeta",
-        "La detección de agua líquida profunda sigue siendo una cuestión abierta y debatida"
+        "Después de décadas, Venus vuelve a ser prioridad",
+        "DAVINCI, una sonda que descenderá por la atmósfera para medir gases y tomar imágenes",
+        "VERITAS, un orbitador que mapeará la superficie con radar",
+        "EnVision, de la ESA, para estudiar su interior y atmósfera",
+        "La búsqueda de señales químicas en las nubes y el debate abierto sobre posible vida microbiana",
+        "Venus como espejo del futuro de la Tierra y de los exoplanetas"
       ],
-      "ambience": "ice",
+      "ambience": "deep_space",
       "image_queries": [
-        "Phoenix lander Mars ice",
-        "Mars ice exposed crater HiRISE",
-        "Mars recurring slope lineae",
-        "Mars subsurface ice radar",
-        "InSight lander Mars",
-        "Mars Arcadia Planitia ice",
-        "Mars Phoenix trench",
-        "Mars glaciers Mars Reconnaissance Orbiter",
-        "Mars lobate debris apron",
-        "Mars Mars Odyssey ice map"
+        "DAVINCI Venus probe",
+        "VERITAS Venus orbiter",
+        "EnVision Venus ESA",
+        "Venus mission concept",
+        "Venus lander concept",
+        "Venus clouds from orbit",
+        "Venus Akatsuki orbiter",
+        "Venus Earth space view",
+        "Venus sunrise from orbit",
+        "Venus horizon illustration"
       ],
       "video_queries": [
-        "Mars subsurface ice animation",
-        "InSight lander Mars footage",
-        "Mars water history visualization"
+        "DAVINCI mission animation",
+        "VERITAS Venus mission animation",
+        "Venus mission concept NASA"
       ],
-      "text": "El brazo robótico de la sonda Phoenix terminaba en una pala del tamaño de una mano. En dos mil ocho rascó el suelo helado cerca del polo norte de Marte, a pocos centímetros de profundidad. Debajo del polvo rojizo apareció algo blanco y liso.\n\nLos científicos no sabían qué era. Marte parece un desierto sin una sola gota, y sin embargo ahí había algo que no encajaba. ¿Dónde puede estar hoy el agua de este planeta, si su superficie parece tan seca?\n\nCuatro días después, la respuesta empezó a hacerse visible. Los trocitos blancos habían desaparecido. Se habían evaporado, uno a uno, en el aire frío y delgado, como lo haría el hielo olvidado en un congelador abierto.\n\nEra hielo de agua, escondido bajo un palmo de polvo.\n\nPero Phoenix solo había rascado un punto, muy cerca del polo. Quedaba una pregunta más grande. ¿Había hielo también lejos de allí, donde el planeta recibe más luz del Sol?\n\nPara saberlo, los astrónomos usaron un método distinto. Algunas sondas que giran alrededor de Marte llevan radares que envían ondas hacia el suelo. Las ondas atraviesan la roca seca, pero rebotan de otra manera al chocar con hielo. Así, desde cientos de kilómetros de altura, esos radares encontraron enormes depósitos enterrados en las latitudes medias. Algunos tienen decenas de metros de espesor, y están cubiertos por una capa fina de polvo y piedras.\n\nHay otra pista, y esta se puede ver con los ojos. A veces un meteorito golpea Marte y abre un cráter nuevo. Cuando el impacto es lo bastante profundo, la fotografía desde la órbita muestra algo extraño: manchas de un blanco azulado, brillantes sobre el suelo oscuro. Es hielo recién desenterrado. Con los meses, el hielo se va evaporando y el color vuelve a apagarse.\n\nEl hielo está ahí, bajo nuestros pies imaginarios, esperando a que algo lo descubra.\n\nSin embargo, no todas las pistas son tan claras. En algunas laderas calientes de Marte aparecen líneas oscuras que crecen en primavera y se desvanecen en invierno. Al principio se pensó que eran hilos de agua líquida deslizándose cuesta abajo. Parecía una idea hermosa, y todavía se discute. Hoy muchos investigadores creen que podrían formarse por polvo y arena que se deslizan, sin agua. Estas líneas no prueban que corra agua líquida estable por la superficie.\n\nEntonces queda la pregunta de lo que hay más hondo. Y allí la mirada cambia, porque ya no se mira el suelo, sino el interior.\n\nEn dos mil dieciocho llegó a Marte una sonda llamada InSight. No tenía ruedas ni cámaras para explorar. Su trabajo era quedarse quieta y escuchar. Apoyó un sismómetro sobre la tierra roja y esperó, durante años, a que el planeta temblara.\n\nY Marte tembló. Cada sacudida enviaba ondas a través de la corteza, el manto y el núcleo. Al ver cómo cambiaban de velocidad, los científicos dibujaron por primera vez el interior de otro planeta con cierto detalle. Descubrieron que la corteza es más delgada de lo esperado en algunos lugares, y que el núcleo de hierro es líquido y bastante grande.\n\nAlgunos analistas fueron más lejos. Al estudiar esas ondas, propusieron que, a kilómetros de profundidad, las rocas fracturadas podrían guardar agua líquida, quizá salada, atrapada en sus poros. Salada, porque la sal mantiene líquida el agua a temperaturas muy bajas. La idea no tiene aún consenso. Otros expertos creen que los datos pueden explicarse de otras formas.\n\nAsí que la ciencia todavía no sabe si existe esa agua profunda. Es una pregunta abierta, y quizá lo siga siendo durante mucho tiempo.\n\nPero esto sí lo sabemos. Una parte del agua de Marte no se perdió del todo. Está congelada bajo el suelo, a la espera, y quizá una parte siga líquida, muy abajo, en la oscuridad.\n\nEs un resto de aquel pasado húmedo, guardado en silencio.\n\nY si el agua se quedó, aunque sea escondida, surge otra pregunta más serena. ¿Cómo se sentiría estar parado allí, sobre ese suelo, cuando la luz del día apenas comienza a llegar?"
-    },
-    {
-      "title": "Un amanecer en Marte",
-      "question": "¿Cómo sería quedarse de pie en Marte y mirar el cielo?",
-      "reveal": "Al atardecer el cielo marciano se vuelve azul alrededor del Sol, lo contrario de la Tierra, y bajo ese resplandor tranquilo comprendemos que Marte fue otro mundo en otra época.",
-      "beats": [
-        "Al llegar, el silencio sería casi total y el aire demasiado delgado para transportar mucho sonido",
-        "El horizonte rojizo se extiende bajo un cielo pálido de tonos canela",
-        "Las fotografías de los róveres muestran atardeceres de halo azul alrededor del Sol",
-        "La gravedad más débil haría que cada paso se sintiera más ligero",
-        "Desde allí, la Tierra sería apenas un punto brillante en el cielo",
-        "El viaje termina con la idea de que Marte, un mundo antes más húmedo, sigue guardando preguntas abiertas"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Mars sunset Curiosity",
-        "Mars sunset Spirit rover",
-        "Mars panorama Pathfinder",
-        "Mars sky Earth seen from Mars",
-        "Mars twilight Curiosity",
-        "Mars landscape Opportunity",
-        "Mars dunes Curiosity",
-        "Mars horizon Perseverance",
-        "Mars sky dust Pathfinder",
-        "Mars Gale crater panorama"
-      ],
-      "video_queries": [
-        "Mars surface panorama video",
-        "Mars sunset visualization",
-        "Mars rover timelapse NASA"
-      ],
-      "text": "Al llegar, lo primero que notarías es que no se oye nada. Ni viento fuerte, ni pájaros, ni el rumor lejano de una ciudad. Solo el roce de tu propio traje y tu respiración dentro del casco.\n\nEl aire de Marte existe, pero es demasiado delgado. Lleva el sonido muy mal, como una voz que se apaga en una habitación vacía. Un viento fuerte allí apenas sería un susurro. Los micrófonos de los róveres han registrado ese silencio, interrumpido por ráfagas suaves y por el crujir de sus propias ruedas.\n\nEntonces levantas la vista. ¿Cómo sería quedarse de pie en Marte y mirar el cielo?\n\nLo primero que ves es el suelo. Un horizonte rojizo se extiende en todas direcciones, con piedras oscuras esparcidas sobre arena fina. Es el óxido de hierro, el mismo que viste desde la Tierra como un punto rojo y quieto. Ahora lo tienes bajo los pies.\n\nSobre esa llanura, el cielo no es negro, como quizás esperabas. Tampoco es azul. Es pálido, de un tono canela, como papel viejo iluminado desde atrás. Ese color viene del polvo fino que flota en el aire y que atrapa la luz del Sol.\n\nDurante la mayor parte del día, así se ve Marte. Un cielo color arena sobre un suelo color óxido.\n\nPero los róveres se quedaron a mirar hasta el final de la tarde. Y las fotografías que enviaron, desde Spirit, desde Opportunity, desde Curiosity, muestran algo que parece un error. Cuando el Sol baja hacia el horizonte, a su alrededor aparece un halo azul.\n\nEs un azul frío y sereno, que se abre en torno al disco del Sol. Y más lejos, el cielo sigue siendo canela.\n\nEn la Tierra ocurre lo contrario. Nuestro cielo es azul durante el día, y al atardecer se tiñe de naranja y rojo junto al Sol. En Marte, el polvo dispersa la luz de otro modo. Deja pasar el azul hacia adelante, y lo concentra justo alrededor de la luz.\n\nPor eso un atardecer marciano es como un atardecer terrestre visto en un espejo.\n\nMientras el Sol se hunde, das un paso. Y el cuerpo te sorprende. La gravedad de Marte es poco más de un tercio de la que conoces. Cada paso se sentiría más ligero, casi como si el suelo te devolviera un poco del impulso. Subir una pendiente cansaría menos. Dejar caer una piedra sería verla caer despacio, con una calma que no tiene la Tierra.\n\nCuando el azul se oscurece, aparecen las primeras estrellas. Y entre ellas, una luz que no parpadea. Es blanca, con un tinte azulado, algo más brillante que las otras.\n\nEs la Tierra.\n\nDesde allí, nuestro mundo sería un punto. Un solo punto, tan pequeño que cabría detrás de la uña de tu dedo. Y en ese punto están todos los mares, todas las ciudades. Ahí están todas las personas que alguna vez miraron hacia arriba y vieron a Marte como una luz roja en el cielo.\n\nQuizás por eso este lugar nos habla en voz baja. Hace mucho, hace miles de millones de años, aquí hubo ríos. Hubo un delta en Jezero, hubo lagos en Gale, hubo arcillas nacidas del agua. Hoy queda hielo bajo el polvo, y un silencio que lo cubre todo.\n\n¿Hubo vida en esas aguas? Todavía no lo sabemos. Las muestras esperan, selladas en tubos, a que alguien aprenda a leerlas. Quizás la respuesta llegue en tu vida. Quizás tarde mucho más.\n\nY está bien que así sea. Un mundo que guarda preguntas abiertas no está muerto. Solo está esperando, con paciencia, bajo su cielo canela.\n\nLa última luz azul se apaga sobre el horizonte. El viento, si lo hay, no hace ruido. Las estrellas se vuelven más nítidas, y la pequeña luz de la Tierra sigue allí, firme y cálida.\n\nHas recorrido un largo camino esta noche. Has visto polos blancos, un volcán gigante, una grieta que cruza un mundo, cauces que ya no llevan agua. Todo eso sigue allí, en la oscuridad tranquila, mientras tú descansas.\n\nRespira despacio. Deja que el cielo se oscurezca. Buenas noches."
+      "text": "En un laboratorio de California hay una mesa larga, y sobre ella reposa una pieza de metal del tamaño de una olla. Es una réplica de lo que algún día bajará por el aire de Venus. Alguien la gira con las manos, con cuidado, como quien revisa un reloj antiguo.\n\nEsa pieza tiene un trabajo sencillo y enorme. Debe caer durante casi una hora a través de las nubes y no romperse. Y mientras cae, tiene que oler el aire.\n\nPasaron más de cuarenta años desde la última vez que una sonda descendió a Venus. Es más que una generación entera. Quien vio las primeras fotos en color del suelo, en mil novecientos ochenta y dos, hoy es abuelo o abuela. Durante ese tiempo, Marte recibió robots, vehículos y hasta un pequeño helicóptero. Venus quedó esperando, brillando cada tarde sobre el horizonte sin que nadie le hiciera caso.\n\n¿Qué queda por descubrir en un planeta que ya fue visitado, mapeado y fotografiado? ¿Y quién volverá a mirarlo?\n\nMuchas cosas, en realidad. Y varias misiones, todavía por lanzar, ya tienen nombre.\n\nLa primera se llama Da Vinci. Es esa pieza de metal de la mesa: una sonda que se soltará de su nave madre y descenderá por la atmósfera. Durante su caída medirá los gases de las nubes, uno por uno, y de qué están hechos de verdad. Cerca del final tomará imágenes de las montañas más antiguas del planeta, esas que quizá guardan memoria de un tiempo con agua.\n\nNo aterrizará con la idea de sobrevivir. Si llega entera al suelo, será una buena noticia, pero lo importante ya habrá ocurrido en el aire.\n\nLa segunda se llama VERITAS. Esta no baja: se queda arriba, en órbita, y mira hacia abajo con radar. Las nubes no le estorban, porque las ondas de radar las atraviesan como si no estuvieran. Con ellas dibujará la superficie con una nitidez mucho mayor que la de Magellan. Será como pasar de un mapa dibujado a mano a una fotografía.\n\nCon ese detalle se podrá comprobar algo que hoy solo se sospecha. ¿Hay volcanes que siguen activos? ¿Se mueve el suelo, aunque sea un poco? Una pista así cambiaría lo que sabemos de su interior.\n\nLa tercera es europea y se llama EnVision. También irá en órbita, y también usará radar. Pero su mirada llegará más hondo. Estudiará las capas bajo la superficie, la forma en que el planeta se deforma, y la atmósfera, de arriba abajo. Será como escuchar el pecho de Venus con un estetoscopio muy paciente.\n\nEntre las tres, el planeta será observado por dentro, por fuera y desde el cielo. Nunca antes se había intentado todo junto.\n\nY luego está la pregunta que flota entre las nubes.\n\nHace unos años, un grupo de astrónomos creyó detectar en ellas un gas llamado fosfina. En la Tierra, ese gas lo producen sobre todo microbios, aunque también la industria. Fue una noticia que dio la vuelta al mundo. Después llegaron otros equipos, revisaron los datos, y no se pusieron de acuerdo. Algunos no encontraron nada. Otros encontraron algo mucho más débil.\n\nHoy nadie sabe si hay fosfina, y mucho menos si hay vida. Lo honesto es decirlo así. Pero a unos cincuenta kilómetros de altura, el aire tiene una temperatura suave y una presión parecida a la de la Tierra. Es un lugar donde, al menos en teoría, algo microscópico podría flotar. Casi nadie lo cree probable. Casi nadie se atreve a descartarlo del todo.\n\nPor eso hace falta bajar y medir con instrumentos que no dependan de la distancia.\n\nAsí que la respuesta es esta. Si los planes se cumplen, nuevas naves descenderán por la atmósfera para medir su composición, y otras volverán a cartografiar la superficie con más precisión que nunca.\n\nQuizá esa sea la mayor razón para volver. Venus nos muestra un camino que la Tierra no tomó, y que podría tomar si el aire cambiara demasiado. Y también nos enseña a leer otros mundos. Cuando un telescopio encuentre un planeta lejano, del tamaño del nuestro y cerca de su estrella, tendremos que preguntarnos si se parece a la Tierra o a Venus. Solo conociendo bien a este gemelo podremos responder.\n\nPor ahora, Venus sigue ahí, en el borde del cielo, como cada tarde desde que hubo alguien para mirarlo. Brilla sin prisa. Ha esperado cuatro mil quinientos millones de años, y puede esperar unos pocos más.\n\nTú también puedes esperar. Deja que esa luz blanca se vaya apagando detrás de tus ojos. Los planetas siguen girando, las naves siguen construyéndose, y mañana alguien volverá a mirar.\n\nBuenas noches."
     }
   ],
-  "cold_open": "Marte es un punto rojo que lleva millones de años mirándote desde lo alto de la noche. Y en su superficie hay un volcán más de dos veces más alto que el Everest.\n\nHay también un cañón que se extiende unos cuatro mil kilómetros.\n\nDurante siglos creímos que era un desierto muerto, quieto desde siempre. Pero sus valles guardan las huellas de ríos que corrieron hace miles de millones de años.\n\n¿Qué pasó con esa agua? ¿Adónde se fue un mundo que alguna vez pudo tener orillas?\n\nEsta noche vamos a recorrerlo despacio. Empezaremos en el cielo, bajaremos hasta las llanuras heladas, subiremos al gigante Monte Olimpo y nos asomaremos a la gran cicatriz de Valles Marineris.\n\nTodo lo que verás es real. Todo lo que escucharás es ciencia.\n\nNada de esto tiene prisa.\n\nTú no tienes que hacer nada, solo quedarte y escuchar.\n\nEmpecemos por esa luz roja.",
+  "cold_open": "Hay un mundo casi del mismo tamaño que la Tierra, donde la superficie arde a cuatrocientos sesenta y cinco grados centígrados.\n\nDurante siglos creímos que era nuestra hermana. Un planeta de nubes suaves, quizá con selvas bajo ellas. Pero las sondas soviéticas que lograron posarse allí resistieron apenas el tiempo de enviar unas fotos del suelo, y callaron.\n\nEntonces, ¿qué le pasó a Venus? ¿Pudo haber tenido océanos templados durante miles de millones de años?\n\nY después, nada.\n\nEsta noche descenderás despacio a través de las nubes, caminarás sobre roca al rojo, y seguirás el rastro de un océano que quizá existió, mientras los vientos giran más rápido que el planeta entero.\n\nSin prisa. Con ciencia real y con belleza. No tienes nada que hacer, salvo escuchar.\n\nEmpecemos por esa luz que ves al anochecer.",
   "review": {
     "suggested": 23,
     "applied": 23,
     "fixes": [
       {
-        "section": "cold_open",
-        "find": "un volcán casi tres veces más alto que el Everest",
-        "replace": "un volcán más de dos veces más alto que el Everest",
-        "reason": "wrong ratio"
+        "section": "chapter_1",
+        "find": "¿Por qué el objeto más brillante del cielo se muestra tan tranquilo, y no deja ver nada de lo que esconde?",
+        "replace": "¿Por qué una luz tan brillante se muestra tan tranquila, y no deja ver nada de lo que esconde?",
+        "reason": "consistency with Moon being brighter"
       },
       {
-        "section": "cold_open",
-        "find": "que se extiende a lo largo de una distancia comparable a la de un continente",
-        "replace": "que se extiende unos cuatro mil kilómetros",
-        "reason": "overstated, specific"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Un avión comercial tardaría unas diez horas en rodearlo, y a la Tierra le da la vuelta en unas cuarenta.",
-        "replace": "Un avión comercial tardaría cerca de un día en rodearlo, y a la Tierra le da la vuelta en unas cuarenta horas.",
-        "reason": "wrong figure"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Un sol dura unas veinticuatro horas y cuarenta minutos, apenas cuarenta minutos más que una jornada terrestre.",
-        "replace": "Un sol dura unas veinticuatro horas y treinta y siete minutos, menos de una hora más que una jornada terrestre.",
-        "reason": "precision, repetition"
+        "section": "chapter_1",
+        "find": "Venus es nuestro vecino más cercano, y en algunos momentos pasa a unos cuarenta millones de kilómetros de nosotros.",
+        "replace": "Venus es el planeta que más se acerca a nosotros, y en algunos momentos pasa a unos cuarenta millones de kilómetros.",
+        "reason": "accuracy: Mercury is closer on average"
       },
       {
         "section": "chapter_3",
-        "find": "A cien millones de kilómetros de distancia, todavía se deja ver.",
-        "replace": "A decenas de millones de kilómetros de distancia, todavía se deja ver.",
-        "reason": "distance varies"
+        "find": "una sonda estadounidense llamada Mariner 2 pasó a unos treinta y cuatro mil kilómetros de Venus",
+        "replace": "una sonda estadounidense llamada Mariner Dos pasó a unos treinta y cinco mil kilómetros de Venus",
+        "reason": "TTS digit and rounding"
       },
       {
         "section": "chapter_3",
-        "find": "Es el mismo gas que tú exhalas, pero a una temperatura de unos menos ciento veinte grados Celsius.",
-        "replace": "Es el dióxido de carbono de la atmósfera, a unos ciento veinte grados bajo cero.",
-        "reason": "repetition, TTS"
+        "find": "Venera 7 descendió con su paracaídas.",
+        "replace": "Venera Siete descendió con su paracaídas.",
+        "reason": "TTS digit"
       },
       {
         "section": "chapter_3",
-        "find": "se convierte directamente en gas, sin pasar por el agua.",
-        "replace": "se convierte directamente en gas, sin pasar por el estado líquido.",
-        "reason": "accuracy"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Cada capa es más o menos delgada que un edificio.",
-        "replace": "Cada capa es más delgada que un edificio.",
-        "reason": "nonsense comparison"
-      },
-      {
-        "section": "chapter_3",
-        "find": "mucho más al sur de esas capas blancas. Es una herida abierta, larga como un continente.",
-        "replace": "mucho más cerca del ecuador. Es una herida abierta de miles de kilómetros.",
-        "reason": "geography, overstatement"
+        "find": "Venera 13 y Venera 14 aterrizaron con pocos días de diferencia.",
+        "replace": "Venera Trece y Venera Catorce aterrizaron con pocos días de diferencia.",
+        "reason": "TTS digits"
       },
       {
         "section": "chapter_4",
-        "find": "Eso es más o menos la distancia entre dos ciudades que uno tardaría un día entero en recorrer en carro.",
-        "replace": "Eso es más o menos la distancia entre dos ciudades que uno tardaría medio día en recorrer en carro.",
-        "reason": "wrong travel time"
+        "find": "Un avión de pasajeros tardaría un poco más en dar la vuelta a la Tierra.",
+        "replace": "Es una vuelta entera en menos de una semana.",
+        "reason": "false comparison"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Esa distancia es más o menos la que recorrerías caminando durante diez horas.",
+        "replace": "Esa distancia es más o menos la que recorrerías caminando durante cuatro horas.",
+        "reason": "wrong arithmetic"
+      },
+      {
+        "section": "chapter_4",
+        "find": "La temperatura también es suave, de unos pocos decenas de grados, la de un día templado en cualquier ciudad.",
+        "replace": "La temperatura también es suave, de unas pocas decenas de grados, como la de un día cálido.",
+        "reason": "grammar and accuracy"
       },
       {
         "section": "chapter_5",
-        "find": "verías que la tierra roja corta en seco, y que debajo de tus pies se abre un vacío tan hondo",
-        "replace": "verías que la tierra roja corta en seco. Debajo de tus pies se abre un vacío tan hondo",
-        "reason": "long sentence"
+        "find": "Todo esto con una temperatura de cuatrocientos sesenta y cinco grados Celsius. Más que un horno de cocina puesto al máximo. Tanto, que el plomo se derretiría sobre esas rocas.",
+        "replace": "Y todo esto con un calor que supera el de cualquier horno de cocina.",
+        "reason": "repeated facts"
       },
       {
         "section": "chapter_5",
-        "find": "capaz de atravesar gran parte de un mundo",
-        "replace": "capaz de recorrer una porción tan grande de un mundo",
-        "reason": "overstatement"
-      },
-      {
-        "section": "chapter_5",
-        "find": "los mismos que viste crecer en el capítulo anterior",
-        "replace": "los mismos que acabamos de visitar",
-        "reason": "chapter reference"
-      },
-      {
-        "section": "chapter_5",
-        "find": "más o menos la distancia que separa a Ciudad de México de Buenos Aires… o casi, si dieras la vuelta por tierra.",
-        "replace": "más o menos como cruzar de costa a costa los Estados Unidos.",
-        "reason": "wrong comparison"
-      },
-      {
-        "section": "chapter_5",
-        "find": "como páginas de un libro muy antiguo",
-        "replace": "como los estratos de un corte en la montaña",
-        "reason": "repeated image"
+        "find": "La sonda soviética Venera 13 descendió en marzo de mil novecientos ochenta y dos.",
+        "replace": "La sonda soviética Venera Trece descendió en marzo de mil novecientos ochenta y dos.",
+        "reason": "TTS digit"
       },
       {
         "section": "chapter_6",
-        "find": "En mil novecientos setenta y uno, una sonda llamada Mariner Nueve llegó a Marte y no vio nada. Una tormenta de polvo cubría el planeta entero, y durante semanas la cámara solo registró un velo anaranjado y liso.",
-        "replace": "Volvamos un momento a la Mariner Nueve, esperando entre el polvo de aquella tormenta.",
-        "reason": "repeats chapter 4"
+        "find": "Hoy sabemos de Venus lo que sabemos de las montañas de la Tierra, o mejor.",
+        "replace": "Casi toda la superficie de Venus quedó cartografiada con buen detalle.",
+        "reason": "overstated claim"
+      },
+      {
+        "section": "chapter_6",
+        "find": "Si nadie lo repusiera, desaparecería en unos cuantos millones de años.",
+        "replace": "Si nadie lo repusiera, desaparecería en muy poco tiempo.",
+        "reason": "factual error"
       },
       {
         "section": "chapter_7",
-        "find": "cada uno pesaba lo que un par de pandas pequeños",
-        "replace": "cada uno pesaba unos ciento ochenta kilos",
-        "reason": "bad comparison"
+        "find": "En su atmósfera hay cerca de ciento cincuenta veces más deuterio, en proporción, que en nuestros océanos.",
+        "replace": "En su atmósfera hay más de cien veces más deuterio, en proporción, que en nuestros océanos.",
+        "reason": "number accuracy"
       },
       {
         "section": "chapter_7",
-        "find": "como quien lee un libro por el final de cada página",
-        "replace": "como quien lee un libro de las páginas más antiguas a las más nuevas",
-        "reason": "unclear image"
-      },
-      {
-        "section": "chapter_7",
-        "find": "mostró también carbono, hidrógeno, oxígeno, nitrógeno, fósforo y azufre. Son los ingredientes que la vida terrestre necesita.",
-        "replace": "mostró también carbono, nitrógeno y azufre, entre otros elementos. Son ingredientes que la vida terrestre necesita.",
-        "reason": "list stack"
-      },
-      {
-        "section": "chapter_8",
-        "find": "Así que la ciencia todavía no sabe si ese océano oculto existe.",
-        "replace": "Así que la ciencia todavía no sabe si existe esa agua profunda.",
-        "reason": "overstated ocean"
-      },
-      {
-        "section": "chapter_8",
-        "find": "Gran parte del agua de Marte no se perdió del todo. Está congelada bajo el suelo",
-        "replace": "Una parte del agua de Marte no se perdió del todo. Está congelada bajo el suelo",
+        "find": "Y la cifra siempre fue la misma.",
+        "replace": "Y las cifras siempre fueron del mismo orden.",
         "reason": "overstated certainty"
       },
       {
-        "section": "chapter_9",
-        "find": "Las micrófonos de los róveres han registrado",
-        "replace": "Los micrófonos de los róveres han registrado",
-        "reason": "grammar"
+        "section": "chapter_7",
+        "find": "Los modelos más favorables calculan que Venus pudo tener agua líquida durante miles de millones de años.",
+        "replace": "Los modelos más favorables calculan que Venus pudo tener agua líquida durante dos o tres mil millones de años.",
+        "reason": "overstated duration"
+      },
+      {
+        "section": "chapter_8",
+        "find": "La japonesa Akatsuki, que llegó en dos mil quince, las sigue observando todavía.",
+        "replace": "La japonesa Akatsuki, que llegó en dos mil quince, las observó hasta hace poco.",
+        "reason": "outdated mission status"
+      },
+      {
+        "section": "chapter_8",
+        "find": "Sopla a más de cien metros por segundo, lo bastante para derribar a una persona en la Tierra si el aire fuera tan ligero como el nuestro.",
+        "replace": "Sopla a más de cien metros por segundo, más fuerte que cualquier huracán de la Tierra.",
+        "reason": "confusing claim"
+      },
+      {
+        "section": "chapter_8",
+        "find": "Venus está a unos cuarenta millones de kilómetros en sus mejores días, y aun así guarda un enigma de física que no hemos terminado de resolver con nuestros instrumentos mejores.",
+        "replace": "Venus es el planeta que más se acerca a nosotros, y aun así guarda un enigma de física que no hemos resuelto.",
+        "reason": "repetition, shorter"
       },
       {
         "section": "chapter_9",
-        "find": "todas las ciudades, todas las personas que alguna vez miraron hacia arriba y vieron a Marte como una luz roja en el cielo.",
-        "replace": "todas las ciudades. Ahí están todas las personas que alguna vez miraron hacia arriba y vieron a Marte como una luz roja en el cielo.",
-        "reason": "long sentence"
+        "find": "Pasaron más de treinta años desde la última vez que una nave se acercó con seriedad a Venus. Treinta años es una generación entera.",
+        "replace": "Pasaron más de cuarenta años desde la última vez que una sonda descendió a Venus. Es más que una generación entera.",
+        "reason": "factual error"
+      },
+      {
+        "section": "chapter_9",
+        "find": "Y varias naves ya tienen nombre.",
+        "replace": "Y varias misiones, todavía por lanzar, ya tienen nombre.",
+        "reason": "certainty"
+      },
+      {
+        "section": "chapter_9",
+        "find": "La primera se llama DAVINCI.",
+        "replace": "La primera se llama Da Vinci.",
+        "reason": "TTS acronym"
+      },
+      {
+        "section": "chapter_9",
+        "find": "En la Tierra, ese gas lo producen sobre todo seres vivos muy pequeños.",
+        "replace": "En la Tierra, ese gas lo producen sobre todo microbios, aunque también la industria.",
+        "reason": "accuracy"
+      },
+      {
+        "section": "chapter_9",
+        "find": "Nuevas naves descenderán por la atmósfera para medir su composición, y otras volverán a cartografiar la superficie con una precisión que nunca tuvimos.",
+        "replace": "Si los planes se cumplen, nuevas naves descenderán por la atmósfera para medir su composición, y otras volverán a cartografiar la superficie con más precisión que nunca.",
+        "reason": "certainty"
       }
     ]
   },
-  "topic": "Marte: el planeta rojo, sus volcanes, cañones y la búsqueda de agua antigua",
+  "topic": "Venus: el infierno brillante bajo nubes de ácido sulfúrico",
   "shorts": [
     {
-      "title": "El volcán tan ancho que no verías su pendiente",
-      "hook": "Una montaña que no puedes ver",
-      "narration": "Hay una montaña en Marte tan enorme que, parado sobre ella, no te darías cuenta de que estás subiendo. Se llama Monte Olimpo y mide unos veintidós kilómetros de altura, dos veces y media el Everest. Pero lo asombroso es su ancho: su base se extiende unos seiscientos kilómetros, lo bastante para cubrir un país mediano. Su pendiente es de apenas cinco grados, como una rampa suave. Caminarías horas con la sensación de cruzar una llanura, y el horizonte se curva tan cerca que nunca verías la montaña entera. Estarías dentro de ella sin saberlo. Creció así porque Marte no tiene placas móviles, y la lava brotó siempre en el mismo lugar durante cientos de millones de años. El viaje completo por el planeta rojo te espera en el canal.",
+      "title": "En Venus, el plomo sería un charco brillante",
+      "hook": "Un planeta donde el plomo se derrite",
+      "narration": "Hay un planeta donde el plomo sería un charco brillante en el suelo. Es Venus, ese punto blanco y sereno que ves al atardecer. Parece tranquilo, pero bajo sus nubes la temperatura ronda los cuatrocientos sesenta y cinco grados Celsius. El plomo se derrite a unos trescientos veintisiete. Un horno doméstico, el más potente, apenas pasa de doscientos cincuenta. Y hay más: ese calor es casi igual de día que de noche, en el ecuador que cerca de un polo, porque la densa atmósfera lo reparte como una manta que nunca se levanta. En diciembre de mil novecientos setenta, la sonda soviética Venera Siete tocó ese suelo y habló durante unos veintitrés minutos. Fue el primer mensaje enviado desde la superficie de otro planeta. La luz más serena del cielo escondía un horno. La historia completa de Venus te espera en el canal.",
       "image_queries": [
-        "Olympus Mons Mars volcano",
-        "Olympus Mons caldera orbit",
-        "Mars Tharsis volcanoes",
-        "Mariner 9 Olympus Mons dust storm"
+        "Venus surface Venera lander",
+        "Venus clouds Mariner 10 ultraviolet",
+        "Venus global view Magellan radar",
+        "Venus evening sky planet"
       ],
       "video_queries": [
-        "Olympus Mons Mars flyover",
-        "Mars volcano Olympus Mons animation"
+        "Venus planet rotating clouds",
+        "Venus surface descent animation"
       ]
     },
     {
-      "title": "El cielo de Marte tiene un atardecer azul",
-      "hook": "En Marte el atardecer es azul",
-      "narration": "En Marte, el atardecer se ve azul. Durante el día, el cielo marciano es de un tono canela, como papel viejo iluminado desde atrás. Pero cuando el Sol baja hacia el horizonte, a su alrededor aparece un halo azul, frío y sereno. Los róveres Spirit, Opportunity y Curiosity lo fotografiaron. Es justo lo contrario de la Tierra, donde el cielo es azul de día y se tiñe de naranja al atardecer. Allí el polvo fino dispersa la luz de otro modo y concentra el azul alrededor del Sol. Es como un atardecer terrestre visto en un espejo. Y cuando cae la noche, entre las estrellas brilla un punto: la Tierra. El viaje completo a Marte te espera en el canal.",
+      "title": "Venus pudo tener océanos durante miles de millones de años",
+      "hook": "Venus quizá tuvo mares",
+      "narration": "Un átomo raro nos dice que Venus pudo tener océanos. Se llama deuterio, un hidrógeno un poco más pesado. En la Tierra hay unos ciento cincuenta átomos de deuterio por cada millón de hidrógeno ordinario. En la atmósfera de Venus hay más de cien veces más, en proporción. La explicación más aceptada es que el agua se evaporó, el vapor subió, y la luz ultravioleta del Sol rompió sus moléculas. El hidrógeno ligero escapó al espacio, y el pesado se quedó atrás, como el sedimento en el fondo de una taza. Algunos modelos calculan que Venus pudo tener agua líquida durante dos o tres mil millones de años. No todos los científicos coinciden, y hay que decirlo con honestidad. Pero el rastro sigue ahí, en el aire. El viaje completo por el infierno brillante de Venus te espera en el canal.",
       "image_queries": [
-        "Mars sunset blue Spirit rover",
-        "Curiosity rover sunset Mars Gale crater",
-        "Mars sky butterscotch color panorama",
-        "Opportunity rover Mars twilight"
+        "Venus atmosphere Venus Express",
+        "Venus artist concept ancient ocean",
+        "Venus Magellan volcano surface",
+        "Venus ultraviolet clouds Akatsuki"
       ],
       "video_queries": [
-        "Mars sunset rover footage",
-        "Mars surface panorama rover"
+        "Venus atmosphere animation NASA",
+        "Venus planet greenhouse effect"
       ]
     }
   ]
