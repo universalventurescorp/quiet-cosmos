@@ -1,496 +1,469 @@
 {
-  "title": "Voyager 1 and 2: Journey Into Interstellar Space | Relaxing Space Documentary",
-  "description": "Voyager 1 and 2: the long journey into interstellar space is a calm, slow documentary following two small spacecraft launched in 1977 that are still sending messages home from beyond the Sun's bubble. Drift with them past Jupiter, Saturn, Uranus and Neptune, and out into the dark between the stars.\n\nThis is a gentle, sleep-friendly voyage told with real images and real science from NASA missions: the Grand Tour, the Golden Records, the crossing of the heliopause, and the long quiet that lies ahead. Settle in, dim the lights, and let the Voyagers carry you outward.",
+  "title": "Europa and Enceladus: Hidden Oceans Where Life Might Exist | Calm Space Documentary",
+  "description": "Europa and Enceladus: the hidden oceans where life might exist, explored in a slow, calm journey for relaxing and falling asleep. Beneath the frozen crusts of two small moons, one circling Jupiter and one circling Saturn, lie vast salty oceans of liquid water, kept warm by the pull of their giant parents. This is the story of how we found them, what they might contain, and how we plan to look.\n\nDrift through cracked ice plains, towering geysers and the dark water below, guided by real images and footage from Voyager, Galileo, Cassini, Hubble and Juno. Along the way we meet the strange life of Earth's own deep oceans, and ask one of the oldest questions we have: are we alone? Settle in, dim the lights, and let the ice moons carry you toward sleep.",
   "tags": [
-    "Voyager 1 and 2",
-    "Voyager interstellar space",
-    "Voyager 1 documentary",
+    "Europa and Enceladus",
+    "hidden oceans",
+    "life on Europa",
+    "life on Enceladus",
+    "Enceladus geysers",
+    "Europa ocean",
+    "ice moons",
     "relaxing space documentary",
     "space documentary for sleep",
-    "Voyager Golden Record",
-    "Voyager Grand Tour",
-    "heliopause",
-    "leaving the solar system",
-    "Pale Blue Dot",
-    "Voyager 2 Neptune flyby",
-    "Voyager 1 Jupiter Saturn",
-    "interstellar space journey",
-    "calm space video to fall asleep",
-    "NASA Voyager mission",
-    "farthest spacecraft from Earth",
-    "space documentary 4K"
+    "calm space documentary",
+    "Jupiter moons",
+    "Saturn moons",
+    "Cassini Enceladus",
+    "Europa Clipper",
+    "subsurface ocean",
+    "is there life in space",
+    "hydrothermal vents",
+    "fall asleep to space"
   ],
   "thumbnail_texts": [
-    "STILL SENDING",
-    "BEYOND THE SUN",
-    "THE LONG SIGNAL"
+    "OCEANS UNDER ICE",
+    "THE MOONS THAT BREATHE",
+    "WATER IN THE DARK"
   ],
-  "hook_promise": "Two spacecraft with less computing power than a modern key fob, launched in 1977, are still whispering back to us from the dark between the stars, carrying a record of Earth meant to outlast humanity.",
+  "hook_promise": "Beneath the cracked ice of two small moons, far colder than any place on Earth, lie global oceans of salty liquid water, and Cassini flew straight through the geysers of one of them and tasted the ocean itself.",
   "chapters": [
     {
-      "title": "Two Small Machines in the Dark",
-      "question": "How can something built in the 1970s still be talking to us from beyond the Sun's influence?",
-      "reveal": "Voyager 1's signal, travelling at the speed of light, takes about a day to reach Earth, and it is still being heard by giant dishes listening for a whisper weaker than a watch battery's output.",
+      "title": "The Frozen Worlds That Are Not Frozen",
+      "question": "Why would anyone look for an ocean on a moon this cold and this far from the Sun?",
+      "reveal": "Two icy moons that look like solid white spheres each hold more liquid water than all the oceans of Earth combined, or in Enceladus's case a smaller but still global sea.",
       "beats": [
-        "Voyager 1 is now the most distant human-made object, over twenty billion kilometres away, with Voyager 2 following on a different path",
-        "A quiet look at the two spacecraft: dish antenna, boom with instruments, golden disc on the side",
-        "How the Deep Space Network listens, with giant dishes on three continents",
-        "Light-travel time as a way to feel distance: the signal that leaves now arrives about a day later",
-        "The promise of the journey: from the planets we know to the space no craft had ever entered",
-        "A planted curiosity: why was a rare alignment of planets the reason these two were built at all"
+        "Begin far out in the outer solar system, where sunlight is faint and the surface of an icy moon is colder than a deep freezer",
+        "Recall what astronomers once assumed: that small, cold, distant bodies must be frozen solid and geologically dead",
+        "Introduce the idea of the habitable zone, and why liquid water, not distance from the Sun alone, is the real requirement",
+        "Plant the first curiosity: something other than sunlight must be warming these worlds from within",
+        "Set up the journey: Europa around Jupiter first, then Enceladus around Saturn, then the question of life"
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Voyager spacecraft artist concept",
-        "Voyager 1 interstellar space illustration",
-        "Voyager 2 spacecraft",
-        "Deep Space Network antenna Goldstone",
-        "Deep Space Network Canberra dish",
-        "Voyager 1 heliosphere illustration",
-        "Voyager trajectory solar system",
-        "Milky Way stars Hubble",
-        "Voyager plasma wave instrument",
-        "Earth from space Voyager"
+        "Europa Galileo",
+        "Enceladus Cassini",
+        "Jupiter Europa moon",
+        "Saturn Enceladus",
+        "outer solar system",
+        "Jupiter Juno",
+        "Saturn Cassini",
+        "Europa surface",
+        "Enceladus south pole",
+        "Galilean moons Jupiter"
       ],
       "video_queries": [
-        "Voyager spacecraft animation",
-        "Deep Space Network visualization",
-        "solar system flythrough NASA visualization"
+        "Jupiter moons visualization",
+        "Saturn system flyover Cassini",
+        "solar system moons animation"
       ],
-      "text": "In a quiet room in California, a screen shows a thin line of static, and somewhere inside that static is a voice. It is a very faint voice. It comes from a machine that left Earth before most of its operators were born.\n\nVoyager 1 is now the most distant human-made object. It is more than twenty billion kilometres from the Sun. If you could drive there at highway speed, the trip would take longer than the whole history of human writing.\n\nIts twin, Voyager 2, follows on a different path. It is also far beyond the planets, but it travels in another direction, bending away to the south of the plane where the planets orbit. The two craft are not side by side. They are like two travellers who left the same town and took different roads.\n\nSo here is the question. How can something built in the nineteen seventies still be talking to us, from beyond the Sun's own bubble?\n\nPicture one of them, as it would look in a bright room on Earth. The most obvious part is a large dish, about three and a half metres across, shaped like a shallow bowl. It always points back toward home. Beside it, a long boom reaches out, carrying instruments that sample the particles and fields around the craft. Another boom holds the cameras, which no longer have anything much to photograph.\n\nAnd on the side, bolted to the body, is a gold-coloured disc in a metal case. It is a record, meant to be played by someone who does not yet exist. We will come back to it.\n\nThe whole machine is small. It weighs less than a family car. It carries no engine to speak of, only tiny thrusters for turning. And it is running on computers with far less memory than a modern phone.\n\nNow think about what it takes to hear it.\n\nThe craft transmits with about as much power as a refrigerator light bulb. By the time that signal crosses the gap to Earth, it has spread so thin that almost nothing remains. What arrives is a whisper, weaker than a billionth of a billionth of a watt. A watch battery gives off far more power than that, every second.\n\nTo catch it, we use the Deep Space Network. It is a set of enormous dishes placed on three continents. One group sits in California, one near Madrid in Spain, and one near Canberra in Australia. They are spaced about a third of the way around the world from one another. As Earth turns, one of them is always facing the right patch of sky.\n\nThe largest dish is seventy metres wide. Its job is to collect a radio whisper over a huge area. It funnels the whisper into receivers chilled to extreme cold, so they add almost no noise of their own. Then computers pick the pattern out of the hiss.\n\nIt is a little like hearing a single person whispering in a stadium, from the far side of the city.\n\nAnd the signal is not fast to arrive.\n\nRadio waves travel at the speed of light. That is quick enough to circle the Earth seven times in a single second. Yet a message from Voyager 1 takes about a day to reach us.\n\nA day.\n\nWhen engineers send a command today, they must wait about two days to learn whether it worked. \n\nThis is how far these craft have gone. They began their lives at the planets we knew by name, the bright wanderers our ancestors watched for thousands of years. Then they went past them. Now they are in a place that no spacecraft had ever entered, the thin gas between the stars.\n\nNobody knew, before they flew, what that place would be like. They were sent to find out.\n\nBut there is another question, older than the journey itself. Machines like these were not built on a whim, or because someone had a spare rocket. They exist because of a timing. Something about the arrangement of the planets, in one particular decade, made this mission possible. And it will not happen again for a very long time.\n\nWhat was it about the planets that made these two small machines possible at all?\n\n Here is the clean version of that paragraph.\n\nWhen engineers send a command today, they must wait about two days to learn whether it worked. One day for the words to go out. One day for the reply to come back. It is like holding a conversation where each sentence takes a full day to cross the room."
+      "text": "At the distance of Jupiter, the Sun is a small, weak light. On the surface of an icy moon in that light, the ground is colder than the inside of a deep freezer. The temperature sits near minus one hundred and sixty degrees Celsius, and the ice is as hard as granite.\n\nNothing moves on a surface like that. No wind, no sound, no change from one century to the next. It looks like the end of the story for any world.\n\nAnd so, for a long time, astronomers did not expect much from places like this. The reasoning seemed sound. A small body cools quickly, because it has little interior to hold its heat. A body far from the Sun gets almost nothing to replace what it loses. Put those two facts together, and you get a frozen ball of rock and ice, solid to the core, with nothing left to happen.\n\nThe word they used was dead. Geologically dead, a world that had settled into its final shape billions of years ago and would stay that way until the Sun itself grew old.\n\nThis idea fit neatly with another one. For decades, the search for life began with a simple question about distance. How far is a planet from its star? Too close, and water boils away. Too far, and it freezes. Between the two lies a narrow band, the habitable zone, where oceans can sit calmly on a surface.\n\nOn our own solar system, that band is a thin ring. It takes in Earth, and it brushes the edge of Mars. Everything beyond was written off as ice.\n\nBut the zone was always a shortcut. What life needs is not a certain address. It needs liquid water, and a way to keep it liquid. Sunlight is one way to do that, and it happens to be the way we know best. It does not have to be the only one.\n\nSo here is the question that sits behind this entire story. Why would anyone look for an ocean on a moon this cold, and this far from the Sun?\n\nThe first hint came from a simple piece of arithmetic that would not work. If a world is warmed only by sunlight, its temperature is easy to predict. At the distance of Jupiter, that number is far below freezing. At the distance of Saturn, it is lower still. Yet when spacecraft began to look closely, some of these small moons did not behave like frozen stones.\n\nThey looked young. They looked cracked and rearranged. One of them was breathing out fine white ice into space.\n\nIf sunlight could not explain it, something else must be at work. Something inside. Some source of warmth, hidden beneath the surface, patient and steady, that had nothing to do with the Sun at all.\n\nThat is where this story begins. We will start with Europa, a moon of Jupiter, a little smaller than our own Moon. It is a pale, smooth sphere, crossed with faint lines, and from a distance it looks like a cue ball left in the dark.\n\nThen we will travel on to Saturn, and to Enceladus. It is tiny, only about five hundred kilometers across. And yet it is one of the brightest objects in the solar system.\n\nBoth moons look like solid white spheres. Both are wrapped in a hard shell of ice. And beneath that shell, the evidence now says, lies liquid water.\n\nEuropa may hold more of it than all the oceans of Earth combined.\n\nEnceladus holds less, but its sea is still global, a dark layer of salt water running all the way around the moon.\n\nStay with that for a moment. Two worlds we once called dead may each be wrapped around an ocean. The shell above is silent and white. The water below has probably never seen the Sun.\n\nThat raises a second question, a quieter and larger one. If there is liquid water in these places, and a source of warmth, what else might be there? To begin answering it, we have to go back to the year nineteen seventy-nine, when two small spacecraft first looked closely at Europa."
     },
     {
-      "title": "The Alignment That Comes Once in 176 Years",
-      "question": "Why were Voyager's planets lined up like stepping stones, and why did the launch window matter so much?",
-      "reveal": "A rare arrangement of Jupiter, Saturn, Uranus and Neptune let each planet's gravity fling a spacecraft onward to the next, cutting the trip to Neptune from about thirty years to twelve.",
+      "title": "Voyager Sees a Cracked Europa",
+      "question": "What could crack and scar a moon's surface into a web of long dark lines?",
+      "reveal": "Europa's surface is one of the youngest in the solar system, only tens of millions of years old, and has very few impact craters, which means something keeps resurfacing it.",
       "beats": [
-        "The 1960s realisation that the outer planets would be favourably placed in the late 1970s, an alignment recurring roughly every 176 years",
-        "The idea of a gravity assist: borrowing a sliver of a planet's orbital motion to speed up",
-        "The Grand Tour concept and how it was trimmed to a more affordable mission",
-        "Launch in the late summer of 1977, with Voyager 2 leaving first and Voyager 1 on a faster path",
-        "Why Voyager 1 would overtake Voyager 2 despite launching later",
-        "A moment to feel the hand-off: a tiny craft sliding along curved space from world to world"
-      ],
-      "ambience": "none",
-      "image_queries": [
-        "Voyager trajectory Jupiter Saturn",
-        "solar system planets orbits illustration",
-        "Voyager gravity assist illustration",
-        "Jupiter Voyager 1",
-        "Saturn Voyager 1",
-        "Uranus Voyager 2",
-        "Neptune Voyager 2",
-        "Voyager 2 spacecraft artist concept",
-        "outer planets alignment illustration",
-        "Titan Voyager"
-      ],
-      "video_queries": [
-        "gravity assist animation NASA",
-        "Voyager grand tour visualization",
-        "solar system orbits animation"
-      ],
-      "text": "The planners at the Jet Propulsion Laboratory were bent over a table of numbers, and one of them noticed something odd. The four giant planets, Jupiter, Saturn, Uranus and Neptune, were drifting into a kind of curve. Seen from above, they would soon sit like stepping stones across a pond.\n\nWhy would that matter? And why would a spacecraft have to leave on one particular summer, or wait a very long time for another chance?\n\nThe year was nineteen sixty-four. A young graduate student named Gary Flandro was studying the orbits of the outer planets. He found that in the late nineteen seventies they would be spread around the Sun in just the right way. A spacecraft could pass from one to the next, almost without pausing.\n\nThen he worked out how often this happens. The answer was roughly once every one hundred and seventy-six years. That is longer than most nations have existed. The last time the planets had stood this way, Thomas Jefferson was president, and the wide American West was still unmapped.\n\nSo there was a window. It would open in the late nineteen seventies, and then it would close for nearly two centuries.\n\nBut a good arrangement is only half the story. The other half is a trick of motion, called a gravity assist.\n\nThink of a planet as a vast, slow carousel, circling the Sun. A spacecraft that swings close to it falls into its gravity and is bent onto a new path. In that moment, the craft borrows a sliver of the planet's own motion. It leaves faster than it arrived. The planet slows by an amount so small that no instrument could ever notice it.\n\nThe craft pays nothing for this. It needs no extra fuel. It only needs to arrive at the right place, at the right time, from the right direction.\n\nNow the alignment made sense. Each planet could throw the spacecraft toward the next one. Jupiter would send it to Saturn. Saturn would send it onward again. A rocket alone could never carry enough fuel to do this.\n\nThe first plan was grand. NASA called it the Grand Tour. It would send several spacecraft to visit all four giants, and perhaps even Pluto. But the price was enormous, and the budgets of the early seventies were shrinking. The plan was cut back.\n\nWhat survived was smaller, and more careful. Two spacecraft would be built to fly past Jupiter and Saturn. Yet engineers quietly designed them to last much longer than that. If all went well, one of them might still be able to reach Uranus and Neptune.\n\nOn the twentieth of August, nineteen seventy-seven, Voyager 2 rose from Cape Canaveral on a Titan rocket. Sixteen days later, on the fifth of September, Voyager 1 followed it.\n\nIt seems strange that the second spacecraft to leave was named first. The numbers do not mark the order of launch. They mark the order of arrival.\n\nVoyager 1 was set on a faster, shorter path. It would cross the orbit of Mars, pass through the asteroid belt, and reach Jupiter in the spring of nineteen seventy-nine. Voyager 2 took a gentler curve, and arrived months later.\n\nSomewhere out among the asteroids, the later craft slipped ahead of the earlier one. Two machines had left the same planet within a few weeks of each other. Now one was clearly in front.\n\nThen the planets began to do their work.\n\nPicture one of the spacecraft far from home. Its antenna points back toward a blue point it can barely see. Ahead there is only darkness, and a faint bright disc that grows a little each day.\n\nIt does not push through the dark. It falls. Jupiter's gravity reaches out across millions of kilometres, and the craft slides along the curve that gravity makes in space. It swings around the planet, picks up speed, and is released toward the next world.\n\nNothing is fired. Nothing is spent. A small machine is simply handed from one planet to another.\n\nWhen the plan was finally complete, the arithmetic was clear. A direct flight to Neptune would have taken about thirty years. With the planets in their rare places, Voyager 2 would need only twelve.\n\nThat saving was not just convenience. It meant that people who watched the launch could still be alive to see the arrival. But first came the nearest giant, and it was already growing in the cameras, striped and enormous, with something strange waiting on the edge of its moon."
-    },
-    {
-      "title": "Jupiter: A Storm Larger Than Earth",
-      "question": "What did the first close look at Jupiter reveal that no telescope could?",
-      "reveal": "Voyager 1 discovered an active volcano on Io, the first time eruptions had ever been seen on another world.",
-      "beats": [
-        "Approach to Jupiter and the first detailed views of the banded clouds",
-        "The Great Red Spot seen up close as a swirling storm wider than Earth",
-        "Faint rings discovered around Jupiter",
-        "Europa's cracked, young-looking ice surface and the first hints of a hidden ocean question, which remains open",
-        "The moment a navigation engineer spotted a plume on the edge of Io's disc",
-        "What Io's volcanoes told us about tidal heating from Jupiter's gravity"
-      ],
-      "ambience": "storm",
-      "image_queries": [
-        "Jupiter Voyager 1",
-        "Great Red Spot Voyager",
-        "Io volcano Voyager plume",
-        "Io Galileo volcano",
-        "Europa ice surface Galileo",
-        "Jupiter Juno cloud swirls",
-        "Jupiter rings Voyager",
-        "Ganymede Voyager",
-        "Callisto craters Voyager",
-        "Jupiter Great Red Spot Juno"
-      ],
-      "video_queries": [
-        "Jupiter flyover animation Juno",
-        "Great Red Spot rotation time-lapse",
-        "Io volcano animation"
-      ],
-      "text": "Nine days before it came close, Jupiter was already larger in the camera than the full Moon appears in our sky. Its clouds ran in long pale and rust-coloured bands, and they were moving.\n\nIn the control rooms on Earth, people watched these pictures arrive one slow line at a time. No telescope had ever shown Jupiter like this. From Earth, the planet is a small striped disc, and its finest details blur in our own turbulent air. Now the details were sharpening each day. So what would a close look reveal that no telescope could?\n\nThe bands came first. They were not painted stripes but rivers of cloud, running in opposite directions at different latitudes. Where one stream slid past another, the edges curled into small eddies and braids. Some of those eddies were wider than a country. The whole surface looked less like a ball and more like a slow, enormous current.\n\nThen the Great Red Spot rolled into view. Astronomers had watched it for centuries as a dull red smudge. Up close, it was a storm, turning counterclockwise, with clouds curling around its rim. It was wider than Earth. You could have set our whole planet inside it, with room to spare. Around it, smaller white storms were drawn along and stretched into thin ribbons.\n\nVoyager kept falling inward. And when the cameras looked at the dark space beside the planet, they found something faint.\n\nIt was a ring.\n\nJupiter has a ring, thin and dim, made of fine dust. It is nothing like the bright rings of Saturn that we will meet soon. This one is so faint that sunlight passes through it almost unnoticed. It took a spacecraft looking back from the right angle to see it at all.\n\nThen came the moons. Europa looked like a polished egg that had been cracked and mended many times. Its surface was pale ice, laced with long dark lines, and it had almost no craters. That told scientists the surface was young, perhaps only tens of millions of years old. Something was renewing it. One idea was that liquid water lay beneath the ice, warmed from below. Whether that is true is still an open question, and later missions are still working on it.\n\nBut the strangest moon was waiting. Io had been a small orange-yellow disc, blotched with red and black, and strangely free of craters. A few days after the closest approach, an engineer named Linda Morabito was checking the pictures to see how well the craft was aiming. She was not looking for science at all. She was looking for stars, so the navigation could be trusted.\n\nShe stretched the brightness of one image of Io. At the edge of its disc, beyond the dark limb, a pale fan of light rose into the blackness. It did not belong to any mountain. It looked like a cloud of something rising from the moon.\n\nShe checked it again. It was still there.\n\nHer first thought was that it must be another moon, hidden behind Io. The sums did not fit. No moon of that size could sit in that spot. The plume was real, and it rose more than two hundred kilometres above the surface. That is roughly the distance from one city to the next, straight up.\n\nVoyager 1 had found an active volcano on Io. It was the first time eruptions had ever been seen on another world.\n\nSoon more were counted. Several were erupting at once, throwing sulphur and gas high above the ground. This explained why Io had no craters. New lava and fresh deposits were burying them faster than they could form.\n\nBut why would a small, cold moon be so hot inside? The answer is Jupiter's gravity. Io does not circle in a perfect circle, and its neighbours tug on it in rhythm. So Jupiter squeezes and relaxes the moon, again and again, every few days. The rock flexes, and the flexing makes heat, the way a paperclip grows warm when you bend it back and forth.\n\nHere was an engine that needed no sunlight. Gravity alone could keep a world alive. And if it worked for Io, it might work for Europa too. Which was exactly the question the mission would carry onward, toward the next giant, and a planet wearing something stranger than clouds."
-    },
-    {
-      "title": "Saturn and the Mystery of the Rings",
-      "question": "Why do Saturn's rings look woven, braided, and strangely complex up close?",
-      "reveal": "Voyager showed that the rings are made of thousands of narrow ringlets shaped by tiny moons, and even revealed odd dark spokes that appear and fade across them.",
-      "beats": [
-        "Arriving at the ringed planet and seeing the rings resolve into thousands of ringlets",
-        "Shepherd moons that hold ring edges sharp with gentle gravity",
-        "The strange radial spokes, still only partly understood",
-        "A path past Titan, its thick orange haze hiding its surface",
-        "Why Voyager 1 chose Titan and left the plane of the planets for good",
-        "What the rings are made of: mostly water ice, from dust grains to house-sized chunks"
+        "Voyager 1 and 2 pass through the Jupiter system in 1979 and return the first close images of Europa",
+        "The surface looks like a cracked eggshell, smooth and white, crossed by long reddish-brown lines",
+        "Almost no large craters, which implies a young, renewed surface",
+        "Compare it to our own Moon, whose ancient surface is saturated with craters",
+        "Scientists begin to suspect that ice may be moving, breaking or melting beneath",
+        "Leave open what the reddish material in the cracks actually is"
       ],
       "ambience": "ice",
       "image_queries": [
-        "Saturn rings Voyager",
-        "Saturn rings Cassini",
-        "Saturn rings backlit Cassini",
-        "Saturn spokes rings",
-        "Shepherd moons Prometheus Pandora",
-        "Titan haze Cassini",
-        "Titan Voyager",
-        "Saturn hexagon Cassini",
-        "Enceladus Cassini",
-        "Saturn Hubble"
+        "Europa Voyager",
+        "Europa lineae",
+        "Europa ice cracks",
+        "Europa Galileo mosaic",
+        "Europa color enhanced",
+        "Europa surface close up",
+        "Europa chaos terrain",
+        "Europa ridges",
+        "Jupiter Voyager",
+        "Europa global view"
       ],
       "video_queries": [
-        "Saturn flyover animation Cassini",
-        "Saturn rings visualization",
-        "Titan flyby animation"
+        "Europa flyover animation",
+        "Europa rotation Galileo",
+        "Jupiter Voyager flyby"
       ],
-      "text": "Through the camera's narrow eye, Saturn looked wrong, and the engineers knew it at once.\n\nFrom far away, the rings had seemed like a few smooth bands, flat as a record. But as Voyager 1 closed in, in November of nineteen eighty, the bands began to break apart. Each one split into thinner lines, and each of those split again. Some looked braided. Some looked oddly knotted, as if someone had woven them by hand. Why would a ring of loose ice look so intricate?\n\nThen the picture sharpened further, and the count kept climbing. There were not a handful of rings. There were thousands of narrow ringlets, packed side by side like the grooves on that same record. Each ringlet was a separate lane of orbiting material, and some lanes were only a few kilometres wide.\n\nSomething had to be keeping those lanes apart. Ice orbiting a planet should spread out over time, like milk drifting through tea. Yet the edges here were sharp enough to cut.\n\nThe clue came from the edge of a thin outer ring, called the F ring. There, Voyager's cameras found two small moons, running just inside and just outside a thin, kinked ribbon of ice. They were each only about a hundred kilometres across. Scientists named them Prometheus and Pandora, and called them shepherd moons.\n\nThe idea is simple, and rather gentle. A moon orbiting just inside a ring pulls on stray particles and nudges them back. A moon just outside does the opposite. Neither one touches the ring. Their gravity alone holds the edge in place, the way two patient sheepdogs keep a flock on a path.\n\nShepherds explained some of the sharp edges. They did not explain everything, and Voyager found something stranger still.\n\nAcross the broad middle ring, faint dark wedges appeared, pointing outward like the spokes of a wheel.\n\nThey were not fixed in place. Some formed within minutes and stretched for thousands of kilometres. Then they faded, while new ones appeared elsewhere. The leading idea is that tiny charged dust grains briefly lift off the ring, perhaps lofted by electrical storms or by the planet's magnetic field. Scientists still debate the details, and the spokes remain only partly understood.\n\nMeanwhile, the spacecraft had a decision to make. Beyond the rings lay Titan, Saturn's largest moon, larger than the planet Mercury. Telescopes had shown that it wore a thick orange haze, and that it held an atmosphere denser than Earth's. No one could see its surface at all.\n\nVoyager 1's cameras looked at that haze and saw almost nothing. It was a smooth, butterscotch ball, with a faint darker band near the north pole. The surface stayed hidden. But the instruments measured the air as the craft passed behind the moon, and found mostly nitrogen, the same gas that fills most of our own sky, with traces of methane. A cold, strange cousin of an early Earth, perhaps.\n\nThat close pass was the reason Voyager 1 would never see another planet. To fly near Titan, the craft had to take a path that bent it northward, away from the plane where the planets travel. That bend flung it up and out of the solar system's flat disc, and it has been climbing away ever since. Voyager 2 could still visit worlds beyond Saturn. Voyager 1 had traded them all for a single hazy moon.\n\nThe rings, meanwhile, gave up their makeup. They are made mostly of water ice, with a little dust mixed in. The pieces range from grains as small as smoke to boulders as big as a house. Together, they form a disc hundreds of thousands of kilometres wide, yet in places only about ten metres thick.\n\nIf you could stand among them, you would see a slow, glittering drift of snowballs, gliding by in silence.\n\nSo the braids and knots were never decoration. They were the fingerprints of tiny moons, and of forces nobody had yet named. And beyond Saturn, the path split in two. One craft was rising away into empty space, and the other was still bound for a pair of planets no one had ever seen up close."
+      "text": "In a dark room in California, in March of nineteen seventy-nine, a few scientists leaned toward a screen. A picture of Europa was building itself, one thin line at a time, sent across hundreds of millions of kilometers by a radio signal weaker than a watch battery.\n\nVoyager one had passed Jupiter first, early in the month. Voyager two followed in July. Neither spacecraft went very close to Europa. But they were near enough to show it as a real place, and not just a bright dot.\n\nWhat appeared was a ball of white ice, smooth and covered with lines.\n\nLong lines, dark and reddish-brown, ran across the surface in every direction. They crossed one another, split, and rejoined. Some stretched for a thousand kilometers, about the distance from Paris to Rome. The whole moon looked like an eggshell that had been cracked and left on a table.\n\nSo what could crack a moon like this? And what could stain those cracks a rusty brown?\n\nThe first clue was not in the lines, but in what was missing. Scientists looked for craters, the round scars left by rocks falling from space. Europa had almost none.\n\nTo see why this matters, look at our own Moon. Its surface is crowded with craters, layered over each other, wall against wall. Some are billions of years old. Nothing has erased them, so the Moon keeps a record of nearly every impact since it was young.\n\nEuropa keeps almost no record at all.\n\nRocks fall on Europa as they fall on every world near Jupiter. Jupiter's gravity even pulls more of them in. So the craters must be forming. They must also be disappearing.\n\nThat gave researchers a way to estimate age. Count the craters, compare the rate of impacts, and you can guess how long a surface has been sitting there. For the Moon, the answer is billions of years. For Europa, the answer was tens of millions of years. That is a blink, compared with the four and a half billion years of the solar system.\n\nThink of a beach at low tide. Footprints from an hour ago are still there. Footprints from yesterday are gone. Europa's surface behaves like that beach, wiped smooth again and again, while the moon itself is far older than its face.\n\nSomething was renewing it.\n\nScientists began to guess at what. Perhaps the ice was moving, sliding in great plates the way sea ice drifts on Earth. Perhaps it was breaking, then healing as fresh material rose into the gaps. Perhaps, in places, it was melting from below. Each idea pointed the same way. The cracks might be the visible edge of something happening deep underneath.\n\nThe Voyager images were not sharp enough to say more. Some features were no clearer than a pencil sketch. And the reddish-brown material in the lines stayed a puzzle. It might be salt, or sulfur, or something from Jupiter itself. No one could be sure.\n\nWhat the pictures did show was a moon that was young, restless, and hiding something. But young surfaces need energy, and Europa sits very far from the Sun. Where would that energy come from? The answer was already visible in another Voyager image, taken just days earlier, of a neighboring moon that was glowing at its edge."
     },
     {
-      "title": "The Photograph From Six Billion Kilometres",
-      "question": "What happens when a spacecraft turns around to look at its own home?",
-      "reveal": "In 1990 Voyager 1 captured Earth as a pale speck less than a pixel wide, suspended in a beam of scattered sunlight.",
+      "title": "Io, Tides, and the Squeezing of Moons",
+      "question": "How can a moon far from the Sun make its own heat?",
+      "reveal": "Jupiter's gravity flexes Europa a little more and a little less on every orbit, and that constant kneading turns motion into heat, enough to keep an ocean liquid for billions of years.",
       "beats": [
-        "After Saturn, Voyager 1 is sent up and out of the planetary plane",
-        "The idea of turning cameras back to take a family portrait of the solar system",
-        "The 1990 images of the planets, with Earth as a tiny point of light",
-        "Why the sunbeam in the picture is an artefact of scattered light in the camera, and happens to be the lens's own glare",
-        "What it means to see all of human history on one pixel",
-        "A quiet pause to simply look at the image and the dark around it"
+        "Linda Morabito spots a volcanic plume on Io in Voyager images in 1979, showing a moon that is wildly active",
+        "Io, Europa and Ganymede are locked in an orbital resonance that keeps their orbits slightly non-circular",
+        "Explain tidal flexing with an everyday comparison, such as bending a paperclip back and forth until it warms",
+        "Io shows the extreme version, with volcanoes; Europa gets a gentler share of the same heating",
+        "Peers into the idea that the heat from tides, plus some from radioactive decay in the rock, may be enough to keep water liquid",
+        "Answer the first curiosity from chapter one"
       ],
-      "ambience": "none",
+      "ambience": "lava",
       "image_queries": [
-        "Pale Blue Dot Voyager 1",
-        "Earth from Saturn Cassini",
-        "Earth Moon Voyager 1",
-        "Solar system family portrait Voyager",
-        "Earth Mars Curiosity sky",
-        "Earth from Cassini rings",
-        "Voyager 1 camera",
-        "Earthrise Moon",
-        "Earth from distance Juno",
-        "Venus Voyager"
+        "Io volcano Galileo",
+        "Io Jupiter moon",
+        "Io plume Voyager",
+        "Io New Horizons",
+        "Io Juno",
+        "Jupiter Io Europa Ganymede",
+        "Io lava lake",
+        "Galilean moons",
+        "Io surface",
+        "Jupiter system moons"
       ],
       "video_queries": [
-        "Earth from deep space visualization",
-        "Pale Blue Dot animation",
-        "Earth rotating from space 4K"
+        "Io volcano animation",
+        "Jupiter moons orbital resonance visualization",
+        "Io flyby Juno"
       ],
-      "text": "The cameras were switched off on purpose, and nobody was sure the last picture would be worth taking.\n\nBy then Voyager 1 had left the planets far behind. After Saturn, its path had carried it up and out of the plane where the planets circle. There were no more worlds ahead to photograph. So the cameras had nothing left to do, except one thing.\n\nWhat happens when a spacecraft turns around to look at its own home?\n\nThe idea came from the astronomer Carl Sagan, who had worked on the cameras' planning. He asked whether the craft could look back, once, before the cameras were shut off for good. Some engineers were doubtful. Pointing a sensitive camera so close to the Sun might burn out its detector. And the pictures would show no new science, only a few faint dots on black.\n\nBut the request was kept alive, and in the end it was approved. The date was the fourteenth of February, nineteen ninety. Voyager 1 was about six billion kilometres from the Sun. A signal travelling at the speed of light needed more than five hours to cross that distance.\n\nOver several hours, the camera swung from place to place and took sixty frames. It was building a family portrait of the solar system, one patch of sky at a time. Each frame was sent home slowly, at a trickle, across all that dark.\n\nNeptune was in there, and Uranus. Saturn, Jupiter, Venus. Mars was too faint to be found in the glare. Mercury was lost too, too close to the Sun, and tiny Pluto was too dim and far away.\n\nThen came the frame that mattered most.\n\nEarth was there. It was not a disc, and it had no oceans or clouds. It was less than a single pixel wide, a pale blue speck, and nothing more.\n\nSomething else stands out in that frame. A thin band of light runs across it, and Earth sits right inside it. It looks almost deliberate, as if the planet were being lit by a single ray from above. But this was not sunlight, shining kindly on us. It was the camera's own trouble. The Sun was so close to the edge of the view that its light scattered inside the lens and the tube, and spread into streaks. Earth simply happened to land within one of them.\n\nSo the beam is a flaw, an accident of glass and geometry. And yet it is hard to look at the picture and see anything else. A tiny world, held in a shaft of light, in the middle of a great dark room.\n\nEvery person who ever lived is on that pixel. Every king, every farmer, every child who ever learned to walk. Every war, every song, every harvest and every goodbye happened on that small point, less than a thousandth of the picture's width.\n\nThat is not a sad thought. It is simply a true one. From this distance, there is no sign of borders, or cities, or voices. There is only a blue speck, and the light that happens to fall across it.\n\nLook at it for a moment. Look at the dark around it, too, which fills almost the whole frame. It is not empty exactly, only quiet and unlit. Out here, the Sun is just the brightest of the stars, and the home we know is something you can lose by blinking.\n\nSoon afterward, the cameras were turned off. They have not been turned on again. Voyager 1 kept going, carrying its instruments, still listening, still sending numbers home.\n\nAnd somewhere far behind it, its twin was still moving through the planets, with two more worlds ahead that no camera had ever seen."
+      "text": "On the night side of Io, in March of nineteen seventy-nine, a young navigation engineer named Linda Morabito was checking a picture for a different reason. She was not looking for anything. She was trying to make the stars show up, so the spacecraft could confirm its position.\n\nShe stretched the brightness of the image. And along the edge of the moon, something rose into the dark, like a faint umbrella of light.\n\nIt was a plume, about three hundred kilometers high. That is roughly the distance from Madrid to Valencia, standing straight up from the ground.\n\nA volcano was erupting on another world. No one had ever seen that before.\n\nIo is a little larger than our Moon. By every old rule, it should have been cold and still. Instead, it turned out to be the most volcanic place in the solar system, with dozens of vents pouring out lava at any moment. And that is the question this raises, for Io and for its neighbors. How can a moon so far from the Sun make its own heat?\n\nThe first clue is in the orbits. Io, Europa and Ganymede circle Jupiter in a steady rhythm. Every time Ganymede goes around once, Europa goes around twice, and Io goes around four times. Their gravity tugs on one another at the same points, again and again, like a parent pushing a swing at exactly the right moment.\n\nBecause of this rhythm, none of their orbits can settle into a perfect circle. Each one stays slightly stretched, an oval so gentle you would never see it with your eyes. But the stretch matters enormously.\n\nHere is why. On an oval orbit, a moon sometimes swings closer to Jupiter and sometimes drifts farther away. When it is closer, Jupiter's gravity pulls harder, and the moon bulges toward the planet. When it is farther, the pull relaxes, and the bulge eases back.\n\nTake a metal paperclip and bend it back and forth. Nothing seems to happen at first. After a dozen bends, you touch the fold and it is warm. The metal has not been burned or rubbed. It has simply been flexed, and the flexing has turned motion into heat.\n\nA moon does the same thing, only on a vast scale. Its rock and ice are pushed and relaxed, over and over, every few days. Tides, in other words, are not only for oceans.\n\nIo is the extreme case. It sits closest to Jupiter, and the squeezing there is fierce. The surface rises and falls by roughly one hundred meters on each orbit, about the height of a thirty-story building. All that kneading heats the inside until the rock partly melts, and the lava finds its way out.\n\nEuropa is farther away. Jupiter's grip on it is weaker, and the flexing is gentler. The ice and rock still bend, though, by perhaps thirty meters or so on every orbit. That is a much smaller share of the same heating. But small does not mean nothing.\n\nThere is also a second, quieter source. Deep inside Europa's rocky interior, radioactive atoms are slowly breaking apart, the way they do inside Earth. Each decay gives off a little warmth. It is a faint heat, but it has been there since the moon was born.\n\nScientists cannot yet say exactly how much comes from tides and how much from radioactivity. They do agree that together, the two may be enough.\n\nNot enough to melt rock, as on Io. Just enough to keep water from freezing.\n\nSo the answer to the question is a surprising one. Jupiter's gravity flexes Europa a little more, and then a little less, on every orbit. That constant kneading turns motion into heat. And that heat may have kept an ocean liquid for billions of years.\n\nThink about how long that is. Longer than any continent on Earth has held its shape. Longer than the first animals have existed. All that time, in the dark, a hidden sea may have been quietly held open by the pull of a planet.\n\nBut heat alone is only half a story. If there truly is an ocean there, it should leave a mark we can measure, something more than cracks in the ice. And in the nineteen nineties, a spacecraft was sent to Jupiter to listen for it."
     },
     {
-      "title": "Voyager 2: Alone at Uranus and Neptune",
-      "question": "What did the only spacecraft ever to visit the ice giants find?",
-      "reveal": "At Neptune, Voyager 2 found supersonic winds, a Great Dark Spot, and ice volcanoes erupting on Triton, a moon that likely began its life orbiting the Sun.",
+      "title": "Galileo Feels the Ocean",
+      "question": "How do you prove there is an ocean when all you can see is ice?",
+      "reveal": "Galileo's magnetometer showed that Europa disturbs Jupiter's magnetic field in a way that can only be explained by a global layer of salty, electrically conductive water below the ice.",
       "beats": [
-        "Voyager 2 continues alone toward worlds no one had seen",
-        "Uranus in 1986: a pale, almost featureless blue-green planet tipped on its side, with a strongly tilted magnetic field",
-        "Miranda's patchwork of cliffs and canyons",
-        "Neptune in 1989: bright clouds and the Great Dark Spot",
-        "Triton's retrograde orbit and nitrogen geysers, with its capture from the Kuiper Belt as the leading idea",
-        "The fact that no other craft has visited these planets since, an open frontier"
+        "The Galileo spacecraft orbits Jupiter from 1995 to 2003 and makes repeated close flybys of Europa",
+        "Explain that Jupiter's magnetic field sweeps past Europa and that a salty ocean would respond with its own faint magnetic signal",
+        "Galileo detects exactly that kind of signal, a clue only salty liquid water can easily explain",
+        "Chaos terrain, where blocks of ice look like broken rafts that have been frozen back into place, supports the picture",
+        "Estimates suggest Europa's ocean may be many tens of kilometers deep, though the thickness of the ice above remains uncertain",
+        "Mark the open question: how thick is the ice shell, a few kilometers or many?"
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Galileo spacecraft Jupiter",
+        "Europa chaos terrain Galileo",
+        "Conamara Chaos Europa",
+        "Europa ice rafts",
+        "Europa magnetic field",
+        "Europa interior illustration",
+        "Europa Galileo close up",
+        "Europa ocean concept",
+        "Europa ridges Galileo",
+        "Europa Thera Thrace"
+      ],
+      "video_queries": [
+        "Europa ocean animation",
+        "Europa interior visualization",
+        "Galileo mission Jupiter animation"
+      ],
+      "text": "A magnetic needle sat on a spacecraft, far from any human hand, and it began to twitch.\n\nThe spacecraft was Galileo. It had reached Jupiter in December of nineteen ninety-five, and it would stay there for almost eight years. In that time it circled the giant planet again and again, and it passed close to Europa a dozen times. Each pass was a brief, quiet meeting, a few minutes of data from a moon that looked like nothing but ice.\n\nAnd ice is the problem. You can photograph a surface for years and learn only about the surface. So how do you prove there is an ocean when all you can see is a frozen crust?\n\nThe answer came from Jupiter itself. The planet has an enormous magnetic field, many times stronger than Earth's. It spins once every ten hours, and the field spins with it. Europa sits in the path of that field, and the field sweeps past the moon again and again, like a slow tide moving across a rock.\n\nHere is the useful part. When a changing magnetic field passes through something that conducts electricity, it stirs up small electric currents. Those currents make a faint magnetic field of their own. Solid ice does not conduct well. Rock does not conduct well enough. But salty water does, very easily.\n\nSo the test was simple to state. If Europa has a salty ocean, it should answer Jupiter with a signal of its own.\n\nGalileo carried a magnetometer, a sensitive instrument on a long boom, held away from the spacecraft's own electronics. As it flew past Europa, the readings shifted. The magnetic field bent around the moon in a way that no solid body could explain. The signal pointed in a direction that followed Jupiter's changing field, just as a conducting layer would.\n\nThe needle had not been twitching at random.\n\nScientists checked other explanations. A metal core was a poor fit for this pattern. So were frozen rock and ice. The most natural answer was a global layer of salty, electrically conductive water, hidden beneath the surface. It was not proof beyond every doubt. But it was a clue that only liquid water could easily explain.\n\nThink about what that means. A frozen world, and yet somewhere under that surface, there appears to be a sea, wrapped all the way around the moon.\n\nThe pictures from Galileo seemed to agree. In some places, the surface is broken into a jumble that scientists call chaos terrain. Blocks of ice, some as wide as a small town, lie tilted and turned. They look like rafts that were shattered and shoved apart, and then frozen back together while still crooked.\n\nIt is hard to look at that and not think of a frozen river in spring. Something soft, or something liquid, may have moved beneath those blocks. They may have drifted a little, and then the cold locked them in place.\n\nHow much water is there? Estimates suggest the ocean may be around one hundred kilometers deep, including the ice above it. That is roughly the distance between two neighboring cities. Spread across the whole moon, it would hold about twice as much water as all of Earth's oceans combined.\n\nThat is a remarkable thing to say about a world so small and so cold.\n\nYet one number is still missing. We do not know how thick the ice shell is. Some studies suggest a few kilometers, thin enough for the surface to flex and crack above the water. Others suggest twenty kilometers or more, a lid so heavy that the ocean might be sealed away for good.\n\nA few kilometers is a short walk. Twenty is a long day's hike. Which one is true changes everything, from how the cracks form to whether anything from the surface could ever reach the water below.\n\nGalileo could not answer that question. It could only say that the ocean was there, and then it was gone. In the year two thousand and three, the spacecraft was steered into Jupiter's clouds, to keep it away from Europa forever.\n\nBut Jupiter was not the only giant with a small, bright moon. Far beyond it, another spacecraft had been circling Saturn, and it had noticed something odd about a moon much smaller than Europa."
+    },
+    {
+      "title": "A Walk on the Ice of Europa",
+      "question": "What would it feel like to stand on the surface of Europa?",
+      "reveal": "Jupiter would hang huge in the sky, but the radiation on the surface would be intense enough to be deadly to an unprotected visitor within a short time, and it may also be creating chemistry that feeds the ocean below.",
+      "beats": [
+        "Imagine arriving on a ridge of white and reddish ice under a black sky, with a very faint Sun",
+        "Describe the vast crescent of Jupiter overhead, locked in place because Europa always shows the same face to its planet",
+        "Gravity is only a small fraction of Earth's, so each step would feel light",
+        "Jupiter's radiation belts bombard the surface; the radiation is a major hazard for spacecraft too",
+        "That radiation splits ice and may produce oxidants that could, over time, be carried down into the ocean",
+        "Hubble sees hints of water vapor plumes at Europa, an observation scientists still debate"
       ],
       "ambience": "wind",
       "image_queries": [
-        "Uranus Voyager 2",
-        "Miranda Voyager 2",
-        "Neptune Voyager 2",
-        "Neptune Great Dark Spot",
-        "Triton Voyager 2",
-        "Neptune rings Voyager",
-        "Uranus rings Webb",
-        "Neptune Webb",
-        "Uranus Hubble",
-        "Triton geysers Voyager"
+        "Europa Jupiter sky",
+        "Europa surface Galileo",
+        "Jupiter Hubble",
+        "Europa Hubble plume",
+        "Europa ridges close up",
+        "Europa terrain",
+        "Jupiter Juno",
+        "Europa Juno",
+        "Europa south pole",
+        "Europa icy plains"
       ],
       "video_queries": [
-        "Neptune animation NASA",
-        "Uranus rotation animation",
-        "Triton flyby visualization"
+        "Europa surface flyover",
+        "Jupiter radiation belts visualization",
+        "Hubble Europa plume animation"
       ],
-      "text": "On the twenty-fourth of January, nineteen eighty-six, a small group of engineers watched a blurry image build up on a screen. It showed a pale disc, blue-green, almost without features. Everyone in the room had waited nearly nine years to see it.\n\nVoyager 2 had left Saturn behind and kept going alone. No other craft had ever been sent past Saturn. Ahead lay two planets that, in any telescope, were only faint smudges of colour. What would a single machine find at the very edge of the known planets?\n\nUranus was the first answer, and it was a quiet one. The planet looked like a smooth ball of pale cyan, with no bands and no great storms. There was hardly a mark on it that the camera could hold on to.\n\nBut the planet itself was strange. Uranus lies tipped over on its side, so that it rolls around the Sun like a ball along a track. Its poles take turns facing the Sun, each for about forty-two years of continuous daylight, followed by the same stretch of night.\n\nThe magnetic field was stranger still. It was tilted about sixty degrees away from the spin axis, and its centre sat well off from the middle of the planet. Nobody had expected that. Why a world would carry its field so crookedly is still not fully explained.\n\nThen came the smallest of the five large moons, Miranda. Voyager 2 passed very close, and the pictures looked like a patchwork. There were smooth plains beside grooved ridges, and canyons many times deeper than the Grand Canyon. One cliff was about twenty kilometres high, tall enough that a stone dropped from its top would fall for several minutes.\n\nNobody is certain how a moon only about the width of England could end up so scrambled. One idea says it was broken apart and pulled back together. Another says it was heated and stretched from within.\n\nVoyager 2 flew on. Its radio signal, already weak, grew weaker. Out here the Sun is a hard, small point of light, many hundreds of times dimmer than it appears from Earth. The cameras had to take long exposures to see anything at all, and engineers rotated the whole spacecraft to keep the pictures from smearing.\n\nIn August of nineteen eighty-nine, Neptune came into view. After the pale calm of Uranus, it looked like a different kind of world. The blue was deeper, and thin white clouds of frozen methane streaked across it high above the atmosphere. Near the middle of the planet sat a dark oval, about the size of Earth.\n\nIt was named the Great Dark Spot. A storm, then, like Jupiter's, in a place where there was hardly any sunlight to drive it.\n\nAnd the winds were fast.\n\nAround the Great Dark Spot they blew at roughly twelve hundred kilometres an hour. That is close to the speed of sound in our own air. On a world where it was about minus two hundred degrees Celsius, the air was moving faster than anywhere else Voyager had measured.\n\nSome years later, the telescope pictures showed that the Great Dark Spot had vanished. Storms on Neptune, it seems, come and go.\n\nLast of all came Triton, Neptune's largest moon. It circles the planet backward, against the direction Neptune spins. That alone was a clue. A moon that formed beside its planet would almost never do this.\n\nThen the camera showed the surface. It was pink and white, with smooth ice and a texture like the skin of a cantaloupe. And across the southern ice lay dark streaks, all pointing the same way, as if blown by a wind.\n\nThey were plumes. Nitrogen gas, mixed with dark dust, was rising several kilometres into the thin air and drifting sideways.\n\nIt was snowing upward, on a world at minus two hundred thirty degrees.\n\nThe most likely explanation is that Triton did not begin here. It probably started life orbiting the Sun, a member of the Kuiper Belt, the icy region beyond Neptune. Neptune caught it long ago, and the pull of the planet heated and reshaped it. The plumes themselves are probably driven by faint sunlight warming nitrogen ice.\n\nSo the only visit to these two planets was a few days each, nearly forty years ago. No other spacecraft has gone back. Everything we know about the ice giants up close comes from one machine passing at high speed.\n\nVoyager 2 had finished with the planets. Neptune fell away behind it, one small blue point among the stars. But the story was far from over, because ahead there was still an edge to find."
+      "text": "The ridge is white, with long stains of rust-brown running along its flanks. Above it, the sky is completely black, even though it is daytime. The Sun is there, but it is a small, hard point of light, about twenty-five times dimmer than it looks from Earth.\n\nWhat would it feel like to stand here, on the surface of Europa?\n\nThe first thing you would notice is the cold. The ice under your boots is about minus one hundred and sixty degrees Celsius at midday. At that temperature, ice is as hard as granite, and it rings rather than crunches. But there is no air to carry the sound to you, so your own footsteps would travel only through your suit and your bones.\n\nThen you would look up. Jupiter hangs overhead, and it is enormous. From Europa, it appears roughly twenty times wider than the full Moon does from Earth. Part of it is lit, part of it is dark, so it shows as a broad crescent of cream and orange bands, with storms drifting slowly across it.\n\nAnd it never moves.\n\nEuropa keeps the same face turned toward Jupiter, just as our Moon does toward Earth. So from any one spot, the giant planet stays fixed in the sky. If you stood on the far side, you would never see it at all, not in a hundred years.\n\nYour body would feel strange, too. Europa's gravity is only about one-seventh of Earth's. A person who weighs seventy kilograms at home would feel like someone weighing ten. Each step would lift you gently, and each landing would be slow, like walking on the bottom of a pool.\n\nIt would feel peaceful. It would not be safe.\n\nJupiter is wrapped in belts of charged particles, trapped by its powerful magnetic field. Europa orbits straight through them. Electrons and ions strike the surface constantly, at enormous energies. The dose reaching the ice is far beyond anything a person could survive for long. An unprotected person on the surface would receive a deadly dose in about a day.\n\nThat is why engineers worry about Europa Clipper. The spacecraft will not orbit the moon. It will swing past in quick passes, then retreat out of the worst of the radiation. Its most sensitive electronics sit inside a thick vault of metal.\n\nYet the same radiation may be doing something remarkable. When particles strike water ice, they break it apart. The pieces recombine into new molecules, including oxygen and other compounds that chemists call oxidants. Over time, they build up in the surface and give the ice some of its color.\n\nOn Earth, living things use oxidants as fuel. On Europa, the question is whether they can get from the surface to the ocean. The ice shell may slowly turn over, or crack and refreeze, carrying material downward across thousands of years. If it does, the radiation that would kill a visitor could also be feeding the sea below.\n\nThere is one more clue, and it is a faint one. In twenty twelve, and again in later years, astronomers used the Hubble Space Telescope to look at Europa. They saw hints of water vapor rising from the south polar region, as if the ice were venting into space. Some measurements seemed to confirm it. Others have not.\n\nScientists still debate what Hubble really saw. It could be real plumes, or it could be a trick of faint data. Nobody is sure yet.\n\nIf the plumes are real, a spacecraft could simply fly through them and taste the ocean. Something very much like that had already been done, at another moon, by a spacecraft that was circling a different giant."
     },
     {
-      "title": "The Edge of the Sun's Bubble",
-      "question": "Where does the Sun's reach actually end?",
-      "reveal": "Voyager 1 crossed the heliopause in 2012 and Voyager 2 in 2018, and both found that the plasma outside is denser than inside, a flat measurement that confirmed they had truly left.",
+      "title": "Cassini Finds Blue Stripes on Enceladus",
+      "question": "Why does a tiny moon, only about 500 kilometers wide, shine brighter than fresh snow?",
+      "reveal": "Enceladus reflects almost all the sunlight that reaches it because its surface is constantly coated with fresh ice grains that fall back from space.",
       "beats": [
-        "The solar wind as a constant stream flowing outward from the Sun",
-        "The termination shock, where the wind abruptly slows",
-        "The heliosheath, a turbulent region of compressed, hot plasma",
-        "The 2012 crossing, confirmed by plasma waves that revealed rising density",
-        "Why the crossing was only recognised after careful analysis, and why Voyager 2's instruments gave a cleaner picture",
-        "How the bubble shields the inner solar system from cosmic rays"
+        "Cassini arrives at Saturn in 2004 and begins its long tour of the ring system and its moons",
+        "Enceladus is small enough to fit across the length of a country like Spain, and is one of the most reflective objects in the solar system",
+        "Close flybys reveal a smooth, young southern region with four long, deep cracks nicknamed the tiger stripes",
+        "Warm spots along the cracks show up in infrared images, even though the surroundings are extremely cold",
+        "Plant the curiosity: something is coming out of those cracks",
+        "Describe how the ice grains feed Saturn's faint E ring"
       ],
-      "ambience": "sun",
+      "ambience": "ice",
       "image_queries": [
-        "heliosphere illustration IBEX",
-        "heliopause illustration",
-        "solar wind Sun SDO",
-        "Sun corona SOHO",
-        "termination shock illustration",
-        "IBEX ribbon heliosphere",
-        "cosmic rays Milky Way illustration",
-        "Sun flare SDO",
-        "heliosphere bow shock",
-        "interstellar medium illustration"
+        "Enceladus Cassini",
+        "Enceladus tiger stripes",
+        "Enceladus south pole",
+        "Enceladus close up",
+        "Saturn rings Cassini",
+        "Enceladus E ring",
+        "Enceladus crescent",
+        "Enceladus fractures",
+        "Enceladus infrared Cassini",
+        "Enceladus Saturn backlit"
       ],
       "video_queries": [
-        "heliosphere visualization NASA",
-        "SDO sun ultra high definition",
-        "solar wind animation"
+        "Enceladus flyby Cassini",
+        "Saturn Cassini flyover animation",
+        "Enceladus south pole animation"
       ],
-      "text": "Some of the instruments on Voyager 1 have been quietly counting charged particles for nearly half a century. In twenty twelve, the counts began to change in a way nobody had seen before. The particles from the Sun were fading, and particles from somewhere else were rising. So where, exactly, does the Sun's reach end?\n\nTo answer that, we have to start with something the Sun is always doing. It is throwing itself away. A thin stream of charged particles, mostly protons and electrons, flows outward in every direction, at about four hundred kilometres each second. This is the solar wind. It is far too thin to feel, thinner than the best vacuum you could make in a laboratory on Earth.\n\nThe wind does not stop at the planets. It sweeps past Neptune, still moving, still carrying the Sun's magnetic field with it. Then, far out, it meets resistance. The space between the stars is not empty. It holds its own faint gas, and that gas pushes back.\n\nThe first sign of this was the termination shock. Here the wind, which had been travelling faster than sound can move through it, suddenly slows down. Voyager 1 crossed this boundary in two thousand and four. Voyager 2 followed in two thousand and seven.\n\nPast the shock lies a stranger place, called the heliosheath. The particles pile up here, compressed and heated to tens of thousands of degrees. Yet it would not feel hot. The gas is so thin that a spacecraft passing through gains almost no warmth at all. The magnetic field twists and tangles, and the plasma moves in slow, turbulent currents.\n\nFor years the two craft drifted through this region, sending back readings every day. Then, in the summer of twenty twelve, the instruments began to disagree with the old picture. The Sun's particles dropped sharply. Cosmic rays, which come from distant exploded stars, climbed higher than ever recorded.\n\nIt looked like an exit. But the team did not announce it.\n\nThe trouble was that Voyager 1's plasma instrument had stopped working in nineteen eighty. It could not measure the surrounding gas directly. The scientists had to wait, and they were still uncertain. They could only see the particles change, and they could not say for sure what lay on the other side.\n\nThen the Sun gave them a clue. A great burst of material had erupted from its surface months earlier, and it finally reached the spacecraft. The shock wave made the surrounding plasma ring, like a struck bell. The antenna picked up the vibration, and the pitch of that ringing told the team how dense the plasma was.\n\nThe density was about forty times higher than inside the heliosheath.\n\nThat was the answer. The gas outside the bubble is cooler, but it is far denser than the thin, hot plasma of the Sun's own wind. A flat, simple number, and it settled the matter. Voyager 1 had crossed the edge, the heliopause, in August of twenty twelve, though the proof took more than a year to arrive.\n\nVoyager 2 crossed in November of twenty eighteen. And its plasma instrument still worked. It saw the wind fall away in a single day, and the density jump up on the other side. This was the clean view that Voyager 1 never had. Together, the two craft showed that the boundary is real, and that it is not in the same place everywhere.\n\nThis edge matters to us, far more than it first seems. The bubble that the Sun blows around itself acts like a shield. It turns away a large share of the galactic cosmic rays, those fast, energetic particles that can damage living cells and the machines we build. Without it, the radiation reaching the inner planets would be much stronger.\n\nSo the small, sheltered world we live on sits inside a protective bubble, one that the Sun has been making for billions of years. And the two craft have now passed through its wall. What waits for them out there is not a void, but a faint, steady sea of gas, and every instrument still running is listening to it."
+      "text": "A small moon sat in front of the cameras, and it was almost too bright to photograph. Engineers at the Cassini mission had to adjust their exposures, because this world gave back nearly every bit of light that touched it. Fresh snow on Earth reflects most of the light that lands on it. This moon reflected more.\n\nIts name is Enceladus. It is only about five hundred kilometers wide, about the distance from London to Edinburgh. So why does something so small shine brighter than new snow?\n\nCassini had arrived at Saturn in two thousand four, after a flight of nearly seven years. It slowed, slipped into orbit, and began a long tour. The spacecraft threaded between the rings. It passed the great orange moon Titan again and again. And it kept coming back to the small ones, one at a time.\n\nEnceladus had been known since the seventeen hundreds, a faint white dot beside the rings. Before Cassini, nobody expected much from it. A moon this small should have lost its heat billions of years ago. It should have been a quiet ball of ice, scarred by craters, going nowhere.\n\nThe first close flybys looked different. The northern half did show old craters, as expected. But the south was smooth. Almost no craters at all, which meant the surface there was young, perhaps only a few million years old. Something had been resurfacing it.\n\nThen the cameras found the cracks.\n\nFour long fractures ran across the south pole, roughly parallel, each well over a hundred kilometers long. They were deep, and their edges were lined with fresh ice. In images processed with extra color, the cracks glowed a pale blue. Scientists gave them an informal name, the tiger stripes.\n\nBlue was a clue in itself. It suggested coarse, clean ice, freshly made. This was not the dusty, battered surface of an old moon. It was new material, laid down recently, and perhaps still being laid down.\n\nCassini carried an instrument that sees heat, an infrared spectrometer. Pointed at the south pole, it showed something odd. The surroundings were brutally cold, about minus one hundred eighty degrees Celsius. Yet along the tiger stripes, the ice was warmer. Not warm in any human sense, but far warmer than it had any right to be.\n\nThe heat was not spread evenly. It gathered in spots along the cracks, like faint embers in a cold fireplace. Something was carrying warmth up from below.\n\nAnd whatever it was, it was not staying put.\n\nCassini's cameras looked toward the south pole with the Sun behind the moon, and the picture changed. Fine, pale jets rose from the cracks and climbed into space. Something was coming out of Enceladus.\n\nHere the mystery of the brightness begins to resolve. The jets are made of tiny ice grains, each smaller than a speck of dust. Most of them are moving too slowly to escape, and they fall back like a very gentle snow. Over time they settle across the whole moon, covering every crater and every old scar.\n\nEnceladus is bright because it is constantly being repainted with fresh ice.\n\nSome grains, though, are fast enough to leave. They drift away from the moon and spread out along its orbit. Over thousands of years they form a wide, faint ring around Saturn, the E ring. It is thin and ghostly, far fainter than the main rings, and it is thickest exactly where Enceladus travels.\n\nThe moon is feeding its own ring. Every grain in that pale haze was once part of Enceladus, and before that, part of something hidden underneath. What those grains were made of, and what they might carry, was a question Cassini could answer only by flying straight through them."
     },
     {
-      "title": "The Golden Records",
-      "question": "What would you say to the universe if you could only send one message?",
-      "reveal": "Each Voyager carries a gold-plated copper record, built to last for a billion years, holding greetings in dozens of languages, music, and sounds of Earth.",
+      "title": "Flying Through the Geysers",
+      "question": "What is erupting from the south pole of Enceladus, and what happens when a spacecraft flies through it?",
+      "reveal": "Cassini flew through the plume and tasted it, finding salty water, organic molecules and molecular hydrogen, which strongly suggest a global ocean in contact with a rocky seafloor.",
       "beats": [
-        "The idea of a message in a bottle cast into the cosmic sea",
-        "What is on the record: images, greetings, sounds of wind, rain, and a mother's lullaby, and music from many cultures",
-        "The instructions etched on the cover showing how to play it",
-        "The pulsar map that points back to our Sun's location",
-        "The honest fact that the chances of it ever being found are tiny, and that it is mainly a message to ourselves",
-        "A thought experiment: who or what might one day hold it"
+        "Jets of ice and vapor rise hundreds of kilometers above the south pole, seen in dramatic backlit Cassini images",
+        "Cassini's instruments sample the plume directly during several close passes",
+        "The grains contain sodium salts, so the water that made them was salty, like a real sea",
+        "Tiny silica grains point to hot water reacting with rock on the seafloor",
+        "Molecular hydrogen in the plume points to chemical reactions between water and rock, a possible source of energy for microbes",
+        "Careful measurements of Enceladus's wobble show that the ice shell is separated from the core by a global ocean",
+        "Mark what remains unknown: whether living things actually exist there"
       ],
-      "ambience": "none",
+      "ambience": "ice",
       "image_queries": [
-        "Voyager Golden Record cover",
-        "Voyager Golden Record",
-        "Voyager record close up",
-        "Earth from space night lights",
-        "Pulsar illustration",
-        "Voyager spacecraft record",
-        "Milky Way Webb",
-        "Ocean waves from space",
-        "Aurora Earth from ISS",
-        "Earth Blue Marble"
+        "Enceladus plume Cassini",
+        "Enceladus geysers backlit",
+        "Enceladus jets",
+        "Enceladus plume Saturn",
+        "Cassini spacecraft Saturn",
+        "Enceladus crescent plume",
+        "Enceladus south pole jets",
+        "Enceladus tiger stripes plume",
+        "Enceladus plume close up",
+        "Enceladus E ring plume"
       ],
       "video_queries": [
-        "Earth time-lapse ISS 4K",
-        "aurora ISS time-lapse",
-        "Milky Way time-lapse NASA"
+        "Enceladus plume animation",
+        "Cassini plume flythrough",
+        "Enceladus geysers Cassini footage"
       ],
-      "text": "Inside each Voyager, bolted to the side of the bus, there is a flat square case the colour of old brass. It holds a disc about the size of a dinner plate. The disc has a groove, just like the vinyl records in a living room, and a needle sits beside it in a small holder, ready to play.\n\nWhy would a spacecraft carry a record player? And if you could send only one message to the universe, what would you put on it?\n\nIn nineteen seventy-seven, a small team was given that question and about six months to answer it. The idea was old and simple. Sailors had always sealed notes in bottles and thrown them into the sea, with no idea who would find them. Voyager was leaving the Solar System anyway. So why not let it carry one?\n\nThe team was led by the astronomer Carl Sagan. They chose the pictures first. There are a hundred and fifteen of them, stored as patterns in the groove. You see a mother and child, a city street, a tree, a pair of hands. You see the planets, and a diagram of how our bodies are built.\n\nThen came the sounds. The record holds wind, rain and thunder. It holds surf on a shore, birdsong, a footstep, a heartbeat, and a mother softly greeting her newborn. Somewhere in the grooves, a kiss lasts a few seconds.\n\nThere are also greetings in fifty-five languages, from ancient Sumerian to modern Chinese. One of them is only a few words long. It simply says, hello, to the children of the stars, we wish you well.\n\nAnd there is music, nearly ninety minutes of it. A Peruvian wedding song. A Navajo night chant. Bach, Beethoven, and a blues guitar. Pipes from the Solomon Islands, and drums from Senegal. Every piece is a small proof that people have always tried to say something beautiful to whoever might be listening.\n\nYet a record is useless without a way to play it. So the cover of each disc carries instructions, etched in the metal. There are no words, because no words could be trusted to be understood. The diagrams show a stylus, a turntable, and the speed at which to spin it. They show how to read the pictures, too, using a circle drawn on the cover as a guide.\n\nA binary mark on the cover gives the time for one turn of the record. It is measured against a basic ticking of the hydrogen atom, something any scientist would know.\n\nBeside those diagrams sits a strange star-like drawing, a set of lines that radiate from one point.\n\nIt is a map to us.\n\nEach line points toward a pulsar, a spinning star that flashes at a steady rhythm. The length of each line is written in the pulsar's own period, the pulse count itself. A reader who knows the pulsars could find where all those lines meet. That place is our Sun. Because pulsars slow down at known rates, the map can even hint at the date of launch.\n\nNow for the honest part. The chances of anyone finding this record are tiny. The space between stars is so empty that Voyager will pass no star closely for tens of thousands of years. Even then it will pass at a distance of light-years. A finder would need to be extremely lucky, and very near.\n\nSagan said as much. He wrote that the record was cast upon the cosmic ocean, and that the launching of such a bottle says something very hopeful about life on this planet. So it is mainly a message to ourselves. It asks what we would choose to say about who we are, if we had to be brief.\n\nThe disc itself is built for patience. Each record is copper, coated in gold, and the gold protects it. Out in the cold and the dark, with only the faintest dust to wear it down, it should stay readable for roughly a billion years.\n\nA billion years is longer than any language we speak. It is longer than any country, any city, or any coastline we know. By then the Sun may have changed and the continents may have moved. The record would still be there, quietly turning in the dark, if anyone ever picked it up.\n\nSo picture who that might be. A traveller, perhaps, drifting across the dark. They notice a small metal object with an odd shape. They cannot know what a mother is, or what rain is. They may not have hands, or eyes. And yet something in the order of the thing, the careful diagrams and the patient circles, would tell them it was made on purpose.\n\nThey might never hear the greetings. But they would know that someone had tried.\n\nAnd that is the real question the record leaves behind. How long can two small machines keep carrying it, with their power slowly fading?"
+      "text": "The picture is almost too simple. A small white moon hangs in front of the dark, with the Sun behind it, and from its southern edge rise soft blue-white fountains. They climb and fade and keep on climbing.\n\nThose fountains are the reason Cassini kept coming back. In the backlit images, the jets stretch hundreds of kilometers into space. That is roughly the distance from Madrid to Barcelona, straight up from a moon you could cross in a day's drive. So what is the moon throwing out? And what would a spacecraft find if it flew through it?\n\nCassini's team decided to find out. The spacecraft carried instruments built to catch dust and gas, and it was steered close to the south pole on several passes. On the closest, it skimmed only about fifty kilometers above the surface. It was moving at a speed no car or airplane ever reaches.\n\nThe first thing the instruments counted was ice. Tiny grains, much finer than sand, struck the detectors by the thousands. Most were water ice, which was no surprise. The surprise was in the small print of their chemistry.\n\nMany grains carried sodium salts. Table salt is one of them. Ice formed from pure, fresh water would not have these. So the water that made the grains had once been salty, the way a real sea is salty.\n\nSalt means that water had been sitting a long time against rock, slowly dissolving it. That is how the oceans of Earth became salty. It was now a clue about a moon that is mostly ice.\n\nThen came a smaller clue. Among the grains were specks of silica, the same material as quartz and ordinary beach sand. They were tiny, only a few billionths of a meter across. Silica like that does not form easily in cold water.\n\nIt forms when hot water, perhaps ninety degrees Celsius or more, flows over rock and carries some of it away. Then the water cools and the silica drops out as nanograins. Hot water on the floor of that hidden sea is the likeliest explanation.\n\nThe gas told the same story. As the plume streamed past, the instruments tasted it directly, and found mostly water vapor. But mixed in were carbon dioxide, methane, and other carbon compounds. And there was molecular hydrogen.\n\nThat last one mattered most.\n\nHydrogen is a kind of fuel. On Earth, it is made when warm water reacts with certain minerals in rock. Microbes can then use the hydrogen for energy, with no sunlight at all. Nobody has found such microbes on Enceladus. But the energy they would need seems to be there.\n\nOne question was still open. Was this a small pocket of water, or something bigger? A pocket might sit under the south pole and nowhere else.\n\nThe answer came from a very careful kind of measuring. Over years, scientists tracked how Enceladus rocked slightly as it circled Saturn. They tracked the wobble to a tiny fraction of a degree. If the ice shell were locked tightly to the rocky core, the wobble would be small. It was much larger than that.\n\nThe best explanation is that the ice shell floats free, on a global ocean that wraps all the way around the moon. The shell is thinner at the south pole and thicker elsewhere. Beneath it, the water touches rock.\n\nSo the geysers are not a curiosity. They are a window, and Cassini looked through it. It tasted salt, silica, carbon, and hydrogen, all coming from a hidden sea about ten kilometers under the ice at the pole.\n\nWhat nobody knows is whether anything lives there. The ingredients are suggestive, and no more than that. Cassini was not built to look for life, and it carried no instrument that could say yes or no. The plume has only offered a hint.\n\nStill, the hint has a familiar shape. Warm water, fresh chemistry, and rock. Somewhere on Earth, in the deep dark, the same recipe has a name."
     },
     {
-      "title": "The Long Quiet Between the Stars",
-      "question": "What will Voyager do when its last instrument falls silent?",
-      "reveal": "Long after the radios fail, the Voyagers will keep drifting, and in about forty thousand years Voyager 1 will pass within a couple of light-years of a faint star in the constellation Ursa Minor.",
+      "title": "Life Without Sunlight",
+      "question": "Could anything live where the Sun never shines?",
+      "reveal": "On Earth, entire ecosystems thrive around deep-sea hydrothermal vents in total darkness, living on chemical energy instead of sunlight, so the same trick might work on Europa and Enceladus.",
       "beats": [
-        "The slow shutdown of instruments to save the dwindling power from the plutonium generators",
-        "The expected end of communication sometime in the coming years, an honest estimate rather than a date",
-        "How empty interstellar space is, and how little will happen to the craft over time",
-        "Voyager 1's and Voyager 2's future close approaches to distant stars, measured in tens of thousands of years",
-        "The Milky Way orbit: they will circle the galaxy for billions of years",
-        "A final calm image of two small points moving together through starlight, carrying a message that outlasts us"
+        "Return to Earth and its deep ocean, where sunlight never reaches",
+        "In 1977 scientists exploring the seafloor discover hydrothermal vents surrounded by tube worms, clams and shrimp",
+        "Explain chemosynthesis: microbes turning chemicals from the vent fluids into food, with the rest of the community depending on them",
+        "Compare the vent chemistry to what Cassini found at Enceladus: hydrogen, carbon compounds and warm water meeting rock",
+        "Europa's seafloor may also be in contact with rock, though that is still uncertain",
+        "Make clear that this is a possibility and not a discovery: no life has been found beyond Earth",
+        "Some researchers think life on Earth may have started in places like these"
+      ],
+      "ambience": "sea",
+      "image_queries": [
+        "hydrothermal vent ocean",
+        "tube worms hydrothermal vent",
+        "deep sea vent NOAA",
+        "black smoker ocean floor",
+        "Europa ocean concept",
+        "Enceladus ocean concept",
+        "Enceladus hydrothermal",
+        "deep ocean ecosystem",
+        "ocean floor volcano",
+        "Earth ocean from space"
+      ],
+      "video_queries": [
+        "hydrothermal vent footage",
+        "Earth ocean time-lapse ISS",
+        "Enceladus ocean hydrothermal animation"
+      ],
+      "text": "Two and a half kilometers down in the Pacific, the water is black and very still. A small submarine drifts over bare gray rock, its lights cutting a narrow cone through the dark. Then the cone catches something that should not be there.\n\nA crowd. White crabs, pale shrimp, and tall red-tipped worms, all clustered around a crack in the seafloor.\n\nThat was the scene in nineteen seventy-seven, near the Galápagos Islands. The scientists aboard had come to measure heat in the water, not to find animals. They had expected a desert. Almost everything we knew about life said that down here, with no sunlight at all, there was very little to eat.\n\nSo what were all these creatures eating?\n\nThe answer came out of the crack itself. Water was pouring from the rock, shimmering like heat over a road. It had seeped deep into the crust, been warmed by hot rock below, and come back up carrying dissolved minerals and gases. Some of those vents run hotter than three hundred degrees Celsius. The water does not boil, because the pressure at that depth is crushing.\n\nThe animals were not feeding on the water. They were feeding on what lived in it.\n\nTiny microbes coat the rock and fill the tissues of the worms and clams. These microbes do something plants cannot do in the dark. They take chemicals from the vent fluid, such as hydrogen sulfide, and burn them for energy. With that energy they build sugars out of carbon dioxide. Scientists call this chemosynthesis, and it works much like photosynthesis, only with chemistry in place of light.\n\nThe tube worms have no mouth and no gut. They simply host the microbes and live off what the microbes make. Clams and shrimp feed on the same microbes, and crabs feed on the shrimp. A whole community stands on a base of chemistry.\n\nIt was a living world with no use for the Sun.\n\nNow return to Enceladus. When Cassini flew through the plume, it tasted hydrogen, along with carbon dioxide and methane, and small organic molecules. It found salty water, and signs that the water had been warm, and had touched rock. Hydrogen is the important clue. On Earth, microbes that live at vents use just this gas as fuel.\n\nThe match is not exact. Nobody has seen the seafloor of Enceladus, and its chemistry may differ in ways we cannot yet tell. But the ingredients on the list are the same ones that feed the vents here: warm water, rock, and a steady supply of reactive chemicals.\n\nEuropa is harder to read. Its ocean is far deeper, and its rocky floor lies beneath perhaps a hundred kilometers of water and ice. We do not know whether that seafloor is bare, active rock, or something quieter. Heat from tides might drive vents there too. It might not. This is one of the plainest open questions about the moon.\n\nIt is worth saying clearly what all this is. It is a possibility, and not a discovery. No living thing has ever been found beyond Earth, not a microbe, not a single cell. Everything in this chapter beyond our own ocean is a reasoned guess about where to look.\n\nStill, the guess has some weight behind it. Many researchers suspect that life on Earth may have begun in places very much like these vents. Warm water, fresh chemistry, and rock, all meeting in the dark, long before anything learned to use sunlight.\n\nIf that is true, then the Sun was never essential. It was only the easiest place to start looking.\n\nAnd if two small moons have had the same ingredients for billions of years, someone will want to go and check."
+    },
+    {
+      "title": "The Missions That Will Go Back",
+      "question": "How will we ever look beneath the ice, and what might we find?",
+      "reveal": "Europa Clipper, launched in 2024, is flying to Jupiter to make dozens of close passes of Europa and measure the ice, the ocean and the chemistry, helping decide whether this moon could be habitable.",
+      "beats": [
+        "Europa Clipper launches in October 2024 and travels toward Jupiter, with arrival planned for 2030",
+        "ESA's JUICE mission also heads to Jupiter, with a close look at Ganymede and flybys of Europa",
+        "Clipper will use radar, cameras, spectrometers and a magnetometer to measure ice thickness and the ocean beneath",
+        "Scientists have discussed future missions to Enceladus, including orbiters and landers, but none is yet fully committed",
+        "Imagine a distant future probe melting through the ice, with all the uncertainty that implies",
+        "Return to the opening question and the quiet scale of it all: two small moons, hidden seas, and a question that might be answered within our lifetimes",
+        "End with a slow, gentle closing image of Saturn and Jupiter shining in the dark, and leave the listener drifting toward sleep"
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Milky Way galaxy Webb",
-        "stars interstellar space Hubble",
-        "Orion Nebula Hubble",
-        "Pillars of Creation Webb",
-        "Carina Nebula Webb",
-        "spiral galaxy Hubble",
-        "star field Milky Way",
-        "Voyager spacecraft artist concept",
-        "globular cluster Hubble",
-        "Andromeda Galaxy Hubble"
+        "Europa Clipper",
+        "Europa Clipper spacecraft",
+        "Jupiter Europa Clipper",
+        "JUICE Jupiter",
+        "Enceladus Saturn",
+        "Europa Juno",
+        "Jupiter Juno",
+        "Saturn Cassini",
+        "Europa icy surface",
+        "Earth from space"
       ],
       "video_queries": [
-        "galaxy zoom visualization Hubble",
-        "Milky Way flythrough visualization",
-        "nebula flythrough Hubble"
+        "Europa Clipper animation",
+        "Europa Clipper mission trajectory",
+        "Jupiter Saturn solar system animation"
       ],
-      "text": "Every few months, an engineer at the Jet Propulsion Laboratory sends a short list of commands to a machine that is more than twenty billion kilometres away. The commands ask it to turn off something it has carried since nineteen seventy-seven. A heater, perhaps, or an instrument that has measured its last magnetic field.\n\nNobody enjoys sending these commands. But the power has to come from somewhere, and the source is running down.\n\nEach Voyager carries three small generators filled with plutonium. As the plutonium decays, it gives off heat, and the heat becomes electricity. That supply falls by about four watts every year. A watt is a very small thing, less than the glow of a night light. Each one lost means something on board must go quiet.\n\nSo the instruments are switched off one at a time. The cameras went long ago. Other sensors have followed, and only a few remain. So here is the question the engineers cannot avoid. What will Voyager do when its last instrument falls silent?\n\nThe honest answer about the radio comes first. Nobody can give a date. The team speaks of the coming years, and even that is an estimate, not a promise. A fault could end the signal sooner. Careful planning could stretch it a little longer. One day the last tone will not arrive, and the dishes on Earth will listen to nothing but the faint hiss of the sky.\n\nAnd then, nothing will change for the spacecraft.\n\nSilence does not stop a Voyager. It was never pushing itself along. Its engines finished their work decades ago, and since then it has simply coasted. The Sun's gravity pulls on it very gently, but it is moving far too fast to be held. Without power, it keeps going exactly as before.\n\nOut there, very little can disturb it. Interstellar space is not truly empty, but it is close. A cubic centimetre, about the size of a sugar cube, holds only a few atoms. On Earth, the air in the same space holds billions of billions. A Voyager could travel for a very long time and meet almost nothing.\n\nThere will be slow wear. Cosmic rays will pit the metal a little. Tiny dust grains will strike now and then, though rarely. The record itself is sheltered by its cover from the worst of it. Over millions of years, the edges will soften. But the structure will remain, because in that cold and that quiet, there is almost nothing to take it apart.\n\nSo where will the Voyagers go? Not toward anything, exactly. They are not aimed at any star. But they will pass some.\n\nIn about forty thousand years, Voyager 1 will drift within a couple of light-years of a faint star in the constellation Ursa Minor, the Little Bear. That is closer than most stars ever come to our Sun. Even so, it is a distance of many trillions of kilometres. The star will look like one bright point among others, and the craft will not slow down to look.\n\nVoyager 2 will make a similar pass near the star Ross 248, also in about forty thousand years. Modern humans have existed for only about three hundred thousand years. Everything we have built, from the first cities to the last message, fits inside a fraction of the wait.\n\nBeyond those meetings, the path simply continues. The Sun moves around the centre of the Milky Way, taking about two hundred and thirty million years to make one circuit. The Voyagers move with the galaxy, on their own orbits, close to our own. They will circle the Milky Way for billions of years. Long after the Sun has changed, and perhaps after Earth has too, they may still be turning.\n\nThink of the picture, then, after the last signal.\n\nTwo small points, far apart and yet moving together, passing through the light of other suns.\n\nNo sound reaches them. No one watches. Each one holds a disc of gold, with a song, a greeting, and a map back to a star that will have moved on. They do not know what they carry. We did the knowing for them, once, a long time ago.\n\nWe sent them out of curiosity, and a little hope. That much has already been done, and nothing can undo it.\n\nSo let them go on, quietly, between the stars. The night is wide and slow, and you have travelled a long way tonight. Rest now. Goodnight."
+      "text": "At the Jet Propulsion Laboratory, in a quiet room in California, a team once watched a small light turn green. It meant a spacecraft the size of a basketball court had left Earth, and was now alone in the dark.\n\nThat was Europa Clipper, in October of twenty twenty-four. It rode a rocket out of Florida, and then it began a long fall toward Jupiter. The trip takes about five and a half years, because Clipper borrows speed from Mars and then from Earth itself. It is due to arrive in twenty thirty.\n\nWhy go all that way? Because nothing we have built can see through the ice of Europa. Galileo felt the ocean from a distance, through a faint magnetic whisper. No one has yet looked directly at what lies beneath.\n\nSo how do you look beneath the ice?\n\nYou do it with several instruments, each listening in a different way. Clipper carries a radar that sends radio waves down into the shell. Where the ice changes, some of the signal bounces back. By timing those echoes, scientists hope to find how thick the ice is, and whether pockets of liquid water sit inside it.\n\nThe cameras will map the cracks and the broken rafts of chaos terrain, down to features the size of a house. Spectrometers will read the light from the surface, and from any thin vapor above it. Each color is a fingerprint of salts, and of carbon-bearing compounds. And a magnetometer will measure the same magnetic signal Galileo glimpsed, only far more carefully, and many times over.\n\nClipper will circle Jupiter and swing past Europa again and again, close to fifty times. Each pass lasts only a few hours, and at its nearest, the spacecraft skims about twenty-five kilometers above the ice.\n\nClipper will not be alone. Europe's own mission, called Juice, left Earth in twenty twenty-three and is also bound for Jupiter. Its main target is Ganymede, the largest moon in the solar system, which may hide an ocean of its own. On the way, it will make two flybys of Europa, adding a second set of eyes.\n\nNeither spacecraft is built to search for life. They cannot taste the water, and they cannot land. Their job is quieter than that. They will measure the ice, the ocean and the chemistry, and help decide whether Europa could be habitable at all.\n\nAnd what about Enceladus? Scientists have talked about orbiters that would fly through the plume again, with better instruments than Cassini carried. They have talked about landers that would sit near the tiger stripes, and wait. But none of these missions is yet fully committed. For now, they remain careful drawings on paper.\n\nFurther ahead, there is a stranger idea. A probe, warmed by its own heat, could melt slowly down through the ice. It would sink for weeks, or months, trailing a thin cable behind it. Nobody knows how thick the ice really is, or what the water would be like when it finally broke through.\n\nIt might be a few kilometers of ice. It might be many. The first hole could take years to make.\n\nStill, the question has become smaller, and clearer. Not whether such places are strange, but whether they are inhabited. Two small moons, each hiding a sea, each warmed by the pull of a giant planet. One question, waiting in the dark, and it may be answered within our own lifetimes.\n\nFor now, the ice is quiet. Out past the asteroids, Jupiter rises over Europa, banded and slow. Farther still, Saturn hangs above Enceladus, with its thin pale rings. A faint white breath drifts up from the south pole, and fades.\n\nUnder both, the water moves, as it has for billions of years. Perhaps it is empty. Perhaps it is not.\n\nLet the thought settle, the way those grains of ice settle onto Enceladus. The spacecraft are on their way. There is nothing left for you to do tonight but rest.\n\nGoodnight."
     }
   ],
-  "cold_open": "Two spacecraft, built with less computing power than a modern key fob, are still sending messages home from the dark between the stars.\n\nThey were launched in nineteen seventy-seven. We thought they would fall silent within a few years. But they kept going, past giant storms, past rings of ice, out beyond the edge of the Sun's own bubble.\n\nHow does a signal so faint cross so much emptiness? And why does each machine carry a golden record, a portrait of Earth meant to outlast us?\n\nSoon you will see Jupiter's great storm, the rings of Saturn, and a pale blue dot photographed from six billion kilometres away.\n\nListen.\n\nThere is nothing to do tonight but listen. No hurry, no noise, only real science, told slowly, over the most beautiful pictures these travellers ever sent.\n\nLet us follow the faint voice outward.",
+  "cold_open": "Far from the Sun, noon on a moon of Jupiter is no brighter than a dim twilight on Earth. And yet, beneath its ice, there is an ocean.\n\nWe thought small, frozen moons were finished worlds. Stone and ice, cold and silent. But two of them hide oceans of salty water, deeper than any sea on Earth, wrapped around the entire globe.\n\nHow can liquid water survive where the cold is so complete? And could anything be living in it?\n\nAlong the way, you will see the cracked face of Europa. You will stand on its ice. And you will watch a spacecraft called Cassini fly straight through the geysers of Enceladus, and taste the ocean itself.\n\nNothing here is hurried. Everything here is real.\n\nOnly the dark.\n\nThere is nothing to do now but listen.\n\nLet us go down beneath the ice.",
   "review": {
-    "suggested": 23,
-    "applied": 22,
+    "suggested": 18,
+    "applied": 18,
     "fixes": [
       {
         "section": "chapter_1",
-        "find": "still be talking to us, from beyond the Sun's influence?",
-        "replace": "still be talking to us, from beyond the Sun's own bubble?",
-        "reason": "imprecise claim"
+        "find": "Far from the Sun, at the distance of Jupiter, the daylight is faint. Noon there is about as bright as a dim twilight on Earth.",
+        "replace": "At the distance of Jupiter, the Sun is a small, weak light.",
+        "reason": "repeats cold open"
       },
       {
         "section": "chapter_1",
-        "find": "Its job is to collect a radio whisper over a huge area, and funnel it into receivers chilled to extreme cold, so they add almost no noise of their own.",
-        "replace": "Its job is to collect a radio whisper over a huge area. It funnels the whisper into receivers chilled to extreme cold, so they add almost no noise of their own.",
-        "reason": "long sentence"
-      },
-      {
-        "section": "chapter_1",
-        "find": "Imagine a letter, no, think of a conversation where each sentence takes a full day to cross the room. That is what talking to Voyager is like.",
-        "replace": "It is like holding a conversation where each sentence takes a full day to cross the room.",
-        "reason": "fix stumble, remove Imagine"
-      },
-      {
-        "section": "chapter_1",
-        "find": "Note: I broke one instruction, and I should correct it. I used \"Imagine\" once in the draft (in the sentence about the letter).",
-        "replace": "",
-        "reason": "remove leftover meta note"
-      },
-      {
-        "section": "chapter_1",
-        "find": "Here is the clean version of that paragraph. When engineers send a command today, they must wait about two days to learn whether it worked.",
-        "replace": "",
-        "reason": "remove duplicate paragraph"
-      },
-      {
-        "section": "chapter_1",
-        "find": "One day for the words to go out. One day for the reply to come back. It is like holding a conversation where each sentence takes a full day to cross the room.",
-        "replace": "",
-        "reason": "remove duplicate paragraph"
+        "find": "It is tiny, only about as wide as the country of Spain is long.",
+        "replace": "It is tiny, only about five hundred kilometers across.",
+        "reason": "factual error"
       },
       {
         "section": "chapter_2",
-        "find": "It is about the size of a small car. Its antenna points back toward a blue point it can barely see.",
-        "replace": "Its antenna points back toward a blue point it can barely see.",
-        "reason": "repeated fact, inconsistent size"
+        "find": "Voyager 1 had passed Jupiter first, early in the month. Voyager 2 followed in July.",
+        "replace": "Voyager one had passed Jupiter first, early in the month. Voyager two followed in July.",
+        "reason": "TTS digits"
+      },
+      {
+        "section": "chapter_2",
+        "find": "What appeared was a ball of white ice, smooth as a cue ball, and covered with lines.",
+        "replace": "What appeared was a ball of white ice, smooth and covered with lines.",
+        "reason": "repeated cue ball"
       },
       {
         "section": "chapter_4",
-        "find": "The clue came from the edge of the outermost ring.",
-        "replace": "The clue came from the edge of a thin outer ring, called the F ring.",
-        "reason": "factual precision"
+        "find": "A metal core could not produce this pattern. Neither could frozen rock or ice.",
+        "replace": "A metal core was a poor fit for this pattern. So were frozen rock and ice.",
+        "reason": "overstated certainty"
       },
       {
         "section": "chapter_4",
-        "find": "the craft had to swing far below the plane where the planets travel.",
-        "replace": "the craft had to take a path that bent it northward, away from the plane where the planets travel.",
-        "reason": "wrong direction"
-      },
-      {
-        "section": "chapter_4",
-        "find": "The sacrifice paid off in what the rings finally revealed.",
-        "replace": "The rings, meanwhile, gave up their makeup.",
-        "reason": "faulty logic"
-      },
-      {
-        "section": "chapter_4",
-        "find": "a slow, glittering drift of snowballs, drifting past in silence.",
-        "replace": "a slow, glittering drift of snowballs, gliding by in silence.",
-        "reason": "repeated word"
-      },
-      {
-        "section": "chapter_4",
-        "find": "And beyond Saturn, the path split in two, with one craft rising away into empty space, and the other still bound for a pair of planets no one had ever seen up close.",
-        "replace": "And beyond Saturn, the path split in two. One craft was rising away into empty space, and the other was still bound for a pair of planets no one had ever seen up close.",
-        "reason": "long sentence"
+        "find": "Europa is a little smaller than our Moon. Its surface sits at about minus one hundred and sixty degrees Celsius. And somewhere under that surface, there appears to be a sea",
+        "replace": "A frozen world, and yet somewhere under that surface, there appears to be a sea",
+        "reason": "repetition"
       },
       {
         "section": "chapter_5",
-        "find": "After Saturn, its path bent upward, out of the flat disc where every planet circles the Sun. It was climbing above the plane of the solar system, and it would never come back down.",
-        "replace": "After Saturn, its path had carried it up and out of the plane where the planets circle.",
-        "reason": "repeats chapter four"
+        "find": "The dose reaching the ice is roughly equal to several hundred chest X-rays every day.",
+        "replace": "The dose reaching the ice is far beyond anything a person could survive for long.",
+        "reason": "factual error"
       },
       {
         "section": "chapter_5",
-        "find": "A few weeks later, the cameras were turned off.",
-        "replace": "Soon afterward, the cameras were turned off.",
-        "reason": "wrong timing"
+        "find": "An unprotected person on the surface would receive a deadly dose in a matter of hours, perhaps less.",
+        "replace": "An unprotected person on the surface would receive a deadly dose in about a day.",
+        "reason": "factual accuracy"
       },
       {
         "section": "chapter_6",
-        "find": "Around the Great Dark Spot they blew at more than twelve hundred kilometres an hour. That is faster than the speed of sound in our own air.",
-        "replace": "Around the Great Dark Spot they blew at roughly twelve hundred kilometres an hour. That is close to the speed of sound in our own air.",
-        "reason": "overstated number"
+        "find": "It is only about five hundred kilometers wide. Laid across Europe, it would stretch from the northern tip of Spain to the southern coast, a drive of a few days.",
+        "replace": "It is only about five hundred kilometers wide, about the distance from London to Edinburgh.",
+        "reason": "factual error"
       },
       {
         "section": "chapter_6",
-        "find": "On the coldest planet of the gas giants, where it was about minus two hundred degrees Celsius,",
-        "replace": "On a world where it was about minus two hundred degrees Celsius,",
-        "reason": "Uranus is colder"
+        "find": "roughly parallel, each about the length of a long train ride",
+        "replace": "roughly parallel, each well over a hundred kilometers long",
+        "reason": "vague and inaccurate"
       },
       {
         "section": "chapter_6",
-        "find": "and the pull of the planet reshaped it, warming its insides enough to push nitrogen to the surface.",
-        "replace": "and the pull of the planet heated and reshaped it. The plumes themselves are probably driven by faint sunlight warming nitrogen ice.",
+        "find": "Enceladus is bright because it is constantly being repainted. Its surface is coated with fresh ice grains, falling back from space.",
+        "replace": "Enceladus is bright because it is constantly being repainted with fresh ice.",
+        "reason": "repetition"
+      },
+      {
+        "section": "chapter_7",
+        "find": "Something hot must be happening on the floor of that hidden sea.",
+        "replace": "Hot water on the floor of that hidden sea is the likeliest explanation.",
         "reason": "overstated certainty"
       },
       {
         "section": "chapter_7",
-        "find": "In the spring of twenty twelve, the counts began to change in a way nobody had seen before.",
-        "replace": "In twenty twelve, the counts began to change in a way nobody had seen before.",
-        "reason": "date inconsistency"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Then, in the autumn of twenty twelve, the instruments began to disagree with the old picture.",
-        "replace": "Then, in the summer of twenty twelve, the instruments began to disagree with the old picture.",
-        "reason": "date inconsistency"
+        "find": "Only one arrangement fits. The ice shell floats free,",
+        "replace": "The best explanation is that the ice shell floats free,",
+        "reason": "overstated certainty"
       },
       {
         "section": "chapter_8",
-        "find": "They might never hear the lullaby.",
-        "replace": "They might never hear the greetings.",
-        "reason": "no lullaby mentioned"
-      },
-      {
-        "section": "chapter_9",
-        "find": "The gold on the record's cover is protected from the worst of it.",
-        "replace": "The record itself is sheltered by its cover from the worst of it.",
+        "find": "Nine hundred meters down in the Pacific",
+        "replace": "Two and a half kilometers down in the Pacific",
         "reason": "factual error"
       },
       {
-        "section": "chapter_9",
-        "find": "Voyager 2 will make a similar pass near another star, in roughly the same span of time, about forty thousand years away as well.",
-        "replace": "Voyager 2 will make a similar pass near the star Ross 248, also in about forty thousand years.",
-        "reason": "repetition, specificity"
+        "section": "chapter_8",
+        "find": "That was the scene in eighteen seventy-seven",
+        "replace": "That was the scene in nineteen seventy-seven",
+        "reason": "wrong year"
       },
       {
         "section": "chapter_9",
-        "find": "Human beings have not existed in their present form for much longer than that.",
-        "replace": "Modern humans have existed for only about three hundred thousand years.",
-        "reason": "factual error"
+        "find": "It will not orbit Europa. The radiation near Jupiter is too harsh for that. Instead, Clipper will circle Jupiter",
+        "replace": "Clipper will circle Jupiter",
+        "reason": "repetition"
+      },
+      {
+        "section": "chapter_9",
+        "find": "Europe's own mission, called JUICE,",
+        "replace": "Europe's own mission, called Juice,",
+        "reason": "TTS acronym"
+      },
+      {
+        "section": "chapter_9",
+        "find": "the way those grains of ice settle into Saturn's ring",
+        "replace": "the way those grains of ice settle onto Enceladus",
+        "reason": "accuracy"
       }
     ]
   },
-  "topic": "Voyager 1 and 2: the long journey into interstellar space",
+  "topic": "Europa and Enceladus: the hidden oceans where life might exist",
   "shorts": [
     {
-      "title": "The Voice That Takes a Day to Reach Earth",
-      "hook": "A whisper from twenty billion kilometres",
-      "narration": "A machine built in the nineteen seventies is still talking to us, and its voice is weaker than a billionth of a billionth of a watt. Voyager 1 is more than twenty billion kilometres from the Sun, and it transmits with about as much power as a refrigerator light bulb. By the time that signal reaches Earth, almost nothing is left. A watch battery gives off far more power every second. To catch it, enormous dishes in California, Spain and Australia listen as the planet turns, and chilled receivers pull the pattern out of the hiss. It is like hearing one person whisper in a stadium from the far side of the city. And the message takes a full day to arrive. The full journey of the Voyagers is waiting on the channel.",
+      "title": "The Moon Where Tides Turn Rock Into Heat",
+      "hook": "A moon squeezed like a paperclip",
+      "narration": "Bend a paperclip back and forth, and it gets warm. Now imagine doing that to an entire moon. Europa circles Jupiter on a slightly stretched orbit, so Jupiter's gravity pulls harder, then softer, again and again. The ice and rock flex by about thirty meters on every orbit. That constant kneading turns motion into heat. It is not enough to melt rock, as on its neighbor Io. It is just enough to keep water from freezing. So beneath a shell of ice, far from the Sun, a hidden ocean may have stayed liquid for billions of years, and it may hold twice as much water as all of Earth's oceans combined. A frozen world, held open by the pull of a planet. The full journey to these hidden oceans is waiting on the channel.",
       "image_queries": [
-        "Voyager 1 spacecraft",
-        "Deep Space Network antenna Canberra",
-        "Deep Space Network seventy metre dish Goldstone",
-        "Voyager spacecraft high gain antenna"
+        "Europa icy surface Galileo",
+        "Europa moon Jupiter",
+        "Europa chaos terrain ice rafts",
+        "Jupiter moons Io Europa Ganymede"
       ],
       "video_queries": [
-        "Voyager spacecraft animation",
-        "Deep Space Network dish tracking spacecraft"
+        "Europa moon ocean animation",
+        "Europa Clipper mission Jupiter"
       ]
     },
     {
-      "title": "A Pale Blue Speck Smaller Than a Single Pixel",
-      "hook": "Everyone you know is on this pixel",
-      "narration": "Everyone who ever lived is inside a single pixel. On the fourteenth of February, nineteen ninety, Voyager 1 turned around from about six billion kilometres away and took one last look at home. Earth was less than one pixel wide, a pale blue speck caught in a streak of scattered sunlight. The beam was only a flaw in the camera lens, yet it looks like a tiny world held in a shaft of light, in the middle of a great dark room. Every king, every farmer, every song and every goodbye happened on that small point. From there, you could lose it by blinking. The full journey of the Voyagers is waiting on the channel.",
+      "title": "This Tiny Moon Is Brighter Than Fresh Snow",
+      "hook": "A moon repainted by its own geysers",
+      "narration": "One small moon at Saturn reflects more light than fresh snow. Enceladus is only about five hundred kilometers wide, about the distance from London to Edinburgh. So why does it shine so brightly? Because it is constantly being repainted. From long cracks at its south pole, jets of ice rise hundreds of kilometers into space, and fine grains fall back like a gentle snow. When the Cassini spacecraft flew through them, it tasted salt, silica, and hydrogen. Those are signs of a hidden ocean touching warm rock, the same recipe that feeds life around deep sea vents on Earth. No one knows if anything lives there. The full journey to Enceladus is waiting on the channel.",
       "image_queries": [
-        "Pale Blue Dot Voyager 1",
-        "Family portrait solar system Voyager 1 1990",
-        "Earth from six billion kilometres Voyager",
-        "Voyager 1 camera Earth pixel"
+        "Enceladus plumes south pole Cassini",
+        "Enceladus tiger stripes",
+        "Enceladus backlit geysers Saturn",
+        "Enceladus E ring Saturn"
       ],
       "video_queries": [
-        "Pale Blue Dot Voyager 1 animation",
-        "Voyager 1 family portrait solar system"
+        "Enceladus geysers Cassini flyby",
+        "Enceladus plume animation ocean"
       ]
     }
   ]
