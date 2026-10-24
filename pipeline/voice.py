@@ -17,7 +17,8 @@ SENTENCE = re.compile(r"(?<=[.!?…])\s+")
 LEAD = 1.2          # silence before the first word
 TITLE_GAP = 8.0     # opening title card (no narration)
 CHAPTER_LEAD = 1.4  # chapter card fades in before the voice starts
-OUTRO = 12.0        # end card + music tail
+OUTRO = 12.0
+EPISODE_CUE_CHARS = 170   # one caption cue per sentence (see chunk_words); Shorts pass their own short value        # end card + music tail
 
 
 class Voice:
@@ -225,13 +226,26 @@ def paragraphs(text):
 
 
 def chunk_words(sentence, max_chars):
-    words, chunks, cur = sentence.split(), [], ""
-    for w in words:
-        if cur and len(cur) + len(w) + 1 > max_chars:
+    """Split a sentence into caption cues of at most max_chars, cutting at commas/semicolons first and only then
+    between words. Long episodes use whole sentences (max_chars 170): YouTube's automatic dubbing uses these
+    captions as its script, and cues that break mid-phrase made the English dub cut words off (Luis, 24-oct)."""
+    if len(sentence) <= max_chars:
+        return [sentence]
+    parts = [x.strip() for x in re.split(r"(?<=[,;:])\s+", sentence) if x.strip()]
+    chunks, cur = [], ""
+    for part in parts:
+        if cur and len(cur) + len(part) + 1 > max_chars:
             chunks.append(cur)
-            cur = w
+            cur = ""
+        if len(part) > max_chars:                      # a clause still too long: split between words
+            for w in part.split():
+                if cur and len(cur) + len(w) + 1 > max_chars:
+                    chunks.append(cur)
+                    cur = w
+                else:
+                    cur = f"{cur} {w}".strip()
         else:
-            cur = f"{cur} {w}".strip()
+            cur = f"{cur} {part}".strip()
     if cur:
         chunks.append(cur)
     return chunks
@@ -269,13 +283,13 @@ class Track:
         self.parts.append(a)
         self.n += len(a)
 
-    def speech(self, audio, sentence, max_chars=84):
+    def speech(self, audio, sentence, max_chars=EPISODE_CUE_CHARS):
         start = self.t
         self.parts.append(audio)
         self.n += len(audio)
         self.cues += timed_chunks(start, self.t, sentence, max_chars)
 
-    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=84, unit="sentence", inner_end=None,
+    def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=EPISODE_CUE_CHARS, unit="sentence", inner_end=None,
              pitch_edit=None, reveal_pause=0.0):
         paras = paragraphs(text)
         for pi, p in enumerate(paras):
