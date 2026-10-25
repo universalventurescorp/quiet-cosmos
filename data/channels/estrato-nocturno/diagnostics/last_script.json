@@ -1,496 +1,533 @@
 {
-  "title": "Venus: el infierno brillante | Documental relajante para dormir",
-  "description": "Venus: el infierno brillante bajo nubes de ácido sulfúrico es un viaje calmado y cinematográfico por el planeta más caliente del sistema solar, pensado para relajarte, aprender ciencia real y quedarte dormido mientras la voz te acompaña. Recorreremos su cielo cubierto, su superficie de roca al rojo, sus volcanes, su pasado quizá oceánico y las sondas que lograron asomarse a su interior.\n\nUna hora de narración tranquila con las mejores imágenes reales de la NASA, la ESA y otras agencias: desde el lucero del atardecer de los antiguos hasta las misiones que volverán a Venus. Apaga las luces, respira hondo y deja que el planeta gemelo de la Tierra te cuente cómo un mundo parecido al nuestro terminó convertido en un horno.",
+  "title": "Mercurio: el planeta más cercano al Sol | Documental relajante para dormir",
+  "description": "Mercurio, el planeta más cercano al Sol, es un mundo pequeño, antiguo y lleno de contrastes. En este documental relajante para dormir recorremos su superficie marcada por cráteres, su núcleo sorprendentemente grande y sus extremos de calor y frío, con imágenes reales de las misiones Mariner 10, MESSENGER y BepiColombo.\n\nAvanzaremos con calma desde la mirada de los antiguos observadores hasta el interior del planeta, pasando por llanuras de lava, cuencas gigantes y cráteres donde la luz del Sol nunca llega. Una narración tranquila, con datos reales y sin prisas, para aprender algo nuevo mientras te dejas llevar hacia el sueño.",
   "tags": [
-    "Venus documental",
-    "Venus planeta",
+    "Mercurio documental",
+    "Mercurio el planeta más cercano al Sol",
     "documental espacio para dormir",
     "documental relajante espacio",
-    "cómo es Venus",
-    "Venus ácido sulfúrico",
-    "Venus superficie",
-    "Venus efecto invernadero",
-    "Venus Magallanes",
-    "Venus Venera sondas",
-    "planeta más caliente del sistema solar",
-    "documental sistema solar",
-    "espacio para dormir",
-    "viaje por el espacio relajante",
-    "Venus y la Tierra gemelos",
-    "Akatsuki Venus",
-    "DAVINCI Venus"
+    "planeta Mercurio",
+    "sistema solar documental",
+    "Mercurio cráteres",
+    "MESSENGER Mercurio",
+    "Mariner 10",
+    "BepiColombo",
+    "hielo en Mercurio",
+    "cuenca Caloris",
+    "viaje por el sistema solar para dormir",
+    "documental del espacio en español",
+    "narración relajante ciencia",
+    "planetas del sistema solar",
+    "Mercurio y el Sol",
+    "astronomía para dormir"
   ],
   "thumbnail_texts": [
-    "BAJO LAS NUBES",
-    "EL GEMELO CALCINADO",
-    "LLUEVE ÁCIDO"
+    "DONDE EL SOL QUEMA",
+    "HIELO JUNTO AL SOL",
+    "EL MUNDO ENCOGIDO"
   ],
-  "hook_promise": "Venus, casi del tamaño de la Tierra, pudo haber tenido océanos templados durante miles de millones de años antes de convertirse en un mundo de roca a 465 °C donde las sondas soviéticas sobrevivieron apenas el tiempo de enviar unas fotos de su suelo.",
+  "hook_promise": "En el planeta más cercano al Sol, donde la superficie supera los 400 grados, hay cráteres en los polos tan profundos y oscuros que guardan hielo de agua desde hace miles de millones de años.",
   "chapters": [
     {
-      "title": "El lucero que nunca se apaga",
-      "question": "¿Por qué el astro más brillante del cielo después de la Luna parece un faro tranquilo y no revela nada de lo que esconde?",
-      "reveal": "Esa luz serena es luz solar reflejada por una capa de nubes tan espesa que oculta por completo la superficie del planeta.",
+      "title": "Un punto de luz junto al Sol",
+      "question": "¿Por qué fue tan difícil que la humanidad llegara a conocer el planeta más cercano al Sol?",
+      "reveal": "Durante siglos Mercurio fue apenas una chispa fugaz en el crepúsculo, y su verdadero rostro no se vio de cerca hasta 1974.",
       "beats": [
-        "Venus como lucero del alba y del atardecer, visible a simple vista desde siempre",
-        "Los antiguos creyeron que eran dos astros distintos; las culturas mesoamericanas, babilonias y griegas lo observaron con detalle",
-        "Sus fases vistas por Galileo, una prueba a favor de que los planetas giran en torno al Sol",
-        "Por qué brilla tanto: cercanía y un albedo muy alto por las nubes",
-        "Los telescopios solo mostraban un disco blanco sin rasgos",
-        "Durante siglos se imaginaron selvas y océanos bajo esa cubierta, hasta que la ciencia lo desmintió"
+        "Mercurio se ve a simple vista, pero siempre cerca del horizonte, poco antes del amanecer o después del atardecer.",
+        "Los antiguos lo observaron y lo registraron; los griegos lo llegaron a considerar dos astros distintos, uno de la mañana y otro de la tarde.",
+        "Por su cercanía angular al Sol, solo se ve unos minutos entre el resplandor y el horizonte, y los telescopios terrestres lo muestran borroso.",
+        "Hasta mediados del siglo XX se creyó que mostraba siempre la misma cara al Sol; las observaciones por radar lo corrigieron.",
+        "Mercurio completa una órbita alrededor del Sol en unos 88 días terrestres, la más corta de todos los planetas.",
+        "Es el planeta más pequeño del sistema solar y apenas algo mayor que la Luna."
       ],
       "ambience": "none",
       "image_queries": [
-        "Venus planet Mariner 10",
-        "Venus full disk clouds",
-        "Venus crescent Akatsuki",
-        "Venus Magellan global view",
-        "Venus evening sky Earth",
-        "Venus ultraviolet clouds",
-        "Venus Pioneer Venus orbiter",
-        "Venus Hubble",
-        "Venus Earth comparison size",
-        "Venus night side glow"
+        "Mercury planet MESSENGER",
+        "Mercury global mosaic MESSENGER",
+        "Mercury crescent MESSENGER",
+        "Mercury color enhanced MESSENGER",
+        "Mercury Mariner 10",
+        "Mercury and Sun solar system",
+        "Mercury transit Sun",
+        "Mercury twilight",
+        "Mercury planet full disk",
+        "Mercury limb MESSENGER"
       ],
       "video_queries": [
-        "Venus rotation visualization NASA",
-        "Venus Akatsuki clouds animation",
-        "Solar system planets orbit animation"
+        "Mercury rotating globe MESSENGER",
+        "Mercury transit Sun SDO",
+        "solar system planets orbit animation"
       ],
-      "text": "Hay una hora, justo después de la puesta del Sol, en que el cielo aún conserva un azul pálido y las estrellas no se han decidido a salir. Entonces, sobre el horizonte del oeste, aparece un punto de luz blanca. No parpadea. No tiembla. Está ahí, firme y sereno, como un faro que alguien dejó encendido para ti.\n\nEs Venus. Después de la Luna, ningún otro astro brilla tanto en el cielo nocturno. Y sin embargo, esa luz tan clara parece no decir nada de sí misma. ¿Por qué una luz tan brillante se muestra tan tranquila, y no deja ver nada de lo que esconde?\n\nDurante toda la historia humana, nadie necesitó un telescopio para verlo. Unas veces aparece al atardecer, y se le llama lucero de la tarde. Otras veces aparece antes del amanecer, y se le llama lucero del alba. Así ha sido desde que hay ojos mirando hacia arriba.\n\nLos antiguos creyeron que eran dos astros distintos. Uno acompañaba a la noche que llegaba, y el otro anunciaba el día. Pero los observadores más pacientes notaron algo. Cuando uno desaparecía, el otro tardaba en aparecer, y nunca se veían a la vez.\n\nLos babilonios llevaron registros de Venus durante siglos, grabados en tablillas de arcilla. Los pueblos mesoamericanos, entre ellos los mayas, siguieron sus apariciones con tanta exactitud que calcularon su ciclo con un error muy pequeño. Los griegos, por su parte, terminaron por entender que ambos luceros eran un mismo mundo, que cambiaba de lado respecto al Sol.\n\nAun así, nadie sabía qué era Venus. Hacia el año mil seiscientos diez, Galileo Galilei apuntó su pequeño telescopio hacia él. Y vio algo que ningún ojo humano había visto antes.\n\nVenus tenía fases, igual que la Luna.\n\nUnas veces era una media luna delgada. Otras, un disco casi completo, pero más pequeño y lejano. Esto solo tenía sentido si Venus giraba alrededor del Sol, y no alrededor de la Tierra. Era una de las pruebas más claras de que los planetas daban vueltas en torno a nuestra estrella. Una luz de la tarde había cambiado la forma en que entendemos el cielo.\n\nPero queda la pregunta de su brillo. Venus es el planeta que más se acerca a nosotros, y en algunos momentos pasa a unos cuarenta millones de kilómetros. Eso es poco, a escala del sistema solar. Pero la cercanía no basta para explicarlo.\n\nEl otro motivo es lo que hay en su superficie visible. Venus refleja cerca de las tres cuartas partes de la luz del Sol que recibe. Es como un espejo opaco y muy blanco. La Tierra, con sus océanos oscuros y sus nubes cambiantes, refleja apenas cerca de un tercio.\n\nCon los telescopios, ese brillo se volvía un enigma. Por más que se mejoraran las lentes, Venus seguía siendo un disco blanco, liso, sin una mancha, sin una montaña, sin una costa. Los astrónomos lo miraban noche tras noche, y el planeta no les daba nada.\n\nY donde no hay datos, la imaginación trabaja. Durante siglos, muchos pensaron que bajo esa cubierta debía haber un mundo parecido al nuestro. Se hablaba de selvas densas, de pantanos tibios, de océanos enormes. Incluso se escribieron novelas con criaturas que vivían allí, bajo un cielo permanentemente nublado.\n\nEra una idea cálida, casi amable. Venus como una Tierra más húmeda, esperando bajo su manto blanco.\n\nPero la ciencia, poco a poco, la fue desmintiendo.\n\nLo que veías aquella tarde, ese punto sereno sobre el horizonte, no era el brillo de un mundo en calma. Era luz del Sol, rebotada en una capa de nubes tan espesa que oculta por completo la superficie. Ninguna mirada, ni siquiera la de un telescopio, podía atravesarla.\n\nAsí que esa quietud no era paz. Era un velo. Y detrás de él, el planeta guardaba algo que nadie había imaginado, y que tardaríamos mucho en descubrir."
+      "text": "Si sales a caminar una tarde clara y miras hacia donde acaba de ocultarse el Sol, quizá veas algo muy pequeño. Un punto de luz, apenas por encima del horizonte, sin parpadear mucho y con un tono ligeramente cálido. No es una estrella. Es Mercurio.\n\nEstá ahí a simple vista, al alcance de cualquiera. Sin embargo, casi nadie lo ha visto nunca. Aparece poco antes del amanecer o poco después del atardecer, siempre pegado al horizonte, como si no quisiera alejarse de la luz que lo gobierna. Entonces surge la pregunta: ¿por qué fue tan difícil conocer un mundo que está tan a la vista?\n\nLos antiguos sí lo miraron. Lo registraron con paciencia en tablillas y en calendarios, noche tras noche, durante siglos. Pero había algo extraño en su comportamiento. Lo veían en el cielo del amanecer durante unas semanas, luego desaparecía, y más tarde reaparecía en el del atardecer.\n\nLos griegos llegaron a pensar que eran dos astros distintos. Uno era el de la mañana, el otro el de la tarde, y cada uno tenía su propio nombre. Tardaron en comprender que se trataba de un solo cuerpo, que iba y venía de un lado a otro del Sol.\n\nY ese vaivén era la clave del problema. Visto desde la Tierra, Mercurio nunca se aleja mucho del Sol en el cielo. Por eso solo se deja ver un rato breve, atrapado entre el resplandor del día que se va y la línea del horizonte.\n\nPiensa en lo que eso significa para un observador. Debe esperar con el telescopio listo, mirar a través de una capa gruesa de aire cercano al suelo y aprovechar un instante breve. Esa capa de aire tiembla y deforma la imagen. El resultado era siempre el mismo: una mancha borrosa, sin detalles, que no permitía decir nada seguro sobre su superficie.\n\nY aun así, la gente creyó saber algo. Durante mucho tiempo, hasta mediados del siglo veinte, se pensó que Mercurio mostraba siempre la misma cara al Sol. Una mitad en luz eterna, la otra en noche perpetua. Era una idea sencilla, razonable, y parecía confirmada por las pocas manchas que se alcanzaban a distinguir.\n\nPero estaba equivocada.\n\nFueron las ondas de radar las que lo corrigieron. Se enviaron desde la Tierra, rebotaron en la superficie del planeta y regresaron con una pista: Mercurio sí gira, aunque muy despacio. Sus dos mitades reciben luz del Sol a su debido tiempo. Lo que durante siglos se había visto con los ojos fue desmentido por un eco invisible.\n\nMientras tanto, el planeta seguía con su trayectoria, indiferente a todo lo que se decía sobre él. Rodea al Sol en unos ochenta y ocho días terrestres. Es la órbita más corta de todas. En poco menos de tres meses, Mercurio ya ha completado un año entero, mientras que la Tierra apenas ha recorrido una cuarta parte del suyo.\n\nTampoco es grande. Es el más pequeño de los planetas del sistema solar, y algo mayor que nuestra Luna. Si pudieras ponerlos uno junto al otro, notarías enseguida la semejanza. Un mundo diminuto, cercano a una fuente de luz enorme, y muy difícil de distinguir en su resplandor.\n\nQuizá ahora entiendas por qué tardó tanto en revelarse. Era pequeño, estaba lejos para nuestros ojos, y vivía casi siempre escondido en el brillo del Sol. Durante siglos fue solo una chispa fugaz en el crepúsculo.\n\nSu verdadero rostro no se vio de cerca hasta mil novecientos setenta y cuatro.\n\nHasta ese año, todo lo que sabíamos de Mercurio lo habíamos deducido desde muy lejos. Con paciencia, con ingenio, con ecos de radar. Pero nadie había visto de cerca su suelo, ni sus montañas, ni las marcas que el tiempo le había dejado. Hacía falta algo más que mirar desde la Tierra. Hacía falta ir.\n\nY para llegar hasta allí, una pequeña nave tendría que aprender a usar la gravedad de otro planeta."
     },
     {
-      "title": "Un gemelo que no se parece",
-      "question": "Si Venus es casi del mismo tamaño y masa que la Tierra, ¿por qué es tan distinto?",
-      "reveal": "Venus y la Tierra nacieron como mundos muy parecidos, y solo pequeñas diferencias en su historia los separaron en destinos opuestos.",
+      "title": "Los primeros ojos: Mariner 10",
+      "question": "¿Qué vio la primera sonda que se acercó a Mercurio?",
+      "reveal": "Mariner 10 mostró en 1974 un mundo cubierto de cráteres que se parecía a la Luna, pero que escondía diferencias profundas.",
       "beats": [
-        "Comparación de diámetro, masa y gravedad: Venus tiene cerca del 95 % del diámetro terrestre",
-        "Nacimiento de ambos planetas en el disco de gas y polvo alrededor del joven Sol",
-        "Composición rocosa y núcleo metálico similares, según los modelos",
-        "Venus recibe más luz solar, pero no es la única razón de la diferencia",
-        "Qué nos enseña un gemelo fallido sobre qué hace habitable a un planeta",
-        "Plantamos la pregunta: ¿pudo Venus haber sido habitable?"
+        "Mariner 10 fue la primera sonda en visitar Mercurio, tras usar la gravedad de Venus para llegar hasta allí.",
+        "Fue también la primera misión en usar una asistencia gravitatoria para alcanzar otro planeta.",
+        "Sus tres sobrevuelos, entre 1974 y 1975, fotografiaron cerca de la mitad de la superficie.",
+        "Las imágenes revelaron cráteres, llanuras y largos acantilados que recorrían el planeta.",
+        "Detectó un campo magnético, algo inesperado para un mundo tan pequeño.",
+        "Quedó pendiente la otra mitad del planeta, que tardaría décadas en verse."
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Venus Earth comparison",
-        "Earth Venus Mars Mercury comparison",
-        "Solar system formation protoplanetary disk",
-        "Protoplanetary disk ALMA",
-        "Venus Mariner 2",
-        "Venus Magellan radar",
-        "Earth Blue Marble",
-        "Venus interior illustration",
-        "Young Sun protoplanetary disk Hubble",
-        "Terrestrial planets inner solar system"
+        "Mariner 10 Mercury",
+        "Mariner 10 spacecraft",
+        "Mercury Mariner 10 mosaic",
+        "Mercury cratered surface Mariner 10",
+        "Mercury Venus gravity assist",
+        "Mercury first flyby images",
+        "Mercury cratered terrain",
+        "Mercury half globe Mariner",
+        "Mercury terminator craters",
+        "Mercury Mariner 10 flyby"
       ],
       "video_queries": [
-        "Inner solar system planets size comparison",
-        "Protoplanetary disk formation visualization",
-        "Earth rotating from space NASA"
+        "Mariner 10 Mercury flyby animation",
+        "Mercury flyby visualization",
+        "Mercury surface MESSENGER flyover"
       ],
-      "text": "En el museo de historia natural de una ciudad cualquiera, dos esferas descansan una junto a la otra, sobre una mesa baja. Una es azul y blanca. La otra es de un amarillo pálido, casi liso. Si las miras de lejos, apenas notas la diferencia de tamaño.\n\nEsa es la primera sorpresa. Venus mide cerca del noventa y cinco por ciento del diámetro de la Tierra. Si pudieras caminar alrededor de cada uno, el paseo por Venus sería apenas un poco más corto. Su masa llega a unos ocho de cada diez de la nuestra, y la gravedad en su superficie es casi la misma. Un objeto que dejas caer allí cae casi igual que aquí. Tu cuerpo apenas notaría el cambio.\n\nEntonces aparece la pregunta que incomoda. Si Venus es casi del mismo tamaño y de una masa tan parecida, ¿por qué es un mundo tan distinto?\n\nPara buscar la respuesta, hay que volver al principio. Hace unos cuatro mil seiscientos millones de años, el Sol era una estrella recién encendida. A su alrededor giraba un disco enorme de gas y polvo, plano y lento, como el remolino que deja una cuchara en el café. En ese disco, los granos de polvo se rozaban, se pegaban y crecían. Primero fueron guijarros. Después, rocas del tamaño de una montaña. Al final, mundos enteros.\n\nVenus y la Tierra se formaron en la misma región de ese disco, a poca distancia una de otra. Comieron del mismo material. Eran, en el sentido más literal, hermanas de una misma cuna.\n\nLos modelos dicen que por dentro también se parecen. No podemos perforar Venus, y ningún sismógrafo ha escuchado todavía su interior. Pero por su tamaño y su densidad, los científicos calculan que tiene un manto de roca y, en el centro, un núcleo de hierro y níquel, quizá en parte líquido. Es la misma estructura que late bajo tus pies, en capas, como una cebolla enterrada.\n\nHasta aquí, todo apunta a dos gemelas. Y sin embargo, una tiene océanos, nubes de agua y un cielo azul. La otra tiene un suelo capaz de fundir el plomo.\n\nPodrías pensar que la culpa es de la distancia. Venus está más cerca del Sol, y recibe cerca del doble de luz que la Tierra. Pero esa no es toda la historia. Gracias a sus nubes tan brillantes, Venus devuelve al espacio la mayor parte de esa luz. En realidad, absorbe menos energía solar que nosotros. Con las cuentas simples, su superficie debería ser fría.\n\nNo lo es. Algo ocurrió en su atmósfera, y ese algo no depende solo de cuánta luz llega.\n\nAquí está lo que un gemelo fallido puede enseñarnos. Un planeta no es habitable por su tamaño, ni solo por su lugar en el mapa. Importa cuánta agua conserva, hacia dónde va su carbono, cómo respira su interior. Importan pequeñas cosas que se suman durante millones de años, hasta que ya no hay vuelta atrás.\n\nEsa es la lección que Venus guarda para nosotros.\n\nVenus y la Tierra nacieron como mundos muy parecidos, y solo pequeñas diferencias en su historia los separaron en destinos opuestos.\n\nPiénsalo despacio. Nada en su nacimiento condenaba a Venus. Nada aseguraba que la Tierra se salvara. El cielo azul que ves por la ventana es, en parte, fruto de un equilibrio frágil, que pudo romperse de otro modo.\n\nY eso nos deja ante una pregunta más grande. Si empezaron tan parecidas, ¿pudo Venus haber sido alguna vez un lugar habitable? ¿Hubo, hace mucho, un tiempo en que alguien, parado en su orilla, habría visto un mar tranquilo bajo un cielo suave?\n\nNadie lo sabe con certeza. Pero hay huellas en el aire de Venus, pequeñas y casi borradas, que podrían contarnos si ese mar existió."
+      "text": "En mil novecientos setenta y tres, en una sala llena de pantallas y cables, un grupo de ingenieros esperaba una señal que tardaría minutos en cruzar el espacio. Querían saber si una nave del tamaño de un automóvil pequeño había sobrevivido al viaje. Esa nave se llamaba Mariner diez, y llevaba una tarea que nadie había intentado antes: llegar hasta Mercurio.\n\nPero ¿qué iba a encontrar allí? Hasta ese momento, nadie lo sabía. Los mejores telescopios de la Tierra mostraban apenas una mancha borrosa, pegada al resplandor del Sol.\n\nEl camino era difícil por una razón sencilla. Mercurio está tan cerca del Sol que caer hacia él exige mucha energía, y frenar después es todavía más costoso. Una nave lanzada directamente hacia allí pasaría demasiado rápido para observar nada.\n\nAsí que los ingenieros hicieron algo ingenioso. Enviaron a Mariner diez primero hacia Venus, y allí dejaron que la gravedad del planeta la desviara y la frenara. Fue la primera vez que una misión usaba una asistencia gravitatoria para alcanzar otro mundo.\n\nPiensa en un niño que se agarra a un poste en movimiento y gira a su alrededor. Cambia de dirección sin gastar casi nada de fuerza. Algo parecido hizo la nave con Venus.\n\nFuncionó.\n\nEn marzo de mil novecientos setenta y cuatro, Mariner diez pasó por primera vez junto a Mercurio. Volaba a unos setecientos kilómetros de la superficie, una altura que un coche recorrería en unas pocas horas de carretera. Sus cámaras empezaron a trabajar, y las primeras imágenes viajaron de vuelta a la Tierra, lentas, línea por línea.\n\nDespués vinieron otros dos encuentros. La nave regresó en septiembre de ese año y de nuevo en marzo de mil novecientos setenta y cinco. Entre los tres sobrevuelos fotografió cerca de la mitad de la superficie del planeta.\n\n¿Y qué mostraban esas fotografías? A primera vista, algo familiar. Cráteres, miles de ellos, de todos los tamaños, apilados unos sobre otros. Un paisaje gris y quieto que recordaba muchísimo a la Luna.\n\nAlgunos científicos sonrieron al verlo. Parecía que Mercurio era simplemente otra Luna, un poco más cerca del Sol. Pero las imágenes seguían llegando, y había detalles que no encajaban.\n\nEntre los cráteres se extendían llanuras suaves, como si en algún momento la lava hubiera cubierto el terreno y lo hubiera alisado. Y por la superficie corrían largos acantilados, líneas elevadas que cruzaban cráteres enteros y seguían durante cientos de kilómetros. En la Luna no había nada parecido.\n\nEstas cicatrices parecían contar una historia propia. Algo había sucedido en este planeta después de que los cráteres se formaron, y nadie sabía todavía qué.\n\nLuego llegó otra sorpresa, esta vez de los instrumentos y no de las cámaras. Mariner diez detectó un campo magnético alrededor de Mercurio.\n\nEra débil, pero estaba allí.\n\nEsto no se esperaba. La Tierra tiene un campo magnético porque posee un núcleo de metal en movimiento. Se pensaba que un mundo tan pequeño se habría enfriado hace mucho y se habría apagado por dentro. Mercurio parecía decir otra cosa.\n\nAsí, en mil novecientos setenta y cuatro, Mariner diez mostró un mundo cubierto de cráteres que se parecía a la Luna, pero que escondía diferencias profundas. Lo que parecía un gemelo de nuestro vecino más cercano resultaba ser algo distinto. Tenía un corazón todavía activo y una piel marcada por fuerzas que apenas empezábamos a imaginar.\n\nHay algo hermoso en eso. A veces miramos un mundo lejano y creemos reconocerlo, y es solo al acercarnos cuando descubrimos que tiene su propia historia.\n\nPero la nave se quedó sin combustible para sus pequeños motores de orientación. Dejó de responder en mil novecientos setenta y cinco, y sigue girando alrededor del Sol, silenciosa, como un recuerdo.\n\nY la otra mitad de Mercurio quedó en la sombra. Cada vez que la nave regresaba, el planeta le mostraba la misma cara, por una razón que tardaríamos en entender. Esa mitad escondida tendría que esperar décadas, hasta que otra nave llegara para mirarla."
     },
     {
-      "title": "Cómo se descubrió el infierno",
-      "question": "¿Cómo supimos qué hay bajo las nubes si ninguna cámara podía verlo?",
-      "reveal": "Los radiotelescopios y las primeras sondas midieron que la superficie estaba a unos 465 °C, mucho más caliente que un horno doméstico y que el plomo derretido.",
+      "title": "Un mundo de cráteres",
+      "question": "¿Por qué la superficie de Mercurio parece una cicatriz de miles de millones de años?",
+      "reveal": "Sin una atmósfera que la proteja ni agua que la borre, la superficie de Mercurio conserva el registro de impactos de casi toda la historia del sistema solar.",
       "beats": [
-        "Las primeras hipótesis de un Venus tropical y húmedo",
-        "Mediciones con radiotelescopios en los años 50 que sugerían temperaturas muy altas",
-        "Mariner 2 en 1962, la primera sonda en sobrevolar otro planeta, confirma el calor",
-        "Las misiones soviéticas Venera descienden y miden la presión, unas 90 veces la terrestre",
-        "Venera 7 transmite desde la superficie en 1970",
-        "Venera 13 y 14 envían las primeras fotos en color del suelo en 1982"
+        "Mercurio casi no tiene atmósfera, así que los meteoritos llegan hasta el suelo sin frenarse.",
+        "Los cráteres se conservan durante mucho tiempo porque no hay lluvia, viento ni océanos que los erosionen.",
+        "Hay cráteres de todos los tamaños, algunos con picos centrales y terrazas en sus paredes.",
+        "Contar cráteres permite estimar la edad relativa de cada región: más cráteres significa terreno más antiguo.",
+        "Muchos cráteres llevan nombres de artistas, escritores y músicos, según la convención de la Unión Astronómica Internacional.",
+        "Los rayos brillantes de material expulsado se extienden a gran distancia alrededor de los cráteres más jóvenes."
       ],
       "ambience": "none",
       "image_queries": [
-        "Mariner 2 Venus",
-        "Venera 13 surface Venus",
-        "Venera 14 panorama",
-        "Venus surface Venera lander",
-        "Pioneer Venus multiprobe",
-        "Magellan spacecraft Venus",
-        "Venus radar image Magellan",
-        "Arecibo radio telescope",
-        "Goldstone radio telescope",
-        "Venus surface rocks Venera"
+        "Mercury craters MESSENGER",
+        "Mercury crater central peak",
+        "Mercury ray crater",
+        "Mercury heavily cratered terrain",
+        "Mercury impact crater close up",
+        "Mercury crater walls terraces",
+        "Mercury surface mosaic craters",
+        "Mercury colorful craters",
+        "Mercury hollows crater",
+        "Mercury crater chain"
       ],
       "video_queries": [
-        "Venus mission history animation",
-        "Magellan radar Venus flyover",
-        "Venera lander descent animation"
+        "Mercury crater flyover MESSENGER",
+        "Mercury surface zoom animation",
+        "Mercury topography visualization"
       ],
-      "text": "Durante siglos, quien miraba Venus a través de un telescopio veía lo mismo: un disco blanco, liso, sin una sola sombra. Ninguna montaña, ningún mar, ni siquiera una grieta entre las nubes. Era como mirar una bola de algodón iluminada por detrás.\n\nY sin embargo, la gente seguía imaginando. Durante buena parte de los años de mil novecientos veinte y treinta, muchos científicos pensaban en un mundo tibio, húmedo, quizá cubierto de pantanos. Una Tierra algo más calurosa, con lluvias constantes y vegetación espesa. Era una idea razonable, porque Venus está más cerca del Sol y tiene casi nuestro tamaño.\n\nPero había un problema. Nadie podía comprobarlo. La luz visible rebota en las nubes y no llega más abajo. Entonces, ¿cómo supimos qué hay bajo esas nubes, si ninguna cámara podía verlo?\n\nLa respuesta llegó por otro camino. No con luz que podemos ver, sino con ondas de radio. Hacia mil novecientos cincuenta y tantos, los astrónomos apuntaron radiotelescopios hacia Venus y escucharon. Todo objeto caliente emite una débil radiación en esas frecuencias. Y las ondas de radio atraviesan las nubes sin demasiado esfuerzo.\n\nLo que captaron no cuadraba con ningún pantano. La señal era demasiado fuerte. Si venía de la superficie, esa superficie estaba mucho más caliente que cualquier lugar de la Tierra. Algunos colegas dudaron. Quizá la señal venía de la atmósfera, o de descargas eléctricas en las nubes. La discusión duró unos años.\n\nHacía falta ir a mirar de cerca.\n\nEn diciembre de mil novecientos sesenta y dos, una sonda estadounidense llamada Mariner Dos pasó a unos treinta y cinco mil kilómetros de Venus. Fue la primera nave en sobrevolar otro planeta. Tardó casi cuatro meses en llegar, y durante unos cuarenta minutos apuntó sus instrumentos hacia las nubes. Midió el calor que subía desde abajo. Y confirmó lo que decían los radiotelescopios: el suelo de Venus ardía.\n\nEntonces los soviéticos decidieron bajar. Su serie de sondas Venera era una apuesta difícil. Las primeras se aplastaron o se quedaron mudas en el camino, porque nadie sabía bien cuánta presión iban a encontrar. Los ingenieros fueron reforzándolas, una misión tras otra, con la paciencia de quien sube una escalera a oscuras.\n\nPor fin las cifras empezaron a llegar. El aire de Venus pesa unas noventa veces más que el de la Tierra. Para que lo sientas: es la presión que hay a casi un kilómetro de profundidad en el océano. Una nave de paredes delgadas no resistiría. Tenía que ser un pequeño submarino hecho para caer en el cielo.\n\nEn diciembre de mil novecientos setenta, Venera Siete descendió con su paracaídas. Se rompió algo en la caída, y la señal se volvió débil, casi un susurro entre el ruido. Pero los científicos la siguieron escuchando, y encontraron que seguía allí. Durante unos veintitrés minutos, la sonda habló desde el suelo.\n\nEra la primera vez que una nave enviaba datos desde la superficie de otro planeta.\n\nY lo que decían esos datos era claro. Unos cuatrocientos sesenta y cinco grados Celsius. Un horno doméstico, el más potente, apenas pasa de doscientos cincuenta. El plomo se derrite a unos trescientos veintisiete. En Venus, el plomo sería un charco brillante en el suelo.\n\nNo importa si es de día o de noche, ni si estás en el ecuador o cerca de un polo. Casi todo el planeta vive bajo ese mismo calor. La densa atmósfera lo reparte como una manta que no se levanta nunca.\n\nFaltaba algo, sin embargo. Sabíamos la temperatura y la presión, pero nadie había visto el paisaje. Doce años después, en marzo de mil novecientos ochenta y dos, Venera Trece y Venera Catorce aterrizaron con pocos días de diferencia. Cada una llevaba cámaras con filtros de color, y cada una giró su mirada sobre el suelo.\n\nLas imágenes llegaron cuadro a cuadro, lentas, como un telegrama escrito con luz. Había piedras planas y quebradas, un suelo de tono ocre, y a lo lejos el borde de un horizonte curvo. Todo bañado de naranja. No había selvas ni océanos. Había roca, quieta, bajo un cielo que nadie había visto jamás.\n\nY las sondas, claro, no aguantaron mucho. Pero no hizo falta. Ya habían dicho lo esencial: debajo de aquel disco blanco y liso había un mundo, y era muy distinto del que habíamos soñado.\n\nQuedaba entender cómo era ese lugar por dentro, y qué había encima de él. Porque antes de llegar al suelo, esas sondas tuvieron que atravesar algo más. Una capa tras otra de nubes que nadie había recorrido."
+      "text": "Si pudieras acercarte a Mercurio en una nave silenciosa, lo primero que notarías sería la luz. Una luz dura, sin aire que la suavice, que cae sobre un suelo gris y cubierto de huecos. Hay huecos grandes y pequeños, uno junto a otro, y otros que se montan encima de los anteriores.\n\nMirarías ese paisaje y te preguntarías algo sencillo. ¿Por qué la superficie de Mercurio guarda huellas de miles de millones de años?\n\nLa primera pista está en lo que falta. Mercurio casi no tiene atmósfera. Es una capa tan tenue que apenas merece ese nombre, y no ofrece resistencia alguna.\n\nAquí en la Tierra, la mayoría de las piedras que caen del cielo se queman antes de tocar el suelo. El aire las frena, las calienta y las deshace en una estela breve de luz. En Mercurio no ocurre nada de eso. Un meteorito llega con toda su velocidad y golpea la superficie sin haber perdido nada por el camino.\n\nPero un golpe es solo un momento. Lo que intriga es lo que viene después.\n\nEn la Tierra, un cráter no dura. La lluvia lo va llenando de barro, el viento lo va puliendo, y un océano o un río pueden cubrirlo por completo. En unos cuantos millones de años, un cráter terrestre suele quedar irreconocible. Por eso conocemos tan pocos.\n\nEn Mercurio no cae una sola gota de lluvia. No sopla viento y no hay mares. Cada cráter que se abre se queda abierto.\n\nY así, durante miles de millones de años, los huecos se fueron acumulando.\n\nHoy los hay de todos los tamaños. Algunos son pequeños, del ancho de un campo de fútbol. Otros son tan grandes que podrías tardar días en cruzarlos en coche, si hubiera una carretera. Los más grandes tienen un pico en el centro, como una montaña que se levantó de golpe cuando el suelo, golpeado, rebotó hacia arriba. En sus paredes se ven escalones, llamados terrazas, que son trozos de roca que se deslizaron hacia el fondo tras el impacto.\n\nAhora bien, estos cráteres no solo adornan el paisaje. Cuentan una historia, si sabes cómo leerla.\n\nLos científicos que estudian las imágenes hacen algo muy paciente: cuentan. Eligen una región y anotan cuántos cráteres hay en ella. La lógica es simple. Un terreno joven ha tenido poco tiempo para recibir impactos. Un terreno viejo ha estado expuesto mucho más tiempo, y está lleno de marcas.\n\nMás cráteres significa terreno más antiguo.\n\nNo da una fecha exacta, pero sí un orden. Permite decir que esta llanura se formó después que aquellas tierras altas, y que aquella otra es de las primeras que existieron. Es como mirar los anillos de un tronco, solo que cada anillo es una cicatriz.\n\nCon tantos cráteres, surge un problema práctico: ponerles nombre. Y aquí la astronomía hace algo inesperado. La Unión Astronómica Internacional decidió que los cráteres de Mercurio llevarían nombres de artistas, escritores y músicos. Así, en un mundo sin una sola criatura viva, hay lugares que recuerdan a poetas, pintores y compositores. Quien mira un mapa de Mercurio encuentra, entre rocas y sombras, huellas de personas que dedicaron su vida a crear algo hermoso.\n\nOtra pista se ve mejor desde lejos.\n\nAlrededor de algunos cráteres se extienden líneas claras, como rayos que salen desde el centro. Son el material que salió despedido en el impacto y cayó muy lejos, formando trazos brillantes sobre el suelo oscuro. Algunos de esos rayos llegan a cientos de kilómetros, más que la distancia entre dos ciudades vecinas.\n\nEstos rayos solo se ven en los cráteres más jóvenes. Con el tiempo, el polvo del espacio y la luz del Sol van oscureciendo ese material, hasta que se confunde con el resto. Un cráter con rayos brillantes es, entonces, un golpe reciente. Reciente para Mercurio, claro. Puede tener millones de años.\n\nY ahora la pregunta inicial tiene respuesta.\n\nSin una atmósfera que la proteja ni agua que la borre, la superficie de Mercurio conserva el registro de impactos de casi toda la historia del sistema solar.\n\nEs un archivo que nadie ha podido limpiar. Cada hueco es una página que sigue ahí. Tu propio planeta también recibió esos golpes, en la misma época y con las mismas piedras, pero los fue borrando uno a uno. Mercurio, en cambio, guardó todo.\n\nEntre tantas marcas, sin embargo, hay una que destaca sobre las demás. Es tan grande que parece más una herida que un cráter, y ocupa una parte enorme del planeta."
     },
     {
-      "title": "Descenso a través de las nubes",
-      "question": "¿Qué pasaría si pudiéramos bajar lentamente desde lo alto del cielo de Venus hasta el suelo?",
-      "reveal": "A unos 50 kilómetros de altura Venus tiene presión y temperaturas parecidas a las de la Tierra, el lugar menos hostil del planeta.",
+      "title": "La gran cuenca Caloris",
+      "question": "¿Qué clase de golpe pudo dejar una cicatriz de más de 1500 kilómetros?",
+      "reveal": "La cuenca Caloris, formada por un impacto colosal, está entre las mayores del sistema solar y quizá dejó huellas hasta en el lado opuesto del planeta.",
       "beats": [
-        "Arriba: una capa de neblina y vientos que rodean el planeta en pocos días",
-        "Las nubes de gotas de ácido sulfúrico entre unos 48 y 70 km de altura",
-        "La lluvia ácida que se evapora antes de tocar el suelo, un fenómeno llamado virga",
-        "A 50 km, la presión y la temperatura son similares a las de la Tierra",
-        "Más abajo, el aire se vuelve denso y cada vez más caliente",
-        "Un descenso hasta una luz anaranjada y quieta cerca del suelo"
-      ],
-      "ambience": "storm",
-      "image_queries": [
-        "Venus clouds Akatsuki",
-        "Venus atmosphere layers",
-        "Venus clouds ultraviolet Pioneer",
-        "Venus polar vortex",
-        "Venus atmosphere Venus Express",
-        "Venus sulfuric acid clouds",
-        "Venus cloud tops",
-        "Venus Mariner 10 ultraviolet",
-        "Venus night glow airglow",
-        "Venus atmosphere illustration"
-      ],
-      "video_queries": [
-        "Venus atmosphere animation NASA",
-        "Venus clouds super rotation",
-        "Venus cloud layer flythrough"
-      ],
-      "text": "Si pudieras bajar despacio desde lo más alto del cielo de Venus, lo primero que notarías es el silencio de la luz. Estás por encima de todo, a unos setenta kilómetros del suelo. Debajo se extiende una neblina pálida, y sobre ella solo hay un cielo oscuro y limpio.\n\nEsa neblina se mueve. Los vientos de esta altura empujan las nubes alrededor del planeta entero en solo cuatro días terrestres. Es una vuelta entera en menos de una semana. Y sin embargo, el planeta de abajo casi no gira.\n\nEntonces surge la pregunta. ¿Qué pasaría si pudiéramos bajar lentamente desde aquí hasta el suelo? ¿Qué encontraría quien atravesara, capa tras capa, ese cielo que nadie ha recorrido por completo?\n\nEmpiezas a hundirte en la neblina, y el mundo se vuelve blanco amarillento. No es vapor de agua, como las nubes que conoces. Son gotas diminutas de ácido sulfúrico, suspendidas en el aire como un rocío muy fino. Forman capas que van desde unos setenta kilómetros de altura hasta unos cuarenta y ocho.\n\nEsa distancia es más o menos la que recorrerías caminando durante cuatro horas. Aquí la cubres en el aire, sin tocar nada, rodeado de una luz difusa que no viene de ninguna parte en particular.\n\nMás abajo, en la parte baja de las nubes, ocurre algo hermoso y extraño. Caen gotas de ácido, una lluvia lenta que se desprende de la base de la capa. Pero esa lluvia no llega al suelo. Al bajar, el aire se calienta tanto que las gotas se evaporan en pleno camino.\n\nLos científicos llaman virga a este fenómeno. En la Tierra también existe: a veces ves cortinas grises colgando de una nube que se desvanecen antes de tocar el desierto.\n\nEn Venus, la lluvia nunca moja la roca.\n\nSigues bajando, y las nubes empiezan a quedar arriba. A unos cincuenta kilómetros de altura, algo cambia. La presión del aire se parece a la que sientes a nivel del mar. La temperatura también es suave, de unas pocas decenas de grados, como la de un día cálido.\n\nPuedes detenerte aquí. Un globo lleno de aire respirable flotaría sin hundirse, porque ese aire es más ligero que el gas que lo rodea. Aun así, no podrías respirar este aire, y las gotas de ácido seguirían muy cerca. Pero ninguna otra altura del planeta se acerca tanto a lo que conoces.\n\nA cincuenta kilómetros del suelo, Venus tiene la presión y la temperatura más parecidas a las de la Tierra. Es el lugar menos hostil de todo el planeta.\n\nPiensa un momento en eso. El mundo que llamamos infierno guarda en su cielo una franja tranquila, casi familiar. Y esa franja nos recuerda lo cerca que estuvieron estos dos gemelos de parecerse.\n\nPero no puedes quedarte. Debajo de ti, el planeta sigue llamando.\n\nAl descender, el aire cambia de carácter. Se vuelve denso, pesado, como una manta que cada metro pesa un poco más. La temperatura sube sin pausa: treinta grados, cien, doscientos, y después más. La presión crece contigo, y el aire empieza a sentirse casi como un líquido espeso.\n\nLas nubes quedan atrás, ya muy arriba. La neblina se disuelve. Por fin ves hacia abajo, y el paisaje no es negro ni rojo vivo, como tal vez esperabas.\n\nCerca del suelo, la luz es anaranjada y quieta. Llega filtrada por todo el cielo que acabas de atravesar, tenue como el último rato de una tarde de otoño. Nada se mueve. El aire parece detenido, y la luz no tiene sombras duras.\n\nAhí abajo te espera la roca. Y aquellas sondas soviéticas, hace décadas, llegaron hasta ella con muy poco tiempo para mirar."
-    },
-    {
-      "title": "La superficie de roca al rojo",
-      "question": "¿Cómo es estar de pie sobre el suelo de Venus?",
-      "reveal": "Con 465 °C y una presión de unas 90 atmósferas, el aire es tan denso que se comporta casi como un fluido, y aun así las fotos de Venera muestran un paisaje de rocas planas y quietas.",
-      "beats": [
-        "La luz tenue y anaranjada que llega filtrada por las nubes",
-        "El aire, casi todo dióxido de carbono, es un fluido supercrítico cerca del suelo en ciertas condiciones",
-        "Las fotos de Venera 13 con rocas laminares y suelo claro",
-        "Sin vientos fuertes en la superficie: se mueve lento, como bajo el agua",
-        "El peso de la atmósfera sobre el cuerpo, equivalente a estar a unos 900 m bajo el mar",
-        "Cuánto duraron las sondas: de cerca de 23 minutos a unas dos horas"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Venera 13 color image Venus surface",
-        "Venera 14 surface",
-        "Venus surface Magellan 3D",
-        "Venus landscape radar",
-        "Venus lava plains Magellan",
-        "Venus rocky surface lander",
-        "Venus highlands Maxwell Montes",
-        "Venus sunset surface illustration",
-        "Venus Magellan perspective",
-        "Venus impact crater"
-      ],
-      "video_queries": [
-        "Venus surface flyover Magellan",
-        "Venus virtual landscape NASA",
-        "Venus radar topography animation"
-      ],
-      "text": "Un fotógrafo de la Unión Soviética, en mil novecientos ochenta y dos, habría visto aparecer una imagen lenta en una pantalla. Una línea de píxeles, luego otra. Y poco a poco, un horizonte torcido, con rocas.\n\nEs una escena extraña, porque ese horizonte no se parece a nada de lo que esperabas. Pregúntate cómo sería estar de pie ahí, sobre el suelo de Venus. ¿Qué verías? ¿Qué sentirías en el cuerpo?\n\nEmpecemos por la luz. Arriba, las nubes ocupan todo el cielo y no dejan ver el Sol. Pero la luz pasa, filtrada y difusa. Llega tenue y de un color anaranjado, como el de una tarde de mucho polvo. No hay sombras marcadas. Todo se ve parejo, bajo una especie de crepúsculo que no termina nunca.\n\nAhora el aire. Casi todo es dióxido de carbono, el mismo gas que tú exhalas, pero en una cantidad enorme. Cerca del suelo, la presión es tan alta que en ciertas condiciones ese gas se vuelve un fluido supercrítico. No es del todo gas ni del todo líquido. Es algo intermedio, denso, que ocupa el espacio como lo hace un caldo espeso.\n\nEsto lo sabemos porque alguien llegó hasta allá. La sonda soviética Venera Trece descendió en marzo de mil novecientos ochenta y dos. Sus cámaras giraron despacio y enviaron las primeras fotos en color de la superficie. Muestran un suelo de tono claro, cubierto de fragmentos. Y entre ellos, rocas planas, apiladas en láminas, como pizarra rota. Parte del paisaje parece teñido de naranja por la luz. Pero la roca, en el fondo, es gris.\n\nFíjate en lo que no hay. No hay dunas levantadas por tormentas. No hay polvo en el aire ni vientos que silben. Arriba, las nubes corren a una velocidad enorme. Abajo, el aire apenas se mueve, a una marcha de unos pocos kilómetros por hora. Sería como caminar con el paso de alguien que va despacio, pero con un detalle: el aire es tan denso que cada brisa empuja como una corriente de agua.\n\nY ahí entra el peso. Sobre tu cuerpo descansaría la atmósfera entera, unas noventa veces más que sobre la Tierra. Equivale a la presión que sentirías a unos novecientos metros bajo el mar. Esa es una profundidad a la que casi ningún buceador llega. Cada paso exigiría un esfuerzo, como si el aire te sostuviera y te frenara al mismo tiempo.\n\nY todo esto con un calor que supera el de cualquier horno de cocina.\n\nPor eso las sondas duraron tan poco. La más breve resistió cerca de veintitrés minutos. Las más longevas, como las de mil novecientos ochenta y dos, aguantaron unas dos horas. Cada una fue un cuerpo diseñado para morir despacio, con una cápsula enfriada de antemano y aislada como una botella térmica. Dos horas, en total. Lo que dura una película.\n\nY esas dos horas bastaron para enviar fotos.\n\nBajo esa presión y ese calor, el aire es casi un fluido, y aun así las rocas siguen ahí, planas y quietas.\n\nQuizá eso sea lo que más impresiona de ese suelo: no es un paisaje en llamas. Es un paisaje en reposo. Parece un lugar que lleva mucho tiempo sin cambiar.\n\n¿Será cierto? Esas láminas de roca, ese suelo claro, ¿llevan ahí mil años, o mil millones? Para responder, habría que ver el planeta desde arriba, entero, con ojos que atraviesen las nubes."
-    },
-    {
-      "title": "Volcanes, coronas y un planeta joven",
-      "question": "¿Está Venus todavía vivo geológicamente?",
-      "reveal": "Los datos más recientes apuntan a que algunos volcanes de Venus han estado activos hace muy poco tiempo, quizá incluso hoy.",
-      "beats": [
-        "Magellan mapeó casi toda la superficie con radar entre 1990 y 1992",
-        "Miles de volcanes, grandes llanuras de lava y estructuras únicas llamadas coronas",
-        "Pocos cráteres: la superficie parece geológicamente joven, de unos cientos de millones de años",
-        "No hay placas tectónicas como las de la Tierra, pero sí rasgos de deformación",
-        "Imágenes recientes de Magellan que muestran una boca volcánica cambiando en pocos meses",
-        "Variaciones químicas de la atmósfera como posible señal de actividad volcánica"
+        "Caloris se llama así por el calor: está en una de las zonas que miran al Sol en el perihelio.",
+        "Mariner 10 vio solo parte de ella; MESSENGER la fotografió completa.",
+        "Su diámetro supera los 1500 kilómetros, una fracción importante del tamaño de Mercurio.",
+        "Fue rellenada por flujos de lava y atravesada por fracturas que forman patrones radiales.",
+        "En la región opuesta a Caloris existe un terreno extraño y caótico; se ha propuesto que las ondas del impacto lo originaron, aunque es una hipótesis.",
+        "Muestra que el planeta temprano sufrió una época de bombardeo intenso."
       ],
       "ambience": "lava",
       "image_queries": [
-        "Maat Mons Venus",
-        "Sif Mons Magellan",
-        "Venus volcano radar",
-        "Venus coronae Magellan",
-        "Venus lava flows",
-        "Venus Alpha Regio",
-        "Venus pancake domes",
-        "Venus impact craters Magellan",
-        "Venus tessera terrain",
-        "Venus Ovda Regio"
+        "Caloris basin Mercury",
+        "Caloris basin MESSENGER",
+        "Caloris basin color",
+        "Mercury Caloris fractures",
+        "Mercury volcanic plains",
+        "Mercury impact basin",
+        "Mercury Caloris topography",
+        "Mercury basin lava fill",
+        "Mercury weird terrain",
+        "Mercury Caloris Planitia"
       ],
       "video_queries": [
-        "Maat Mons Venus animation",
-        "Venus volcano flyover",
-        "Magellan Venus radar mapping"
+        "Caloris basin flyover",
+        "Mercury basin visualization",
+        "Mercury MESSENGER orbit animation"
       ],
-      "text": "En mil novecientos noventa y uno, en un laboratorio de California, alguien se inclinó sobre una pantalla y vio algo que no esperaba. Era una franja de imagen gris, fina como una cinta, que llegaba desde una nave a miles de kilómetros de la Tierra. Y en esa cinta, por primera vez, aparecía el suelo de Venus.\n\nLa sonda se llamaba Magellan. Entre mil novecientos noventa y mil novecientos noventa y dos, dio vueltas al planeta una y otra vez. Su radar atravesaba las nubes como si no existieran. Así fue dibujando, franja tras franja, casi toda la superficie. Casi toda la superficie de Venus quedó cartografiada con buen detalle.\n\nY lo que apareció fue un mundo lleno de fuego antiguo. Había miles de volcanes, desde conos pequeños que caben en un pueblo hasta escudos enormes como regiones enteras. Había llanuras de lava tan extensas que se pueden recorrer cientos de kilómetros sin salir de ellas. Y había formas que no se ven en ningún otro lugar, las coronas.\n\nUna corona es un anillo grande, a veces de cientos de kilómetros, rodeado de grietas y pliegues. Parece que el suelo se hinchó desde abajo, como una masa que sube, y luego se hundió. Roca caliente empujando desde el interior. Nadie ha visto nacer una, pero eso es lo que sugieren los modelos.\n\nEntonces los científicos contaron los cráteres. En la Luna, los cráteres cubren todo, porque la superficie lleva miles de millones de años recibiendo golpes. En Venus hay muy pocos, unos novecientos en todo el planeta. Y están repartidos al azar, sin zonas viejas ni zonas nuevas.\n\nEso significa algo. La superficie venusiana no puede ser muy antigua. Tiene quizá unos cuantos cientos de millones de años, una edad corta para un planeta de cuatro mil quinientos millones. Algo la borró, o la cubrió de lava, y empezó de nuevo.\n\nPero ¿cómo? En la Tierra, la superficie se renueva con placas que se hunden y se separan. En Venus no hay nada parecido. No se ven esas largas cadenas de montañas ni esas dorsales en el fondo del mar. Sin embargo, sí hay pliegues, fracturas y regiones comprimidas, señales de que la corteza se deforma. Es un planeta que se mueve, pero a su manera.\n\nY de pronto la pregunta se vuelve más cercana. Si Venus renovó su rostro hace tan poco, ¿está todavía vivo por dentro?\n\nDurante treinta años, nadie pudo responder.\n\nLuego, hace pocos años, un grupo de investigadores volvió a mirar las imágenes de Magellan. Tenían dos tomas del mismo lugar, hechas con ocho meses de diferencia. Se trataba de una zona llamada Maat Mons, uno de los volcanes más altos del planeta. Compararon una con otra, con paciencia, casi píxel por píxel.\n\nLa boca del volcán había cambiado. En la primera imagen era un hueco más o menos redondo. En la segunda, el hueco era más grande, de forma distinta, y parecía lleno a medias de material nuevo. Algo había pasado dentro, en pocos meses. Pudo ser un derrumbe, o lava que rebosó y volvió a hundirse.\n\nEl cambio medía apenas unos pocos kilómetros. Pero en un planeta donde todo parecía congelado en el tiempo, era como ver moverse una piedra.\n\nHay otra pista, y viene del aire. La atmósfera de Venus contiene dióxido de azufre, un gas que el Sol destruye con rapidez. Si nadie lo repusiera, desaparecería en muy poco tiempo. Y sin embargo, las sondas lo han medido una y otra vez, y su cantidad sube y baja con los años. Una erupción grande podría explicarlo, porque los volcanes lo expulsan junto con la lava.\n\nNo es una prueba. Otros procesos de la atmósfera también pueden hacer variar ese gas, y los científicos lo saben. Pero todo apunta en la misma dirección.\n\nVenus, entonces, no es un museo de roca apagada. Algunos de sus volcanes han estado activos hace muy poco tiempo, quizá incluso hoy, mientras tú respiras tranquilo a millones de kilómetros.\n\nUn mundo gemelo del nuestro que todavía respira fuego por dentro. Y que quizá, en su pasado, tuvo algo más que fuego."
+      "text": "Mira una fotografía de Mercurio. En un costado hay una mancha enorme y ovalada, más clara que lo que la rodea. Los primeros que la vieron, en los años setenta, no sabían bien qué estaban mirando. Era demasiado grande para ser un cráter común, y demasiado regular para ser un accidente.\n\nLa llamaron Caloris, que viene de la palabra \"calor\". El nombre tiene una razón sencilla. La órbita de Mercurio es alargada, y en su punto más cercano al Sol, el perihelio, ciertas regiones quedan justo de cara a la estrella. Caloris está en una de ellas, así que es uno de los lugares más calurosos de todo el planeta.\n\nAquella primera sonda, Mariner diez, solo alcanzó a iluminar una parte. Vio un borde curvo, una mitad de círculo, y el resto se perdía en la oscuridad de la noche mercuriana. Durante más de treinta años, la cuenca fue una forma incompleta, como una moneda de la que solo se ve la mitad.\n\nDespués llegó MESSENGER, y la fotografió entera.\n\nAhora podemos medirla. Su diámetro supera los mil quinientos kilómetros. Si la pusieras sobre un mapa de tu región, cubriría la distancia entre dos capitales que normalmente cruzas en avión. Para un planeta de apenas unos cuatro mil ochocientos kilómetros de ancho, es una fracción enorme.\n\n¿Qué clase de golpe pudo dejar una cicatriz así?\n\nLa respuesta, según todo lo que vemos, es un objeto gigantesco. Probablemente un asteroide de decenas de kilómetros, que llegó a gran velocidad hace unos tres mil ochocientos millones de años. No hubo aire que lo frenara. No hubo océano que lo amortiguara. Solo el choque, directo, contra la roca.\n\nY el planeta respondió. Bajo la corteza herida, el material caliente subió, y la lava fluyó hacia el interior de la cuenca. Poco a poco la rellenó, como una marea oscura que se queda quieta. Hoy ese suelo es una llanura relativamente lisa, aunque está lejos de ser perfecta.\n\nPorque la roca, al enfriarse, se agrietó. Desde el centro de la cuenca salen fracturas que se abren hacia afuera, como los radios de una rueda. En otras zonas forman anillos, como las ondas que deja una piedra en un estanque. Solo que aquí el agua se volvió piedra, y las ondas llevan miles de millones de años quietas.\n\nPero hay un detalle más, y está muy lejos de allí.\n\nSi recorres el planeta hasta el punto exactamente opuesto a Caloris, no encuentras cráteres limpios ni llanuras tranquilas. Encuentras colinas, cerros amontonados, un terreno revuelto y caótico, como si alguien hubiera sacudido el suelo.\n\nAlgunos científicos proponen que esto no es casualidad.\n\nSu idea es que las ondas del impacto viajaron por el interior del planeta, se cruzaron al otro lado y quebraron la superficie desde abajo. Imagina golpear una campana y sentir la vibración en el extremo contrario. Es una hipótesis razonable, y muchos la consideran probable. Pero todavía es una hipótesis, y no una certeza.\n\nLo que sí sabemos es lo que Caloris cuenta sobre el pasado. Mercurio, en sus primeros tiempos, vivió una época de bombardeo intenso. Rocas de todos los tamaños caían sobre él una y otra vez, y esta cuenca fue una de las cicatrices más profundas de aquella lluvia.\n\nEsa época no fue solo de Mercurio. La Luna tiene cicatrices parecidas, y la Tierra también las tuvo, aunque el viento y el agua las borraron hace mucho. Lo que aquí permanece a la vista, en tu propio mundo se perdió bajo capas de tiempo.\n\nY todavía hay otras marcas en Mercurio que no vienen de impactos. Son líneas largas, como arrugas, que cruzan cráteres enteros como si algo hubiera apretado el planeta desde adentro."
     },
     {
-      "title": "El océano que quizá existió",
-      "question": "¿Pudo Venus tener océanos y un clima agradable?",
-      "reveal": "Los modelos climáticos sugieren que Venus pudo tener agua líquida durante miles de millones de años antes de perderla.",
+      "title": "Un planeta que se encoge",
+      "question": "¿Por qué hay enormes acantilados que cruzan Mercurio como arrugas?",
+      "reveal": "Mercurio se ha ido contrayendo al enfriarse su interior, y su corteza se ha arrugado como la piel de una manzana que se seca.",
       "beats": [
-        "El Sol joven era más tenue, lo que daba más margen a Venus",
-        "La relación entre deuterio e hidrógeno en la atmósfera, huella de agua perdida",
-        "Modelos que proponen un océano posible, aunque sigue siendo debatido",
-        "La retroalimentación del efecto invernadero: más calor, más vapor, más calor",
-        "El vapor sube, la luz ultravioleta lo rompe y el hidrógeno escapa al espacio",
-        "Un planeta cuyo mar pudo desaparecer y que hoy se estudia para entender mundos fuera del sistema solar"
+        "Mariner 10 ya mostró largos escarpes que atraviesan cráteres, señal de que se formaron después de ellos.",
+        "Algunos de estos acantilados alcanzan cientos de kilómetros de longitud y varios kilómetros de altura.",
+        "MESSENGER confirmó que el planeta se contrajo: su radio disminuyó varios kilómetros.",
+        "El enfriamiento del núcleo hizo que la corteza se fracturara y se desplazara.",
+        "Imágenes de alta resolución sugieren que parte de esa actividad es relativamente reciente en términos geológicos, quizá aún en curso.",
+        "Es un ejemplo de cómo un mundo pequeño pierde calor más rápido que uno grande."
       ],
-      "ambience": "sea",
+      "ambience": "none",
       "image_queries": [
-        "Venus ancient ocean illustration",
-        "Venus water vapor atmosphere",
-        "Venus Express atmosphere",
-        "Early Earth ocean illustration",
-        "Venus deuterium hydrogen",
-        "Exoplanet Venus-like illustration",
-        "Venus greenhouse effect",
-        "Venus surface radar tessera",
-        "Earth ocean from space",
-        "Young Sun illustration"
+        "Mercury scarp",
+        "Mercury lobate scarps MESSENGER",
+        "Mercury thrust fault cliff",
+        "Mercury Discovery Rupes",
+        "Mercury wrinkle ridges",
+        "Mercury shrinking surface",
+        "Mercury tectonic features",
+        "Mercury cliff crater",
+        "Mercury global tectonics",
+        "Mercury surface fractures"
       ],
       "video_queries": [
-        "Venus ancient ocean animation NASA",
-        "Runaway greenhouse effect visualization",
-        "Earth ocean planet animation"
+        "Mercury shrinking animation",
+        "Mercury scarp flyover",
+        "Mercury surface MESSENGER 3D"
       ],
-      "text": "Los astrónomos tienen una costumbre curiosa: cuando quieren saber cuánta agua perdió un mundo, no buscan agua. Buscan un átomo muy raro, escondido en el aire.\n\nEse átomo es el deuterio. Es hidrógeno con un neutrón de más, un poco más pesado, un poco más perezoso. En la Tierra, por cada millón de átomos de hidrógeno ordinario, hay unos ciento cincuenta de deuterio. Es una proporción pequeña y muy estable.\n\nEn Venus no lo es. En su atmósfera hay más de cien veces más deuterio, en proporción, que en nuestros océanos. Las sondas lo midieron una y otra vez, desde las Pioneer hasta Venus Express. Y las cifras siempre fueron del mismo orden.\n\n¿Por qué un planeta guardaría tanto del hidrógeno pesado? ¿Y por qué parece que le faltó casi todo el ligero?\n\nPara entenderlo, hay que volver atrás. Hace unos cuatro mil millones de años, el Sol era más débil que hoy. Daba cerca de un setenta por ciento de la luz actual. Visto desde la Tierra, habría sido un disco algo más pálido en un cielo más tranquilo.\n\nEse Sol tímido le dio a Venus un margen. Aunque estaba más cerca de él que nosotros, la luz que recibía quizá no bastaba para hervir su superficie. Una superficie templada, con cielos nublados, podía conservar agua líquida.\n\nEsa es la idea de algunos modelos climáticos. Simulan un Venus joven, con una atmósfera todavía delgada, y lo dejan evolucionar. En varios de ellos, el planeta se enfría lo suficiente para formar lluvia. La lluvia se junta en cuencas. Y las cuencas se llenan.\n\nUn mar, quizá. Poco profundo, tibio, bajo un cielo cubierto.\n\nHay que decirlo con honestidad: no todos los científicos coinciden. Otros modelos sostienen que Venus nunca se enfrió tanto, y que el agua se mantuvo siempre como vapor, flotando en el aire caliente. Las rocas de la superficie podrían decidirlo, pero ninguna sonda ha vivido allí el tiempo suficiente para contarlo.\n\nAun así, si hubo océanos, lo que sigue es una historia lenta y muy conocida por los climatólogos. El Sol fue ganando brillo, poco a poco, a lo largo de cientos de millones de años. Cada vez llegaba un poco más de calor. El agua se evaporaba un poco más.\n\nY el vapor de agua es un gas de efecto invernadero. Atrapa el calor que la superficie intenta devolver al espacio. Más calor, más vapor. Más vapor, más calor. Un círculo que se alimenta a sí mismo, sin que nadie lo empuje.\n\nLlega un punto en que el océano ya no se sostiene. Se evapora entero, o casi, y todo ese vapor sube hasta las capas altas del cielo.\n\nAllí arriba, la luz ultravioleta del Sol golpea las moléculas de agua y las rompe. El oxígeno se queda, o se une a las rocas. El hidrógeno, el más ligero de todos los átomos, escapa hacia el espacio.\n\nEl deuterio, más pesado, se escapa con mucha más dificultad. Se queda atrás, acumulándose durante eones, como el sedimento en el fondo de una taza. Esa es la huella que miden hoy las sondas.\n\nEs una evidencia indirecta, pero muy elocuente.\n\nLos modelos más favorables calculan que Venus pudo tener agua líquida durante dos o tres mil millones de años. Casi todo el tiempo que la vida necesitó, en la Tierra, para dar sus primeros pasos.\n\nPiensa en lo que eso significa. Un planeta del tamaño del nuestro, con lluvia y mares, y un clima que quizá habrías podido soportar. Y luego, sin culpables, sin catástrofe repentina, el lento ascenso de un termómetro.\n\nPor eso los astrónomos de exoplanetas miran a Venus con tanta atención. Cada vez que encuentran un mundo rocoso en otra estrella, deben preguntarse de qué lado de esa línea se encuentra. Venus es su caso de estudio más cercano. Un ejemplo real de cómo se cruza el límite.\n\nY queda una pregunta que el hidrógeno perdido no responde. Si Venus tuvo mares, ¿qué más pudo haber tenido en ellos?"
+      "text": "En las fotografías de Mariner diez hay un cráter que parece partido en dos. Es un cráter redondo, antiguo, de paredes gastadas. Y por el medio le pasa una línea larga, que sube y baja como el borde de un escalón.\n\nLos científicos que miraron esas imágenes en los años setenta se fijaron en un detalle. La línea no esquivaba el cráter. Lo atravesaba. Y eso dice algo sencillo: primero estuvo el cráter, y después llegó la línea. Algo había apretado el terreno cuando ya estaba marcado por los impactos.\n\n¿Qué fuerza puede arrugar un planeta entero?\n\nEsas líneas se llaman escarpes. Vistos de cerca serían acantilados con una pared empinada de un lado y una pendiente suave del otro. Algunos recorren cientos de kilómetros. Es más o menos la distancia entre dos ciudades que se tardan unas horas en unir por carretera. Y su altura puede llegar a unos tres kilómetros. Si te pararas al pie de uno, tendrías delante una pared de roca más alta que cualquier edificio que hayas visto.\n\nMariner diez solo fotografió la mitad del planeta, y con poca definición. Así que la pregunta quedó abierta durante décadas. Podía ser una peculiaridad de esa región. Podía ser un error de interpretación.\n\nEntonces llegó MESSENGER. Esta sonda orbitó Mercurio y lo fotografió entero, con mucho más detalle. Los equipos pudieron medir y contar los escarpes en todo el globo. Estaban por todas partes. Y al sumar cuánto había cedido la corteza en cada uno, la cuenta salió clara.\n\nEl planeta se había encogido.\n\nSu radio disminuyó varios kilómetros. Es poco comparado con el tamaño total, pero suficiente para dejar marcas por todos lados. Piensa en una manzana que se seca con el tiempo. La pulpa de adentro pierde volumen, y la piel, que no puede encogerse igual, se arruga. En Mercurio ocurrió algo parecido, con roca en lugar de fruta.\n\nLa causa está en el interior. Mercurio tiene un núcleo de hierro muy grande, y ese núcleo guardaba el calor de su formación. Con los miles de millones de años se fue enfriando. Al enfriarse, un material se contrae. El núcleo ocupó menos espacio, y la corteza de arriba quedó con demasiada superficie para el volumen que cubría.\n\nLa corteza no pudo adaptarse con suavidad. Se fracturó. Un bloque de roca se montó sobre otro, y el borde de uno de ellos quedó elevado como un escalón gigante. Así nacieron los escarpes. Cada uno es una grieta profunda por donde una parte del planeta avanzó sobre la otra.\n\nHay un detalle que sorprendió a los investigadores. Algunas de estas fracturas se ven muy nítidas en las imágenes de mayor resolución. Casi no tienen cráteres pequeños encima. Si hubieran sido antiguas, los impactos de millones de años ya las habrían salpicado.\n\nEso sugiere que parte de esta actividad es joven, al menos en la escala del tiempo geológico. Joven puede significar cientos de millones de años, o incluso menos. Y es posible que Mercurio siga contrayéndose hoy, muy despacio, en silencio. Todavía no lo sabemos con certeza.\n\nMercurio es un ejemplo de algo que pasa con los mundos pequeños. Un cuerpo pequeño tiene mucha superficie en proporción a su volumen. Pierde su calor al espacio con más rapidez que uno grande. Piensa en una taza de café y en una olla enorme, dejadas en la misma mesa. La taza se enfría primero.\n\nLa Tierra, por su tamaño, todavía conserva buena parte del calor de su origen. Por eso tiene volcanes, placas que se mueven y montañas que crecen. Mercurio gastó su reserva antes y la gastó en otra forma: no con volcanes, sino con arrugas.\n\nY bajo esas arrugas, en lo más hondo, queda todavía una pregunta distinta. Si el planeta se fue enfriando desde adentro, ¿qué se oculta dentro de ese núcleo que, aun así, se resiste a enfriarse del todo?"
     },
     {
-      "title": "Vientos que giran más rápido que el planeta",
-      "question": "¿Cómo puede una atmósfera girar mucho más rápido que el suelo que tiene debajo?",
-      "reveal": "Las nubes de Venus dan la vuelta al planeta en unos 4 días terrestres, mientras que el suelo tarda unos 243 días en completar una rotación.",
+      "title": "El día más largo y la danza del Sol",
+      "question": "¿Cómo puede un día en Mercurio durar más que su año... o casi?",
+      "reveal": "Mercurio gira tres veces sobre sí mismo por cada dos vueltas al Sol, de modo que un día solar dura unos 176 días terrestres, el doble de su año.",
       "beats": [
-        "Venus gira muy lento y en sentido contrario a casi todos los planetas",
-        "Un día sideral de unos 243 días terrestres, más largo que su año de unos 225 días",
-        "La superrotación de la atmósfera, aún estudiada por Akatsuki y Venus Express",
-        "Vórtices dobles en los polos con forma de ocho",
-        "Estructuras de ondas visibles en el ultravioleta, como un arco gigante",
-        "Un misterio abierto: el mecanismo completo de la superrotación"
+        "Mercurio rota muy despacio: una rotación completa toma unos 59 días terrestres.",
+        "Su resonancia espín-órbita es de 3:2, descubierta en los años sesenta con observaciones de radar.",
+        "La combinación de rotación y órbita hace que un día solar, de un amanecer al siguiente, dure unos 176 días.",
+        "Su órbita es muy elíptica, por lo que la velocidad cambia a lo largo del año.",
+        "En ciertos puntos de la superficie, el Sol se detiene en el cielo, retrocede unos instantes y vuelve a avanzar; es un efecto geométrico de esa órbita.",
+        "Desde allí el Sol parecería varias veces más grande que desde la Tierra."
       ],
-      "ambience": "storm",
+      "ambience": "sun",
       "image_queries": [
-        "Venus polar vortex Venus Express",
-        "Venus south pole vortex",
-        "Venus Akatsuki UV",
-        "Venus atmosphere waves",
-        "Venus Mariner 10 ultraviolet clouds",
-        "Venus bow shaped wave",
-        "Venus infrared night",
-        "Venus VIRTIS",
-        "Venus clouds animation",
-        "Venus Pioneer ultraviolet"
+        "Sun SDO",
+        "Sun solar disk ultraviolet",
+        "Sun corona",
+        "Mercury Sun distance",
+        "Mercury sunrise illustration",
+        "Mercury solar prominence",
+        "Mercury orbit Sun",
+        "Sun close up SDO",
+        "Mercury daylight surface",
+        "Mercury terminator"
       ],
       "video_queries": [
-        "Venus super rotation animation",
-        "Venus polar vortex visualization",
-        "Venus Akatsuki cloud movie"
+        "SDO sun ultra high definition",
+        "Sun time-lapse SDO",
+        "Mercury orbit rotation animation"
       ],
-      "text": "En lo alto de la atmósfera de Venus, una nube avanza sobre el planeta como una cinta que nunca se detiene. Si pudieras seguirla desde una nave, verías que va dejando atrás el suelo, mucho más abajo, con una facilidad extraña. Es como mirar a un corredor que adelanta a la tierra misma.\n\nY ahí aparece la pregunta. ¿Cómo puede una atmósfera girar mucho más rápido que el suelo que tiene debajo?\n\nPara sentir lo raro que es esto, conviene empezar por el planeta. Venus gira sobre sí mismo con una lentitud casi incómoda. Un día sideral, es decir, una vuelta completa respecto a las estrellas, dura unos doscientos cuarenta y tres días terrestres. Es más tiempo del que Venus necesita para dar una vuelta alrededor del Sol, que son unos doscientos veinticinco días.\n\nAsí que en Venus un día es más largo que un año. Lo sabemos por mediciones de radar hechas desde la Tierra, que lograron atravesar las nubes y seguir el movimiento de los relieves.\n\nHay otro detalle, y es todavía más curioso. Casi todos los planetas giran en el mismo sentido en que orbitan, de oeste a este. Venus lo hace al revés. Si pudieras pararte en su suelo, y el cielo se dejara ver, el Sol saldría por el oeste, muy despacio, y tardaría semanas en cruzar el cielo.\n\nNadie sabe con certeza por qué Venus gira así. Quizá un choque antiguo, quizá el tirón constante de las mareas que produce su propia atmósfera densa. Las dos ideas siguen sobre la mesa.\n\nAhora sube otra vez a las nubes. Las sondas que estudiaron esa capa vieron algo que no encajaba con un planeta tan lento. Seguían las manchas oscuras de las nubes, fotografía tras fotografía, y las manchas se movían deprisa. Muy deprisa.\n\nLa sonda europea Venus Express las observó durante años, desde dos mil seis. La japonesa Akatsuki, que llegó en dos mil quince, las observó hasta hace poco. Con esas imágenes se pudo medir el viento a la altura de las nubes. Sopla a más de cien metros por segundo, más fuerte que cualquier huracán de la Tierra.\n\nY la consecuencia es sencilla de decir.\n\nLas nubes de Venus dan la vuelta al planeta en unos cuatro días terrestres.\n\nEl suelo, mientras tanto, tarda unos doscientos cuarenta y tres. Piensa en un reloj donde la aguja de los minutos girara tan rápido que la de las horas pareciera inmóvil. A este fenómeno se le llama superrotación. La atmósfera entera, o buena parte de ella, se mueve mucho más rápido que el cuerpo sólido que la sostiene.\n\nCerca de los polos, el viento dibuja figuras que parecen hechas a propósito. En cada polo hay un vórtice, una espiral enorme de nubes. Pero no es un remolino sencillo. Tiene dos centros que giran uno en torno al otro, y desde arriba la forma recuerda a un ocho, o a un par de ojos que se abren despacio. Esa forma cambia, se estira y se deshace con los días.\n\nEn las imágenes ultravioleta, que muestran contrastes que el ojo no ve, aparece otra estructura. Una gran franja oscura en forma de arco cruza buena parte del planeta, de un lado al otro. Los científicos creen que es una onda que viaja por la atmósfera, como la ondulación que deja una piedra en un estanque. Solo que esta ondulación mide miles de kilómetros, una distancia parecida a la que separa dos países enteros.\n\nDurante un tiempo se pensó que todo esto ya tenía una explicación redonda. Las ondas, las mareas del calor solar y las corrientes que suben del ecuador hacia los polos parecen empujar el aire, poco a poco, siempre en la misma dirección. Cada una aporta algo. Ninguna lo explica todo.\n\nLos modelos por computadora logran imitar una parte del movimiento. Pero cuando se suma cada pieza, la cuenta todavía no cierra del todo. No sabemos con exactitud cómo el planeta consigue sostener ese viento durante tanto tiempo sin que el roce con el suelo lo frene.\n\nY eso es lo hermoso de mirar un mundo tan cercano. Venus es el planeta que más se acerca a nosotros, y aun así guarda un enigma de física que no hemos resuelto.\n\nPor eso las agencias vuelven a mirarlo. Quienes estudian estas nubes saben que las respuestas no se van a quedar en los vientos. Quizá hagan falta sondas que bajen, que toquen ese aire y lo midan por dentro. Y quizá, allí, entre las gotas de ácido, haya algo más que viento."
+      "text": "Hay un lugar en Mercurio donde, si pudieras quedarte quieto durante semanas, verías algo que ningún cielo de la Tierra ofrece. El Sol sale por el horizonte, sube despacio, se detiene, da unos pasos hacia atrás y luego sigue su camino. Es como si dudara.\n\nAntes de entender eso, hay que resolver algo más sencillo, y más extraño. ¿Cómo puede un día en Mercurio durar más que su año?\n\nEmpecemos por lo que parece fácil. Mercurio gira sobre sí mismo muy despacio. Una vuelta completa le toma unos cincuenta y nueve días terrestres. Para ti, que vives en un planeta donde la noche llega cada pocas horas, es un ritmo difícil de sentir. Sería como si una sola mañana se extendiera casi dos meses.\n\nAhora recuerda la otra cifra. Mercurio rodea al Sol en unos ochenta y ocho días. Ese es su año. Entonces el planeta gira una vez cada cincuenta y nueve días y da una vuelta al Sol cada ochenta y ocho. Las dos cuentas parecen no encajar. Y sin embargo, encajan con una precisión notable.\n\nDurante mucho tiempo nadie lo supo. Ya viste que los astrónomos creyeron que Mercurio mostraba siempre la misma cara al Sol. Era una idea razonable, porque desde la Tierra el planeta se ve tan poco y tan borroso que no hay manera de seguir sus marcas.\n\nLa corrección llegó en los años sesenta, y llegó con ondas de radio. Los astrónomos enviaron un haz hacia Mercurio y escucharon el eco. Si un planeta gira, un borde se acerca a nosotros y el otro se aleja. El eco de ese borde que se acerca vuelve ligeramente más agudo, y el del otro, más grave. Midiendo esa diferencia mínima, se puede calcular cuánto tarda en girar.\n\nEl resultado sorprendió a todos. Mercurio no estaba fijo frente al Sol.\n\nGiraba, y lo hacía con una regla muy precisa. Por cada dos vueltas que da alrededor del Sol, rota exactamente tres veces sobre sí mismo. A esa relación se le llama resonancia espín-órbita de tres a dos. Es una especie de acuerdo entre el giro del planeta y su camino, y no se conoce otro planeta del sistema solar que lo tenga.\n\nAhora sí podemos responder la pregunta del principio. Piensa en lo que significa un día para ti: el tiempo que pasa entre un amanecer y el siguiente. En la Tierra, eso casi coincide con una vuelta sobre el eje. En Mercurio no. Mientras el planeta gira, también avanza por su órbita, y el Sol va quedando en otra dirección. Para que vuelva a amanecer en el mismo lugar, hace falta mucho más que una rotación.\n\nHacen falta unos ciento setenta y seis días terrestres.\n\nEso es el doble de su año. Un habitante imaginario de Mercurio vería un solo amanecer y un solo atardecer cada dos años del planeta. Pasaría un año entero con el Sol sobre su cabeza, y otro año entero en la noche. Un día, en ese mundo, es más largo que todo un recorrido alrededor del Sol.\n\nQueda por explicar la duda del Sol en el cielo. La órbita de Mercurio no es un círculo. Es una elipse bastante alargada, y eso cambia su velocidad a lo largo del año. Cuando el planeta pasa cerca del Sol, corre. Cuando se aleja, va más lento.\n\nCerca del punto más próximo, su velocidad orbital supera por un momento a la de su propia rotación. Entonces el Sol, visto desde ciertos lugares de la superficie, parece moverse al revés. Se detiene, retrocede durante unos días y vuelve a avanzar. No es magia ni ilusión de los ojos. Es pura geometría de una órbita estirada.\n\nY mientras tanto, el Sol que ves allí no se parece al nuestro.\n\nDesde esa superficie de cráteres, el disco solar se vería bastante más grande que desde la Tierra. Cerca del perihelio, hasta tres veces más ancho. Tendría una luz blanca y dura, sin ninguna atmósfera que la suavice, y un cielo negro alrededor, aun a pleno día.\n\nEs un cielo extraño para recordar cuando tú cierres los ojos. Pero lo que más intriga de ese mundo no es lo que pasa arriba. Es lo que ese Sol le hace al suelo, hora tras hora, durante meses. ¿Qué le sucede a la roca cuando tiene que soportar un día tan largo, y una noche igual de larga?"
     },
     {
-      "title": "Regresar a Venus",
-      "question": "¿Qué quedan por descubrir en Venus y quién volverá a mirar?",
-      "reveal": "Nuevas misiones descenderán a través de la atmósfera para medir su composición y volverán a cartografiar su superficie con una precisión nunca vista.",
+      "title": "Calor abrasador y frío extremo",
+      "question": "¿Cómo puede un planeta tan cercano al Sol tener noches tan frías?",
+      "reveal": "En Mercurio la temperatura varía entre unos 430 grados de día y unos −180 de noche, porque sin atmósfera no hay nada que retenga el calor.",
       "beats": [
-        "Después de décadas, Venus vuelve a ser prioridad",
-        "DAVINCI, una sonda que descenderá por la atmósfera para medir gases y tomar imágenes",
-        "VERITAS, un orbitador que mapeará la superficie con radar",
-        "EnVision, de la ESA, para estudiar su interior y atmósfera",
-        "La búsqueda de señales químicas en las nubes y el debate abierto sobre posible vida microbiana",
-        "Venus como espejo del futuro de la Tierra y de los exoplanetas"
+        "Sin una atmósfera sustancial, el calor del día se pierde rápidamente en cuanto el Sol se oculta.",
+        "En el lado diurno las temperaturas alcanzan unos 430 °C, más que suficiente para fundir plomo.",
+        "Por la noche caen hasta unos −180 °C.",
+        "Mercurio tiene una tenue exosfera formada por átomos que el viento solar y los impactos arrancan de la superficie.",
+        "Esa exosfera incluye sodio y se ha observado con una larga cola, como la de un cometa.",
+        "Venus, más lejano, es en realidad más caliente, por su densa atmósfera."
+      ],
+      "ambience": "sun",
+      "image_queries": [
+        "Mercury exosphere sodium tail",
+        "Mercury thermal map",
+        "Mercury surface MESSENGER sunlit",
+        "Mercury dayside",
+        "Mercury night side",
+        "Mercury heat",
+        "Sun solar wind Mercury",
+        "Mercury magnetosphere",
+        "Mercury surface close up",
+        "Venus atmosphere Magellan"
+      ],
+      "video_queries": [
+        "Mercury sodium tail visualization",
+        "Mercury magnetosphere animation",
+        "solar wind Mercury visualization"
+      ],
+      "text": "Hay un detalle que sorprende a cualquiera que lo oiga por primera vez. En Mercurio, el planeta más cercano al Sol, el suelo se congela cada noche. No se enfría un poco. Se congela de verdad, hasta un frío que en la Tierra solo existe en laboratorios y en los polos más duros.\n\n¿Cómo puede un mundo tan pegado al Sol tener noches así?\n\nToma una piedra que ha pasado un día entero al sol de verano. La tocas al caer la tarde y todavía está tibia. Guarda el calor un buen rato, y la noche termina de enfriarla muy despacio. Y buena parte de esa lentitud la explica el aire que la rodea.\n\nEn la Tierra, la atmósfera funciona como una manta ligera. Deja pasar la luz del Sol y frena el calor que el suelo intenta devolver al espacio. Por eso una noche despejada en la costa rara vez es mortal. En Mercurio esa manta casi no existe.\n\nSin una atmósfera sustancial, el calor del día se escapa en cuanto el Sol se oculta. No hay nada que lo detenga. La roca lo suelta hacia arriba, y el espacio lo recibe sin resistencia.\n\nAhora mira el otro extremo. En el lado diurno, el suelo llega a unos cuatrocientos treinta grados Celsius. Es más de lo que necesita el plomo para fundirse. Si pudieras dejar un trozo de plomo sobre esa roca, al mediodía se volvería un charco brillante, sin ruido y sin humo.\n\nEs una temperatura difícil de sentir con el cuerpo. Un horno doméstico, abierto al máximo, ronda la mitad de eso. Mercurio, durante meses seguidos, es una superficie mucho más caliente que cualquier horno.\n\nY entonces llega la noche.\n\nCuando el Sol por fin se esconde tras el horizonte, la roca empieza a enfriarse sin pausa. Poco a poco baja hasta unos ciento ochenta grados bajo cero. Es más frío que cualquier lugar de la Tierra, incluso en la Antártida, en pleno invierno. Entre el día y la noche hay una diferencia de unos seiscientos grados, sobre la misma roca.\n\nEso responde a la pregunta. La cercanía al Sol calienta el día, sí. Pero lo que decide la noche es otra cosa: la falta de aire. En Mercurio, sin atmósfera, nada retiene el calor del día.\n\nQuizá lo más curioso es que el planeta no está completamente desnudo. Tiene una exosfera, una capa tan tenue que sus átomos casi nunca chocan entre sí. No es aire en el sentido que tú conoces. Son átomos sueltos, que viajan en trayectorias largas, como piedras lanzadas al vacío.\n\n¿De dónde salen? El viento solar y los impactos de pequeños meteoritos los arrancan de la propia superficie. La roca se desgasta, átomo a átomo, y esa pérdida forma una neblina invisible que vuelve a caer o se escapa. Se renueva sin parar, porque no puede quedarse.\n\nEntre esos átomos hay sodio. Y el sodio brilla con una luz amarilla muy particular, la misma que ves en algunas farolas de ciudad. Gracias a eso, los astrónomos lograron observarlo desde la Tierra. Descubrieron que el sodio de Mercurio se estira detrás del planeta en una cola larga, como la de un cometa.\n\nEs una cola que nadie ve a simple vista. Pero está ahí, empujada por la luz del Sol, alargándose a lo largo de una distancia enorme.\n\nQueda un detalle que desconcierta. Se podría pensar que Mercurio, por ser el más cercano al Sol, es también el más caliente de todos. No lo es.\n\nVenus, que está mucho más lejos, es en realidad más caliente. Su superficie supera los cuatrocientos sesenta grados, de día y de noche, sin apenas diferencia. La razón es la contraria a la de Mercurio: una atmósfera densa, que atrapa el calor y no lo suelta.\n\nAsí que la distancia al Sol cuenta, pero no lo decide todo. Cuenta también lo que un planeta lleva puesto encima.\n\nMercurio no lleva casi nada. Y por eso su roca queda tan expuesta, tan sola frente a la luz y frente a la oscuridad. Pero hay rincones de ese suelo que nunca reciben ni una cosa ni la otra, donde el Sol jamás llega a asomar."
+    },
+    {
+      "title": "Hielo en el planeta más cercano al Sol",
+      "question": "¿Puede existir hielo de agua en un planeta tan cercano al Sol?",
+      "reveal": "En cráteres polares que nunca reciben luz solar directa, MESSENGER encontró evidencias de hielo de agua, que se cree que ha permanecido allí durante millones de años.",
+      "beats": [
+        "El eje de Mercurio está casi perpendicular a su órbita, así que en los polos el Sol queda siempre muy bajo en el horizonte.",
+        "Hay cráteres polares con fondos en sombra permanente, como Prokofiev.",
+        "Desde la Tierra, observaciones por radar ya sugerían zonas muy brillantes en esos lugares.",
+        "MESSENGER midió neutrones, luz láser y temperaturas que apoyan la presencia de hielo de agua en esas sombras.",
+        "Parte de él parece cubierto por una capa oscura de material orgánico; su origen sigue en estudio.",
+        "El hielo pudo llegar con cometas y asteroides; el origen exacto es una cuestión abierta."
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Mercury north pole ice",
+        "Mercury polar craters MESSENGER",
+        "Mercury permanently shadowed crater",
+        "Mercury Prokofiev crater",
+        "Mercury radar bright polar deposits",
+        "Mercury north polar region",
+        "Mercury polar mosaic",
+        "Mercury crater shadow",
+        "Mercury water ice deposits",
+        "Mercury south pole"
+      ],
+      "video_queries": [
+        "Mercury polar ice visualization",
+        "Mercury north pole animation",
+        "MESSENGER Mercury orbit insertion"
+      ],
+      "text": "Hay lugares en Mercurio donde el Sol nunca sale del todo. Si pudieras pararte en uno de los polos, lo verías ahí, justo sobre el horizonte, como una moneda de fuego que no se decide a subir. No sube. Tampoco se oculta por completo. Da vueltas muy bajo, rozando el borde del mundo.\n\nLa razón es sencilla. El eje de Mercurio está casi perfectamente derecho respecto a su órbita. No tiene la inclinación que tiene la Tierra, la que nos regala las estaciones. Por eso, en los polos, los rayos del Sol llegan siempre de costado, casi rasantes sobre el suelo.\n\nY eso tiene una consecuencia curiosa. Los polos de Mercurio están llenos de cráteres, y cuando la luz llega tan baja, el borde de un cráter proyecta su sombra sobre el fondo. Esa sombra no se mueve. Los bordes son altos, el Sol nunca sube lo suficiente, y el fondo queda a oscuras día tras día, año tras año.\n\nUno de esos cráteres se llama Prokofiev, en honor al compositor ruso. Tiene unos ciento diez kilómetros de ancho, algo más que la distancia entre dos ciudades vecinas. Parte de su interior no ha recibido luz directa del Sol en un tiempo que cuesta medir.\n\nY aquí aparece la pregunta que durante años incomodó a los científicos. ¿Puede existir hielo de agua en el planeta más cercano al Sol?\n\nParece absurdo. Unos kilómetros más allá, bajo la luz, la roca se calienta a cientos de grados. Pero en la oscuridad de un cráter profundo, sin atmósfera que traiga calor desde otro lugar, la temperatura puede caer a más de cien grados bajo cero. El calor del día no cruza la sombra. Está a un paso, y a la vez, muy lejos.\n\nLa primera pista llegó desde la Tierra, y llegó con ondas de radio. En los años noventa, los astrónomos enviaron señales de radar hacia Mercurio y escucharon el eco. Casi todo el planeta devolvía un reflejo apagado, como cabía esperar de la roca. Pero en los polos había manchas muy brillantes, que devolvían la señal con fuerza inusual.\n\nLos cráteres en sombra coincidían con esas manchas. Era una coincidencia difícil de ignorar. El hielo refleja el radar de una manera particular, y eso era justo lo que parecía estar ocurriendo.\n\nPero una pista no es una prueba. Otros materiales también podían brillar así. Hacía falta ir a mirar de cerca.\n\nEsa tarea le tocó a MESSENGER, la sonda que empezó a orbitar Mercurio en dos mil once. Tenía varios instrumentos, y cada uno miró el problema desde un ángulo distinto. Uno midió neutrones, partículas que escapan del suelo y que cambian cuando hay hidrógeno cerca, como el que contiene el agua. Otro disparó un láser contra el fondo de los cráteres y midió cómo rebotaba la luz. Y los modelos de temperatura mostraron que, en esos lugares, el frío bastaba para conservar el hielo.\n\nTres métodos distintos. Una misma respuesta.\n\nEn cráteres que nunca reciben la luz directa del Sol, hay hielo de agua.\n\nSe cree que ha estado allí durante millones de años, quieto en la oscuridad, mientras el resto del planeta se cocinaba al otro lado de la sombra.\n\nAlgo más: en algunos lugares, el hielo parece estar cubierto por una capa oscura. Los científicos piensan que podría ser material orgánico, es decir, compuestos ricos en carbono. Esa capa tal vez lo protege del poco calor que logra llegar. De dónde viene exactamente, todavía se estudia.\n\n¿Y el agua misma? ¿De dónde salió? Lo más probable es que viajara en cometas y asteroides que chocaron contra Mercurio hace mucho tiempo. Pero esa es una explicación posible, no una certeza. El origen preciso sigue abierto.\n\nPiénsalo un momento. Es el mismo tipo de agua que llenó los océanos de la Tierra, y quizás llegó por caminos parecidos. En el mundo más quemado por el Sol, unas pocas reservas de hielo guardan, en silencio, una historia que también es la nuestra.\n\nPero el hielo no es lo único que Mercurio esconde. Bajo esa roca cubierta de cráteres, mucho más hondo que cualquier sombra, hay algo pesado, metálico, que apenas empezamos a entender."
+    },
+    {
+      "title": "El corazón de hierro y lo que vendrá",
+      "question": "¿Por qué Mercurio tiene un núcleo tan grande y qué nos falta por descubrir?",
+      "reveal": "Su núcleo metálico ocupa cerca de 85 por ciento de su radio, y su campo magnético sigue desafiando las explicaciones; BepiColombo llegará a orbitarlo para buscar respuestas.",
+      "beats": [
+        "Mercurio es muy denso, y las mediciones de su gravedad y rotación indican un núcleo metálico enorme, en parte líquido.",
+        "Su campo magnético es débil pero real, algo notable en un planeta pequeño; su origen exacto se sigue investigando.",
+        "Hay hipótesis sobre cómo se formó con tanto metal, como un gran impacto temprano que arrancó parte de su manto, pero no hay consenso.",
+        "MESSENGER orbitó el planeta entre 2011 y 2015 y terminó su misión al caer sobre la superficie.",
+        "BepiColombo, misión conjunta de Europa y Japón, ha realizado varios sobrevuelos y se espera que entre en órbita a finales de 2026.",
+        "Cierra el viaje: un mundo pequeño, antiguo y extremo, que nos habla de cómo se formaron los planetas rocosos, incluida la Tierra."
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "DAVINCI Venus probe",
-        "VERITAS Venus orbiter",
-        "EnVision Venus ESA",
-        "Venus mission concept",
-        "Venus lander concept",
-        "Venus clouds from orbit",
-        "Venus Akatsuki orbiter",
-        "Venus Earth space view",
-        "Venus sunrise from orbit",
-        "Venus horizon illustration"
+        "BepiColombo Mercury flyby",
+        "BepiColombo spacecraft",
+        "Mercury interior core illustration",
+        "Mercury magnetic field",
+        "MESSENGER spacecraft Mercury",
+        "Mercury global view BepiColombo",
+        "Mercury planet limb stars",
+        "Mercury surface BepiColombo",
+        "Mercury inner solar system",
+        "Mercury and Sun distant"
       ],
       "video_queries": [
-        "DAVINCI mission animation",
-        "VERITAS Venus mission animation",
-        "Venus mission concept NASA"
+        "BepiColombo Mercury flyby",
+        "Mercury interior core animation",
+        "inner solar system flyby visualization"
       ],
-      "text": "En un laboratorio de California hay una mesa larga, y sobre ella reposa una pieza de metal del tamaño de una olla. Es una réplica de lo que algún día bajará por el aire de Venus. Alguien la gira con las manos, con cuidado, como quien revisa un reloj antiguo.\n\nEsa pieza tiene un trabajo sencillo y enorme. Debe caer durante casi una hora a través de las nubes y no romperse. Y mientras cae, tiene que oler el aire.\n\nPasaron más de cuarenta años desde la última vez que una sonda descendió a Venus. Es más que una generación entera. Quien vio las primeras fotos en color del suelo, en mil novecientos ochenta y dos, hoy es abuelo o abuela. Durante ese tiempo, Marte recibió robots, vehículos y hasta un pequeño helicóptero. Venus quedó esperando, brillando cada tarde sobre el horizonte sin que nadie le hiciera caso.\n\n¿Qué queda por descubrir en un planeta que ya fue visitado, mapeado y fotografiado? ¿Y quién volverá a mirarlo?\n\nMuchas cosas, en realidad. Y varias misiones, todavía por lanzar, ya tienen nombre.\n\nLa primera se llama Da Vinci. Es esa pieza de metal de la mesa: una sonda que se soltará de su nave madre y descenderá por la atmósfera. Durante su caída medirá los gases de las nubes, uno por uno, y de qué están hechos de verdad. Cerca del final tomará imágenes de las montañas más antiguas del planeta, esas que quizá guardan memoria de un tiempo con agua.\n\nNo aterrizará con la idea de sobrevivir. Si llega entera al suelo, será una buena noticia, pero lo importante ya habrá ocurrido en el aire.\n\nLa segunda se llama VERITAS. Esta no baja: se queda arriba, en órbita, y mira hacia abajo con radar. Las nubes no le estorban, porque las ondas de radar las atraviesan como si no estuvieran. Con ellas dibujará la superficie con una nitidez mucho mayor que la de Magellan. Será como pasar de un mapa dibujado a mano a una fotografía.\n\nCon ese detalle se podrá comprobar algo que hoy solo se sospecha. ¿Hay volcanes que siguen activos? ¿Se mueve el suelo, aunque sea un poco? Una pista así cambiaría lo que sabemos de su interior.\n\nLa tercera es europea y se llama EnVision. También irá en órbita, y también usará radar. Pero su mirada llegará más hondo. Estudiará las capas bajo la superficie, la forma en que el planeta se deforma, y la atmósfera, de arriba abajo. Será como escuchar el pecho de Venus con un estetoscopio muy paciente.\n\nEntre las tres, el planeta será observado por dentro, por fuera y desde el cielo. Nunca antes se había intentado todo junto.\n\nY luego está la pregunta que flota entre las nubes.\n\nHace unos años, un grupo de astrónomos creyó detectar en ellas un gas llamado fosfina. En la Tierra, ese gas lo producen sobre todo microbios, aunque también la industria. Fue una noticia que dio la vuelta al mundo. Después llegaron otros equipos, revisaron los datos, y no se pusieron de acuerdo. Algunos no encontraron nada. Otros encontraron algo mucho más débil.\n\nHoy nadie sabe si hay fosfina, y mucho menos si hay vida. Lo honesto es decirlo así. Pero a unos cincuenta kilómetros de altura, el aire tiene una temperatura suave y una presión parecida a la de la Tierra. Es un lugar donde, al menos en teoría, algo microscópico podría flotar. Casi nadie lo cree probable. Casi nadie se atreve a descartarlo del todo.\n\nPor eso hace falta bajar y medir con instrumentos que no dependan de la distancia.\n\nAsí que la respuesta es esta. Si los planes se cumplen, nuevas naves descenderán por la atmósfera para medir su composición, y otras volverán a cartografiar la superficie con más precisión que nunca.\n\nQuizá esa sea la mayor razón para volver. Venus nos muestra un camino que la Tierra no tomó, y que podría tomar si el aire cambiara demasiado. Y también nos enseña a leer otros mundos. Cuando un telescopio encuentre un planeta lejano, del tamaño del nuestro y cerca de su estrella, tendremos que preguntarnos si se parece a la Tierra o a Venus. Solo conociendo bien a este gemelo podremos responder.\n\nPor ahora, Venus sigue ahí, en el borde del cielo, como cada tarde desde que hubo alguien para mirarlo. Brilla sin prisa. Ha esperado cuatro mil quinientos millones de años, y puede esperar unos pocos más.\n\nTú también puedes esperar. Deja que esa luz blanca se vaya apagando detrás de tus ojos. Los planetas siguen girando, las naves siguen construyéndose, y mañana alguien volverá a mirar.\n\nBuenas noches."
+      "text": "Si pudieras sostener en la mano un trozo de Mercurio, lo primero que notarías sería el peso. Una piedra del tamaño de un puño te parecería demasiado pesada para su tamaño. ¿Por qué un mundo tan pequeño pesa tanto?\n\nLos astrónomos lo sospechaban desde hace mucho. Mercurio es el segundo planeta más denso del sistema solar, apenas por detrás de la Tierra. Y la Tierra es mucho más grande, de modo que su propio peso comprime la roca y la vuelve más densa. En Mercurio no ocurre eso. Si su densidad es tan alta, es porque casi todo lo que lo forma es metal.\n\nFaltaba una prueba. Y la dieron la gravedad y el giro del planeta.\n\nCuando una sonda pasa cerca de un mundo, su trayectoria se curva un poco. Esa curva cuenta cómo está repartida la masa por dentro. Además, los astrónomos midieron con radar pequeñas oscilaciones en la rotación de Mercurio. Un planeta sólido por completo se movería de una manera. Uno con un núcleo líquido se mueve de otra, como un huevo crudo que gira distinto a uno cocido. Mercurio se movía como el huevo crudo.\n\nAsí supimos que en el centro hay una bola de hierro, en parte fundida.\n\nOcupa cerca del ochenta por ciento del radio del planeta. Si pudieras abrir Mercurio como una fruta, la roca sería solo una cáscara delgada alrededor de un corazón metálico enorme. En la Tierra, el núcleo ocupa poco más de la mitad del radio.\n\nY ese corazón guarda otro enigma. Mercurio tiene un campo magnético. Es débil, unas cien veces más débil que el de la Tierra, pero es real y se mantiene estable. Se esperaba que un planeta tan pequeño se hubiera enfriado hace mucho, y que su núcleo estuviera ya sólido y en silencio. No fue así. Todavía hoy no sabemos del todo qué lo mantiene vivo.\n\nTampoco sabemos con certeza por qué Mercurio tiene tanto metal. Hay ideas, y todas son razonables. Quizá, al principio de su historia, un cuerpo enorme chocó contra él y arrancó buena parte de su manto de roca. Quizá el calor cercano del joven Sol se llevó los materiales más ligeros. Quizá se formó, desde el comienzo, en una región donde abundaba el hierro. Ninguna ha logrado convencer a todos.\n\nLo que sí sabemos lo debemos, en buena parte, a una sonda llamada MESSENGER. Llegó a Mercurio y se quedó. Entre dos mil once y dos mil quince le dio vueltas al planeta, y lo midió, lo fotografió y lo escuchó, hasta cubrir toda su superficie. Cuando se le acabó el combustible, no se alejó. Cayó despacio sobre la roca que había estudiado durante cuatro años.\n\nAllí quedó, como un grano de polvo más entre los cráteres.\n\nPero la historia no terminó con ella. Hoy otra nave viaja hacia Mercurio. Se llama BepiColombo, y la construyeron juntas Europa y Japón. Ya ha pasado cerca del planeta varias veces, cada vez más despacio, frenándose con su gravedad, como quien se acerca a una puerta sin hacer ruido. Si todo sale como está previsto, a finales de dos mil veintiséis se pondrá en órbita.\n\nEntonces llevará dos sondas, una para medir el campo magnético y otra para mirar la superficie. Quizá ellas nos digan por qué ese corazón de hierro sigue latiendo.\n\nHemos recorrido un largo camino, tú y yo, junto a este planeta pequeño. Lo vimos como un punto de luz junto al amanecer. Lo vimos cubierto de cráteres, encogiéndose poco a poco, con un día más largo que su año. Y descubrimos que, en el fondo de sus sombras, guarda hielo.\n\nMercurio es un mundo pequeño, antiguo y extremo. Y, sin embargo, nos habla de nosotros. De cómo se juntaron el polvo y el metal, hace cuatro mil quinientos millones de años, para formar los planetas rocosos. De cómo nació la Tierra, bajo tus pies, con su propio corazón de hierro girando en la oscuridad.\n\nTodavía quedan preguntas abiertas. Eso también es parte del descanso: saber que el cielo guarda algo más para mañana.\n\nRespira despacio. El Sol, allá lejos, sigue su camino. Buenas noches."
     }
   ],
-  "cold_open": "Hay un mundo casi del mismo tamaño que la Tierra, donde la superficie arde a cuatrocientos sesenta y cinco grados centígrados.\n\nDurante siglos creímos que era nuestra hermana. Un planeta de nubes suaves, quizá con selvas bajo ellas. Pero las sondas soviéticas que lograron posarse allí resistieron apenas el tiempo de enviar unas fotos del suelo, y callaron.\n\nEntonces, ¿qué le pasó a Venus? ¿Pudo haber tenido océanos templados durante miles de millones de años?\n\nY después, nada.\n\nEsta noche descenderás despacio a través de las nubes, caminarás sobre roca al rojo, y seguirás el rastro de un océano que quizá existió, mientras los vientos giran más rápido que el planeta entero.\n\nSin prisa. Con ciencia real y con belleza. No tienes nada que hacer, salvo escuchar.\n\nEmpecemos por esa luz que ves al anochecer.",
+  "cold_open": "En el planeta más cercano al Sol, la superficie supera los cuatrocientos grados. Y aun así, en el fondo de ciertos cráteres, hay hielo.\n\nPensábamos que un mundo así solo podía ser roca quemada. Pero en sus polos hay lugares donde la luz del Sol nunca ha llegado, y el hielo lleva allí millones de años.\n\n¿Cómo sobrevive el hielo tan cerca del fuego?\n\nEsta noche lo vamos a descubrir juntos. Verás primero un punto diminuto sobre el horizonte, después un mundo marcado por cráteres, una enorme cuenca que quedó como una cicatriz, y por fin esos rincones oscuros donde el frío guarda su secreto.\n\nSilencio.\n\nNo hay prisa. Todo lo que verás es real, y la ciencia que te cuento es la que hoy conocemos. No tienes nada que hacer, salvo escuchar.\n\nMira hacia donde acaba de ponerse el Sol, y busca esa pequeña luz.",
   "review": {
-    "suggested": 23,
-    "applied": 23,
+    "suggested": 29,
+    "applied": 29,
     "fixes": [
       {
-        "section": "chapter_1",
-        "find": "¿Por qué el objeto más brillante del cielo se muestra tan tranquilo, y no deja ver nada de lo que esconde?",
-        "replace": "¿Por qué una luz tan brillante se muestra tan tranquila, y no deja ver nada de lo que esconde?",
-        "reason": "consistency with Moon being brighter"
+        "section": "cold_open",
+        "find": "y el agua lleva allí miles de millones de años",
+        "replace": "y el hielo lleva allí millones de años",
+        "reason": "overstated; contradicts later chapter"
+      },
+      {
+        "section": "cold_open",
+        "find": "Mira hacia el Sol, y busca esa pequeña luz.",
+        "replace": "Mira hacia donde acaba de ponerse el Sol, y busca esa pequeña luz.",
+        "reason": "unsafe advice to look at the Sun"
       },
       {
         "section": "chapter_1",
-        "find": "Venus es nuestro vecino más cercano, y en algunos momentos pasa a unos cuarenta millones de kilómetros de nosotros.",
-        "replace": "Venus es el planeta que más se acerca a nosotros, y en algunos momentos pasa a unos cuarenta millones de kilómetros.",
-        "reason": "accuracy: Mercury is closer on average"
+        "find": "Por eso solo se deja ver unos minutos, atrapado entre",
+        "replace": "Por eso solo se deja ver un rato breve, atrapado entre",
+        "reason": "overstated precision"
+      },
+      {
+        "section": "chapter_1",
+        "find": "y apenas un poco mayor que nuestra Luna",
+        "replace": "y algo mayor que nuestra Luna",
+        "reason": "about 40 percent larger"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Esa nave se llamaba Mariner 10, y llevaba una tarea",
+        "replace": "Esa nave se llamaba Mariner diez, y llevaba una tarea",
+        "reason": "TTS digits"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Enviaron a Mariner 10 primero hacia Venus",
+        "replace": "Enviaron a Mariner diez primero hacia Venus",
+        "reason": "TTS digits"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Mariner 10 pasó por primera vez junto a Mercurio.",
+        "replace": "Mariner diez pasó por primera vez junto a Mercurio.",
+        "reason": "TTS digits"
+      },
+      {
+        "section": "chapter_2",
+        "find": "más o menos la distancia entre Ciudad de México y Guadalajara, pero hacia arriba",
+        "replace": "una altura que un coche recorrería en unas pocas horas de carretera",
+        "reason": "wrong distance comparison"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Mariner 10 detectó un campo magnético alrededor de Mercurio.",
+        "replace": "Mariner diez detectó un campo magnético alrededor de Mercurio.",
+        "reason": "TTS digits"
+      },
+      {
+        "section": "chapter_2",
+        "find": "un mundo tan pequeño, del tamaño de unos pocos países grandes puestos uno junto a otro, se habría enfriado hace mucho",
+        "replace": "un mundo tan pequeño se habría enfriado hace mucho",
+        "reason": "odd, inaccurate size comparison"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Así, en mil novecientos setenta y cuatro, Mariner 10 mostró un mundo",
+        "replace": "Así, en mil novecientos setenta y cuatro, Mariner diez mostró un mundo",
+        "reason": "TTS digits"
+      },
+      {
+        "section": "chapter_2",
+        "find": "resultaba ser algo distinto, con un corazón todavía activo y una piel marcada por fuerzas que apenas empezábamos a imaginar.",
+        "replace": "resultaba ser algo distinto. Tenía un corazón todavía activo y una piel marcada por fuerzas que apenas empezábamos a imaginar.",
+        "reason": "long sentence"
       },
       {
         "section": "chapter_3",
-        "find": "una sonda estadounidense llamada Mariner 2 pasó a unos treinta y cuatro mil kilómetros de Venus",
-        "replace": "una sonda estadounidense llamada Mariner Dos pasó a unos treinta y cinco mil kilómetros de Venus",
-        "reason": "TTS digit and rounding"
+        "find": "¿Por qué la superficie de Mercurio parece una cicatriz de miles de millones de años?",
+        "replace": "¿Por qué la superficie de Mercurio guarda huellas de miles de millones de años?",
+        "reason": "repeated cicatriz image"
       },
       {
         "section": "chapter_3",
-        "find": "Venera 7 descendió con su paracaídas.",
-        "replace": "Venera Siete descendió con su paracaídas.",
-        "reason": "TTS digit"
+        "find": "Hay todavía un detalle más, y es el que mejor se ve desde lejos.",
+        "replace": "Otra pista se ve mejor desde lejos.",
+        "reason": "repeated opener"
       },
       {
-        "section": "chapter_3",
-        "find": "Venera 13 y Venera 14 aterrizaron con pocos días de diferencia.",
-        "replace": "Venera Trece y Venera Catorce aterrizaron con pocos días de diferencia.",
+        "section": "chapter_4",
+        "find": "Piensa en lo que significa mirar una fotografía de Mercurio y encontrar, en un costado, una mancha enorme y ovalada, más clara que lo que la rodea.",
+        "replace": "Mira una fotografía de Mercurio. En un costado hay una mancha enorme y ovalada, más clara que lo que la rodea.",
+        "reason": "repeated opener"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Aquella primera sonda, Mariner 10, solo alcanzó a iluminar una parte.",
+        "replace": "Aquella primera sonda, Mariner diez, solo alcanzó a iluminar una parte.",
         "reason": "TTS digits"
       },
       {
         "section": "chapter_4",
-        "find": "Un avión de pasajeros tardaría un poco más en dar la vuelta a la Tierra.",
-        "replace": "Es una vuelta entera en menos de una semana.",
-        "reason": "false comparison"
-      },
-      {
-        "section": "chapter_4",
-        "find": "Esa distancia es más o menos la que recorrerías caminando durante diez horas.",
-        "replace": "Esa distancia es más o menos la que recorrerías caminando durante cuatro horas.",
-        "reason": "wrong arithmetic"
-      },
-      {
-        "section": "chapter_4",
-        "find": "La temperatura también es suave, de unos pocos decenas de grados, la de un día templado en cualquier ciudad.",
-        "replace": "La temperatura también es suave, de unas pocas decenas de grados, como la de un día cálido.",
-        "reason": "grammar and accuracy"
+        "find": "hace unos tres mil quinientos millones de años",
+        "replace": "hace unos tres mil ochocientos millones de años",
+        "reason": "Caloris age about 3.8 billion"
       },
       {
         "section": "chapter_5",
-        "find": "Todo esto con una temperatura de cuatrocientos sesenta y cinco grados Celsius. Más que un horno de cocina puesto al máximo. Tanto, que el plomo se derretiría sobre esas rocas.",
-        "replace": "Y todo esto con un calor que supera el de cualquier horno de cocina.",
-        "reason": "repeated facts"
+        "find": "En las fotografías de Mariner 10 hay un cráter que parece cortado por una cicatriz.",
+        "replace": "En las fotografías de Mariner diez hay un cráter que parece partido en dos.",
+        "reason": "TTS digits; repeated cicatriz"
       },
       {
         "section": "chapter_5",
-        "find": "La sonda soviética Venera 13 descendió en marzo de mil novecientos ochenta y dos.",
-        "replace": "La sonda soviética Venera Trece descendió en marzo de mil novecientos ochenta y dos.",
-        "reason": "TTS digit"
+        "find": "Mariner 10 solo fotografió la mitad del planeta",
+        "replace": "Mariner diez solo fotografió la mitad del planeta",
+        "reason": "TTS digits"
+      },
+      {
+        "section": "chapter_5",
+        "find": "Y su altura puede llegar a varios kilómetros.",
+        "replace": "Y su altura puede llegar a unos tres kilómetros.",
+        "reason": "more precise"
       },
       {
         "section": "chapter_6",
-        "find": "Hoy sabemos de Venus lo que sabemos de las montañas de la Tierra, o mejor.",
-        "replace": "Casi toda la superficie de Venus quedó cartografiada con buen detalle.",
+        "find": "durar más que su año... o casi?",
+        "replace": "durar más que su año?",
+        "reason": "day is twice the year"
+      },
+      {
+        "section": "chapter_6",
+        "find": "se vería varias veces más grande que desde la Tierra. Cerca del perihelio, casi tres veces más ancho.",
+        "replace": "se vería bastante más grande que desde la Tierra. Cerca del perihelio, hasta tres veces más ancho.",
+        "reason": "overstated size"
+      },
+      {
+        "section": "chapter_7",
+        "find": "Piensa en una piedra que ha pasado un día entero",
+        "replace": "Toma una piedra que ha pasado un día entero",
+        "reason": "repeated opener"
+      },
+      {
+        "section": "chapter_7",
+        "find": "Esa lentitud no es de la piedra. Es del aire que la rodea.",
+        "replace": "Y buena parte de esa lentitud la explica el aire que la rodea.",
         "reason": "overstated claim"
       },
       {
-        "section": "chapter_6",
-        "find": "Si nadie lo repusiera, desaparecería en unos cuantos millones de años.",
-        "replace": "Si nadie lo repusiera, desaparecería en muy poco tiempo.",
-        "reason": "factual error"
+        "section": "chapter_7",
+        "find": "Poco a poco baja hasta unos menos ciento ochenta grados Celsius.",
+        "replace": "Poco a poco baja hasta unos ciento ochenta grados bajo cero.",
+        "reason": "TTS symbol reading"
       },
       {
         "section": "chapter_7",
-        "find": "En su atmósfera hay cerca de ciento cincuenta veces más deuterio, en proporción, que en nuestros océanos.",
-        "replace": "En su atmósfera hay más de cien veces más deuterio, en proporción, que en nuestros océanos.",
-        "reason": "number accuracy"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Y la cifra siempre fue la misma.",
-        "replace": "Y las cifras siempre fueron del mismo orden.",
-        "reason": "overstated certainty"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Los modelos más favorables calculan que Venus pudo tener agua líquida durante miles de millones de años.",
-        "replace": "Los modelos más favorables calculan que Venus pudo tener agua líquida durante dos o tres mil millones de años.",
-        "reason": "overstated duration"
+        "find": "En Mercurio la temperatura varía entre unos cuatrocientos treinta grados de día y unos menos ciento ochenta de noche, porque sin atmósfera no hay nada que retenga el calor.",
+        "replace": "En Mercurio, sin atmósfera, nada retiene el calor del día.",
+        "reason": "repeated numbers"
       },
       {
         "section": "chapter_8",
-        "find": "La japonesa Akatsuki, que llegó en dos mil quince, las sigue observando todavía.",
-        "replace": "La japonesa Akatsuki, que llegó en dos mil quince, las observó hasta hace poco.",
-        "reason": "outdated mission status"
+        "find": "Tiene unos ciento cincuenta kilómetros de ancho, más o menos la distancia entre dos ciudades vecinas.",
+        "replace": "Tiene unos ciento diez kilómetros de ancho, algo más que la distancia entre dos ciudades vecinas.",
+        "reason": "Prokofiev diameter about 112 km"
       },
       {
         "section": "chapter_8",
-        "find": "Sopla a más de cien metros por segundo, lo bastante para derribar a una persona en la Tierra si el aire fuera tan ligero como el nuestro.",
-        "replace": "Sopla a más de cien metros por segundo, más fuerte que cualquier huracán de la Tierra.",
-        "reason": "confusing claim"
-      },
-      {
-        "section": "chapter_8",
-        "find": "Venus está a unos cuarenta millones de kilómetros en sus mejores días, y aun así guarda un enigma de física que no hemos terminado de resolver con nuestros instrumentos mejores.",
-        "replace": "Venus es el planeta que más se acerca a nosotros, y aun así guarda un enigma de física que no hemos resuelto.",
-        "reason": "repetition, shorter"
+        "find": "Hay un detalle más. En algunos lugares, el hielo parece",
+        "replace": "Algo más: en algunos lugares, el hielo parece",
+        "reason": "repeated opener"
       },
       {
         "section": "chapter_9",
-        "find": "Pasaron más de treinta años desde la última vez que una nave se acercó con seriedad a Venus. Treinta años es una generación entera.",
-        "replace": "Pasaron más de cuarenta años desde la última vez que una sonda descendió a Venus. Es más que una generación entera.",
-        "reason": "factual error"
-      },
-      {
-        "section": "chapter_9",
-        "find": "Y varias naves ya tienen nombre.",
-        "replace": "Y varias misiones, todavía por lanzar, ya tienen nombre.",
-        "reason": "certainty"
-      },
-      {
-        "section": "chapter_9",
-        "find": "La primera se llama DAVINCI.",
-        "replace": "La primera se llama Da Vinci.",
-        "reason": "TTS acronym"
-      },
-      {
-        "section": "chapter_9",
-        "find": "En la Tierra, ese gas lo producen sobre todo seres vivos muy pequeños.",
-        "replace": "En la Tierra, ese gas lo producen sobre todo microbios, aunque también la industria.",
-        "reason": "accuracy"
-      },
-      {
-        "section": "chapter_9",
-        "find": "Nuevas naves descenderán por la atmósfera para medir su composición, y otras volverán a cartografiar la superficie con una precisión que nunca tuvimos.",
-        "replace": "Si los planes se cumplen, nuevas naves descenderán por la atmósfera para medir su composición, y otras volverán a cartografiar la superficie con más precisión que nunca.",
-        "reason": "certainty"
+        "find": "Ocupa cerca de ochenta y cinco por ciento del radio del planeta.",
+        "replace": "Ocupa cerca del ochenta por ciento del radio del planeta.",
+        "reason": "core radius about 80 percent"
       }
     ]
   },
-  "topic": "Venus: el infierno brillante bajo nubes de ácido sulfúrico",
+  "topic": "Mercurio: el mundo más cercano al Sol, de extremos y cráteres",
   "shorts": [
     {
-      "title": "En Venus, el plomo sería un charco brillante",
-      "hook": "Un planeta donde el plomo se derrite",
-      "narration": "Hay un planeta donde el plomo sería un charco brillante en el suelo. Es Venus, ese punto blanco y sereno que ves al atardecer. Parece tranquilo, pero bajo sus nubes la temperatura ronda los cuatrocientos sesenta y cinco grados Celsius. El plomo se derrite a unos trescientos veintisiete. Un horno doméstico, el más potente, apenas pasa de doscientos cincuenta. Y hay más: ese calor es casi igual de día que de noche, en el ecuador que cerca de un polo, porque la densa atmósfera lo reparte como una manta que nunca se levanta. En diciembre de mil novecientos setenta, la sonda soviética Venera Siete tocó ese suelo y habló durante unos veintitrés minutos. Fue el primer mensaje enviado desde la superficie de otro planeta. La luz más serena del cielo escondía un horno. La historia completa de Venus te espera en el canal.",
+      "title": "El día en Mercurio dura más que su año",
+      "hook": "Un día más largo que un año",
+      "narration": "Un solo día en Mercurio dura más que un año entero en Mercurio. Parece imposible, pero es pura geometría. El planeta rodea al Sol en unos ochenta y ocho días terrestres. Sin embargo, gira tan despacio sobre sí mismo que, para que el Sol vuelva a salir en el mismo lugar, hacen falta unos ciento setenta y seis días. Eso es el doble de su año. Imagina que vivieras allí: verías un solo amanecer cada dos años del planeta. Pasarías un año entero con el Sol sobre tu cabeza, y otro año entero en la noche. Además, en ciertos lugares el Sol se detiene, retrocede unos días y luego sigue su camino, como si dudara. Todo esto lo descubrimos gracias al eco de ondas de radar. El viaje completo por este mundo extraño te espera en el canal.",
       "image_queries": [
-        "Venus surface Venera lander",
-        "Venus clouds Mariner 10 ultraviolet",
-        "Venus global view Magellan radar",
-        "Venus evening sky planet"
+        "Mercury planet surface NASA",
+        "Mercury MESSENGER global mosaic",
+        "Mercury sunrise illustration",
+        "Mercury orbit around the Sun diagram"
       ],
       "video_queries": [
-        "Venus planet rotating clouds",
-        "Venus surface descent animation"
+        "Mercury rotation orbit animation NASA",
+        "MESSENGER spacecraft Mercury flyby"
       ]
     },
     {
-      "title": "Venus pudo tener océanos durante miles de millones de años",
-      "hook": "Venus quizá tuvo mares",
-      "narration": "Un átomo raro nos dice que Venus pudo tener océanos. Se llama deuterio, un hidrógeno un poco más pesado. En la Tierra hay unos ciento cincuenta átomos de deuterio por cada millón de hidrógeno ordinario. En la atmósfera de Venus hay más de cien veces más, en proporción. La explicación más aceptada es que el agua se evaporó, el vapor subió, y la luz ultravioleta del Sol rompió sus moléculas. El hidrógeno ligero escapó al espacio, y el pesado se quedó atrás, como el sedimento en el fondo de una taza. Algunos modelos calculan que Venus pudo tener agua líquida durante dos o tres mil millones de años. No todos los científicos coinciden, y hay que decirlo con honestidad. Pero el rastro sigue ahí, en el aire. El viaje completo por el infierno brillante de Venus te espera en el canal.",
+      "title": "Hay hielo en el planeta más cercano al Sol",
+      "hook": "Hielo donde nadie lo espera",
+      "narration": "En el planeta más cercano al Sol hay hielo de agua. Suena absurdo, porque a pocos kilómetros de allí la roca se calienta a cuatrocientos treinta grados Celsius, más de lo que necesita el plomo para fundirse. Pero en los polos de Mercurio hay cráteres tan profundos que el Sol nunca logra iluminar su fondo. Allí la temperatura cae a más de cien grados bajo cero, y el hielo puede durar millones de años. La sonda MESSENGER lo confirmó con tres métodos distintos y obtuvo una misma respuesta. Es como guardar un cubo de hielo en la sombra de un horno encendido, y que no se derrita. Quizá ese agua llegó en cometas, igual que parte del agua de nuestros océanos. La historia completa de Mercurio te espera en el canal.",
       "image_queries": [
-        "Venus atmosphere Venus Express",
-        "Venus artist concept ancient ocean",
-        "Venus Magellan volcano surface",
-        "Venus ultraviolet clouds Akatsuki"
+        "Mercury north pole radar ice deposits NASA",
+        "Mercury permanently shadowed crater MESSENGER",
+        "Prokofiev crater Mercury",
+        "MESSENGER spacecraft orbiting Mercury"
       ],
       "video_queries": [
-        "Venus atmosphere animation NASA",
-        "Venus planet greenhouse effect"
+        "Mercury polar ice MESSENGER NASA animation",
+        "Mercury craters shadow flyover NASA"
       ]
     }
   ]
