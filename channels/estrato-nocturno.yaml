@@ -36,8 +36,14 @@ voice:
   id: em_alex
   speed: 0.8
   wpm: 118                 # ~141 ppm al hablar, menos las pausas
+  # 25-oct-2026: ritmo medido en Calm Space (@CalmSpaceToSleep): pausas cortas y regulares (mediana 0,54 s,
+  # nunca más de 1,2 s), sin silencios largos entre párrafos.
+  pause_sentence: 0.6
+  pause_paragraph: 1.1
+  pause_reveal: 0.3
 
 mix:
+  music_volume: 0.06       # 25-oct: música casi inaudible bajo la voz, como Calm Space (~35 dB por debajo)
   voice_eq: documentary_max  # la "E" que eligió Luis (cálida, sin reverb) + compresión fuerte para el volumen máximo
   lufs: -10.5              # volumen máximo sin distorsión (18-oct: Luis eligió "volumen 3, lo máximo")
   score: chapters          # la música cambia de tonalidad y color en cada capítulo
