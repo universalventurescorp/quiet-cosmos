@@ -383,12 +383,20 @@ def main():
 
     # 6. final audio
     audio = out / "audio.wav"
+    pitch_st = cfg["mix"].get("voice_pitch_st", 0.0)
+    voice_test = None
+    if cfg["mix"].get("voice_pitch_ab"):
+        # A/B test with the audience: alternate natural voice (A) and raised pitch (B) episode by episode
+        b = len(read_json(DATA / "done.json", [])) % 2 == 1
+        pitch_st = cfg["mix"]["voice_pitch_ab"] if b else 0.0
+        voice_test = "B" if b else "A"
+        print(f"   voice A/B test: version {voice_test} (pitch {pitch_st:+.1f} st)")
     if not audio.exists():
         from .mix import mix
         step(6, N, "mixing voice, score and sound design")
         mix(out / "narration.wav", music, audio, timing["duration"],
             music_volume=cfg["mix"]["music_volume"], lufs=cfg["mix"]["lufs"],
-            voice_eq=cfg["mix"].get("voice_eq", "clean"), voice_pitch_st=cfg["mix"].get("voice_pitch_st", 0.0),
+            voice_eq=cfg["mix"].get("voice_eq", "clean"), voice_pitch_st=pitch_st,
             voice_size_st=cfg["mix"].get("voice_size_st", 0.0),
             sfx=sfx if sfx.exists() else None, sfx_volume=cfg["mix"].get("sfx_volume", 1.0))
 
@@ -509,7 +517,7 @@ def main():
         print(f"sample done: https://youtu.be/{video_id}" if video_id else "sample done (not uploaded)")
         return
     done = read_json(DATA / "done.json", [])
-    done.append({"topic": topic, "title": script["title"], "video_id": video_id, "shorts": short_ids,
+    done.append({"topic": topic, "title": script["title"], "video_id": video_id, "voice_test": voice_test, "shorts": short_ids,
                  "minutes": round(timing["duration"] / 60, 1), "qa_ok": report["ok"],
                  "ai_scenes": report["ai_scenes"], "ai_status": ai_media.get("status"),
                  "date": dt.date.today().isoformat()})
