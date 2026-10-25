@@ -1,253 +1,156 @@
 {
-  "title": "Los anillos de Saturno | Documental Espacial Relajante para Dormir",
-  "description": "Los anillos de Saturno son uno de los espectáculos más serenos y misteriosos del sistema solar. En este documental espacial relajante viajamos junto a la sonda Cassini para descubrir de qué están hechos, cuánto miden de ancho y cuán delgados son en realidad.\n\nCon una narración pausada y las imágenes más hermosas de la NASA, nos acercamos a un río de hielo en órbita y nos preguntamos cuánto tiempo más lo veremos brillar. Ideal para relajarte, aprender algo real y dejarte llevar hacia el sueño.",
+  "title": "Los Anillos de Saturno | Un Viaje Tranquilo para Dormir",
+  "description": "Los anillos de Saturno son el sistema de anillos más extenso y luminoso del Sistema Solar, y en este documental relajante los recorremos con calma, desde el borde exterior hasta el interior de su estructura. Con imágenes reales de la misión Cassini de la NASA, descubrimos de qué están hechos, cómo se formaron y por qué podrían no durar para siempre.\n\nEs un viaje pensado para escuchar sin prisa, aprender algo real y dejarte llevar hacia el sueño. Te contamos lo que se sabe con certeza y señalamos con honestidad lo que la ciencia todavía discute.",
   "tags": [
-    "anillos de Saturno",
-    "documental espacial para dormir",
-    "documental del espacio relajante",
-    "Saturno documental",
-    "sonda Cassini",
-    "misión Cassini Saturno",
-    "de qué están hechos los anillos de Saturno",
-    "cómo se formaron los anillos de Saturno",
-    "los anillos de Saturno desaparecerán",
-    "documental espacial en español",
+    "los anillos de saturno",
+    "anillos de saturno",
+    "documental del espacio para dormir",
+    "documental relajante del espacio",
+    "saturno documental",
+    "misión cassini",
+    "cassini saturno",
+    "de qué están hechos los anillos de saturno",
+    "cómo se formaron los anillos de saturno",
+    "documental espacio relajante",
     "viaje por el espacio para dormir",
-    "sistema solar relajante",
-    "imágenes reales de Saturno NASA",
-    "Saturno y sus lunas",
-    "astronomía para dormir",
-    "Encélado y Saturno",
-    "ciencia relajante para dormir"
+    "sistema solar para dormir",
+    "lunas de saturno",
+    "encélado",
+    "planetas del sistema solar",
+    "ciencia para dormir",
+    "imágenes reales de la nasa",
+    "espacio profundo relajante"
   ],
   "thumbnail_texts": [
-    "UN RÍO DE HIELO",
-    "NO DURARÁN SIEMPRE",
-    "MÁS FINOS QUE UN PAPEL"
+    "UN MURO DE HIELO",
+    "LLUVIA DE LOS ANILLOS",
+    "ANILLOS EN CUENTA ATRÁS"
   ],
-  "hook_promise": "Los anillos de Saturno se extienden cientos de miles de kilómetros y, aun así, en muchos lugares tienen apenas unas decenas de metros de grosor, y podrían estar desapareciendo lentamente.",
+  "hook_promise": "Los anillos de Saturno, tan vastos que cubrirían la distancia entre la Tierra y la Luna, son en su mayor parte hielo de agua casi puro y podrían estar desapareciendo lentamente, cayendo sobre el planeta como una lluvia silenciosa.",
   "chapters": [
     {
-      "title": "Un río de hielo en órbita",
-      "question": "¿De qué está hecho realmente algo tan enorme y luminoso como los anillos de Saturno?",
-      "reveal": "Los anillos son miles de millones de fragmentos de hielo de agua, desde granos de polvo hasta bloques como casas, que orbitan juntos y reflejan la luz del Sol.",
+      "title": "Un puente de hielo sobre Saturno",
+      "question": "¿De qué está hecho realmente algo tan vasto y brillante como los anillos de Saturno?",
+      "reveal": "Los anillos, extendidos a cientos de miles de kilómetros, son en su mayoría hielo de agua en fragmentos que van desde granos de polvo hasta bloques como casas, y su grosor suele ser de apenas decenas de metros.",
       "beats": [
-        "Saturno visto desde lejos: un planeta gigante y dorado rodeado por un disco brillante que parece sólido.",
-        "Galileo los vio en 1610 con su telescopio y no supo qué eran: los describió como 'orejas' a los lados del planeta.",
-        "Huygens, décadas después, propuso que se trataba de un anillo delgado que no tocaba el planeta.",
-        "Maxwell en el siglo XIX demostró que un anillo sólido sería inestable y que debían ser incontables partículas independientes.",
-        "Las observaciones de la sonda Cassini confirmaron que son sobre todo hielo de agua muy puro, con fragmentos de tamaños muy distintos.",
-        "El anillo principal se extiende cientos de miles de kilómetros, pero su grosor típico es de apenas decenas de metros.",
-        "Cada fragmento sigue su propia órbita, y todos juntos forman una danza lenta y silenciosa."
+        "Nos acercamos a Saturno desde lejos y vemos el planeta y su anillo como una sola silueta, tal como lo vio Galileo por primera vez, como un borrón extraño a ambos lados del planeta.",
+        "Huygens, en el siglo XVII, propuso que se trataba de un anillo delgado y plano que no tocaba al planeta, y más tarde se descubrió que está dividido en muchos anillos principales, separados por huecos como la división de Cassini.",
+        "La misión Cassini, que orbitó Saturno entre 2004 y 2017, mostró que cada anillo está formado por incontables fragmentos de hielo que giran alrededor del planeta, cada uno en su propia órbita.",
+        "Los espectros indican que el material es hielo de agua muy puro, y eso explica su brillo: refleja la luz del Sol como nieve fresca.",
+        "Aunque se extienden por cientos de miles de kilómetros, su grosor típico es de decenas de metros en la mayor parte de su extensión, proporcionalmente más delgados que una hoja de papel.",
+        "Imaginamos flotar entre los fragmentos: un silencio total, bloques de hielo que se rozan despacio y el gigante dorado de Saturno ocupando medio cielo."
       ],
       "ambience": "ice",
       "image_queries": [
         "Saturn rings Cassini",
-        "Saturn portrait Cassini",
         "Saturn rings backlit Cassini",
+        "Saturn Cassini division",
         "Saturn rings close up Cassini",
-        "Saturn rings Hubble",
-        "Saturn Hubble Space Telescope",
-        "Saturn rings ice particles Cassini",
-        "Saturn A ring Cassini",
+        "Saturn rings ice particles",
+        "Saturn A ring Encke gap",
         "Saturn B ring Cassini",
-        "Saturn equinox rings Cassini"
+        "Saturn equinox rings shadows",
+        "Saturn rings Hubble",
+        "Saturn from Cassini mosaic"
       ],
       "video_queries": [
-        "Saturn flyover animation Cassini",
-        "Saturn rings visualization",
-        "Cassini Saturn mission movie"
+        "Saturn rings flyover animation Cassini",
+        "Saturn rings visualization NASA",
+        "Cassini mission Saturn rings 4K"
       ],
-      "text": "Desde muy lejos, Saturno parece un objeto improbable. Es un planeta enorme, de un dorado pálido, y a su alrededor flota un disco brillante que parece sólido, como una moneda de luz. Si lo miras un buen rato, la pregunta llega sola. ¿De qué está hecho algo tan grande y tan luminoso?\n\nEn el año mil seiscientos diez, un hombre apuntó hacia allí uno de los primeros telescopios. Se llamaba Galileo Galilei. Vio algo a cada lado del planeta, pero la imagen era borrosa, y no supo qué era. Las describió como dos \"orejas\", como si Saturno tuviera asas.\n\nCasi medio siglo después, el astrónomo Christiaan Huygens tuvo un telescopio mejor. Con él entendió que no eran orejas. Propuso que Saturno estaba rodeado por un anillo delgado y plano, que no tocaba el planeta en ningún punto.\n\nEra una buena idea. Pero dejaba algo sin resolver.\n\nDos siglos más tarde, el físico James Clerk Maxwell hizo las cuentas, hacia mil ochocientos cincuenta y nueve. Mostró que un anillo sólido y continuo no podría sostenerse. Las fuerzas de marea del planeta lo desgarrarían. La única forma de que durara era que no fuera una sola pieza.\n\nLos anillos, concluyó, debían ser incontables partículas, cada una por su cuenta.\n\nFaltaba verlas de cerca. La sonda Cassini lo hizo mucho después, a partir de dos mil cuatro. Sus instrumentos mostraron que los anillos son sobre todo hielo de agua, muy limpio y muy blanco. Por eso reflejan tan bien la luz del Sol. Los fragmentos van desde granos de polvo hasta bloques del tamaño de una casa.\n\nY las proporciones sorprenden. El conjunto de los anillos se extiende cientos de miles de kilómetros, una distancia comparable a la que separa la Tierra de la Luna. Sin embargo, su grosor típico es de apenas unas decenas de metros. Proporcionalmente, es más fino que una hoja de papel extendida sobre una cancha entera.\n\nCada fragmento sigue su propia órbita alrededor de Saturno. Algunos se rozan despacio. Otros se separan y vuelven a encontrarse. No hay ruido, no hay viento. Solo incontables pedazos de hielo que se mueven juntos, con calma, reflejando la luz del Sol.\n\nLo que parecía una pieza sólida es un río de hielo que nunca se detiene."
+      "text": "Volvamos a ese hombre de mil seiscientos diez. Es Galileo, y lo que ve en su telescopio lo desconcierta. Esperaba un punto de luz y encuentra un bulto extraño a cada lado del planeta.\n\nNosotros llegamos desde lejos, y así lo vemos también: el planeta y su anillo, juntos, como una sola silueta. Todavía no se distinguen los detalles. Solo una forma suave, dorada, suspendida en la oscuridad.\n\n¿Qué eran esos bultos? ¿De qué está hecha una cosa tan grande y tan brillante?\n\nCasi medio siglo después, Huygens ofreció una primera respuesta. Dijo que era un anillo delgado y plano, que rodeaba al planeta sin tocarlo. Con telescopios mejores se vio algo más. No era un solo anillo, sino muchos, separados por huecos oscuros. El más famoso es la división de Cassini, una franja vacía que se ve incluso desde la Tierra con un telescopio modesto.\n\nPero seguía faltando lo esencial. ¿Era una lámina sólida? ¿Un líquido? Hubo que esperar siglos, hasta que la sonda Cassini llegó a Saturno y lo orbitó entre dos mil cuatro y dos mil diecisiete.\n\nAl acercarse, el anillo se deshizo en piezas.\n\nCada anillo está formado por incontables fragmentos de hielo. Cada uno gira alrededor del planeta por su propia órbita, como una luna diminuta. Algunos son granos de polvo. Otros son del tamaño de una casa.\n\nLos espectros de la luz que reflejan indican que ese hielo es agua muy pura. Por eso brillan tanto. Devuelven la luz del Sol como lo hace la nieve recién caída.\n\nY hay un detalle que cuesta creer. Los anillos se extienden por cientos de miles de kilómetros, casi la distancia de aquí a la Luna. Sin embargo, casi en toda su extensión, su grosor es de apenas decenas de metros. Proporcionalmente, son más delgados que una hoja de papel.\n\nAhora quédate un momento allí, entre los fragmentos. No hay ningún sonido. Un bloque de hielo pasa a tu lado, tan despacio que apenas lo notas, y roza a otro con un contacto suave.\n\nY arriba, ocupando buena parte del cielo, Saturno te mira con su luz dorada, inmenso y quieto."
     },
     {
-      "title": "Lo que el tiempo se está llevando",
-      "question": "¿Son los anillos tan antiguos como el propio Saturno, o son algo pasajero?",
-      "reveal": "Los datos de Cassini sugieren que los anillos pierden material hacia Saturno y que podrían desaparecer en cientos de millones de años, lo que haría de nuestra época un momento privilegiado para verlos.",
+      "title": "Los anillos que se están apagando",
+      "question": "¿Son los anillos de Saturno eternos, o los estamos viendo en un momento pasajero de la historia del planeta?",
+      "reveal": "Los datos de Cassini indican que el material de los anillos cae hacia Saturno como una lluvia de hielo y polvo, y que podrían desaparecer en cientos de millones de años, aunque su edad exacta sigue en debate.",
       "beats": [
-        "Cassini pasó más de trece años en Saturno y terminó su misión en 2017 sumergiéndose en su atmósfera.",
-        "En sus últimas órbitas se acercó entre el planeta y los anillos, algo que ninguna nave había hecho antes.",
-        "Midió cuánta materia cae desde los anillos hacia Saturno en forma de polvo y partículas heladas, la llamada 'lluvia de anillos'.",
-        "A ese ritmo, los anillos podrían desaparecer en unos cientos de millones de años, aunque la cifra exacta sigue en debate.",
-        "Su edad es una cuestión abierta: unos estudios los consideran jóvenes y otros piensan que podrían ser mucho más antiguos.",
-        "Las lunas pastoras, como Prometeo y Pandora, y huecos como la división de Cassini moldean y sostienen la estructura de los anillos.",
-        "Mirar hoy los anillos es contemplar algo hermoso que no durará para siempre, y eso nos invita a quedarnos un rato más en silencio."
+        "Comenzamos con la pregunta abierta: ¿cuándo nacieron los anillos? Los científicos aún no se ponen de acuerdo: algunos defienden que son tan antiguos como el planeta y otros que son mucho más jóvenes.",
+        "Durante sus últimas órbitas, la sonda Cassini voló entre los anillos y la atmósfera de Saturno, en el llamado Gran Final, y midió directamente la masa de los anillos.",
+        "Esas mediciones apuntan a que los anillos tienen una masa relativamente pequeña, y que su material sigue siendo bombardeado por micrometeoroides que lo oscurecen y lo hacen parecer más viejo.",
+        "Las observaciones mostraron que partículas de hielo y polvo caen desde los anillos hacia Saturno atraídas por su gravedad y su campo magnético, un proceso conocido como lluvia de los anillos.",
+        "Con esa tasa de pérdida, los anillos podrían desaparecer en cientos de millones de años, un tiempo breve frente a los miles de millones de años del Sistema Solar.",
+        "Cerramos con una imagen serena: Saturno, hoy rodeado de luz y hielo, y un futuro lejano en que sólo quedará el planeta, mientras los anillos que vemos pertenecen a una época que tenemos la suerte de presenciar."
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Cassini Grand Finale Saturn",
-        "Saturn rings Cassini gap",
-        "Cassini Division Saturn",
-        "Prometheus Saturn moon rings",
-        "Pandora Saturn moon",
-        "Pan moon Saturn rings",
-        "Daphnis moon Keeler Gap",
-        "Saturn rings shadow Cassini",
+        "Saturn Cassini Grand Finale",
+        "Saturn rings Cassini final orbits",
+        "Saturn atmosphere ring rain",
         "Saturn north pole hexagon Cassini",
-        "Saturn Earth Cassini rings"
+        "Saturn rings Earth Cassini",
+        "Saturn planet Cassini mosaic",
+        "Saturn rings shadow planet",
+        "Saturn Cassini last images",
+        "Saturn rings Webb",
+        "Saturn night side Cassini"
       ],
       "video_queries": [
         "Cassini Grand Finale animation",
-        "Saturn rings flyby Cassini",
-        "Cassini final plunge Saturn visualization"
+        "Saturn ring rain visualization",
+        "Saturn flyover Cassini animation"
       ],
-      "text": "Imagina que estás junto a la nave Cassini en septiembre de dos mil diecisiete. Una sonda pequeña, tras más de trece años en órbita de Saturno, se acerca por última vez. No volverá.\n\nLos ingenieros la dirigieron hacia la atmósfera a propósito. Así evitaban que algún día chocara con una de las lunas heladas y las contaminara con microbios de la Tierra. Cassini se hundió en las nubes y dejó de enviar datos, como una vela que se apaga con calma.\n\nPero antes de eso hizo algo que ninguna nave había hecho. En sus últimas órbitas pasó por el espacio libre entre Saturno y sus anillos. Era un hueco de unos dos mil kilómetros, y nadie sabía cuánto polvo habría allí.\n\nLlevaba con ella una pregunta sencilla. ¿Son los anillos tan antiguos como el propio Saturno, o son algo pasajero?\n\nCassini midió lo que caía. Desde los anillos descienden hacia el planeta polvo y pequeñas partículas heladas, atraídas por la gravedad y el campo magnético de Saturno. Los científicos lo llaman lluvia de anillos. Es una lluvia sin nubes ni ruido, que cae en silencio desde hace mucho tiempo.\n\nLos anillos se están vaciando.\n\nSi ese ritmo se mantiene, desaparecerían en unos cientos de millones de años. Parece mucho tiempo, pero es poco para un planeta. La cifra exacta sigue en debate, porque nadie sabe si la lluvia siempre fue igual.\n\nTampoco sabemos con certeza cuántos años tienen. Algunos estudios los creen jóvenes, de unos cien millones de años. Otros piensan que podrían ser mucho más antiguos, y que solo parecen nuevos porque se mantienen muy brillantes. La ciencia todavía no decide.\n\nLo que sí vemos es que no están abandonados a su suerte. Pequeñas lunas pastoras, como Prometeo y Pandora, guían las partículas en los bordes y mantienen finos algunos anillos. La gran división de Cassini es un hueco que mantiene abierto, en buena parte, la gravedad de otra luna, Mimas. Ese orden es frágil, pero se sostiene.\n\nY quizá por eso importa que nos haya tocado vivir ahora.\n\nEstás mirando algo hermoso que no durará para siempre. Pocas veces en la historia de un planeta hay alguien que pueda verlo así.\n\nPuedes quedarte un rato más en silencio, mirando ese río de hielo que sigue girando. Respira despacio. Buenas noches."
+      "text": "Hay una pregunta que los astrónomos todavía se hacen cuando miran a Saturno. ¿Cuándo nacieron esos anillos? Parecen tan firmes, tan parte del planeta, que uno diría que siempre estuvieron ahí.\n\nPero no todos lo creen así. Algunos científicos piensan que los anillos son tan antiguos como el propio Saturno, unos cuatro mil quinientos millones de años. Otros sostienen que son mucho más jóvenes, quizá de apenas decenas o pocos cientos de millones de años. En ese caso, Saturno ya era un planeta viejo cuando se formaron.\n\nPara acercarse a la respuesta, la sonda Cassini hizo algo muy audaz al final de su vida. En sus últimas órbitas se deslizó por el hueco entre los anillos y las nubes de Saturno, en lo que se llamó el Gran Final. Ninguna nave había pasado tan cerca. Y allí, por primera vez, pudo sentir la gravedad de los anillos y medir cuánta materia contienen.\n\nResultó que no contienen tanta. Su masa es relativamente pequeña, mucho menor de lo que muchos esperaban. Y hay otro detalle importante. Los micrometeoroides, diminutos granos de polvo que viajan por el espacio, caen sin parar sobre el hielo y lo oscurecen. Por eso los anillos pueden parecer más viejos de lo que son.\n\nPero Cassini vio algo más.\n\nDesde los anillos, partículas de hielo y de polvo se desprenden y caen hacia Saturno. Las atrae su gravedad y las guía su campo magnético. Es una lluvia suave y constante, a la que los científicos llaman lluvia de los anillos.\n\nCon ese ritmo de pérdida, los anillos podrían desaparecer en unos cientos de millones de años, según las estimaciones actuales. Parece mucho tiempo. Para el Sistema Solar es un parpadeo.\n\nAsí que tal vez no sean eternos. Tal vez los estamos viendo en un momento pasajero.\n\nMira a Saturno ahora, rodeado de luz y de hielo. Algún día, muy lejos en el futuro, quedará solo el planeta, dorado y quieto. Los anillos que tú ves pertenecen a una época, y tú has tenido la suerte de estar en ella.\n\nRespira despacio. El hielo sigue cayendo, copo a copo, sin prisa. Buenas noches."
     }
   ],
-  "cold_open": "Los anillos de Saturno miden cientos de miles de kilómetros de ancho, y en muchos lugares apenas tienen el grosor de un edificio.\n\nPiensa en eso un momento. Una lámina más fina que una hoja de papel, en proporción a su tamaño, flotando en la oscuridad.\n\nDurante siglos creímos que eran eternos. Pero hoy sabemos que algo los va desgastando, grano a grano.\n\n¿Cómo se sostiene algo tan inmenso y tan frágil? ¿Y cuánto tiempo más estará ahí?\n\nEsta noche seguiremos el rastro de ese misterio. Verás un río de hielo girando en silencio alrededor de un planeta dorado. Y verás cómo la luz roza sus bordes. Y escucharás lo que el tiempo se está llevando.\n\nNo hay prisa. Es ciencia real, contada despacio, y no tienes nada que hacer, salvo escuchar.\n\nRespira.\n\nEmpecemos por mirar de lejos.",
+  "cold_open": "En mil seiscientos diez, un hombre apunta un tubo de lentes hacia Saturno y no entiende lo que ve. Donde esperaba un punto de luz, encuentra un planeta con algo a los lados, como si tuviera asas.\n\nHoy sabemos que son anillos casi tan anchos como la distancia entre la Tierra y la Luna. Pensamos que eran eternos. Pero están hechos de hielo casi puro, y poco a poco caen sobre el planeta, como una lluvia silenciosa.\n\n¿Cuánto tiempo le queda a esta belleza?\n\nEsta noche cruzaremos un puente de hielo suspendido sobre Saturno. Veremos cómo brilla cada fragmento al recibir la luz del Sol. Y llegaremos hasta los bordes donde los anillos, despacio, se van apagando.\n\nSin prisa. Con ciencia real, contada con calma. No tienes nada que hacer, salvo escuchar.\n\nSilencio.\n\nCierra los ojos si quieres, y acompáñame hacia Saturno.",
   "review": {
-    "suggested": 25,
-    "applied": 25,
+    "suggested": 9,
+    "applied": 9,
     "fixes": [
       {
         "section": "cold_open",
-        "find": "Una lámina más delgada que cualquier hoja de papel, si la comparáramos con su tamaño, flotando en la oscuridad.",
-        "replace": "Una lámina más fina que una hoja de papel, en proporción a su tamaño, flotando en la oscuridad.",
-        "reason": "claridad oral"
-      },
-      {
-        "section": "cold_open",
-        "find": "Durante siglos creímos que eran eternos. Pero ahora sabemos que algo los está desgastando, grano a grano.",
-        "replace": "Durante siglos creímos que eran eternos. Pero hoy sabemos que algo los va desgastando, grano a grano.",
-        "reason": "evitar repetición de 'ahora'"
-      },
-      {
-        "section": "cold_open",
-        "find": "Verás un río de hielo girando en silencio alrededor de un planeta dorado. Verás cómo la luz atraviesa sus bordes.",
-        "replace": "Verás un río de hielo girando en silencio alrededor de un planeta dorado. Y verás cómo la luz roza sus bordes.",
-        "reason": "precisión y fluidez"
+        "find": "Hoy sabemos que son anillos tan anchos que cubrirían la distancia entre la Tierra y la Luna.",
+        "replace": "Hoy sabemos que son anillos casi tan anchos como la distancia entre la Tierra y la Luna.",
+        "reason": "overstated size"
       },
       {
         "section": "chapter_1",
-        "find": "En mil seiscientos diez, un hombre apuntó hacia allí uno de los primeros telescopios.",
-        "replace": "En el año mil seiscientos diez, un hombre apuntó hacia allí uno de los primeros telescopios.",
-        "reason": "lectura de año"
+        "find": "En mil seiscientos diez, un hombre apunta un tubo de lentes hacia Saturno y no entiende lo que ve. Es Galileo.",
+        "replace": "Volvamos a ese hombre de mil seiscientos diez. Es Galileo, y lo que ve en su telescopio lo desconcierta.",
+        "reason": "repeats cold open"
       },
       {
         "section": "chapter_1",
-        "find": "Años después, el astrónomo Christiaan Huygens tuvo un telescopio mejor.",
-        "replace": "Casi medio siglo después, el astrónomo Christiaan Huygens tuvo un telescopio mejor.",
-        "reason": "precisión histórica (1655-1659)"
+        "find": "Donde esperaba un punto de luz, encuentra un planeta con un bulto extraño a cada lado, como si tuviera orejas.",
+        "replace": "Esperaba un punto de luz y encuentra un bulto extraño a cada lado del planeta.",
+        "reason": "repeats cold open"
       },
       {
         "section": "chapter_1",
-        "find": "Dos siglos más tarde, el físico James Clerk Maxwell hizo las cuentas.",
-        "replace": "Dos siglos más tarde, el físico James Clerk Maxwell hizo las cuentas, hacia mil ochocientos cincuenta y nueve.",
-        "reason": "fecha precisa"
+        "find": "Los anillos se extienden por cientos de miles de kilómetros, más que la distancia de aquí a la Luna.",
+        "replace": "Los anillos se extienden por cientos de miles de kilómetros, casi la distancia de aquí a la Luna.",
+        "reason": "overstated size"
       },
       {
         "section": "chapter_1",
-        "find": "La gravedad del planeta lo tiraría y lo rompería.",
-        "replace": "Las fuerzas de marea del planeta lo desgarrarían.",
-        "reason": "precisión física"
+        "find": "roza a otro con un contacto suave, sin ruido alguno.",
+        "replace": "roza a otro con un contacto suave.",
+        "reason": "redundant silence"
       },
       {
         "section": "chapter_1",
-        "find": "Faltaba verlas de cerca. La sonda Cassini lo hizo, mucho tiempo después.",
-        "replace": "Faltaba verlas de cerca. La sonda Cassini lo hizo mucho después, a partir de dos mil cuatro.",
-        "reason": "dato concreto"
-      },
-      {
-        "section": "chapter_1",
-        "find": "El anillo principal se extiende cientos de miles de kilómetros, más que la distancia entre la Tierra y la Luna.",
-        "replace": "El conjunto de los anillos se extiende cientos de miles de kilómetros, una distancia comparable a la que separa la Tierra de la Luna.",
-        "reason": "los anillos principales son menores; evitar error"
-      },
-      {
-        "section": "chapter_1",
-        "find": "Sin embargo, su grosor típico es de apenas decenas de metros.",
-        "replace": "Sin embargo, su grosor típico es de apenas unas decenas de metros.",
-        "reason": "fluidez"
-      },
-      {
-        "section": "chapter_1",
-        "find": "Es más fino, proporcionalmente, que una hoja de papel extendida sobre una cancha.",
-        "replace": "Proporcionalmente, es más fino que una hoja de papel extendida sobre una cancha entera.",
-        "reason": "oralidad"
-      },
-      {
-        "section": "chapter_1",
-        "find": "Solo miles de millones de pedazos de hielo que se mueven juntos, con calma, reflejando una luz que viene de muy lejos.",
-        "replace": "Solo incontables pedazos de hielo que se mueven juntos, con calma, reflejando la luz del Sol.",
-        "reason": "cifra imprecisa y claridad"
+        "find": "ocupando medio cielo, Saturno te mira",
+        "replace": "ocupando buena parte del cielo, Saturno te mira",
+        "reason": "overstated"
       },
       {
         "section": "chapter_2",
-        "find": "Si pudieras estar junto a la nave Cassini en septiembre de dos mil diecisiete, verías algo difícil de olvidar.",
-        "replace": "Imagina que estás junto a la nave Cassini en septiembre de dos mil diecisiete.",
-        "reason": "frase más hablada"
+        "find": "quizá de apenas unos cientos de millones de años. Cuando Saturno ya era un planeta viejo, los anillos todavía no existían.",
+        "replace": "quizá de apenas decenas o pocos cientos de millones de años. En ese caso, Saturno ya era un planeta viejo cuando se formaron.",
+        "reason": "uncertainty, clarity"
       },
       {
         "section": "chapter_2",
-        "find": "Una sonda pequeña, después de más de trece años en Saturno, se acerca por última vez a su planeta. No volverá.",
-        "replace": "Una sonda pequeña, tras más de trece años en órbita de Saturno, se acerca por última vez. No volverá.",
-        "reason": "precisión y concisión"
+        "find": "Mira a Saturno ahora, rodeado de luz y de hielo, con su brillo de nieve recién caída.",
+        "replace": "Mira a Saturno ahora, rodeado de luz y de hielo.",
+        "reason": "repeated image"
       },
       {
         "section": "chapter_2",
-        "find": "Así evitaban que algún día tocara una de las lunas heladas y llevara hasta allí microbios de la Tierra.",
-        "replace": "Así evitaban que algún día chocara con una de las lunas heladas y las contaminara con microbios de la Tierra.",
-        "reason": "claridad"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Era un hueco de unos pocos miles de kilómetros, y nadie sabía qué polvo habría allí.",
-        "replace": "Era un hueco de unos dos mil kilómetros, y nadie sabía cuánto polvo habría allí.",
-        "reason": "precisión"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Cassini midió lo que caía. Desde los anillos descienden hacia el planeta polvo y pequeñas partículas heladas, atraídas por la gravedad y por el campo magnético de Saturno.",
-        "replace": "Cassini midió lo que caía. Desde los anillos descienden hacia el planeta polvo y pequeñas partículas heladas, atraídas por la gravedad y el campo magnético de Saturno.",
-        "reason": "fluidez"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Si ese ritmo se mantiene, desaparecerían en unos cientos de millones de años. Parece una eternidad, pero es poco para un planeta.",
-        "replace": "Si ese ritmo se mantiene, desaparecerían en unos cientos de millones de años. Parece mucho tiempo, pero es poco para un planeta.",
-        "reason": "evitar exageración"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Tampoco sabemos cuántos años tienen. Algunos estudios los creen jóvenes, nacidos hace unos cien millones de años.",
-        "replace": "Tampoco sabemos con certeza cuántos años tienen. Algunos estudios los creen jóvenes, de unos cien millones de años.",
-        "reason": "matiz de certeza"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Otros piensan que podrían ser mucho más antiguos, y que solo parecen nuevos porque son muy brillantes. La ciencia todavía no decide.",
-        "replace": "Otros piensan que podrían ser mucho más antiguos, y que solo parecen nuevos porque se mantienen muy brillantes. La ciencia todavía no decide.",
-        "reason": "precisión"
-      },
-      {
-        "section": "chapter_2",
-        "find": "La gran división de Cassini es un hueco que abre la gravedad de otra luna, Mimas.",
-        "replace": "La gran división de Cassini es un hueco que mantiene abierto, en buena parte, la gravedad de otra luna, Mimas.",
-        "reason": "matiz científico"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Todo ese orden es frágil, pero está cuidado.",
-        "replace": "Ese orden es frágil, pero se sostiene.",
-        "reason": "precisión y concisión"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Y quizá por eso importa tanto que nos haya tocado vivir ahora.",
-        "replace": "Y quizá por eso importa que nos haya tocado vivir ahora.",
-        "reason": "evitar exageración"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Estás mirando algo hermoso que no durará para siempre. Pocas veces en la historia de un planeta hay alguien que pueda verlo así, completo y brillante.",
-        "replace": "Estás mirando algo hermoso que no durará para siempre. Pocas veces en la historia de un planeta hay alguien que pueda verlo así.",
-        "reason": "reducir redundancia"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Puedes quedarte un rato más en silencio, mirando ese río de hielo que sigue girando. Aquí no hay nada que hacer. Respira despacio. Buenas noches.",
-        "replace": "Puedes quedarte un rato más en silencio, mirando ese río de hielo que sigue girando. Respira despacio. Buenas noches.",
-        "reason": "repetición del cold open"
+        "find": "los anillos podrían desaparecer en unos cientos de millones de años.",
+        "replace": "los anillos podrían desaparecer en unos cientos de millones de años, según las estimaciones actuales.",
+        "reason": "hedge certainty"
       }
     ]
   },

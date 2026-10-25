@@ -1,13 +1,13 @@
 {
   "topic": "Los anillos de Saturno",
-  "title": "MUESTRA · Los anillos de Saturno | Documental Espacial Relajante para Dormir",
-  "video_id": "JQm83keuboc",
+  "title": "MUESTRA · Los Anillos de Saturno | Un Viaje Tranquilo para Dormir",
+  "video_id": "NSI_e57UKKg",
   "qa_ok": true,
-  "minutes": 6.7,
+  "minutes": 6.4,
   "voice": {
     "engine": "qwen",
-    "sentences": 40,
-    "voiced": 40
+    "sentences": 35,
+    "voiced": 35
   },
   "date": "2026-10-25"
 }
