@@ -1,534 +1,491 @@
 {
-  "title": "Mercurio: el planeta más cercano al Sol | Documental relajante para dormir",
-  "description": "Mercurio, el planeta más cercano al Sol, es un mundo pequeño, antiguo y lleno de contrastes. En este documental relajante para dormir recorremos su superficie marcada por cráteres, su núcleo sorprendentemente grande y sus extremos de calor y frío, con imágenes reales de las misiones Mariner 10, MESSENGER y BepiColombo.\n\nAvanzaremos con calma desde la mirada de los antiguos observadores hasta el interior del planeta, pasando por llanuras de lava, cuencas gigantes y cráteres donde la luz del Sol nunca llega. Una narración tranquila, con datos reales y sin prisas, para aprender algo nuevo mientras te dejas llevar hacia el sueño.",
+  "title": "Neptuno y Urano: Gigantes Helados | Documental Relajante para Dormir",
+  "description": "Neptuno y Urano, los gigantes helados en los confines del sistema solar, son dos mundos que casi nadie recorre con calma. Este documental relajante para dormir te lleva desde el borde del sistema solar conocido hasta el interior oculto de estos planetas, con imágenes reales de la NASA y una narración pausada.\n\nVisitarás sus atmósferas azules, sus anillos tenues, sus lunas extrañas y los misterios que aún siguen abiertos, como el origen del eje inclinado de Urano. Es un viaje tranquilo para aprender algo real mientras te dejas llevar hacia el sueño.",
   "tags": [
-    "Mercurio documental",
-    "Mercurio el planeta más cercano al Sol",
-    "documental espacio para dormir",
+    "Neptuno y Urano",
+    "gigantes helados",
+    "documental del espacio para dormir",
     "documental relajante espacio",
-    "planeta Mercurio",
-    "sistema solar documental",
-    "Mercurio cráteres",
-    "MESSENGER Mercurio",
-    "Mariner 10",
-    "BepiColombo",
-    "hielo en Mercurio",
-    "cuenca Caloris",
-    "viaje por el sistema solar para dormir",
-    "documental del espacio en español",
-    "narración relajante ciencia",
-    "planetas del sistema solar",
-    "Mercurio y el Sol",
-    "astronomía para dormir"
+    "Neptuno documental",
+    "Urano documental",
+    "planeta Neptuno",
+    "planeta Urano",
+    "Voyager 2 Neptuno Urano",
+    "Tritón luna de Neptuno",
+    "anillos de Urano",
+    "viaje por el sistema solar",
+    "documental espacio en español",
+    "espacio para dormir",
+    "sistema solar exterior",
+    "diamantes lloviendo en Neptuno"
   ],
   "thumbnail_texts": [
-    "DONDE EL SOL QUEMA",
-    "HIELO JUNTO AL SOL",
-    "EL MUNDO ENCOGIDO"
+    "DONDE TERMINA LA LUZ",
+    "EL PLANETA TUMBADO",
+    "VIENTOS SIN FIN"
   ],
-  "hook_promise": "En el planeta más cercano al Sol, donde la superficie supera los 400 grados, hay cráteres en los polos tan profundos y oscuros que guardan hielo de agua desde hace miles de millones de años.",
+  "hook_promise": "En las profundidades de dos mundos helados, a miles de kilómetros bajo nubes azules, la presión y el calor podrían estar convirtiendo el carbono en diamante y haciéndolo caer en una lluvia lenta e interminable.",
   "chapters": [
     {
-      "title": "Un punto de luz junto al Sol",
-      "question": "¿Por qué fue tan difícil que la humanidad llegara a conocer el planeta más cercano al Sol?",
-      "reveal": "Durante siglos Mercurio fue apenas una chispa fugaz en el crepúsculo, y su verdadero rostro no se vio de cerca hasta 1974.",
+      "title": "El borde del mapa conocido",
+      "question": "¿Por qué dos planetas enormes pasaron milenios sin que nadie los viera?",
+      "reveal": "Neptuno es tan lejano que desde 1846, año de su descubrimiento, apenas ha completado una vuelta alrededor del Sol.",
       "beats": [
-        "Mercurio se ve a simple vista, pero siempre cerca del horizonte, poco antes del amanecer o después del atardecer.",
-        "Los antiguos lo observaron y lo registraron; los griegos lo llegaron a considerar dos astros distintos, uno de la mañana y otro de la tarde.",
-        "Por su cercanía angular al Sol, solo se ve unos minutos entre el resplandor y el horizonte, y los telescopios terrestres lo muestran borroso.",
-        "Hasta mediados del siglo XX se creyó que mostraba siempre la misma cara al Sol; las observaciones por radar lo corrigieron.",
-        "Mercurio completa una órbita alrededor del Sol en unos 88 días terrestres, la más corta de todos los planetas.",
-        "Es el planeta más pequeño del sistema solar y apenas algo mayor que la Luna."
-      ],
-      "ambience": "none",
-      "image_queries": [
-        "Mercury planet MESSENGER",
-        "Mercury global mosaic MESSENGER",
-        "Mercury crescent MESSENGER",
-        "Mercury color enhanced MESSENGER",
-        "Mercury Mariner 10",
-        "Mercury and Sun solar system",
-        "Mercury transit Sun",
-        "Mercury twilight",
-        "Mercury planet full disk",
-        "Mercury limb MESSENGER"
-      ],
-      "video_queries": [
-        "Mercury rotating globe MESSENGER",
-        "Mercury transit Sun SDO",
-        "solar system planets orbit animation"
-      ],
-      "text": "Si sales a caminar una tarde clara y miras hacia donde acaba de ocultarse el Sol, quizá veas algo muy pequeño. Un punto de luz, apenas por encima del horizonte, sin parpadear mucho y con un tono ligeramente cálido. No es una estrella. Es Mercurio.\n\nEstá ahí a simple vista, al alcance de cualquiera. Sin embargo, casi nadie lo ha visto nunca. Aparece poco antes del amanecer o poco después del atardecer, siempre pegado al horizonte, como si no quisiera alejarse de la luz que lo gobierna. Entonces surge la pregunta: ¿por qué fue tan difícil conocer un mundo que está tan a la vista?\n\nLos antiguos sí lo miraron. Lo registraron con paciencia en tablillas y en calendarios, noche tras noche, durante siglos. Pero había algo extraño en su comportamiento. Lo veían en el cielo del amanecer durante unas semanas, luego desaparecía, y más tarde reaparecía en el del atardecer.\n\nLos griegos llegaron a pensar que eran dos astros distintos. Uno era el de la mañana, el otro el de la tarde, y cada uno tenía su propio nombre. Tardaron en comprender que se trataba de un solo cuerpo, que iba y venía de un lado a otro del Sol.\n\nY ese vaivén era la clave del problema. Visto desde la Tierra, Mercurio nunca se aleja mucho del Sol en el cielo. Por eso solo se deja ver un rato breve, atrapado entre el resplandor del día que se va y la línea del horizonte.\n\nPiensa en lo que eso significa para un observador. Debe esperar con el telescopio listo, mirar a través de una capa gruesa de aire cercano al suelo y aprovechar un instante breve. Esa capa de aire tiembla y deforma la imagen. El resultado era siempre el mismo: una mancha borrosa, sin detalles, que no permitía decir nada seguro sobre su superficie.\n\nY aun así, la gente creyó saber algo. Durante mucho tiempo, hasta mediados del siglo veinte, se pensó que Mercurio mostraba siempre la misma cara al Sol. Una mitad en luz eterna, la otra en noche perpetua. Era una idea sencilla, razonable, y parecía confirmada por las pocas manchas que se alcanzaban a distinguir.\n\nPero estaba equivocada.\n\nFueron las ondas de radar las que lo corrigieron. Se enviaron desde la Tierra, rebotaron en la superficie del planeta y regresaron con una pista: Mercurio sí gira, aunque muy despacio. Sus dos mitades reciben luz del Sol a su debido tiempo. Lo que durante siglos se había visto con los ojos fue desmentido por un eco invisible.\n\nMientras tanto, el planeta seguía con su trayectoria, indiferente a todo lo que se decía sobre él. Rodea al Sol en unos ochenta y ocho días terrestres. Es la órbita más corta de todas. En poco menos de tres meses, Mercurio ya ha completado un año entero, mientras que la Tierra apenas ha recorrido una cuarta parte del suyo.\n\nTampoco es grande. Es el más pequeño de los planetas del sistema solar, y algo mayor que nuestra Luna. Si pudieras ponerlos uno junto al otro, notarías enseguida la semejanza. Un mundo diminuto, cercano a una fuente de luz enorme, y muy difícil de distinguir en su resplandor.\n\nQuizá ahora entiendas por qué tardó tanto en revelarse. Era pequeño, estaba lejos para nuestros ojos, y vivía casi siempre escondido en el brillo del Sol. Durante siglos fue solo una chispa fugaz en el crepúsculo.\n\nSu verdadero rostro no se vio de cerca hasta mil novecientos setenta y cuatro.\n\nHasta ese año, todo lo que sabíamos de Mercurio lo habíamos deducido desde muy lejos. Con paciencia, con ingenio, con ecos de radar. Pero nadie había visto de cerca su suelo, ni sus montañas, ni las marcas que el tiempo le había dejado. Hacía falta algo más que mirar desde la Tierra. Hacía falta ir.\n\nY para llegar hasta allí, una pequeña nave tendría que aprender a usar la gravedad de otro planeta."
-    },
-    {
-      "title": "Los primeros ojos: Mariner 10",
-      "question": "¿Qué vio la primera sonda que se acercó a Mercurio?",
-      "reveal": "Mariner 10 mostró en 1974 un mundo cubierto de cráteres que se parecía a la Luna, pero que escondía diferencias profundas.",
-      "beats": [
-        "Mariner 10 fue la primera sonda en visitar Mercurio, tras usar la gravedad de Venus para llegar hasta allí.",
-        "Fue también la primera misión en usar una asistencia gravitatoria para alcanzar otro planeta.",
-        "Sus tres sobrevuelos, entre 1974 y 1975, fotografiaron cerca de la mitad de la superficie.",
-        "Las imágenes revelaron cráteres, llanuras y largos acantilados que recorrían el planeta.",
-        "Detectó un campo magnético, algo inesperado para un mundo tan pequeño.",
-        "Quedó pendiente la otra mitad del planeta, que tardaría décadas en verse."
+        "Partimos del Sol y cruzamos el sistema solar interior, luego los gigantes gaseosos Júpiter y Saturno.",
+        "Más allá de Saturno, la luz del Sol se debilita enormemente y el espacio se vuelve frío y silencioso.",
+        "Urano fue descubierto en 1781 por William Herschel, que al principio pensó que era un cometa.",
+        "Las irregularidades en la órbita de Urano llevaron a calcular dónde debía estar un planeta aún más lejano.",
+        "Neptuno fue encontrado en 1846 casi donde las matemáticas predecían, un triunfo del cálculo sobre la observación.",
+        "Su año dura unos 165 años terrestres, así que desde su descubrimiento ha dado apenas una vuelta completa."
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Mariner 10 Mercury",
-        "Mariner 10 spacecraft",
-        "Mercury Mariner 10 mosaic",
-        "Mercury cratered surface Mariner 10",
-        "Mercury Venus gravity assist",
-        "Mercury first flyby images",
-        "Mercury cratered terrain",
-        "Mercury half globe Mariner",
-        "Mercury terminator craters",
-        "Mercury Mariner 10 flyby"
+        "Neptune Voyager 2",
+        "Uranus Voyager 2",
+        "solar system planets montage",
+        "Neptune Hubble",
+        "Uranus Hubble",
+        "Uranus Webb",
+        "Neptune Webb",
+        "Sun from Neptune distance",
+        "outer solar system",
+        "Neptune Great Dark Spot"
       ],
       "video_queries": [
-        "Mariner 10 Mercury flyby animation",
-        "Mercury flyby visualization",
-        "Mercury surface MESSENGER flyover"
+        "solar system flythrough visualization",
+        "Neptune rotation animation",
+        "Uranus rotation animation"
       ],
-      "text": "En mil novecientos setenta y tres, en una sala llena de pantallas y cables, un grupo de ingenieros esperaba una señal que tardaría minutos en cruzar el espacio. Querían saber si una nave del tamaño de un automóvil pequeño había sobrevivido al viaje. Esa nave se llamaba Mariner diez, y llevaba una tarea que nadie había intentado antes: llegar hasta Mercurio.\n\nPero ¿qué iba a encontrar allí? Hasta ese momento, nadie lo sabía. Los mejores telescopios de la Tierra mostraban apenas una mancha borrosa, pegada al resplandor del Sol.\n\nEl camino era difícil por una razón sencilla. Mercurio está tan cerca del Sol que caer hacia él exige mucha energía, y frenar después es todavía más costoso. Una nave lanzada directamente hacia allí pasaría demasiado rápido para observar nada.\n\nAsí que los ingenieros hicieron algo ingenioso. Enviaron a Mariner diez primero hacia Venus, y allí dejaron que la gravedad del planeta la desviara y la frenara. Fue la primera vez que una misión usaba una asistencia gravitatoria para alcanzar otro mundo.\n\nPiensa en un niño que se agarra a un poste en movimiento y gira a su alrededor. Cambia de dirección sin gastar casi nada de fuerza. Algo parecido hizo la nave con Venus.\n\nFuncionó.\n\nEn marzo de mil novecientos setenta y cuatro, Mariner diez pasó por primera vez junto a Mercurio. Volaba a unos setecientos kilómetros de la superficie, una altura que un coche recorrería en unas pocas horas de carretera. Sus cámaras empezaron a trabajar, y las primeras imágenes viajaron de vuelta a la Tierra, lentas, línea por línea.\n\nDespués vinieron otros dos encuentros. La nave regresó en septiembre de ese año y de nuevo en marzo de mil novecientos setenta y cinco. Entre los tres sobrevuelos fotografió cerca de la mitad de la superficie del planeta.\n\n¿Y qué mostraban esas fotografías? A primera vista, algo familiar. Cráteres, miles de ellos, de todos los tamaños, apilados unos sobre otros. Un paisaje gris y quieto que recordaba muchísimo a la Luna.\n\nAlgunos científicos sonrieron al verlo. Parecía que Mercurio era simplemente otra Luna, un poco más cerca del Sol. Pero las imágenes seguían llegando, y había detalles que no encajaban.\n\nEntre los cráteres se extendían llanuras suaves, como si en algún momento la lava hubiera cubierto el terreno y lo hubiera alisado. Y por la superficie corrían largos acantilados, líneas elevadas que cruzaban cráteres enteros y seguían durante cientos de kilómetros. En la Luna no había nada parecido.\n\nEstas cicatrices parecían contar una historia propia. Algo había sucedido en este planeta después de que los cráteres se formaron, y nadie sabía todavía qué.\n\nLuego llegó otra sorpresa, esta vez de los instrumentos y no de las cámaras. Mariner diez detectó un campo magnético alrededor de Mercurio.\n\nEra débil, pero estaba allí.\n\nEsto no se esperaba. La Tierra tiene un campo magnético porque posee un núcleo de metal en movimiento. Se pensaba que un mundo tan pequeño se habría enfriado hace mucho y se habría apagado por dentro. Mercurio parecía decir otra cosa.\n\nAsí, en mil novecientos setenta y cuatro, Mariner diez mostró un mundo cubierto de cráteres que se parecía a la Luna, pero que escondía diferencias profundas. Lo que parecía un gemelo de nuestro vecino más cercano resultaba ser algo distinto. Tenía un corazón todavía activo y una piel marcada por fuerzas que apenas empezábamos a imaginar.\n\nHay algo hermoso en eso. A veces miramos un mundo lejano y creemos reconocerlo, y es solo al acercarnos cuando descubrimos que tiene su propia historia.\n\nPero la nave se quedó sin combustible para sus pequeños motores de orientación. Dejó de responder en mil novecientos setenta y cinco, y sigue girando alrededor del Sol, silenciosa, como un recuerdo.\n\nY la otra mitad de Mercurio quedó en la sombra. Cada vez que la nave regresaba, el planeta le mostraba la misma cara, por una razón que tardaríamos en entender. Esa mitad escondida tendría que esperar décadas, hasta que otra nave llegara para mirarla."
+      "text": "Si esta noche sales a un lugar oscuro y levantas la vista, verás miles de estrellas a simple vista. Verás también cinco planetas, brillando con paciencia entre ellas. Los antiguos los conocían todos, los seguían noche tras noche y les ponían nombre.\n\nPero hay dos planetas enormes que nadie vio durante miles de años. Cada uno es unas cuatro veces más ancho que la Tierra. ¿Cómo pudieron esconderse tanto tiempo, estando ahí?\n\nPara entenderlo, hagamos el camino desde casa. Partimos del Sol, esa luz tibia que conoces desde siempre. Pasamos junto a Mercurio, que apenas tiene aire, y junto a Venus, envuelto en nubes. Cruzamos la Tierra, nuestro punto de partida, y seguimos hacia Marte, rojizo y seco.\n\nDespués viene un espacio largo, lleno de rocas dispersas. Y entonces aparece Júpiter, enorme, con sus bandas de nubes que giran despacio. Más allá está Saturno, con sus anillos claros y delgados. Hasta aquí, todo se puede ver desde un patio con los ojos abiertos.\n\nAhora sigue avanzando. Pasado Saturno, el Sol empieza a cambiar. Sigue siendo la estrella más brillante del cielo, pero se vuelve pequeño, como una lámpara vista desde el otro lado de un valle. La luz que llega es cada vez más débil. El frío ya no es el de una noche de invierno. Es un frío de casi doscientos grados bajo cero, y no hay viento ni sonido que lo rompa.\n\nAquí el espacio es muy grande. Un planeta de tamaño mediano, a esta distancia, es apenas un punto tenue. Se parece a una estrella más, y se mueve tan despacio que nadie nota la diferencia.\n\nEso fue lo que le pasó a un hombre llamado William Herschel. Era músico de profesión y astrónomo por afición, y construía sus propios telescopios. Una noche de marzo de diecisiete ochenta y uno, miraba un campo de estrellas desde el jardín de su casa, en Inglaterra. Una de ellas, al aumentarla, mostraba un pequeño disco.\n\nLas estrellas no tienen disco. Son puntos, incluso en los mejores telescopios.\n\nHerschel pensó que había encontrado un cometa. Era lo más razonable. Un cometa nuevo ya era un hallazgo, y lo anotó con ese nombre. Pero en las noches siguientes, el objeto no se comportó como tal. No tenía cola, y seguía una órbita casi circular, mucho más allá de Saturno. Era un planeta. Era Urano, y doblaba de golpe el ancho conocido del sistema solar.\n\nPodría parecer que la historia termina aquí. Pero Urano tenía algo extraño. Los astrónomos calcularon su órbita con cuidado, y las cuentas no cerraban. El planeta iba un poco adelantado a veces, y otras veces un poco atrasado. Eran diferencias mínimas, pero constantes.\n\nAlgo lo estaba tirando. Algo que nadie había visto.\n\nDos jóvenes matemáticos, uno en Inglaterra y otro en Francia, hicieron el mismo razonamiento por separado. Si una masa invisible jalaba a Urano, se podía calcular dónde estaba. No hacía falta un telescopio, bastaban lápiz, papel y muchísima paciencia. Pasaron meses sumando y corrigiendo, en habitaciones silenciosas, buscando un punto en el cielo que solo existía en sus números.\n\nEl francés, Urbain Le Verrier, envió su resultado a un observatorio en Berlín. La noche del veintitrés de septiembre de dieciocho cuarenta y seis, el astrónomo Johann Galle apuntó su telescopio hacia el lugar indicado. En menos de una hora encontró una estrella que no figuraba en los mapas. Estaba a menos de un grado de la posición calculada.\n\nEse grado es más o menos el ancho de tu dedo meñique con el brazo estirado.\n\nAsí se descubrió Neptuno. Fue la primera vez que un planeta se halló primero en una hoja de papel y después en el cielo. Las matemáticas habían visto lo que los ojos no alcanzaban a ver. Y eso dice algo sobre nosotros: a veces podemos conocer un mundo antes de verlo, solo por cómo hace temblar a otro.\n\nQueda una pregunta que quizá ya te hiciste. Si Neptuno se descubrió hace tanto, ¿qué ha pasado desde entonces? Su distancia al Sol es unas treinta veces la de la Tierra. Un camino tan largo no se recorre rápido. Neptuno tarda unos ciento sesenta y cinco años terrestres en dar una vuelta completa.\n\nCuando Neptuno fue descubierto, en tu familia quizá nadie imaginaba tu vida. En dos mil once regresó por fin al mismo punto del cielo donde lo encontraron.\n\nDesde ese día de dieciocho cuarenta y seis, ha completado apenas una vuelta alrededor del Sol. Para ese mundo lento y azul, todo lo que hemos vivido desde entonces ha sido un solo año.\n\nY sin embargo, ahí está. Tan lejos que su luz tarda más de cuatro horas en llegar a nosotros, y tan firme que lo seguimos buscando. Falta saber de qué está hecho, y por qué no se parece a Júpiter ni a Saturno, aunque se haya escondido, como ellos, tan lejos de casa."
     },
     {
-      "title": "Un mundo de cráteres",
-      "question": "¿Por qué la superficie de Mercurio parece una cicatriz de miles de millones de años?",
-      "reveal": "Sin una atmósfera que la proteja ni agua que la borre, la superficie de Mercurio conserva el registro de impactos de casi toda la historia del sistema solar.",
+      "title": "Qué significa ser un gigante helado",
+      "question": "¿Por qué estos planetas no son simplemente versiones pequeñas de Júpiter?",
+      "reveal": "Su interior está dominado por agua, amoníaco y metano a presiones enormes, y no por hidrógeno como en Júpiter y Saturno.",
       "beats": [
-        "Mercurio casi no tiene atmósfera, así que los meteoritos llegan hasta el suelo sin frenarse.",
-        "Los cráteres se conservan durante mucho tiempo porque no hay lluvia, viento ni océanos que los erosionen.",
-        "Hay cráteres de todos los tamaños, algunos con picos centrales y terrazas en sus paredes.",
-        "Contar cráteres permite estimar la edad relativa de cada región: más cráteres significa terreno más antiguo.",
-        "Muchos cráteres llevan nombres de artistas, escritores y músicos, según la convención de la Unión Astronómica Internacional.",
-        "Los rayos brillantes de material expulsado se extienden a gran distancia alrededor de los cráteres más jóvenes."
+        "Comparamos los tamaños: Urano y Neptuno miden unas cuatro veces el diámetro de la Tierra.",
+        "Júpiter y Saturno son sobre todo hidrógeno y helio; estos dos tienen una composición distinta.",
+        "Llamarlos helados no significa que tengan hielo como el de un congelador: son fluidos densos y calientes bajo presión.",
+        "Los astrónomos los clasifican como una categoría propia, distinta de los gigantes gaseosos.",
+        "Muchos planetas descubiertos en otras estrellas tienen un tamaño parecido, así que podrían ser el tipo de planeta más común de la galaxia.",
+        "Nuestros dos vecinos son los únicos ejemplos cercanos que podemos estudiar de cerca."
+      ],
+      "ambience": "deep_space",
+      "image_queries": [
+        "Neptune and Earth size comparison",
+        "Uranus and Earth size comparison",
+        "Uranus true color",
+        "Neptune true color",
+        "gigantes planets comparison Voyager",
+        "exoplanet Neptune-like artist concept",
+        "Neptune atmosphere clouds",
+        "Uranus atmosphere Hubble",
+        "Uranus Neptune Webb comparison",
+        "Neptune Hubble 2021"
+      ],
+      "video_queries": [
+        "exoplanet artist concept animation",
+        "planet size comparison visualization",
+        "Neptune interior animation"
+      ],
+      "text": "Hay una fotografía de Urano y Neptuno lado a lado, tomada por una sola nave, que parece casi una broma. Dos esferas azules, una pálida y otra intensa, flotando sobre un fondo negro. Podrían pasar por dos pequeñas versiones de Júpiter, con otro color y menos tamaño.\n\nPero no lo son. Y la pregunta es por qué.\n\nEmpecemos por el tamaño, porque engaña. Júpiter es tan grande que mil Tierras cabrían dentro de él. Urano y Neptuno son mucho más modestos. Cada uno mide unas cuatro veces el diámetro de la Tierra. Para cruzar uno de ellos de lado a lado, tendrías que alinear cuatro Tierras, una tras otra.\n\nCuatro veces la Tierra es mucho. Pero junto a Júpiter y Saturno, estos dos parecen niños de la mano de dos adultos.\n\nAhora viene la primera pista. Júpiter y Saturno están hechos, sobre todo, de hidrógeno y helio. Son los dos gases más ligeros que existen, los mismos que forman el Sol. Un planeta así es como una estrella a la que no le alcanzó la masa para encenderse. Urano y Neptuno tienen otra composición. Contienen hidrógeno y helio, sí, pero en una proporción mucho menor. Algo más pesado ocupa el lugar principal.\n\n¿Qué es ese algo? El nombre que les dimos nos da una respuesta, aunque una respuesta algo torcida. Los llamamos gigantes helados.\n\nPero no pienses en un cubo de hielo. No pienses en la escarcha de un congelador, ni en un lago en invierno. Ese nombre viene de una época en que los astrónomos llamaban hielos a ciertas sustancias, como el agua, el amoníaco y el metano. A temperaturas bajas, esas sustancias se congelan con facilidad. Dentro de estos planetas, esas sustancias no están congeladas. La presión es enorme, y el calor también. Lo que hay allí es un fluido denso y caliente, mucho más extraño que cualquier hielo.\n\nUn nombre antiguo, entonces, para algo que ya no se parece a lo que nombra.\n\nY esa diferencia importa tanto que los astrónomos dejaron de meter a todos en el mismo grupo. Durante mucho tiempo se hablaba de gigantes gaseosos y nada más. Hoy se reconocen dos categorías: los gigantes gaseosos, que son Júpiter y Saturno, y los gigantes helados, que son Urano y Neptuno. No son versiones pequeñas de lo mismo. Son otra clase de mundo.\n\nAhí está la respuesta a la pregunta que abrimos. Su interior está dominado por agua, amoníaco y metano a presiones enormes, y no por hidrógeno como en Júpiter y Saturno.\n\nEso explica por qué no basta con reducir a Júpiter para obtener a Neptuno. Aunque tuvieran la misma historia, no se formaron con los mismos ingredientes en las mismas proporciones.\n\nY aquí ocurre algo curioso. Desde hace unas décadas encontramos planetas alrededor de otras estrellas, miles de ellos. Muchos tienen un tamaño parecido al de Urano y Neptuno, entre el de la Tierra y el de Saturno. No sabemos todavía cuántos son realmente de la misma clase. Pero la pista es sugerente: quizá este sea el tipo de planeta más común de la galaxia. Nuestro sistema solar, con su Júpiter enorme, sería entonces el de aspecto algo especial.\n\nMira lo que eso significa. Lo que durante siglos nos pareció un par de mundos marginales, perdidos en el borde, podría ser lo más corriente que existe.\n\nY de esos mundos corrientes, solo tenemos dos al alcance. Nuestros dos vecinos son los únicos ejemplos cercanos que podemos estudiar de cerca. Todos los demás son puntos de luz diminutos, medidos desde distancias que no podemos recorrer. Si queremos entender qué es un planeta como estos, tenemos que mirar hacia ellos.\n\nY hasta ahora, solo una nave pasó lo bastante cerca para mirar de verdad."
+    },
+    {
+      "title": "Voyager 2: el único visitante",
+      "question": "¿Cómo es posible que solo una nave haya visitado estos dos mundos?",
+      "reveal": "Todo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en 1986 y 1989.",
+      "beats": [
+        "Una alineación poco frecuente de los planetas exteriores permitió una ruta a través de los cuatro gigantes.",
+        "Voyager 2 fue lanzada en 1977 y usó la gravedad de cada planeta para impulsarse hacia el siguiente.",
+        "Pasó por Urano en enero de 1986 y descubrió lunas nuevas y un campo magnético inclinado.",
+        "Llegó a Neptuno en agosto de 1989 y envió imágenes de nubes, anillos y de la luna Tritón.",
+        "Las señales tardaban horas en llegar a la Tierra con una potencia muy débil.",
+        "Desde entonces ninguna nave ha vuelto, y las imágenes de aquel paso siguen siendo la base de nuestro conocimiento."
       ],
       "ambience": "none",
       "image_queries": [
-        "Mercury craters MESSENGER",
-        "Mercury crater central peak",
-        "Mercury ray crater",
-        "Mercury heavily cratered terrain",
-        "Mercury impact crater close up",
-        "Mercury crater walls terraces",
-        "Mercury surface mosaic craters",
-        "Mercury colorful craters",
-        "Mercury hollows crater",
-        "Mercury crater chain"
+        "Voyager 2 spacecraft",
+        "Voyager 2 Uranus flyby",
+        "Voyager 2 Neptune flyby",
+        "Voyager 2 Neptune clouds",
+        "Voyager 2 Uranus Miranda",
+        "Voyager 2 Triton",
+        "Voyager 2 Neptune rings",
+        "Voyager 2 Uranus rings",
+        "Voyager 2 Neptune crescent",
+        "Voyager 2 Uranus crescent"
       ],
       "video_queries": [
-        "Mercury crater flyover MESSENGER",
-        "Mercury surface zoom animation",
-        "Mercury topography visualization"
+        "Voyager 2 trajectory animation",
+        "Voyager mission animation",
+        "Voyager 2 Neptune flyby animation"
       ],
-      "text": "Si pudieras acercarte a Mercurio en una nave silenciosa, lo primero que notarías sería la luz. Una luz dura, sin aire que la suavice, que cae sobre un suelo gris y cubierto de huecos. Hay huecos grandes y pequeños, uno junto a otro, y otros que se montan encima de los anteriores.\n\nMirarías ese paisaje y te preguntarías algo sencillo. ¿Por qué la superficie de Mercurio guarda huellas de miles de millones de años?\n\nLa primera pista está en lo que falta. Mercurio casi no tiene atmósfera. Es una capa tan tenue que apenas merece ese nombre, y no ofrece resistencia alguna.\n\nAquí en la Tierra, la mayoría de las piedras que caen del cielo se queman antes de tocar el suelo. El aire las frena, las calienta y las deshace en una estela breve de luz. En Mercurio no ocurre nada de eso. Un meteorito llega con toda su velocidad y golpea la superficie sin haber perdido nada por el camino.\n\nPero un golpe es solo un momento. Lo que intriga es lo que viene después.\n\nEn la Tierra, un cráter no dura. La lluvia lo va llenando de barro, el viento lo va puliendo, y un océano o un río pueden cubrirlo por completo. En unos cuantos millones de años, un cráter terrestre suele quedar irreconocible. Por eso conocemos tan pocos.\n\nEn Mercurio no cae una sola gota de lluvia. No sopla viento y no hay mares. Cada cráter que se abre se queda abierto.\n\nY así, durante miles de millones de años, los huecos se fueron acumulando.\n\nHoy los hay de todos los tamaños. Algunos son pequeños, del ancho de un campo de fútbol. Otros son tan grandes que podrías tardar días en cruzarlos en coche, si hubiera una carretera. Los más grandes tienen un pico en el centro, como una montaña que se levantó de golpe cuando el suelo, golpeado, rebotó hacia arriba. En sus paredes se ven escalones, llamados terrazas, que son trozos de roca que se deslizaron hacia el fondo tras el impacto.\n\nAhora bien, estos cráteres no solo adornan el paisaje. Cuentan una historia, si sabes cómo leerla.\n\nLos científicos que estudian las imágenes hacen algo muy paciente: cuentan. Eligen una región y anotan cuántos cráteres hay en ella. La lógica es simple. Un terreno joven ha tenido poco tiempo para recibir impactos. Un terreno viejo ha estado expuesto mucho más tiempo, y está lleno de marcas.\n\nMás cráteres significa terreno más antiguo.\n\nNo da una fecha exacta, pero sí un orden. Permite decir que esta llanura se formó después que aquellas tierras altas, y que aquella otra es de las primeras que existieron. Es como mirar los anillos de un tronco, solo que cada anillo es una cicatriz.\n\nCon tantos cráteres, surge un problema práctico: ponerles nombre. Y aquí la astronomía hace algo inesperado. La Unión Astronómica Internacional decidió que los cráteres de Mercurio llevarían nombres de artistas, escritores y músicos. Así, en un mundo sin una sola criatura viva, hay lugares que recuerdan a poetas, pintores y compositores. Quien mira un mapa de Mercurio encuentra, entre rocas y sombras, huellas de personas que dedicaron su vida a crear algo hermoso.\n\nOtra pista se ve mejor desde lejos.\n\nAlrededor de algunos cráteres se extienden líneas claras, como rayos que salen desde el centro. Son el material que salió despedido en el impacto y cayó muy lejos, formando trazos brillantes sobre el suelo oscuro. Algunos de esos rayos llegan a cientos de kilómetros, más que la distancia entre dos ciudades vecinas.\n\nEstos rayos solo se ven en los cráteres más jóvenes. Con el tiempo, el polvo del espacio y la luz del Sol van oscureciendo ese material, hasta que se confunde con el resto. Un cráter con rayos brillantes es, entonces, un golpe reciente. Reciente para Mercurio, claro. Puede tener millones de años.\n\nY ahora la pregunta inicial tiene respuesta.\n\nSin una atmósfera que la proteja ni agua que la borre, la superficie de Mercurio conserva el registro de impactos de casi toda la historia del sistema solar.\n\nEs un archivo que nadie ha podido limpiar. Cada hueco es una página que sigue ahí. Tu propio planeta también recibió esos golpes, en la misma época y con las mismas piedras, pero los fue borrando uno a uno. Mercurio, en cambio, guardó todo.\n\nEntre tantas marcas, sin embargo, hay una que destaca sobre las demás. Es tan grande que parece más una herida que un cráter, y ocupa una parte enorme del planeta."
+      "text": "En una sala de California, en enero de mil novecientos ochenta y seis, un grupo de ingenieros esperaba en silencio frente a una pantalla casi vacía. No había imágenes nítidas todavía. Solo un hilo de datos, tan débil que parecía un susurro dentro de una tormenta de ruido.\n\nAquel hilo venía de una nave del tamaño de un automóvil pequeño. Estaba a unos tres mil millones de kilómetros de casa. Y aun así, seguía respondiendo.\n\nPero la pregunta es otra. ¿Cómo es posible que solo una nave haya visitado estos dos mundos?\n\nLa respuesta empieza con una coincidencia de calendario. A finales de los años setenta, los cuatro planetas exteriores quedaron colocados de una manera poco frecuente. Júpiter, Saturno, Urano y Neptuno se ordenaban a lo largo de una curva suave, como cuentas sobre un mismo arco. Algo así ocurre una sola vez cada ciento setenta y cinco años, más o menos.\n\nUna nave que saliera en el momento justo podría recorrer ese arco entero. Una que saliera unos años después tendría que esperar casi dos siglos.\n\nVoyager 2 despegó en agosto de mil novecientos setenta y siete. No llevaba combustible para cruzar semejantes distancias por su cuenta. Lo que hizo fue más ingenioso. En cada planeta, se acercaba y dejaba que su gravedad la atrajera y la lanzara hacia delante. Es un poco como un niño que se agarra de un carrusel en movimiento y se suelta en el instante preciso. La nave ganaba velocidad, y el planeta, por su parte, apenas lo notaba.\n\nAsí pasó junto a Júpiter, luego junto a Saturno, y cada vez salió apuntando hacia el siguiente. Tardó casi nueve años en llegar a Urano.\n\nY allí, en enero de mil novecientos ochenta y seis, ocurrió todo muy rápido.\n\nFue un sobrevuelo, no una visita larga. La nave pasó a una velocidad enorme, y las horas más intensas duraron poco más que una tarde. En ese tiempo encontró diez lunas que nadie conocía. Midió también un campo magnético que no coincidía con el eje del planeta, sino que apuntaba inclinado, como una brújula que alguien hubiera girado de lado. Era una rareza que nadie había previsto.\n\nDespués, Urano quedó atrás. Y Voyager 2 siguió hacia el último planeta del camino.\n\nCada señal que enviaba tardaba horas en llegar a la Tierra. Cuando la nave se acercó a Neptuno, esas horas eran casi cuatro. Si tú le hubieras hecho una pregunta, la respuesta habría llegado al día siguiente.\n\nY la señal llegaba muy débil. Su transmisor emitía con una potencia parecida a la de la luz de un refrigerador. Para cuando esa energía cruzaba el espacio, se había diluido hasta ser una fracción casi imposible de medir. Las antenas gigantes de la Tierra tuvieron que unirse en una sola red para poder escucharla.\n\nAun así, la escucharon.\n\nEn agosto de mil novecientos ochenta y nueve, Voyager 2 pasó a menos de cinco mil kilómetros sobre las nubes de Neptuno. Envió imágenes de bandas azules con vetas blancas, de anillos finos que giraban en la penumbra, y de una luna pálida llamada Tritón, con la superficie marcada de manera extraña. Los ingenieros las vieron aparecer línea a línea, como quien revela una fotografía muy despacio.\n\nCuando terminó el encuentro, la nave ya había cumplido con todo lo que se esperaba de ella. Siguió su camino hacia afuera, hacia el espacio entre las estrellas, y sus cámaras se apagaron poco después.\n\nDesde entonces, han pasado décadas. Ninguna otra nave ha vuelto a Urano ni a Neptuno. Ninguna ha entrado en órbita, ni ha mirado un solo anillo con calma.\n\nEsa es la respuesta a la pregunta, y es sencilla. Aquella alineación no se repetirá en nuestras vidas, y llegar hasta allí exige años de viaje y mucho dinero.\n\nTodo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en mil novecientos ochenta y seis y mil novecientos ochenta y nueve.\n\nPiénsalo un momento. Las fotografías que hoy aparecen en los libros, en las pantallas y en los documentales son las mismas que se tomaron hace casi cuarenta años. Cada dato nuevo que los astrónomos descubren sobre estos planetas nace, en gran parte, de revisar con más cuidado aquellos pocos días.\n\nEs una forma de paciencia que no solemos practicar. Una sola mirada, hecha a tiempo, sigue enseñándonos hoy.\n\nY quizá por eso, al volver a esas imágenes, surge una duda pequeña. Si esos colores azules son lo único que tenemos, ¿cuánto de lo que creemos ver es realmente lo que había allí?"
     },
     {
-      "title": "La gran cuenca Caloris",
-      "question": "¿Qué clase de golpe pudo dejar una cicatriz de más de 1500 kilómetros?",
-      "reveal": "La cuenca Caloris, formada por un impacto colosal, está entre las mayores del sistema solar y quizá dejó huellas hasta en el lado opuesto del planeta.",
+      "title": "Urano, el planeta tumbado",
+      "question": "¿Qué pudo golpear a un planeta para dejarlo girando de lado?",
+      "reveal": "Urano tiene el eje inclinado casi 98 grados, de modo que rueda sobre su órbita y cada polo recibe unos 42 años seguidos de luz y otros 42 de noche.",
       "beats": [
-        "Caloris se llama así por el calor: está en una de las zonas que miran al Sol en el perihelio.",
-        "Mariner 10 vio solo parte de ella; MESSENGER la fotografió completa.",
-        "Su diámetro supera los 1500 kilómetros, una fracción importante del tamaño de Mercurio.",
-        "Fue rellenada por flujos de lava y atravesada por fracturas que forman patrones radiales.",
-        "En la región opuesta a Caloris existe un terreno extraño y caótico; se ha propuesto que las ondas del impacto lo originaron, aunque es una hipótesis.",
-        "Muestra que el planeta temprano sufrió una época de bombardeo intenso."
+        "Urano gira prácticamente tumbado sobre su órbita, a diferencia de casi todos los demás planetas.",
+        "En un solsticio, un polo apunta casi directo hacia el Sol mientras el otro permanece en oscuridad.",
+        "Cada estación dura unos 21 años terrestres, y el año completo unos 84.",
+        "Una hipótesis ampliamente considerada es un gran impacto en la juventud del sistema solar, pero sigue siendo una cuestión abierta.",
+        "Su campo magnético está inclinado y desplazado respecto al eje de giro, algo que Voyager 2 descubrió.",
+        "Imaginamos cómo se vería el cielo desde un polo: un Sol que no se pone durante décadas."
       ],
-      "ambience": "lava",
+      "ambience": "deep_space",
       "image_queries": [
-        "Caloris basin Mercury",
-        "Caloris basin MESSENGER",
-        "Caloris basin color",
-        "Mercury Caloris fractures",
-        "Mercury volcanic plains",
-        "Mercury impact basin",
-        "Mercury Caloris topography",
-        "Mercury basin lava fill",
-        "Mercury weird terrain",
-        "Mercury Caloris Planitia"
+        "Uranus tilt axis",
+        "Uranus Webb rings",
+        "Uranus Hubble polar cap",
+        "Uranus Voyager 2 pole",
+        "Uranus Hubble seasons",
+        "Uranus Keck",
+        "Uranus rings Webb",
+        "Uranus moons Webb",
+        "Uranus Hubble 2014",
+        "Uranus northern hemisphere"
       ],
       "video_queries": [
-        "Caloris basin flyover",
-        "Mercury basin visualization",
-        "Mercury MESSENGER orbit animation"
+        "Uranus rotation animation",
+        "Uranus axial tilt visualization",
+        "Uranus rings animation"
       ],
-      "text": "Mira una fotografía de Mercurio. En un costado hay una mancha enorme y ovalada, más clara que lo que la rodea. Los primeros que la vieron, en los años setenta, no sabían bien qué estaban mirando. Era demasiado grande para ser un cráter común, y demasiado regular para ser un accidente.\n\nLa llamaron Caloris, que viene de la palabra \"calor\". El nombre tiene una razón sencilla. La órbita de Mercurio es alargada, y en su punto más cercano al Sol, el perihelio, ciertas regiones quedan justo de cara a la estrella. Caloris está en una de ellas, así que es uno de los lugares más calurosos de todo el planeta.\n\nAquella primera sonda, Mariner diez, solo alcanzó a iluminar una parte. Vio un borde curvo, una mitad de círculo, y el resto se perdía en la oscuridad de la noche mercuriana. Durante más de treinta años, la cuenca fue una forma incompleta, como una moneda de la que solo se ve la mitad.\n\nDespués llegó MESSENGER, y la fotografió entera.\n\nAhora podemos medirla. Su diámetro supera los mil quinientos kilómetros. Si la pusieras sobre un mapa de tu región, cubriría la distancia entre dos capitales que normalmente cruzas en avión. Para un planeta de apenas unos cuatro mil ochocientos kilómetros de ancho, es una fracción enorme.\n\n¿Qué clase de golpe pudo dejar una cicatriz así?\n\nLa respuesta, según todo lo que vemos, es un objeto gigantesco. Probablemente un asteroide de decenas de kilómetros, que llegó a gran velocidad hace unos tres mil ochocientos millones de años. No hubo aire que lo frenara. No hubo océano que lo amortiguara. Solo el choque, directo, contra la roca.\n\nY el planeta respondió. Bajo la corteza herida, el material caliente subió, y la lava fluyó hacia el interior de la cuenca. Poco a poco la rellenó, como una marea oscura que se queda quieta. Hoy ese suelo es una llanura relativamente lisa, aunque está lejos de ser perfecta.\n\nPorque la roca, al enfriarse, se agrietó. Desde el centro de la cuenca salen fracturas que se abren hacia afuera, como los radios de una rueda. En otras zonas forman anillos, como las ondas que deja una piedra en un estanque. Solo que aquí el agua se volvió piedra, y las ondas llevan miles de millones de años quietas.\n\nPero hay un detalle más, y está muy lejos de allí.\n\nSi recorres el planeta hasta el punto exactamente opuesto a Caloris, no encuentras cráteres limpios ni llanuras tranquilas. Encuentras colinas, cerros amontonados, un terreno revuelto y caótico, como si alguien hubiera sacudido el suelo.\n\nAlgunos científicos proponen que esto no es casualidad.\n\nSu idea es que las ondas del impacto viajaron por el interior del planeta, se cruzaron al otro lado y quebraron la superficie desde abajo. Imagina golpear una campana y sentir la vibración en el extremo contrario. Es una hipótesis razonable, y muchos la consideran probable. Pero todavía es una hipótesis, y no una certeza.\n\nLo que sí sabemos es lo que Caloris cuenta sobre el pasado. Mercurio, en sus primeros tiempos, vivió una época de bombardeo intenso. Rocas de todos los tamaños caían sobre él una y otra vez, y esta cuenca fue una de las cicatrices más profundas de aquella lluvia.\n\nEsa época no fue solo de Mercurio. La Luna tiene cicatrices parecidas, y la Tierra también las tuvo, aunque el viento y el agua las borraron hace mucho. Lo que aquí permanece a la vista, en tu propio mundo se perdió bajo capas de tiempo.\n\nY todavía hay otras marcas en Mercurio que no vienen de impactos. Son líneas largas, como arrugas, que cruzan cráteres enteros como si algo hubiera apretado el planeta desde adentro."
+      "text": "Los astrónomos se hacen desde hace décadas una pregunta sobre un detalle que casi nadie nota. Si pudieras mirar el sistema solar desde arriba, verías los planetas girando como trompos, todos más o menos derechos. Todos, menos uno.\n\nUrano gira tumbado. Su eje de rotación está casi en el mismo plano que su órbita, como si alguien hubiera empujado el trompo hasta dejarlo rodando sobre el suelo. La Tierra está inclinada unos veintitrés grados, y eso basta para darnos las estaciones. Júpiter apenas se inclina. Urano, en cambio, se acuesta de lado.\n\n¿Qué pudo golpear a un planeta para dejarlo girando así?\n\nPiensa primero en lo que significa. En un solsticio, uno de sus polos apunta casi directo hacia el Sol. Es como si el planeta mostrara la cara a una lámpara lejana, y esa lámpara se quedara quieta sobre su cabeza. El otro polo queda del lado contrario, hundido en una oscuridad total, a casi tres mil millones de kilómetros de cualquier calor.\n\nY ahí no termina. Las estaciones de Urano no pasan en unos meses, como las nuestras. Cada una dura unos veintiún años terrestres. Un niño que naciera al comienzo de un verano uraniano sería ya un adulto cuando llegara el otoño. El año completo dura unos ochenta y cuatro años, más o menos lo que dura una vida larga.\n\nEntonces, ¿cómo llegó el planeta a esta postura?\n\nLa explicación que más se ha considerado es un choque. Cuando el sistema solar era joven, hace más de cuatro mil millones de años, había muchos cuerpos grandes cruzando el espacio sin rumbo fijo. Uno de ellos, quizá del tamaño de la Tierra, pudo haber golpeado a Urano. Un golpe así lo habría empujado de lado, y el planeta habría conservado esa inclinación hasta hoy.\n\nEs una idea sólida, pero no es una certeza. Algunos modelos sugieren que pudieron ser varios impactos más pequeños. Otros proponen que una luna enorme, hoy desaparecida, tiró del planeta poco a poco. Nadie estuvo allí para verlo, y ninguna de las versiones ha ganado del todo.\n\nHay otra pista, y llegó en enero de mil novecientos ochenta y seis. Cuando la sonda Voyager dos pasó junto a Urano, midió su campo magnético. En la Tierra, ese campo se parece al de un imán de barra, alineado con el eje de giro. En Urano no. El campo está inclinado casi sesenta grados respecto al eje. Además, no sale del centro del planeta, sino que está desplazado, como si el imán estuviera clavado a un costado.\n\nNadie lo esperaba. Los instrumentos de la nave mostraron un planeta que giraba de lado y, encima, tenía un magnetismo torcido. Era como encontrar una brújula que apunta en una dirección que nadie le ha enseñado.\n\nAhora ponte allí, sobre uno de sus polos, mirando hacia arriba. El Sol es una estrella pequeña y muy brillante, mucho más pequeña de lo que la conocemos. No sube ni baja como en nuestros días. Traza un círculo lento alrededor del cielo, siempre a la misma altura, sin llegar nunca al horizonte.\n\nPasan los días y no cae la noche. Pasan los años y la luz sigue ahí. Dura así hasta que, muy despacio, el círculo se va hundiendo.\n\nEsa es la respuesta que Urano nos da, aunque la causa siga abierta. Su eje está inclinado casi noventa y ocho grados, de modo que el planeta rueda sobre su órbita como una pelota. Por eso cada polo recibe unos cuarenta y dos años seguidos de luz, y luego otros cuarenta y dos de noche.\n\nEs un día que dura más que la infancia y la juventud juntas. Aquí, en cambio, una noche nos basta para dormir y volver a ver la luz.\n\nY sin embargo, a esa misma distancia, hay otro mundo azul que no gira de lado. Recibe todavía menos luz, y aun así su cielo no está quieto. Allí, algo se mueve a una velocidad que ningún otro planeta conoce."
     },
     {
-      "title": "Un planeta que se encoge",
-      "question": "¿Por qué hay enormes acantilados que cruzan Mercurio como arrugas?",
-      "reveal": "Mercurio se ha ido contrayendo al enfriarse su interior, y su corteza se ha arrugado como la piel de una manzana que se seca.",
+      "title": "Neptuno: el mundo de los vientos",
+      "question": "¿Cómo puede haber tormentas violentas en un planeta tan alejado del Sol?",
+      "reveal": "Neptuno tiene los vientos más rápidos conocidos del sistema solar, de más de 2000 kilómetros por hora, pese a recibir una luz solar muy escasa.",
       "beats": [
-        "Mariner 10 ya mostró largos escarpes que atraviesan cráteres, señal de que se formaron después de ellos.",
-        "Algunos de estos acantilados alcanzan cientos de kilómetros de longitud y varios kilómetros de altura.",
-        "MESSENGER confirmó que el planeta se contrajo: su radio disminuyó varios kilómetros.",
-        "El enfriamiento del núcleo hizo que la corteza se fracturara y se desplazara.",
-        "Imágenes de alta resolución sugieren que parte de esa actividad es relativamente reciente en términos geológicos, quizá aún en curso.",
-        "Es un ejemplo de cómo un mundo pequeño pierde calor más rápido que uno grande."
+        "Neptuno recibe una fracción mínima de la luz que llega a la Tierra, y aun así su atmósfera está activa.",
+        "Voyager 2 fotografió la Gran Mancha Oscura, una tormenta del tamaño de la Tierra.",
+        "Cuando el telescopio Hubble miró de nuevo en los años 90, esa mancha había desaparecido y aparecieron otras nuevas.",
+        "Las nubes blancas de metano se ven altas sobre un azul profundo.",
+        "Los vientos soplan en sentido contrario a la rotación del planeta cerca del ecuador.",
+        "Por qué un planeta con tan poca energía solar mantiene estas tormentas sigue siendo un tema de investigación, y su calor interno parece tener un papel."
+      ],
+      "ambience": "storm",
+      "image_queries": [
+        "Neptune Great Dark Spot",
+        "Neptune Dark Spot Hubble",
+        "Neptune clouds Voyager 2",
+        "Neptune Scooter cloud",
+        "Neptune storm Hubble",
+        "Neptune Webb",
+        "Neptune Hubble clouds",
+        "Neptune dark vortex",
+        "Neptune bright clouds",
+        "Neptune full disk Voyager"
+      ],
+      "video_queries": [
+        "Neptune rotation animation",
+        "Neptune storm visualization",
+        "Neptune clouds time-lapse Hubble"
+      ],
+      "text": "En la sala de control de una nave que nunca volverá, alguien miró una pantalla casi negra, y en ella apareció una mancha azul oscuro. Era agosto de mil novecientos ochenta y nueve. Esa mancha era una tormenta, y estaba en el planeta más lejano del Sol.\n\nPiensa en lo que eso significa. Neptuno recibe una fracción mínima de la luz que llega a la Tierra, unas novecientas veces menos. Si estuvieras allí, el Sol sería un punto brillante, mucho más intenso que cualquier estrella, y aun así el día entero parecería un crepúsculo que nunca termina.\n\n¿Cómo puede haber tormentas violentas en un lugar así?\n\nEso se preguntaron quienes vieron las primeras imágenes de Voyager 2. Esperaban una bola azul, quieta y tranquila. Lo que encontraron fue una atmósfera activa, con bandas, nubes y un óvalo oscuro del tamaño de la Tierra entera. Lo llamaron la Gran Mancha Oscura.\n\nTenía una forma parecida a la de la Gran Mancha Roja de Júpiter, aunque más pequeña. Era un enorme remolino de gas que giraba despacio sobre el azul profundo. Y sobre sus bordes, algo más brillante.\n\nEran nubes blancas, finas como hilos de humo. Estaban hechas de cristales de metano, y flotaban mucho más arriba que el resto de las nubes. Recibían la luz del Sol antes que nada y la devolvían al espacio, como espuma sobre un mar oscuro.\n\nDurante años, esa mancha fue la imagen de Neptuno. Parecía una parte permanente del planeta, como un continente. Entonces, en mil novecientos noventa y cuatro, el telescopio espacial Hubble volvió a mirar.\n\nLa mancha ya no estaba.\n\nLos astrónomos revisaron las imágenes con cuidado. No había error. La tormenta se había disipado, y poco después aparecieron otras nuevas en el hemisferio norte. Algunas duraban unos años, otras apenas unos meses.\n\nEs raro pensar en eso. Aquí, en la Tierra, una tormenta se forma y se va en unos días. En Neptuno, un sistema del tamaño de nuestro mundo puede nacer y desaparecer en el tiempo que dura una infancia. Y nadie lo estaba viendo, hasta que alguien volvió a mirar.\n\nPero lo más extraño no eran las manchas. Eran los vientos que las empujaban.\n\nLos científicos midieron cómo se movían las nubes, una a una, de una imagen a otra. Cerca del ecuador, los vientos soplaban en sentido contrario a la rotación del planeta. Es como si corrieras contra una cinta que gira a toda velocidad, y aun así avanzaras.\n\nY la velocidad era enorme.\n\nNeptuno tiene los vientos más rápidos que conocemos en el sistema solar, de más de dos mil kilómetros por hora. Es más rápido que el sonido en el aire de la Tierra. En un solo minuto, una nube recorrería la distancia entre dos barrios de una ciudad grande, y en una hora, cruzaría un país entero.\n\nY todo eso ocurre con una luz solar muy escasa.\n\n¿Quién empuja entonces esas nubes? La respuesta completa todavía no existe. En la Tierra, el Sol calienta el aire y el aire se mueve. Allí, ese motor casi no funciona. Los investigadores creen que el calor interno del planeta tiene un papel importante: Neptuno irradia más energía de la que recibe del Sol, como una brasa que no se ha apagado del todo.\n\nPero también hay otras ideas. Algunos modelos sugieren que, con tan poca fricción, un viento puede seguir acelerando sin que nada lo frene. Un planeta sin montañas ni océanos deja correr el aire sin obstáculos. Todavía se estudia cuál de estas explicaciones pesa más.\n\nQuizá lo que enseña Neptuno es sencillo. Una atmósfera no necesita mucha luz para moverse, solo necesita energía, venga de donde venga. Y un mundo que parece apagado puede guardar adentro más calor del que imaginamos.\n\nMientras Voyager 2 se alejaba de Neptuno, giró su cámara una última vez. Fotografió algo pequeño, una media luna delgada, pálida, que parecía distinta de todo lo demás. No era una nube ni una tormenta. Era una luna, y tenía una historia mucho más extraña."
+    },
+    {
+      "title": "Por qué uno es azul pálido y el otro azul intenso",
+      "question": "¿Por qué Neptuno y Urano son azules, pero no del mismo azul?",
+      "reveal": "El metano absorbe la luz roja y da a ambos su tono azul, pero Neptuno parece más intenso por razones que todavía se estudian, y las imágenes de Voyager 2 se habían saturado en color.",
+      "beats": [
+        "La luz del Sol llega a las nubes de ambos planetas y atraviesa el gas de metano.",
+        "El metano absorbe el rojo y deja que domine el azul.",
+        "Urano se ve de un azul verdoso pálido, y Neptuno de un azul más vivo.",
+        "Una capa de neblina en Urano, más gruesa, podría suavizar su color.",
+        "Un estudio reciente reajustó las imágenes de Voyager 2 y mostró que los colores reales de ambos son más parecidos de lo que se creía.",
+        "Cada vez que vemos una imagen, vale la pena preguntar cómo se procesó."
       ],
       "ambience": "none",
       "image_queries": [
-        "Mercury scarp",
-        "Mercury lobate scarps MESSENGER",
-        "Mercury thrust fault cliff",
-        "Mercury Discovery Rupes",
-        "Mercury wrinkle ridges",
-        "Mercury shrinking surface",
-        "Mercury tectonic features",
-        "Mercury cliff crater",
-        "Mercury global tectonics",
-        "Mercury surface fractures"
+        "Uranus true color",
+        "Neptune true color",
+        "Uranus Voyager 2 blue-green",
+        "Neptune Voyager 2 blue",
+        "Uranus haze Hubble",
+        "Neptune methane clouds",
+        "Uranus Neptune color comparison",
+        "Uranus Webb infrared",
+        "Neptune Webb infrared",
+        "Uranus Neptune Hubble"
       ],
       "video_queries": [
-        "Mercury shrinking animation",
-        "Mercury scarp flyover",
-        "Mercury surface MESSENGER 3D"
+        "Neptune Webb infrared animation",
+        "Uranus Webb visualization",
+        "planet color comparison animation"
       ],
-      "text": "En las fotografías de Mariner diez hay un cráter que parece partido en dos. Es un cráter redondo, antiguo, de paredes gastadas. Y por el medio le pasa una línea larga, que sube y baja como el borde de un escalón.\n\nLos científicos que miraron esas imágenes en los años setenta se fijaron en un detalle. La línea no esquivaba el cráter. Lo atravesaba. Y eso dice algo sencillo: primero estuvo el cráter, y después llegó la línea. Algo había apretado el terreno cuando ya estaba marcado por los impactos.\n\n¿Qué fuerza puede arrugar un planeta entero?\n\nEsas líneas se llaman escarpes. Vistos de cerca serían acantilados con una pared empinada de un lado y una pendiente suave del otro. Algunos recorren cientos de kilómetros. Es más o menos la distancia entre dos ciudades que se tardan unas horas en unir por carretera. Y su altura puede llegar a unos tres kilómetros. Si te pararas al pie de uno, tendrías delante una pared de roca más alta que cualquier edificio que hayas visto.\n\nMariner diez solo fotografió la mitad del planeta, y con poca definición. Así que la pregunta quedó abierta durante décadas. Podía ser una peculiaridad de esa región. Podía ser un error de interpretación.\n\nEntonces llegó MESSENGER. Esta sonda orbitó Mercurio y lo fotografió entero, con mucho más detalle. Los equipos pudieron medir y contar los escarpes en todo el globo. Estaban por todas partes. Y al sumar cuánto había cedido la corteza en cada uno, la cuenta salió clara.\n\nEl planeta se había encogido.\n\nSu radio disminuyó varios kilómetros. Es poco comparado con el tamaño total, pero suficiente para dejar marcas por todos lados. Piensa en una manzana que se seca con el tiempo. La pulpa de adentro pierde volumen, y la piel, que no puede encogerse igual, se arruga. En Mercurio ocurrió algo parecido, con roca en lugar de fruta.\n\nLa causa está en el interior. Mercurio tiene un núcleo de hierro muy grande, y ese núcleo guardaba el calor de su formación. Con los miles de millones de años se fue enfriando. Al enfriarse, un material se contrae. El núcleo ocupó menos espacio, y la corteza de arriba quedó con demasiada superficie para el volumen que cubría.\n\nLa corteza no pudo adaptarse con suavidad. Se fracturó. Un bloque de roca se montó sobre otro, y el borde de uno de ellos quedó elevado como un escalón gigante. Así nacieron los escarpes. Cada uno es una grieta profunda por donde una parte del planeta avanzó sobre la otra.\n\nHay un detalle que sorprendió a los investigadores. Algunas de estas fracturas se ven muy nítidas en las imágenes de mayor resolución. Casi no tienen cráteres pequeños encima. Si hubieran sido antiguas, los impactos de millones de años ya las habrían salpicado.\n\nEso sugiere que parte de esta actividad es joven, al menos en la escala del tiempo geológico. Joven puede significar cientos de millones de años, o incluso menos. Y es posible que Mercurio siga contrayéndose hoy, muy despacio, en silencio. Todavía no lo sabemos con certeza.\n\nMercurio es un ejemplo de algo que pasa con los mundos pequeños. Un cuerpo pequeño tiene mucha superficie en proporción a su volumen. Pierde su calor al espacio con más rapidez que uno grande. Piensa en una taza de café y en una olla enorme, dejadas en la misma mesa. La taza se enfría primero.\n\nLa Tierra, por su tamaño, todavía conserva buena parte del calor de su origen. Por eso tiene volcanes, placas que se mueven y montañas que crecen. Mercurio gastó su reserva antes y la gastó en otra forma: no con volcanes, sino con arrugas.\n\nY bajo esas arrugas, en lo más hondo, queda todavía una pregunta distinta. Si el planeta se fue enfriando desde adentro, ¿qué se oculta dentro de ese núcleo que, aun así, se resiste a enfriarse del todo?"
+      "text": "En el observatorio hay una pantalla con dos discos pequeños, uno junto al otro. Los dos son azules. Pero quien los mira un rato largo empieza a notar algo: no son el mismo azul.\n\nUno tiene un tono pálido, casi verdoso, como el cristal de una botella vista a contraluz. El otro es más hondo, más vivo, como el mar cuando se aleja de la orilla. Los dos planetas están hechos de materiales parecidos. Los dos están a miles de millones de kilómetros del Sol. ¿Por qué, entonces, no se visten del mismo color?\n\nPara responder, hay que empezar por la luz. La luz del Sol parece blanca, pero guarda dentro todos los colores, mezclados. Llega hasta Urano y Neptuno muy debilitada, y entra en sus atmósferas por arriba, donde el aire es sobre todo hidrógeno y helio, y transparente como el cristal.\n\nMás abajo la luz encuentra nubes. Ahí rebota en las gotas y en los cristales diminutos, y vuelve a salir hacia el espacio. Pero antes de volver, atraviesa una y otra vez un gas que está mezclado en ese aire: el metano.\n\nY el metano tiene una costumbre.\n\nAbsorbe la luz roja. La toma y no la devuelve. Los demás colores sí regresan, y el que domina entre ellos es el azul.\n\nEs un mecanismo sencillo, y es el mismo para los dos mundos. Cada rayo que baja a las nubes y vuelve a subir pierde un poco de rojo en el camino. Cuando ha recorrido el aire de arriba a abajo y de abajo a arriba, ya casi no le queda rojo. Lo que llega a nuestros ojos, o a nuestras cámaras, es un azul filtrado por el gas.\n\nPero entonces la diferencia sigue sin explicarse. Si ambos tienen metano, ambos deberían verse igual. Aquí los astrónomos sospechan de una capa de neblina.\n\nUrano parece tener una neblina más gruesa que la de Neptuno. Son partículas muy finas, suspendidas en lo alto de la atmósfera. Funcionan como un velo de gasa sobre una ventana. Esparcen la luz y la mezclan, y el color se vuelve más claro y más apagado.\n\nEn Neptuno ese velo parece más delgado. La luz alcanza a llegar más hondo, pasa más metano y se pierde más rojo. Por eso el azul de Neptuno se ve más intenso. Es una explicación razonable, aunque los científicos todavía la estudian y no pueden darla por cerrada.\n\nHay algo más, y es lo más curioso de todo.\n\nDurante décadas, casi todos conocimos estos planetas por las fotografías de Voyager 2. Allí Urano era un disco verdoso y liso, y Neptuno un azul profundo, casi eléctrico. Se veían tan distintos que nadie lo puso en duda.\n\nHasta que un grupo de investigadores volvió a mirar esas imágenes con cuidado.\n\nLa cámara de Voyager 2 no fotografiaba en color como lo hace un teléfono. Tomaba imágenes separadas a través de filtros, y luego se combinaban en la Tierra. Al reajustar ese proceso y compararlo con observaciones más recientes, el equipo notó que las imágenes habían sido muy reforzadas. Sobre todo las de Neptuno.\n\nLos colores reales de ambos planetas son más parecidos de lo que se creía.\n\nLos dos son un azul verdoso. Neptuno sigue siendo un poco más azul, y Urano un poco más claro. Pero la diferencia es pequeña, mucho menor que la de aquellas imágenes que llevamos cuarenta años guardando en la memoria. Al intensificar el contraste, quienes las prepararon querían mostrar las bandas y las nubes. Con el tiempo, el color reforzado pasó a ser el color que todos recordábamos.\n\nEsto no es un error de nadie. Es la forma en que se hace la ciencia con una sola nave y una cámara que ya tenía casi medio siglo de diseño. Pero nos deja una pregunta tranquila para la próxima vez que veas una imagen del espacio.\n\n¿Cómo se tomó? ¿Qué se aclaró, qué se realzó y qué se decidió dejar visible?\n\nEsa pregunta no le quita belleza a nada. Al contrario, cada imagen se vuelve una conversación entre lo que existe y lo que alguien eligió mostrarnos.\n\nY en esa conversación hay otro mundo que Voyager 2 vio de pasada. Uno que no es azul ni verde. Uno pequeño y helado, con una superficie que parece rota y vuelta a armar."
     },
     {
-      "title": "El día más largo y la danza del Sol",
-      "question": "¿Cómo puede un día en Mercurio durar más que su año... o casi?",
-      "reveal": "Mercurio gira tres veces sobre sí mismo por cada dos vueltas al Sol, de modo que un día solar dura unos 176 días terrestres, el doble de su año.",
+      "title": "Los anillos y las lunas extrañas",
+      "question": "¿Por qué Miranda, una luna pequeña, parece haber sido rota y recompuesta?",
+      "reveal": "La superficie de Miranda mezcla acantilados de unos 20 kilómetros de altura con terrenos de aspecto cosido, una de las geografías más extrañas del sistema solar.",
       "beats": [
-        "Mercurio rota muy despacio: una rotación completa toma unos 59 días terrestres.",
-        "Su resonancia espín-órbita es de 3:2, descubierta en los años sesenta con observaciones de radar.",
-        "La combinación de rotación y órbita hace que un día solar, de un amanecer al siguiente, dure unos 176 días.",
-        "Su órbita es muy elíptica, por lo que la velocidad cambia a lo largo del año.",
-        "En ciertos puntos de la superficie, el Sol se detiene en el cielo, retrocede unos instantes y vuelve a avanzar; es un efecto geométrico de esa órbita.",
-        "Desde allí el Sol parecería varias veces más grande que desde la Tierra."
-      ],
-      "ambience": "sun",
-      "image_queries": [
-        "Sun SDO",
-        "Sun solar disk ultraviolet",
-        "Sun corona",
-        "Mercury Sun distance",
-        "Mercury sunrise illustration",
-        "Mercury solar prominence",
-        "Mercury orbit Sun",
-        "Sun close up SDO",
-        "Mercury daylight surface",
-        "Mercury terminator"
-      ],
-      "video_queries": [
-        "SDO sun ultra high definition",
-        "Sun time-lapse SDO",
-        "Mercury orbit rotation animation"
-      ],
-      "text": "Hay un lugar en Mercurio donde, si pudieras quedarte quieto durante semanas, verías algo que ningún cielo de la Tierra ofrece. El Sol sale por el horizonte, sube despacio, se detiene, da unos pasos hacia atrás y luego sigue su camino. Es como si dudara.\n\nAntes de entender eso, hay que resolver algo más sencillo, y más extraño. ¿Cómo puede un día en Mercurio durar más que su año?\n\nEmpecemos por lo que parece fácil. Mercurio gira sobre sí mismo muy despacio. Una vuelta completa le toma unos cincuenta y nueve días terrestres. Para ti, que vives en un planeta donde la noche llega cada pocas horas, es un ritmo difícil de sentir. Sería como si una sola mañana se extendiera casi dos meses.\n\nAhora recuerda la otra cifra. Mercurio rodea al Sol en unos ochenta y ocho días. Ese es su año. Entonces el planeta gira una vez cada cincuenta y nueve días y da una vuelta al Sol cada ochenta y ocho. Las dos cuentas parecen no encajar. Y sin embargo, encajan con una precisión notable.\n\nDurante mucho tiempo nadie lo supo. Ya viste que los astrónomos creyeron que Mercurio mostraba siempre la misma cara al Sol. Era una idea razonable, porque desde la Tierra el planeta se ve tan poco y tan borroso que no hay manera de seguir sus marcas.\n\nLa corrección llegó en los años sesenta, y llegó con ondas de radio. Los astrónomos enviaron un haz hacia Mercurio y escucharon el eco. Si un planeta gira, un borde se acerca a nosotros y el otro se aleja. El eco de ese borde que se acerca vuelve ligeramente más agudo, y el del otro, más grave. Midiendo esa diferencia mínima, se puede calcular cuánto tarda en girar.\n\nEl resultado sorprendió a todos. Mercurio no estaba fijo frente al Sol.\n\nGiraba, y lo hacía con una regla muy precisa. Por cada dos vueltas que da alrededor del Sol, rota exactamente tres veces sobre sí mismo. A esa relación se le llama resonancia espín-órbita de tres a dos. Es una especie de acuerdo entre el giro del planeta y su camino, y no se conoce otro planeta del sistema solar que lo tenga.\n\nAhora sí podemos responder la pregunta del principio. Piensa en lo que significa un día para ti: el tiempo que pasa entre un amanecer y el siguiente. En la Tierra, eso casi coincide con una vuelta sobre el eje. En Mercurio no. Mientras el planeta gira, también avanza por su órbita, y el Sol va quedando en otra dirección. Para que vuelva a amanecer en el mismo lugar, hace falta mucho más que una rotación.\n\nHacen falta unos ciento setenta y seis días terrestres.\n\nEso es el doble de su año. Un habitante imaginario de Mercurio vería un solo amanecer y un solo atardecer cada dos años del planeta. Pasaría un año entero con el Sol sobre su cabeza, y otro año entero en la noche. Un día, en ese mundo, es más largo que todo un recorrido alrededor del Sol.\n\nQueda por explicar la duda del Sol en el cielo. La órbita de Mercurio no es un círculo. Es una elipse bastante alargada, y eso cambia su velocidad a lo largo del año. Cuando el planeta pasa cerca del Sol, corre. Cuando se aleja, va más lento.\n\nCerca del punto más próximo, su velocidad orbital supera por un momento a la de su propia rotación. Entonces el Sol, visto desde ciertos lugares de la superficie, parece moverse al revés. Se detiene, retrocede durante unos días y vuelve a avanzar. No es magia ni ilusión de los ojos. Es pura geometría de una órbita estirada.\n\nY mientras tanto, el Sol que ves allí no se parece al nuestro.\n\nDesde esa superficie de cráteres, el disco solar se vería bastante más grande que desde la Tierra. Cerca del perihelio, hasta tres veces más ancho. Tendría una luz blanca y dura, sin ninguna atmósfera que la suavice, y un cielo negro alrededor, aun a pleno día.\n\nEs un cielo extraño para recordar cuando tú cierres los ojos. Pero lo que más intriga de ese mundo no es lo que pasa arriba. Es lo que ese Sol le hace al suelo, hora tras hora, durante meses. ¿Qué le sucede a la roca cuando tiene que soportar un día tan largo, y una noche igual de larga?"
-    },
-    {
-      "title": "Calor abrasador y frío extremo",
-      "question": "¿Cómo puede un planeta tan cercano al Sol tener noches tan frías?",
-      "reveal": "En Mercurio la temperatura varía entre unos 430 grados de día y unos −180 de noche, porque sin atmósfera no hay nada que retenga el calor.",
-      "beats": [
-        "Sin una atmósfera sustancial, el calor del día se pierde rápidamente en cuanto el Sol se oculta.",
-        "En el lado diurno las temperaturas alcanzan unos 430 °C, más que suficiente para fundir plomo.",
-        "Por la noche caen hasta unos −180 °C.",
-        "Mercurio tiene una tenue exosfera formada por átomos que el viento solar y los impactos arrancan de la superficie.",
-        "Esa exosfera incluye sodio y se ha observado con una larga cola, como la de un cometa.",
-        "Venus, más lejano, es en realidad más caliente, por su densa atmósfera."
-      ],
-      "ambience": "sun",
-      "image_queries": [
-        "Mercury exosphere sodium tail",
-        "Mercury thermal map",
-        "Mercury surface MESSENGER sunlit",
-        "Mercury dayside",
-        "Mercury night side",
-        "Mercury heat",
-        "Sun solar wind Mercury",
-        "Mercury magnetosphere",
-        "Mercury surface close up",
-        "Venus atmosphere Magellan"
-      ],
-      "video_queries": [
-        "Mercury sodium tail visualization",
-        "Mercury magnetosphere animation",
-        "solar wind Mercury visualization"
-      ],
-      "text": "Hay un detalle que sorprende a cualquiera que lo oiga por primera vez. En Mercurio, el planeta más cercano al Sol, el suelo se congela cada noche. No se enfría un poco. Se congela de verdad, hasta un frío que en la Tierra solo existe en laboratorios y en los polos más duros.\n\n¿Cómo puede un mundo tan pegado al Sol tener noches así?\n\nToma una piedra que ha pasado un día entero al sol de verano. La tocas al caer la tarde y todavía está tibia. Guarda el calor un buen rato, y la noche termina de enfriarla muy despacio. Y buena parte de esa lentitud la explica el aire que la rodea.\n\nEn la Tierra, la atmósfera funciona como una manta ligera. Deja pasar la luz del Sol y frena el calor que el suelo intenta devolver al espacio. Por eso una noche despejada en la costa rara vez es mortal. En Mercurio esa manta casi no existe.\n\nSin una atmósfera sustancial, el calor del día se escapa en cuanto el Sol se oculta. No hay nada que lo detenga. La roca lo suelta hacia arriba, y el espacio lo recibe sin resistencia.\n\nAhora mira el otro extremo. En el lado diurno, el suelo llega a unos cuatrocientos treinta grados Celsius. Es más de lo que necesita el plomo para fundirse. Si pudieras dejar un trozo de plomo sobre esa roca, al mediodía se volvería un charco brillante, sin ruido y sin humo.\n\nEs una temperatura difícil de sentir con el cuerpo. Un horno doméstico, abierto al máximo, ronda la mitad de eso. Mercurio, durante meses seguidos, es una superficie mucho más caliente que cualquier horno.\n\nY entonces llega la noche.\n\nCuando el Sol por fin se esconde tras el horizonte, la roca empieza a enfriarse sin pausa. Poco a poco baja hasta unos ciento ochenta grados bajo cero. Es más frío que cualquier lugar de la Tierra, incluso en la Antártida, en pleno invierno. Entre el día y la noche hay una diferencia de unos seiscientos grados, sobre la misma roca.\n\nEso responde a la pregunta. La cercanía al Sol calienta el día, sí. Pero lo que decide la noche es otra cosa: la falta de aire. En Mercurio, sin atmósfera, nada retiene el calor del día.\n\nQuizá lo más curioso es que el planeta no está completamente desnudo. Tiene una exosfera, una capa tan tenue que sus átomos casi nunca chocan entre sí. No es aire en el sentido que tú conoces. Son átomos sueltos, que viajan en trayectorias largas, como piedras lanzadas al vacío.\n\n¿De dónde salen? El viento solar y los impactos de pequeños meteoritos los arrancan de la propia superficie. La roca se desgasta, átomo a átomo, y esa pérdida forma una neblina invisible que vuelve a caer o se escapa. Se renueva sin parar, porque no puede quedarse.\n\nEntre esos átomos hay sodio. Y el sodio brilla con una luz amarilla muy particular, la misma que ves en algunas farolas de ciudad. Gracias a eso, los astrónomos lograron observarlo desde la Tierra. Descubrieron que el sodio de Mercurio se estira detrás del planeta en una cola larga, como la de un cometa.\n\nEs una cola que nadie ve a simple vista. Pero está ahí, empujada por la luz del Sol, alargándose a lo largo de una distancia enorme.\n\nQueda un detalle que desconcierta. Se podría pensar que Mercurio, por ser el más cercano al Sol, es también el más caliente de todos. No lo es.\n\nVenus, que está mucho más lejos, es en realidad más caliente. Su superficie supera los cuatrocientos sesenta grados, de día y de noche, sin apenas diferencia. La razón es la contraria a la de Mercurio: una atmósfera densa, que atrapa el calor y no lo suelta.\n\nAsí que la distancia al Sol cuenta, pero no lo decide todo. Cuenta también lo que un planeta lleva puesto encima.\n\nMercurio no lleva casi nada. Y por eso su roca queda tan expuesta, tan sola frente a la luz y frente a la oscuridad. Pero hay rincones de ese suelo que nunca reciben ni una cosa ni la otra, donde el Sol jamás llega a asomar."
-    },
-    {
-      "title": "Hielo en el planeta más cercano al Sol",
-      "question": "¿Puede existir hielo de agua en un planeta tan cercano al Sol?",
-      "reveal": "En cráteres polares que nunca reciben luz solar directa, MESSENGER encontró evidencias de hielo de agua, que se cree que ha permanecido allí durante millones de años.",
-      "beats": [
-        "El eje de Mercurio está casi perpendicular a su órbita, así que en los polos el Sol queda siempre muy bajo en el horizonte.",
-        "Hay cráteres polares con fondos en sombra permanente, como Prokofiev.",
-        "Desde la Tierra, observaciones por radar ya sugerían zonas muy brillantes en esos lugares.",
-        "MESSENGER midió neutrones, luz láser y temperaturas que apoyan la presencia de hielo de agua en esas sombras.",
-        "Parte de él parece cubierto por una capa oscura de material orgánico; su origen sigue en estudio.",
-        "El hielo pudo llegar con cometas y asteroides; el origen exacto es una cuestión abierta."
+        "Urano tiene 13 anillos estrechos y oscuros, descubiertos en 1977 al ver estrellas parpadear detrás de ellos.",
+        "Neptuno tiene anillos con arcos más densos, y su origen y estabilidad se estudian todavía.",
+        "Voyager 2 reveló que Miranda tiene cañones gigantes y regiones de aspecto muy distinto en una misma superficie.",
+        "Una de sus explicaciones propuestas es una historia de calentamiento interno o de impactos, sin consenso claro.",
+        "Titania y Oberón son las lunas mayores de Urano y muestran grietas y cráteres.",
+        "Los anillos oscuros de Urano contrastan con los brillantes de Saturno."
       ],
       "ambience": "ice",
       "image_queries": [
-        "Mercury north pole ice",
-        "Mercury polar craters MESSENGER",
-        "Mercury permanently shadowed crater",
-        "Mercury Prokofiev crater",
-        "Mercury radar bright polar deposits",
-        "Mercury north polar region",
-        "Mercury polar mosaic",
-        "Mercury crater shadow",
-        "Mercury water ice deposits",
-        "Mercury south pole"
+        "Miranda Voyager 2",
+        "Miranda Verona Rupes",
+        "Titania Voyager 2",
+        "Oberon Voyager 2",
+        "Ariel Voyager 2",
+        "Umbriel Voyager 2",
+        "Uranus rings Webb",
+        "Neptune rings Webb",
+        "Neptune rings Voyager 2",
+        "Uranus moons"
       ],
       "video_queries": [
-        "Mercury polar ice visualization",
-        "Mercury north pole animation",
-        "MESSENGER Mercury orbit insertion"
+        "Miranda flyover animation",
+        "Uranus rings animation",
+        "Uranus moons visualization"
       ],
-      "text": "Hay lugares en Mercurio donde el Sol nunca sale del todo. Si pudieras pararte en uno de los polos, lo verías ahí, justo sobre el horizonte, como una moneda de fuego que no se decide a subir. No sube. Tampoco se oculta por completo. Da vueltas muy bajo, rozando el borde del mundo.\n\nLa razón es sencilla. El eje de Mercurio está casi perfectamente derecho respecto a su órbita. No tiene la inclinación que tiene la Tierra, la que nos regala las estaciones. Por eso, en los polos, los rayos del Sol llegan siempre de costado, casi rasantes sobre el suelo.\n\nY eso tiene una consecuencia curiosa. Los polos de Mercurio están llenos de cráteres, y cuando la luz llega tan baja, el borde de un cráter proyecta su sombra sobre el fondo. Esa sombra no se mueve. Los bordes son altos, el Sol nunca sube lo suficiente, y el fondo queda a oscuras día tras día, año tras año.\n\nUno de esos cráteres se llama Prokofiev, en honor al compositor ruso. Tiene unos ciento diez kilómetros de ancho, algo más que la distancia entre dos ciudades vecinas. Parte de su interior no ha recibido luz directa del Sol en un tiempo que cuesta medir.\n\nY aquí aparece la pregunta que durante años incomodó a los científicos. ¿Puede existir hielo de agua en el planeta más cercano al Sol?\n\nParece absurdo. Unos kilómetros más allá, bajo la luz, la roca se calienta a cientos de grados. Pero en la oscuridad de un cráter profundo, sin atmósfera que traiga calor desde otro lugar, la temperatura puede caer a más de cien grados bajo cero. El calor del día no cruza la sombra. Está a un paso, y a la vez, muy lejos.\n\nLa primera pista llegó desde la Tierra, y llegó con ondas de radio. En los años noventa, los astrónomos enviaron señales de radar hacia Mercurio y escucharon el eco. Casi todo el planeta devolvía un reflejo apagado, como cabía esperar de la roca. Pero en los polos había manchas muy brillantes, que devolvían la señal con fuerza inusual.\n\nLos cráteres en sombra coincidían con esas manchas. Era una coincidencia difícil de ignorar. El hielo refleja el radar de una manera particular, y eso era justo lo que parecía estar ocurriendo.\n\nPero una pista no es una prueba. Otros materiales también podían brillar así. Hacía falta ir a mirar de cerca.\n\nEsa tarea le tocó a MESSENGER, la sonda que empezó a orbitar Mercurio en dos mil once. Tenía varios instrumentos, y cada uno miró el problema desde un ángulo distinto. Uno midió neutrones, partículas que escapan del suelo y que cambian cuando hay hidrógeno cerca, como el que contiene el agua. Otro disparó un láser contra el fondo de los cráteres y midió cómo rebotaba la luz. Y los modelos de temperatura mostraron que, en esos lugares, el frío bastaba para conservar el hielo.\n\nTres métodos distintos. Una misma respuesta.\n\nEn cráteres que nunca reciben la luz directa del Sol, hay hielo de agua.\n\nSe cree que ha estado allí durante millones de años, quieto en la oscuridad, mientras el resto del planeta se cocinaba al otro lado de la sombra.\n\nAlgo más: en algunos lugares, el hielo parece estar cubierto por una capa oscura. Los científicos piensan que podría ser material orgánico, es decir, compuestos ricos en carbono. Esa capa tal vez lo protege del poco calor que logra llegar. De dónde viene exactamente, todavía se estudia.\n\n¿Y el agua misma? ¿De dónde salió? Lo más probable es que viajara en cometas y asteroides que chocaron contra Mercurio hace mucho tiempo. Pero esa es una explicación posible, no una certeza. El origen preciso sigue abierto.\n\nPiénsalo un momento. Es el mismo tipo de agua que llenó los océanos de la Tierra, y quizás llegó por caminos parecidos. En el mundo más quemado por el Sol, unas pocas reservas de hielo guardan, en silencio, una historia que también es la nuestra.\n\nPero el hielo no es lo único que Mercurio esconde. Bajo esa roca cubierta de cráteres, mucho más hondo que cualquier sombra, hay algo pesado, metálico, que apenas empezamos a entender."
+      "text": "Una luna de Urano, vista de cerca, parece un rompecabezas armado por alguien con prisa. Se llama Miranda. Mide apenas cuatrocientos setenta kilómetros de lado a lado, más o menos lo que hay entre dos ciudades vecinas unidas por una carretera de un día de viaje.\n\nUna luna tan pequeña debería ser un mundo apagado. Una bola de hielo y roca, fría desde hace miles de millones de años, con cráteres y poco más. Eso era lo que esperaban los científicos en enero de mil novecientos ochenta y seis, cuando Voyager 2 se acercó a ella. ¿Por qué, entonces, Miranda parece haber sido rota y vuelta a armar?\n\nPara llegar a la respuesta, primero conviene mirar el lugar donde vive. Alrededor de Urano giran trece anillos. Son estrechos, algunos apenas de unos pocos kilómetros de ancho, y muy oscuros, casi como carbón. Si estuvieras allí, no verías un resplandor. Verías, con suerte, una sombra delgada contra el fondo negro.\n\nPor eso nadie los había visto. Fueron descubiertos en mil novecientos setenta y siete, de una forma muy indirecta. Un grupo de astrónomos observaba cómo Urano pasaba frente a una estrella lejana. Antes de que la estrella desapareciera detrás del planeta, parpadeó varias veces. Y lo mismo ocurrió al otro lado.\n\nAlgo se interponía, una y otra vez, en pequeños instantes.\n\nEran los anillos, delatados no por su brillo sino por su sombra. Qué contraste con Saturno, cuyos anillos son claros, anchos y reflejan la luz del Sol hasta en un telescopio pequeño. Los de Urano son discretos. Hay que saber dónde buscarlos.\n\nMás lejos, Neptuno guarda anillos propios. Allí hay una rareza: en algunos tramos el material no se reparte parejo, sino que se junta en arcos más densos, como si el anillo tuviera nudos. Se esperaría que ese polvo se esparciera por toda la órbita con el tiempo. No lo hace, o no tan rápido. Cómo se originan esos arcos y por qué se mantienen sigue siendo materia de estudio.\n\nVolvamos a Urano y a sus lunas. Las dos mayores son Titania y Oberón, cada una de unos mil quinientos kilómetros de diámetro. Equivale a cruzar un país de un extremo a otro. Voyager 2 las encontró con cráteres antiguos y con grietas largas que recorren la superficie, señales de que el hielo se estiró y se partió en algún momento. Son mundos tranquilos, marcados por el tiempo.\n\nY luego apareció Miranda.\n\nLas imágenes llegaron lentas, línea tras línea, desde una distancia de casi tres mil millones de kilómetros. Quienes las recibieron vieron algo que no encajaba con ninguna otra luna. Había cañones gigantescos, más profundos que cualquiera de la Tierra. Había zonas con surcos paralelos, como pistas de una carretera de hielo. Y había llanuras antiguas, llenas de cráteres, justo al lado de regiones jóvenes y casi lisas.\n\nTres paisajes distintos, en un mismo mundo pequeño.\n\n¿Cómo se explica? Hay dos ideas principales. La primera dice que Miranda fue golpeada con tanta fuerza que se fragmentó, y que sus pedazos volvieron a juntarse por su propia gravedad, mal acomodados. La segunda propone algo más lento: que el interior de la luna se calentó, quizá por la atracción de Urano y de otras lunas, y que el hielo tibio subió y se hundió en grandes manchas, como una olla que hierve despacio.\n\nNinguna ha ganado. Los especialistas todavía discuten, y es posible que ambas hayan tenido algo de verdad.\n\nLo que sí se midió es el resultado. En el borde de uno de esos cañones, según las imágenes de Voyager 2, un acantilado se alzaría unos veinte kilómetros. Es más del doble de la altura del monte Everest. Si pudieras pararte en su base, la pared de hielo se perdería en el cielo oscuro, y la caída desde su cima, con la gravedad tan débil de Miranda, tardaría varios minutos.\n\nAsí que la respuesta es esta. Miranda mezcla acantilados de unos veinte kilómetros con terrenos de aspecto cosido, y es una de las geografías más extrañas del sistema solar.\n\nUna luna pequeña, que debió ser aburrida, guarda una historia que todavía no sabemos leer. Y es un buen recordatorio: el tamaño de un mundo casi nunca dice cuánto le ha pasado.\n\nPero Miranda no está sola en esas costuras. Más lejos, en el otro gigante azul, hay una luna que ni siquiera nació allí."
     },
     {
-      "title": "El corazón de hierro y lo que vendrá",
-      "question": "¿Por qué Mercurio tiene un núcleo tan grande y qué nos falta por descubrir?",
-      "reveal": "Su núcleo metálico ocupa cerca de 85 por ciento de su radio, y su campo magnético sigue desafiando las explicaciones; BepiColombo llegará a orbitarlo para buscar respuestas.",
+      "title": "Tritón, la luna que vino de lejos",
+      "question": "¿Por qué la luna más grande de Neptuno gira al revés?",
+      "reveal": "Tritón orbita en sentido contrario a la rotación de Neptuno, lo que sugiere que fue capturado desde el cinturón de Kuiper, y Voyager 2 vio géiseres que lanzan material oscuro en su superficie helada.",
       "beats": [
-        "Mercurio es muy denso, y las mediciones de su gravedad y rotación indican un núcleo metálico enorme, en parte líquido.",
-        "Su campo magnético es débil pero real, algo notable en un planeta pequeño; su origen exacto se sigue investigando.",
-        "Hay hipótesis sobre cómo se formó con tanto metal, como un gran impacto temprano que arrancó parte de su manto, pero no hay consenso.",
-        "MESSENGER orbitó el planeta entre 2011 y 2015 y terminó su misión al caer sobre la superficie.",
-        "BepiColombo, misión conjunta de Europa y Japón, ha realizado varios sobrevuelos y se espera que entre en órbita a finales de 2026.",
-        "Cierra el viaje: un mundo pequeño, antiguo y extremo, que nos habla de cómo se formaron los planetas rocosos, incluida la Tierra."
+        "Tritón es la mayor luna de Neptuno y una de las más frías superficies que hemos medido.",
+        "Su órbita es retrógrada, algo muy raro para una luna grande, y eso indica un origen externo.",
+        "Es probable que haya sido un objeto del cinturón de Kuiper capturado por la gravedad de Neptuno.",
+        "Voyager 2 observó columnas oscuras que parecían surgir del hielo, evidencia de actividad en la superficie.",
+        "Su órbita se acorta lentamente y, en un futuro muy lejano, podría romperse y formar un anillo.",
+        "Tritón comparte rasgos con Plutón, y por eso es una ventana a los mundos del borde del sistema solar."
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Triton Voyager 2",
+        "Triton Neptune crescent",
+        "Triton geysers",
+        "Triton surface",
+        "Triton cantaloupe terrain",
+        "Neptune Triton Voyager",
+        "Triton south polar cap",
+        "Triton Hubble",
+        "Kuiper Belt artist concept",
+        "Pluto New Horizons"
+      ],
+      "video_queries": [
+        "Triton flyover animation",
+        "Kuiper Belt visualization",
+        "Pluto flyover New Horizons"
+      ],
+      "text": "En el telescopio, Neptuno es una gota azul y, muy cerca de ella, hay un punto de luz diminuto. Ese punto es Tritón, su luna más grande. Si lo sigues noche tras noche, notarás algo extraño en su movimiento.\n\nNeptuno gira sobre sí mismo hacia un lado. Casi todas las lunas grandes del sistema solar giran alrededor de su planeta en ese mismo sentido, como si siguieran una corriente. Tritón no. Va en contra.\n\n¿Por qué la luna más grande de Neptuno gira al revés?\n\nAntes de responder, conviene conocerla un poco. Tritón mide unos dos mil setecientos kilómetros de ancho, más o menos lo que hay de un extremo a otro de un país largo y estrecho. Es la mayor de las lunas de Neptuno, y con mucha diferencia. Su superficie es una de las más frías que hemos medido en todo el sistema solar, a unos doscientos treinta y ocho grados bajo cero. A esa temperatura, el nitrógeno, que en la Tierra respiramos como gas, se queda helado sobre el suelo como una escarcha.\n\nAhora, la pista. Los astrónomos llaman retrógrada a una órbita como la suya. Entre las lunas pequeñas aparece de vez en cuando. Entre las grandes es casi una rareza absoluta.\n\nY eso importa, porque las lunas grandes suelen nacer con su planeta. Se forman de un disco de polvo y gas que gira alrededor de él, y heredan su sentido de giro. Una luna que va al revés no pudo nacer allí.\n\nEntonces, ¿de dónde vino?\n\nLa explicación más aceptada mira mucho más lejos. Más allá de Neptuno se extiende el cinturón de Kuiper, una región de mundos helados que quedaron como sobrantes de la formación del sistema solar. Es probable que Tritón fuera uno de ellos. Un mundo que viajaba solo, por su cuenta, y que un día pasó demasiado cerca de un gigante azul.\n\nLa gravedad de Neptuno lo atrapó. No sabemos exactamente cómo ocurrió, y hay varias ideas sobre ello. Quizás frenó al chocar con otras lunas, o quizás venía acompañado de un compañero que se llevó parte de su energía. Lo que sí parece claro es que Tritón no nació donde hoy está.\n\nTritón orbita en sentido contrario al giro de Neptuno, y por eso creemos que llegó de afuera.\n\nUn viajero que se quedó. Piensa en lo que eso significa para su historia: sus primeros millones de años en Neptuno debieron de ser violentos, con el hielo estirado y calentado por las mareas, hasta que su órbita se volvió casi circular.\n\nEn agosto de mil novecientos ochenta y nueve, Voyager 2 pasó a unos cuarenta mil kilómetros de su superficie. Los científicos esperaban un mundo muerto, un bloque de hielo detenido en el tiempo. Lo que apareció en las imágenes fue otra cosa.\n\nSobre el hielo claro del polo sur había franjas oscuras, como pinceladas largas dejadas por el viento. Y en algunas fotografías, unas columnas delgadas subían desde el suelo y luego se doblaban en horizontal, arrastradas por una atmósfera casi inexistente.\n\nEran géiseres. Material oscuro lanzado hacia arriba desde una superficie helada, a más de doscientos treinta grados bajo cero.\n\nAún no se sabe con certeza qué los impulsa. Una idea habla del sol, que calentaría un poco el hielo bajo la superficie hasta hacerlo estallar. Otra, de calor que viene de más adentro. Desde aquel paso, nadie ha vuelto a mirar de cerca.\n\nY el futuro de Tritón tiene su propio silencio. Al girar en sentido contrario, la marea que levanta en Neptuno lo frena poco a poco. Su órbita se acorta, muy lentamente, con el paso de los siglos. En un futuro muy lejano, dentro de miles de millones de años, podría acercarse tanto que la gravedad del planeta lo rompería. Sus pedazos formarían un anillo.\n\nEs una despedida tan lenta que ningún ojo humano la vería.\n\nMientras tanto, Tritón guarda algo valioso. Se parece mucho a Plutón: en el color de su hielo, en el nitrógeno de su superficie, en la mezcla de roca y hielo que lo forma por dentro. Si es un hermano capturado, estudiarlo es como mirar de cerca un mundo del borde del sistema solar, sin tener que viajar hasta allí.\n\nY ese borde es un lugar donde, bajo las nubes de estos dos planetas, ocurren cosas igual de extrañas."
+    },
+    {
+      "title": "Lluvia de diamantes y el futuro",
+      "question": "¿Qué hay bajo las nubes azules, y volveremos a verlo?",
+      "reveal": "Experimentos de laboratorio indican que en el interior profundo de estos planetas el carbono podría cristalizar en diamante y hundirse como lluvia, aunque nadie lo ha observado directamente.",
+      "beats": [
+        "Bajo las nubes, la presión aumenta hasta que el agua y otros compuestos se vuelven un fluido denso y caliente.",
+        "Experimentos con láseres y rayos X reproducen esas condiciones por instantes y sugieren que se formarían diamantes.",
+        "Podrían hundirse lentamente hacia el núcleo, liberando energía; es una hipótesis, no una observación.",
+        "Los campos magnéticos extraños de ambos planetas podrían venir de un océano de agua ionizada.",
+        "Los científicos han propuesto una misión orbital a Urano como prioridad para la próxima década, aunque aún no está aprobada.",
+        "Cerramos regresando al azul en calma, a la distancia y al silencio de estos dos mundos."
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "BepiColombo Mercury flyby",
-        "BepiColombo spacecraft",
-        "Mercury interior core illustration",
-        "Mercury magnetic field",
-        "MESSENGER spacecraft Mercury",
-        "Mercury global view BepiColombo",
-        "Mercury planet limb stars",
-        "Mercury surface BepiColombo",
-        "Mercury inner solar system",
-        "Mercury and Sun distant"
+        "Neptune interior illustration",
+        "Uranus interior illustration",
+        "Uranus Webb",
+        "Neptune Webb",
+        "Uranus Voyager 2",
+        "Neptune Voyager 2",
+        "Uranus aurora Hubble",
+        "Uranus orbiter concept",
+        "Neptune from Triton artist concept",
+        "Uranus Neptune together"
       ],
       "video_queries": [
-        "BepiColombo Mercury flyby",
-        "Mercury interior core animation",
-        "inner solar system flyby visualization"
+        "Neptune interior animation",
+        "Uranus magnetic field visualization",
+        "Neptune Triton Voyager animation"
       ],
-      "text": "Si pudieras sostener en la mano un trozo de Mercurio, lo primero que notarías sería el peso. Una piedra del tamaño de un puño te parecería demasiado pesada para su tamaño. ¿Por qué un mundo tan pequeño pesa tanto?\n\nLos astrónomos lo sospechaban desde hace mucho. Mercurio es el segundo planeta más denso del sistema solar, apenas por detrás de la Tierra. Y la Tierra es mucho más grande, de modo que su propio peso comprime la roca y la vuelve más densa. En Mercurio no ocurre eso. Si su densidad es tan alta, es porque casi todo lo que lo forma es metal.\n\nFaltaba una prueba. Y la dieron la gravedad y el giro del planeta.\n\nCuando una sonda pasa cerca de un mundo, su trayectoria se curva un poco. Esa curva cuenta cómo está repartida la masa por dentro. Además, los astrónomos midieron con radar pequeñas oscilaciones en la rotación de Mercurio. Un planeta sólido por completo se movería de una manera. Uno con un núcleo líquido se mueve de otra, como un huevo crudo que gira distinto a uno cocido. Mercurio se movía como el huevo crudo.\n\nAsí supimos que en el centro hay una bola de hierro, en parte fundida.\n\nOcupa cerca del ochenta por ciento del radio del planeta. Si pudieras abrir Mercurio como una fruta, la roca sería solo una cáscara delgada alrededor de un corazón metálico enorme. En la Tierra, el núcleo ocupa poco más de la mitad del radio.\n\nY ese corazón guarda otro enigma. Mercurio tiene un campo magnético. Es débil, unas cien veces más débil que el de la Tierra, pero es real y se mantiene estable. Se esperaba que un planeta tan pequeño se hubiera enfriado hace mucho, y que su núcleo estuviera ya sólido y en silencio. No fue así. Todavía hoy no sabemos del todo qué lo mantiene vivo.\n\nTampoco sabemos con certeza por qué Mercurio tiene tanto metal. Hay ideas, y todas son razonables. Quizá, al principio de su historia, un cuerpo enorme chocó contra él y arrancó buena parte de su manto de roca. Quizá el calor cercano del joven Sol se llevó los materiales más ligeros. Quizá se formó, desde el comienzo, en una región donde abundaba el hierro. Ninguna ha logrado convencer a todos.\n\nLo que sí sabemos lo debemos, en buena parte, a una sonda llamada MESSENGER. Llegó a Mercurio y se quedó. Entre dos mil once y dos mil quince le dio vueltas al planeta, y lo midió, lo fotografió y lo escuchó, hasta cubrir toda su superficie. Cuando se le acabó el combustible, no se alejó. Cayó despacio sobre la roca que había estudiado durante cuatro años.\n\nAllí quedó, como un grano de polvo más entre los cráteres.\n\nPero la historia no terminó con ella. Hoy otra nave viaja hacia Mercurio. Se llama BepiColombo, y la construyeron juntas Europa y Japón. Ya ha pasado cerca del planeta varias veces, cada vez más despacio, frenándose con su gravedad, como quien se acerca a una puerta sin hacer ruido. Si todo sale como está previsto, a finales de dos mil veintiséis se pondrá en órbita.\n\nEntonces llevará dos sondas, una para medir el campo magnético y otra para mirar la superficie. Quizá ellas nos digan por qué ese corazón de hierro sigue latiendo.\n\nHemos recorrido un largo camino, tú y yo, junto a este planeta pequeño. Lo vimos como un punto de luz junto al amanecer. Lo vimos cubierto de cráteres, encogiéndose poco a poco, con un día más largo que su año. Y descubrimos que, en el fondo de sus sombras, guarda hielo.\n\nMercurio es un mundo pequeño, antiguo y extremo. Y, sin embargo, nos habla de nosotros. De cómo se juntaron el polvo y el metal, hace cuatro mil quinientos millones de años, para formar los planetas rocosos. De cómo nació la Tierra, bajo tus pies, con su propio corazón de hierro girando en la oscuridad.\n\nTodavía quedan preguntas abiertas. Eso también es parte del descanso: saber que el cielo guarda algo más para mañana.\n\nRespira despacio. El Sol, allá lejos, sigue su camino. Buenas noches."
+      "text": "Si pudieras bajar por la atmósfera de Urano, lo primero que notarías sería el silencio. Después, la luz. Se iría apagando poco a poco, del azul pálido a un azul cada vez más oscuro, hasta que no quedara casi nada.\n\n¿Y más abajo? Nadie lo sabe con certeza. Ninguna sonda ha entrado jamás en estos mundos, y todo lo que sabemos del interior lo hemos deducido desde lejos.\n\nLo que sí se puede calcular es la presión. A medida que desciendes, las nubes de metano quedan atrás y la presión crece sin pausa. Miles de kilómetros más abajo, el agua ya no es agua como la conoces. Mezclada con amoníaco y metano, se vuelve un fluido denso y muy caliente, a temperaturas de miles de grados. No es hielo, ni líquido de un océano, ni gas. Es otra cosa.\n\nY en ese fluido, los científicos sospechan que ocurre algo extraordinario.\n\nHace unos años, en un laboratorio, un grupo de investigadores quiso comprobarlo. No podían viajar hasta allí, así que intentaron traer un pedazo de ese interior hasta la Tierra. Tomaron una lámina de plástico, un material rico en carbono e hidrógeno, parecido a los compuestos que se cree que hay en esas profundidades. Le lanzaron láseres potentes que generaron ondas de choque. Y justo en ese instante, la iluminaron con un destello de rayos X.\n\nEl experimento duró una fracción de segundo. Menos que un parpadeo, mucho menos.\n\nPero en ese instante, los rayos X mostraron algo. El carbono se había separado del hidrógeno. Y se había ordenado en pequeñas estructuras cristalinas.\n\nEran diamantes.\n\nDiminutos, por supuesto. Se formaron y desaparecieron en un abrir y cerrar de ojos. Pero la señal era clara: bajo presiones y temperaturas parecidas a las de Urano y Neptuno, el carbono puede cristalizar.\n\nSi eso sucede en el interior real de los planetas, la consecuencia es curiosa. Los cristales serían más densos que el fluido que los rodea. Así que empezarían a hundirse. Muy despacio, durante miles de años, caerían hacia el núcleo, como una nevada lenta que nunca llega a tocar el suelo.\n\nY al hundirse, rozarían con el fluido y liberarían un poco de calor. Podría ser una de las razones por las que Neptuno irradia más energía de la que recibe del Sol. Recuerdas esa pregunta, la de los vientos y las tormentas en un mundo tan lejano de la luz. Quizá parte de la respuesta esté aquí abajo.\n\nPero conviene decirlo con cuidado.\n\nNadie ha visto esta lluvia. Es una hipótesis, apoyada por experimentos en la Tierra, no una observación.\n\nHay otro misterio que quizá tenga relación con ese océano oculto. Cuando Voyager 2 midió los campos magnéticos de estos planetas, no encontró nada parecido al de la Tierra. Los campos de Urano y de Neptuno están inclinados, desplazados, desordenados. Un imán con el polo en un lugar equivocado.\n\nUna explicación posible es que se generen más cerca de la superficie de lo que esperábamos. En una capa de agua ionizada, un fluido que conduce la electricidad, que se mueve y gira. Esa capa crearía un campo magnético distinto al de nuestro planeta, con varios polos, y no un único eje ordenado.\n\nEs una idea razonable. Todavía no es una respuesta.\n\nEntonces, ¿cómo saberlo? ¿Cómo mirar bajo las nubes azules?\n\nHay una forma. Una nave que se quede. Que no pase de largo en unas pocas horas, como hizo Voyager 2, sino que entre en órbita y dé vueltas durante años. Que mida la gravedad con precisión, que siga el campo magnético, que observe las tormentas mes tras mes.\n\nLos científicos ya lo han propuesto. Una misión orbital a Urano figura como la prioridad para la próxima década. Todavía no está aprobada. Si se aprobara, tardaría muchos años en llegar, quizá más de una década de viaje.\n\nQuien la lance quizá no sea quien reciba los primeros datos. Es una forma de construir muy antigua: plantar un árbol cuya sombra disfrutarán otros.\n\nY así, nuestro recorrido llega a su fin.\n\nPartimos del Sol, cruzamos los mundos de roca, pasamos junto a los gigantes de gas, y llegamos hasta el borde del mapa. Allí encontramos un planeta tumbado sobre su costado, otro azotado por vientos que nadie siente, lunas con cicatrices, anillos oscuros y una luna capturada que viene de aún más lejos.\n\nTodo eso sigue ahí, esta noche, a miles de millones de kilómetros. Sin prisa. Sin testigos.\n\nDos puntos azules, apenas visibles, girando en la oscuridad. Un año que dura ciento sesenta y cinco años terrestres en uno, y ochenta y cuatro en el otro.\n\nQuizá, en lo más profundo, caigan diamantes. Quizá no. Lo bueno es que todavía podemos preguntarlo.\n\nRespira despacio. Deja que el azul se aleje, que el silencio se haga grande y suave.\n\nGracias por acompañarme hasta aquí. Buenas noches."
     }
   ],
-  "cold_open": "En el planeta más cercano al Sol, la superficie supera los cuatrocientos grados. Y aun así, en el fondo de ciertos cráteres, hay hielo.\n\nPensábamos que un mundo así solo podía ser roca quemada. Pero en sus polos hay lugares donde la luz del Sol nunca ha llegado, y el hielo lleva allí millones de años.\n\n¿Cómo sobrevive el hielo tan cerca del fuego?\n\nEsta noche lo vamos a descubrir juntos. Verás primero un punto diminuto sobre el horizonte, después un mundo marcado por cráteres, una enorme cuenca que quedó como una cicatriz, y por fin esos rincones oscuros donde el frío guarda su secreto.\n\nSilencio.\n\nNo hay prisa. Todo lo que verás es real, y la ciencia que te cuento es la que hoy conocemos. No tienes nada que hacer, salvo escuchar.\n\nMira hacia donde acaba de ponerse el Sol, y busca esa pequeña luz.",
+  "cold_open": "Hay un lugar donde podría estar lloviendo diamante, muy abajo, bajo nubes azules que ningún ojo humano ha visto de cerca.\n\nDurante mucho tiempo pensamos que Urano y Neptuno eran simples bolas de hielo, mundos apagados en el borde del sistema solar. Pero algo en ellos no encajaba. Sus colores. Sus vientos. Una luna que gira al revés.\n\n¿Qué hay realmente dentro de un gigante helado?\n\nEsta noche viajaremos hasta allí. Pasaremos junto a un planeta tumbado sobre su costado, y junto a otro donde soplan los vientos más rápidos que se hayan medido. Veremos anillos tenues y una luna capturada, llegada de muy lejos.\n\nNo hay prisa. Todo lo que oirás es ciencia real, contada despacio, mientras las imágenes pasan frente a ti.\n\nTú no tienes que hacer nada.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nSolo escuchar, y dejarte llevar hasta el borde del mapa.",
+  "sources": [
+    "Voyager 2",
+    "NASA",
+    "Hubble Space Telescope",
+    "SLAC National Accelerator Laboratory",
+    "Jet Propulsion Laboratory"
+  ],
   "review": {
-    "suggested": 29,
-    "applied": 29,
+    "suggested": 18,
+    "applied": 18,
     "fixes": [
       {
-        "section": "cold_open",
-        "find": "y el agua lleva allí miles de millones de años",
-        "replace": "y el hielo lleva allí millones de años",
-        "reason": "overstated; contradicts later chapter"
-      },
-      {
-        "section": "cold_open",
-        "find": "Mira hacia el Sol, y busca esa pequeña luz.",
-        "replace": "Mira hacia donde acaba de ponerse el Sol, y busca esa pequeña luz.",
-        "reason": "unsafe advice to look at the Sun"
+        "section": "chapter_1",
+        "find": "Hace ciento sesenta y cinco años, en tu familia quizá nadie imaginaba tu vida. Neptuno estaba entonces en el mismo punto del cielo donde fue descubierto.",
+        "replace": "Cuando Neptuno fue descubierto, en tu familia quizá nadie imaginaba tu vida. En dos mil once regresó por fin al mismo punto del cielo donde lo encontraron.",
+        "reason": "error factual y repetición"
       },
       {
         "section": "chapter_1",
-        "find": "Por eso solo se deja ver unos minutos, atrapado entre",
-        "replace": "Por eso solo se deja ver un rato breve, atrapado entre",
-        "reason": "overstated precision"
-      },
-      {
-        "section": "chapter_1",
-        "find": "y apenas un poco mayor que nuestra Luna",
-        "replace": "y algo mayor que nuestra Luna",
-        "reason": "about 40 percent larger"
+        "find": "Es un frío de más de doscientos grados bajo cero",
+        "replace": "Es un frío de casi doscientos grados bajo cero",
+        "reason": "cifra conservadora"
       },
       {
         "section": "chapter_2",
-        "find": "Esa nave se llamaba Mariner 10, y llevaba una tarea",
-        "replace": "Esa nave se llamaba Mariner diez, y llevaba una tarea",
-        "reason": "TTS digits"
+        "find": "Si pudieras caminar por la superficie de nuestro planeta, tendrías que dar cuatro vueltas completas, una tras otra, para recorrer la distancia que cruza uno de ellos de lado a lado.",
+        "replace": "Para cruzar uno de ellos de lado a lado, tendrías que alinear cuatro Tierras, una tras otra.",
+        "reason": "error de cálculo"
       },
       {
         "section": "chapter_2",
-        "find": "Enviaron a Mariner 10 primero hacia Venus",
-        "replace": "Enviaron a Mariner diez primero hacia Venus",
-        "reason": "TTS digits"
+        "find": "Ese nombre viene de una época en que los astrónomos llamaban hielos a ciertas sustancias, como el agua, el amoníaco y el metano, que a temperaturas bajas se congelan con facilidad.",
+        "replace": "Ese nombre viene de una época en que los astrónomos llamaban hielos a ciertas sustancias, como el agua, el amoníaco y el metano. A temperaturas bajas, esas sustancias se congelan con facilidad.",
+        "reason": "frase larga"
       },
       {
         "section": "chapter_2",
-        "find": "Mariner 10 pasó por primera vez junto a Mercurio.",
-        "replace": "Mariner diez pasó por primera vez junto a Mercurio.",
-        "reason": "TTS digits"
-      },
-      {
-        "section": "chapter_2",
-        "find": "más o menos la distancia entre Ciudad de México y Guadalajara, pero hacia arriba",
-        "replace": "una altura que un coche recorrería en unas pocas horas de carretera",
-        "reason": "wrong distance comparison"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Mariner 10 detectó un campo magnético alrededor de Mercurio.",
-        "replace": "Mariner diez detectó un campo magnético alrededor de Mercurio.",
-        "reason": "TTS digits"
-      },
-      {
-        "section": "chapter_2",
-        "find": "un mundo tan pequeño, del tamaño de unos pocos países grandes puestos uno junto a otro, se habría enfriado hace mucho",
-        "replace": "un mundo tan pequeño se habría enfriado hace mucho",
-        "reason": "odd, inaccurate size comparison"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Así, en mil novecientos setenta y cuatro, Mariner 10 mostró un mundo",
-        "replace": "Así, en mil novecientos setenta y cuatro, Mariner diez mostró un mundo",
-        "reason": "TTS digits"
-      },
-      {
-        "section": "chapter_2",
-        "find": "resultaba ser algo distinto, con un corazón todavía activo y una piel marcada por fuerzas que apenas empezábamos a imaginar.",
-        "replace": "resultaba ser algo distinto. Tenía un corazón todavía activo y una piel marcada por fuerzas que apenas empezábamos a imaginar.",
-        "reason": "long sentence"
+        "find": "Pero la pista es sugerente: quizá este sea el tipo de planeta más común de la galaxia, y nuestro sistema solar, con su Júpiter enorme, sea el que tiene un aspecto algo especial.",
+        "replace": "Pero la pista es sugerente: quizá este sea el tipo de planeta más común de la galaxia. Nuestro sistema solar, con su Júpiter enorme, sería entonces el de aspecto algo especial.",
+        "reason": "frase larga"
       },
       {
         "section": "chapter_3",
-        "find": "¿Por qué la superficie de Mercurio parece una cicatriz de miles de millones de años?",
-        "replace": "¿Por qué la superficie de Mercurio guarda huellas de miles de millones de años?",
-        "reason": "repeated cicatriz image"
+        "find": "Hay una sala en California donde, en enero de mil novecientos ochenta y seis, un grupo de ingenieros esperaba",
+        "replace": "En una sala de California, en enero de mil novecientos ochenta y seis, un grupo de ingenieros esperaba",
+        "reason": "apertura repetida"
       },
       {
         "section": "chapter_3",
-        "find": "Hay todavía un detalle más, y es el que mejor se ve desde lejos.",
-        "replace": "Otra pista se ve mejor desde lejos.",
-        "reason": "repeated opener"
+        "find": "Todo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en 1986 y 1989.",
+        "replace": "Todo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en mil novecientos ochenta y seis y mil novecientos ochenta y nueve.",
+        "reason": "cifras para TTS"
       },
       {
         "section": "chapter_4",
-        "find": "Piensa en lo que significa mirar una fotografía de Mercurio y encontrar, en un costado, una mancha enorme y ovalada, más clara que lo que la rodea.",
-        "replace": "Mira una fotografía de Mercurio. En un costado hay una mancha enorme y ovalada, más clara que lo que la rodea.",
-        "reason": "repeated opener"
+        "find": "Hay una pregunta que los astrónomos se hacen desde hace décadas, y tiene que ver con un detalle que casi nadie nota.",
+        "replace": "Los astrónomos se hacen desde hace décadas una pregunta sobre un detalle que casi nadie nota.",
+        "reason": "apertura repetida"
       },
       {
         "section": "chapter_4",
-        "find": "Aquella primera sonda, Mariner 10, solo alcanzó a iluminar una parte.",
-        "replace": "Aquella primera sonda, Mariner diez, solo alcanzó a iluminar una parte.",
-        "reason": "TTS digits"
-      },
-      {
-        "section": "chapter_4",
-        "find": "hace unos tres mil quinientos millones de años",
-        "replace": "hace unos tres mil ochocientos millones de años",
-        "reason": "Caloris age about 3.8 billion"
+        "find": "hace unos cuatro mil quinientos millones de años",
+        "replace": "hace más de cuatro mil millones de años",
+        "reason": "cifra conservadora"
       },
       {
         "section": "chapter_5",
-        "find": "En las fotografías de Mariner 10 hay un cráter que parece cortado por una cicatriz.",
-        "replace": "En las fotografías de Mariner diez hay un cráter que parece partido en dos.",
-        "reason": "TTS digits; repeated cicatriz"
-      },
-      {
-        "section": "chapter_5",
-        "find": "Mariner 10 solo fotografió la mitad del planeta",
-        "replace": "Mariner diez solo fotografió la mitad del planeta",
-        "reason": "TTS digits"
-      },
-      {
-        "section": "chapter_5",
-        "find": "Y su altura puede llegar a varios kilómetros.",
-        "replace": "Y su altura puede llegar a unos tres kilómetros.",
-        "reason": "more precise"
+        "find": "pero incapaz de darte sombra de mediodía. Sería como un crepúsculo que nunca termina.",
+        "replace": "y aun así el día entero parecería un crepúsculo que nunca termina.",
+        "reason": "error factual"
       },
       {
         "section": "chapter_6",
-        "find": "durar más que su año... o casi?",
-        "replace": "durar más que su año?",
-        "reason": "day is twice the year"
-      },
-      {
-        "section": "chapter_6",
-        "find": "se vería varias veces más grande que desde la Tierra. Cerca del perihelio, casi tres veces más ancho.",
-        "replace": "se vería bastante más grande que desde la Tierra. Cerca del perihelio, hasta tres veces más ancho.",
-        "reason": "overstated size"
+        "find": "Uno blanco, helado, con una superficie marcada por manchas oscuras que nadie esperaba.",
+        "replace": "Uno pequeño y helado, con una superficie que parece rota y vuelta a armar.",
+        "reason": "enlace con el capítulo siguiente"
       },
       {
         "section": "chapter_7",
-        "find": "Piensa en una piedra que ha pasado un día entero",
-        "replace": "Toma una piedra que ha pasado un día entero",
-        "reason": "repeated opener"
+        "find": "Hay una luna de Urano que, vista de cerca, parece un rompecabezas armado por alguien con prisa.",
+        "replace": "Una luna de Urano, vista de cerca, parece un rompecabezas armado por alguien con prisa.",
+        "reason": "apertura repetida"
       },
       {
         "section": "chapter_7",
-        "find": "Esa lentitud no es de la piedra. Es del aire que la rodea.",
-        "replace": "Y buena parte de esa lentitud la explica el aire que la rodea.",
-        "reason": "overstated claim"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Poco a poco baja hasta unos menos ciento ochenta grados Celsius.",
-        "replace": "Poco a poco baja hasta unos ciento ochenta grados bajo cero.",
-        "reason": "TTS symbol reading"
-      },
-      {
-        "section": "chapter_7",
-        "find": "En Mercurio la temperatura varía entre unos cuatrocientos treinta grados de día y unos menos ciento ochenta de noche, porque sin atmósfera no hay nada que retenga el calor.",
-        "replace": "En Mercurio, sin atmósfera, nada retiene el calor del día.",
-        "reason": "repeated numbers"
+        "find": "En el borde de uno de esos cañones, un acantilado sube a unos veinte kilómetros de altura.",
+        "replace": "En el borde de uno de esos cañones, según las imágenes de Voyager 2, un acantilado se alzaría unos veinte kilómetros.",
+        "reason": "certeza excesiva"
       },
       {
         "section": "chapter_8",
-        "find": "Tiene unos ciento cincuenta kilómetros de ancho, más o menos la distancia entre dos ciudades vecinas.",
-        "replace": "Tiene unos ciento diez kilómetros de ancho, algo más que la distancia entre dos ciudades vecinas.",
-        "reason": "Prokofiev diameter about 112 km"
+        "find": "Eran géiseres. Material oscuro lanzado hacia arriba desde una superficie helada, a doscientos grados bajo cero.",
+        "replace": "Eran géiseres. Material oscuro lanzado hacia arriba desde una superficie helada, a más de doscientos treinta grados bajo cero.",
+        "reason": "coherencia de temperatura"
       },
       {
         "section": "chapter_8",
-        "find": "Hay un detalle más. En algunos lugares, el hielo parece",
-        "replace": "Algo más: en algunos lugares, el hielo parece",
-        "reason": "repeated opener"
+        "find": "Su órbita se acorta, lentamente, unos pocos centímetros cada año.",
+        "replace": "Su órbita se acorta, muy lentamente, con el paso de los siglos.",
+        "reason": "cifra no verificada"
+      },
+      {
+        "section": "chapter_8",
+        "find": "Sus pedazos formarían un anillo, tal vez más brillante que el de Saturno.",
+        "replace": "Sus pedazos formarían un anillo.",
+        "reason": "especulación"
       },
       {
         "section": "chapter_9",
-        "find": "Ocupa cerca de ochenta y cinco por ciento del radio del planeta.",
-        "replace": "Ocupa cerca del ochenta por ciento del radio del planeta.",
-        "reason": "core radius about 80 percent"
+        "find": "El experimento dura una fracción de segundo.",
+        "replace": "El experimento duró una fracción de segundo.",
+        "reason": "tiempo verbal"
+      },
+      {
+        "section": "chapter_9",
+        "find": "Un año de ciento sesenta y cinco años en uno, y de ochenta y cuatro en el otro.",
+        "replace": "Un año que dura ciento sesenta y cinco años terrestres en uno, y ochenta y cuatro en el otro.",
+        "reason": "claridad oral"
       }
     ]
   },
-  "topic": "Mercurio: el mundo más cercano al Sol, de extremos y cráteres",
+  "topic": "Neptuno y Urano: los gigantes helados en los confines del sistema solar",
   "shorts": [
     {
-      "title": "El día en Mercurio dura más que su año",
-      "hook": "Un día más largo que un año",
-      "narration": "Un solo día en Mercurio dura más que un año entero en Mercurio. Parece imposible, pero es pura geometría. El planeta rodea al Sol en unos ochenta y ocho días terrestres. Sin embargo, gira tan despacio sobre sí mismo que, para que el Sol vuelva a salir en el mismo lugar, hacen falta unos ciento setenta y seis días. Eso es el doble de su año. Imagina que vivieras allí: verías un solo amanecer cada dos años del planeta. Pasarías un año entero con el Sol sobre tu cabeza, y otro año entero en la noche. Además, en ciertos lugares el Sol se detiene, retrocede unos días y luego sigue su camino, como si dudara. Todo esto lo descubrimos gracias al eco de ondas de radar. El viaje completo por este mundo extraño te espera en el canal.",
+      "title": "Un planeta que se descubrió con lápiz y papel",
+      "hook": "Lo encontraron antes de verlo",
+      "narration": "Un planeta fue encontrado primero en una hoja de papel, y solo después en el cielo. Los astrónomos notaron que Urano iba a veces adelantado y a veces atrasado, con diferencias mínimas pero constantes. Algo invisible lo estaba jalando. Dos jóvenes matemáticos, uno en Inglaterra y otro en Francia, calcularon por separado dónde debía estar ese algo. Pasaron meses sumando y corrigiendo, sin telescopio. El francés Urbain Le Verrier envió su resultado a Berlín. La noche del veintitrés de septiembre de mil ochocientos cuarenta y seis, el astrónomo Johann Galle apuntó hacia el lugar indicado y, en menos de una hora, halló Neptuno. Estaba a menos de un grado de lo calculado, más o menos el ancho de tu dedo meñique con el brazo estirado. Las matemáticas habían visto lo que los ojos no alcanzaban. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Mercury planet surface NASA",
-        "Mercury MESSENGER global mosaic",
-        "Mercury sunrise illustration",
-        "Mercury orbit around the Sun diagram"
+        "Neptune planet Voyager 2",
+        "Neptune blue planet full disk",
+        "Uranus planet Voyager 2",
+        "Neptune Uranus size comparison"
       ],
       "video_queries": [
-        "Mercury rotation orbit animation NASA",
-        "MESSENGER spacecraft Mercury flyby"
-      ]
+        "Neptune planet rotating animation",
+        "Neptune Voyager 2 flyby"
+      ],
+      "source": "NASA / Voyager 2"
     },
     {
-      "title": "Hay hielo en el planeta más cercano al Sol",
-      "hook": "Hielo donde nadie lo espera",
-      "narration": "En el planeta más cercano al Sol hay hielo de agua. Suena absurdo, porque a pocos kilómetros de allí la roca se calienta a cuatrocientos treinta grados Celsius, más de lo que necesita el plomo para fundirse. Pero en los polos de Mercurio hay cráteres tan profundos que el Sol nunca logra iluminar su fondo. Allí la temperatura cae a más de cien grados bajo cero, y el hielo puede durar millones de años. La sonda MESSENGER lo confirmó con tres métodos distintos y obtuvo una misma respuesta. Es como guardar un cubo de hielo en la sombra de un horno encendido, y que no se derrita. Quizá ese agua llegó en cometas, igual que parte del agua de nuestros océanos. La historia completa de Mercurio te espera en el canal.",
+      "title": "Neptuno: vientos más rápidos que el sonido",
+      "hook": "Vientos que superan al sonido",
+      "narration": "En el planeta más lejano del Sol soplan los vientos más rápidos que conocemos. Neptuno recibe unas novecientas veces menos luz que la Tierra, y aun así su atmósfera está llena de tormentas. Voyager 2 midió vientos de más de dos mil kilómetros por hora, más veloces que el sonido en el aire de la Tierra. En un solo minuto, una nube recorrería la distancia entre dos barrios de una ciudad grande, y en una hora cruzaría un país entero. Los investigadores creen que el calor interno del planeta ayuda a moverlas, porque Neptuno irradia más energía de la que recibe del Sol, como una brasa que no se ha apagado del todo. Un mundo que parece apagado guarda más calor del que imaginamos. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Mercury north pole radar ice deposits NASA",
-        "Mercury permanently shadowed crater MESSENGER",
-        "Prokofiev crater Mercury",
-        "MESSENGER spacecraft orbiting Mercury"
+        "Neptune Great Dark Spot Voyager 2",
+        "Neptune clouds white methane",
+        "Neptune atmosphere storms Hubble",
+        "Neptune dark spot Hubble"
       ],
       "video_queries": [
-        "Mercury polar ice MESSENGER NASA animation",
-        "Mercury craters shadow flyover NASA"
-      ]
+        "Neptune storms atmosphere",
+        "Neptune Great Dark Spot animation"
+      ],
+      "source": "NASA / Voyager 2"
+    },
+    {
+      "title": "Un planeta que rueda de lado y tiene noches de 42 años",
+      "hook": "Un planeta que gira tumbado",
+      "narration": "Hay un planeta cuya noche dura cuarenta y dos años seguidos. Es Urano, el único que gira tumbado, con su eje inclinado casi noventa y ocho grados, como una pelota que rueda sobre su órbita. Por eso cada polo recibe cuarenta y dos años de luz y luego otros cuarenta y dos de oscuridad. Un niño que naciera al comienzo de un verano uraniano ya sería adulto cuando llegara el otoño. En el polo, el Sol trazaría un círculo lento en el cielo, sin tocar nunca el horizonte. Es un día que dura más que la infancia y la juventud juntas. Qué lo golpeó hasta dejarlo así, todavía nadie lo sabe con certeza. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "image_queries": [
+        "Uranus planet Voyager 2",
+        "Uranus tilted axis rings",
+        "Uranus Hubble image",
+        "Uranus rings moons"
+      ],
+      "video_queries": [
+        "Uranus rotation animation",
+        "Uranus Voyager 2 flyby"
+      ],
+      "source": "NASA / Voyager 2"
     }
   ]
 }
