@@ -101,6 +101,9 @@ jobs:
               3|5|7) CH=estrato-nocturno ;;
               *)     CH=quiet-cosmos ;;
             esac
+            # 27-oct → 15-nov-2026 (aprobado por Luis el 26-oct): Nocturno TODOS los días para llegar al YPP;
+            # Quiet Cosmos en pausa (la GPU gratis de Kaggle no alcanza para los dos). Después vuelve solo.
+            if [ "$(TZ=America/Lima date +%Y%m%d)" -le 20261115 ]; then CH=estrato-nocturno; fi
           fi
           echo "channel=$CH" >> "$GITHUB_OUTPUT"
           echo "Canal de hoy: $CH"
