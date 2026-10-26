@@ -7,8 +7,22 @@
     "uGdApMHx6vs"
   ],
   "sources": {
-    "KvZlSFIG0ww": "missing"
+    "KvZlSFIG0ww": "maraton-entrada",
+    "WcaFu8b45bE": "maraton-entrada",
+    "rSnD81nfInk": "maraton-entrada",
+    "uGdApMHx6vs": "maraton-entrada"
   },
-  "ok": false,
-  "error": "no se pudo conseguir el episodio KvZlSFIG0ww"
+  "ok": true,
+  "video_copy": true,
+  "title": "3 horas del Sistema Solar para dormir: Mercurio, Venus, Marte y Saturno | Documental relajante",
+  "minutes": 187.5,
+  "chapters": [
+    "0:00 Mercurio",
+    "45:50 Venus",
+    "1:31:21 Marte, el Planeta Rojo",
+    "2:19:45 Saturno"
+  ],
+  "uploaded": true,
+  "video_id": "8Ue4Et0e7bA",
+  "url": "https://youtu.be/8Ue4Et0e7bA"
 }
