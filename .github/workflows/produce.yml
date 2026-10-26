@@ -148,6 +148,28 @@ jobs:
               "$(dirname "$v")/preview-10min.mp4"
           done
 
+      - name: Keep the full episode for marathons
+        # Guarda el episodio completo en la release "episodios-<canal>" para poder armar maratones sin re-renderizar.
+        if: success() && inputs.sample != true && inputs.gpu_test != true && inputs.video_bench != true && inputs.voice_bench != true
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CH: ${{ steps.pick.outputs.channel }}
+        run: |
+          DONE=data/done.json
+          [ "$CH" != "quiet-cosmos" ] && DONE=data/channels/$CH/done.json
+          ID=$(python -c "import json,datetime;d=json.load(open('$DONE'));e=d[-1];print((e.get('video_id') or '') if e.get('date')==datetime.date.today().isoformat() else '')")
+          V=$(ls outputs/*/video.mp4 2>/dev/null | head -1)
+          [ -n "$ID" ] && [ -n "$V" ] || { echo "nada que guardar"; exit 0; }
+          SIZE=$(stat -c %s "$V")
+          [ "$SIZE" -lt 2000000000 ] || { echo "demasiado grande para una release ($SIZE bytes)"; exit 0; }
+          gh release view "episodios-$CH" >/dev/null 2>&1 || \
+            gh release create "episodios-$CH" --title "Episodios completos · $CH" \
+              --notes "Episodios completos para armar maratones (workflow maraton)." --latest=false
+          F="$(date -u +%F)_$ID.mp4"
+          cp "$V" "/tmp/$F"
+          gh release upload "episodios-$CH" "/tmp/$F" --clobber
+
       - name: Keep preview, Shorts, thumbnails, script and QA report
         if: always()
         uses: actions/upload-artifact@v4

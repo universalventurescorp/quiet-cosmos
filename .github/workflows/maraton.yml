@@ -1,0 +1,67 @@
+name: maraton
+
+# Junta episodios ya publicados en un video largo (3 h o más) y lo sube en privado. Cero GPU.
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: "Canal"
+        type: choice
+        options: [estrato-nocturno, quiet-cosmos]
+        default: estrato-nocturno
+      videos:
+        description: "IDs de YouTube de los episodios, en orden, separados por coma"
+        required: true
+      title:
+        description: "Título (vacío = automático)"
+        required: false
+      upload:
+        description: "Subir a YouTube"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maraton
+  cancel-in-progress: false
+
+jobs:
+  maraton:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Packages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-inter >/dev/null
+          pip install -q google-api-python-client google-auth Pillow PyYAML requests yt-dlp
+
+      - name: Build marathon
+        env:
+          CHANNEL: ${{ inputs.channel }}
+          GH_TOKEN: ${{ github.token }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN_NOCTURNO: ${{ secrets.YT_REFRESH_TOKEN_NOCTURNO }}
+        run: |
+          ARGS=""
+          [ "${{ inputs.upload }}" = "false" ] && ARGS="--no-upload"
+          python -m pipeline.marathon --videos "${{ inputs.videos }}" --title "${{ inputs.title }}" $ARGS
+
+      - name: Save result
+        if: always()
+        run: |
+          git config user.name "quiet-cosmos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Marathon $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; git rebase --abort 2>/dev/null; sleep 10; done
