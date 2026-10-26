@@ -18,6 +18,9 @@ channel:
     awe. Each chapter is a chapter of one story, with a small tension that resolves. Concrete sensory images
     (what you would see, hear, feel if you were there). Warm, never pompous, never hype, no exclamations:
     the listener is drifting off to sleep. Natural neutral Latin American Spanish; avoid Spain-only words.
+  # Suscriptores (26-oct-2026): la gente se duerme y no se suscribe (maratón: +1 sub en 252 vistas).
+  # Una sola frase tranquila al final del cold open, cuando el oyente todavía está despierto.
+  subscribe_line: "Si este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos."
 
 voice:
   # Narrador del canal (elegido el 16-oct-2026 tras 4 rondas de pruebas): voz diseñada con Qwen3-TTS

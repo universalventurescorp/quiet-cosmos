@@ -109,6 +109,15 @@ def short_source(short, sources):
     return sources[0] if sources else "NASA"
 
 
+def with_subscribe_line(cold_open, line):
+    """Fixed, calm subscribe request placed just before the cold open's last line (the lead-in to the
+    title card): asked while the listener is still awake, never at the end when they are asleep."""
+    if not line:
+        return cold_open
+    paras = [p for p in cold_open.split("\n\n") if p.strip()]
+    return "\n\n".join(paras[:-1] + [line.strip()] + paras[-1:]) if paras else line.strip()
+
+
 def write_script(topic, cfg):
     global MODEL
     MODEL = (cfg.get("claude") or {}).get("model", MODEL)
@@ -173,7 +182,7 @@ def write_script(topic, cfg):
         print(f"    applied {n} fixes")
     except Exception as exc:
         print(f"    review skipped: {exc}")
-    outline["cold_open"] = sections["cold_open"]
+    outline["cold_open"] = with_subscribe_line(sections["cold_open"], ch.get("subscribe_line"))
     for i, c in enumerate(chapters, 1):
         c["text"] = sections[f"chapter_{i}"]
 
