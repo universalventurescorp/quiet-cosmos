@@ -15,6 +15,10 @@ on:
       title:
         description: "Título (vacío = automático)"
         required: false
+      calm_minutes:
+        description: "Minutos finales de solo música e imágenes lentas, sin voz (0 = no)"
+        required: false
+        default: "60"
       upload:
         description: "Subir a YouTube"
         type: boolean
@@ -42,7 +46,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-inter >/dev/null
-          pip install -q google-api-python-client google-auth Pillow PyYAML requests yt-dlp faster-whisper
+          pip install -q google-api-python-client google-auth Pillow PyYAML requests yt-dlp faster-whisper numpy scipy soundfile
 
       - name: Build marathon
         env:
@@ -55,7 +59,7 @@ jobs:
         run: |
           ARGS=""
           [ "${{ inputs.upload }}" = "false" ] && ARGS="--no-upload"
-          python -m pipeline.marathon --videos "${{ inputs.videos }}" --title "${{ inputs.title }}" $ARGS
+          python -m pipeline.marathon --videos "${{ inputs.videos }}" --title "${{ inputs.title }}" --calm-minutes "${{ inputs.calm_minutes || 0 }}" $ARGS
 
       - name: Save result
         if: always()

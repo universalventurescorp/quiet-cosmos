@@ -124,6 +124,84 @@ def part(src, i, n, same_video, cut=None):
     return out
 
 
+CALM_SHOT = 60.0  # segundos por imagen en la hora final (movimiento casi imperceptible)
+
+
+def calm_tail(srcs, minutes, sig, seed=2026):
+    """Hora final sin voz para los que ya se durmieron: fotogramas de los propios episodios (sin texto ni negro),
+    acercamientos muy lentos que se van oscureciendo poco a poco, y música original que cambia cada 10 min.
+    sig = (codec, W, H, fps, pix_fmt) de las partes, para poder unir sin recodificar."""
+    import numpy as np
+    import soundfile as sf
+    from PIL import Image, ImageEnhance
+
+    from .music import make_score
+
+    _, W, H, rate, _ = sig
+    fps = round(eval(rate)) if isinstance(rate, str) else int(rate)
+    folder = WORK / "calm"
+    folder.mkdir(parents=True, exist_ok=True)
+    n = max(1, round(minutes * 60 / CALM_SHOT))
+    # candidatos repartidos por todos los episodios (lejos del gancho/título y de la despedida),
+    # intercalados episodio por episodio para que la hora no sea un solo planeta seguido
+    per = n // len(srcs) + 3
+    durs = [probe(src)["dur"] for src in srcs]
+    cands = [(src, 240 + (dur - 480) * (k + 0.5) / per) for k in range(per) for src, dur in zip(srcs, durs)]
+    stills = []
+    for j, (src, t) in enumerate(cands):
+        if len(stills) >= n:
+            break
+        f = folder / f"cand_{j:03d}.png"
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", str(src), "-frames:v", "1",
+            "-vf", f"scale={W}:{H}", str(f)], check=False)
+        if not f.exists():
+            continue
+        a = np.asarray(Image.open(f).convert("L").resize((160, 90)), np.float32)
+        # fuera: negro, tarjetas de título (fondo plano + letras) y fotogramas casi vacíos
+        if a.mean() < 18 or a.std() < 12:
+            continue
+        stills.append(f)
+    if not stills:
+        raise RuntimeError("calm_tail: no hay fotogramas utilizables")
+    order = (stills * n)[:n]
+    shots = []
+    for i, f in enumerate(order):
+        dim = 0.85 - 0.40 * i / max(1, n - 1)          # 85 % → 45 % de brillo a lo largo de la hora
+        img = ImageEnhance.Brightness(Image.open(f).convert("RGB")).enhance(dim)
+        img = ImageEnhance.Color(img).enhance(0.85).resize((W * 2, H * 2), Image.LANCZOS)
+        g = folder / f"still_{i:03d}.png"
+        img.save(g)
+        frames = int(CALM_SHOT * fps)
+        zin = i % 2 == 0
+        # zoom entre 1,04 y 1,10 y deriva pequeña: nunca toca el borde (sin tirones)
+        z = f"1.04+0.06*on/{frames}" if zin else f"1.10-0.06*on/{frames}"
+        drift = (1 if i % 4 < 2 else -1) * 0.03
+        out = folder / f"shot_{i:03d}.mp4"
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(fps), "-i", str(g),
+            "-filter_complex",
+            f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)+{drift}*on':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={fps},"
+            f"fade=t=in:d=2.5,fade=t=out:st={CALM_SHOT - 2.5}:d=2.5,format=yuv420p",
+            "-t", f"{CALM_SHOT}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-tune", "film",
+            "-g", str(fps * 4), "-an", str(out)])
+        shots.append(out)
+    lst = folder / "shots.txt"
+    lst.write_text("".join(f"file '{p.name}'\n" for p in shots))
+    silent = folder / "calm_video.mp4"
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy",
+        str(silent)])
+    total = len(shots) * CALM_SHOT
+    timing = {"duration": total,
+              "chapters": [{"start": float(s)} for s in np.arange(0, total, 600.0)]}
+    wav = folder / "calm_music.wav"
+    make_score(wav, timing, seed)
+    out = WORK / "part_calm.mp4"
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-i", str(silent), "-i", str(wav), "-map", "0:v:0", "-map", "1:a:0",
+        "-c:v", "copy", "-af",
+        f"loudnorm=I=-20:TP=-2:LRA=7,aresample=48000,afade=t=in:d=8,afade=t=out:st={total - 30:.1f}:d=30",
+        "-t", f"{total:.2f}", "-c:a", "aac", "-b:a", "192k", "-ac", "2", str(out)])
+    return out
+
+
 def stamp(sec):
     sec = int(sec)
     if sec < 3600:  # YouTube exige que el primer capítulo sea 0:00
@@ -179,6 +257,8 @@ def main():
     ap.add_argument("--videos", required=True, help="IDs de YouTube separados por coma, en orden")
     ap.add_argument("--title", default="")
     ap.add_argument("--no-upload", action="store_true")
+    ap.add_argument("--calm-minutes", type=float, default=0,
+                    help="minutos finales de solo música e imágenes lentas, sin voz (0 = sin hora final)")
     a = ap.parse_args()
     ids = [v.strip() for v in a.videos.split(",") if v.strip()]
     cfg = load_config()
@@ -213,7 +293,12 @@ def main():
     report["video_copy"] = same
     cuts = [goodbye_cut(s) if i < len(srcs) - 1 else None for i, s in enumerate(srcs)]
     report["goodbye_cuts"] = {v: (round(c[0], 1) if c else None) for v, c in zip(ids, cuts)}
-    parts = [part(s, i, len(srcs), same, c) for i, (s, c) in enumerate(zip(srcs, cuts))]
+    n_parts = len(srcs) + (1 if a.calm_minutes > 0 else 0)   # con hora final, el último episodio también se funde
+    parts = [part(s, i, n_parts, same, c) for i, (s, c) in enumerate(zip(srcs, cuts))]
+    if a.calm_minutes > 0:
+        calm_sig = sigs[0] if same else ("h264", 1920, 1080, "30/1", "yuv420p")
+        parts.append(calm_tail(srcs, a.calm_minutes, calm_sig))
+        report["calm_minutes"] = round(probe(parts[-1])["dur"] / 60, 1)
     lst = WORK / "list.txt"
     lst.write_text("".join(f"file '{p.name}'\n" for p in parts))
     final = WORK / "maraton.mp4"
@@ -221,8 +306,9 @@ def main():
         "-c", "copy", "-movflags", "+faststart", str(final)])
 
     total, t, chapters = 0.0, 0.0, []
-    for vid, p in zip(ids, parts):
-        chapters.append(f"{stamp(t)} {short_name(info[vid]['title'])}")
+    for vid, p in zip(ids + ["__calm__"], parts):
+        name = "Solo música para seguir durmiendo" if vid == "__calm__" else short_name(info[vid]["title"])
+        chapters.append(f"{stamp(t)} {name}")
         t += probe(p)["dur"]
     total = t
     hours = max(1, round(total / 3600))
@@ -233,7 +319,9 @@ def main():
     links = "\n".join(f"{short_name(info[v]['title'])}: https://youtu.be/{v}" for v in ids)
     desc = (f"{hours} horas de calma para quedarte dormido viajando por el espacio: {names_list(names)}, "
             f"uno tras otro, sin cortes bruscos ni cambios de volumen. Pon el video, apaga la luz y deja que el "
-            f"universo te cuente su historia.\n\nCapítulos\n" + "\n".join(chapters) +
+            f"universo te cuente su historia." +
+            (" Al final, una hora de solo música e imágenes lentas, sin voz, para que sigas durmiendo."
+             if a.calm_minutes > 0 else "") + "\n\nCapítulos\n" + "\n".join(chapters) +
             f"\n\nEpisodios por separado:\n{links}\n\n"
             "Imágenes y video: NASA Image and Video Library (dominio público; la NASA no respalda este canal) "
             "y escenas generadas con IA (impresión artística).\nNarración: voz IA. Guion investigado, escrito "
