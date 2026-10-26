@@ -1,15 +1,15 @@
 {
-  "job_id": "branding-20261016170704",
+  "job_id": "branding-20261026135847",
   "saved": 20,
   "push": {
-    "job_id": "branding-20261016170704",
+    "job_id": "branding-20261026135847",
     "kernel": "universalventures/estrato-branding",
-    "pushed_at": 1792170426.8101175,
+    "pushed_at": 1793023129.6749,
     "ok": true,
-    "push_output": "Kernel version 2 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/estrato-branding"
+    "push_output": "Kernel version 3 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/estrato-branding"
   },
   "worker": {
-    "job_id": "branding-20261016170704",
+    "job_id": "branding-20261026135847",
     "errors": [],
     "gpus": [
       "Tesla T4",
@@ -22,36 +22,36 @@
       "model": "sdxl"
     },
     "images": [
-      "cosmos_avatar_p1_s1.jpg",
-      "cosmos_avatar_p1_s2.jpg",
-      "cosmos_avatar_p1_s3.jpg",
-      "cosmos_avatar_p1_s4.jpg",
-      "cosmos_avatar_p2_s1.jpg",
-      "cosmos_avatar_p2_s2.jpg",
-      "cosmos_avatar_p2_s3.jpg",
-      "cosmos_avatar_p2_s4.jpg",
-      "cosmos_avatar_p3_s1.jpg",
-      "cosmos_avatar_p3_s2.jpg",
-      "cosmos_avatar_p3_s3.jpg",
-      "cosmos_avatar_p3_s4.jpg",
-      "cosmos_banner_p1_s1.jpg",
-      "cosmos_banner_p1_s2.jpg",
-      "cosmos_banner_p1_s3.jpg",
-      "cosmos_banner_p1_s4.jpg",
-      "cosmos_banner_p2_s1.jpg",
-      "cosmos_banner_p2_s2.jpg",
-      "cosmos_banner_p2_s3.jpg",
-      "cosmos_banner_p2_s4.jpg"
+      "maraton_b_p1_s1.jpg",
+      "maraton_b_p1_s2.jpg",
+      "maraton_b_p1_s3.jpg",
+      "maraton_b_p1_s4.jpg",
+      "maraton_b_p2_s1.jpg",
+      "maraton_b_p2_s2.jpg",
+      "maraton_b_p2_s3.jpg",
+      "maraton_b_p2_s4.jpg",
+      "maraton_b_p3_s1.jpg",
+      "maraton_b_p3_s2.jpg",
+      "maraton_b_p3_s3.jpg",
+      "maraton_b_p3_s4.jpg",
+      "maraton_c_p1_s1.jpg",
+      "maraton_c_p1_s2.jpg",
+      "maraton_c_p1_s3.jpg",
+      "maraton_c_p1_s4.jpg",
+      "maraton_c_p2_s1.jpg",
+      "maraton_c_p2_s2.jpg",
+      "maraton_c_p2_s3.jpg",
+      "maraton_c_p2_s4.jpg"
     ],
     "videos": [],
-    "minutes": 14.0
+    "minutes": 14.4
   },
   "log": [
-    "[   0.6 min] main: packages ready",
-    "[   0.8 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
-    "[   2.8 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
-    "[   3.3 min] images: 1/20 images (29.8 s each)",
-    "[   8.9 min] images: 11/20 images (34.5 s each)",
-    "[  14.0 min] main: finished: 20 images, 0 clips"
+    "[   0.4 min] main: packages ready",
+    "[   0.9 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
+    "[   2.2 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
+    "[   2.8 min] images: 1/20 images (31.3 s each)",
+    "[   8.9 min] images: 11/20 images (36.9 s each)",
+    "[  14.4 min] main: finished: 20 images, 0 clips"
   ]
 }
