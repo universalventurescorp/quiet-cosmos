@@ -1,7 +1,7 @@
 """Miniaturas B y C del maratón de Nocturno para Test & Compare (A = la actual, mosaico + "3 HORAS").
 
     python branding/maraton_thumbs.py sheet                  # hoja de contacto de los candidatos (para elegir)
-    python branding/maraton_thumbs.py render maraton_b_p1_s2 maraton_c_p2_s1
+    python branding/maraton_thumbs.py render maraton_b_p1_s2 maraton_c_p2_s1:mirror
 
 Mismo estilo de letra que la miniatura A (pipeline/marathon.py): Inter Black grande en crema con sombra,
 segunda línea Inter SemiBold en el lila de Nocturno. El texto va en la mitad izquierda (los prompts dejan
@@ -32,8 +32,10 @@ def cover(im):
     return im.crop((x, y, x + W, y + H))
 
 
-def compose(src, slot):
+def compose(src, slot, mirror=False):
     im = cover(Image.open(src).convert("RGB"))
+    if mirror:  # el motivo quedó a la izquierda, debajo del texto: espejo para pasarlo a la derecha
+        im = im.transpose(Image.FLIP_LEFT_RIGHT)
     im = ImageEnhance.Contrast(im).enhance(1.06)
     # degradado oscuro suave a la izquierda para que el texto se lea en el celular
     shade = Image.new("L", (W, H))
@@ -77,10 +79,11 @@ def sheet():
 
 def render(ids):
     OUT.mkdir(parents=True, exist_ok=True)
-    for iid in ids:
+    for arg in ids:
+        iid, _, opt = arg.partition(":")
         slot = iid.split("_p")[0]
         out = OUT / f"{slot}.jpg"
-        compose(CAND / slot / f"{iid}.jpg", slot).save(out, quality=92)
+        compose(CAND / slot / f"{iid}.jpg", slot, mirror=opt == "mirror").save(out, quality=92)
         print("final", out, out.stat().st_size // 1024, "KB")
 
 
