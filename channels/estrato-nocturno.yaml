@@ -52,6 +52,7 @@ mix:
   score: chapters          # la música cambia de tonalidad y color en cada capítulo
 
 shorts:
+  count: 3                 # 25-oct: 3 Shorts por episodio (9/semana) para ganar suscriptores más rápido
   gpu_voice_tempo: 1.1     # los Shorts van un poco más rápidos que el episodio
 
 kaggle:
