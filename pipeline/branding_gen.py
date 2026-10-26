@@ -76,6 +76,32 @@ SLOTS = {
         "silhouetted in the sky, misty conifer forest, wide cinematic panorama",
     ]),
 }
+
+# Miniaturas para Test & Compare del maratón de Nocturno (B = persona durmiendo, C = luna minimalista).
+# El texto se agrega después con branding/maraton_thumbs.py (mismo estilo de letra que la miniatura A).
+STYLE_SLEEP = ("photorealistic cinematic photograph, very low light, soft indigo and deep blue moonlight, "
+               "calm and cozy, gentle film grain, 35mm film, high detail")
+NEG_SLEEP = ("text, letters, watermark, logo, signature, frame, border, cartoon, anime, illustration, painting, "
+             "lowres, blurry, oversaturated, deformed, extra limbs, extra fingers, bad hands, bright lamp, "
+             "daylight, phone, television, two heads, creepy")
+NEG_MOON = ("text, letters, watermark, logo, signature, frame, border, cartoon, anime, illustration, lowres, "
+            "blurry, oversaturated, people, person, clouds, landscape, buildings, trees, spacecraft, earth")
+SLOTS["maraton_b"] = (WIDE, STYLE_SLEEP, NEG_SLEEP, [
+    "a person peacefully asleep in bed under a thick soft blanket in a dark bedroom at night, seen from behind "
+    "with the head on the pillow, a large window beside the bed showing a deep starry night sky, faint blue "
+    "moonlight on the sheets, the bed in the lower right, dark empty wall in the upper left",
+    "a young woman sleeping peacefully on her side in a dark cozy bedroom, face relaxed and partly hidden by "
+    "the pillow and blanket, big window with stars and a crescent moon outside, soft indigo moonlight, "
+    "the bed in the lower half, dark empty space in the upper left",
+    "a cozy bed next to a big window at night, a person sound asleep curled under a fluffy duvet, through the "
+    "window the Milky Way and countless stars, deep blue darkness, the bed on the right side, calm",
+])
+SLOTS["maraton_c"] = (WIDE, STYLE_SPACE, NEG_MOON, [
+    "a thin glowing crescent Moon alone in a vast pitch black night sky, a few faint tiny stars, the Moon on "
+    "the right third of the frame, huge empty dark space on the left, minimal",
+    "the dark Moon almost entirely in shadow with only a delicate thin bright crescent edge, deep black sky, "
+    "very faint stars, the Moon on the right side, minimal and calm",
+])
 SEEDS_PER_PROMPT = 4
 
 
