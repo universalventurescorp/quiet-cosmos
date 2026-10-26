@@ -260,4 +260,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BaseException as exc:  # noqa: BLE001 — desde la sesión no se leen los logs: dejar el error en diagnostics
+        import traceback
+        err = traceback.format_exc()
+        if isinstance(exc, subprocess.CalledProcessError):
+            err += "\nSTDERR:\n" + (exc.stderr or "")[-3000:]
+        write_json(DATA / "diagnostics" / "last_marathon_crash.json",
+                   {"date": datetime.date.today().isoformat(), "error": err[-6000:]})
+        raise
