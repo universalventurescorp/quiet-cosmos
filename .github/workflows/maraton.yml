@@ -42,7 +42,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-inter >/dev/null
-          pip install -q google-api-python-client google-auth Pillow PyYAML requests yt-dlp
+          pip install -q google-api-python-client google-auth Pillow PyYAML requests yt-dlp faster-whisper
 
       - name: Build marathon
         env:

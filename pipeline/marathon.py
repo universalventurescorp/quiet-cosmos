@@ -65,20 +65,62 @@ def fetch(vid):
     return None, "missing"
 
 
-def part(src, i, n, same_video):
-    """Audio a -16 LUFS + fundidos en las uniones; el video se copia si todas las partes son iguales."""
+GOODBYE = ("buenas noches", "descansa", "dulces sueños", "que duermas", "hasta la próxima",
+           "good night", "goodnight", "sleep well", "rest well")
+_whisper = None
+
+
+def goodbye_cut(src, tail=180.0, gap=0.8):
+    """Busca la despedida ("buenas noches…") en los últimos minutos y devuelve (fin, inicio_fundido) para cortar
+    justo antes del párrafo de despedida. None si no la encuentra (entonces la parte se deja entera)."""
+    global _whisper
+    dur = probe(src)["dur"]
+    off = max(0.0, dur - tail)
+    wav = WORK / "tail.wav"
+    sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{off:.2f}", "-i", str(src), "-vn", "-ac", "1",
+        "-ar", "16000", str(wav)])
+    try:
+        from faster_whisper import WhisperModel
+        _whisper = _whisper or WhisperModel("small", device="cpu", compute_type="int8")
+        segs = list(_whisper.transcribe(str(wav), language=None, vad_filter=True)[0])
+    except Exception as exc:  # noqa: BLE001
+        print("   whisper failed:", exc)
+        return None
+    hits = [k for k, sg in enumerate(segs) if any(w in sg.text.lower() for w in GOODBYE)]
+    if not hits:
+        return None
+    k = j = hits[-1]
+    # retrocede hasta el inicio del párrafo de despedida (una pausa larga), sin pasar de 45 s
+    while j > 0 and segs[j].start - segs[j - 1].end < gap and segs[k].start - segs[j - 1].start < 45:
+        j -= 1
+    if j == 0:
+        return None
+    end = off + segs[j].start - 0.1
+    fade_from = off + segs[j - 1].end + 0.05
+    print(f"   despedida: «{' '.join(sg.text.strip() for sg in segs[j:k + 1])[:160]}» → corte en {end:.1f}s")
+    return end, min(fade_from, end - 0.3)
+
+
+def part(src, i, n, same_video, cut=None):
+    """Audio a -16 LUFS + fundidos en las uniones; el video se copia si todas las partes son iguales.
+    cut = (fin, inicio_fundido): quita la despedida de los episodios que no son el último."""
     dur = probe(src)["dur"]
     out = WORK / f"part_{i:02d}.mp4"
     af = "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000"
     if i > 0:
         af += ",afade=t=in:d=3"
-    if i < n - 1:
+    trim = []
+    if i < n - 1 and cut:
+        dur, fade_from = cut
+        af += f",afade=t=out:st={fade_from:.2f}:d={max(0.3, dur - fade_from):.2f}"
+        trim = ["-t", f"{dur:.2f}"]
+    elif i < n - 1:
         af += f",afade=t=out:st={max(0, dur - 4):.2f}:d=4"
     vc = ["-c:v", "copy"] if same_video else \
         ["-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:-1:-1,fps=30,format=yuv420p",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "22"]
     sh(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-map", "0:v:0", "-map", "0:a:0", *vc,
-        "-af", af, "-c:a", "aac", "-b:a", "192k", "-ac", "2", str(out)])
+        "-af", af, *trim, "-c:a", "aac", "-b:a", "192k", "-ac", "2", str(out)])
     return out
 
 
@@ -169,7 +211,9 @@ def main():
     sigs = [probe(s)["sig"] for s in srcs]
     same = len(set(sigs)) == 1
     report["video_copy"] = same
-    parts = [part(s, i, len(srcs), same) for i, s in enumerate(srcs)]
+    cuts = [goodbye_cut(s) if i < len(srcs) - 1 else None for i, s in enumerate(srcs)]
+    report["goodbye_cuts"] = {v: (round(c[0], 1) if c else None) for v, c in zip(ids, cuts)}
+    parts = [part(s, i, len(srcs), same, c) for i, (s, c) in enumerate(zip(srcs, cuts))]
     lst = WORK / "list.txt"
     lst.write_text("".join(f"file '{p.name}'\n" for p in parts))
     final = WORK / "maraton.mp4"
