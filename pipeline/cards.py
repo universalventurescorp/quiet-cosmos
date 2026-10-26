@@ -166,3 +166,23 @@ def ai_label(W, H, text, start, end):
     ov = dict(_LABELS[key])
     ov.update(start=start, end=end)
     return ov
+
+
+def source_line(W, H, text, start, end, y_frac=0.775):
+    """Small "Source: NASA / Curiosity" pill near the end of a Short: proof without stealing focus.
+    Sits above YouTube's bottom title area and left of the action buttons' column."""
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    s = W / 1080
+    f = font("bold", int(40 * s))
+    tw = f.getlength(text)
+    while tw > W * 0.74 and f.size > 24 * s:
+        f = font("bold", f.size - 2)
+        tw = f.getlength(text)
+    px, py = 30 * s, 16 * s
+    x, y = (W - tw) / 2, H * y_frac
+    asc, desc = f.getmetrics()
+    d.rounded_rectangle((x - px, y - py, x + tw + px, y + asc + desc + py), radius=int(26 * s),
+                        fill=(0, 0, 0, 165))
+    d.text((x, y), text, font=f, fill=(255, 255, 255, 240))
+    return _to_overlay(img, start, end, 0.4, 0.3, shadow=False)

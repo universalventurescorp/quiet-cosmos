@@ -47,6 +47,9 @@ def produce_short(short, idx, cfg, out_dir, used, music, fallback_images, voice=
     shots = _fill(0.0, dur, imgs, clips, spi, 3)
     overlays = [cards.short_hook(W, H, short.get("hook", ""), 0.0, 3.0)] if short.get("hook") else []
     overlays += [cards.caption(W, H, text, a, b) for a, b, text in cues]
+    if short.get("source"):                                # proof line in the last seconds
+        label = "Source" if cfg["channel"].get("language") == "en" else "Fuente"
+        overlays.append(cards.source_line(W, H, f"{label}: {short['source']}", max(0.0, dur - 5.0), dur))
     audio = mix(wav, music, d / "audio.wav", dur, music_volume=0.22, lufs=-14, fade_out=1.0,
                 voice_eq=cfg.get("mix", {}).get("voice_eq", "clean"),
                 voice_pitch_st=cfg.get("mix", {}).get("voice_pitch_st", 0.0),
@@ -55,4 +58,4 @@ def produce_short(short, idx, cfg, out_dir, used, music, fallback_images, voice=
     engine.render(shots, overlays, audio, out, W, H, FPS, dur, crf=21, preset="veryfast",
                   fade_in=0.15, fade_out=0.8, progress_every=0)
     return {"path": str(out), "title": short.get("title", "")[:95], "duration": round(dur, 1),
-            "narration": short["narration"]}
+            "narration": short["narration"], "source": short.get("source", "")}

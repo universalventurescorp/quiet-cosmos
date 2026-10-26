@@ -88,6 +88,27 @@ def apply_fixes(sections, fixes):
     return applied
 
 
+def clean_sources(items, limit=8):
+    """Agency / mission names from the science review: plain short names only (no links, no invented detail)."""
+    out = []
+    for s in items if isinstance(items, list) else []:
+        s = " ".join(str(s).split()).strip(" .;,-")
+        low = s.lower()
+        if not s or len(s) > 50 or "http" in low or "www." in low:
+            continue
+        if low not in (o.lower() for o in out):
+            out.append(s)
+    return out[:limit]
+
+
+def short_source(short, sources):
+    """On-screen proof line for a Short: its own source if plausible, else the episode's main agency."""
+    s = " ".join(str(short.get("source") or "").split()).strip(" .;,")
+    if s and len(s) <= 40 and "http" not in s.lower():
+        return s
+    return sources[0] if sources else "NASA"
+
+
 def write_script(topic, cfg):
     global MODEL
     MODEL = (cfg.get("claude") or {}).get("model", MODEL)
@@ -142,7 +163,10 @@ def write_script(topic, cfg):
     sections.update({f"chapter_{i}": c["text"] for i, c in enumerate(chapters, 1)})
     full = "\n\n".join(f"[{k}]\n{v}" for k, v in sections.items())
     try:
-        fixes = extract_json(ask_claude(fill("review.md", CHANNEL=ch["name"], SCRIPT=full)))
+        reviewed = extract_json(ask_claude(fill("review.md", CHANNEL=ch["name"], SCRIPT=full)))
+        fixes = reviewed.get("fixes", []) if isinstance(reviewed, dict) else reviewed
+        outline["sources"] = clean_sources(reviewed.get("sources") if isinstance(reviewed, dict) else None)
+        print(f"    sources: {', '.join(outline['sources']) or '(none)'}")
         n = apply_fixes(sections, fixes)
         outline["review"] = {"suggested": len(fixes) if isinstance(fixes, list) else 0, "applied": n,
                              "fixes": fixes if isinstance(fixes, list) else []}
@@ -163,11 +187,13 @@ def write_shorts(script, cfg, count=2):
     try:
         shorts = ask_json(
             fill("shorts.md", CHANNEL=ch["name"], LANGUAGE=LANG_NAMES[ch["language"]],
-                 TITLE=script["title"], SCRIPT=text[:60000], COUNT=count),
+                 TITLE=script["title"], SCRIPT=text[:60000], COUNT=count,
+                 SOURCES=", ".join(script.get("sources") or []) or "NASA"),
             lambda d: isinstance(d, list) and d and all(s.get("narration") for s in d))
     except Exception as exc:
         print(f"  shorts skipped: {exc}")
         return []
     for s in shorts:
         s["narration"] = clean(s["narration"])
+        s["source"] = short_source(s, script.get("sources") or [])
     return shorts[:count]

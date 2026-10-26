@@ -26,12 +26,43 @@ CREDITS = {
 }
 
 
-def build_description(script, timing, lang, used_ai=False):
+def used_nasa(media, shots, limit=6):
+    """NASA library items that really appear on screen (clips first), for linkable credits."""
+    on_screen = {s.get("path") for s in shots or []}
+    items = [c for m in media for c in m.get("clips", [])] + [i for m in media for i in m.get("images", [])]
+    out, seen = [], set()
+    for it in items:
+        nid = it.get("nasa_id")
+        if nid and it.get("path") in on_screen and nid not in seen:
+            seen.add(nid)
+            out.append({"nasa_id": nid, "title": " ".join((it.get("title") or nid).split())[:80]})
+    return out[:limit]
+
+
+def sources_block(script, lang, nasa_items=()):
+    """"Fuentes" section: names verified by the science review (never invented links) + the
+    NASA library pages of the footage actually shown."""
+    names = script.get("sources") or []
+    if not names and not nasa_items:
+        return ""
+    en = lang == "en"
+    out = ["Sources" if en else "Fuentes"]
+    if names:
+        out.append(("Science data: " if en else "Datos científicos: ") + " · ".join(names))
+    if nasa_items:
+        out.append("NASA imagery shown in this episode:" if en else "Imágenes de la NASA usadas en este episodio:")
+        out += [f"• {it['title']}: https://images.nasa.gov/details/{it['nasa_id']}" for it in nasa_items]
+    return "\n".join(out)
+
+
+def build_description(script, timing, lang, used_ai=False, nasa_items=()):
     intro = "Intro" if lang == "en" else "Introducción"
     lines = [f"00:00 {intro}"] + [f"{timestamp(c['start'])} {c['title']}" for c in timing["chapters"]]
     label = "Chapters" if lang == "en" else "Capítulos"
     credits = CREDITS[lang] + (f"\n{credits_line(lang)}" if used_ai else "")
-    return f"{script['description']}\n\n{label}\n" + "\n".join(lines) + f"\n\n{credits}"
+    src = sources_block(script, lang, nasa_items)
+    return (f"{script['description']}\n\n{label}\n" + "\n".join(lines)
+            + (f"\n\n{src}" if src else "") + f"\n\n{credits}")
 
 
 def video_bench(cfg, kind="video"):
@@ -453,7 +484,8 @@ def main():
     thumbs = make_thumbnails(all_imgs, texts, out)
     title = f"MUESTRA · {script['title']}"[:100] if sample else script["title"]
     meta = {"title": title, "tags": script.get("tags", []),
-            "description": build_description(script, timing, lang, used_ai), "synthetic": used_ai}
+            "description": build_description(script, timing, lang, used_ai, used_nasa(media, shots)),
+            "synthetic": used_ai}
     write_json(out / "metadata.json", meta)
 
     # 10. Shorts
@@ -495,8 +527,11 @@ def main():
         print(f"   https://youtu.be/{video_id}")
         for s in shorts:
             full = "Full documentary" if lang == "en" else "Documental completo"
+            src_label = "Source" if lang == "en" else "Fuente"
             smeta = {"title": s["title"], "tags": script.get("tags", [])[:8],
-                     "description": f"{s['narration'][:300]}\n\n{full}: https://youtu.be/{video_id}\n\n#Shorts #space"}
+                     "description": f"{s['narration'][:300]}\n\n{full}: https://youtu.be/{video_id}"
+                                    + (f"\n\n{src_label}: {s['source']}" if s.get("source") else "")
+                                    + "\n\n#Shorts #space"}
             try:
                 sid = upload(s["path"], smeta, cfg)
                 short_ids.append(sid)
