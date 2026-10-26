@@ -57,6 +57,9 @@ mix:
 shorts:
   count: 3                 # 25-oct: 3 Shorts por episodio (9/semana) para ganar suscriptores más rápido
   gpu_voice_tempo: 1.1     # los Shorts van un poco más rápidos que el episodio
+  # 26-oct-2026: los Shorts traen casi todas las vistas, pero casi nadie se suscribe. Cierre fijo de seguimiento
+  # (Claude ya no escribe su propia invitación al final). Video relacionado del Short = maratón (lo pone Luis).
+  closing_line: "Sígueme: cada semana, un viaje nuevo para dormir."
 
 kaggle:
   gpu_budget_minutes: 170  # narración (ambas GPU) + escenas IA

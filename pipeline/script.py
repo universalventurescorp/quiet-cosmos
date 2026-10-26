@@ -190,19 +190,33 @@ def write_script(topic, cfg):
     return outline
 
 
+DEFAULT_SHORT_ENDING = ('End with a short line inviting them to the full journey on the channel, phrased naturally '
+                        '(for example: "The full journey to the edge of the universe is waiting on the channel.").')
+
+
+def with_closing(narration, closing):
+    """Fixed follow call at the very end of a Short (Nocturno, 26-oct-2026: Shorts must win subscribers)."""
+    if not closing:
+        return narration
+    return narration.rstrip() + " " + closing.strip()
+
+
 def write_shorts(script, cfg, count=2):
     ch = cfg["channel"]
+    closing = (cfg.get("shorts") or {}).get("closing_line", "")
+    ending = ("End on the payoff itself, with no invitation, no call to action and no mention of the channel: "
+              "a fixed closing line is added after your text automatically." if closing else DEFAULT_SHORT_ENDING)
     text = "\n\n".join(c["text"] for c in script["chapters"])
     try:
         shorts = ask_json(
             fill("shorts.md", CHANNEL=ch["name"], LANGUAGE=LANG_NAMES[ch["language"]],
-                 TITLE=script["title"], SCRIPT=text[:60000], COUNT=count,
+                 TITLE=script["title"], SCRIPT=text[:60000], COUNT=count, ENDING=ending,
                  SOURCES=", ".join(script.get("sources") or []) or "NASA"),
             lambda d: isinstance(d, list) and d and all(s.get("narration") for s in d))
     except Exception as exc:
         print(f"  shorts skipped: {exc}")
         return []
     for s in shorts:
-        s["narration"] = clean(s["narration"])
+        s["narration"] = with_closing(clean(s["narration"]), closing)
         s["source"] = short_source(s, script.get("sources") or [])
     return shorts[:count]
