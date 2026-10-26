@@ -1,26 +1,34 @@
 {
   "date": "2026-10-26",
   "ids": [
-    "AAA",
-    "BBB"
+    "KvZlSFIG0ww",
+    "WcaFu8b45bE",
+    "rSnD81nfInk",
+    "uGdApMHx6vs"
   ],
   "sources": {
-    "AAA": "cache",
-    "BBB": "cache"
+    "KvZlSFIG0ww": "maraton-entrada",
+    "WcaFu8b45bE": "maraton-entrada",
+    "rSnD81nfInk": "maraton-entrada",
+    "uGdApMHx6vs": "maraton-entrada"
   },
   "ok": true,
   "video_copy": true,
   "goodbye_cuts": {
-    "AAA": null,
-    "BBB": null
+    "KvZlSFIG0ww": 2731.2,
+    "WcaFu8b45bE": 2668.4,
+    "rSnD81nfInk": 2885.1,
+    "uGdApMHx6vs": null
   },
-  "calm_minutes": 3.0,
-  "title": "1 horas de documentales del espacio para dormir: AAA y BBB",
-  "minutes": 23.0,
+  "title": "3 horas del Sistema Solar para dormir: Mercurio, Venus, Marte y Saturno | Documental relajante",
+  "minutes": 185.8,
   "chapters": [
-    "0:00 AAA",
-    "10:00 BBB",
-    "20:00 Solo música para seguir durmiendo"
+    "0:00 Mercurio",
+    "45:31 Venus",
+    "1:29:59 Marte, el Planeta Rojo",
+    "2:18:04 Saturno"
   ],
-  "uploaded": false
+  "uploaded": true,
+  "video_id": "qKVP9yXgbN0",
+  "url": "https://youtu.be/qKVP9yXgbN0"
 }
