@@ -84,5 +84,21 @@
     "ai_scenes": 94,
     "ai_status": "ok",
     "date": "2026-10-26"
+  },
+  {
+    "topic": "Plutón y el cinturón de Kuiper: viaje a los mundos helados más allá de Neptuno",
+    "title": "Plutón y el Cinturón de Kuiper | Documental Relajante para Dormir",
+    "video_id": "KAQk0HBTyQk",
+    "voice_test": "A",
+    "shorts": [
+      "IBiAcAsYXo4",
+      "kJ4VTwQ9kcg",
+      "ujVFH2fi4zM"
+    ],
+    "minutes": 46.2,
+    "qa_ok": true,
+    "ai_scenes": 97,
+    "ai_status": "ok",
+    "date": "2026-10-27"
   }
 ]

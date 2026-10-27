@@ -1,491 +1,534 @@
 {
-  "title": "Neptuno y Urano: Gigantes Helados | Documental Relajante para Dormir",
-  "description": "Neptuno y Urano, los gigantes helados en los confines del sistema solar, son dos mundos que casi nadie recorre con calma. Este documental relajante para dormir te lleva desde el borde del sistema solar conocido hasta el interior oculto de estos planetas, con imágenes reales de la NASA y una narración pausada.\n\nVisitarás sus atmósferas azules, sus anillos tenues, sus lunas extrañas y los misterios que aún siguen abiertos, como el origen del eje inclinado de Urano. Es un viaje tranquilo para aprender algo real mientras te dejas llevar hacia el sueño.",
+  "title": "Plutón y el Cinturón de Kuiper | Documental Relajante para Dormir",
+  "description": "Plutón y el cinturón de Kuiper son el destino de este documental relajante en español: un viaje lento y sereno a los mundos helados más allá de Neptuno, desde el descubrimiento de Plutón hasta las imágenes de la sonda New Horizons. Recorreremos llanuras de hielo de nitrógeno, montañas de hielo de agua, una luna gigante y un objeto con forma de muñeco de nieve.\n\nEs un relato pensado para escuchar con calma, aprender ciencia real y dejarse llevar hasta el sueño. Cada capítulo abre una pregunta sencilla y la responde con lo que sabemos hoy, señalando con honestidad lo que todavía es un misterio.",
   "tags": [
-    "Neptuno y Urano",
-    "gigantes helados",
-    "documental del espacio para dormir",
+    "Plutón documental",
+    "cinturón de Kuiper",
+    "documental espacio para dormir",
     "documental relajante espacio",
-    "Neptuno documental",
-    "Urano documental",
-    "planeta Neptuno",
-    "planeta Urano",
-    "Voyager 2 Neptuno Urano",
-    "Tritón luna de Neptuno",
-    "anillos de Urano",
+    "New Horizons Plutón",
+    "Plutón explicado",
+    "planeta enano Plutón",
+    "Caronte luna de Plutón",
+    "Arrokoth",
+    "objetos transneptunianos",
+    "sistema solar documental",
     "viaje por el sistema solar",
-    "documental espacio en español",
-    "espacio para dormir",
-    "sistema solar exterior",
-    "diamantes lloviendo en Neptuno"
+    "Plutón Sputnik Planitia",
+    "Eris planeta enano",
+    "espacio relajante para dormir",
+    "documental astronomía en español",
+    "por qué Plutón no es un planeta",
+    "Clyde Tombaugh Plutón"
   ],
   "thumbnail_texts": [
-    "DONDE TERMINA LA LUZ",
-    "EL PLANETA TUMBADO",
-    "VIENTOS SIN FIN"
+    "MÁS ALLÁ DEL HIELO",
+    "EL CORAZÓN DE PLUTÓN",
+    "LA NOCHE DE NEPTUNO"
   ],
-  "hook_promise": "En las profundidades de dos mundos helados, a miles de kilómetros bajo nubes azules, la presión y el calor podrían estar convirtiendo el carbono en diamante y haciéndolo caer en una lluvia lenta e interminable.",
+  "hook_promise": "En Plutón, a más de cinco mil millones de kilómetros del Sol, existe una llanura de hielo en forma de corazón que se renueva sola, con hielo que fluye lentamente como en un glaciar, en un mundo que se creía congelado y muerto.",
   "chapters": [
     {
-      "title": "El borde del mapa conocido",
-      "question": "¿Por qué dos planetas enormes pasaron milenios sin que nadie los viera?",
-      "reveal": "Neptuno es tan lejano que desde 1846, año de su descubrimiento, apenas ha completado una vuelta alrededor del Sol.",
+      "title": "Más allá de la órbita de Neptuno",
+      "question": "¿Qué hay en la oscuridad que empieza donde terminan los planetas?",
+      "reveal": "El borde del sistema solar no está vacío: Neptuno marca solo el comienzo de una región inmensa poblada por cuerpos helados.",
       "beats": [
-        "Partimos del Sol y cruzamos el sistema solar interior, luego los gigantes gaseosos Júpiter y Saturno.",
-        "Más allá de Saturno, la luz del Sol se debilita enormemente y el espacio se vuelve frío y silencioso.",
-        "Urano fue descubierto en 1781 por William Herschel, que al principio pensó que era un cometa.",
-        "Las irregularidades en la órbita de Urano llevaron a calcular dónde debía estar un planeta aún más lejano.",
-        "Neptuno fue encontrado en 1846 casi donde las matemáticas predecían, un triunfo del cálculo sobre la observación.",
-        "Su año dura unos 165 años terrestres, así que desde su descubrimiento ha dado apenas una vuelta completa."
+        "Salimos de la región de los planetas gigantes y dejamos atrás a Júpiter, Saturno y Urano",
+        "Neptuno, el último planeta, a unos 4.500 millones de kilómetros del Sol, donde la luz solar es muy tenue",
+        "Cómo se ve el Sol desde allí: una estrella muy brillante, pero apenas un punto",
+        "Las perturbaciones en la órbita de Urano que llevaron a buscar otros mundos más lejanos",
+        "La idea de que al otro lado de Neptuno quedaban restos helados de la formación del sistema solar",
+        "Planteamos la pregunta que nos acompañará: ¿qué tipo de mundos viven en este frío?"
       ],
       "ambience": "deep_space",
       "image_queries": [
         "Neptune Voyager 2",
+        "Neptune Great Dark Spot",
+        "Neptune Webb",
+        "Triton Voyager 2",
         "Uranus Voyager 2",
         "solar system planets montage",
-        "Neptune Hubble",
-        "Uranus Hubble",
-        "Uranus Webb",
-        "Neptune Webb",
-        "Sun from Neptune distance",
-        "outer solar system",
-        "Neptune Great Dark Spot"
-      ],
-      "video_queries": [
-        "solar system flythrough visualization",
-        "Neptune rotation animation",
-        "Uranus rotation animation"
-      ],
-      "text": "Si esta noche sales a un lugar oscuro y levantas la vista, verás miles de estrellas a simple vista. Verás también cinco planetas, brillando con paciencia entre ellas. Los antiguos los conocían todos, los seguían noche tras noche y les ponían nombre.\n\nPero hay dos planetas enormes que nadie vio durante miles de años. Cada uno es unas cuatro veces más ancho que la Tierra. ¿Cómo pudieron esconderse tanto tiempo, estando ahí?\n\nPara entenderlo, hagamos el camino desde casa. Partimos del Sol, esa luz tibia que conoces desde siempre. Pasamos junto a Mercurio, que apenas tiene aire, y junto a Venus, envuelto en nubes. Cruzamos la Tierra, nuestro punto de partida, y seguimos hacia Marte, rojizo y seco.\n\nDespués viene un espacio largo, lleno de rocas dispersas. Y entonces aparece Júpiter, enorme, con sus bandas de nubes que giran despacio. Más allá está Saturno, con sus anillos claros y delgados. Hasta aquí, todo se puede ver desde un patio con los ojos abiertos.\n\nAhora sigue avanzando. Pasado Saturno, el Sol empieza a cambiar. Sigue siendo la estrella más brillante del cielo, pero se vuelve pequeño, como una lámpara vista desde el otro lado de un valle. La luz que llega es cada vez más débil. El frío ya no es el de una noche de invierno. Es un frío de casi doscientos grados bajo cero, y no hay viento ni sonido que lo rompa.\n\nAquí el espacio es muy grande. Un planeta de tamaño mediano, a esta distancia, es apenas un punto tenue. Se parece a una estrella más, y se mueve tan despacio que nadie nota la diferencia.\n\nEso fue lo que le pasó a un hombre llamado William Herschel. Era músico de profesión y astrónomo por afición, y construía sus propios telescopios. Una noche de marzo de diecisiete ochenta y uno, miraba un campo de estrellas desde el jardín de su casa, en Inglaterra. Una de ellas, al aumentarla, mostraba un pequeño disco.\n\nLas estrellas no tienen disco. Son puntos, incluso en los mejores telescopios.\n\nHerschel pensó que había encontrado un cometa. Era lo más razonable. Un cometa nuevo ya era un hallazgo, y lo anotó con ese nombre. Pero en las noches siguientes, el objeto no se comportó como tal. No tenía cola, y seguía una órbita casi circular, mucho más allá de Saturno. Era un planeta. Era Urano, y doblaba de golpe el ancho conocido del sistema solar.\n\nPodría parecer que la historia termina aquí. Pero Urano tenía algo extraño. Los astrónomos calcularon su órbita con cuidado, y las cuentas no cerraban. El planeta iba un poco adelantado a veces, y otras veces un poco atrasado. Eran diferencias mínimas, pero constantes.\n\nAlgo lo estaba tirando. Algo que nadie había visto.\n\nDos jóvenes matemáticos, uno en Inglaterra y otro en Francia, hicieron el mismo razonamiento por separado. Si una masa invisible jalaba a Urano, se podía calcular dónde estaba. No hacía falta un telescopio, bastaban lápiz, papel y muchísima paciencia. Pasaron meses sumando y corrigiendo, en habitaciones silenciosas, buscando un punto en el cielo que solo existía en sus números.\n\nEl francés, Urbain Le Verrier, envió su resultado a un observatorio en Berlín. La noche del veintitrés de septiembre de dieciocho cuarenta y seis, el astrónomo Johann Galle apuntó su telescopio hacia el lugar indicado. En menos de una hora encontró una estrella que no figuraba en los mapas. Estaba a menos de un grado de la posición calculada.\n\nEse grado es más o menos el ancho de tu dedo meñique con el brazo estirado.\n\nAsí se descubrió Neptuno. Fue la primera vez que un planeta se halló primero en una hoja de papel y después en el cielo. Las matemáticas habían visto lo que los ojos no alcanzaban a ver. Y eso dice algo sobre nosotros: a veces podemos conocer un mundo antes de verlo, solo por cómo hace temblar a otro.\n\nQueda una pregunta que quizá ya te hiciste. Si Neptuno se descubrió hace tanto, ¿qué ha pasado desde entonces? Su distancia al Sol es unas treinta veces la de la Tierra. Un camino tan largo no se recorre rápido. Neptuno tarda unos ciento sesenta y cinco años terrestres en dar una vuelta completa.\n\nCuando Neptuno fue descubierto, en tu familia quizá nadie imaginaba tu vida. En dos mil once regresó por fin al mismo punto del cielo donde lo encontraron.\n\nDesde ese día de dieciocho cuarenta y seis, ha completado apenas una vuelta alrededor del Sol. Para ese mundo lento y azul, todo lo que hemos vivido desde entonces ha sido un solo año.\n\nY sin embargo, ahí está. Tan lejos que su luz tarda más de cuatro horas en llegar a nosotros, y tan firme que lo seguimos buscando. Falta saber de qué está hecho, y por qué no se parece a Júpiter ni a Saturno, aunque se haya escondido, como ellos, tan lejos de casa."
-    },
-    {
-      "title": "Qué significa ser un gigante helado",
-      "question": "¿Por qué estos planetas no son simplemente versiones pequeñas de Júpiter?",
-      "reveal": "Su interior está dominado por agua, amoníaco y metano a presiones enormes, y no por hidrógeno como en Júpiter y Saturno.",
-      "beats": [
-        "Comparamos los tamaños: Urano y Neptuno miden unas cuatro veces el diámetro de la Tierra.",
-        "Júpiter y Saturno son sobre todo hidrógeno y helio; estos dos tienen una composición distinta.",
-        "Llamarlos helados no significa que tengan hielo como el de un congelador: son fluidos densos y calientes bajo presión.",
-        "Los astrónomos los clasifican como una categoría propia, distinta de los gigantes gaseosos.",
-        "Muchos planetas descubiertos en otras estrellas tienen un tamaño parecido, así que podrían ser el tipo de planeta más común de la galaxia.",
-        "Nuestros dos vecinos son los únicos ejemplos cercanos que podemos estudiar de cerca."
-      ],
-      "ambience": "deep_space",
-      "image_queries": [
-        "Neptune and Earth size comparison",
-        "Uranus and Earth size comparison",
-        "Uranus true color",
-        "Neptune true color",
-        "gigantes planets comparison Voyager",
-        "exoplanet Neptune-like artist concept",
-        "Neptune atmosphere clouds",
-        "Uranus atmosphere Hubble",
-        "Uranus Neptune Webb comparison",
-        "Neptune Hubble 2021"
-      ],
-      "video_queries": [
-        "exoplanet artist concept animation",
-        "planet size comparison visualization",
-        "Neptune interior animation"
-      ],
-      "text": "Hay una fotografía de Urano y Neptuno lado a lado, tomada por una sola nave, que parece casi una broma. Dos esferas azules, una pálida y otra intensa, flotando sobre un fondo negro. Podrían pasar por dos pequeñas versiones de Júpiter, con otro color y menos tamaño.\n\nPero no lo son. Y la pregunta es por qué.\n\nEmpecemos por el tamaño, porque engaña. Júpiter es tan grande que mil Tierras cabrían dentro de él. Urano y Neptuno son mucho más modestos. Cada uno mide unas cuatro veces el diámetro de la Tierra. Para cruzar uno de ellos de lado a lado, tendrías que alinear cuatro Tierras, una tras otra.\n\nCuatro veces la Tierra es mucho. Pero junto a Júpiter y Saturno, estos dos parecen niños de la mano de dos adultos.\n\nAhora viene la primera pista. Júpiter y Saturno están hechos, sobre todo, de hidrógeno y helio. Son los dos gases más ligeros que existen, los mismos que forman el Sol. Un planeta así es como una estrella a la que no le alcanzó la masa para encenderse. Urano y Neptuno tienen otra composición. Contienen hidrógeno y helio, sí, pero en una proporción mucho menor. Algo más pesado ocupa el lugar principal.\n\n¿Qué es ese algo? El nombre que les dimos nos da una respuesta, aunque una respuesta algo torcida. Los llamamos gigantes helados.\n\nPero no pienses en un cubo de hielo. No pienses en la escarcha de un congelador, ni en un lago en invierno. Ese nombre viene de una época en que los astrónomos llamaban hielos a ciertas sustancias, como el agua, el amoníaco y el metano. A temperaturas bajas, esas sustancias se congelan con facilidad. Dentro de estos planetas, esas sustancias no están congeladas. La presión es enorme, y el calor también. Lo que hay allí es un fluido denso y caliente, mucho más extraño que cualquier hielo.\n\nUn nombre antiguo, entonces, para algo que ya no se parece a lo que nombra.\n\nY esa diferencia importa tanto que los astrónomos dejaron de meter a todos en el mismo grupo. Durante mucho tiempo se hablaba de gigantes gaseosos y nada más. Hoy se reconocen dos categorías: los gigantes gaseosos, que son Júpiter y Saturno, y los gigantes helados, que son Urano y Neptuno. No son versiones pequeñas de lo mismo. Son otra clase de mundo.\n\nAhí está la respuesta a la pregunta que abrimos. Su interior está dominado por agua, amoníaco y metano a presiones enormes, y no por hidrógeno como en Júpiter y Saturno.\n\nEso explica por qué no basta con reducir a Júpiter para obtener a Neptuno. Aunque tuvieran la misma historia, no se formaron con los mismos ingredientes en las mismas proporciones.\n\nY aquí ocurre algo curioso. Desde hace unas décadas encontramos planetas alrededor de otras estrellas, miles de ellos. Muchos tienen un tamaño parecido al de Urano y Neptuno, entre el de la Tierra y el de Saturno. No sabemos todavía cuántos son realmente de la misma clase. Pero la pista es sugerente: quizá este sea el tipo de planeta más común de la galaxia. Nuestro sistema solar, con su Júpiter enorme, sería entonces el de aspecto algo especial.\n\nMira lo que eso significa. Lo que durante siglos nos pareció un par de mundos marginales, perdidos en el borde, podría ser lo más corriente que existe.\n\nY de esos mundos corrientes, solo tenemos dos al alcance. Nuestros dos vecinos son los únicos ejemplos cercanos que podemos estudiar de cerca. Todos los demás son puntos de luz diminutos, medidos desde distancias que no podemos recorrer. Si queremos entender qué es un planeta como estos, tenemos que mirar hacia ellos.\n\nY hasta ahora, solo una nave pasó lo bastante cerca para mirar de verdad."
-    },
-    {
-      "title": "Voyager 2: el único visitante",
-      "question": "¿Cómo es posible que solo una nave haya visitado estos dos mundos?",
-      "reveal": "Todo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en 1986 y 1989.",
-      "beats": [
-        "Una alineación poco frecuente de los planetas exteriores permitió una ruta a través de los cuatro gigantes.",
-        "Voyager 2 fue lanzada en 1977 y usó la gravedad de cada planeta para impulsarse hacia el siguiente.",
-        "Pasó por Urano en enero de 1986 y descubrió lunas nuevas y un campo magnético inclinado.",
-        "Llegó a Neptuno en agosto de 1989 y envió imágenes de nubes, anillos y de la luna Tritón.",
-        "Las señales tardaban horas en llegar a la Tierra con una potencia muy débil.",
-        "Desde entonces ninguna nave ha vuelto, y las imágenes de aquel paso siguen siendo la base de nuestro conocimiento."
-      ],
-      "ambience": "none",
-      "image_queries": [
-        "Voyager 2 spacecraft",
-        "Voyager 2 Uranus flyby",
-        "Voyager 2 Neptune flyby",
-        "Voyager 2 Neptune clouds",
-        "Voyager 2 Uranus Miranda",
-        "Voyager 2 Triton",
-        "Voyager 2 Neptune rings",
-        "Voyager 2 Uranus rings",
-        "Voyager 2 Neptune crescent",
-        "Voyager 2 Uranus crescent"
-      ],
-      "video_queries": [
-        "Voyager 2 trajectory animation",
-        "Voyager mission animation",
-        "Voyager 2 Neptune flyby animation"
-      ],
-      "text": "En una sala de California, en enero de mil novecientos ochenta y seis, un grupo de ingenieros esperaba en silencio frente a una pantalla casi vacía. No había imágenes nítidas todavía. Solo un hilo de datos, tan débil que parecía un susurro dentro de una tormenta de ruido.\n\nAquel hilo venía de una nave del tamaño de un automóvil pequeño. Estaba a unos tres mil millones de kilómetros de casa. Y aun así, seguía respondiendo.\n\nPero la pregunta es otra. ¿Cómo es posible que solo una nave haya visitado estos dos mundos?\n\nLa respuesta empieza con una coincidencia de calendario. A finales de los años setenta, los cuatro planetas exteriores quedaron colocados de una manera poco frecuente. Júpiter, Saturno, Urano y Neptuno se ordenaban a lo largo de una curva suave, como cuentas sobre un mismo arco. Algo así ocurre una sola vez cada ciento setenta y cinco años, más o menos.\n\nUna nave que saliera en el momento justo podría recorrer ese arco entero. Una que saliera unos años después tendría que esperar casi dos siglos.\n\nVoyager 2 despegó en agosto de mil novecientos setenta y siete. No llevaba combustible para cruzar semejantes distancias por su cuenta. Lo que hizo fue más ingenioso. En cada planeta, se acercaba y dejaba que su gravedad la atrajera y la lanzara hacia delante. Es un poco como un niño que se agarra de un carrusel en movimiento y se suelta en el instante preciso. La nave ganaba velocidad, y el planeta, por su parte, apenas lo notaba.\n\nAsí pasó junto a Júpiter, luego junto a Saturno, y cada vez salió apuntando hacia el siguiente. Tardó casi nueve años en llegar a Urano.\n\nY allí, en enero de mil novecientos ochenta y seis, ocurrió todo muy rápido.\n\nFue un sobrevuelo, no una visita larga. La nave pasó a una velocidad enorme, y las horas más intensas duraron poco más que una tarde. En ese tiempo encontró diez lunas que nadie conocía. Midió también un campo magnético que no coincidía con el eje del planeta, sino que apuntaba inclinado, como una brújula que alguien hubiera girado de lado. Era una rareza que nadie había previsto.\n\nDespués, Urano quedó atrás. Y Voyager 2 siguió hacia el último planeta del camino.\n\nCada señal que enviaba tardaba horas en llegar a la Tierra. Cuando la nave se acercó a Neptuno, esas horas eran casi cuatro. Si tú le hubieras hecho una pregunta, la respuesta habría llegado al día siguiente.\n\nY la señal llegaba muy débil. Su transmisor emitía con una potencia parecida a la de la luz de un refrigerador. Para cuando esa energía cruzaba el espacio, se había diluido hasta ser una fracción casi imposible de medir. Las antenas gigantes de la Tierra tuvieron que unirse en una sola red para poder escucharla.\n\nAun así, la escucharon.\n\nEn agosto de mil novecientos ochenta y nueve, Voyager 2 pasó a menos de cinco mil kilómetros sobre las nubes de Neptuno. Envió imágenes de bandas azules con vetas blancas, de anillos finos que giraban en la penumbra, y de una luna pálida llamada Tritón, con la superficie marcada de manera extraña. Los ingenieros las vieron aparecer línea a línea, como quien revela una fotografía muy despacio.\n\nCuando terminó el encuentro, la nave ya había cumplido con todo lo que se esperaba de ella. Siguió su camino hacia afuera, hacia el espacio entre las estrellas, y sus cámaras se apagaron poco después.\n\nDesde entonces, han pasado décadas. Ninguna otra nave ha vuelto a Urano ni a Neptuno. Ninguna ha entrado en órbita, ni ha mirado un solo anillo con calma.\n\nEsa es la respuesta a la pregunta, y es sencilla. Aquella alineación no se repetirá en nuestras vidas, y llegar hasta allí exige años de viaje y mucho dinero.\n\nTodo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en mil novecientos ochenta y seis y mil novecientos ochenta y nueve.\n\nPiénsalo un momento. Las fotografías que hoy aparecen en los libros, en las pantallas y en los documentales son las mismas que se tomaron hace casi cuarenta años. Cada dato nuevo que los astrónomos descubren sobre estos planetas nace, en gran parte, de revisar con más cuidado aquellos pocos días.\n\nEs una forma de paciencia que no solemos practicar. Una sola mirada, hecha a tiempo, sigue enseñándonos hoy.\n\nY quizá por eso, al volver a esas imágenes, surge una duda pequeña. Si esos colores azules son lo único que tenemos, ¿cuánto de lo que creemos ver es realmente lo que había allí?"
-    },
-    {
-      "title": "Urano, el planeta tumbado",
-      "question": "¿Qué pudo golpear a un planeta para dejarlo girando de lado?",
-      "reveal": "Urano tiene el eje inclinado casi 98 grados, de modo que rueda sobre su órbita y cada polo recibe unos 42 años seguidos de luz y otros 42 de noche.",
-      "beats": [
-        "Urano gira prácticamente tumbado sobre su órbita, a diferencia de casi todos los demás planetas.",
-        "En un solsticio, un polo apunta casi directo hacia el Sol mientras el otro permanece en oscuridad.",
-        "Cada estación dura unos 21 años terrestres, y el año completo unos 84.",
-        "Una hipótesis ampliamente considerada es un gran impacto en la juventud del sistema solar, pero sigue siendo una cuestión abierta.",
-        "Su campo magnético está inclinado y desplazado respecto al eje de giro, algo que Voyager 2 descubrió.",
-        "Imaginamos cómo se vería el cielo desde un polo: un Sol que no se pone durante décadas."
-      ],
-      "ambience": "deep_space",
-      "image_queries": [
-        "Uranus tilt axis",
-        "Uranus Webb rings",
-        "Uranus Hubble polar cap",
-        "Uranus Voyager 2 pole",
-        "Uranus Hubble seasons",
-        "Uranus Keck",
-        "Uranus rings Webb",
-        "Uranus moons Webb",
-        "Uranus Hubble 2014",
-        "Uranus northern hemisphere"
-      ],
-      "video_queries": [
-        "Uranus rotation animation",
-        "Uranus axial tilt visualization",
-        "Uranus rings animation"
-      ],
-      "text": "Los astrónomos se hacen desde hace décadas una pregunta sobre un detalle que casi nadie nota. Si pudieras mirar el sistema solar desde arriba, verías los planetas girando como trompos, todos más o menos derechos. Todos, menos uno.\n\nUrano gira tumbado. Su eje de rotación está casi en el mismo plano que su órbita, como si alguien hubiera empujado el trompo hasta dejarlo rodando sobre el suelo. La Tierra está inclinada unos veintitrés grados, y eso basta para darnos las estaciones. Júpiter apenas se inclina. Urano, en cambio, se acuesta de lado.\n\n¿Qué pudo golpear a un planeta para dejarlo girando así?\n\nPiensa primero en lo que significa. En un solsticio, uno de sus polos apunta casi directo hacia el Sol. Es como si el planeta mostrara la cara a una lámpara lejana, y esa lámpara se quedara quieta sobre su cabeza. El otro polo queda del lado contrario, hundido en una oscuridad total, a casi tres mil millones de kilómetros de cualquier calor.\n\nY ahí no termina. Las estaciones de Urano no pasan en unos meses, como las nuestras. Cada una dura unos veintiún años terrestres. Un niño que naciera al comienzo de un verano uraniano sería ya un adulto cuando llegara el otoño. El año completo dura unos ochenta y cuatro años, más o menos lo que dura una vida larga.\n\nEntonces, ¿cómo llegó el planeta a esta postura?\n\nLa explicación que más se ha considerado es un choque. Cuando el sistema solar era joven, hace más de cuatro mil millones de años, había muchos cuerpos grandes cruzando el espacio sin rumbo fijo. Uno de ellos, quizá del tamaño de la Tierra, pudo haber golpeado a Urano. Un golpe así lo habría empujado de lado, y el planeta habría conservado esa inclinación hasta hoy.\n\nEs una idea sólida, pero no es una certeza. Algunos modelos sugieren que pudieron ser varios impactos más pequeños. Otros proponen que una luna enorme, hoy desaparecida, tiró del planeta poco a poco. Nadie estuvo allí para verlo, y ninguna de las versiones ha ganado del todo.\n\nHay otra pista, y llegó en enero de mil novecientos ochenta y seis. Cuando la sonda Voyager dos pasó junto a Urano, midió su campo magnético. En la Tierra, ese campo se parece al de un imán de barra, alineado con el eje de giro. En Urano no. El campo está inclinado casi sesenta grados respecto al eje. Además, no sale del centro del planeta, sino que está desplazado, como si el imán estuviera clavado a un costado.\n\nNadie lo esperaba. Los instrumentos de la nave mostraron un planeta que giraba de lado y, encima, tenía un magnetismo torcido. Era como encontrar una brújula que apunta en una dirección que nadie le ha enseñado.\n\nAhora ponte allí, sobre uno de sus polos, mirando hacia arriba. El Sol es una estrella pequeña y muy brillante, mucho más pequeña de lo que la conocemos. No sube ni baja como en nuestros días. Traza un círculo lento alrededor del cielo, siempre a la misma altura, sin llegar nunca al horizonte.\n\nPasan los días y no cae la noche. Pasan los años y la luz sigue ahí. Dura así hasta que, muy despacio, el círculo se va hundiendo.\n\nEsa es la respuesta que Urano nos da, aunque la causa siga abierta. Su eje está inclinado casi noventa y ocho grados, de modo que el planeta rueda sobre su órbita como una pelota. Por eso cada polo recibe unos cuarenta y dos años seguidos de luz, y luego otros cuarenta y dos de noche.\n\nEs un día que dura más que la infancia y la juventud juntas. Aquí, en cambio, una noche nos basta para dormir y volver a ver la luz.\n\nY sin embargo, a esa misma distancia, hay otro mundo azul que no gira de lado. Recibe todavía menos luz, y aun así su cielo no está quieto. Allí, algo se mueve a una velocidad que ningún otro planeta conoce."
-    },
-    {
-      "title": "Neptuno: el mundo de los vientos",
-      "question": "¿Cómo puede haber tormentas violentas en un planeta tan alejado del Sol?",
-      "reveal": "Neptuno tiene los vientos más rápidos conocidos del sistema solar, de más de 2000 kilómetros por hora, pese a recibir una luz solar muy escasa.",
-      "beats": [
-        "Neptuno recibe una fracción mínima de la luz que llega a la Tierra, y aun así su atmósfera está activa.",
-        "Voyager 2 fotografió la Gran Mancha Oscura, una tormenta del tamaño de la Tierra.",
-        "Cuando el telescopio Hubble miró de nuevo en los años 90, esa mancha había desaparecido y aparecieron otras nuevas.",
-        "Las nubes blancas de metano se ven altas sobre un azul profundo.",
-        "Los vientos soplan en sentido contrario a la rotación del planeta cerca del ecuador.",
-        "Por qué un planeta con tan poca energía solar mantiene estas tormentas sigue siendo un tema de investigación, y su calor interno parece tener un papel."
-      ],
-      "ambience": "storm",
-      "image_queries": [
-        "Neptune Great Dark Spot",
-        "Neptune Dark Spot Hubble",
-        "Neptune clouds Voyager 2",
-        "Neptune Scooter cloud",
-        "Neptune storm Hubble",
-        "Neptune Webb",
-        "Neptune Hubble clouds",
-        "Neptune dark vortex",
-        "Neptune bright clouds",
-        "Neptune full disk Voyager"
-      ],
-      "video_queries": [
-        "Neptune rotation animation",
-        "Neptune storm visualization",
-        "Neptune clouds time-lapse Hubble"
-      ],
-      "text": "En la sala de control de una nave que nunca volverá, alguien miró una pantalla casi negra, y en ella apareció una mancha azul oscuro. Era agosto de mil novecientos ochenta y nueve. Esa mancha era una tormenta, y estaba en el planeta más lejano del Sol.\n\nPiensa en lo que eso significa. Neptuno recibe una fracción mínima de la luz que llega a la Tierra, unas novecientas veces menos. Si estuvieras allí, el Sol sería un punto brillante, mucho más intenso que cualquier estrella, y aun así el día entero parecería un crepúsculo que nunca termina.\n\n¿Cómo puede haber tormentas violentas en un lugar así?\n\nEso se preguntaron quienes vieron las primeras imágenes de Voyager 2. Esperaban una bola azul, quieta y tranquila. Lo que encontraron fue una atmósfera activa, con bandas, nubes y un óvalo oscuro del tamaño de la Tierra entera. Lo llamaron la Gran Mancha Oscura.\n\nTenía una forma parecida a la de la Gran Mancha Roja de Júpiter, aunque más pequeña. Era un enorme remolino de gas que giraba despacio sobre el azul profundo. Y sobre sus bordes, algo más brillante.\n\nEran nubes blancas, finas como hilos de humo. Estaban hechas de cristales de metano, y flotaban mucho más arriba que el resto de las nubes. Recibían la luz del Sol antes que nada y la devolvían al espacio, como espuma sobre un mar oscuro.\n\nDurante años, esa mancha fue la imagen de Neptuno. Parecía una parte permanente del planeta, como un continente. Entonces, en mil novecientos noventa y cuatro, el telescopio espacial Hubble volvió a mirar.\n\nLa mancha ya no estaba.\n\nLos astrónomos revisaron las imágenes con cuidado. No había error. La tormenta se había disipado, y poco después aparecieron otras nuevas en el hemisferio norte. Algunas duraban unos años, otras apenas unos meses.\n\nEs raro pensar en eso. Aquí, en la Tierra, una tormenta se forma y se va en unos días. En Neptuno, un sistema del tamaño de nuestro mundo puede nacer y desaparecer en el tiempo que dura una infancia. Y nadie lo estaba viendo, hasta que alguien volvió a mirar.\n\nPero lo más extraño no eran las manchas. Eran los vientos que las empujaban.\n\nLos científicos midieron cómo se movían las nubes, una a una, de una imagen a otra. Cerca del ecuador, los vientos soplaban en sentido contrario a la rotación del planeta. Es como si corrieras contra una cinta que gira a toda velocidad, y aun así avanzaras.\n\nY la velocidad era enorme.\n\nNeptuno tiene los vientos más rápidos que conocemos en el sistema solar, de más de dos mil kilómetros por hora. Es más rápido que el sonido en el aire de la Tierra. En un solo minuto, una nube recorrería la distancia entre dos barrios de una ciudad grande, y en una hora, cruzaría un país entero.\n\nY todo eso ocurre con una luz solar muy escasa.\n\n¿Quién empuja entonces esas nubes? La respuesta completa todavía no existe. En la Tierra, el Sol calienta el aire y el aire se mueve. Allí, ese motor casi no funciona. Los investigadores creen que el calor interno del planeta tiene un papel importante: Neptuno irradia más energía de la que recibe del Sol, como una brasa que no se ha apagado del todo.\n\nPero también hay otras ideas. Algunos modelos sugieren que, con tan poca fricción, un viento puede seguir acelerando sin que nada lo frene. Un planeta sin montañas ni océanos deja correr el aire sin obstáculos. Todavía se estudia cuál de estas explicaciones pesa más.\n\nQuizá lo que enseña Neptuno es sencillo. Una atmósfera no necesita mucha luz para moverse, solo necesita energía, venga de donde venga. Y un mundo que parece apagado puede guardar adentro más calor del que imaginamos.\n\nMientras Voyager 2 se alejaba de Neptuno, giró su cámara una última vez. Fotografió algo pequeño, una media luna delgada, pálida, que parecía distinta de todo lo demás. No era una nube ni una tormenta. Era una luna, y tenía una historia mucho más extraña."
-    },
-    {
-      "title": "Por qué uno es azul pálido y el otro azul intenso",
-      "question": "¿Por qué Neptuno y Urano son azules, pero no del mismo azul?",
-      "reveal": "El metano absorbe la luz roja y da a ambos su tono azul, pero Neptuno parece más intenso por razones que todavía se estudian, y las imágenes de Voyager 2 se habían saturado en color.",
-      "beats": [
-        "La luz del Sol llega a las nubes de ambos planetas y atraviesa el gas de metano.",
-        "El metano absorbe el rojo y deja que domine el azul.",
-        "Urano se ve de un azul verdoso pálido, y Neptuno de un azul más vivo.",
-        "Una capa de neblina en Urano, más gruesa, podría suavizar su color.",
-        "Un estudio reciente reajustó las imágenes de Voyager 2 y mostró que los colores reales de ambos son más parecidos de lo que se creía.",
-        "Cada vez que vemos una imagen, vale la pena preguntar cómo se procesó."
-      ],
-      "ambience": "none",
-      "image_queries": [
-        "Uranus true color",
-        "Neptune true color",
-        "Uranus Voyager 2 blue-green",
-        "Neptune Voyager 2 blue",
-        "Uranus haze Hubble",
-        "Neptune methane clouds",
-        "Uranus Neptune color comparison",
-        "Uranus Webb infrared",
-        "Neptune Webb infrared",
-        "Uranus Neptune Hubble"
-      ],
-      "video_queries": [
-        "Neptune Webb infrared animation",
-        "Uranus Webb visualization",
-        "planet color comparison animation"
-      ],
-      "text": "En el observatorio hay una pantalla con dos discos pequeños, uno junto al otro. Los dos son azules. Pero quien los mira un rato largo empieza a notar algo: no son el mismo azul.\n\nUno tiene un tono pálido, casi verdoso, como el cristal de una botella vista a contraluz. El otro es más hondo, más vivo, como el mar cuando se aleja de la orilla. Los dos planetas están hechos de materiales parecidos. Los dos están a miles de millones de kilómetros del Sol. ¿Por qué, entonces, no se visten del mismo color?\n\nPara responder, hay que empezar por la luz. La luz del Sol parece blanca, pero guarda dentro todos los colores, mezclados. Llega hasta Urano y Neptuno muy debilitada, y entra en sus atmósferas por arriba, donde el aire es sobre todo hidrógeno y helio, y transparente como el cristal.\n\nMás abajo la luz encuentra nubes. Ahí rebota en las gotas y en los cristales diminutos, y vuelve a salir hacia el espacio. Pero antes de volver, atraviesa una y otra vez un gas que está mezclado en ese aire: el metano.\n\nY el metano tiene una costumbre.\n\nAbsorbe la luz roja. La toma y no la devuelve. Los demás colores sí regresan, y el que domina entre ellos es el azul.\n\nEs un mecanismo sencillo, y es el mismo para los dos mundos. Cada rayo que baja a las nubes y vuelve a subir pierde un poco de rojo en el camino. Cuando ha recorrido el aire de arriba a abajo y de abajo a arriba, ya casi no le queda rojo. Lo que llega a nuestros ojos, o a nuestras cámaras, es un azul filtrado por el gas.\n\nPero entonces la diferencia sigue sin explicarse. Si ambos tienen metano, ambos deberían verse igual. Aquí los astrónomos sospechan de una capa de neblina.\n\nUrano parece tener una neblina más gruesa que la de Neptuno. Son partículas muy finas, suspendidas en lo alto de la atmósfera. Funcionan como un velo de gasa sobre una ventana. Esparcen la luz y la mezclan, y el color se vuelve más claro y más apagado.\n\nEn Neptuno ese velo parece más delgado. La luz alcanza a llegar más hondo, pasa más metano y se pierde más rojo. Por eso el azul de Neptuno se ve más intenso. Es una explicación razonable, aunque los científicos todavía la estudian y no pueden darla por cerrada.\n\nHay algo más, y es lo más curioso de todo.\n\nDurante décadas, casi todos conocimos estos planetas por las fotografías de Voyager 2. Allí Urano era un disco verdoso y liso, y Neptuno un azul profundo, casi eléctrico. Se veían tan distintos que nadie lo puso en duda.\n\nHasta que un grupo de investigadores volvió a mirar esas imágenes con cuidado.\n\nLa cámara de Voyager 2 no fotografiaba en color como lo hace un teléfono. Tomaba imágenes separadas a través de filtros, y luego se combinaban en la Tierra. Al reajustar ese proceso y compararlo con observaciones más recientes, el equipo notó que las imágenes habían sido muy reforzadas. Sobre todo las de Neptuno.\n\nLos colores reales de ambos planetas son más parecidos de lo que se creía.\n\nLos dos son un azul verdoso. Neptuno sigue siendo un poco más azul, y Urano un poco más claro. Pero la diferencia es pequeña, mucho menor que la de aquellas imágenes que llevamos cuarenta años guardando en la memoria. Al intensificar el contraste, quienes las prepararon querían mostrar las bandas y las nubes. Con el tiempo, el color reforzado pasó a ser el color que todos recordábamos.\n\nEsto no es un error de nadie. Es la forma en que se hace la ciencia con una sola nave y una cámara que ya tenía casi medio siglo de diseño. Pero nos deja una pregunta tranquila para la próxima vez que veas una imagen del espacio.\n\n¿Cómo se tomó? ¿Qué se aclaró, qué se realzó y qué se decidió dejar visible?\n\nEsa pregunta no le quita belleza a nada. Al contrario, cada imagen se vuelve una conversación entre lo que existe y lo que alguien eligió mostrarnos.\n\nY en esa conversación hay otro mundo que Voyager 2 vio de pasada. Uno que no es azul ni verde. Uno pequeño y helado, con una superficie que parece rota y vuelta a armar."
-    },
-    {
-      "title": "Los anillos y las lunas extrañas",
-      "question": "¿Por qué Miranda, una luna pequeña, parece haber sido rota y recompuesta?",
-      "reveal": "La superficie de Miranda mezcla acantilados de unos 20 kilómetros de altura con terrenos de aspecto cosido, una de las geografías más extrañas del sistema solar.",
-      "beats": [
-        "Urano tiene 13 anillos estrechos y oscuros, descubiertos en 1977 al ver estrellas parpadear detrás de ellos.",
-        "Neptuno tiene anillos con arcos más densos, y su origen y estabilidad se estudian todavía.",
-        "Voyager 2 reveló que Miranda tiene cañones gigantes y regiones de aspecto muy distinto en una misma superficie.",
-        "Una de sus explicaciones propuestas es una historia de calentamiento interno o de impactos, sin consenso claro.",
-        "Titania y Oberón son las lunas mayores de Urano y muestran grietas y cráteres.",
-        "Los anillos oscuros de Urano contrastan con los brillantes de Saturno."
-      ],
-      "ambience": "ice",
-      "image_queries": [
-        "Miranda Voyager 2",
-        "Miranda Verona Rupes",
-        "Titania Voyager 2",
-        "Oberon Voyager 2",
-        "Ariel Voyager 2",
-        "Umbriel Voyager 2",
-        "Uranus rings Webb",
+        "Sun seen from outer solar system",
         "Neptune rings Webb",
-        "Neptune rings Voyager 2",
-        "Uranus moons"
+        "Neptune clouds",
+        "Voyager 2 spacecraft"
       ],
       "video_queries": [
-        "Miranda flyover animation",
-        "Uranus rings animation",
-        "Uranus moons visualization"
+        "solar system flight outer planets visualization",
+        "Neptune rotation animation",
+        "Voyager 2 trajectory animation"
       ],
-      "text": "Una luna de Urano, vista de cerca, parece un rompecabezas armado por alguien con prisa. Se llama Miranda. Mide apenas cuatrocientos setenta kilómetros de lado a lado, más o menos lo que hay entre dos ciudades vecinas unidas por una carretera de un día de viaje.\n\nUna luna tan pequeña debería ser un mundo apagado. Una bola de hielo y roca, fría desde hace miles de millones de años, con cráteres y poco más. Eso era lo que esperaban los científicos en enero de mil novecientos ochenta y seis, cuando Voyager 2 se acercó a ella. ¿Por qué, entonces, Miranda parece haber sido rota y vuelta a armar?\n\nPara llegar a la respuesta, primero conviene mirar el lugar donde vive. Alrededor de Urano giran trece anillos. Son estrechos, algunos apenas de unos pocos kilómetros de ancho, y muy oscuros, casi como carbón. Si estuvieras allí, no verías un resplandor. Verías, con suerte, una sombra delgada contra el fondo negro.\n\nPor eso nadie los había visto. Fueron descubiertos en mil novecientos setenta y siete, de una forma muy indirecta. Un grupo de astrónomos observaba cómo Urano pasaba frente a una estrella lejana. Antes de que la estrella desapareciera detrás del planeta, parpadeó varias veces. Y lo mismo ocurrió al otro lado.\n\nAlgo se interponía, una y otra vez, en pequeños instantes.\n\nEran los anillos, delatados no por su brillo sino por su sombra. Qué contraste con Saturno, cuyos anillos son claros, anchos y reflejan la luz del Sol hasta en un telescopio pequeño. Los de Urano son discretos. Hay que saber dónde buscarlos.\n\nMás lejos, Neptuno guarda anillos propios. Allí hay una rareza: en algunos tramos el material no se reparte parejo, sino que se junta en arcos más densos, como si el anillo tuviera nudos. Se esperaría que ese polvo se esparciera por toda la órbita con el tiempo. No lo hace, o no tan rápido. Cómo se originan esos arcos y por qué se mantienen sigue siendo materia de estudio.\n\nVolvamos a Urano y a sus lunas. Las dos mayores son Titania y Oberón, cada una de unos mil quinientos kilómetros de diámetro. Equivale a cruzar un país de un extremo a otro. Voyager 2 las encontró con cráteres antiguos y con grietas largas que recorren la superficie, señales de que el hielo se estiró y se partió en algún momento. Son mundos tranquilos, marcados por el tiempo.\n\nY luego apareció Miranda.\n\nLas imágenes llegaron lentas, línea tras línea, desde una distancia de casi tres mil millones de kilómetros. Quienes las recibieron vieron algo que no encajaba con ninguna otra luna. Había cañones gigantescos, más profundos que cualquiera de la Tierra. Había zonas con surcos paralelos, como pistas de una carretera de hielo. Y había llanuras antiguas, llenas de cráteres, justo al lado de regiones jóvenes y casi lisas.\n\nTres paisajes distintos, en un mismo mundo pequeño.\n\n¿Cómo se explica? Hay dos ideas principales. La primera dice que Miranda fue golpeada con tanta fuerza que se fragmentó, y que sus pedazos volvieron a juntarse por su propia gravedad, mal acomodados. La segunda propone algo más lento: que el interior de la luna se calentó, quizá por la atracción de Urano y de otras lunas, y que el hielo tibio subió y se hundió en grandes manchas, como una olla que hierve despacio.\n\nNinguna ha ganado. Los especialistas todavía discuten, y es posible que ambas hayan tenido algo de verdad.\n\nLo que sí se midió es el resultado. En el borde de uno de esos cañones, según las imágenes de Voyager 2, un acantilado se alzaría unos veinte kilómetros. Es más del doble de la altura del monte Everest. Si pudieras pararte en su base, la pared de hielo se perdería en el cielo oscuro, y la caída desde su cima, con la gravedad tan débil de Miranda, tardaría varios minutos.\n\nAsí que la respuesta es esta. Miranda mezcla acantilados de unos veinte kilómetros con terrenos de aspecto cosido, y es una de las geografías más extrañas del sistema solar.\n\nUna luna pequeña, que debió ser aburrida, guarda una historia que todavía no sabemos leer. Y es un buen recordatorio: el tamaño de un mundo casi nunca dice cuánto le ha pasado.\n\nPero Miranda no está sola en esas costuras. Más lejos, en el otro gigante azul, hay una luna que ni siquiera nació allí."
+      "text": "Pasas junto a Júpiter y el planeta ya no es más que una luz amarilla en la distancia. Más atrás queda Saturno, con sus anillos tan delgados que, vistos de canto, casi desaparecen. Después Urano, pálido y verdoso, rodando de lado sobre su órbita. Los tres se van quedando atrás, uno tras otro, como farolas en una carretera de noche.\n\nDelante hay un último planeta. Se llama Neptuno, y está a unos cuatro mil quinientos millones de kilómetros del Sol. Si pudieras caminar esa distancia a paso tranquilo, tardarías unos cien mil años en recorrerla. Su luz llega allí tan tenue que el mediodía de Neptuno se parece a un crepúsculo de la Tierra.\n\nY ahora mira hacia atrás, hacia el Sol.\n\nSigue siendo la estrella más brillante del cielo. Pero ya no tiene forma de disco. Es un punto, apenas un alfiler de luz blanca, y su brillo basta para dejar sombras muy nítidas sobre el hielo. No hay calor que puedas sentir en la piel. Solo una claridad pequeña, fría, que te recuerda dónde está el hogar.\n\nAquí, en el borde de lo conocido, nos hacemos una pregunta sencilla. ¿Qué hay en la oscuridad que empieza donde terminan los planetas?\n\nDurante mucho tiempo, nadie lo supo. Los mapas del sistema solar terminaban en Neptuno, y más allá solo había un espacio en blanco. Pero a veces un vacío en el mapa se delata solo, por pequeñas irregularidades en lo que sí se puede ver.\n\nEsa pista llegó desde Urano. En el siglo diecinueve, los astrónomos seguían su órbita con enorme paciencia, noche tras noche. Y el planeta no se comportaba como las cuentas decían. Se adelantaba un poco, luego se atrasaba, como si algo lo tirara de forma muy leve.\n\nLa explicación más natural era que otro cuerpo, aún sin descubrir, lo atraía con su gravedad. Dos matemáticos, trabajando por separado, calcularon dónde debía estar ese mundo oculto. En mil ochocientos cuarenta y seis, un telescopio apuntó a ese lugar del cielo. Y allí estaba Neptuno.\n\nFue un triunfo hermoso. Un planeta encontrado primero con lápiz y papel, y solo después con los ojos.\n\nSin embargo, quedaba una duda. Las cuentas de Urano no terminaron de cuadrar del todo, y algunos pensaron que Neptuno no era el final. Quizá más lejos aún había otros mundos que nadie había visto. La sospecha era razonable. Si la gravedad delataba a un planeta, tal vez delataría a otro.\n\nHabía otra razón para pensar así. Hoy sabemos que el sistema solar nació hace unos cuatro mil seiscientos millones de años, a partir de una nube de gas y polvo. Una parte se juntó para formar el Sol y los planetas. Pero no todo el material encontró un lugar.\n\nCerca del Sol, el calor se llevó los hielos y dejó mundos de roca. Lejos, el frío los conservó. Era razonable suponer que, pasada la órbita de Neptuno, quedaban restos de aquella nube, fragmentos helados que nunca llegaron a ser planetas. Materia original, guardada en un congelador del tamaño de un sistema entero.\n\nEsa fue la idea que fue tomando forma: que Neptuno no era un muro, sino una puerta.\n\nEl borde del sistema solar no está vacío.\n\nNeptuno marca solo el comienzo de una región inmensa, poblada por cuerpos de hielo que llevan miles de millones de años esperando en la penumbra. Tú y yo vivimos en la parte cálida y luminosa de una historia mucho más grande. Casi todo el sistema solar es frío, oscuro y silencioso, y muy poco de él ha sido visitado.\n\nEntonces la pregunta se vuelve más concreta. ¿Qué tipo de mundos viven en este frío? ¿Son simples bloques de hielo, iguales y sin vida geológica, o guardan sorpresas?\n\nPara empezar a responderla, hace falta un nombre. Un nombre que a comienzos del siglo veinte todavía no existía. Un hombre empezó a buscarlo con obstinación, mirando fotografías del cielo una y otra vez, bajo una lámpara, en una cúpula de Arizona."
     },
     {
-      "title": "Tritón, la luna que vino de lejos",
-      "question": "¿Por qué la luna más grande de Neptuno gira al revés?",
-      "reveal": "Tritón orbita en sentido contrario a la rotación de Neptuno, lo que sugiere que fue capturado desde el cinturón de Kuiper, y Voyager 2 vio géiseres que lanzan material oscuro en su superficie helada.",
+      "title": "La búsqueda del planeta nueve",
+      "question": "¿Cómo se encuentra un punto de luz diminuto entre miles de estrellas?",
+      "reveal": "Clyde Tombaugh descubrió Plutón en 1930 comparando placas fotográficas y viendo un punto que se movía entre las estrellas fijas.",
       "beats": [
-        "Tritón es la mayor luna de Neptuno y una de las más frías superficies que hemos medido.",
-        "Su órbita es retrógrada, algo muy raro para una luna grande, y eso indica un origen externo.",
-        "Es probable que haya sido un objeto del cinturón de Kuiper capturado por la gravedad de Neptuno.",
-        "Voyager 2 observó columnas oscuras que parecían surgir del hielo, evidencia de actividad en la superficie.",
-        "Su órbita se acorta lentamente y, en un futuro muy lejano, podría romperse y formar un anillo.",
-        "Tritón comparte rasgos con Plutón, y por eso es una ventana a los mundos del borde del sistema solar."
+        "Percival Lowell y la sospecha de un planeta más allá de Neptuno a comienzos del siglo XX",
+        "El Observatorio Lowell en Arizona y el método de fotografiar el mismo campo en noches distintas",
+        "Clyde Tombaugh, un joven asistente, examina placas con un comparador de parpadeo",
+        "Febrero de 1930: un punto diminuto cambia de lugar entre dos placas",
+        "El nombre Plutón propuesto por Venetia Burney, una niña de once años de Oxford",
+        "Más tarde se vio que Plutón era mucho más pequeño de lo esperado, y que las perturbaciones que motivaron la búsqueda no requerían un planeta grande",
+        "Un descubrimiento que parecía cerrar el mapa del sistema solar pero apenas abría otro capítulo"
       ],
-      "ambience": "ice",
+      "ambience": "none",
       "image_queries": [
-        "Triton Voyager 2",
-        "Triton Neptune crescent",
-        "Triton geysers",
-        "Triton surface",
-        "Triton cantaloupe terrain",
-        "Neptune Triton Voyager",
-        "Triton south polar cap",
-        "Triton Hubble",
-        "Kuiper Belt artist concept",
-        "Pluto New Horizons"
+        "Pluto Hubble",
+        "Pluto Charon Hubble",
+        "Pluto moons Hubble",
+        "Pluto Hubble surface map",
+        "Pluto orbit",
+        "Pluto and Charon system",
+        "Pluto Hubble Nix Hydra",
+        "Telescope dome night sky",
+        "Milky Way star field",
+        "Pluto Kerberos Styx"
       ],
       "video_queries": [
-        "Triton flyover animation",
-        "Kuiper Belt visualization",
-        "Pluto flyover New Horizons"
+        "Pluto Hubble observation animation",
+        "Pluto orbit visualization",
+        "star field time-lapse telescope"
       ],
-      "text": "En el telescopio, Neptuno es una gota azul y, muy cerca de ella, hay un punto de luz diminuto. Ese punto es Tritón, su luna más grande. Si lo sigues noche tras noche, notarás algo extraño en su movimiento.\n\nNeptuno gira sobre sí mismo hacia un lado. Casi todas las lunas grandes del sistema solar giran alrededor de su planeta en ese mismo sentido, como si siguieran una corriente. Tritón no. Va en contra.\n\n¿Por qué la luna más grande de Neptuno gira al revés?\n\nAntes de responder, conviene conocerla un poco. Tritón mide unos dos mil setecientos kilómetros de ancho, más o menos lo que hay de un extremo a otro de un país largo y estrecho. Es la mayor de las lunas de Neptuno, y con mucha diferencia. Su superficie es una de las más frías que hemos medido en todo el sistema solar, a unos doscientos treinta y ocho grados bajo cero. A esa temperatura, el nitrógeno, que en la Tierra respiramos como gas, se queda helado sobre el suelo como una escarcha.\n\nAhora, la pista. Los astrónomos llaman retrógrada a una órbita como la suya. Entre las lunas pequeñas aparece de vez en cuando. Entre las grandes es casi una rareza absoluta.\n\nY eso importa, porque las lunas grandes suelen nacer con su planeta. Se forman de un disco de polvo y gas que gira alrededor de él, y heredan su sentido de giro. Una luna que va al revés no pudo nacer allí.\n\nEntonces, ¿de dónde vino?\n\nLa explicación más aceptada mira mucho más lejos. Más allá de Neptuno se extiende el cinturón de Kuiper, una región de mundos helados que quedaron como sobrantes de la formación del sistema solar. Es probable que Tritón fuera uno de ellos. Un mundo que viajaba solo, por su cuenta, y que un día pasó demasiado cerca de un gigante azul.\n\nLa gravedad de Neptuno lo atrapó. No sabemos exactamente cómo ocurrió, y hay varias ideas sobre ello. Quizás frenó al chocar con otras lunas, o quizás venía acompañado de un compañero que se llevó parte de su energía. Lo que sí parece claro es que Tritón no nació donde hoy está.\n\nTritón orbita en sentido contrario al giro de Neptuno, y por eso creemos que llegó de afuera.\n\nUn viajero que se quedó. Piensa en lo que eso significa para su historia: sus primeros millones de años en Neptuno debieron de ser violentos, con el hielo estirado y calentado por las mareas, hasta que su órbita se volvió casi circular.\n\nEn agosto de mil novecientos ochenta y nueve, Voyager 2 pasó a unos cuarenta mil kilómetros de su superficie. Los científicos esperaban un mundo muerto, un bloque de hielo detenido en el tiempo. Lo que apareció en las imágenes fue otra cosa.\n\nSobre el hielo claro del polo sur había franjas oscuras, como pinceladas largas dejadas por el viento. Y en algunas fotografías, unas columnas delgadas subían desde el suelo y luego se doblaban en horizontal, arrastradas por una atmósfera casi inexistente.\n\nEran géiseres. Material oscuro lanzado hacia arriba desde una superficie helada, a más de doscientos treinta grados bajo cero.\n\nAún no se sabe con certeza qué los impulsa. Una idea habla del sol, que calentaría un poco el hielo bajo la superficie hasta hacerlo estallar. Otra, de calor que viene de más adentro. Desde aquel paso, nadie ha vuelto a mirar de cerca.\n\nY el futuro de Tritón tiene su propio silencio. Al girar en sentido contrario, la marea que levanta en Neptuno lo frena poco a poco. Su órbita se acorta, muy lentamente, con el paso de los siglos. En un futuro muy lejano, dentro de miles de millones de años, podría acercarse tanto que la gravedad del planeta lo rompería. Sus pedazos formarían un anillo.\n\nEs una despedida tan lenta que ningún ojo humano la vería.\n\nMientras tanto, Tritón guarda algo valioso. Se parece mucho a Plutón: en el color de su hielo, en el nitrógeno de su superficie, en la mezcla de roca y hielo que lo forma por dentro. Si es un hermano capturado, estudiarlo es como mirar de cerca un mundo del borde del sistema solar, sin tener que viajar hasta allí.\n\nY ese borde es un lugar donde, bajo las nubes de estos dos planetas, ocurren cosas igual de extrañas."
+      "text": "Hay una habitación en Arizona donde todo huele a madera vieja y a productos químicos de revelado. Sobre una mesa, bajo una lámpara, hay dos placas de vidrio del tamaño de una bandeja. Cada una guarda miles de estrellas, y cada estrella es apenas una mota negra sobre el cristal.\n\nAhora piensa en lo que se le pedía a un hombre en esa mesa. Encontrar entre todas esas motas una sola que no estuviera en su sitio. ¿Cómo se encuentra un punto de luz diminuto entre miles de estrellas?\n\nPara llegar a esa mesa, hay que empezar unos años antes. A comienzos del siglo veinte, un astrónomo estadounidense llamado Percival Lowell estaba convencido de que más allá de Neptuno había otro planeta. Lo llamaba, simplemente, el Planeta equis. Era rico, tenaz y muy apasionado, y financió de su bolsillo un observatorio entero para encontrarlo.\n\nEse observatorio se levantó en una colina cerca de Flagstaff, en Arizona. El aire allí es seco y limpio, y de noche las estrellas se ven nítidas. Lowell murió en mil novecientos dieciséis sin haber hallado nada. Pero la búsqueda quedó pendiente, como una carta sin abrir.\n\nEl método era sencillo de explicar y muy duro de cumplir. Se fotografiaba un mismo trozo de cielo en una noche, y se volvía a fotografiar unos días después. Las estrellas lejanas casi no se mueven, así que aparecen idénticas en ambas placas. Pero un planeta, aunque sea lento, se desplaza un poco entre las estrellas fijas.\n\nQuedaba el problema de mirar. Cada placa contenía cientos de miles de estrellas, y había que revisar región tras región, durante meses.\n\nEn mil novecientos veintinueve llegó al observatorio un joven de Kansas, de veintidós años, llamado Clyde Tombaugh. No era astrónomo profesional. Había construido sus propios telescopios en una granja, y había enviado dibujos de Júpiter y Marte a Arizona, que impresionaron a los directores. Lo contrataron como asistente, y le dieron la tarea más paciente de todas.\n\nTombaugh trabajaba con una máquina llamada comparador de parpadeo. Colocaba dos placas del mismo campo, y un espejo alternaba la vista de una a otra, una y otra vez. Si todo era igual, las estrellas permanecían quietas. Si algo se había movido, ese punto saltaba de un lado a otro, como si parpadeara solo.\n\nImagina esa rutina. Noches enteras en una sala oscura, con los ojos pegados a un visor, mirando saltar nada. Un mes. Otro mes. Ningún salto.\n\nEntonces llegó febrero de mil novecientos treinta. Tombaugh comparaba dos placas tomadas en enero, de una zona del cielo cercana a la constelación de Géminis. Y de pronto, un punto diminuto cambió de lugar.\n\nEra un punto tan pequeño que costaba creer que fuera algo.\n\nTombaugh midió la distancia del salto y comprobó que coincidía con la de un cuerpo mucho más allá de Neptuno. Revisó otras placas para estar seguro. Allí estaba, en las dos fechas, sin error posible. Había descubierto un mundo nuevo a unos seis mil millones de kilómetros de distancia, una distancia que ningún avión recorrería en una vida entera.\n\nEl anuncio dio la vuelta al mundo semanas después. Y faltaba un nombre. Lo propuso una niña de once años, Venetia Burney, que vivía en Oxford, en Inglaterra. Su abuelo le leyó la noticia durante el desayuno, y ella pensó en Plutón, el dios romano del inframundo, que reinaba en un lugar oscuro y frío. Su abuelo se lo contó a un astrónomo, y el astrónomo lo envió a Arizona. Los astrónomos lo votaron casi por unanimidad.\n\nPero había algo extraño en este mundo recién nombrado. Parecía demasiado tenue. Si Plutón era el planeta que Lowell había imaginado, debía ser grande, quizá tan pesado como la Tierra. Con los años, las mediciones fueron reduciendo la estimación. Primero fue un poco menor que la Tierra, luego mucho menor, y al final resultó más pequeño que nuestra Luna.\n\nY con eso apareció una incomodidad. Un cuerpo tan ligero no podía haber perturbado la órbita de Urano. Las perturbaciones que habían motivado toda la búsqueda, más tarde se vio, eran errores en las medidas antiguas, no la huella de un planeta enorme.\n\nLowell había acertado en el lugar donde mirar, casi por casualidad. Tombaugh había encontrado algo real, pero distinto de lo que se buscaba.\n\nDurante décadas, Plutón ocupó el último escalón del sistema solar. Parecía que el mapa estaba por fin cerrado. Y sin embargo, ese punto que saltaba en el visor apenas abría otra página. Porque un mundo tan pequeño, tan lejano, tan frío, no podía estar solo. ¿Cuántos más habría escondidos en esa oscuridad, esperando en placas todavía sin revisar?"
     },
     {
-      "title": "Lluvia de diamantes y el futuro",
-      "question": "¿Qué hay bajo las nubes azules, y volveremos a verlo?",
-      "reveal": "Experimentos de laboratorio indican que en el interior profundo de estos planetas el carbono podría cristalizar en diamante y hundirse como lluvia, aunque nadie lo ha observado directamente.",
+      "title": "Un mundo diminuto y su compañera",
+      "question": "¿Por qué Plutón y Caronte parecen más un doble sistema que un planeta con su luna?",
+      "reveal": "Caronte es tan grande respecto a Plutón que el centro de gravedad del par queda fuera de Plutón, así que ambos giran alrededor de un punto en el espacio entre ellos.",
       "beats": [
-        "Bajo las nubes, la presión aumenta hasta que el agua y otros compuestos se vuelven un fluido denso y caliente.",
-        "Experimentos con láseres y rayos X reproducen esas condiciones por instantes y sugieren que se formarían diamantes.",
-        "Podrían hundirse lentamente hacia el núcleo, liberando energía; es una hipótesis, no una observación.",
-        "Los campos magnéticos extraños de ambos planetas podrían venir de un océano de agua ionizada.",
-        "Los científicos han propuesto una misión orbital a Urano como prioridad para la próxima década, aunque aún no está aprobada.",
-        "Cerramos regresando al azul en calma, a la distancia y al silencio de estos dos mundos."
+        "Plutón mide unos 2.376 kilómetros de diámetro, menos que la Luna",
+        "Caronte, de unos 1.200 kilómetros, es cerca de la mitad del tamaño de Plutón",
+        "El baricentro del sistema queda en el espacio entre los dos cuerpos",
+        "Ambos muestran siempre la misma cara el uno al otro: están en acoplamiento de marea mutuo",
+        "Las cuatro lunas pequeñas, Estigia, Nix, Cerbero e Hidra, giran alrededor de este par",
+        "Un año en Plutón dura unos 248 años terrestres",
+        "Imaginamos un cielo donde Caronte cuelga inmóvil sobre un solo hemisferio"
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Neptune interior illustration",
-        "Uranus interior illustration",
-        "Uranus Webb",
-        "Neptune Webb",
-        "Uranus Voyager 2",
-        "Neptune Voyager 2",
-        "Uranus aurora Hubble",
-        "Uranus orbiter concept",
-        "Neptune from Triton artist concept",
-        "Uranus Neptune together"
+        "Pluto Charon New Horizons",
+        "Charon New Horizons",
+        "Pluto Charon size comparison",
+        "Pluto moons New Horizons",
+        "Nix New Horizons",
+        "Hydra New Horizons",
+        "Pluto Charon Hubble",
+        "Pluto high resolution New Horizons",
+        "Pluto global view",
+        "Charon global mosaic"
       ],
       "video_queries": [
-        "Neptune interior animation",
-        "Uranus magnetic field visualization",
-        "Neptune Triton Voyager animation"
+        "Pluto Charon orbit animation",
+        "New Horizons Pluto flyby animation",
+        "Pluto system rotation visualization"
       ],
-      "text": "Si pudieras bajar por la atmósfera de Urano, lo primero que notarías sería el silencio. Después, la luz. Se iría apagando poco a poco, del azul pálido a un azul cada vez más oscuro, hasta que no quedara casi nada.\n\n¿Y más abajo? Nadie lo sabe con certeza. Ninguna sonda ha entrado jamás en estos mundos, y todo lo que sabemos del interior lo hemos deducido desde lejos.\n\nLo que sí se puede calcular es la presión. A medida que desciendes, las nubes de metano quedan atrás y la presión crece sin pausa. Miles de kilómetros más abajo, el agua ya no es agua como la conoces. Mezclada con amoníaco y metano, se vuelve un fluido denso y muy caliente, a temperaturas de miles de grados. No es hielo, ni líquido de un océano, ni gas. Es otra cosa.\n\nY en ese fluido, los científicos sospechan que ocurre algo extraordinario.\n\nHace unos años, en un laboratorio, un grupo de investigadores quiso comprobarlo. No podían viajar hasta allí, así que intentaron traer un pedazo de ese interior hasta la Tierra. Tomaron una lámina de plástico, un material rico en carbono e hidrógeno, parecido a los compuestos que se cree que hay en esas profundidades. Le lanzaron láseres potentes que generaron ondas de choque. Y justo en ese instante, la iluminaron con un destello de rayos X.\n\nEl experimento duró una fracción de segundo. Menos que un parpadeo, mucho menos.\n\nPero en ese instante, los rayos X mostraron algo. El carbono se había separado del hidrógeno. Y se había ordenado en pequeñas estructuras cristalinas.\n\nEran diamantes.\n\nDiminutos, por supuesto. Se formaron y desaparecieron en un abrir y cerrar de ojos. Pero la señal era clara: bajo presiones y temperaturas parecidas a las de Urano y Neptuno, el carbono puede cristalizar.\n\nSi eso sucede en el interior real de los planetas, la consecuencia es curiosa. Los cristales serían más densos que el fluido que los rodea. Así que empezarían a hundirse. Muy despacio, durante miles de años, caerían hacia el núcleo, como una nevada lenta que nunca llega a tocar el suelo.\n\nY al hundirse, rozarían con el fluido y liberarían un poco de calor. Podría ser una de las razones por las que Neptuno irradia más energía de la que recibe del Sol. Recuerdas esa pregunta, la de los vientos y las tormentas en un mundo tan lejano de la luz. Quizá parte de la respuesta esté aquí abajo.\n\nPero conviene decirlo con cuidado.\n\nNadie ha visto esta lluvia. Es una hipótesis, apoyada por experimentos en la Tierra, no una observación.\n\nHay otro misterio que quizá tenga relación con ese océano oculto. Cuando Voyager 2 midió los campos magnéticos de estos planetas, no encontró nada parecido al de la Tierra. Los campos de Urano y de Neptuno están inclinados, desplazados, desordenados. Un imán con el polo en un lugar equivocado.\n\nUna explicación posible es que se generen más cerca de la superficie de lo que esperábamos. En una capa de agua ionizada, un fluido que conduce la electricidad, que se mueve y gira. Esa capa crearía un campo magnético distinto al de nuestro planeta, con varios polos, y no un único eje ordenado.\n\nEs una idea razonable. Todavía no es una respuesta.\n\nEntonces, ¿cómo saberlo? ¿Cómo mirar bajo las nubes azules?\n\nHay una forma. Una nave que se quede. Que no pase de largo en unas pocas horas, como hizo Voyager 2, sino que entre en órbita y dé vueltas durante años. Que mida la gravedad con precisión, que siga el campo magnético, que observe las tormentas mes tras mes.\n\nLos científicos ya lo han propuesto. Una misión orbital a Urano figura como la prioridad para la próxima década. Todavía no está aprobada. Si se aprobara, tardaría muchos años en llegar, quizá más de una década de viaje.\n\nQuien la lance quizá no sea quien reciba los primeros datos. Es una forma de construir muy antigua: plantar un árbol cuya sombra disfrutarán otros.\n\nY así, nuestro recorrido llega a su fin.\n\nPartimos del Sol, cruzamos los mundos de roca, pasamos junto a los gigantes de gas, y llegamos hasta el borde del mapa. Allí encontramos un planeta tumbado sobre su costado, otro azotado por vientos que nadie siente, lunas con cicatrices, anillos oscuros y una luna capturada que viene de aún más lejos.\n\nTodo eso sigue ahí, esta noche, a miles de millones de kilómetros. Sin prisa. Sin testigos.\n\nDos puntos azules, apenas visibles, girando en la oscuridad. Un año que dura ciento sesenta y cinco años terrestres en uno, y ochenta y cuatro en el otro.\n\nQuizá, en lo más profundo, caigan diamantes. Quizá no. Lo bueno es que todavía podemos preguntarlo.\n\nRespira despacio. Deja que el azul se aleje, que el silencio se haga grande y suave.\n\nGracias por acompañarme hasta aquí. Buenas noches."
+      "text": "Si te paras frente a una fotografía de Plutón tomada desde su compañera, algo no encaja. El mundo que cuelga en el cielo no parece una luna. Parece otro mundo, casi tan grande como el primero.\n\nPlutón mide casi dos mil cuatrocientos kilómetros de diámetro. Es menos que nuestra Luna. Si pudieras viajar en línea recta por su ecuador, cruzarías de un lado al otro en el tiempo que tarda un avión en ir de Ciudad de México a Panamá. Es un mundo pequeño, incluso para los estándares del sistema solar.\n\nY a su lado hay otro. Se llama Caronte, y mide unos mil doscientos kilómetros. Casi la mitad de Plutón.\n\nCompara. La Luna es una cuarta parte del tamaño de la Tierra, y ya nos parece grande. Caronte es proporcionalmente mucho mayor. Por eso la pregunta aparece sola. ¿Es esto un planeta con su luna, o son dos mundos que viajan juntos?\n\nPara responder, hay que mirar cómo se mueven. Cuando una luna pequeña gira alrededor de un planeta grande, solemos decir que el planeta se queda quieto. No es del todo cierto. Ambos giran alrededor de un punto común, el centro de gravedad del par, que los astrónomos llaman baricentro. En la Tierra y la Luna, ese punto queda dentro de la Tierra, a unos cuatro mil setecientos kilómetros de su centro. Nuestro planeta apenas se bambolea.\n\nCon Plutón y Caronte ocurre otra cosa.\n\nCaronte pesa lo bastante como para tirar de Plutón con fuerza. El punto de equilibrio se desplaza, y se desplaza tanto que sale de Plutón por completo.\n\nQueda en el espacio vacío entre los dos cuerpos, a unos novecientos kilómetros por encima de la superficie de Plutón. Allí no hay nada. Ni roca, ni hielo. Solo un lugar sin nombre, y alrededor de él, ambos mundos describen su círculo lento. Plutón no está quieto con una luna dando vueltas. Los dos giran, uno frente al otro, como dos personas que se toman de las manos y se inclinan hacia atrás.\n\nHay algo más, y es todavía más extraño. Caronte siempre muestra la misma cara a Plutón. Y Plutón siempre muestra la misma cara a Caronte. Los astrónomos lo llaman acoplamiento de marea mutuo. Con el paso de miles de millones de años, la atracción entre ambos fue frenando sus giros, hasta que cada uno quedó fijo mirando al otro.\n\nLa Luna también nos muestra siempre la misma cara. Pero nosotros, en la Tierra, seguimos girando bajo ella. En Plutón, el baile ya terminó.\n\nAlrededor de este par giran cuatro lunas más pequeñas. Se llaman Estigia, Nix, Cerbero e Hidra. Son diminutas, de formas irregulares, algunas del tamaño de una ciudad. Orbitan lejos, en círculos amplios, y no alrededor de Plutón solo, sino alrededor del par entero. Como si el punto vacío entre los dos mundos fuera el verdadero centro de la familia.\n\nY el tiempo allí se mide de otra manera. Un año en Plutón dura unos doscientos cuarenta y ocho años terrestres. Si alguien hubiera nacido allí el día en que Tombaugh vio ese punto moverse, aún no habría cumplido su primer año. Ni siquiera estaría cerca de la mitad de la primera vuelta.\n\nAhora piensa en cómo sería el cielo. Si te pararas en el hemisferio que mira a Caronte, lo verías allí, grande, a un lado del cielo. Mucho más grande que la Luna sobre nuestras cabezas. No saldría ni se pondría. Los días pasarían, las estaciones tardarían décadas en cambiar, y Caronte seguiría en el mismo lugar, inmóvil, como una lámpara pálida colgada de un hilo.\n\nY en el otro hemisferio, nunca sabrías que existe. Podrías vivir toda una vida sin verlo.\n\nDos mundos pequeños, helados, sujetos el uno al otro en la oscuridad. Y sin embargo, hasta hace poco, nadie sabía cómo eran de cerca. Eran apenas manchas borrosas en las mejores fotografías. Para saber qué había allí de verdad, alguien tendría que ir a mirar."
+    },
+    {
+      "title": "Nueve años y cinco mil millones de kilómetros",
+      "question": "¿Cómo se llega a un mundo que ningún ser humano ha visitado jamás?",
+      "reveal": "New Horizons cruzó el sistema de Plutón a unos 14 kilómetros por segundo y, en pocas horas, nos entregó más información de la que se había reunido en casi un siglo.",
+      "beats": [
+        "Los problemas de enviar una sonda tan lejos y de tener tan poca energía solar",
+        "El lanzamiento en 2006, a una de las mayores velocidades alcanzadas por una nave al salir de la Tierra",
+        "El paso junto a Júpiter en 2007 que le dio un impulso gravitatorio",
+        "Años de hibernación electrónica y revisiones periódicas durante el viaje",
+        "Los instrumentos de la sonda: cámaras, espectrómetros y detectores de partículas",
+        "El 14 de julio de 2015: el acercamiento máximo, a unos 12.500 kilómetros",
+        "La espera de horas para confirmar que la sonda había sobrevivido, con señales que tardan unas 4,5 horas en llegar"
+      ],
+      "ambience": "none",
+      "image_queries": [
+        "New Horizons spacecraft",
+        "New Horizons Jupiter flyby",
+        "Jupiter New Horizons",
+        "Io New Horizons",
+        "Pluto first color image New Horizons",
+        "Pluto approach New Horizons",
+        "Pluto New Horizons July 2015",
+        "Pluto Charon first images",
+        "Pluto heart New Horizons",
+        "Pluto crescent New Horizons"
+      ],
+      "video_queries": [
+        "New Horizons mission animation",
+        "New Horizons Pluto flyby",
+        "New Horizons trajectory visualization"
+      ],
+      "text": "Dos mil seis, Cabo Cañaveral, una tarde de enero. Un cohete blanco se despega de la plataforma y, en menos de diez minutos, ya no se ve desde el suelo. Arriba va una nave del tamaño de un piano, con un destino que ningún ser humano ha pisado jamás.\n\n¿Cómo se llega a un mundo así? No hay mapa, no hay carretera, no hay estación donde detenerse a repostar. Solo hay una dirección, y un punto diminuto que se mueve despacio mientras tú te mueves también.\n\nEl primer problema era la luz. Allá afuera, el Sol llega con una fuerza unas mil veces menor que en la Tierra. Unos paneles solares tendrían que ser enormes para dar algo de energía, y eso era imposible en una nave pequeña y ligera.\n\nAsí que los ingenieros eligieron otra fuente. A bordo llevaron un generador pequeño que convierte en electricidad el calor de una pastilla de plutonio. Daría menos energía que un par de bombillas domésticas. Con eso tendría que funcionar durante años, en el frío más profundo que una nave había recorrido hasta entonces.\n\nEl segundo problema era el tiempo. Un viaje lento habría durado décadas, y las décadas desgastan cualquier cosa. Por eso la nave salió de la Tierra a una de las mayores velocidades que haya alcanzado una nave humana: unos dieciséis kilómetros por segundo. A ese ritmo, cruzas la distancia entre Madrid y Buenos Aires en unos diez minutos.\n\nAun así, no bastaba.\n\nUn año después, en dos mil siete, la nave pasó cerca de Júpiter. No fue una visita de cortesía. El enorme planeta la sujetó por un instante con su gravedad y la lanzó hacia adelante, como una mano que empuja un columpio. La nave ganó cerca de cuatro kilómetros por segundo, y se ahorró unos tres años de camino. Júpiter ni siquiera lo notó.\n\nDespués empezó la parte más silenciosa del viaje. Durante años, casi todos los sistemas de la nave dormían. Solo un latido débil, una señal sencilla, le decía a la Tierra que seguía viva. Una vez al año, más o menos, los equipos la despertaban, revisaban cada sistema y volvían a dejarla descansar.\n\nImagina la escena. Una nave cruzaba en la oscuridad, sin nadie a bordo, y una vez al año alguien en la Tierra le preguntaba si todo iba bien.\n\nCuando por fin despertó del todo, estaba lista para trabajar. Llevaba siete instrumentos. Algunos eran cámaras, que registrarían el color y el relieve del terreno con detalle. Otros eran espectrómetros, que descomponen la luz para descubrir de qué están hechos los hielos y el gas. Y otros eran detectores de partículas, que medirían cómo el viento del Sol toca la atmósfera de Plutón.\n\nTodo eso tenía que hacerse en poco tiempo. La nave no iba a frenar ni a quedarse en órbita. No llevaba combustible suficiente. Pasaría una sola vez, a toda velocidad, y seguiría de largo.\n\nEl catorce de julio de dos mil quince, después de nueve años y casi cinco mil millones de kilómetros, llegó el momento. La nave pasó a unos doce mil quinientos kilómetros de Plutón. Es una distancia parecida a la que separa Ciudad de México de Sídney, pero en el espacio es una cercanía enorme. La sonda iba a unos catorce kilómetros por segundo, y apuntó cada instrumento a la vez.\n\nY entonces vino lo más difícil: esperar.\n\nMientras trabajaba, la nave tenía que mirar a Plutón y no a la Tierra. No podía hablar con casa. Cuando terminó, giró su antena y envió un mensaje corto, que viajó a la velocidad de la luz. Aun así, tardó unas cuatro horas y media en llegar.\n\nPiensa en la sala de control, en esas horas. Gente que había dedicado media vida a este instante, sentada frente a una pantalla casi vacía. Sin saber si la nave había sobrevivido a una carrera tan cercana, a esa velocidad, entre polvo y hielo.\n\nPor fin, la señal apareció. Era débil, pero era clara. La nave estaba bien, y traía consigo todo lo que había visto.\n\nEse día, en pocas horas, New Horizons cruzó el sistema de Plutón y recogió más información de la que se había reunido sobre este mundo en casi un siglo. Un lugar que antes era una mancha borrosa tenía ahora relieve, color y una historia que contar.\n\nFaltaba ver qué mostraban esas imágenes. Y la primera que llegó tenía una forma que nadie esperaba."
+    },
+    {
+      "title": "El corazón de hielo que respira",
+      "question": "¿Por qué la gran mancha clara de Plutón no tiene ni un solo cráter?",
+      "reveal": "Sputnik Planitia es una cuenca de hielo de nitrógeno que fluye y se renueva lentamente por convección, así que su superficie tiene probablemente menos de unos pocos millones de años.",
+      "beats": [
+        "La región con forma de corazón, Tombaugh Regio, destacó de inmediato en las primeras imágenes",
+        "Sputnik Planitia, la llanura occidental del corazón, extensa y sin cráteres visibles",
+        "Celdas poligonales de hielo de nitrógeno que parecen cuarteadas",
+        "El hielo se calienta desde abajo, sube, se enfría y vuelve a hundirse: convección lenta",
+        "La superficie se renueva y borra los cráteres, lo que indica un mundo geológicamente activo",
+        "Con una presión muy baja, el nitrógeno, el metano y el monóxido de carbono son hielos que se evaporan y recondensan",
+        "Qué fuente de calor mantiene activo a Plutón sigue siendo un tema de estudio, y se trata de una pregunta abierta"
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Sputnik Planitia",
+        "Pluto heart Tombaugh Regio",
+        "Pluto nitrogen ice plains",
+        "Pluto convection cells",
+        "Pluto surface close-up New Horizons",
+        "Pluto glaciers New Horizons",
+        "Pluto ice flow",
+        "Pluto high-resolution mosaic",
+        "Pluto sunset hazes",
+        "Pluto water ice mountains"
+      ],
+      "video_queries": [
+        "Pluto flyover animation New Horizons",
+        "Pluto surface flyover",
+        "Sputnik Planitia animation"
+      ],
+      "text": "La primera imagen nítida mostraba una mancha clara, enorme, con la forma casi exacta de un corazón. Los ingenieros que la vieron aparecer en sus pantallas se quedaron un momento en silencio. Nadie había programado eso. Nadie lo había previsto.\n\nEsa región se llama Tombaugh Regio, en honor al joven que encontró Plutón. Destacaba sobre el resto del disco, pálida entre zonas más oscuras y rojizas. Y a medida que la sonda se acercaba, el corazón dejó de ser un dibujo y empezó a ser un lugar.\n\nEl lóbulo izquierdo, el occidental, es una llanura llamada Sputnik Planitia. Es una extensión de hielo liso, de más o menos mil kilómetros de ancho. Es como ir de Ciudad de México a Monterrey y más allá, viendo solo una sábana blanca.\n\nY entonces apareció la pregunta que los científicos se hicieron una y otra vez. ¿Por qué la gran mancha clara de Plutón no tiene ni un solo cráter?\n\nPiénsalo un momento. Cada mundo sólido del sistema solar lleva las marcas de los golpes que ha recibido. La Luna está llena de ellas. Mercurio también. Si Plutón llevaba cuatro mil quinientos millones de años en ese barrio lleno de restos helados, esa llanura debería estar picada como una cáscara de naranja.\n\nPero estaba intacta.\n\nLa pista llegó al mirar la llanura de cerca. La superficie no era uniforme. Estaba dividida en celdas, figuras de cinco o seis lados, cada una de decenas de kilómetros de ancho. Parecían el barro seco de un lago en verano, cuarteado en piezas que encajan unas con otras.\n\nLos bordes de las celdas son surcos delgados. El centro de cada una se abomba suavemente, como si algo la empujara desde abajo. Y algo la empuja, en efecto.\n\nEsa llanura es una cuenca profunda, rellena de hielo de nitrógeno. Es el mismo gas que respiras, pero congelado a unos doscientos treinta grados bajo cero. Ese hielo es blando, mucho más que el hielo de agua. Y desde las capas profundas le llega un poco de calor.\n\nAsí que el hielo se calienta por debajo. Al calentarse, se vuelve algo más ligero, y sube muy despacio hacia la superficie. Allí se enfría, se vuelve más denso y se hunde por los bordes de la celda. Luego el ciclo empieza otra vez.\n\nEs lo mismo que ocurre en una olla de sopa sobre el fuego, pero a un ritmo distinto. El hielo se mueve apenas unos centímetros al año. Una celda tarda cientos de miles de años en dar una vuelta completa.\n\nEsa lentitud tiene una consecuencia clara. La superficie se renueva sin cesar, y cada cráter que cae allí se borra antes de volverse viejo.\n\nSputnik Planitia no tiene cráteres porque no ha tenido tiempo de acumularlos.\n\nLos cálculos indican que ese hielo tiene, probablemente, menos de diez millones de años. Para un mundo de miles de millones de años, es un instante. Es como si en tu casa todo fuera antiguo, menos el suelo de una habitación, que acabaran de pintar esta mañana.\n\nEso significa algo más grande. Plutón no es una roca congelada y muerta. Es un mundo geológicamente activo, donde el paisaje todavía cambia mientras tú lo miras.\n\nY hay otro movimiento más sutil. La atmósfera de Plutón es tan delgada que la presión en la superficie es unas cien mil veces menor que la de la Tierra. En esas condiciones, el nitrógeno, el metano y el monóxido de carbono no se comportan como en tu cocina. Son hielos, pero se evaporan con facilidad.\n\nCuando el Sol los toca, parte del hielo pasa a gas. Cuando el frío vuelve, el gas se posa de nuevo como escarcha. Plutón, en cierto sentido, respira. Exhala en una región e inhala en otra, durante años larguísimos.\n\nQueda una pregunta que todavía no tiene respuesta. Para que el hielo suba y baje, hace falta calor, y Plutón está tan lejos del Sol que casi no recibe. ¿De dónde sale esa energía?\n\nQuizá sea el calor que quedó de su formación. Quizá sea el de los elementos radiactivos que guarda en su interior. Quizá sea algo que aún no hemos pensado. Los científicos siguen estudiándolo, y es una pregunta abierta.\n\nLo que sí sabemos es que ese corazón late con una paciencia enorme. Y que alrededor de la llanura, en sus bordes, el suelo cambia de repente. Allí el hielo deja de ser blando y se levanta en forma de montañas."
+    },
+    {
+      "title": "Montañas de agua congelada",
+      "question": "¿Cómo pueden existir montañas altas en un mundo tan pequeño y frío?",
+      "reveal": "En Plutón el hielo de agua es duro como roca, y forma montañas de hasta unos 3.500 metros de altura que flotan sobre el hielo de nitrógeno más blando.",
+      "beats": [
+        "Las montañas Norgay y Hillary junto a Sputnik Planitia",
+        "A temperaturas de unos -230 °C, el hielo de agua se comporta como la roca",
+        "Algunas montañas parecen bloques que flotan y se desplazan sobre el hielo de nitrógeno",
+        "Las Tartarus Dorsa, un terreno de crestas largas con aspecto de escamas, probablemente cubierto de metano",
+        "Cráteres antiguos en las zonas oscuras que cuentan una historia mucho más larga",
+        "Los posibles criovolcanes, como Wright Mons, son un asunto aún en estudio",
+        "Un paisaje donde la química cotidiana del hielo sigue reglas de otro mundo"
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Pluto mountains Norgay Montes",
+        "Pluto Hillary Montes",
+        "Pluto Tartarus Dorsa",
+        "Pluto Wright Mons",
+        "Pluto Cthulhu Macula",
+        "Pluto Charon mountains",
+        "Charon Mordor Macula",
+        "Pluto Al-Idrisi Montes",
+        "Pluto terrain close-up",
+        "Pluto limb mountains"
+      ],
+      "video_queries": [
+        "Pluto flyover mountains animation",
+        "Charon flyover animation New Horizons",
+        "Pluto terrain visualization"
+      ],
+      "text": "Hay una fotografía de Plutón que casi parece un error. En el borde de la gran llanura blanca se levanta una hilera de picos oscuros, afilados, con las cumbres iluminadas por un Sol lejano. Parecen los Alpes vistos desde un avión.\n\nPero esto es un mundo más pequeño que nuestra Luna, y su temperatura es de unos menos doscientos treinta grados Celsius. ¿Cómo pueden existir montañas altas en un lugar tan diminuto y tan frío?\n\nLas montañas tienen nombre. Se llaman Norgay y Hillary, en honor a los dos hombres que primero llegaron a la cima del Everest. Se alzan junto a Sputnik Planitia, en el límite del corazón, como una muralla irregular entre la llanura y las tierras de alrededor.\n\nAlgunos de esos picos alcanzan unos tres mil quinientos metros. Es una altura parecida a la de muchas cumbres que podrías subir en una larga jornada a pie. Sin embargo, aquí no hay roca de la que estén hechas.\n\nY ahí está la primera pista. Los científicos midieron la luz que reflejan esas laderas, y lo que vieron fue agua. Agua congelada, simple y corriente, la misma que se forma en tu congelador.\n\nAquí en la Tierra, ese hielo es quebradizo, pero cede si lo presionas con paciencia. Un glaciar fluye despacio bajo su propio peso. A este frío, todo cambia.\n\nEl hielo de agua se vuelve duro, rígido, tan firme como el granito de nuestras montañas. Puede sostener una cumbre durante miles de millones de años sin deformarse.\n\nEntonces, ¿de qué está hecho el suelo que lo rodea? Está hecho de otros hielos. El nitrógeno, el metano y el monóxido de carbono se congelan a temperaturas mucho más bajas que el agua, y por eso son blandos incluso en este frío. Son los materiales de la llanura que respira.\n\nEsto nos lleva a una imagen extraña. Algunas de esas montañas parecen bloques sueltos, empujados por la lenta corriente del hielo de nitrógeno. El agua congelada es menos densa que el nitrógeno sólido, así que flota en él, como un témpano en el mar.\n\nCada cumbre sería entonces una balsa de piedra helada. Se desplaza con la corriente a una velocidad que no podrías notar en toda una vida. Los investigadores creen que así se amontonan en ciertos rincones de la llanura, aunque los detalles siguen en estudio.\n\nTal vez ese sea el mejor modo de entenderlo.\n\nLas montañas de Plutón no están clavadas en el suelo. Flotan.\n\nMás al este, el terreno cambia otra vez. Hay una región llamada Tartarus Dorsa, cubierta de crestas largas y estrechas, dispuestas una junto a otra. Desde lo alto parecen las escamas de un animal enorme, o la corteza de un pan recién horneado.\n\nEsas crestas probablemente están cubiertas de metano congelado. Y se alzan cientos de metros, separadas por varios kilómetros, un relieve que nadie esperaba encontrar en un cuerpo tan pequeño.\n\nTambién hay regiones oscuras, y en ellas el relato se vuelve más antiguo. Allí se ven cráteres, muchos, apilados unos sobre otros. Son cicatrices de impactos ocurridos hace miles de millones de años, y nadie ha borrado ninguna.\n\nSi la llanura del corazón es joven y se renueva, estas tierras son memoria. Una superficie que casi no ha cambiado desde que el sistema solar era nuevo.\n\nQueda una pregunta más, y todavía no tiene respuesta. Cerca del sur hay una gran elevación llamada Wright Mons, con una depresión en la cima. Podría ser un criovolcán, un volcán que escupe hielo blando en lugar de lava.\n\nPero la evidencia no alcanza. Los científicos lo estudian, lo comparan, lo miden de nuevo en las imágenes. Por ahora, es una sospecha.\n\nLo que sí sabemos ya es suficiente para sorprender. El agua, esa sustancia tan familiar, aquí se comporta como roca. Y el nitrógeno, que respiras a cada instante, aquí es una masa helada que fluye y sostiene montañas.\n\nLa química cotidiana sigue en Plutón las mismas leyes. Solo que, a este frío, las reglas dan un resultado de otro mundo.\n\nY sobre todo ese paisaje, sobre las cumbres y las crestas, flota algo que apenas se nota a simple vista. Una delgada capa azul, que baja hasta tocar el horizonte."
+    },
+    {
+      "title": "El cielo azul de Plutón",
+      "question": "¿Qué vería y sentiría una persona parada sobre la superficie de Plutón?",
+      "reveal": "Plutón tiene una atmósfera tenue con capas de neblina azulada, y desde su superficie el cielo se vería oscuro con un tinte azul en el horizonte.",
+      "beats": [
+        "Una atmósfera delgada, sobre todo de nitrógeno, con presión miles de veces menor que la de la Tierra",
+        "New Horizons fotografió el contraluz del Sol detrás de Plutón: un anillo de neblina",
+        "Más de una docena de capas de neblina se elevan decenas de kilómetros",
+        "Las partículas azuladas se forman por luz ultravioleta que transforma el metano en compuestos orgánicos llamados tolinas",
+        "Las tolinas caen y tiñen de rojizo la superficie, como en la región oscura Cthulhu Macula",
+        "El Sol sería una estrella muy brillante, aunque muy pequeña en el cielo",
+        "El silencio, el frío y la luz tenue de un atardecer que dura mucho"
+      ],
+      "ambience": "wind",
+      "image_queries": [
+        "Pluto atmosphere haze New Horizons",
+        "Pluto backlit hazes",
+        "Pluto blue haze",
+        "Pluto sunset",
+        "Pluto atmosphere layers",
+        "Pluto tholins",
+        "Pluto red regions",
+        "Pluto Cthulhu Macula",
+        "Pluto crescent backlit",
+        "Pluto twilight"
+      ],
+      "video_queries": [
+        "Pluto atmosphere animation",
+        "Pluto sunset visualization",
+        "Pluto surface flyover haze"
+      ],
+      "text": "Cuando New Horizons ya se alejaba de Plutón, giró su cámara hacia atrás. Quería ver el mundo que acababa de cruzar, ahora con el Sol escondido justo detrás de él.\n\nLo que apareció en la imagen fue un círculo oscuro, rodeado por un anillo delgado de luz azulada. Un mundo pequeño, helado y lejano, con aire.\n\n¿Qué verías tú si estuvieras parado allí, sobre la superficie? ¿Qué sentirías en la piel, y qué verías al levantar la mirada?\n\nEmpecemos por el aire. La atmósfera de Plutón está hecha sobre todo de nitrógeno, igual que la nuestra. Pero se parece muy poco a la que respiras. Su presión es unas cien mil veces menor que la de la Tierra. Sería como estar en un lugar tan alto que el aire casi se acabó, mucho más arriba de las cumbres más altas del planeta.\n\nPor eso nadie esperaba lo que mostró aquella fotografía a contraluz. Con una atmósfera tan tenue, lo normal habría sido ver apenas un borde difuso. En cambio, el anillo era claro y bien definido, como el contorno de una moneda encendida desde atrás.\n\nY había más. Al examinar la imagen con cuidado, los científicos contaron más de una docena de capas de neblina. Estaban apiladas una sobre otra, casi paralelas al suelo. Se elevaban decenas de kilómetros, más o menos la distancia que recorrerías en un día largo de viaje en coche.\n\nEsas capas no están quietas por casualidad. Los investigadores todavía estudian por qué se acomodan así, y las ondas de la atmósfera podrían ser parte de la explicación.\n\nQuedaba otra pregunta, más sencilla. ¿De qué está hecha esa neblina, y por qué es azul?\n\nLa respuesta empieza con la luz del Sol. Aunque llega muy debilitada, todavía trae luz ultravioleta. Esa luz golpea las moléculas de metano que flotan en lo alto de la atmósfera y las rompe. Los pedazos se vuelven a unir, pero de otra manera, y forman moléculas orgánicas más grandes y complejas.\n\nSe llaman tolinas.\n\nSon diminutas, mucho más pequeñas que un grano de polvo. Y al dispersar la luz, devuelven sobre todo el azul. Es un efecto parecido al que da color al cielo de la Tierra, aunque aquí lo producen partículas sólidas y no el aire.\n\nPero las tolinas no se quedan arriba para siempre. Son pesadas, y caen despacio, durante años, hacia el suelo helado. Allí se acumulan sobre el hielo y lo van manchando de un tono rojizo, como una lluvia fina de ceniza que nunca se detiene.\n\nSe nota en la región oscura llamada Cthulhu Macula. Es una franja enorme, casi del largo de un país, cubierta de ese material rojizo. Mientras el hielo del corazón brilla claro, esta zona parece teñida de óxido. La neblina azul de arriba y el suelo rojizo de abajo tienen el mismo origen.\n\nAhora sí, párate allí. Ponte sobre el hielo, con los pies firmes y el traje bien cerrado.\n\nLo primero que notarías es el frío. Unos doscientos treinta grados bajo cero. No sentirías viento que te empuje, porque el aire es demasiado escaso para eso.\n\nLevantas la vista, y el cielo no es azul como el de casa.\n\nEl cielo sería oscuro, casi negro, con un tinte azul que se apaga cerca del horizonte.\n\nEs allí, donde la mirada atraviesa más neblina, donde se concentra el color. Arriba, las estrellas seguirían visibles incluso de día. Abajo, una delgada línea azul rodearía el paisaje entero.\n\nY en medio del cielo, el Sol. Seguiría siendo la estrella más brillante de todas, más que cualquier otra. Pero sería muy pequeño, apenas un punto. Aun así, daría más luz que la Luna llena en nuestras noches, y alcanzaría para ver tus propias manos y las sombras largas sobre el hielo.\n\nCuando se acercara al horizonte, el atardecer sería lento. Un día en Plutón dura casi una semana terrestre, así que la luz bajaría poco a poco, durante horas. El hielo pasaría del blanco al gris, y de ahí al azul oscuro.\n\nNo habría ningún sonido. Ni viento, ni voces, ni el roce de nada. Solo el frío, la luz débil y esa línea azul en el borde del mundo.\n\nY quizá, mientras la luz se apaga, mirarías hacia otro punto del cielo. Allí, inmóvil sobre un solo lado del horizonte, colgaría una luna enorme, que nunca se mueve."
+    },
+    {
+      "title": "El cinturón de Kuiper y un muñeco de nieve",
+      "question": "¿Qué forma tienen los objetos que nunca se fundieron ni se chocaron con fuerza?",
+      "reveal": "Arrokoth, un objeto del cinturón de Kuiper formado por dos lóbulos unidos con suavidad, conserva casi intacta la forma con la que se juntó hace unos 4.500 millones de años.",
+      "beats": [
+        "El cinturón de Kuiper es una región con cuerpos helados más allá de Neptuno, entre unas 30 y 50 unidades astronómicas",
+        "Cientos de miles de objetos de más de 100 kilómetros, según estimaciones actuales",
+        "Los astrónomos pensaron que serían mundos congelados sin cambios desde la formación del sistema solar",
+        "New Horizons continuó su viaje hacia 2014 MU69, llamado Arrokoth",
+        "Arrokoth tiene dos lóbulos unidos, como un muñeco de nieve achatado, de unos 35 kilómetros de largo",
+        "Su superficie suave y su color rojizo indican un encuentro muy lento entre dos cuerpos",
+        "Eso apoya la idea de que algunos planetesimales se formaron por colapso gradual de nubes de partículas, no por colisiones violentas"
+      ],
+      "ambience": "ice",
+      "image_queries": [
+        "Arrokoth New Horizons",
+        "2014 MU69 New Horizons",
+        "Arrokoth bilobate",
+        "Arrokoth color",
+        "Arrokoth neck",
+        "Kuiper belt object",
+        "Kuiper belt illustration",
+        "Kuiper belt Hubble",
+        "New Horizons spacecraft Kuiper belt",
+        "Arrokoth surface"
+      ],
+      "video_queries": [
+        "Arrokoth flyby animation",
+        "Kuiper belt visualization",
+        "New Horizons Arrokoth rotation"
+      ],
+      "text": "Hay un lugar, a seis mil millones de kilómetros del Sol, donde la luz del día se parece a una noche clara con luna. Allí el hielo casi nunca se derrite. Y en ese lugar, desde hace mucho tiempo, flotan millones de cuerpos que nadie había visto de cerca.\n\nLos astrónomos llaman a esta región el cinturón de Kuiper. Empieza justo después de la órbita de Neptuno, a unas treinta veces la distancia entre la Tierra y el Sol. Se extiende hasta unas cincuenta veces esa distancia. Es una franja ancha, parecida a un disco, llena de cuerpos helados que giran despacio alrededor de la estrella.\n\nSegún las estimaciones actuales, hay cientos de miles de objetos de más de cien kilómetros de ancho. Si pudieras recorrer una de esas montañas de hielo a pie, tardarías un día entero en cruzarla. Y de los objetos más pequeños, los que miden metros o centímetros, nadie ha podido hacer una cuenta fiable.\n\nDurante décadas, los científicos pensaron que todos esos cuerpos serían mundos congelados. Allí el frío es tan intenso que nada cambia. Se les imaginaba como fósiles, intactos desde que se formó el sistema solar.\n\nPero quedaba una pregunta sencilla. ¿Qué forma tienen los objetos que nunca se fundieron ni se chocaron con fuerza?\n\nNadie lo sabía. Desde la Tierra, esos cuerpos son puntos apenas visibles, y los telescopios no distinguen su silueta. Había que ir hasta allí.\n\nPor eso, después de pasar junto a Plutón, la sonda New Horizons no se detuvo. Los ingenieros la dirigieron hacia un objeto aún más lejano, con un nombre de catálogo poco poético: dos mil catorce MU sesenta y nueve. Más tarde recibiría un nombre mejor, Arrokoth, una palabra que significa cielo en una lengua de los pueblos originarios de Norteamérica.\n\nPasaron más de tres años. La nave avanzó en silencio, sola, y el objeto creció poco a poco como una mota en la pantalla. Al principio los datos eran confusos. La luz que llegaba parecía subir y bajar, como si algo largo estuviera girando.\n\nEntonces llegaron las imágenes nítidas.\n\nArrokoth tenía dos partes redondeadas, una junto a la otra.\n\nUna era más grande, la otra algo más pequeña. Estaban unidas por una zona estrecha, como un muñeco de nieve un poco aplastado. En total, el objeto mide unos treinta y cinco kilómetros de largo, más o menos lo que una ciudad mediana de extremo a extremo.\n\nLo más sorprendente era su piel. Casi no había cráteres grandes ni grietas profundas. La superficie se veía suave, con un color rojizo, tal vez por moléculas orgánicas que la luz ultravioleta transformó durante miles de millones de años.\n\nEsa suavidad contaba algo. Si dos cuerpos se hubieran estrellado con violencia, habrían quedado deformados o rotos. Pero estos dos lóbulos se tocaron con lentitud, a una velocidad parecida a la de una persona que camina. Se acercaron, se rozaron y se quedaron pegados.\n\nLos científicos piensan que esto apoya una idea nueva sobre cómo nacieron los planetesimales, los ladrillos de los planetas. Quizá muchos no se formaron a golpes, sino por un colapso gradual. Una nube de granos de polvo y hielo se fue juntando, despacio, bajo su propia gravedad, hasta formar un cuerpo.\n\nTodavía quedan detalles por resolver, y no todos los expertos lo ven igual. Pero Arrokoth es una de las pruebas más claras que tenemos.\n\nY la respuesta a la pregunta es esta.\n\nArrokoth conserva casi intacta la forma con la que se juntó hace unos cuatro mil quinientos millones de años.\n\nMira la escala. Ese abrazo lento ocurrió antes de que existiera la Tierra tal como la conoces, antes del primer océano. Y nada lo ha perturbado desde entonces. Estás mirando, por primera vez, una página del libro original de los mundos, todavía cerrada.\n\nDetrás de la sonda, Arrokoth se fue apagando hasta volverse un punto. Pero New Horizons siguió adelante, y en el camino quedaban otras preguntas. Si el cinturón guardaba tantos cuerpos así, ¿qué lugar ocupaba Plutón entre ellos?"
+    },
+    {
+      "title": "Plutón, Eris y el borde invisible",
+      "question": "¿Por qué Plutón dejó de llamarse planeta, y qué hay aún más lejos?",
+      "reveal": "El Sol no termina en el cinturón de Kuiper: más allá se extiende una nube de cometas que podría llegar a cerca de un año luz, y New Horizons y las Voyager siguen avanzando hacia ese borde.",
+      "beats": [
+        "El hallazgo de Eris en 2005, un cuerpo muy parecido a Plutón en tamaño y masa",
+        "La Unión Astronómica Internacional define en 2006 la categoría de planeta enano",
+        "Plutón y otros objetos como Eris, Haumea y Makemake forman una familia diversa",
+        "El disco disperso y los objetos con órbitas muy alargadas",
+        "La nube de Oort, hipotética y no observada directamente, como fuente de cometas de largo período",
+        "La heliopausa, donde el viento solar deja de dominar, alcanzada por las Voyager",
+        "Las naves siguen en silencio hacia el espacio interestelar",
+        "Cierre sereno: un sistema solar mayor y más hermoso de lo que imaginábamos, y un Plutón que sigue vivo"
+      ],
+      "ambience": "deep_space",
+      "image_queries": [
+        "Eris dwarf planet",
+        "Eris and Dysnomia Hubble",
+        "Haumea dwarf planet",
+        "Makemake dwarf planet",
+        "Kuiper belt Webb",
+        "Oort cloud illustration",
+        "Voyager 1 spacecraft",
+        "Voyager heliosphere",
+        "Pluto New Horizons farewell",
+        "Solar system edge illustration"
+      ],
+      "video_queries": [
+        "Kuiper belt Oort cloud visualization",
+        "heliosphere Voyager animation",
+        "solar system zoom out visualization"
+      ],
+      "text": "En el año dos mil cinco, un astrónomo californiano revisaba fotografías tomadas dos años antes con el telescopio del monte Palomar. Se llamaba Mike Brown, y entre las manchas de luz encontró una que se movía muy despacio. Era un punto tenue, a casi el triple de distancia que Plutón.\n\nMidieron su brillo y calcularon su tamaño. Resultó ser casi tan grande como Plutón, y bastante más masivo. Lo llamaron Eris, como la diosa griega de la discordia. El nombre fue más certero de lo que nadie pensaba.\n\nPorque ahora había una pregunta incómoda. Si Plutón era un planeta, Eris también lo era. ¿Y cuántos más esperaban, todavía sin descubrir, en aquella oscuridad helada?\n\nLos astrónomos se reunieron en Praga en el año dos mil seis. La Unión Astronómica Internacional tenía que decidir qué es un planeta. Después de varios días de debate, acordaron tres condiciones. Debe orbitar alrededor del Sol, debe ser lo bastante masivo para ser casi redondo, y debe haber despejado su vecindad de otros cuerpos.\n\nPlutón cumplía las dos primeras. La tercera no. Comparte su camino con miles de objetos helados, y no domina ninguno de ellos.\n\nAsí nació otra categoría, la de planeta enano.\n\nPlutón no cambió en absoluto. Su corazón de nitrógeno siguió respirando, y su cielo azul siguió ahí. Cambió la forma en que lo nombramos, y con ella la manera de entender el lugar donde vive.\n\nHoy conocemos cinco planetas enanos reconocidos. Están Plutón y Eris, y también Haumea, que gira tan rápido que se estiró como un balón de rugby. Está Makemake, brillante y rojizo, y Ceres, que vive mucho más cerca, entre Marte y Júpiter. Son mundos distintos entre sí, una familia diversa. Ninguno se parece del todo a otro.\n\nEris merece una mirada más. Su órbita es muy inclinada y muy alargada. Se aleja del Sol casi cien veces más que la Tierra, y tarda unos quinientos sesenta años en completar una vuelta. Pertenece a una región llamada disco disperso, formada por cuerpos que Neptuno empujó hace mucho tiempo hacia caminos extensos y excéntricos.\n\nY más allá del disco disperso, los mapas se vuelven más honestos. Se vuelven dudas.\n\nLos astrónomos creen que el Sol está rodeado por una enorme nube de cometas, llamada nube de Oort. Nadie la ha visto. Nadie ha enviado una sonda a tocarla. Sabemos de ella por los cometas que a veces cruzan el cielo después de viajar durante miles de años, venidos desde todas las direcciones a la vez. Esa forma de llegar sugiere un caparazón esférico, y no un disco plano como el cinturón.\n\nSe calcula que esa nube podría extenderse hasta cerca de un año luz del Sol. Un año luz es la distancia que recorre la luz en un año completo. Si caminaras sin descansar, tardarías muchos millones de años en cruzarlo.\n\nEl Sol no termina en el cinturón de Kuiper.\n\nSu familia sigue más allá, en una niebla de hielo y de cometas dormidos, tan dispersa que entre uno y otro hay distancias enormes. Su borde exterior queda a casi un cuarto del camino hasta la estrella más cercana.\n\nMientras tanto, hay un borde que sí hemos tocado. Es la heliopausa, el lugar donde el viento del Sol deja de dominar. Desde el Sol sale una corriente constante de partículas, que forma una burbuja a su alrededor. Más allá, empieza el gas que llena el espacio entre las estrellas.\n\nLas dos Voyager lo cruzaron hace unos años, la primera en dos mil doce y la segunda en dos mil dieciocho. Ambas llevan casi medio siglo de viaje. Ya no están en el territorio del Sol, pero todavía no han llegado a la nube de Oort, que apenas empieza lejos de ellas.\n\nSiguen avanzando, sin prisa y sin ruido. Sus radios envían una señal muy débil, cada vez más lenta en llegar. Un día se apagarán. Y aun entonces seguirán su camino entre las estrellas.\n\nNew Horizons va detrás de ellas, con Plutón y Arrokoth en su memoria. También se dirige hacia ese borde, con la calma de quien ya vio lo que había que ver.\n\nHace un siglo, el sistema solar terminaba en una bola de roca que apenas se distinguía en una placa fotográfica. Hoy sabemos que es mucho más grande. Tiene mundos con corazones de hielo, lunas que giran en pareja, cielos azules en la oscuridad y cometas dormidos a un año luz de distancia.\n\nY Plutón sigue ahí. Pequeño, frío, activo, todavía lleno de preguntas. Aún le queda un largo camino alrededor del Sol, y lo recorrerá con la misma paciencia de siempre.\n\nTú también has llegado lejos esta noche. Deja que el frío quede atrás, y que la luz del Sol sea un punto suave en tu memoria. Respira despacio. Ahí afuera todo sigue su curso, sin prisa. Buenas noches."
     }
   ],
-  "cold_open": "Hay un lugar donde podría estar lloviendo diamante, muy abajo, bajo nubes azules que ningún ojo humano ha visto de cerca.\n\nDurante mucho tiempo pensamos que Urano y Neptuno eran simples bolas de hielo, mundos apagados en el borde del sistema solar. Pero algo en ellos no encajaba. Sus colores. Sus vientos. Una luna que gira al revés.\n\n¿Qué hay realmente dentro de un gigante helado?\n\nEsta noche viajaremos hasta allí. Pasaremos junto a un planeta tumbado sobre su costado, y junto a otro donde soplan los vientos más rápidos que se hayan medido. Veremos anillos tenues y una luna capturada, llegada de muy lejos.\n\nNo hay prisa. Todo lo que oirás es ciencia real, contada despacio, mientras las imágenes pasan frente a ti.\n\nTú no tienes que hacer nada.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nSolo escuchar, y dejarte llevar hasta el borde del mapa.",
+  "cold_open": "A más de cinco mil millones de kilómetros del Sol, en un mundo que casi nadie ha visitado, hay una llanura de hielo con forma de corazón.\n\nDurante décadas creímos que Plutón era una roca congelada y muerta, un punto oscuro al final del sistema solar. Pero esa llanura se renueva sola. Su hielo fluye, lento como un glaciar, y vuelve a empezar.\n\n¿Cómo puede moverse algo en un lugar tan frío?\n\nEsta noche pasaremos más allá de Neptuno. Buscaremos un planeta que nunca existió. Viajaremos nueve años en una sola nave, hasta ver montañas de agua congelada y un cielo azul sobre un horizonte helado.\n\nSin prisa. Con ciencia real, contada con calma.\n\nNo tienes nada que hacer, solo escuchar.\n\nSilencio.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nEmpieza el viaje hacia la orilla oscura del sistema solar.",
   "sources": [
-    "Voyager 2",
+    "New Horizons",
     "NASA",
-    "Hubble Space Telescope",
-    "SLAC National Accelerator Laboratory",
-    "Jet Propulsion Laboratory"
+    "Lowell Observatory",
+    "International Astronomical Union",
+    "Voyager 1",
+    "Voyager 2",
+    "Palomar Observatory"
   ],
   "review": {
-    "suggested": 18,
-    "applied": 18,
+    "suggested": 23,
+    "applied": 23,
     "fixes": [
       {
         "section": "chapter_1",
-        "find": "Hace ciento sesenta y cinco años, en tu familia quizá nadie imaginaba tu vida. Neptuno estaba entonces en el mismo punto del cielo donde fue descubierto.",
-        "replace": "Cuando Neptuno fue descubierto, en tu familia quizá nadie imaginaba tu vida. En dos mil once regresó por fin al mismo punto del cielo donde lo encontraron.",
-        "reason": "error factual y repetición"
+        "find": "tardarías más de cincuenta mil años en recorrerla",
+        "replace": "tardarías unos cien mil años en recorrerla",
+        "reason": "cálculo erróneo"
       },
       {
         "section": "chapter_1",
-        "find": "Es un frío de más de doscientos grados bajo cero",
-        "replace": "Es un frío de casi doscientos grados bajo cero",
-        "reason": "cifra conservadora"
+        "find": "Un nombre que a comienzos del siglo veinte todavía no existía, y que un hombre empezó a buscar con una obstinación admirable, mirando fotografías del cielo una y otra vez, bajo una lámpara, en una cúpula de Arizona.",
+        "replace": "Un nombre que a comienzos del siglo veinte todavía no existía. Un hombre empezó a buscarlo con obstinación, mirando fotografías del cielo una y otra vez, bajo una lámpara, en una cúpula de Arizona.",
+        "reason": "oración demasiado larga"
       },
       {
         "section": "chapter_2",
-        "find": "Si pudieras caminar por la superficie de nuestro planeta, tendrías que dar cuatro vueltas completas, una tras otra, para recorrer la distancia que cruza uno de ellos de lado a lado.",
-        "replace": "Para cruzar uno de ellos de lado a lado, tendrías que alinear cuatro Tierras, una tras otra.",
-        "reason": "error de cálculo"
+        "find": "un joven de Kansas, de veintitrés años, llamado Clyde Tombaugh",
+        "replace": "un joven de Kansas, de veintidós años, llamado Clyde Tombaugh",
+        "reason": "edad correcta"
       },
       {
         "section": "chapter_2",
-        "find": "Ese nombre viene de una época en que los astrónomos llamaban hielos a ciertas sustancias, como el agua, el amoníaco y el metano, que a temperaturas bajas se congelan con facilidad.",
-        "replace": "Ese nombre viene de una época en que los astrónomos llamaban hielos a ciertas sustancias, como el agua, el amoníaco y el metano. A temperaturas bajas, esas sustancias se congelan con facilidad.",
-        "reason": "frase larga"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Pero la pista es sugerente: quizá este sea el tipo de planeta más común de la galaxia, y nuestro sistema solar, con su Júpiter enorme, sea el que tiene un aspecto algo especial.",
-        "replace": "Pero la pista es sugerente: quizá este sea el tipo de planeta más común de la galaxia. Nuestro sistema solar, con su Júpiter enorme, sería entonces el de aspecto algo especial.",
-        "reason": "frase larga"
+        "find": "de una zona cercana a las estrellas Géminis",
+        "replace": "de una zona del cielo cercana a la constelación de Géminis",
+        "reason": "Géminis es una constelación"
       },
       {
         "section": "chapter_3",
-        "find": "Hay una sala en California donde, en enero de mil novecientos ochenta y seis, un grupo de ingenieros esperaba",
-        "replace": "En una sala de California, en enero de mil novecientos ochenta y seis, un grupo de ingenieros esperaba",
-        "reason": "apertura repetida"
+        "find": "Plutón mide unos dos mil trescientos setenta y seis kilómetros de diámetro",
+        "replace": "Plutón mide casi dos mil cuatrocientos kilómetros de diámetro",
+        "reason": "cifra redondeada para locución"
       },
       {
         "section": "chapter_3",
-        "find": "Todo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en 1986 y 1989.",
-        "replace": "Todo lo que vimos de cerca de Urano y Neptuno proviene de dos sobrevuelos de una misma nave, en mil novecientos ochenta y seis y mil novecientos ochenta y nueve.",
-        "reason": "cifras para TTS"
+        "find": "Piensa en lo que eso significa. La Luna es una cuarta parte",
+        "replace": "Compara. La Luna es una cuarta parte",
+        "reason": "muletilla repetida"
       },
       {
         "section": "chapter_4",
-        "find": "Hay una pregunta que los astrónomos se hacen desde hace décadas, y tiene que ver con un detalle que casi nadie nota.",
-        "replace": "Los astrónomos se hacen desde hace décadas una pregunta sobre un detalle que casi nadie nota.",
-        "reason": "apertura repetida"
+        "find": "una madrugada de enero",
+        "replace": "una tarde de enero",
+        "reason": "el lanzamiento fue por la tarde"
       },
       {
         "section": "chapter_4",
-        "find": "hace unos cuatro mil quinientos millones de años",
-        "replace": "hace más de cuatro mil millones de años",
-        "reason": "cifra conservadora"
+        "find": "Daría menos energía que una bombilla doméstica grande.",
+        "replace": "Daría menos energía que un par de bombillas domésticas.",
+        "reason": "potencia aproximada de unos 200 vatios"
+      },
+      {
+        "section": "chapter_4",
+        "find": "cruzas la distancia entre Madrid y Buenos Aires en menos de siete minutos",
+        "replace": "cruzas la distancia entre Madrid y Buenos Aires en unos diez minutos",
+        "reason": "cálculo erróneo"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Piensa en lo que eso significa. Una nave cruzaba",
+        "replace": "Imagina la escena. Una nave cruzaba",
+        "reason": "muletilla repetida"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Esa tarde, en pocas horas, New Horizons",
+        "replace": "Ese día, en pocas horas, New Horizons",
+        "reason": "el sobrevuelo fue por la mañana"
       },
       {
         "section": "chapter_5",
-        "find": "pero incapaz de darte sombra de mediodía. Sería como un crepúsculo que nunca termina.",
-        "replace": "y aun así el día entero parecería un crepúsculo que nunca termina.",
-        "reason": "error factual"
+        "find": "Eso es como ir de Ciudad de México a Guadalajara y no ver nada más que una sábana blanca.",
+        "replace": "Es como ir de Ciudad de México a Monterrey y más allá, viendo solo una sábana blanca.",
+        "reason": "comparación de distancia más exacta"
+      },
+      {
+        "section": "chapter_5",
+        "find": "la presión en la superficie es miles de veces menor que la de la Tierra",
+        "replace": "la presión en la superficie es unas cien mil veces menor que la de la Tierra",
+        "reason": "cifra más exacta"
+      },
+      {
+        "section": "chapter_5",
+        "find": "tiene, probablemente, menos de unos pocos millones de años",
+        "replace": "tiene, probablemente, menos de diez millones de años",
+        "reason": "frase confusa"
       },
       {
         "section": "chapter_6",
-        "find": "Uno blanco, helado, con una superficie marcada por manchas oscuras que nadie esperaba.",
-        "replace": "Uno pequeño y helado, con una superficie que parece rota y vuelta a armar.",
-        "reason": "enlace con el capítulo siguiente"
+        "find": "Y se alzan varios kilómetros entre una y otra, un relieve que nadie esperaba",
+        "replace": "Y se alzan cientos de metros, separadas por varios kilómetros, un relieve que nadie esperaba",
+        "reason": "dato corregido"
+      },
+      {
+        "section": "chapter_6",
+        "find": "A menos doscientos treinta grados, todo cambia.",
+        "replace": "A este frío, todo cambia.",
+        "reason": "cifra repetida"
       },
       {
         "section": "chapter_7",
-        "find": "Hay una luna de Urano que, vista de cerca, parece un rompecabezas armado por alguien con prisa.",
-        "replace": "Una luna de Urano, vista de cerca, parece un rompecabezas armado por alguien con prisa.",
-        "reason": "apertura repetida"
-      },
-      {
-        "section": "chapter_7",
-        "find": "En el borde de uno de esos cañones, un acantilado sube a unos veinte kilómetros de altura.",
-        "replace": "En el borde de uno de esos cañones, según las imágenes de Voyager 2, un acantilado se alzaría unos veinte kilómetros.",
-        "reason": "certeza excesiva"
+        "find": "Su presión es miles de veces menor que la de la Tierra.",
+        "replace": "Su presión es unas cien mil veces menor que la de la Tierra.",
+        "reason": "cifra más exacta"
       },
       {
         "section": "chapter_8",
-        "find": "Eran géiseres. Material oscuro lanzado hacia arriba desde una superficie helada, a doscientos grados bajo cero.",
-        "replace": "Eran géiseres. Material oscuro lanzado hacia arriba desde una superficie helada, a más de doscientos treinta grados bajo cero.",
-        "reason": "coherencia de temperatura"
+        "find": "Allí el hielo no se derrite, ni siquiera se mueve.",
+        "replace": "Allí el hielo casi nunca se derrite.",
+        "reason": "contradice el hielo que fluye en Plutón"
       },
       {
         "section": "chapter_8",
-        "find": "Su órbita se acorta, lentamente, unos pocos centímetros cada año.",
-        "replace": "Su órbita se acorta, muy lentamente, con el paso de los siglos.",
-        "reason": "cifra no verificada"
-      },
-      {
-        "section": "chapter_8",
-        "find": "Sus pedazos formarían un anillo, tal vez más brillante que el de Saturno.",
-        "replace": "Sus pedazos formarían un anillo.",
-        "reason": "especulación"
+        "find": "Piénsalo un momento. Ese abrazo lento",
+        "replace": "Mira la escala. Ese abrazo lento",
+        "reason": "muletilla repetida"
       },
       {
         "section": "chapter_9",
-        "find": "El experimento dura una fracción de segundo.",
-        "replace": "El experimento duró una fracción de segundo.",
-        "reason": "tiempo verbal"
+        "find": "a casi el doble de distancia que Plutón",
+        "replace": "a casi el triple de distancia que Plutón",
+        "reason": "dato corregido"
       },
       {
         "section": "chapter_9",
-        "find": "Un año de ciento sesenta y cinco años en uno, y de ochenta y cuatro en el otro.",
-        "replace": "Un año que dura ciento sesenta y cinco años terrestres en uno, y ochenta y cuatro en el otro.",
-        "reason": "claridad oral"
+        "find": "Resultó ser casi igual que Plutón, y un poco más masivo.",
+        "replace": "Resultó ser casi tan grande como Plutón, y bastante más masivo.",
+        "reason": "dato más exacto"
+      },
+      {
+        "section": "chapter_9",
+        "find": "Sus corazones de nitrógeno siguieron respirando, y su cielo azul siguió ahí.",
+        "replace": "Su corazón de nitrógeno siguió respirando, y su cielo azul siguió ahí.",
+        "reason": "singular correcto"
+      },
+      {
+        "section": "chapter_9",
+        "find": "Y casi a mitad de camino entre nosotros y la estrella más cercana.",
+        "replace": "Su borde exterior queda a casi un cuarto del camino hasta la estrella más cercana.",
+        "reason": "distancia exagerada"
       }
     ]
   },
-  "topic": "Neptuno y Urano: los gigantes helados en los confines del sistema solar",
+  "topic": "Plutón y el cinturón de Kuiper: viaje a los mundos helados más allá de Neptuno",
   "shorts": [
     {
-      "title": "Un planeta que se descubrió con lápiz y papel",
-      "hook": "Lo encontraron antes de verlo",
-      "narration": "Un planeta fue encontrado primero en una hoja de papel, y solo después en el cielo. Los astrónomos notaron que Urano iba a veces adelantado y a veces atrasado, con diferencias mínimas pero constantes. Algo invisible lo estaba jalando. Dos jóvenes matemáticos, uno en Inglaterra y otro en Francia, calcularon por separado dónde debía estar ese algo. Pasaron meses sumando y corrigiendo, sin telescopio. El francés Urbain Le Verrier envió su resultado a Berlín. La noche del veintitrés de septiembre de mil ochocientos cuarenta y seis, el astrónomo Johann Galle apuntó hacia el lugar indicado y, en menos de una hora, halló Neptuno. Estaba a menos de un grado de lo calculado, más o menos el ancho de tu dedo meñique con el brazo estirado. Las matemáticas habían visto lo que los ojos no alcanzaban. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "Las montañas de Plutón flotan sobre hielo",
+      "hook": "Las montañas de Plutón flotan",
+      "narration": "Las montañas de Plutón no están clavadas en el suelo. Flotan. Junto a la gran llanura con forma de corazón se alza una hilera de picos que alcanzan unos tres mil quinientos metros. Están hechos de agua congelada, que a casi doscientos treinta grados bajo cero se vuelve tan dura como el granito. Pero el suelo que los rodea es hielo de nitrógeno, blando, y el agua helada es menos densa que él. Así que cada cumbre sería como un témpano en el mar, una balsa de piedra helada empujada por una corriente tan lenta que no la notarías en toda una vida. Los científicos creen que así se amontonan en ciertos rincones de la llanura, aunque los detalles siguen en estudio. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Neptune planet Voyager 2",
-        "Neptune blue planet full disk",
-        "Uranus planet Voyager 2",
-        "Neptune Uranus size comparison"
+        "Pluto Norgay Montes mountains",
+        "Pluto Sputnik Planitia nitrogen ice plain",
+        "Pluto mountains water ice New Horizons",
+        "Pluto heart Tombaugh Regio close up"
       ],
       "video_queries": [
-        "Neptune planet rotating animation",
-        "Neptune Voyager 2 flyby"
+        "New Horizons Pluto flyover mountains",
+        "Pluto Sputnik Planitia animation"
       ],
-      "source": "NASA / Voyager 2"
+      "source": "NASA / New Horizons"
     },
     {
-      "title": "Neptuno: vientos más rápidos que el sonido",
-      "hook": "Vientos que superan al sonido",
-      "narration": "En el planeta más lejano del Sol soplan los vientos más rápidos que conocemos. Neptuno recibe unas novecientas veces menos luz que la Tierra, y aun así su atmósfera está llena de tormentas. Voyager 2 midió vientos de más de dos mil kilómetros por hora, más veloces que el sonido en el aire de la Tierra. En un solo minuto, una nube recorrería la distancia entre dos barrios de una ciudad grande, y en una hora cruzaría un país entero. Los investigadores creen que el calor interno del planeta ayuda a moverlas, porque Neptuno irradia más energía de la que recibe del Sol, como una brasa que no se ha apagado del todo. Un mundo que parece apagado guarda más calor del que imaginamos. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "En Plutón, el centro de giro está en el vacío",
+      "hook": "Plutón gira alrededor de la nada",
+      "narration": "Plutón no gira alrededor de nada que puedas tocar. Su luna Caronte pesa tanto que el punto de equilibrio entre ambos queda fuera de Plutón, en el espacio vacío, a unos novecientos kilómetros sobre su superficie. Allí no hay roca ni hielo, solo un lugar sin nombre. Los dos mundos giran alrededor de él, uno frente al otro, como dos personas que se toman de las manos y se inclinan hacia atrás. En la Tierra y la Luna, en cambio, ese punto queda dentro de nuestro planeta. Y hay más: cada uno muestra siempre la misma cara al otro, así que desde un lado de Plutón, Caronte cuelga inmóvil en el cielo. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Neptune Great Dark Spot Voyager 2",
-        "Neptune clouds white methane",
-        "Neptune atmosphere storms Hubble",
-        "Neptune dark spot Hubble"
+        "Pluto Charon system New Horizons",
+        "Charon moon close up",
+        "Pluto and Charon barycenter",
+        "Pluto four small moons Styx Nix Kerberos Hydra"
       ],
       "video_queries": [
-        "Neptune storms atmosphere",
-        "Neptune Great Dark Spot animation"
+        "Pluto Charon orbit animation",
+        "New Horizons Charon rotation"
       ],
-      "source": "NASA / Voyager 2"
+      "source": "NASA / New Horizons"
     },
     {
-      "title": "Un planeta que rueda de lado y tiene noches de 42 años",
-      "hook": "Un planeta que gira tumbado",
-      "narration": "Hay un planeta cuya noche dura cuarenta y dos años seguidos. Es Urano, el único que gira tumbado, con su eje inclinado casi noventa y ocho grados, como una pelota que rueda sobre su órbita. Por eso cada polo recibe cuarenta y dos años de luz y luego otros cuarenta y dos de oscuridad. Un niño que naciera al comienzo de un verano uraniano ya sería adulto cuando llegara el otoño. En el polo, el Sol trazaría un círculo lento en el cielo, sin tocar nunca el horizonte. Es un día que dura más que la infancia y la juventud juntas. Qué lo golpeó hasta dejarlo así, todavía nadie lo sabe con certeza. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "Un hombre encontró Plutón mirando parpadeos",
+      "hook": "Un punto saltó en la oscuridad",
+      "narration": "En febrero de mil novecientos treinta, un punto diminuto saltó de lugar en un visor, y así se descubrió Plutón. Clyde Tombaugh tenía veintitrés años y pasaba noches enteras en una sala oscura comparando placas fotográficas, cada una con cientos de miles de estrellas. Un espejo alternaba entre dos fotos del mismo cielo. Si todo era igual, nada se movía. Mes tras mes, ningún salto. Hasta que una mota minúscula cambió de sitio. Era un mundo nuevo a unos seis mil millones de kilómetros, una distancia que ningún avión recorrería en una vida entera. Lo había encontrado buscando entre miles de estrellas una sola que no estuviera en su sitio. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Uranus planet Voyager 2",
-        "Uranus tilted axis rings",
-        "Uranus Hubble image",
-        "Uranus rings moons"
+        "Clyde Tombaugh Lowell Observatory",
+        "Pluto discovery plates 1930",
+        "Lowell Observatory blink comparator",
+        "Tombaugh Regio Pluto heart"
       ],
       "video_queries": [
-        "Uranus rotation animation",
-        "Uranus Voyager 2 flyby"
+        "Clyde Tombaugh discovery of Pluto",
+        "New Horizons Pluto approach"
       ],
-      "source": "NASA / Voyager 2"
+      "source": "NASA / Lowell Observatory"
     }
   ]
 }
