@@ -100,5 +100,21 @@
     "ai_scenes": 97,
     "ai_status": "ok",
     "date": "2026-10-27"
+  },
+  {
+    "topic": "La Luna: origen, mares de lava, cráteres y las misiones Apolo",
+    "title": "La Luna: Origen, Mares de Lava y Apolo | Documental para Dormir",
+    "video_id": "uMjt6RvWEqA",
+    "voice_test": "B",
+    "shorts": [
+      "op-GAVwQ3Fs",
+      "R7gE1hFMzPE",
+      "FQTcOCkaxD4"
+    ],
+    "minutes": 56.8,
+    "qa_ok": true,
+    "ai_scenes": 108,
+    "ai_status": "ok",
+    "date": "2026-10-28"
   }
 ]

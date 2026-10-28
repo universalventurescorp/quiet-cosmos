@@ -1,534 +1,506 @@
 {
-  "title": "Plutón y el Cinturón de Kuiper | Documental Relajante para Dormir",
-  "description": "Plutón y el cinturón de Kuiper son el destino de este documental relajante en español: un viaje lento y sereno a los mundos helados más allá de Neptuno, desde el descubrimiento de Plutón hasta las imágenes de la sonda New Horizons. Recorreremos llanuras de hielo de nitrógeno, montañas de hielo de agua, una luna gigante y un objeto con forma de muñeco de nieve.\n\nEs un relato pensado para escuchar con calma, aprender ciencia real y dejarse llevar hasta el sueño. Cada capítulo abre una pregunta sencilla y la responde con lo que sabemos hoy, señalando con honestidad lo que todavía es un misterio.",
+  "title": "La Luna: Origen, Mares de Lava y Apolo | Documental para Dormir",
+  "description": "La Luna: origen, mares de lava, cráteres y las misiones Apolo es un documental espacial pausado para relajarte, aprender ciencia real y quedarte dormido. Viajaremos desde el choque gigante que la formó hasta las huellas que aún siguen intactas en su polvo.\n\nCon imágenes reales de la NASA y una narración tranquila, recorreremos mares de basalto, cráteres, el lado oculto y los viajes de los astronautas. Es un episodio para escuchar con calma, sin prisa, mientras la noche avanza.",
   "tags": [
-    "Plutón documental",
-    "cinturón de Kuiper",
-    "documental espacio para dormir",
-    "documental relajante espacio",
-    "New Horizons Plutón",
-    "Plutón explicado",
-    "planeta enano Plutón",
-    "Caronte luna de Plutón",
-    "Arrokoth",
-    "objetos transneptunianos",
-    "sistema solar documental",
-    "viaje por el sistema solar",
-    "Plutón Sputnik Planitia",
-    "Eris planeta enano",
-    "espacio relajante para dormir",
-    "documental astronomía en español",
-    "por qué Plutón no es un planeta",
-    "Clyde Tombaugh Plutón"
+    "la luna documental",
+    "documental de la luna para dormir",
+    "origen de la luna",
+    "mares de la luna",
+    "misiones Apolo",
+    "Apolo 11 documental",
+    "cráteres de la luna",
+    "lado oculto de la luna",
+    "documental espacial relajante",
+    "documental del espacio para dormir",
+    "la luna explicada",
+    "cómo se formó la luna",
+    "impacto gigante Theia",
+    "rocas lunares",
+    "Lunar Reconnaissance Orbiter",
+    "viaje a la luna relajante",
+    "ciencia para dormir",
+    "luna y mareas"
   ],
   "thumbnail_texts": [
-    "MÁS ALLÁ DEL HIELO",
-    "EL CORAZÓN DE PLUTÓN",
-    "LA NOCHE DE NEPTUNO"
+    "EL POLVO RECUERDA",
+    "UN MUNDO ROTO",
+    "HUELLAS SIN VIENTO"
   ],
-  "hook_promise": "En Plutón, a más de cinco mil millones de kilómetros del Sol, existe una llanura de hielo en forma de corazón que se renueva sola, con hielo que fluye lentamente como en un glaciar, en un mundo que se creía congelado y muerto.",
+  "hook_promise": "La Luna nació de un choque entre mundos y, como allí no hay viento ni lluvia, las huellas que dejaron los astronautas del Apolo siguen en el polvo casi tal como las dejaron hace más de cincuenta años.",
   "chapters": [
     {
-      "title": "Más allá de la órbita de Neptuno",
-      "question": "¿Qué hay en la oscuridad que empieza donde terminan los planetas?",
-      "reveal": "El borde del sistema solar no está vacío: Neptuno marca solo el comienzo de una región inmensa poblada por cuerpos helados.",
+      "title": "La Luna que miras cada noche",
+      "question": "¿Por qué vemos siempre la misma cara de la Luna y qué son esas manchas oscuras?",
+      "reveal": "Esas manchas oscuras que reconoces a simple vista son enormes llanuras de roca volcánica solidificada, y la Luna lleva miles de millones de años mostrándote siempre la misma cara.",
       "beats": [
-        "Salimos de la región de los planetas gigantes y dejamos atrás a Júpiter, Saturno y Urano",
-        "Neptuno, el último planeta, a unos 4.500 millones de kilómetros del Sol, donde la luz solar es muy tenue",
-        "Cómo se ve el Sol desde allí: una estrella muy brillante, pero apenas un punto",
-        "Las perturbaciones en la órbita de Urano que llevaron a buscar otros mundos más lejanos",
-        "La idea de que al otro lado de Neptuno quedaban restos helados de la formación del sistema solar",
-        "Planteamos la pregunta que nos acompañará: ¿qué tipo de mundos viven en este frío?"
-      ],
-      "ambience": "deep_space",
-      "image_queries": [
-        "Neptune Voyager 2",
-        "Neptune Great Dark Spot",
-        "Neptune Webb",
-        "Triton Voyager 2",
-        "Uranus Voyager 2",
-        "solar system planets montage",
-        "Sun seen from outer solar system",
-        "Neptune rings Webb",
-        "Neptune clouds",
-        "Voyager 2 spacecraft"
-      ],
-      "video_queries": [
-        "solar system flight outer planets visualization",
-        "Neptune rotation animation",
-        "Voyager 2 trajectory animation"
-      ],
-      "text": "Pasas junto a Júpiter y el planeta ya no es más que una luz amarilla en la distancia. Más atrás queda Saturno, con sus anillos tan delgados que, vistos de canto, casi desaparecen. Después Urano, pálido y verdoso, rodando de lado sobre su órbita. Los tres se van quedando atrás, uno tras otro, como farolas en una carretera de noche.\n\nDelante hay un último planeta. Se llama Neptuno, y está a unos cuatro mil quinientos millones de kilómetros del Sol. Si pudieras caminar esa distancia a paso tranquilo, tardarías unos cien mil años en recorrerla. Su luz llega allí tan tenue que el mediodía de Neptuno se parece a un crepúsculo de la Tierra.\n\nY ahora mira hacia atrás, hacia el Sol.\n\nSigue siendo la estrella más brillante del cielo. Pero ya no tiene forma de disco. Es un punto, apenas un alfiler de luz blanca, y su brillo basta para dejar sombras muy nítidas sobre el hielo. No hay calor que puedas sentir en la piel. Solo una claridad pequeña, fría, que te recuerda dónde está el hogar.\n\nAquí, en el borde de lo conocido, nos hacemos una pregunta sencilla. ¿Qué hay en la oscuridad que empieza donde terminan los planetas?\n\nDurante mucho tiempo, nadie lo supo. Los mapas del sistema solar terminaban en Neptuno, y más allá solo había un espacio en blanco. Pero a veces un vacío en el mapa se delata solo, por pequeñas irregularidades en lo que sí se puede ver.\n\nEsa pista llegó desde Urano. En el siglo diecinueve, los astrónomos seguían su órbita con enorme paciencia, noche tras noche. Y el planeta no se comportaba como las cuentas decían. Se adelantaba un poco, luego se atrasaba, como si algo lo tirara de forma muy leve.\n\nLa explicación más natural era que otro cuerpo, aún sin descubrir, lo atraía con su gravedad. Dos matemáticos, trabajando por separado, calcularon dónde debía estar ese mundo oculto. En mil ochocientos cuarenta y seis, un telescopio apuntó a ese lugar del cielo. Y allí estaba Neptuno.\n\nFue un triunfo hermoso. Un planeta encontrado primero con lápiz y papel, y solo después con los ojos.\n\nSin embargo, quedaba una duda. Las cuentas de Urano no terminaron de cuadrar del todo, y algunos pensaron que Neptuno no era el final. Quizá más lejos aún había otros mundos que nadie había visto. La sospecha era razonable. Si la gravedad delataba a un planeta, tal vez delataría a otro.\n\nHabía otra razón para pensar así. Hoy sabemos que el sistema solar nació hace unos cuatro mil seiscientos millones de años, a partir de una nube de gas y polvo. Una parte se juntó para formar el Sol y los planetas. Pero no todo el material encontró un lugar.\n\nCerca del Sol, el calor se llevó los hielos y dejó mundos de roca. Lejos, el frío los conservó. Era razonable suponer que, pasada la órbita de Neptuno, quedaban restos de aquella nube, fragmentos helados que nunca llegaron a ser planetas. Materia original, guardada en un congelador del tamaño de un sistema entero.\n\nEsa fue la idea que fue tomando forma: que Neptuno no era un muro, sino una puerta.\n\nEl borde del sistema solar no está vacío.\n\nNeptuno marca solo el comienzo de una región inmensa, poblada por cuerpos de hielo que llevan miles de millones de años esperando en la penumbra. Tú y yo vivimos en la parte cálida y luminosa de una historia mucho más grande. Casi todo el sistema solar es frío, oscuro y silencioso, y muy poco de él ha sido visitado.\n\nEntonces la pregunta se vuelve más concreta. ¿Qué tipo de mundos viven en este frío? ¿Son simples bloques de hielo, iguales y sin vida geológica, o guardan sorpresas?\n\nPara empezar a responderla, hace falta un nombre. Un nombre que a comienzos del siglo veinte todavía no existía. Un hombre empezó a buscarlo con obstinación, mirando fotografías del cielo una y otra vez, bajo una lámpara, en una cúpula de Arizona."
-    },
-    {
-      "title": "La búsqueda del planeta nueve",
-      "question": "¿Cómo se encuentra un punto de luz diminuto entre miles de estrellas?",
-      "reveal": "Clyde Tombaugh descubrió Plutón en 1930 comparando placas fotográficas y viendo un punto que se movía entre las estrellas fijas.",
-      "beats": [
-        "Percival Lowell y la sospecha de un planeta más allá de Neptuno a comienzos del siglo XX",
-        "El Observatorio Lowell en Arizona y el método de fotografiar el mismo campo en noches distintas",
-        "Clyde Tombaugh, un joven asistente, examina placas con un comparador de parpadeo",
-        "Febrero de 1930: un punto diminuto cambia de lugar entre dos placas",
-        "El nombre Plutón propuesto por Venetia Burney, una niña de once años de Oxford",
-        "Más tarde se vio que Plutón era mucho más pequeño de lo esperado, y que las perturbaciones que motivaron la búsqueda no requerían un planeta grande",
-        "Un descubrimiento que parecía cerrar el mapa del sistema solar pero apenas abría otro capítulo"
+        "La Luna a simple vista: su brillo, sus fases y las manchas que cada cultura interpretó como un rostro, un conejo o un hombre",
+        "Su tamaño y distancia: un cuarto del diámetro de la Tierra, a una distancia en la que cabrían todos los planetas del sistema solar uno junto a otro, según un cálculo ampliamente citado",
+        "La rotación sincrónica: tarda lo mismo en girar sobre sí misma que en dar una vuelta a la Tierra, por eso nos muestra una sola cara",
+        "Galileo y su telescopio en 1609: las primeras montañas y cráteres vistos en otro mundo",
+        "Los astrónomos antiguos llamaron mares a las zonas oscuras, creyendo que eran agua; hoy sabemos que son roca",
+        "Una pregunta que dejamos abierta: ¿de dónde salió este mundo tan grande para un planeta tan pequeño?"
       ],
       "ambience": "none",
       "image_queries": [
-        "Pluto Hubble",
-        "Pluto Charon Hubble",
-        "Pluto moons Hubble",
-        "Pluto Hubble surface map",
-        "Pluto orbit",
-        "Pluto and Charon system",
-        "Pluto Hubble Nix Hydra",
-        "Telescope dome night sky",
-        "Milky Way star field",
-        "Pluto Kerberos Styx"
+        "Moon full Lunar Reconnaissance Orbiter",
+        "Moon near side mosaic",
+        "Moon Mare Imbrium",
+        "Moon Tycho crater",
+        "Moon terminator shadows LRO",
+        "Moon crescent Earth view",
+        "Moon Apennine mountains",
+        "Moon highlands and maria",
+        "Moon Copernicus crater",
+        "Moon Galileo Mission view"
       ],
       "video_queries": [
-        "Pluto Hubble observation animation",
-        "Pluto orbit visualization",
-        "star field time-lapse telescope"
+        "Moon phases visualization LRO",
+        "Moon full rotation 4K NASA",
+        "Moon libration visualization"
       ],
-      "text": "Hay una habitación en Arizona donde todo huele a madera vieja y a productos químicos de revelado. Sobre una mesa, bajo una lámpara, hay dos placas de vidrio del tamaño de una bandeja. Cada una guarda miles de estrellas, y cada estrella es apenas una mota negra sobre el cristal.\n\nAhora piensa en lo que se le pedía a un hombre en esa mesa. Encontrar entre todas esas motas una sola que no estuviera en su sitio. ¿Cómo se encuentra un punto de luz diminuto entre miles de estrellas?\n\nPara llegar a esa mesa, hay que empezar unos años antes. A comienzos del siglo veinte, un astrónomo estadounidense llamado Percival Lowell estaba convencido de que más allá de Neptuno había otro planeta. Lo llamaba, simplemente, el Planeta equis. Era rico, tenaz y muy apasionado, y financió de su bolsillo un observatorio entero para encontrarlo.\n\nEse observatorio se levantó en una colina cerca de Flagstaff, en Arizona. El aire allí es seco y limpio, y de noche las estrellas se ven nítidas. Lowell murió en mil novecientos dieciséis sin haber hallado nada. Pero la búsqueda quedó pendiente, como una carta sin abrir.\n\nEl método era sencillo de explicar y muy duro de cumplir. Se fotografiaba un mismo trozo de cielo en una noche, y se volvía a fotografiar unos días después. Las estrellas lejanas casi no se mueven, así que aparecen idénticas en ambas placas. Pero un planeta, aunque sea lento, se desplaza un poco entre las estrellas fijas.\n\nQuedaba el problema de mirar. Cada placa contenía cientos de miles de estrellas, y había que revisar región tras región, durante meses.\n\nEn mil novecientos veintinueve llegó al observatorio un joven de Kansas, de veintidós años, llamado Clyde Tombaugh. No era astrónomo profesional. Había construido sus propios telescopios en una granja, y había enviado dibujos de Júpiter y Marte a Arizona, que impresionaron a los directores. Lo contrataron como asistente, y le dieron la tarea más paciente de todas.\n\nTombaugh trabajaba con una máquina llamada comparador de parpadeo. Colocaba dos placas del mismo campo, y un espejo alternaba la vista de una a otra, una y otra vez. Si todo era igual, las estrellas permanecían quietas. Si algo se había movido, ese punto saltaba de un lado a otro, como si parpadeara solo.\n\nImagina esa rutina. Noches enteras en una sala oscura, con los ojos pegados a un visor, mirando saltar nada. Un mes. Otro mes. Ningún salto.\n\nEntonces llegó febrero de mil novecientos treinta. Tombaugh comparaba dos placas tomadas en enero, de una zona del cielo cercana a la constelación de Géminis. Y de pronto, un punto diminuto cambió de lugar.\n\nEra un punto tan pequeño que costaba creer que fuera algo.\n\nTombaugh midió la distancia del salto y comprobó que coincidía con la de un cuerpo mucho más allá de Neptuno. Revisó otras placas para estar seguro. Allí estaba, en las dos fechas, sin error posible. Había descubierto un mundo nuevo a unos seis mil millones de kilómetros de distancia, una distancia que ningún avión recorrería en una vida entera.\n\nEl anuncio dio la vuelta al mundo semanas después. Y faltaba un nombre. Lo propuso una niña de once años, Venetia Burney, que vivía en Oxford, en Inglaterra. Su abuelo le leyó la noticia durante el desayuno, y ella pensó en Plutón, el dios romano del inframundo, que reinaba en un lugar oscuro y frío. Su abuelo se lo contó a un astrónomo, y el astrónomo lo envió a Arizona. Los astrónomos lo votaron casi por unanimidad.\n\nPero había algo extraño en este mundo recién nombrado. Parecía demasiado tenue. Si Plutón era el planeta que Lowell había imaginado, debía ser grande, quizá tan pesado como la Tierra. Con los años, las mediciones fueron reduciendo la estimación. Primero fue un poco menor que la Tierra, luego mucho menor, y al final resultó más pequeño que nuestra Luna.\n\nY con eso apareció una incomodidad. Un cuerpo tan ligero no podía haber perturbado la órbita de Urano. Las perturbaciones que habían motivado toda la búsqueda, más tarde se vio, eran errores en las medidas antiguas, no la huella de un planeta enorme.\n\nLowell había acertado en el lugar donde mirar, casi por casualidad. Tombaugh había encontrado algo real, pero distinto de lo que se buscaba.\n\nDurante décadas, Plutón ocupó el último escalón del sistema solar. Parecía que el mapa estaba por fin cerrado. Y sin embargo, ese punto que saltaba en el visor apenas abría otra página. Porque un mundo tan pequeño, tan lejano, tan frío, no podía estar solo. ¿Cuántos más habría escondidos en esa oscuridad, esperando en placas todavía sin revisar?"
+      "text": "Esta noche, si hay cielo despejado, sal a mirar hacia arriba. Ahí está, con su brillo pálido, y sobre su cara clara hay manchas grises que conoces desde niño. Son siempre las mismas. Aunque pasen las semanas y la Luna cambie de forma, esas manchas vuelven a ocupar su lugar. ¿Por qué nunca cambian? ¿Y qué son?\n\nDurante miles de años, la gente las miró sin ayuda de ningún instrumento. En Europa vieron un rostro humano, con ojos y boca. En otros lugares vieron a un hombre cargando un haz de leña. En China, en Japón y en buena parte de América, la gente vio un conejo, de pie junto a un mortero. Todos miraban lo mismo. Cada cultura puso allí lo que más conocía.\n\nY la Luna cambiaba sin prisa. Crecía noche a noche, hasta llenarse de luz. Luego se vaciaba otra vez, hasta casi desaparecer. Una vuelta completa de fases dura casi un mes. Mucho antes de los calendarios escritos, ya se contaban las vidas por ese ritmo.\n\nPero ese brillo es un engaño amable. La Luna no tiene luz propia. Es una roca bastante oscura, y refleja apenas una pequeña parte de la luz del Sol que recibe. Aun así, en una noche despejada, alcanza para proyectar tu sombra en el suelo.\n\nTambién es más pequeña de lo que parece. Su diámetro es de aproximadamente la cuarta parte del de la Tierra. Y está lejos, a unos trescientos ochenta y cuatro mil kilómetros. Según un cálculo muy citado, en ese espacio cabrían todos los planetas del sistema solar, puestos en fila, uno junto a otro.\n\nPiensa en eso un momento. Ocho mundos, con sus anillos y sus gigantes de gas, alineados, y todavía sobraría un poco de espacio.\n\nAhora, volvamos a la pregunta. ¿Por qué esa misma cara, siempre? La respuesta tiene que ver con el tiempo. La Luna gira sobre sí misma, pero lo hace con una lentitud exacta. Tarda lo mismo en dar una vuelta sobre su eje que en dar una vuelta alrededor de la Tierra. Es como si alguien caminara en círculo alrededor de una fogata, sin dejar nunca de mirar hacia las llamas.\n\nA esto se le llama rotación sincrónica. No es casualidad. Con el paso de miles de millones de años, la atracción de la Tierra fue frenando el giro de la Luna, hasta fijarla en ese ritmo. Desde entonces, nos muestra una sola cara. Nadie en la Tierra, en toda la historia humana, la vio de otra manera, hasta hace muy poco.\n\nY las manchas siguieron siendo un misterio hasta que, en el año mil seiscientos nueve, un hombre en Italia apuntó un telescopio hacia ella. Se llamaba Galileo Galilei. Su instrumento era pequeño, apenas un tubo con dos lentes. Pero lo que vio cambió la manera de entender el cielo.\n\nLa Luna no era una esfera lisa y perfecta. Tenía montañas. Tenía cráteres, grandes huecos redondos, con bordes elevados. Las sombras se estiraban sobre ellos, igual que se estiran al atardecer sobre un paisaje de la Tierra.\n\nEra la primera vez que alguien veía el relieve de otro mundo.\n\nQuedaban las zonas oscuras. Los astrónomos de aquella época, y otros anteriores a ellos, las llamaron mares. Pensaron que eran extensiones de agua, y por eso les dieron nombres como Mar de la Tranquilidad o Mar de las Lluvias. Los nombres se quedaron, aunque la idea no.\n\nHoy sabemos que no hay agua en esas llanuras. Son enormes extensiones de roca volcánica, lava que corrió hace miles de millones de años y se enfrió hasta endurecerse. Lo que ves como una mancha es un antiguo río de fuego, convertido en piedra oscura.\n\nY esa piedra lleva todo ese tiempo mirándote, siempre desde el mismo ángulo. Aquel rostro, aquel conejo, aquel hombre con su leña, son llanuras de lava solidificada. La Luna ha mostrado la misma cara durante miles de millones de años.\n\nQuizá eso te parezca extraño. Una compañera tan constante, y todavía tan desconocida. Y queda una pregunta más profunda, que ni Galileo pudo responder. La Tierra es un planeta pequeño. Y sin embargo, tiene una luna enorme, demasiado grande para su tamaño. ¿De dónde salió un mundo así?"
     },
     {
-      "title": "Un mundo diminuto y su compañera",
-      "question": "¿Por qué Plutón y Caronte parecen más un doble sistema que un planeta con su luna?",
-      "reveal": "Caronte es tan grande respecto a Plutón que el centro de gravedad del par queda fuera de Plutón, así que ambos giran alrededor de un punto en el espacio entre ellos.",
+      "title": "El choque que la hizo nacer",
+      "question": "¿De dónde salió la Luna?",
+      "reveal": "La hipótesis más aceptada propone que la Luna se formó con los restos de un choque entre la joven Tierra y un mundo del tamaño de Marte, llamado Theia.",
       "beats": [
-        "Plutón mide unos 2.376 kilómetros de diámetro, menos que la Luna",
-        "Caronte, de unos 1.200 kilómetros, es cerca de la mitad del tamaño de Plutón",
-        "El baricentro del sistema queda en el espacio entre los dos cuerpos",
-        "Ambos muestran siempre la misma cara el uno al otro: están en acoplamiento de marea mutuo",
-        "Las cuatro lunas pequeñas, Estigia, Nix, Cerbero e Hidra, giran alrededor de este par",
-        "Un año en Plutón dura unos 248 años terrestres",
-        "Imaginamos un cielo donde Caronte cuelga inmóvil sobre un solo hemisferio"
+        "Las ideas antiguas sobre su origen: fisión, captura y formación conjunta, y por qué ninguna explicaba todos los datos",
+        "La pista de las rocas Apolo: la Luna y la Tierra tienen una composición de isótopos de oxígeno muy parecida",
+        "La hipótesis del gran impacto: un cuerpo del tamaño de Marte, Theia, golpea la Tierra joven hace unos 4500 millones de años",
+        "Los escombros fundidos forman un disco alrededor de la Tierra y se unen en la Luna en un tiempo relativamente corto",
+        "Una pregunta aún abierta: cuánto material vino de Theia y cuánto de la Tierra, dado lo parecidas que son ambas composiciones",
+        "Lo que sentirías: un cielo ardiente, con un anillo de roca fundida donde luego aparecería la Luna"
       ],
-      "ambience": "deep_space",
+      "ambience": "lava",
       "image_queries": [
-        "Pluto Charon New Horizons",
-        "Charon New Horizons",
-        "Pluto Charon size comparison",
-        "Pluto moons New Horizons",
-        "Nix New Horizons",
-        "Hydra New Horizons",
-        "Pluto Charon Hubble",
-        "Pluto high resolution New Horizons",
-        "Pluto global view",
-        "Charon global mosaic"
+        "giant impact simulation Moon formation",
+        "young Earth molten artist concept",
+        "Moon formation NASA animation",
+        "protoplanetary disk Hubble",
+        "debris disk around young star",
+        "Earth Moon system",
+        "Moon sample Apollo lunar rock",
+        "Moon far side crust",
+        "Moon South Pole-Aitken basin",
+        "Beta Pictoris debris disk"
       ],
       "video_queries": [
-        "Pluto Charon orbit animation",
-        "New Horizons Pluto flyby animation",
-        "Pluto system rotation visualization"
+        "Moon formation giant impact simulation",
+        "Earth and Moon formation visualization",
+        "protoplanetary disk animation"
       ],
-      "text": "Si te paras frente a una fotografía de Plutón tomada desde su compañera, algo no encaja. El mundo que cuelga en el cielo no parece una luna. Parece otro mundo, casi tan grande como el primero.\n\nPlutón mide casi dos mil cuatrocientos kilómetros de diámetro. Es menos que nuestra Luna. Si pudieras viajar en línea recta por su ecuador, cruzarías de un lado al otro en el tiempo que tarda un avión en ir de Ciudad de México a Panamá. Es un mundo pequeño, incluso para los estándares del sistema solar.\n\nY a su lado hay otro. Se llama Caronte, y mide unos mil doscientos kilómetros. Casi la mitad de Plutón.\n\nCompara. La Luna es una cuarta parte del tamaño de la Tierra, y ya nos parece grande. Caronte es proporcionalmente mucho mayor. Por eso la pregunta aparece sola. ¿Es esto un planeta con su luna, o son dos mundos que viajan juntos?\n\nPara responder, hay que mirar cómo se mueven. Cuando una luna pequeña gira alrededor de un planeta grande, solemos decir que el planeta se queda quieto. No es del todo cierto. Ambos giran alrededor de un punto común, el centro de gravedad del par, que los astrónomos llaman baricentro. En la Tierra y la Luna, ese punto queda dentro de la Tierra, a unos cuatro mil setecientos kilómetros de su centro. Nuestro planeta apenas se bambolea.\n\nCon Plutón y Caronte ocurre otra cosa.\n\nCaronte pesa lo bastante como para tirar de Plutón con fuerza. El punto de equilibrio se desplaza, y se desplaza tanto que sale de Plutón por completo.\n\nQueda en el espacio vacío entre los dos cuerpos, a unos novecientos kilómetros por encima de la superficie de Plutón. Allí no hay nada. Ni roca, ni hielo. Solo un lugar sin nombre, y alrededor de él, ambos mundos describen su círculo lento. Plutón no está quieto con una luna dando vueltas. Los dos giran, uno frente al otro, como dos personas que se toman de las manos y se inclinan hacia atrás.\n\nHay algo más, y es todavía más extraño. Caronte siempre muestra la misma cara a Plutón. Y Plutón siempre muestra la misma cara a Caronte. Los astrónomos lo llaman acoplamiento de marea mutuo. Con el paso de miles de millones de años, la atracción entre ambos fue frenando sus giros, hasta que cada uno quedó fijo mirando al otro.\n\nLa Luna también nos muestra siempre la misma cara. Pero nosotros, en la Tierra, seguimos girando bajo ella. En Plutón, el baile ya terminó.\n\nAlrededor de este par giran cuatro lunas más pequeñas. Se llaman Estigia, Nix, Cerbero e Hidra. Son diminutas, de formas irregulares, algunas del tamaño de una ciudad. Orbitan lejos, en círculos amplios, y no alrededor de Plutón solo, sino alrededor del par entero. Como si el punto vacío entre los dos mundos fuera el verdadero centro de la familia.\n\nY el tiempo allí se mide de otra manera. Un año en Plutón dura unos doscientos cuarenta y ocho años terrestres. Si alguien hubiera nacido allí el día en que Tombaugh vio ese punto moverse, aún no habría cumplido su primer año. Ni siquiera estaría cerca de la mitad de la primera vuelta.\n\nAhora piensa en cómo sería el cielo. Si te pararas en el hemisferio que mira a Caronte, lo verías allí, grande, a un lado del cielo. Mucho más grande que la Luna sobre nuestras cabezas. No saldría ni se pondría. Los días pasarían, las estaciones tardarían décadas en cambiar, y Caronte seguiría en el mismo lugar, inmóvil, como una lámpara pálida colgada de un hilo.\n\nY en el otro hemisferio, nunca sabrías que existe. Podrías vivir toda una vida sin verlo.\n\nDos mundos pequeños, helados, sujetos el uno al otro en la oscuridad. Y sin embargo, hasta hace poco, nadie sabía cómo eran de cerca. Eran apenas manchas borrosas en las mejores fotografías. Para saber qué había allí de verdad, alguien tendría que ir a mirar."
+      "text": "Durante siglos, los astrónomos tuvieron tres respuestas para una sola pregunta. Y ninguna terminaba de convencer.\n\nLa primera decía que la Luna había salido de la propia Tierra. Una Tierra joven, girando muy rápido, habría lanzado un pedazo de sí misma al espacio. Era una idea elegante. Pero los cálculos mostraron que la Tierra no habría podido girar tan deprisa. Además, el sistema Tierra y Luna tiene más movimiento de giro del que esa idea permitía.\n\nLa segunda decía que la Luna nació lejos, en otro lugar, y que la Tierra la capturó al pasar. Pero atrapar un cuerpo tan grande es muy difícil. Un mundo que pasa a esa velocidad suele seguir de largo. Para quedarse, necesita frenar justo en el momento exacto.\n\nLa tercera decía que ambas se formaron juntas, como hermanas, a partir de la misma nube de polvo. Sonaba natural. Sin embargo, no explicaba por qué la Luna tiene un núcleo de hierro tan pequeño, mucho menor que el terrestre.\n\nEntonces llegaron las rocas.\n\nLos astronautas del Apolo trajeron a la Tierra rocas lunares, y los laboratorios las midieron con una paciencia enorme. Una de las cosas que buscaron fue la proporción de los isótopos de oxígeno. Son variedades del mismo átomo, con un peso apenas distinto. Cada mundo del sistema solar suele tener su propia proporción, como una huella digital.\n\nMarte tiene la suya. Los meteoritos de otras regiones, también. Pero la Luna y la Tierra eran casi idénticas.\n\nEso era extraño. Si la Luna hubiera nacido en otro lugar, su huella sería distinta. Y la idea de la captura quedaba muy debilitada.\n\nAsí que los científicos empezaron a pensar en algo más violento. En los años setenta, dos equipos de investigadores propusieron, por separado, la misma idea. Hace unos cuatro mil quinientos millones de años, cuando la Tierra aún era joven y estaba medio fundida, otro mundo chocó con ella. Era un cuerpo del tamaño de Marte. Se le dio un nombre: Theia, la titán de la mitología griega que fue madre de la Luna.\n\nNo fue un choque de frente. Fue un golpe oblicuo, como una piedra que roza el borde de otra.\n\nTheia se deshizo. Una parte de la Tierra también. Y una enorme cantidad de roca, vaporizada y fundida, salió disparada hacia arriba.\n\nEsos escombros no se perdieron en el espacio. Quedaron atrapados por la gravedad y formaron un disco alrededor de la Tierra, girando como lo hacen hoy los anillos de Saturno. Pero este disco era de roca incandescente. Con el tiempo, los fragmentos se atrajeron unos a otros y se fueron uniendo. Según las simulaciones, todo pudo ocurrir en un tiempo relativamente corto, quizá en apenas unos siglos.\n\nPara un mundo, eso es un parpadeo.\n\nLa hipótesis más aceptada propone que la Luna se formó con los restos de un choque entre la joven Tierra y un mundo del tamaño de Marte.\n\nAun así, queda un detalle sin resolver. Las simulaciones más antiguas decían que la Luna estaría hecha sobre todo de Theia, el cuerpo que golpeó. Y si Theia vino de otra parte del sistema solar, su huella de oxígeno debería ser distinta. Pero no lo es. La Luna se parece demasiado a la Tierra.\n\nQuizá Theia se formó muy cerca, con material casi igual. Quizá el choque fue tan violento que todo se mezcló por completo. Hoy se siguen probando ambas posibilidades. Cuánto vino de Theia y cuánto de la Tierra todavía no lo sabemos con certeza.\n\nPero piensa por un momento qué habrías visto, si hubieras estado allí.\n\nNo habría habido suelo firme bajo tus pies. Solo un mar de roca derretida, brillando de un rojo opaco, bajo un cielo que no era azul. Habría sido un cielo ardiente, lleno de vapor de roca, con un resplandor que lo cubría todo.\n\nY en lo alto, un anillo.\n\nUn arco ancho y brillante, hecho de roca fundida, que giraba despacio sobre ti. Allí, entre esas brasas, aún sin forma, estaba empezando a juntarse la Luna que hoy miras cada noche.\n\nPero una Luna recién nacida de ese modo no podía ser un lugar tranquilo. Era una bola de fuego. Y lo que ocurrió después con todo ese calor es lo que dejó escrito su rostro."
     },
     {
-      "title": "Nueve años y cinco mil millones de kilómetros",
-      "question": "¿Cómo se llega a un mundo que ningún ser humano ha visitado jamás?",
-      "reveal": "New Horizons cruzó el sistema de Plutón a unos 14 kilómetros por segundo y, en pocas horas, nos entregó más información de la que se había reunido en casi un siglo.",
+      "title": "Un océano de roca fundida",
+      "question": "¿Cómo era la Luna recién nacida y por qué sus tierras altas son tan claras?",
+      "reveal": "La joven Luna estuvo cubierta por un océano de magma, y los cristales ligeros que flotaron en él formaron la corteza clara de las tierras altas que hoy ves brillar.",
       "beats": [
-        "Los problemas de enviar una sonda tan lejos y de tener tan poca energía solar",
-        "El lanzamiento en 2006, a una de las mayores velocidades alcanzadas por una nave al salir de la Tierra",
-        "El paso junto a Júpiter en 2007 que le dio un impulso gravitatorio",
-        "Años de hibernación electrónica y revisiones periódicas durante el viaje",
-        "Los instrumentos de la sonda: cámaras, espectrómetros y detectores de partículas",
-        "El 14 de julio de 2015: el acercamiento máximo, a unos 12.500 kilómetros",
-        "La espera de horas para confirmar que la sonda había sobrevivido, con señales que tardan unas 4,5 horas en llegar"
+        "Una Luna recién formada, muy caliente, con su superficie fundida por la energía del impacto y de la acreción",
+        "La hipótesis del océano de magma lunar: la roca fundida se enfría lentamente y los minerales se separan por densidad",
+        "Los cristales ligeros de plagioclasa flotan y forman la corteza de las tierras altas, de color claro",
+        "Los minerales más densos se hunden y forman el manto",
+        "La Muestra 15415, la llamada Roca del Génesis, traída por el Apolo 15 y rica en plagioclasa, apoyó esta idea",
+        "Qué significa: la Luna es un mundo que se diferenció en capas, igual que la Tierra, pero conservó el registro"
+      ],
+      "ambience": "lava",
+      "image_queries": [
+        "Moon highlands LRO",
+        "Moon anorthosite highlands",
+        "Moon Apollo 15 Genesis Rock",
+        "Moon crust lunar surface detail",
+        "Moon Orientale basin",
+        "Moon far side highlands",
+        "molten lava lake Kilauea",
+        "Moon surface closeup Apollo",
+        "lunar sample Apollo",
+        "Moon cratered terrain LRO"
+      ],
+      "video_queries": [
+        "lava lake time-lapse",
+        "Moon surface flyover LRO",
+        "magma ocean animation Moon"
+      ],
+      "text": "Los astronautas del Apolo quince tenían una tarea sencilla en la mañana del uno de agosto de mil novecientos setenta y uno: buscar una piedra clara. Caminaban junto a los Apeninos lunares, y entre el polvo gris, algo brillaba distinto. Era un fragmento blanco, del tamaño de un puño, apoyado sobre una roca mayor, como si alguien lo hubiera dejado ahí para ellos.\n\nLo recogieron con cuidado y lo guardaron en una bolsa. Pero la pregunta que esa piedra despertó es más grande que la piedra. ¿Por qué las tierras altas de la Luna son tan claras? ¿Y cómo era este mundo cuando acababa de nacer?\n\nVuelve un momento a esa bola de fuego del capítulo anterior. La Luna recién formada no tenía una superficie que pudieras pisar. El choque que la originó había liberado una cantidad inmensa de energía. Y los escombros, al caer unos sobre otros para formar el nuevo mundo, soltaban todavía más calor.\n\nEl resultado fue una superficie completamente fundida. No una laguna de lava, ni un volcán. Toda la Luna, cubierta por un océano de roca líquida. Los científicos lo llaman el océano de magma, y calculan que pudo tener cientos de kilómetros de profundidad.\n\nAhora piensa en lo que ocurre cuando algo muy caliente se queda solo en un lugar frío. Se enfría. La Luna no tenía una atmósfera espesa que guardara el calor. Así que el océano de magma fue perdiendo su energía hacia el espacio, despacio, a lo largo de millones de años.\n\nY mientras se enfriaba, ocurrió algo que parece sencillo, pero que lo cambió todo. La roca fundida no se endurece de golpe. Cada mineral cristaliza a su propia temperatura. Unos se forman primero, otros después. Y cada cristal tiene su propio peso.\n\nLos primeros cristales que aparecieron eran de olivino y de piroxeno. Son minerales densos, pesados, ricos en hierro y magnesio. Dentro del magma líquido, se hundieron como granos de arena en un vaso de agua. Poco a poco se fueron acumulando en el fondo.\n\nY allí, bajo el océano, esas capas de cristales pesados formaron el manto de la Luna.\n\nPero el océano seguía enfriándose. Y cuando ya quedaba una parte del líquido, empezó a cristalizar otro mineral. Se llama plagioclasa, y es rica en calcio y aluminio. Tiene una propiedad importante: es más ligera que el magma que la rodea.\n\nAsí que no se hundió. Subió. Los cristales claros de plagioclasa flotaron hacia arriba, como témpanos de hielo sobre un lago. Se juntaron unos con otros, formaron una costra y esa costra fue creciendo, hasta cubrir toda la Luna.\n\nEsa costra es la corteza de las tierras altas. Y es clara porque la plagioclasa es clara.\n\nCuando levantas la vista esta noche, las zonas más brillantes de la Luna son esos cristales ligeros, solidificados hace más de cuatro mil millones de años.\n\nEsta era la idea. Una hipótesis elegante, formulada a partir de las primeras muestras traídas de la Luna. Pero una hipótesis necesita una prueba. Y la prueba tenía que ser una roca de esas tierras altas, una roca que nadie hubiera alterado después.\n\nAhí vuelve la piedra del Apolo quince. Su nombre oficial es Muestra quince mil cuatrocientos quince. Pero casi todo el mundo la conoce como la Roca del Génesis. Está formada casi por completo de plagioclasa, y su edad supera los cuatro mil millones de años. Era justo lo que se esperaba encontrar si la corteza había flotado sobre un océano de magma.\n\nNo resolvió todas las dudas. Los científicos todavía debaten cuánto duró aquel océano y cómo se enfrió exactamente. Pero la roca encajaba con la idea de un modo que pocas veces ocurre.\n\nY eso nos dice algo más sobre la Luna. No es una piedra cualquiera que da vueltas en el cielo. Es un mundo que se separó en capas: un manto pesado abajo, una corteza ligera arriba. Igual que la Tierra.\n\nLa diferencia es que la Tierra borró casi todo su pasado. Sus volcanes, sus placas y sus océanos remodelaron la superficie una y otra vez. La Luna, en cambio, guardó el registro. Cada región clara que ves es una página de aquel primer enfriamiento.\n\nPero esa corteza no se quedó intacta para siempre. Sobre ella cayeron rocas enormes, y bajo ella el calor no había terminado de trabajar."
+    },
+    {
+      "title": "Los mares de lava",
+      "question": "¿Cómo se llenaron de lava las grandes cuencas oscuras?",
+      "reveal": "Los mares lunares son lava basáltica que brotó e inundó cuencas excavadas por impactos, y algunas de esas erupciones ocurrieron hace más de tres mil millones de años.",
+      "beats": [
+        "Los grandes impactos excavaron cuencas gigantes en la corteza clara",
+        "El calor interno de la Luna fundió parte del manto y el magma subió por fracturas",
+        "Ríos de lava basáltica muy fluida inundaron las cuencas, de ahí su color oscuro",
+        "El Mare Imbrium, el Mare Tranquillitatis y el Oceanus Procellarum como grandes ejemplos",
+        "Los mares cubren buena parte de la cara visible y mucho menos de la cara oculta, una asimetría cuya causa sigue en estudio",
+        "Canales sinuosos como el Valle de Schröter, antiguos cauces de lava, y tubos de lava que aún se ven",
+        "La edad de las lavas, medida con las muestras traídas por los astronautas"
+      ],
+      "ambience": "lava",
+      "image_queries": [
+        "Moon Mare Tranquillitatis",
+        "Moon Oceanus Procellarum",
+        "Moon Schroeter's Valley",
+        "Moon Hadley Rille",
+        "Moon lava flows LRO",
+        "Moon Marius Hills",
+        "Moon mare basalt",
+        "Moon Mare Serenitatis",
+        "Moon lunar pit",
+        "Moon wrinkle ridges"
+      ],
+      "video_queries": [
+        "Moon lava flow animation",
+        "Moon flyover LRO 4K",
+        "lunar maria visualization"
+      ],
+      "text": "En la cara visible de la Luna, con unos simples binoculares, se distinguen manchas grises tan lisas que parecen pulidas. Son enormes, redondas, tranquilas. Y junto a ellas hay tierras claras, rugosas, llenas de cicatrices.\n\n¿Cómo pudieron llenarse esas cuencas tan grandes con algo tan liso? Sabemos que no era agua. Pero algo las llenó, hasta el borde, y luego se quedó quieto.\n\nPara entenderlo, hay que volver a la corteza clara que se formó sobre el océano de magma. Sobre ella cayeron rocas del espacio, algunas del tamaño de una ciudad, otras como una montaña. Cada golpe abrió una herida más ancha que cualquier país pequeño. Las mayores cuencas medían cientos de kilómetros, y el suelo quedó hundido varios kilómetros por debajo de su nivel original.\n\nEsas cuencas quedaron vacías durante un tiempo. Eran paisajes de roca clara, rota y fracturada, bajo un cielo negro.\n\nMientras tanto, bajo ese suelo, el interior de la Luna seguía caliente. Parte de ese calor venía de su formación. Otra parte la producían, muy despacio, elementos radiactivos atrapados en la roca. Con los millones de años, ese calor fue suficiente para fundir una porción del manto, a decenas o cientos de kilómetros de profundidad.\n\nLa roca fundida es más ligera que la roca sólida que la rodea. Por eso sube. Busca cualquier grieta, cualquier fractura que el golpe de los impactos hubiera dejado en la corteza, y se abre camino hacia arriba.\n\nCuando llegó a la superficie, no explotó como un volcán de montaña. Brotó, más bien, como un río que encuentra su cauce. Era lava basáltica, rica en hierro, y muy fluida, casi tanto como un aceite espeso. Corría sobre grandes distancias antes de detenerse, y se acumulaba en las zonas más bajas.\n\nLas cuencas eran esas zonas más bajas.\n\nCapa sobre capa, durante cientos de millones de años, la lava fue llenando los huecos. Al enfriarse, formó una roca oscura, densa, casi negra. Por eso las manchas se ven grises: el basalto refleja mucho menos luz que las tierras altas, ricas en plagioclasa. Y por eso son tan lisas. Es lo que queda cuando un líquido se asienta y se endurece.\n\nAlgunos de esos mares tienen nombres que ya conoces. El Mare Imbrium, el Mar de las Lluvias, es de los mayores: más de mil kilómetros de ancho, algo menos que la distancia entre Madrid y Roma. El Mare Tranquillitatis, el Mar de la Tranquilidad, es más pequeño, y más adelante en esta historia tendrá un papel especial. Y al oeste se extiende el Oceanus Procellarum, el Océano de las Tormentas, la mancha oscura más grande de todas.\n\nSi miras la Luna llena, esas manchas cubren buena parte del lado que vemos. Cerca de un tercio de esa cara está cubierto de lava antigua. Del otro lado, el que nunca se ve desde la Tierra, los mares son pocos y pequeños. Casi todo es tierra clara.\n\n¿Por qué? Nadie lo sabe con certeza. Hay ideas sobre una corteza más gruesa en la cara oculta, que habría frenado la subida del magma. Otras hablan de dónde se concentraban los elementos que producen calor. Pero la causa sigue en estudio.\n\nAun así, la lava dejó huellas que puedes ver. Junto al cráter Aristarco, en el Oceanus Procellarum, hay un valle que serpentea como un lecho seco: el Valle de Schröter. Tiene unos ciento sesenta kilómetros de largo, y en un punto es más ancho que un río grande. Fue un cauce de lava, un canal por donde corrió roca líquida.\n\nOtros canales son más discretos. Cuando la superficie de un río de lava se enfría y se endurece, el interior sigue fluyendo por debajo. Al vaciarse, deja un túnel. Algunos de esos tubos se derrumbaron, y desde órbita se ven los pozos abiertos en el techo, oscuros, como ventanas hacia un pasillo de roca.\n\nQueda una pregunta: ¿cuándo ocurrió todo esto?\n\nLa respuesta llegó en cajas selladas. Los astronautas del Apolo recogieron basaltos de varios mares, y los laboratorios de la Tierra midieron cuánto tiempo había pasado desde que cada roca se enfrió. Lo hicieron contando átomos de elementos radiactivos que se transforman a un ritmo conocido, como un reloj de arena en miniatura.\n\nLas muestras del Mar de la Tranquilidad tenían más de tres mil seiscientos millones de años. Otras, de otros mares, eran un poco más jóvenes, pero todas hablaban de un tiempo inmensamente lejano.\n\nLos mares lunares son lava basáltica que brotó e inundó cuencas abiertas por impactos.\n\nAlgunas de esas erupciones ocurrieron hace más de tres mil millones de años, cuando en la Tierra la vida era apenas una película de microbios en el agua.\n\nEsa lava lleva todo ese tiempo quieta, sin que nada la perturbe. Cada noche que levantas la vista, miras un río de fuego que se detuvo antes de que existiera cualquier ojo para verlo.\n\nPero esos mares oscuros no están intactos. Su superficie está marcada por miles de agujeros, grandes y pequeños, y cada uno cuenta una historia propia."
+    },
+    {
+      "title": "Cráteres: la memoria de los impactos",
+      "question": "¿Por qué la Luna conserva tantos cráteres y la Tierra tan pocos?",
+      "reveal": "Casi sin atmósfera, sin lluvia y sin placas tectónicas, la Luna conserva cada cicatriz de impacto durante miles de millones de años.",
+      "beats": [
+        "Cómo se forma un cráter: un impacto a velocidad enorme libera energía, excava y levanta un anillo",
+        "Tycho y Copernicus, cráteres jóvenes con rayos brillantes de material expulsado",
+        "Los picos centrales y las terrazas en las paredes de los cráteres grandes",
+        "Por qué la Tierra los pierde: erosión, océanos y tectónica",
+        "El conteo de cráteres como reloj: más cráteres significa superficie más antigua",
+        "Cráteres en sombra permanente en los polos, donde el Sol nunca llega y se ha detectado hielo",
+        "Un impacto sigue ocurriendo: se han observado destellos de pequeños meteoroides"
       ],
       "ambience": "none",
       "image_queries": [
-        "New Horizons spacecraft",
-        "New Horizons Jupiter flyby",
-        "Jupiter New Horizons",
-        "Io New Horizons",
-        "Pluto first color image New Horizons",
-        "Pluto approach New Horizons",
-        "Pluto New Horizons July 2015",
-        "Pluto Charon first images",
-        "Pluto heart New Horizons",
-        "Pluto crescent New Horizons"
+        "Moon Tycho crater LRO",
+        "Moon Copernicus crater central peak",
+        "Moon Aristarchus crater",
+        "Moon crater Shackleton",
+        "Moon crater rays",
+        "Moon South Pole craters shadow",
+        "Moon crater Giordano Bruno",
+        "Moon crater Tsiolkovskiy",
+        "Moon crater Clavius",
+        "Moon fresh impact crater LRO"
       ],
       "video_queries": [
-        "New Horizons mission animation",
-        "New Horizons Pluto flyby",
-        "New Horizons trajectory visualization"
+        "Moon crater formation impact animation",
+        "Moon south pole flyover LRO",
+        "Lunar Reconnaissance Orbiter crater visualization"
       ],
-      "text": "Dos mil seis, Cabo Cañaveral, una tarde de enero. Un cohete blanco se despega de la plataforma y, en menos de diez minutos, ya no se ve desde el suelo. Arriba va una nave del tamaño de un piano, con un destino que ningún ser humano ha pisado jamás.\n\n¿Cómo se llega a un mundo así? No hay mapa, no hay carretera, no hay estación donde detenerse a repostar. Solo hay una dirección, y un punto diminuto que se mueve despacio mientras tú te mueves también.\n\nEl primer problema era la luz. Allá afuera, el Sol llega con una fuerza unas mil veces menor que en la Tierra. Unos paneles solares tendrían que ser enormes para dar algo de energía, y eso era imposible en una nave pequeña y ligera.\n\nAsí que los ingenieros eligieron otra fuente. A bordo llevaron un generador pequeño que convierte en electricidad el calor de una pastilla de plutonio. Daría menos energía que un par de bombillas domésticas. Con eso tendría que funcionar durante años, en el frío más profundo que una nave había recorrido hasta entonces.\n\nEl segundo problema era el tiempo. Un viaje lento habría durado décadas, y las décadas desgastan cualquier cosa. Por eso la nave salió de la Tierra a una de las mayores velocidades que haya alcanzado una nave humana: unos dieciséis kilómetros por segundo. A ese ritmo, cruzas la distancia entre Madrid y Buenos Aires en unos diez minutos.\n\nAun así, no bastaba.\n\nUn año después, en dos mil siete, la nave pasó cerca de Júpiter. No fue una visita de cortesía. El enorme planeta la sujetó por un instante con su gravedad y la lanzó hacia adelante, como una mano que empuja un columpio. La nave ganó cerca de cuatro kilómetros por segundo, y se ahorró unos tres años de camino. Júpiter ni siquiera lo notó.\n\nDespués empezó la parte más silenciosa del viaje. Durante años, casi todos los sistemas de la nave dormían. Solo un latido débil, una señal sencilla, le decía a la Tierra que seguía viva. Una vez al año, más o menos, los equipos la despertaban, revisaban cada sistema y volvían a dejarla descansar.\n\nImagina la escena. Una nave cruzaba en la oscuridad, sin nadie a bordo, y una vez al año alguien en la Tierra le preguntaba si todo iba bien.\n\nCuando por fin despertó del todo, estaba lista para trabajar. Llevaba siete instrumentos. Algunos eran cámaras, que registrarían el color y el relieve del terreno con detalle. Otros eran espectrómetros, que descomponen la luz para descubrir de qué están hechos los hielos y el gas. Y otros eran detectores de partículas, que medirían cómo el viento del Sol toca la atmósfera de Plutón.\n\nTodo eso tenía que hacerse en poco tiempo. La nave no iba a frenar ni a quedarse en órbita. No llevaba combustible suficiente. Pasaría una sola vez, a toda velocidad, y seguiría de largo.\n\nEl catorce de julio de dos mil quince, después de nueve años y casi cinco mil millones de kilómetros, llegó el momento. La nave pasó a unos doce mil quinientos kilómetros de Plutón. Es una distancia parecida a la que separa Ciudad de México de Sídney, pero en el espacio es una cercanía enorme. La sonda iba a unos catorce kilómetros por segundo, y apuntó cada instrumento a la vez.\n\nY entonces vino lo más difícil: esperar.\n\nMientras trabajaba, la nave tenía que mirar a Plutón y no a la Tierra. No podía hablar con casa. Cuando terminó, giró su antena y envió un mensaje corto, que viajó a la velocidad de la luz. Aun así, tardó unas cuatro horas y media en llegar.\n\nPiensa en la sala de control, en esas horas. Gente que había dedicado media vida a este instante, sentada frente a una pantalla casi vacía. Sin saber si la nave había sobrevivido a una carrera tan cercana, a esa velocidad, entre polvo y hielo.\n\nPor fin, la señal apareció. Era débil, pero era clara. La nave estaba bien, y traía consigo todo lo que había visto.\n\nEse día, en pocas horas, New Horizons cruzó el sistema de Plutón y recogió más información de la que se había reunido sobre este mundo en casi un siglo. Un lugar que antes era una mancha borrosa tenía ahora relieve, color y una historia que contar.\n\nFaltaba ver qué mostraban esas imágenes. Y la primera que llegó tenía una forma que nadie esperaba."
+      "text": "Hay una fotografía de la Luna, tomada con una lente larga, en la que la luz cae de lado sobre el borde de la sombra. Ahí, donde el día termina, cada pequeño relieve proyecta una sombra larga. Y lo que se ve es un terreno picado de agujeros, uno dentro de otro, como la piel de una naranja vista de muy cerca.\n\nEs casi extraño. Si miras una fotografía igual de la Tierra, no encuentras nada parecido. Y sin embargo, las dos han recibido golpes durante el mismo tiempo, en el mismo rincón del sistema solar.\n\n¿Por qué la Luna conserva tantos cráteres y la Tierra tan pocos?\n\nPara responderlo, primero hay que entender cómo nace uno. Una roca llega del espacio a una velocidad de muchos kilómetros por segundo. Es más rápida que una bala, decenas de veces más rápida. No se hunde despacio en el suelo. Se detiene de golpe, y toda esa energía de movimiento se convierte en calor y en una onda que atraviesa la roca.\n\nEl suelo se rompe y sale despedido hacia arriba. Se abre un hueco mucho más ancho que el propio proyectil. Y alrededor del hueco, el material expulsado cae y se amontona, formando un anillo elevado, un borde que domina el paisaje.\n\nAlgunos de estos golpes son tan recientes que todavía se ven con claridad. Tycho, en el sur de la cara visible, tiene unos cien millones de años. Parece mucho, pero para la Luna es apenas ayer. Desde su borde salen rayos brillantes que se extienden por cientos de kilómetros, como los radios de una rueda.\n\nCopernicus, más al centro, tiene unos ochocientos millones de años, y también está rodeado de rayos. Son polvo y fragmentos claros que salieron disparados en el momento del choque. Con una luna llena, esas líneas se ven incluso con unos binoculares sencillos.\n\nSi pudieras caminar dentro de uno de estos cráteres grandes, notarías dos cosas. En el centro suele levantarse una montaña, un pico central. Es el suelo que rebotó, como la gota que sube en el agua después de caer una piedra, pero congelada en roca.\n\nY en las paredes verías terrazas, escalones enormes por donde el borde se derrumbó hacia el interior. Cuando el cráter es grande, el terreno no puede sostener su propia pendiente. Se desliza, y queda escalonado, como las gradas de un estadio vacío.\n\nVolvamos entonces a la pregunta. La Tierra también fue golpeada, y mucho. Pero aquí el suelo no se queda quieto. La lluvia, el viento y el hielo desgastan los bordes, año tras año. Los océanos cubren casi tres cuartas partes de la superficie, y allí los impactos se borran bajo el agua y los sedimentos.\n\nAdemás, las placas tectónicas empujan y hunden la corteza hacia el interior del planeta. Con el tiempo, una cicatriz se pliega, se entierra y se funde. Hoy se conocen apenas unos pocos cientos de cráteres de impacto en la Tierra, y muchos son difíciles de reconocer.\n\nEn la Luna no pasa nada de eso.\n\nCasi no tiene atmósfera, no tiene lluvia, y su corteza no se desplaza. Un cráter abierto hace tres mil millones de años sigue ahí, casi como quedó. Lo único que lo altera es otro impacto, y nada más.\n\nEsto convierte al paisaje lunar en un registro. Los científicos cuentan los cráteres de una zona, y de ese número deducen su edad. Una superficie con muchos cráteres ha estado expuesta mucho tiempo. Una con pocos es más joven. Las rocas traídas por los astronautas permitieron fijar fechas reales a esa escala, y desde entonces el conteo sirve como un reloj.\n\nEse reloj también sirve en otros mundos. Pero en la Luna se puede comprobar con la roca en la mano.\n\nHay lugares donde la historia de los impactos se junta con otra cosa. Cerca de los polos, algunos cráteres son tan profundos que el Sol nunca ilumina su fondo. Allí la oscuridad dura miles de millones de años. Las sondas han detectado señales de hielo de agua en esos rincones, guardado donde la luz nunca llega.\n\nY los impactos no han terminado. Con telescopios, los astrónomos han visto pequeños destellos en la parte oscura de la Luna. Son meteoroides del tamaño de una piedra o un puñado de arena que chocan y brillan por un instante. Lo que ves en la superficie sigue escribiéndose, muy despacio.\n\nTodo ese relieve, los rayos, las terrazas y los fondos helados, se vio durante siglos solo desde lejos. Hasta que alguien logró darle la vuelta a la Luna y mirar el lado que ninguna persona había visto."
     },
     {
-      "title": "El corazón de hielo que respira",
-      "question": "¿Por qué la gran mancha clara de Plutón no tiene ni un solo cráter?",
-      "reveal": "Sputnik Planitia es una cuenca de hielo de nitrógeno que fluye y se renueva lentamente por convección, así que su superficie tiene probablemente menos de unos pocos millones de años.",
+      "title": "La cara que nunca vemos",
+      "question": "¿Cómo es el lado oculto de la Luna y por qué es tan distinto?",
+      "reveal": "El lado oculto es mucho más escarpado y con muy pocos mares, y alberga una de las cuencas de impacto más grandes y antiguas del sistema solar.",
       "beats": [
-        "La región con forma de corazón, Tombaugh Regio, destacó de inmediato en las primeras imágenes",
-        "Sputnik Planitia, la llanura occidental del corazón, extensa y sin cráteres visibles",
-        "Celdas poligonales de hielo de nitrógeno que parecen cuarteadas",
-        "El hielo se calienta desde abajo, sube, se enfría y vuelve a hundirse: convección lenta",
-        "La superficie se renueva y borra los cráteres, lo que indica un mundo geológicamente activo",
-        "Con una presión muy baja, el nitrógeno, el metano y el monóxido de carbono son hielos que se evaporan y recondensan",
-        "Qué fuente de calor mantiene activo a Plutón sigue siendo un tema de estudio, y se trata de una pregunta abierta"
-      ],
-      "ambience": "ice",
-      "image_queries": [
-        "Sputnik Planitia",
-        "Pluto heart Tombaugh Regio",
-        "Pluto nitrogen ice plains",
-        "Pluto convection cells",
-        "Pluto surface close-up New Horizons",
-        "Pluto glaciers New Horizons",
-        "Pluto ice flow",
-        "Pluto high-resolution mosaic",
-        "Pluto sunset hazes",
-        "Pluto water ice mountains"
-      ],
-      "video_queries": [
-        "Pluto flyover animation New Horizons",
-        "Pluto surface flyover",
-        "Sputnik Planitia animation"
-      ],
-      "text": "La primera imagen nítida mostraba una mancha clara, enorme, con la forma casi exacta de un corazón. Los ingenieros que la vieron aparecer en sus pantallas se quedaron un momento en silencio. Nadie había programado eso. Nadie lo había previsto.\n\nEsa región se llama Tombaugh Regio, en honor al joven que encontró Plutón. Destacaba sobre el resto del disco, pálida entre zonas más oscuras y rojizas. Y a medida que la sonda se acercaba, el corazón dejó de ser un dibujo y empezó a ser un lugar.\n\nEl lóbulo izquierdo, el occidental, es una llanura llamada Sputnik Planitia. Es una extensión de hielo liso, de más o menos mil kilómetros de ancho. Es como ir de Ciudad de México a Monterrey y más allá, viendo solo una sábana blanca.\n\nY entonces apareció la pregunta que los científicos se hicieron una y otra vez. ¿Por qué la gran mancha clara de Plutón no tiene ni un solo cráter?\n\nPiénsalo un momento. Cada mundo sólido del sistema solar lleva las marcas de los golpes que ha recibido. La Luna está llena de ellas. Mercurio también. Si Plutón llevaba cuatro mil quinientos millones de años en ese barrio lleno de restos helados, esa llanura debería estar picada como una cáscara de naranja.\n\nPero estaba intacta.\n\nLa pista llegó al mirar la llanura de cerca. La superficie no era uniforme. Estaba dividida en celdas, figuras de cinco o seis lados, cada una de decenas de kilómetros de ancho. Parecían el barro seco de un lago en verano, cuarteado en piezas que encajan unas con otras.\n\nLos bordes de las celdas son surcos delgados. El centro de cada una se abomba suavemente, como si algo la empujara desde abajo. Y algo la empuja, en efecto.\n\nEsa llanura es una cuenca profunda, rellena de hielo de nitrógeno. Es el mismo gas que respiras, pero congelado a unos doscientos treinta grados bajo cero. Ese hielo es blando, mucho más que el hielo de agua. Y desde las capas profundas le llega un poco de calor.\n\nAsí que el hielo se calienta por debajo. Al calentarse, se vuelve algo más ligero, y sube muy despacio hacia la superficie. Allí se enfría, se vuelve más denso y se hunde por los bordes de la celda. Luego el ciclo empieza otra vez.\n\nEs lo mismo que ocurre en una olla de sopa sobre el fuego, pero a un ritmo distinto. El hielo se mueve apenas unos centímetros al año. Una celda tarda cientos de miles de años en dar una vuelta completa.\n\nEsa lentitud tiene una consecuencia clara. La superficie se renueva sin cesar, y cada cráter que cae allí se borra antes de volverse viejo.\n\nSputnik Planitia no tiene cráteres porque no ha tenido tiempo de acumularlos.\n\nLos cálculos indican que ese hielo tiene, probablemente, menos de diez millones de años. Para un mundo de miles de millones de años, es un instante. Es como si en tu casa todo fuera antiguo, menos el suelo de una habitación, que acabaran de pintar esta mañana.\n\nEso significa algo más grande. Plutón no es una roca congelada y muerta. Es un mundo geológicamente activo, donde el paisaje todavía cambia mientras tú lo miras.\n\nY hay otro movimiento más sutil. La atmósfera de Plutón es tan delgada que la presión en la superficie es unas cien mil veces menor que la de la Tierra. En esas condiciones, el nitrógeno, el metano y el monóxido de carbono no se comportan como en tu cocina. Son hielos, pero se evaporan con facilidad.\n\nCuando el Sol los toca, parte del hielo pasa a gas. Cuando el frío vuelve, el gas se posa de nuevo como escarcha. Plutón, en cierto sentido, respira. Exhala en una región e inhala en otra, durante años larguísimos.\n\nQueda una pregunta que todavía no tiene respuesta. Para que el hielo suba y baje, hace falta calor, y Plutón está tan lejos del Sol que casi no recibe. ¿De dónde sale esa energía?\n\nQuizá sea el calor que quedó de su formación. Quizá sea el de los elementos radiactivos que guarda en su interior. Quizá sea algo que aún no hemos pensado. Los científicos siguen estudiándolo, y es una pregunta abierta.\n\nLo que sí sabemos es que ese corazón late con una paciencia enorme. Y que alrededor de la llanura, en sus bordes, el suelo cambia de repente. Allí el hielo deja de ser blando y se levanta en forma de montañas."
-    },
-    {
-      "title": "Montañas de agua congelada",
-      "question": "¿Cómo pueden existir montañas altas en un mundo tan pequeño y frío?",
-      "reveal": "En Plutón el hielo de agua es duro como roca, y forma montañas de hasta unos 3.500 metros de altura que flotan sobre el hielo de nitrógeno más blando.",
-      "beats": [
-        "Las montañas Norgay y Hillary junto a Sputnik Planitia",
-        "A temperaturas de unos -230 °C, el hielo de agua se comporta como la roca",
-        "Algunas montañas parecen bloques que flotan y se desplazan sobre el hielo de nitrógeno",
-        "Las Tartarus Dorsa, un terreno de crestas largas con aspecto de escamas, probablemente cubierto de metano",
-        "Cráteres antiguos en las zonas oscuras que cuentan una historia mucho más larga",
-        "Los posibles criovolcanes, como Wright Mons, son un asunto aún en estudio",
-        "Un paisaje donde la química cotidiana del hielo sigue reglas de otro mundo"
-      ],
-      "ambience": "ice",
-      "image_queries": [
-        "Pluto mountains Norgay Montes",
-        "Pluto Hillary Montes",
-        "Pluto Tartarus Dorsa",
-        "Pluto Wright Mons",
-        "Pluto Cthulhu Macula",
-        "Pluto Charon mountains",
-        "Charon Mordor Macula",
-        "Pluto Al-Idrisi Montes",
-        "Pluto terrain close-up",
-        "Pluto limb mountains"
-      ],
-      "video_queries": [
-        "Pluto flyover mountains animation",
-        "Charon flyover animation New Horizons",
-        "Pluto terrain visualization"
-      ],
-      "text": "Hay una fotografía de Plutón que casi parece un error. En el borde de la gran llanura blanca se levanta una hilera de picos oscuros, afilados, con las cumbres iluminadas por un Sol lejano. Parecen los Alpes vistos desde un avión.\n\nPero esto es un mundo más pequeño que nuestra Luna, y su temperatura es de unos menos doscientos treinta grados Celsius. ¿Cómo pueden existir montañas altas en un lugar tan diminuto y tan frío?\n\nLas montañas tienen nombre. Se llaman Norgay y Hillary, en honor a los dos hombres que primero llegaron a la cima del Everest. Se alzan junto a Sputnik Planitia, en el límite del corazón, como una muralla irregular entre la llanura y las tierras de alrededor.\n\nAlgunos de esos picos alcanzan unos tres mil quinientos metros. Es una altura parecida a la de muchas cumbres que podrías subir en una larga jornada a pie. Sin embargo, aquí no hay roca de la que estén hechas.\n\nY ahí está la primera pista. Los científicos midieron la luz que reflejan esas laderas, y lo que vieron fue agua. Agua congelada, simple y corriente, la misma que se forma en tu congelador.\n\nAquí en la Tierra, ese hielo es quebradizo, pero cede si lo presionas con paciencia. Un glaciar fluye despacio bajo su propio peso. A este frío, todo cambia.\n\nEl hielo de agua se vuelve duro, rígido, tan firme como el granito de nuestras montañas. Puede sostener una cumbre durante miles de millones de años sin deformarse.\n\nEntonces, ¿de qué está hecho el suelo que lo rodea? Está hecho de otros hielos. El nitrógeno, el metano y el monóxido de carbono se congelan a temperaturas mucho más bajas que el agua, y por eso son blandos incluso en este frío. Son los materiales de la llanura que respira.\n\nEsto nos lleva a una imagen extraña. Algunas de esas montañas parecen bloques sueltos, empujados por la lenta corriente del hielo de nitrógeno. El agua congelada es menos densa que el nitrógeno sólido, así que flota en él, como un témpano en el mar.\n\nCada cumbre sería entonces una balsa de piedra helada. Se desplaza con la corriente a una velocidad que no podrías notar en toda una vida. Los investigadores creen que así se amontonan en ciertos rincones de la llanura, aunque los detalles siguen en estudio.\n\nTal vez ese sea el mejor modo de entenderlo.\n\nLas montañas de Plutón no están clavadas en el suelo. Flotan.\n\nMás al este, el terreno cambia otra vez. Hay una región llamada Tartarus Dorsa, cubierta de crestas largas y estrechas, dispuestas una junto a otra. Desde lo alto parecen las escamas de un animal enorme, o la corteza de un pan recién horneado.\n\nEsas crestas probablemente están cubiertas de metano congelado. Y se alzan cientos de metros, separadas por varios kilómetros, un relieve que nadie esperaba encontrar en un cuerpo tan pequeño.\n\nTambién hay regiones oscuras, y en ellas el relato se vuelve más antiguo. Allí se ven cráteres, muchos, apilados unos sobre otros. Son cicatrices de impactos ocurridos hace miles de millones de años, y nadie ha borrado ninguna.\n\nSi la llanura del corazón es joven y se renueva, estas tierras son memoria. Una superficie que casi no ha cambiado desde que el sistema solar era nuevo.\n\nQueda una pregunta más, y todavía no tiene respuesta. Cerca del sur hay una gran elevación llamada Wright Mons, con una depresión en la cima. Podría ser un criovolcán, un volcán que escupe hielo blando en lugar de lava.\n\nPero la evidencia no alcanza. Los científicos lo estudian, lo comparan, lo miden de nuevo en las imágenes. Por ahora, es una sospecha.\n\nLo que sí sabemos ya es suficiente para sorprender. El agua, esa sustancia tan familiar, aquí se comporta como roca. Y el nitrógeno, que respiras a cada instante, aquí es una masa helada que fluye y sostiene montañas.\n\nLa química cotidiana sigue en Plutón las mismas leyes. Solo que, a este frío, las reglas dan un resultado de otro mundo.\n\nY sobre todo ese paisaje, sobre las cumbres y las crestas, flota algo que apenas se nota a simple vista. Una delgada capa azul, que baja hasta tocar el horizonte."
-    },
-    {
-      "title": "El cielo azul de Plutón",
-      "question": "¿Qué vería y sentiría una persona parada sobre la superficie de Plutón?",
-      "reveal": "Plutón tiene una atmósfera tenue con capas de neblina azulada, y desde su superficie el cielo se vería oscuro con un tinte azul en el horizonte.",
-      "beats": [
-        "Una atmósfera delgada, sobre todo de nitrógeno, con presión miles de veces menor que la de la Tierra",
-        "New Horizons fotografió el contraluz del Sol detrás de Plutón: un anillo de neblina",
-        "Más de una docena de capas de neblina se elevan decenas de kilómetros",
-        "Las partículas azuladas se forman por luz ultravioleta que transforma el metano en compuestos orgánicos llamados tolinas",
-        "Las tolinas caen y tiñen de rojizo la superficie, como en la región oscura Cthulhu Macula",
-        "El Sol sería una estrella muy brillante, aunque muy pequeña en el cielo",
-        "El silencio, el frío y la luz tenue de un atardecer que dura mucho"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Pluto atmosphere haze New Horizons",
-        "Pluto backlit hazes",
-        "Pluto blue haze",
-        "Pluto sunset",
-        "Pluto atmosphere layers",
-        "Pluto tholins",
-        "Pluto red regions",
-        "Pluto Cthulhu Macula",
-        "Pluto crescent backlit",
-        "Pluto twilight"
-      ],
-      "video_queries": [
-        "Pluto atmosphere animation",
-        "Pluto sunset visualization",
-        "Pluto surface flyover haze"
-      ],
-      "text": "Cuando New Horizons ya se alejaba de Plutón, giró su cámara hacia atrás. Quería ver el mundo que acababa de cruzar, ahora con el Sol escondido justo detrás de él.\n\nLo que apareció en la imagen fue un círculo oscuro, rodeado por un anillo delgado de luz azulada. Un mundo pequeño, helado y lejano, con aire.\n\n¿Qué verías tú si estuvieras parado allí, sobre la superficie? ¿Qué sentirías en la piel, y qué verías al levantar la mirada?\n\nEmpecemos por el aire. La atmósfera de Plutón está hecha sobre todo de nitrógeno, igual que la nuestra. Pero se parece muy poco a la que respiras. Su presión es unas cien mil veces menor que la de la Tierra. Sería como estar en un lugar tan alto que el aire casi se acabó, mucho más arriba de las cumbres más altas del planeta.\n\nPor eso nadie esperaba lo que mostró aquella fotografía a contraluz. Con una atmósfera tan tenue, lo normal habría sido ver apenas un borde difuso. En cambio, el anillo era claro y bien definido, como el contorno de una moneda encendida desde atrás.\n\nY había más. Al examinar la imagen con cuidado, los científicos contaron más de una docena de capas de neblina. Estaban apiladas una sobre otra, casi paralelas al suelo. Se elevaban decenas de kilómetros, más o menos la distancia que recorrerías en un día largo de viaje en coche.\n\nEsas capas no están quietas por casualidad. Los investigadores todavía estudian por qué se acomodan así, y las ondas de la atmósfera podrían ser parte de la explicación.\n\nQuedaba otra pregunta, más sencilla. ¿De qué está hecha esa neblina, y por qué es azul?\n\nLa respuesta empieza con la luz del Sol. Aunque llega muy debilitada, todavía trae luz ultravioleta. Esa luz golpea las moléculas de metano que flotan en lo alto de la atmósfera y las rompe. Los pedazos se vuelven a unir, pero de otra manera, y forman moléculas orgánicas más grandes y complejas.\n\nSe llaman tolinas.\n\nSon diminutas, mucho más pequeñas que un grano de polvo. Y al dispersar la luz, devuelven sobre todo el azul. Es un efecto parecido al que da color al cielo de la Tierra, aunque aquí lo producen partículas sólidas y no el aire.\n\nPero las tolinas no se quedan arriba para siempre. Son pesadas, y caen despacio, durante años, hacia el suelo helado. Allí se acumulan sobre el hielo y lo van manchando de un tono rojizo, como una lluvia fina de ceniza que nunca se detiene.\n\nSe nota en la región oscura llamada Cthulhu Macula. Es una franja enorme, casi del largo de un país, cubierta de ese material rojizo. Mientras el hielo del corazón brilla claro, esta zona parece teñida de óxido. La neblina azul de arriba y el suelo rojizo de abajo tienen el mismo origen.\n\nAhora sí, párate allí. Ponte sobre el hielo, con los pies firmes y el traje bien cerrado.\n\nLo primero que notarías es el frío. Unos doscientos treinta grados bajo cero. No sentirías viento que te empuje, porque el aire es demasiado escaso para eso.\n\nLevantas la vista, y el cielo no es azul como el de casa.\n\nEl cielo sería oscuro, casi negro, con un tinte azul que se apaga cerca del horizonte.\n\nEs allí, donde la mirada atraviesa más neblina, donde se concentra el color. Arriba, las estrellas seguirían visibles incluso de día. Abajo, una delgada línea azul rodearía el paisaje entero.\n\nY en medio del cielo, el Sol. Seguiría siendo la estrella más brillante de todas, más que cualquier otra. Pero sería muy pequeño, apenas un punto. Aun así, daría más luz que la Luna llena en nuestras noches, y alcanzaría para ver tus propias manos y las sombras largas sobre el hielo.\n\nCuando se acercara al horizonte, el atardecer sería lento. Un día en Plutón dura casi una semana terrestre, así que la luz bajaría poco a poco, durante horas. El hielo pasaría del blanco al gris, y de ahí al azul oscuro.\n\nNo habría ningún sonido. Ni viento, ni voces, ni el roce de nada. Solo el frío, la luz débil y esa línea azul en el borde del mundo.\n\nY quizá, mientras la luz se apaga, mirarías hacia otro punto del cielo. Allí, inmóvil sobre un solo lado del horizonte, colgaría una luna enorme, que nunca se mueve."
-    },
-    {
-      "title": "El cinturón de Kuiper y un muñeco de nieve",
-      "question": "¿Qué forma tienen los objetos que nunca se fundieron ni se chocaron con fuerza?",
-      "reveal": "Arrokoth, un objeto del cinturón de Kuiper formado por dos lóbulos unidos con suavidad, conserva casi intacta la forma con la que se juntó hace unos 4.500 millones de años.",
-      "beats": [
-        "El cinturón de Kuiper es una región con cuerpos helados más allá de Neptuno, entre unas 30 y 50 unidades astronómicas",
-        "Cientos de miles de objetos de más de 100 kilómetros, según estimaciones actuales",
-        "Los astrónomos pensaron que serían mundos congelados sin cambios desde la formación del sistema solar",
-        "New Horizons continuó su viaje hacia 2014 MU69, llamado Arrokoth",
-        "Arrokoth tiene dos lóbulos unidos, como un muñeco de nieve achatado, de unos 35 kilómetros de largo",
-        "Su superficie suave y su color rojizo indican un encuentro muy lento entre dos cuerpos",
-        "Eso apoya la idea de que algunos planetesimales se formaron por colapso gradual de nubes de partículas, no por colisiones violentas"
-      ],
-      "ambience": "ice",
-      "image_queries": [
-        "Arrokoth New Horizons",
-        "2014 MU69 New Horizons",
-        "Arrokoth bilobate",
-        "Arrokoth color",
-        "Arrokoth neck",
-        "Kuiper belt object",
-        "Kuiper belt illustration",
-        "Kuiper belt Hubble",
-        "New Horizons spacecraft Kuiper belt",
-        "Arrokoth surface"
-      ],
-      "video_queries": [
-        "Arrokoth flyby animation",
-        "Kuiper belt visualization",
-        "New Horizons Arrokoth rotation"
-      ],
-      "text": "Hay un lugar, a seis mil millones de kilómetros del Sol, donde la luz del día se parece a una noche clara con luna. Allí el hielo casi nunca se derrite. Y en ese lugar, desde hace mucho tiempo, flotan millones de cuerpos que nadie había visto de cerca.\n\nLos astrónomos llaman a esta región el cinturón de Kuiper. Empieza justo después de la órbita de Neptuno, a unas treinta veces la distancia entre la Tierra y el Sol. Se extiende hasta unas cincuenta veces esa distancia. Es una franja ancha, parecida a un disco, llena de cuerpos helados que giran despacio alrededor de la estrella.\n\nSegún las estimaciones actuales, hay cientos de miles de objetos de más de cien kilómetros de ancho. Si pudieras recorrer una de esas montañas de hielo a pie, tardarías un día entero en cruzarla. Y de los objetos más pequeños, los que miden metros o centímetros, nadie ha podido hacer una cuenta fiable.\n\nDurante décadas, los científicos pensaron que todos esos cuerpos serían mundos congelados. Allí el frío es tan intenso que nada cambia. Se les imaginaba como fósiles, intactos desde que se formó el sistema solar.\n\nPero quedaba una pregunta sencilla. ¿Qué forma tienen los objetos que nunca se fundieron ni se chocaron con fuerza?\n\nNadie lo sabía. Desde la Tierra, esos cuerpos son puntos apenas visibles, y los telescopios no distinguen su silueta. Había que ir hasta allí.\n\nPor eso, después de pasar junto a Plutón, la sonda New Horizons no se detuvo. Los ingenieros la dirigieron hacia un objeto aún más lejano, con un nombre de catálogo poco poético: dos mil catorce MU sesenta y nueve. Más tarde recibiría un nombre mejor, Arrokoth, una palabra que significa cielo en una lengua de los pueblos originarios de Norteamérica.\n\nPasaron más de tres años. La nave avanzó en silencio, sola, y el objeto creció poco a poco como una mota en la pantalla. Al principio los datos eran confusos. La luz que llegaba parecía subir y bajar, como si algo largo estuviera girando.\n\nEntonces llegaron las imágenes nítidas.\n\nArrokoth tenía dos partes redondeadas, una junto a la otra.\n\nUna era más grande, la otra algo más pequeña. Estaban unidas por una zona estrecha, como un muñeco de nieve un poco aplastado. En total, el objeto mide unos treinta y cinco kilómetros de largo, más o menos lo que una ciudad mediana de extremo a extremo.\n\nLo más sorprendente era su piel. Casi no había cráteres grandes ni grietas profundas. La superficie se veía suave, con un color rojizo, tal vez por moléculas orgánicas que la luz ultravioleta transformó durante miles de millones de años.\n\nEsa suavidad contaba algo. Si dos cuerpos se hubieran estrellado con violencia, habrían quedado deformados o rotos. Pero estos dos lóbulos se tocaron con lentitud, a una velocidad parecida a la de una persona que camina. Se acercaron, se rozaron y se quedaron pegados.\n\nLos científicos piensan que esto apoya una idea nueva sobre cómo nacieron los planetesimales, los ladrillos de los planetas. Quizá muchos no se formaron a golpes, sino por un colapso gradual. Una nube de granos de polvo y hielo se fue juntando, despacio, bajo su propia gravedad, hasta formar un cuerpo.\n\nTodavía quedan detalles por resolver, y no todos los expertos lo ven igual. Pero Arrokoth es una de las pruebas más claras que tenemos.\n\nY la respuesta a la pregunta es esta.\n\nArrokoth conserva casi intacta la forma con la que se juntó hace unos cuatro mil quinientos millones de años.\n\nMira la escala. Ese abrazo lento ocurrió antes de que existiera la Tierra tal como la conoces, antes del primer océano. Y nada lo ha perturbado desde entonces. Estás mirando, por primera vez, una página del libro original de los mundos, todavía cerrada.\n\nDetrás de la sonda, Arrokoth se fue apagando hasta volverse un punto. Pero New Horizons siguió adelante, y en el camino quedaban otras preguntas. Si el cinturón guardaba tantos cuerpos así, ¿qué lugar ocupaba Plutón entre ellos?"
-    },
-    {
-      "title": "Plutón, Eris y el borde invisible",
-      "question": "¿Por qué Plutón dejó de llamarse planeta, y qué hay aún más lejos?",
-      "reveal": "El Sol no termina en el cinturón de Kuiper: más allá se extiende una nube de cometas que podría llegar a cerca de un año luz, y New Horizons y las Voyager siguen avanzando hacia ese borde.",
-      "beats": [
-        "El hallazgo de Eris en 2005, un cuerpo muy parecido a Plutón en tamaño y masa",
-        "La Unión Astronómica Internacional define en 2006 la categoría de planeta enano",
-        "Plutón y otros objetos como Eris, Haumea y Makemake forman una familia diversa",
-        "El disco disperso y los objetos con órbitas muy alargadas",
-        "La nube de Oort, hipotética y no observada directamente, como fuente de cometas de largo período",
-        "La heliopausa, donde el viento solar deja de dominar, alcanzada por las Voyager",
-        "Las naves siguen en silencio hacia el espacio interestelar",
-        "Cierre sereno: un sistema solar mayor y más hermoso de lo que imaginábamos, y un Plutón que sigue vivo"
+        "Las primeras fotografías de la sonda soviética Luna 3 en 1959 mostraron un lado desconocido",
+        "Una cara casi sin mares, con corteza más gruesa, a diferencia de la cara visible",
+        "La cuenca Polo Sur-Aitken, de unos 2500 kilómetros de diámetro, entre las mayores cicatrices conocidas",
+        "Los astronautas del Apolo 8 fueron los primeros humanos en ver el lado oculto en 1968",
+        "Las misiones Chang'e, incluida la primera alunizada en el lado oculto en 2019",
+        "Por qué se llama lado oculto y no lado oscuro: también recibe luz solar",
+        "Una pregunta abierta: por qué los dos hemisferios son tan diferentes"
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Eris dwarf planet",
-        "Eris and Dysnomia Hubble",
-        "Haumea dwarf planet",
-        "Makemake dwarf planet",
-        "Kuiper belt Webb",
-        "Oort cloud illustration",
-        "Voyager 1 spacecraft",
-        "Voyager heliosphere",
-        "Pluto New Horizons farewell",
-        "Solar system edge illustration"
+        "Moon far side LRO",
+        "Moon far side Apollo 8",
+        "Moon South Pole-Aitken basin",
+        "Moon far side crater Tsiolkovskiy",
+        "Moon far side Chang'e 4",
+        "Moon far side Earth rise DSCOVR",
+        "Moon far side EPIC DSCOVR",
+        "Moon far side mosaic",
+        "Moon Mare Moscoviense",
+        "Moon Korolev crater"
       ],
       "video_queries": [
-        "Kuiper belt Oort cloud visualization",
-        "heliosphere Voyager animation",
-        "solar system zoom out visualization"
+        "Moon far side DSCOVR transit",
+        "Moon far side flyover animation",
+        "Lunar Reconnaissance Orbiter far side visualization"
       ],
-      "text": "En el año dos mil cinco, un astrónomo californiano revisaba fotografías tomadas dos años antes con el telescopio del monte Palomar. Se llamaba Mike Brown, y entre las manchas de luz encontró una que se movía muy despacio. Era un punto tenue, a casi el triple de distancia que Plutón.\n\nMidieron su brillo y calcularon su tamaño. Resultó ser casi tan grande como Plutón, y bastante más masivo. Lo llamaron Eris, como la diosa griega de la discordia. El nombre fue más certero de lo que nadie pensaba.\n\nPorque ahora había una pregunta incómoda. Si Plutón era un planeta, Eris también lo era. ¿Y cuántos más esperaban, todavía sin descubrir, en aquella oscuridad helada?\n\nLos astrónomos se reunieron en Praga en el año dos mil seis. La Unión Astronómica Internacional tenía que decidir qué es un planeta. Después de varios días de debate, acordaron tres condiciones. Debe orbitar alrededor del Sol, debe ser lo bastante masivo para ser casi redondo, y debe haber despejado su vecindad de otros cuerpos.\n\nPlutón cumplía las dos primeras. La tercera no. Comparte su camino con miles de objetos helados, y no domina ninguno de ellos.\n\nAsí nació otra categoría, la de planeta enano.\n\nPlutón no cambió en absoluto. Su corazón de nitrógeno siguió respirando, y su cielo azul siguió ahí. Cambió la forma en que lo nombramos, y con ella la manera de entender el lugar donde vive.\n\nHoy conocemos cinco planetas enanos reconocidos. Están Plutón y Eris, y también Haumea, que gira tan rápido que se estiró como un balón de rugby. Está Makemake, brillante y rojizo, y Ceres, que vive mucho más cerca, entre Marte y Júpiter. Son mundos distintos entre sí, una familia diversa. Ninguno se parece del todo a otro.\n\nEris merece una mirada más. Su órbita es muy inclinada y muy alargada. Se aleja del Sol casi cien veces más que la Tierra, y tarda unos quinientos sesenta años en completar una vuelta. Pertenece a una región llamada disco disperso, formada por cuerpos que Neptuno empujó hace mucho tiempo hacia caminos extensos y excéntricos.\n\nY más allá del disco disperso, los mapas se vuelven más honestos. Se vuelven dudas.\n\nLos astrónomos creen que el Sol está rodeado por una enorme nube de cometas, llamada nube de Oort. Nadie la ha visto. Nadie ha enviado una sonda a tocarla. Sabemos de ella por los cometas que a veces cruzan el cielo después de viajar durante miles de años, venidos desde todas las direcciones a la vez. Esa forma de llegar sugiere un caparazón esférico, y no un disco plano como el cinturón.\n\nSe calcula que esa nube podría extenderse hasta cerca de un año luz del Sol. Un año luz es la distancia que recorre la luz en un año completo. Si caminaras sin descansar, tardarías muchos millones de años en cruzarlo.\n\nEl Sol no termina en el cinturón de Kuiper.\n\nSu familia sigue más allá, en una niebla de hielo y de cometas dormidos, tan dispersa que entre uno y otro hay distancias enormes. Su borde exterior queda a casi un cuarto del camino hasta la estrella más cercana.\n\nMientras tanto, hay un borde que sí hemos tocado. Es la heliopausa, el lugar donde el viento del Sol deja de dominar. Desde el Sol sale una corriente constante de partículas, que forma una burbuja a su alrededor. Más allá, empieza el gas que llena el espacio entre las estrellas.\n\nLas dos Voyager lo cruzaron hace unos años, la primera en dos mil doce y la segunda en dos mil dieciocho. Ambas llevan casi medio siglo de viaje. Ya no están en el territorio del Sol, pero todavía no han llegado a la nube de Oort, que apenas empieza lejos de ellas.\n\nSiguen avanzando, sin prisa y sin ruido. Sus radios envían una señal muy débil, cada vez más lenta en llegar. Un día se apagarán. Y aun entonces seguirán su camino entre las estrellas.\n\nNew Horizons va detrás de ellas, con Plutón y Arrokoth en su memoria. También se dirige hacia ese borde, con la calma de quien ya vio lo que había que ver.\n\nHace un siglo, el sistema solar terminaba en una bola de roca que apenas se distinguía en una placa fotográfica. Hoy sabemos que es mucho más grande. Tiene mundos con corazones de hielo, lunas que giran en pareja, cielos azules en la oscuridad y cometas dormidos a un año luz de distancia.\n\nY Plutón sigue ahí. Pequeño, frío, activo, todavía lleno de preguntas. Aún le queda un largo camino alrededor del Sol, y lo recorrerá con la misma paciencia de siempre.\n\nTú también has llegado lejos esta noche. Deja que el frío quede atrás, y que la luz del Sol sea un punto suave en tu memoria. Respira despacio. Ahí afuera todo sigue su curso, sin prisa. Buenas noches."
+      "text": "Durante miles de años, la Luna te mostró siempre el mismo rostro, y nadie se preguntó con seriedad qué había detrás. Era como una casa con una sola puerta visible. Cada noche tú ves las mismas manchas oscuras, los mismos bordes, la misma sonrisa torcida de siempre.\n\nPero la Luna gira. Lo hace despacio, al mismo ritmo con que rodea la Tierra, y por eso esconde una mitad. Entonces surge la pregunta. ¿Cómo es el lado que no vemos? ¿Será igual al nuestro, con sus grandes mares oscuros, o será otro mundo?\n\nEn octubre de mil novecientos cincuenta y nueve, una sonda soviética llamada Luna tres se acercó a ese lado escondido. Llevaba una cámara que tomaba fotografías sobre película, la revelaba dentro de la nave y la escaneaba para enviarla a la Tierra como señal de radio. Las imágenes llegaron borrosas, con mucho ruido, casi como un recuerdo mal guardado.\n\nAun así, en ellas se veía algo. Había cráteres, había zonas claras, y apenas un par de manchas oscuras pequeñas. Los ingenieros que las recibieron esperaban encontrar un reflejo de la cara conocida. Encontraron una superficie distinta.\n\nCon los años, otras sondas la fotografiaron con más detalle, y el contraste se volvió evidente. En la cara visible, los mares de lava cubren buena parte del terreno. En la otra, apenas unos pocos manchones, y el resto es un paisaje claro, áspero, lleno de cráteres que se montan unos sobre otros.\n\nEs un terreno más escarpado. Si pudieras caminar por allí, subirías y bajarías por colinas antiguas, sin grandes llanuras oscuras donde descansar la vista.\n\nHabía una pista en el interior. Las mediciones de las sondas que orbitaron la Luna indicaron que la corteza del lado oculto es más gruesa, en promedio, que la del lado cercano. Esa capa más gruesa pudo hacer más difícil que el magma subiera hasta la superficie. Por eso, quizás, hay tan pocos mares allí.\n\nY entonces apareció la cicatriz más grande de todas.\n\nSe llama cuenca Polo Sur-Aitken. Mide unos dos mil quinientos kilómetros de diámetro. Es una distancia parecida a la que separa Ciudad de México de Panamá, y hablamos de un solo agujero en el suelo.\n\nUn impacto la excavó hace mucho, mucho tiempo, y es una de las cuencas de impacto más grandes y antiguas que se conocen en el sistema solar. Con tantos miles de millones de años encima, otros cráteres la han cubierto y sus bordes se han gastado. Desde lejos, no parece un golpe. Parece una depresión enorme, hundida varios kilómetros bajo el nivel de su entorno.\n\nEn diciembre de mil novecientos sesenta y ocho, la tripulación del Apolo ocho rodeó la Luna. Frank Borman, Jim Lovell y William Anders fueron las primeras personas en mirar ese lado con sus propios ojos. Pasaron por detrás mientras la nave quedaba sin contacto con la Tierra, y la radio guardó silencio.\n\nDescribieron un suelo gris, golpeado, sin marcas de océanos. Lovell dijo que parecía yeso, o arena gris de una playa. Era una imagen sencilla para algo tan antiguo.\n\nDécadas después, llegaron las misiones chinas Chang'e. En enero de dos mil diecinueve, Chang'e cuatro hizo algo que nunca se había logrado: posarse en el lado oculto. Cayó dentro de un cráter llamado Von Kármán, que forma parte de la gran cuenca. Como la Luna le tapaba la Tierra, necesitó un satélite de relevo para enviar sus señales.\n\nAllí, un pequeño vehículo avanzó sobre un suelo polvoriento, tomó imágenes y estudió las rocas. Está en un lugar donde el cielo no tiene Tierra, ni nunca la tendrá.\n\nY hay un detalle que conviene aclarar. Se le llama lado oculto, no lado oscuro. Ese lado también recibe la luz del Sol. Cuando tú ves la Luna llena, el otro hemisferio está en plena noche. Cuando es luna nueva, allí es mediodía.\n\nLa Luna gira, y cada punto de su superficie tiene su día y su noche, de unas dos semanas cada uno. Solo la Tierra queda siempre fuera de la vista.\n\nAsí que la respuesta a la primera pregunta es clara.\n\nEl lado oculto es más escarpado, casi sin mares, y guarda una de las mayores cuencas de impacto.\n\nPero queda otra pregunta, y esa nadie la ha cerrado. ¿Por qué dos mitades de un mismo mundo son tan diferentes? Hay hipótesis, que hablan de calor, de la Tierra recién formada, de impactos y de una corteza que se enfrió de manera desigual. Ninguna lo explica del todo.\n\nPuede que la respuesta esté escondida en esas rocas, esperando a que alguien las traiga. Para llegar hasta ellas, primero habrá que aprender a cruzar el espacio hasta la Luna, y eso se tardó en conseguir."
+    },
+    {
+      "title": "Ocho años para llegar",
+      "question": "¿Cómo pasó la humanidad de mirar la Luna a caminar sobre ella?",
+      "reveal": "En menos de una década la humanidad pasó de enviar astronautas a orbitar la Tierra a pisar otro mundo, impulsada por una carrera tecnológica sin precedentes.",
+      "beats": [
+        "Los años iniciales: los primeros satélites y vuelos humanos al espacio",
+        "El anuncio del programa lunar en 1961 y los pasos previos de Mercury y Gemini",
+        "Las sondas Ranger, Surveyor y Lunar Orbiter que exploraron la Luna antes de que llegaran las personas",
+        "Apolo 8 en diciembre de 1968: los primeros humanos en orbitar la Luna y la imagen de la Tierra saliendo sobre el horizonte lunar",
+        "Apolo 10, el ensayo general sin alunizaje",
+        "La complejidad de una misión: el cohete Saturno V, el módulo de mando y el módulo lunar",
+        "El silencio de una nave rumbo a otro mundo: tres días de viaje"
+      ],
+      "ambience": "none",
+      "image_queries": [
+        "Earthrise Apollo 8",
+        "Apollo 8 Moon view",
+        "Apollo 10 Moon view",
+        "Lunar Orbiter Earthrise",
+        "Surveyor 1 Moon surface",
+        "Apollo Moon orbit view",
+        "Earth from Moon",
+        "Apollo 13 Moon far side",
+        "Apollo 17 Earth Blue Marble",
+        "Apollo command module Moon orbit"
+      ],
+      "video_queries": [
+        "Apollo 8 Earthrise",
+        "Apollo Moon orbit footage",
+        "Saturn V launch Apollo restored"
+      ],
+      "text": "En mil novecientos cincuenta y siete, un hombre en cualquier pueblo del mundo podía salir al patio, mirar hacia arriba y ver una luz diminuta cruzando el cielo. No era una estrella ni un avión. Era una esfera de metal, del tamaño de una pelota de playa, que repetía una señal de radio una y otra vez.\n\nSe llamaba Sputnik, y fue el primer objeto fabricado por seres humanos en dar vueltas alrededor de la Tierra. Tardaba poco más de una hora y media en completar cada órbita. Apenas cuatro años después, un hombre iba dentro de una cápsula, y en solo ocho años más habría personas caminando sobre la Luna. ¿Cómo pasó la humanidad de mirar ese disco pálido a pisarlo?\n\nLa respuesta empieza con un paso pequeño. En abril de mil novecientos sesenta y uno, el soviético Yuri Gagarin dio una vuelta completa a la Tierra y volvió vivo. Fue el primer ser humano en el espacio. Su vuelo duró menos de dos horas, lo que tarda una película corta.\n\nPocas semanas después, el presidente de Estados Unidos, John Kennedy, habló ante el Congreso. Propuso llevar a un hombre a la Luna y traerlo de regreso antes de que terminara aquella década. En ese momento, los estadounidenses habían pasado apenas quince minutos en el espacio, y sin dar ni una órbita.\n\nFaltaba aprender casi todo. El programa Mercury enseñó a un solo astronauta a sobrevivir en una cápsula diminuta. El programa Gemini llevó a dos personas a la vez, durante días. En Gemini se practicó lo más difícil: acercar dos naves en el vacío y unirlas, como dos barcos que se tocan en plena oscuridad.\n\nMientras tanto, nadie sabía bien qué había en la superficie lunar. Algunos temían que el polvo fuera tan profundo que se tragaría una nave. Así que primero fueron las máquinas.\n\nLas sondas Ranger se estrellaron a propósito contra la Luna, tomando fotografías cada vez más cercanas hasta el último segundo. Después llegaron las Surveyor, que se posaron con suavidad y enviaron imágenes del suelo. Una de ellas probó algo decisivo: la superficie aguantaba el peso de una nave. Las Lunar Orbiter, por su parte, dieron vueltas alrededor del satélite y fotografiaron los lugares donde luego se podría descender.\n\nNinguna de esas máquinas llevaba a nadie dentro. Pero cada una dejó un trozo de mapa.\n\nLlegó entonces diciembre de mil novecientos sesenta y ocho. La misión Apolo ocho despegó con tres hombres: Frank Borman, James Lovell y William Anders. Ninguna persona se había alejado jamás de la Tierra más que unos mil quinientos kilómetros. Ellos iban a recorrer cuatrocientos mil.\n\nAl llegar, la nave pasó por detrás de la Luna y quedó sin contacto con la Tierra. Encendió su motor para frenar y quedar atrapada en órbita. Si el motor fallaba, nadie lo sabría hasta que ellos reaparecieran, o no.\n\nFuncionó. Y en la cuarta vuelta ocurrió algo que nadie había planeado como una escena.\n\nPor encima de un horizonte gris y lleno de cráteres, subió una esfera azul y blanca.\n\nAnders tomó la fotografía. Hoy la conocemos como la Salida de la Tierra. Muestra nuestro mundo pequeño, con nubes y océanos, suspendido sobre un suelo muerto. Por primera vez, la Luna dejó de ser solo el lugar al que íbamos. También era el sitio desde donde se veía nuestro hogar.\n\nFaltaba un ensayo final. En mayo de mil novecientos sesenta y nueve, el Apolo diez repitió todo el viaje con el módulo lunar completo. Dos astronautas descendieron en él hasta unos quince kilómetros sobre la superficie. Ahí se detuvieron, miraron el Mar de la Tranquilidad desde cerca y regresaron. No alunizaron, a propósito. Era la prueba general antes de la función.\n\nPiensa en todo lo que tenía que funcionar. El cohete Saturno cinco medía más de cien metros, más que un campo de fútbol puesto de pie. Sus motores consumían toneladas de combustible cada segundo, y el estruendo se sentía en el pecho a varios kilómetros de distancia.\n\nPero casi todo ese gigante era desechable. Arriba, en la punta, viajaba lo que importaba: el módulo de mando, donde vivían los tres hombres, y el módulo lunar, una especie de araña de metal frágil que solo servía para bajar y subir de la Luna. Su pared, en algunos puntos, era más delgada que varias hojas de papel.\n\nDespués del estruendo venía lo contrario. Una vez fuera de la órbita terrestre, la nave dejaba de acelerar y simplemente avanzaba. Durante unos tres días, tres personas flotaban dentro de una cabina del tamaño de una camioneta pequeña, con el zumbido bajo de los ventiladores como único sonido. Por la ventana, la Tierra se encogía hasta caber detrás de un pulgar.\n\nEn doce años, la humanidad había pasado de lanzar una esfera que pitaba a preparar a dos personas para pisar otro mundo. Una carrera entre dos países lo había empujado todo, con una velocidad que nadie había conocido antes. Y casi nadie, al empezar, sabía si era posible.\n\nAhora la nave ya estaba en camino, con la Luna creciendo en la ventana. Faltaba el momento más delicado de todos: bajar."
+    },
+    {
+      "title": "Los pasos en el polvo",
+      "question": "¿Qué se siente caminar sobre la Luna?",
+      "reveal": "Seis misiones pisaron la Luna entre 1969 y 1972, y las huellas siguen allí porque no hay viento ni agua que las borre.",
+      "beats": [
+        "Apolo 11 en julio de 1969: el descenso del módulo lunar y el alunizaje en el Mar de la Tranquilidad",
+        "Los primeros pasos de Neil Armstrong y Buzz Aldrin, mientras Michael Collins orbitaba",
+        "El paisaje: un cielo negro, un horizonte cercano, una luz dura y un polvo fino y pegajoso",
+        "Cómo es moverse con una sexta parte de la gravedad terrestre: saltos largos y pasos lentos",
+        "Apolo 15, 16 y 17 y el uso del vehículo lunar para explorar más lejos",
+        "Apolo 13, la misión que no alunizó pero volvió sana y salva",
+        "En total, doce astronautas caminaron en la Luna, y el último en irse fue en diciembre de 1972"
+      ],
+      "ambience": "none",
+      "image_queries": [
+        "Apollo 11 landing site LRO",
+        "Apollo 17 landing site LRO",
+        "Apollo 15 landing site LRO",
+        "Apollo 12 Surveyor 3 LRO",
+        "Apollo footprints lunar surface",
+        "Apollo 14 landing site LRO",
+        "Apollo 16 landing site LRO",
+        "Tranquility Base LRO",
+        "Apollo 11 lunar surface",
+        "Apollo 17 Taurus-Littrow valley"
+      ],
+      "video_queries": [
+        "Apollo landing sites LRO visualization",
+        "Apollo 11 landing footage restored",
+        "Apollo 17 lunar rover footage"
+      ],
+      "text": "¿Qué se siente caminar sobre la Luna? Durante años, nadie pudo responder esa pregunta, porque nadie lo había hecho.\n\nEs julio de mil novecientos sesenta y nueve. Dentro de un módulo lunar del tamaño de una pequeña cabaña, dos hombres miran por ventanas estrechas cómo el suelo se acerca. Se llaman Neil Armstrong y Buzz Aldrin. Arriba, en la nave principal, Michael Collins sigue orbitando, completamente solo.\n\nEl piloto automático los lleva hacia un lugar lleno de rocas grandes. Armstrong toma el control manual y busca un terreno más liso. El combustible baja. Cada segundo cuenta, y la voz de Aldrin va leyendo los números con calma.\n\nEntonces el polvo se levanta en círculos bajo el motor, y las patas tocan el Mar de la Tranquilidad.\n\nHoras después, Armstrong baja por la escalera. Pone la bota izquierda sobre la superficie y se detiene un instante. El suelo no se hunde mucho. Es un polvo tan fino que se adhiere a la bota, como harina húmeda, y deja una marca nítida en cada paso.\n\nMira alrededor. El cielo es negro, aunque el Sol brilla con toda su fuerza. No hay aire que difunda la luz, así que no existe ese azul suave al que estamos acostumbrados. La luz es dura y directa. Las sombras son tan oscuras que casi se ven huecos en el suelo.\n\nEl horizonte también sorprende. Está muy cerca, porque la Luna es pequeña y su curva se cierra enseguida. Una roca que parece estar a pocos pasos puede encontrarse mucho más lejos. Sin árboles ni casas, sin nada conocido, el ojo pierde la medida de las distancias.\n\nY luego está el cuerpo. La gravedad de la Luna es una sexta parte de la terrestre. Un hombre con el traje puesto pesa allí lo que aquí pesaría un niño. Pero conserva toda su masa, y eso lo cambia todo.\n\nLos astronautas descubrieron que correr era torpe. Lo que funcionaba era una especie de trote con saltos largos, como un canguro lento. Para detenerse había que planear el frenado con anticipación. Cada paso levantaba un polvo que caía despacio, sin una sola nube, en arcos perfectos.\n\nAsí que esa es la respuesta. Caminar sobre la Luna se siente como moverse en un sueño, ligero y a la vez pausado.\n\nDespués del Apolo once vinieron otras misiones. En el Apolo trece, en abril de mil novecientos setenta, un tanque de oxígeno estalló camino a la Luna. Los tres astronautas no alunizaron. Usaron el módulo lunar como bote salvavidas, rodearon la Luna y volvieron a casa sanos y salvos.\n\nMás tarde, el Apolo quince, el dieciséis y el diecisiete llevaron algo nuevo: un vehículo lunar eléctrico, plegado dentro del módulo. Con él, los astronautas se alejaron varios kilómetros de la nave. Ya no se limitaban a explorar los alrededores. Llegaron a laderas de montañas y a bordes de valles, y volvieron con rocas de lugares muy distintos.\n\nEn total, seis misiones alunizaron. Doce personas caminaron sobre la Luna. El último en subir la escalera fue Eugene Cernan, en diciembre de mil novecientos setenta y dos.\n\nDesde entonces, nadie ha vuelto a pisarla.\n\nY sin embargo, las huellas siguen allí. En la Luna no hay viento que las barra ni lluvia que las disuelva. Solo la caída lenta de partículas diminutas, que tardaría millones de años en cubrirlas.\n\nEsas pisadas son quizá las marcas humanas más duraderas que existen. Cuando tú y todos los que conoces ya no estén, seguirán ahí, quietas, bajo un cielo negro.\n\nPero esos viajes no solo dejaron huellas. Los astronautas también regresaron con las manos llenas, y esas piedras todavía tenían mucho que contar."
+    },
+    {
+      "title": "Lo que la Luna nos enseña y lo que viene",
+      "question": "¿Qué nos cuenta la Luna sobre nuestro propio origen y quién volverá?",
+      "reveal": "La Luna guarda un registro intacto de la historia temprana de la Tierra, y su polo sur, con hielo en cráteres en sombra, es el destino de las próximas misiones tripuladas.",
+      "beats": [
+        "Las 382 kilogramos de muestras traídos por las misiones Apolo y los estudios que todavía se hacen con ellas",
+        "Cómo la Luna estabiliza la inclinación de la Tierra y causa las mareas",
+        "Los espejos retrorreflectores dejados por Apolo, con los que aún se mide la distancia a la Luna con láser",
+        "La Luna se aleja de la Tierra unos centímetros al año",
+        "El hielo de agua en cráteres en sombra permanente cerca del polo sur",
+        "El programa Artemis y el regreso planificado de seres humanos",
+        "El cierre: la Luna sale cada noche, y tras ella queda todo lo que aún no sabemos"
+      ],
+      "ambience": "deep_space",
+      "image_queries": [
+        "Moon south pole LRO",
+        "Moon Shackleton crater ice",
+        "Artemis I Orion Moon flyby",
+        "Orion spacecraft Moon far side",
+        "Earth and Moon from space",
+        "Moon rising over Earth ISS",
+        "Moon Earthrise Artemis I",
+        "Apollo retroreflector Moon",
+        "Moon sunrise ISS",
+        "Moon lunar eclipse from space"
+      ],
+      "video_queries": [
+        "Artemis I Orion Moon flyby",
+        "Earth Moon system visualization",
+        "Moon south pole water ice visualization"
+      ],
+      "text": "En la Tierra hay un cuarto donde se guardan, dentro de cajas selladas, trescientos ochenta y dos kilogramos de piedras y polvo. Es poco más que el peso de cinco personas. Casi nadie las ve, y sin embargo, medio siglo después, siguen abriéndose.\n\nSon las muestras que trajeron las misiones Apolo. Se guardan con extremo cuidado, algunas en nitrógeno seco, para que el aire de la Tierra no las toque. Los científicos de hoy tienen instrumentos que no existían en mil novecientos setenta y dos. Con ellos le hacen a esas piedras preguntas nuevas. Y aquí aparece la nuestra: ¿qué nos cuenta la Luna sobre nuestro propio origen, y quién volverá a ella?\n\nLa primera respuesta está en esas rocas. En la Tierra, el agua, el viento y el movimiento del suelo borraron casi todo lo que ocurrió en sus primeros cientos de millones de años. Aquí no queda una sola roca de aquel tiempo, o casi ninguna. En la Luna, en cambio, las piedras siguen donde se enfriaron. Guardan la edad del choque que la formó y el ritmo de los impactos que vinieron después.\n\nHay otra herencia, más discreta. La Luna sostiene a la Tierra como una mano sostiene una peonza. Tu planeta está inclinado unos veintitrés grados, y esa inclinación apenas se mueve. Gracias a eso hay estaciones suaves y regulares. Sin la Luna, la inclinación podría variar mucho a lo largo de millones de años, y el clima cambiaría con ella.\n\nY está el mar. La Luna tira del agua de la Tierra con su gravedad. Dos abultamientos se forman en los océanos, y la Tierra gira bajo ellos. Por eso, en cualquier playa, el agua sube y baja dos veces al día. Es un movimiento lento, que se repite desde mucho antes de que hubiera alguien para mirarlo.\n\nLos astronautas dejaron algo más en la superficie. Son espejos, pequeños paneles con cientos de prismas, que devuelven la luz en la misma dirección en que llegó. Todavía hoy, en varios observatorios, se dispara un rayo láser hacia ellos. Un instante después, una luz muy débil regresa. Se mide el tiempo del viaje de ida y vuelta, que dura poco más de dos segundos y medio.\n\nCon esa medida se conoce la distancia a la Luna con una precisión de milímetros. Y el resultado es sorprendente.\n\nLa Luna se está alejando.\n\nSe aleja unos tres centímetros y ocho milímetros por año, más o menos lo que crece una uña. La causa son esas mismas mareas, que le van entregando a la Luna un poco de la energía de giro de la Tierra. Con el tiempo, los días de tu planeta se alargan, apenas una fracción de segundo cada siglo. Hace mucho, la Luna estaba mucho más cerca y se veía enorme en el cielo.\n\nAhora, el otro lado de la pregunta. Hacia el polo sur de la Luna, hay cráteres tan profundos que el Sol nunca ha entrado en ellos. El Sol allí apenas roza el horizonte, y el fondo queda en una oscuridad que dura miles de millones de años. La temperatura puede bajar a unos doscientos grados bajo cero. Las sondas que han orbitado la Luna han detectado señales de hielo de agua en esos lugares.\n\nTodavía no sabemos cuánto hay, ni en qué forma exacta. Pero es agua que podría servir para beber, o para fabricar aire y combustible. Es también un archivo, porque ese hielo pudo llegar hace mucho con cometas y asteroides.\n\nPor eso el programa Artemis apunta justamente allí.\n\nArtemis planea llevar de nuevo seres humanos a la Luna, y esta vez cerca del polo sur. Se probarán trajes nuevos y se buscará el hielo con las manos y con instrumentos. Las fechas han cambiado varias veces, como suele ocurrir con las misiones difíciles. Pero la dirección no ha cambiado.\n\nAsí que la respuesta es doble. La Luna guarda un registro casi intacto de la historia temprana de la Tierra, un libro que tu planeta perdió. Y su polo sur, con hielo escondido en la sombra, es el lugar al que volverán las próximas personas.\n\nQueda mucho por saber. Todavía no entendemos del todo por qué sus dos caras son tan distintas. No sabemos cuánto de Theia quedó en nosotros. Y esa agua congelada guarda historias que aún no hemos leído.\n\nMientras tanto, la Luna sigue su camino. Esta noche saldrá por el horizonte, tranquila, como lo hizo para quienes vivían en cuevas y para quienes encendían fogatas. Ya sabes de qué está hecha, cómo nació y quiénes caminaron sobre ella. Y aun así, seguirá guardando más de lo que cuenta.\n\nDéjala subir. Respira despacio. Todo lo que no sabemos sigue allí, esperando con paciencia, y mañana volverá a salir.\n\nBuenas noches."
     }
   ],
-  "cold_open": "A más de cinco mil millones de kilómetros del Sol, en un mundo que casi nadie ha visitado, hay una llanura de hielo con forma de corazón.\n\nDurante décadas creímos que Plutón era una roca congelada y muerta, un punto oscuro al final del sistema solar. Pero esa llanura se renueva sola. Su hielo fluye, lento como un glaciar, y vuelve a empezar.\n\n¿Cómo puede moverse algo en un lugar tan frío?\n\nEsta noche pasaremos más allá de Neptuno. Buscaremos un planeta que nunca existió. Viajaremos nueve años en una sola nave, hasta ver montañas de agua congelada y un cielo azul sobre un horizonte helado.\n\nSin prisa. Con ciencia real, contada con calma.\n\nNo tienes nada que hacer, solo escuchar.\n\nSilencio.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nEmpieza el viaje hacia la orilla oscura del sistema solar.",
+  "cold_open": "Hace más de cincuenta años, un hombre dejó la huella de su bota en el polvo de la Luna. Y esa huella sigue ahí, intacta.\n\nAllá no hay viento que la borre ni lluvia que la lave. Pensábamos que la Luna era un mundo quieto, desde siempre igual. Pero nació de un choque entre dos mundos, y de aquella violencia quedó un silencio casi perfecto.\n\n¿Cómo nace una luna? ¿Y por qué el tiempo casi no la toca?\n\nLo descubrirás poco a poco. Verás un océano de roca fundida enfriarse despacio. Recorrerás llanuras de lava endurecida, y cráteres que guardan la memoria de cada golpe. Y al final, caminarás sobre esos pasos en el polvo.\n\nAquí no hay prisa. Todo lo que oirás es ciencia real, contada con calma, bajo imágenes verdaderas. No tienes nada que hacer, salvo escuchar.\n\nSilencio.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nPonte cómodo, respira hondo, y mira hacia ella.",
   "sources": [
-    "New Horizons",
     "NASA",
-    "Lowell Observatory",
-    "International Astronomical Union",
-    "Voyager 1",
-    "Voyager 2",
-    "Palomar Observatory"
+    "Apollo program",
+    "Luna 3",
+    "Chang'e 4",
+    "Lunar Laser Ranging Experiment",
+    "Artemis program"
   ],
   "review": {
-    "suggested": 23,
-    "applied": 23,
+    "suggested": 19,
+    "applied": 19,
     "fixes": [
       {
-        "section": "chapter_1",
-        "find": "tardarías más de cincuenta mil años en recorrerla",
-        "replace": "tardarías unos cien mil años en recorrerla",
-        "reason": "cálculo erróneo"
-      },
-      {
-        "section": "chapter_1",
-        "find": "Un nombre que a comienzos del siglo veinte todavía no existía, y que un hombre empezó a buscar con una obstinación admirable, mirando fotografías del cielo una y otra vez, bajo una lámpara, en una cúpula de Arizona.",
-        "replace": "Un nombre que a comienzos del siglo veinte todavía no existía. Un hombre empezó a buscarlo con obstinación, mirando fotografías del cielo una y otra vez, bajo una lámpara, en una cúpula de Arizona.",
-        "reason": "oración demasiado larga"
+        "section": "chapter_2",
+        "find": "Pero los cálculos mostraron que la Tierra no habría podido girar tan deprisa, y que el sistema Tierra y Luna tiene más movimiento de giro del que esa idea permitía.",
+        "replace": "Pero los cálculos mostraron que la Tierra no habría podido girar tan deprisa. Además, el sistema Tierra y Luna tiene más movimiento de giro del que esa idea permitía.",
+        "reason": "oración larga"
       },
       {
         "section": "chapter_2",
-        "find": "un joven de Kansas, de veintitrés años, llamado Clyde Tombaugh",
-        "replace": "un joven de Kansas, de veintidós años, llamado Clyde Tombaugh",
-        "reason": "edad correcta"
-      },
-      {
-        "section": "chapter_2",
-        "find": "de una zona cercana a las estrellas Géminis",
-        "replace": "de una zona del cielo cercana a la constelación de Géminis",
-        "reason": "Géminis es una constelación"
+        "find": "todo pudo ocurrir en un tiempo relativamente corto, quizá unos cientos de años, o menos de unos pocos miles.",
+        "replace": "todo pudo ocurrir en un tiempo relativamente corto, quizá en apenas unos siglos.",
+        "reason": "frase confusa e imprecisa"
       },
       {
         "section": "chapter_3",
-        "find": "Plutón mide unos dos mil trescientos setenta y seis kilómetros de diámetro",
-        "replace": "Plutón mide casi dos mil cuatrocientos kilómetros de diámetro",
-        "reason": "cifra redondeada para locución"
+        "find": "Los astronautas del Apolo 15 tenían una tarea sencilla",
+        "replace": "Los astronautas del Apolo quince tenían una tarea sencilla",
+        "reason": "dígitos para TTS"
       },
       {
         "section": "chapter_3",
-        "find": "Piensa en lo que eso significa. La Luna es una cuarta parte",
-        "replace": "Compara. La Luna es una cuarta parte",
-        "reason": "muletilla repetida"
+        "find": "Ahí vuelve la piedra del Apolo 15.",
+        "replace": "Ahí vuelve la piedra del Apolo quince.",
+        "reason": "dígitos para TTS"
+      },
+      {
+        "section": "chapter_3",
+        "find": "Se llama plagioclase, o plagioclasa, y es rica en calcio y aluminio.",
+        "replace": "Se llama plagioclasa, y es rica en calcio y aluminio.",
+        "reason": "pronunciación TTS"
+      },
+      {
+        "section": "chapter_3",
+        "find": "y su edad ronda los cuatro mil quinientos millones de años",
+        "replace": "y su edad supera los cuatro mil millones de años",
+        "reason": "edad más conservadora"
       },
       {
         "section": "chapter_4",
-        "find": "una madrugada de enero",
-        "replace": "una tarde de enero",
-        "reason": "el lanzamiento fue por la tarde"
+        "find": "tenían más de tres mil600 millones de años",
+        "replace": "tenían más de tres mil seiscientos millones de años",
+        "reason": "número mal escrito"
       },
       {
         "section": "chapter_4",
-        "find": "Daría menos energía que una bombilla doméstica grande.",
-        "replace": "Daría menos energía que un par de bombillas domésticas.",
-        "reason": "potencia aproximada de unos 200 vatios"
-      },
-      {
-        "section": "chapter_4",
-        "find": "cruzas la distancia entre Madrid y Buenos Aires en menos de siete minutos",
-        "replace": "cruzas la distancia entre Madrid y Buenos Aires en unos diez minutos",
-        "reason": "cálculo erróneo"
-      },
-      {
-        "section": "chapter_4",
-        "find": "Piensa en lo que eso significa. Una nave cruzaba",
-        "replace": "Imagina la escena. Una nave cruzaba",
-        "reason": "muletilla repetida"
-      },
-      {
-        "section": "chapter_4",
-        "find": "Esa tarde, en pocas horas, New Horizons",
-        "replace": "Ese día, en pocas horas, New Horizons",
-        "reason": "el sobrevuelo fue por la mañana"
+        "find": "unos mil kilómetros de ancho, más o menos la distancia entre Madrid y Roma",
+        "replace": "más de mil kilómetros de ancho, algo menos que la distancia entre Madrid y Roma",
+        "reason": "precisión numérica"
       },
       {
         "section": "chapter_5",
-        "find": "Eso es como ir de Ciudad de México a Guadalajara y no ver nada más que una sábana blanca.",
-        "replace": "Es como ir de Ciudad de México a Monterrey y más allá, viendo solo una sábana blanca.",
-        "reason": "comparación de distancia más exacta"
+        "find": "Copernicus, más al centro, es algo mayor, y también está rodeado de rayos.",
+        "replace": "Copernicus, más al centro, tiene unos ochocientos millones de años, y también está rodeado de rayos.",
+        "reason": "dato impreciso"
       },
       {
         "section": "chapter_5",
-        "find": "la presión en la superficie es miles de veces menor que la de la Tierra",
-        "replace": "la presión en la superficie es unas cien mil veces menor que la de la Tierra",
-        "reason": "cifra más exacta"
-      },
-      {
-        "section": "chapter_5",
-        "find": "tiene, probablemente, menos de unos pocos millones de años",
-        "replace": "tiene, probablemente, menos de diez millones de años",
-        "reason": "frase confusa"
+        "find": "Allí la temperatura baja a unos doscientos grados bajo cero, y esa oscuridad dura miles de millones de años.",
+        "replace": "Allí la oscuridad dura miles de millones de años.",
+        "reason": "repetición con capítulo nueve"
       },
       {
         "section": "chapter_6",
-        "find": "Y se alzan varios kilómetros entre una y otra, un relieve que nadie esperaba",
-        "replace": "Y se alzan cientos de metros, separadas por varios kilómetros, un relieve que nadie esperaba",
-        "reason": "dato corregido"
+        "find": "una sonda soviética llamada Luna 3 se acercó",
+        "replace": "una sonda soviética llamada Luna tres se acercó",
+        "reason": "dígitos para TTS"
       },
       {
         "section": "chapter_6",
-        "find": "A menos doscientos treinta grados, todo cambia.",
-        "replace": "A este frío, todo cambia.",
-        "reason": "cifra repetida"
+        "find": "la tripulación del Apolo 8 rodeó la Luna",
+        "replace": "la tripulación del Apolo ocho rodeó la Luna",
+        "reason": "dígitos para TTS"
+      },
+      {
+        "section": "chapter_6",
+        "find": "Lovell dijo que se parecía a arena de playa removida por niños.",
+        "replace": "Lovell dijo que parecía yeso, o arena gris de una playa.",
+        "reason": "cita inexacta"
+      },
+      {
+        "section": "chapter_6",
+        "find": "Chang'e 4 hizo algo que nunca se había logrado",
+        "replace": "Chang'e cuatro hizo algo que nunca se había logrado",
+        "reason": "dígitos para TTS"
       },
       {
         "section": "chapter_7",
-        "find": "Su presión es miles de veces menor que la de la Tierra.",
-        "replace": "Su presión es unas cien mil veces menor que la de la Tierra.",
-        "reason": "cifra más exacta"
+        "find": "Tardaba unos noventa minutos en completar cada órbita.",
+        "replace": "Tardaba poco más de una hora y media en completar cada órbita.",
+        "reason": "precisión"
       },
       {
-        "section": "chapter_8",
-        "find": "Allí el hielo no se derrite, ni siquiera se mueve.",
-        "replace": "Allí el hielo casi nunca se derrite.",
-        "reason": "contradice el hielo que fluye en Plutón"
+        "section": "chapter_7",
+        "find": "y en solo doce años más habría personas caminando sobre la Luna",
+        "replace": "y en solo ocho años más habría personas caminando sobre la Luna",
+        "reason": "error de cálculo"
       },
       {
-        "section": "chapter_8",
-        "find": "Piénsalo un momento. Ese abrazo lento",
-        "replace": "Mira la escala. Ese abrazo lento",
-        "reason": "muletilla repetida"
+        "section": "chapter_7",
+        "find": "más que unos cientos de kilómetros. Ellos iban a recorrer cuatrocientos mil.",
+        "replace": "más que unos mil quinientos kilómetros. Ellos iban a recorrer cuatrocientos mil.",
+        "reason": "dato corregido (Gemini 11)"
       },
       {
-        "section": "chapter_9",
-        "find": "a casi el doble de distancia que Plutón",
-        "replace": "a casi el triple de distancia que Plutón",
-        "reason": "dato corregido"
-      },
-      {
-        "section": "chapter_9",
-        "find": "Resultó ser casi igual que Plutón, y un poco más masivo.",
-        "replace": "Resultó ser casi tan grande como Plutón, y bastante más masivo.",
-        "reason": "dato más exacto"
+        "section": "chapter_7",
+        "find": "En menos de diez años, la humanidad había pasado",
+        "replace": "En doce años, la humanidad había pasado",
+        "reason": "error de cálculo"
       },
       {
         "section": "chapter_9",
-        "find": "Sus corazones de nitrógeno siguieron respirando, y su cielo azul siguió ahí.",
-        "replace": "Su corazón de nitrógeno siguió respirando, y su cielo azul siguió ahí.",
-        "reason": "singular correcto"
-      },
-      {
-        "section": "chapter_9",
-        "find": "Y casi a mitad de camino entre nosotros y la estrella más cercana.",
-        "replace": "Su borde exterior queda a casi un cuarto del camino hasta la estrella más cercana.",
-        "reason": "distancia exagerada"
+        "find": "Entre ellos habrá, por primera vez, una mujer y una persona de color. Se prepararán campamentos, se probarán trajes nuevos",
+        "replace": "Se probarán trajes nuevos",
+        "reason": "afirmación incierta y desactualizada"
       }
     ]
   },
-  "topic": "Plutón y el cinturón de Kuiper: viaje a los mundos helados más allá de Neptuno",
+  "topic": "La Luna: origen, mares de lava, cráteres y las misiones Apolo",
   "shorts": [
     {
-      "title": "Las montañas de Plutón flotan sobre hielo",
-      "hook": "Las montañas de Plutón flotan",
-      "narration": "Las montañas de Plutón no están clavadas en el suelo. Flotan. Junto a la gran llanura con forma de corazón se alza una hilera de picos que alcanzan unos tres mil quinientos metros. Están hechos de agua congelada, que a casi doscientos treinta grados bajo cero se vuelve tan dura como el granito. Pero el suelo que los rodea es hielo de nitrógeno, blando, y el agua helada es menos densa que él. Así que cada cumbre sería como un témpano en el mar, una balsa de piedra helada empujada por una corriente tan lenta que no la notarías en toda una vida. Los científicos creen que así se amontonan en ciertos rincones de la llanura, aunque los detalles siguen en estudio. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "La Luna se aleja de ti cada año",
+      "hook": "La Luna se está yendo",
+      "narration": "La Luna se está alejando de la Tierra, y lo sabemos con precisión de milímetros. Los astronautas del Apolo dejaron espejos sobre su superficie, pequeños paneles con cientos de prismas. Todavía hoy, varios observatorios disparan un rayo láser hacia ellos. Un instante después, una luz muy débil regresa. El viaje de ida y vuelta dura poco más de dos segundos y medio, y con ese tiempo se mide la distancia. El resultado es claro: cada año la Luna se aleja unos tres centímetros y ocho milímetros, más o menos lo que crece una uña. La causa son las mareas, que le entregan poco a poco energía del giro de la Tierra. Hace mucho tiempo, la Luna estaba mucho más cerca y se veía enorme en el cielo. Y mientras tú lees esto, sigue alejándose, centímetro a centímetro, al ritmo de tus uñas. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Pluto Norgay Montes mountains",
-        "Pluto Sputnik Planitia nitrogen ice plain",
-        "Pluto mountains water ice New Horizons",
-        "Pluto heart Tombaugh Regio close up"
+        "Apollo 11 laser ranging retroreflector",
+        "Lunar laser ranging retroreflector array",
+        "Apollo 14 retroreflector moon surface",
+        "Full moon night sky"
       ],
       "video_queries": [
-        "New Horizons Pluto flyover mountains",
-        "Pluto Sputnik Planitia animation"
+        "Apollo lunar retroreflector deployment",
+        "Moon rising over Earth horizon"
       ],
-      "source": "NASA / New Horizons"
+      "source": "NASA / Lunar Laser Ranging Experiment"
     },
     {
-      "title": "En Plutón, el centro de giro está en el vacío",
-      "hook": "Plutón gira alrededor de la nada",
-      "narration": "Plutón no gira alrededor de nada que puedas tocar. Su luna Caronte pesa tanto que el punto de equilibrio entre ambos queda fuera de Plutón, en el espacio vacío, a unos novecientos kilómetros sobre su superficie. Allí no hay roca ni hielo, solo un lugar sin nombre. Los dos mundos giran alrededor de él, uno frente al otro, como dos personas que se toman de las manos y se inclinan hacia atrás. En la Tierra y la Luna, en cambio, ese punto queda dentro de nuestro planeta. Y hay más: cada uno muestra siempre la misma cara al otro, así que desde un lado de Plutón, Caronte cuelga inmóvil en el cielo. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "La Luna nació de un choque entre dos mundos",
+      "hook": "La Luna nació de un choque",
+      "narration": "Hace unos cuatro mil quinientos millones de años, un mundo del tamaño de Marte chocó contra la Tierra. Se llamaba Theia. No fue un golpe de frente, sino un roce oblicuo, como una piedra que toca el borde de otra. Theia se deshizo, y una enorme cantidad de roca vaporizada y fundida salió disparada hacia el espacio. Esos escombros formaron un disco incandescente alrededor de la Tierra, girando como los anillos de Saturno, pero hechos de roca al rojo vivo. Según las simulaciones, los fragmentos pudieron unirse en apenas unos siglos. Para un mundo, eso es un parpadeo. Si hubieras estado allí, habrías visto un anillo de fuego sobre tu cabeza, y en él, entre las brasas, empezaba a juntarse la Luna que hoy miras cada noche. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Pluto Charon system New Horizons",
-        "Charon moon close up",
-        "Pluto and Charon barycenter",
-        "Pluto four small moons Styx Nix Kerberos Hydra"
+        "Moon formation giant impact illustration",
+        "Theia collision Earth artist concept",
+        "Young Earth molten surface artist concept",
+        "Full moon close up"
       ],
       "video_queries": [
-        "Pluto Charon orbit animation",
-        "New Horizons Charon rotation"
+        "Giant impact moon formation simulation",
+        "Moon formation animation NASA"
       ],
-      "source": "NASA / New Horizons"
+      "source": "NASA"
     },
     {
-      "title": "Un hombre encontró Plutón mirando parpadeos",
-      "hook": "Un punto saltó en la oscuridad",
-      "narration": "En febrero de mil novecientos treinta, un punto diminuto saltó de lugar en un visor, y así se descubrió Plutón. Clyde Tombaugh tenía veintitrés años y pasaba noches enteras en una sala oscura comparando placas fotográficas, cada una con cientos de miles de estrellas. Un espejo alternaba entre dos fotos del mismo cielo. Si todo era igual, nada se movía. Mes tras mes, ningún salto. Hasta que una mota minúscula cambió de sitio. Era un mundo nuevo a unos seis mil millones de kilómetros, una distancia que ningún avión recorrería en una vida entera. Lo había encontrado buscando entre miles de estrellas una sola que no estuviera en su sitio. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "El lado oculto de la Luna esconde una cicatriz gigante",
+      "hook": "La cicatriz más grande de la Luna",
+      "narration": "En el lado oculto de la Luna hay un agujero de unos dos mil quinientos kilómetros de diámetro. Se llama cuenca Polo Sur-Aitken, y es una distancia parecida a la que separa Ciudad de México de Panamá, pero en un solo golpe. Un impacto la excavó hace muchísimo tiempo, y es una de las mayores y más antiguas cuencas de impacto del sistema solar. Con tantos miles de millones de años encima, otros cráteres la han cubierto y sus bordes se han gastado. Desde lejos no parece un golpe, sino una depresión enorme, hundida varios kilómetros bajo su entorno. En enero de dos mil diecinueve, la sonda Chang'e cuatro se posó en su interior, en el cráter Von Kármán, un lugar donde el cielo nunca tendrá Tierra. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Clyde Tombaugh Lowell Observatory",
-        "Pluto discovery plates 1930",
-        "Lowell Observatory blink comparator",
-        "Tombaugh Regio Pluto heart"
+        "South Pole-Aitken basin topography",
+        "Far side of the Moon Chang'e 4",
+        "Von Karman crater Chang'e 4 lander",
+        "Moon far side Lunar Reconnaissance Orbiter"
       ],
       "video_queries": [
-        "Clyde Tombaugh discovery of Pluto",
-        "New Horizons Pluto approach"
+        "Far side of the Moon rotating",
+        "Lunar Reconnaissance Orbiter far side flyover"
       ],
-      "source": "NASA / Lowell Observatory"
+      "source": "NASA / Chang'e 4"
     }
   ]
 }
