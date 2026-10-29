@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Estrato Nocturno</title>
+<style>
+  :root { --bg:#0b0d1a; --ink:#ecebf5; --soft:#a9acd6; --accent:#8E93D9; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:radial-gradient(ellipse at 50% 30%, #1a1d3a 0%, var(--bg) 70%); color:var(--ink);
+         font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; text-align:center; padding:24px; }
+  .moon { width:84px; height:84px; border-radius:50%; margin:0 auto 28px;
+          box-shadow:inset -22px 0 0 0 #f0e6c8; filter:drop-shadow(0 0 18px rgba(240,230,200,.35)); }
+  h1 { font-weight:300; font-size:1.6rem; margin:0 0 10px; letter-spacing:.06em; }
+  p { color:var(--soft); margin:0 0 30px; line-height:1.5; }
+  a.btn { display:block; max-width:320px; margin:0 auto; padding:18px 20px; border-radius:16px;
+          text-decoration:none; font-size:1.15rem; background:var(--accent); color:#0b0d1a; font-weight:700; }
+  small { display:block; margin-top:26px; color:#6d7099; font-size:.8rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="moon" aria-hidden="true"></div>
+  <h1>Estrato Nocturno</h1>
+  <p id="s">Un viaje nuevo para dormir, cada noche.</p>
+  <a class="btn" id="b" href="https://www.youtube.com/@EstratoNocturno?sub_confirmation=1">Suscribirme</a>
+  <small id="n">Es gratis. Te avisamos cuando haya un viaje nuevo.</small>
+</main>
+<script>
+const T = {
+  es: ["Un viaje nuevo para dormir, cada noche.", "Suscribirme", "Es gratis. Te avisamos cuando haya un viaje nuevo."],
+  en: ["A new journey to fall asleep to, every night.", "Subscribe", "It's free. We'll let you know when there's a new journey."],
+  pt: ["Uma nova viagem para dormir, toda noite.", "Inscrever-me", "É grátis. Avisamos quando houver uma nova viagem."],
+  fr: ["Un nouveau voyage pour s'endormir, chaque nuit.", "M'abonner", "C'est gratuit. On te prévient à chaque nouveau voyage."],
+  de: ["Jede Nacht eine neue Reise zum Einschlafen.", "Abonnieren", "Kostenlos. Wir sagen dir Bescheid, wenn es eine neue Reise gibt."],
+  it: ["Un nuovo viaggio per dormire, ogni notte.", "Iscriviti", "È gratis. Ti avvisiamo quando c'è un nuovo viaggio."],
+};
+const lang = (navigator.language || "es").slice(0, 2).toLowerCase();
+const tr = T[lang];
+if (tr) {
+  document.documentElement.lang = lang;
+  document.getElementById("s").textContent = tr[0];
+  document.getElementById("b").textContent = tr[1];
+  document.getElementById("n").textContent = tr[2];
+}
+</script>
+</body>
+</html>
