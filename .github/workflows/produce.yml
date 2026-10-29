@@ -41,6 +41,9 @@ on:
         description: "Muestra corta (5 min, 2 capítulos, sin Shorts) que se sube en privado como MUESTRA; requiere tema"
         type: boolean
         default: false
+      sample_minutes:
+        description: "Minutos de la muestra (vacío = 5)"
+        required: false
       bench_engines:
         description: "Prueba de voces: solo estos motores (ej. chatterbox,qwen; emotion = voz dirigida; vacío = todos)"
         required: false
@@ -120,6 +123,7 @@ jobs:
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           TOPIC: ${{ inputs.topic }}
+          SAMPLE_MINUTES: ${{ inputs.sample_minutes }}
           UPLOAD: ${{ inputs.upload }}
         run: |
           ARGS=""
@@ -198,7 +202,7 @@ jobs:
         run: |
           git config user.name "quiet-cosmos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/
+          git add data/ web/links.json 2>/dev/null || git add data/
           git diff --cached --quiet || git commit -m "Episode produced $(date -u +%F)"
           # another run may have pushed meanwhile: retry, and on a conflict keep this run's files
           for i in 1 2 3; do git pull --rebase -X theirs && git push && break; git rebase --abort 2>/dev/null; sleep 10; done

@@ -70,7 +70,13 @@ def clean(text, chapter_title=""):
         kept.append(line)
     text = "\n".join(kept).replace("*", "").replace("_", " ")
     text = text.replace("!", ".")
-    return re.sub(r"\n{3,}", "\n\n", text).strip()
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
+    # a "moment of silence" written as a word would be read aloud ("Silencio." in the 28-oct cold open)
+    paras = [p for p in text.split("\n\n") if not STAGE_WORD.match(p.strip())]
+    return "\n\n".join(paras).strip()
+
+
+STAGE_WORD = re.compile(r"^[\(\[]?\s*(silencio|silence|pausa|pause|\.{3}|…)\s*[\.\)\]]*\s*$", re.I)
 
 
 def _first_words(text, n=8):
@@ -185,9 +191,97 @@ def write_script(topic, cfg):
     outline["cold_open"] = with_subscribe_line(sections["cold_open"], ch.get("subscribe_line"))
     for i, c in enumerate(chapters, 1):
         c["text"] = sections[f"chapter_{i}"]
+    if cfg.get("companion", {}).get("enabled"):
+        add_companion(outline, cfg)
 
     outline["topic"] = topic
     return outline
+
+
+def _paras(text):
+    return [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+
+
+def _norm(p):
+    return " ".join(p.split())
+
+
+def _single(p):
+    return len([s for s in re.split(r"(?<=[.?…])\s+", p.strip()) if s]) == 1
+
+
+def companion_slots(chapters, every_min, wpm, first_min=None):
+    """Where the narrator steps out of the story to speak to the listener: about every `every_min` minutes of
+    narration, always at a paragraph break inside a chapter (never right after the chapter card, never at its
+    very end, never next to a one-line reveal). Returns [(chapter_index, paragraph_index_to_insert_before)]."""
+    first_min = every_min if first_min is None else first_min
+    marks, words = [], 0
+    for ci, c in enumerate(chapters):
+        ps = _paras(c["text"])
+        for pi, p in enumerate(ps):
+            if 2 <= pi <= len(ps) - 2 and not (_single(ps[pi - 1]) or _single(p)):
+                marks.append((words / wpm, ci, pi))
+            words += len(p.split())
+    slots, target, total = [], first_min, words / wpm
+    while target < total - 1.5:
+        cands = [m for m in marks if abs(m[0] - target) <= every_min * 0.5 and (m[1], m[2]) not in slots]
+        if cands:
+            best = min(cands, key=lambda m: abs(m[0] - target))
+            slots.append((best[1], best[2]))
+        target += every_min
+    return slots
+
+
+def add_companion(outline, cfg):
+    """Nocturno, 29-oct-2026 (Luis: "que me sienta acompañado"): short moments where the narrator speaks
+    directly to the one listener awake at night, about every companion.every_minutes, plus the fixed "gift"
+    line once (QR to share the channel by WhatsApp). The inserted paragraphs are listed in
+    chapter["companion"] so the voice can say them softer and the video can time the QR on the gift line."""
+    comp, ch = cfg["companion"], cfg["channel"]
+    chapters, wpm = outline["chapters"], cfg["voice"]["wpm"]
+    starts, words = {}, 0
+    for ci, c in enumerate(chapters):
+        for pi, p in enumerate(_paras(c["text"])):
+            starts[(ci, pi)] = words / wpm
+            words += len(p.split())
+    total = words / wpm
+    slots = companion_slots(chapters, comp.get("every_minutes", 12), wpm, comp.get("first_minute"))
+    if not slots:
+        return
+    blocks = []
+    for k, (ci, pi) in enumerate(slots, 1):
+        ps = _paras(chapters[ci]["text"])
+        blocks.append(f"Place {k}:\nBEFORE: {ps[pi - 1]}\nAFTER: {ps[pi]}")
+    try:
+        lines = ask_json(fill("companion.md", CHANNEL=ch["name"], LANGUAGE=LANG_NAMES[ch["language"]],
+                              TITLE=outline["title"], COUNT=len(slots), SLOTS="\n\n".join(blocks)),
+                         lambda d: isinstance(d, list) and len(d) == len(slots) and all(isinstance(x, str) for x in d))
+    except Exception as exc:
+        print(f"  companion skipped: {exc}")
+        return
+    gift = (comp.get("gift_line") or "").strip()
+    gift_slot = None
+    if gift:   # the gift line rides on the companion moment nearest to gift_minute (asked once, still awake)
+        gift_at = min(comp.get("gift_minute", 30), total * 0.55)
+        gift_slot = min(range(len(slots)), key=lambda k: abs(starts[slots[k]] - gift_at))
+    for k in sorted(range(len(slots)), key=lambda k: slots[k], reverse=True):   # insert back to front
+        ci, pi = slots[k]
+        ps = _paras(chapters[ci]["text"])
+        new = [x for x in [clean(lines[k]).replace("\n", " ").strip(), gift if k == gift_slot else ""] if x]
+        chapters[ci]["text"] = "\n\n".join(ps[:pi] + new + ps[pi:])
+        chapters[ci].setdefault("companion", []).extend(new)
+        if k == gift_slot:
+            chapters[ci]["gift"] = gift
+    times = sorted(round(starts[s], 1) for s in slots)
+    outline["companion"] = {"count": len(slots), "minutes": times,
+                            "gift_minute": round(starts[slots[gift_slot]], 1) if gift else None}
+    print(f"  companion: {len(slots)} moments at ~{times} min" + (" + gift line" if gift else ""))
+
+
+def story_text(chapter):
+    """A chapter's narration without the companion moments (for Shorts and anything that is not the episode)."""
+    soft = {_norm(p) for p in chapter.get("companion", [])}
+    return "\n\n".join(p for p in _paras(chapter["text"]) if _norm(p) not in soft)
 
 
 DEFAULT_SHORT_ENDING = ('End with a short line inviting them to the full journey on the channel, phrased naturally '
@@ -206,7 +300,7 @@ def write_shorts(script, cfg, count=2):
     closing = (cfg.get("shorts") or {}).get("closing_line", "")
     ending = ("End on the payoff itself, with no invitation, no call to action and no mention of the channel: "
               "a fixed closing line is added after your text automatically." if closing else DEFAULT_SHORT_ENDING)
-    text = "\n\n".join(c["text"] for c in script["chapters"])
+    text = "\n\n".join(story_text(c) for c in script["chapters"])
     try:
         shorts = ask_json(
             fill("shorts.md", CHANNEL=ch["name"], LANGUAGE=LANG_NAMES[ch["language"]],

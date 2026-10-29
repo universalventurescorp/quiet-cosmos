@@ -168,12 +168,37 @@ def build_episode(timing, script, media, cfg, W=None, H=None, ai=None):
     oc = timing["outro"]
     shots.append({"kind": "stars", "seed": 9, "backdrop": backdrop, "start": oc["start"], "end": timing["duration"],
                   "speed": 0.6})
-    overlays.append(cards.end_card(W, H, cfg["channel"]["name"], "Rest well.", oc["start"] + 1.5,
+    rest = {"es": "Que descanses.", "en": "Rest well."}.get(cfg["channel"]["language"], "Rest well.")
+    overlays.append(cards.end_card(W, H, cfg["channel"]["name"], rest, oc["start"] + 1.5,
                                    timing["duration"] - 1.0))
+    overlays += qr_overlays(timing, cfg, W, H, script.get("share_code"))
     if aic.get("label_on_screen", True):
         overlays += ai_labels(shots, W, H, cfg["channel"]["language"])
     _validate(shots, timing["duration"])
     return shots, overlays
+
+
+def qr_overlays(timing, cfg, W, H, share_code=None):
+    """Nocturno, 29-oct-2026: QR 1 ("llévanos en tu celular", opens the channel with the subscribe prompt) while the
+    narrator asks to subscribe; QR 2 (a crescent moon: opens WhatsApp with a ready message to gift the channel)
+    on the gift line. Each one once, small and dim, lower-left."""
+    qr = (cfg.get("companion") or {}).get("qr") or {}
+    if not qr:
+        return []
+    from urllib.parse import quote
+    out = []
+    for e in timing.get("events", []):
+        if e["kind"] == "subscribe" and qr.get("subscribe_url"):
+            out.append(cards.qr_card(W, H, qr["subscribe_url"], qr.get("subscribe_label", ""), e["start"] - 0.5,
+                                     e["start"] + qr.get("seconds", 22)))
+        elif e["kind"] == "gift" and (qr.get("gift_page") or qr.get("gift_text")):
+            # own page (Cloudflare Pages, web/r.html): opens WhatsApp with THIS video's link, in the phone's
+            # language; without it, a plain WhatsApp message with the channel link
+            url = (f"{qr['gift_page'].rstrip('/')}/r/{share_code}" if qr.get("gift_page") and share_code
+                   else "https://wa.me/?text=" + quote(qr["gift_text"], safe=":/@,"))
+            out.append(cards.qr_card(W, H, url, qr.get("gift_label", ""), e["start"] - 0.5,
+                                     e["start"] + qr.get("seconds", 22) + 4, moon=True))
+    return out
 
 
 def _validate(shots, total):

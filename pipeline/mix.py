@@ -34,18 +34,20 @@ VOICE_EQ["clara"] = VOICE_EQ["documentary"].replace(
 
 
 def mix(narration, music, out, total, music_volume=0.16, lufs=-16, fade_out=6.0, duck=True, voice_eq="clean",
-        voice_pitch_st=0.0, voice_size_st=0.0, sfx=None, sfx_volume=1.0):
-    """sfx: optional sound-design track (pipeline/sfx.py), same length as the episode; it joins the music bus,
+        voice_pitch_st=0.0, voice_size_st=0.0, sfx=None, sfx_volume=1.0, soft_spans=None, soft_db=-4.0):
+    """soft_spans: [(start, end)] where the narrator speaks softer (companion moments), lowered by soft_db AFTER the
+    voice compressors (before them the compression would undo it); the switch falls inside the pauses around them.
+    sfx: optional sound-design track (pipeline/sfx.py), same length as the episode; it joins the music bus,
     so it ducks under the narrator together with the score."""
     try:
         return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st,
-                    voice_size_st, sfx, sfx_volume)
+                    voice_size_st, sfx, sfx_volume, soft_spans, soft_db)
     except Exception:
         if not (voice_pitch_st or voice_size_st):
             raise
         print("   voice pitch/size change failed (no rubberband in ffmpeg?): mixing without it")
         return _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, 0.0, 0.0,
-                    sfx, sfx_volume)
+                    sfx, sfx_volume, soft_spans, soft_db)
 
 
 def _measure_lufs(path):
@@ -57,7 +59,7 @@ def _measure_lufs(path):
 
 
 def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice_eq, voice_pitch_st, voice_size_st,
-         sfx=None, sfx_volume=1.0):
+         sfx=None, sfx_volume=1.0, soft_spans=None, soft_db=-4.0):
     # loudnorm cannot push a mix above ~-13 LUFS (it backs off to protect peaks): for "loud" targets the mix is
     # rendered plain, measured, then raised with a gain + limiter (two passes)
     loud = lufs > -13
@@ -67,6 +69,9 @@ def _mix(narration, music, out, total, music_volume, lufs, fade_out, duck, voice
         final_out = pathlib.Path(out)
         out = str(final_out.with_name(final_out.stem + "_premaster.wav"))
     voice = VOICE_EQ.get(voice_eq, VOICE_EQ["clean"]) + ",aformat=channel_layouts=stereo"
+    if soft_spans:
+        cond = "+".join(f"between(t,{a - 0.25:.2f},{b + 0.25:.2f})" for a, b in soft_spans)
+        voice += f",volume=volume='if({cond},{10 ** (soft_db / 20):.3f},1)':eval=frame"
     if voice_size_st:
         # "bigger" voice (18-oct, Luis: like an older adult, more voice): resonances (formants) lowered by
         # voice_size_st semitones with the pitch unchanged, plus a little chest and density

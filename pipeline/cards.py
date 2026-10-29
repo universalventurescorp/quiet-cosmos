@@ -186,3 +186,64 @@ def source_line(W, H, text, start, end, y_frac=0.775):
                         fill=(0, 0, 0, 165))
     d.text((x, y), text, font=f, fill=(255, 255, 255, 240))
     return _to_overlay(img, start, end, 0.4, 0.3, shadow=False)
+
+
+def _qr_image(url, px, dark=(20, 24, 54, 255), light=(214, 216, 238, 255)):
+    """QR code as an RGBA square of about px pixels (OpenCV's encoder: no extra dependency), quiet zone included."""
+    import cv2
+    p = cv2.QRCodeEncoder_Params()
+    p.correction_level = cv2.QRCodeEncoder_CORRECT_LEVEL_L
+    q = cv2.QRCodeEncoder.create(p).encode(url)          # 0 = dark module, 255 = light, with a 2-module border
+    n = q.shape[0]
+    k = max(2, int(px // n))
+    img = Image.new("RGBA", (n * k, n * k), light)
+    d = ImageDraw.Draw(img)
+    for y in range(n):
+        for x in range(n):
+            if q[y, x] < 128:
+                d.rectangle((x * k, y * k, x * k + k - 1, y * k + k - 1), fill=dark)
+    return img
+
+
+def qr_card(W, H, url, label, start, end, moon=False, opacity=0.74):
+    """Small, quiet QR in the lower-left corner (the AI note lives lower-right). moon=True sets it inside a
+    crescent moon ("regala una noche tranquila"). Shown once, for a few seconds, never bright."""
+    s = H / 1080
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    qr = _qr_image(url, 224 * s)
+    q = qr.size[0]
+    x0, y_bottom = int(96 * s), int(H - 92 * s)
+    f = font("light", int(23 * s))
+    if moon:
+        r = int(q * 0.86)                                  # crescent cradling the code on its left side
+        cx, cy = x0 + r, y_bottom - int(46 * s) - r
+        disc = Image.new("L", (2 * r, 2 * r), 0)
+        ImageDraw.Draw(disc).ellipse((0, 0, 2 * r - 1, 2 * r - 1), fill=255)
+        cut = Image.new("L", (2 * r, 2 * r), 0)
+        ImageDraw.Draw(cut).ellipse((int(r * 0.42), -int(r * 0.08), int(r * 0.42) + 2 * r, int(r * 0.08) + 2 * r), fill=255)
+        mask = Image.fromarray(np.clip(np.array(disc, np.int16) - np.array(cut, np.int16), 0, 255).astype(np.uint8))
+        m = int(30 * s)                                    # room for the glow (no clipped edges)
+        big = Image.new("L", (2 * r + 2 * m, 2 * r + 2 * m), 0)
+        big.paste(mask, (m, m))
+        glow = big.filter(ImageFilter.GaussianBlur(radius=int(16 * s)))
+        layer = Image.new("RGBA", big.size, (246, 236, 205, 0))
+        layer.putalpha(glow.point(lambda v: int(v * 0.28)))
+        img.alpha_composite(layer, (cx - r - m, cy - r - m))
+        moon_l = Image.new("RGBA", (2 * r, 2 * r), (240, 230, 200, 0))
+        moon_l.putalpha(mask.point(lambda v: int(v * 0.62)))
+        img.alpha_composite(moon_l, (cx - r, cy - r))
+        qx, qy = cx - q // 2 + int(r * 0.30), cy - q // 2
+        ty = cy + r + int(14 * s)
+    else:
+        qx, qy = x0, y_bottom - int(46 * s) - q
+        ty = qy + q + int(14 * s)
+    plate = Image.new("L", (q, q), 0)
+    ImageDraw.Draw(plate).rounded_rectangle((0, 0, q - 1, q - 1), radius=int(10 * s), fill=255)
+    qr.putalpha(plate)
+    img.alpha_composite(qr, (qx, qy))
+    d.text((x0, ty), label, font=f, fill=(236, 238, 245, 230))
+    if opacity < 1:
+        a = img.split()[3].point(lambda v: int(v * opacity))
+        img.putalpha(a)
+    return _to_overlay(img, start, end, 1.6, 1.6, shadow=False)

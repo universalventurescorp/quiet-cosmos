@@ -1,0 +1,6 @@
+{
+  "date": "2026-10-29T16:54:15",
+  "sample": true,
+  "topic": "Titán: la luna de Saturno con lagos, ríos y lluvia de metano",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/quiet-cosmos/quiet-cosmos/pipeline/run.py\", line 600, in _main_with_crash_report\n    main()\n  File \"/home/runner/work/quiet-cosmos/quiet-cosmos/pipeline/run.py\", line 347, in main\n    script = write_script(topic, cfg)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/quiet-cosmos/quiet-cosmos/pipeline/script.py\", line 137, in write_script\n    outline = ask_json(\n              ^^^^^^^^^\n  File \"/home/runner/work/quiet-cosmos/quiet-cosmos/pipeline/script.py\", line 42, in ask_json\n    data = extract_json(ask_claude(prompt))\n                        ^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/quiet-cosmos/quiet-cosmos/pipeline/script.py\", line 36, in ask_claude\n    raise RuntimeError(f\"claude -p failed: {last}\")\nRuntimeError: claude -p failed: Failed to authenticate. API Error: 401 Invalid bearer token\n\n"
+}
