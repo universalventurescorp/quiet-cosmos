@@ -205,7 +205,7 @@ def _qr_image(url, px, dark=(20, 24, 54, 255), light=(214, 216, 238, 255)):
     return img
 
 
-def qr_card(W, H, url, label, start, end, moon=False, opacity=0.86):
+def qr_card(W, H, url, label, start, end, moon=False, opacity=0.74):
     """Small, quiet QR in the lower-left corner (the AI note lives lower-right). moon=True sets it inside a
     crescent moon ("regala una noche tranquila"). Shown once, for a few seconds, never bright."""
     s = H / 1080
@@ -228,10 +228,10 @@ def qr_card(W, H, url, label, start, end, moon=False, opacity=0.86):
         big.paste(mask, (m, m))
         glow = big.filter(ImageFilter.GaussianBlur(radius=int(16 * s)))
         layer = Image.new("RGBA", big.size, (246, 236, 205, 0))
-        layer.putalpha(glow.point(lambda v: int(v * 0.40)))
+        layer.putalpha(glow.point(lambda v: int(v * 0.28)))
         img.alpha_composite(layer, (cx - r - m, cy - r - m))
         moon_l = Image.new("RGBA", (2 * r, 2 * r), (240, 230, 200, 0))
-        moon_l.putalpha(mask.point(lambda v: int(v * 0.80)))
+        moon_l.putalpha(mask.point(lambda v: int(v * 0.62)))
         img.alpha_composite(moon_l, (cx - r, cy - r))
         qx, qy = cx - q // 2 + int(r * 0.30), cy - q // 2
         ty = cy + r + int(14 * s)

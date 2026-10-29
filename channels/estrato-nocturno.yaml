@@ -22,7 +22,8 @@ channel:
   # Una sola frase tranquila al final del cold open, cuando el oyente todavía está despierto.
   subscribe_line: "Si este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos."
 
-# 29-oct-2026 (Luis): "que me sienta acompañado". Cada ~12 min de narración el narrador deja la historia un momento
+# 29-oct-2026 (Luis): "que me sienta acompañado". El narrador nunca dice "escanea": la mayoría ve en el celular;
+# los QR son para la TV (35 % de las horas, 44 min de promedio) y la computadora. Cada ~12 min de narración el narrador deja la historia un momento
 # y le habla al oyente (más suave, con pausa antes y después). Una sola vez, el "regalo": QR de luna que abre WhatsApp
 # con un mensaje listo para compartir el canal. QR de suscripción mientras se pide suscribirse en la apertura.
 companion:
@@ -31,12 +32,12 @@ companion:
   first_minute: 6
   pause: 0.8               # silencio extra antes y después de cada momento de compañía (s)
   soft_db: -4              # la voz baja 4 dB en esos momentos (después de la compresión)
-  gift_minute: 30
-  gift_line: "Y si alguien que quieres también pasa noches largas, escanea la luna y regálale este viaje."
+  gift_minute: 20
+  gift_line: "Y si conoces a alguien que también pasa noches largas, compártele este viaje."
   qr:
     seconds: 22
-    subscribe_url: "https://www.youtube.com/@EstratoNocturno?sub_confirmation=1"
-    subscribe_label: "Llévanos en tu celular"
+    subscribe_url: "https://estratonocturno.pages.dev/s"   # web/s.html: un solo botón "Suscribirme"
+    subscribe_label: "Suscríbete desde tu celular"
     gift_page: "https://estratonocturno.pages.dev"   # web/r.html en Cloudflare Pages (29-oct)
     gift_text: "Para tus noches largas, te regalo esto: https://youtube.com/@EstratoNocturno"
     gift_label: "Regala una noche tranquila"
