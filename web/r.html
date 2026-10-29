@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Estrato Nocturno</title>
+<style>
+  :root { --bg:#0b0d1a; --ink:#ecebf5; --soft:#a9acd6; --accent:#8E93D9; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:radial-gradient(ellipse at 50% 30%, #1a1d3a 0%, var(--bg) 70%); color:var(--ink);
+         font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; text-align:center; padding:24px; }
+  .moon { width:84px; height:84px; border-radius:50%; margin:0 auto 28px;
+          box-shadow:inset -22px 0 0 0 #f0e6c8; filter:drop-shadow(0 0 18px rgba(240,230,200,.35)); }
+  h1 { font-weight:300; font-size:1.4rem; margin:0 0 10px; letter-spacing:.02em; }
+  p { color:var(--soft); margin:0 0 28px; line-height:1.5; }
+  a.btn { display:block; max-width:320px; margin:0 auto 14px; padding:15px 20px; border-radius:14px;
+          text-decoration:none; font-size:1rem; }
+  a.wa { background:var(--accent); color:#0b0d1a; font-weight:600; }
+  a.yt { border:1px solid rgba(169,172,214,.35); color:var(--ink); }
+  small { display:block; margin-top:26px; color:#6d7099; letter-spacing:.18em; font-size:.7rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="moon" aria-hidden="true"></div>
+  <h1 id="t">Regala una noche tranquila</h1>
+  <p id="s">Abriendo WhatsApp…</p>
+  <a class="btn wa" id="wa" href="#">Enviar por WhatsApp</a>
+  <a class="btn yt" id="yt" href="#">Ver el video</a>
+  <small>ESTRATO NOCTURNO</small>
+</main>
+<script>
+// /r/<código> (cada video tiene su código, impreso en su QR). links.json lo escribe el sistema al subir el video.
+const CHANNEL = "https://www.youtube.com/@EstratoNocturno";
+const T = {
+  es: ["Regala una noche tranquila", "Abriendo WhatsApp…", "Enviar por WhatsApp", "Ver el video",
+       "Para tus noches largas, te regalo esto: "],
+  en: ["Give someone a calm night", "Opening WhatsApp…", "Send on WhatsApp", "Watch the video",
+       "For your long nights, here's a gift for you: "],
+  pt: ["Presenteie uma noite tranquila", "Abrindo o WhatsApp…", "Enviar pelo WhatsApp", "Ver o vídeo",
+       "Para as suas noites longas, um presente para você: "],
+  fr: ["Offrez une nuit paisible", "Ouverture de WhatsApp…", "Envoyer sur WhatsApp", "Voir la vidéo",
+       "Pour tes longues nuits, je t'offre ceci : "],
+  de: ["Schenke eine ruhige Nacht", "WhatsApp wird geöffnet…", "Per WhatsApp senden", "Video ansehen",
+       "Für deine langen Nächte, ein Geschenk für dich: "],
+  it: ["Regala una notte tranquilla", "Apertura di WhatsApp…", "Invia su WhatsApp", "Guarda il video",
+       "Per le tue notti lunghe, ti regalo questo: "],
+};
+const lang = (navigator.language || "es").slice(0, 2).toLowerCase();
+const tr = T[lang] || T.es;
+document.documentElement.lang = T[lang] ? lang : "es";
+const code = decodeURIComponent(location.pathname.replace(/^\/r\/?/, "").replace(/\/$/, "")).toLowerCase();
+
+async function go() {
+  let url = CHANNEL;
+  try {
+    const r = await fetch("/links.json", { cache: "no-store" });
+    const links = await r.json();
+    if (links[code]) url = "https://youtu.be/" + links[code];
+  } catch (e) { /* sin lista: se comparte el canal */ }
+  const wa = "https://wa.me/?text=" + encodeURIComponent(tr[4] + url);
+  document.getElementById("t").textContent = tr[0];
+  document.getElementById("s").textContent = tr[1];
+  const a = document.getElementById("wa"); a.textContent = tr[2]; a.href = wa;
+  const y = document.getElementById("yt"); y.textContent = tr[3]; y.href = url;
+  setTimeout(() => { location.href = wa; }, 700);
+}
+go();
+</script>
+</body>
+</html>
