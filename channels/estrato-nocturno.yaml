@@ -22,6 +22,24 @@ channel:
   # Una sola frase tranquila al final del cold open, cuando el oyente todavía está despierto.
   subscribe_line: "Si este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos."
 
+# 29-oct-2026 (Luis): "que me sienta acompañado". Cada ~12 min de narración el narrador deja la historia un momento
+# y le habla al oyente (más suave, con pausa antes y después). Una sola vez, el "regalo": QR de luna que abre WhatsApp
+# con un mensaje listo para compartir el canal. QR de suscripción mientras se pide suscribirse en la apertura.
+companion:
+  enabled: true
+  every_minutes: 12
+  first_minute: 6
+  pause: 0.8               # silencio extra antes y después de cada momento de compañía (s)
+  soft_db: -4              # la voz baja 4 dB en esos momentos (después de la compresión)
+  gift_minute: 30
+  gift_line: "Y si alguien que quieres también pasa noches largas, escanea la luna y regálale este viaje."
+  qr:
+    seconds: 22
+    subscribe_url: "https://www.youtube.com/@EstratoNocturno?sub_confirmation=1"
+    subscribe_label: "Llévanos en tu celular"
+    gift_text: "Para tus noches largas, te regalo esto: https://youtube.com/@EstratoNocturno"
+    gift_label: "Regala una noche tranquila"
+
 voice:
   # Narrador del canal (elegido el 16-oct-2026 tras 4 rondas de pruebas): voz diseñada con Qwen3-TTS
   # (Apache-2.0) y clonada frase por frase en la GPU de Kaggle a partir de este clip de referencia.

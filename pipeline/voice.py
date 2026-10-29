@@ -273,6 +273,9 @@ def is_reveal(paragraph, index):
 class Track:
     def __init__(self):
         self.parts, self.n, self.cues, self.reveals = [], 0, [], []
+        self.marks = {}      # normalized paragraph text -> kind ("companion", "gift", "subscribe")
+        self.events = []     # [{"kind", "start", "end"}] where those paragraphs were said
+        self.soft_pause = 0.0
 
     @property
     def t(self):
@@ -293,9 +296,13 @@ class Track:
              pitch_edit=None, reveal_pause=0.0):
         paras = paragraphs(text)
         for pi, p in enumerate(paras):
-            if reveal_pause and is_reveal(p, pi):
+            kind = self.marks.get(" ".join(p.split()))
+            if kind in ("companion", "gift") and self.soft_pause:
+                self.silence(self.soft_pause)       # the narrator turns from the story to the listener
+            elif reveal_pause and is_reveal(p, pi):
                 self.silence(reveal_pause)          # the beat before the payoff
                 self.reveals.append(round(self.t, 3))
+            p_start = self.t
             groups = units(p, unit)
             for gi, g in enumerate(groups):
                 if len(g) == 1:
@@ -311,6 +318,10 @@ class Track:
                     for s, (b0, b1) in zip(g, sentence_bounds(a, g)):
                         self.cues += timed_chunks(start + b0, start + b1, s, max_chars)
                 last = gi == len(groups) - 1
+                if last and kind:
+                    self.events.append({"kind": kind, "start": round(p_start, 3), "end": round(self.t, 3)})
+                    if kind in ("companion", "gift") and self.soft_pause:
+                        self.silence(self.soft_pause)
                 if not (last and pi == len(paras) - 1):
                     self.silence(pause_paragraph if last else pause_sentence)
 
@@ -384,6 +395,14 @@ def synthesize(script, cfg, out_dir, voice=None):
     voice = voice or Voice(v["id"], v["speed"])
     tr = Track()
     timing = {"chapters": []}
+    comp = cfg.get("companion") or {}
+    tr.soft_pause = comp.get("pause", 0.8) if comp.get("enabled") else 0.0
+    for ch in script["chapters"]:
+        for p in ch.get("companion", []):
+            tr.marks[" ".join(p.split())] = "gift" if p == ch.get("gift") else "companion"
+    sub = (cfg["channel"].get("subscribe_line") or "").strip()
+    if sub:
+        tr.marks[" ".join(sub.split())] = "subscribe"
     unit = v.get("unit", "sentence") if isinstance(voice, PrecomputedVoice) else "sentence"
     inner_end = v.get("inner_end") if unit == "paragraph" else None
     pitch_edit = v.get("pitch_edit") if unit == "paragraph" else None
@@ -414,6 +433,7 @@ def synthesize(script, cfg, out_dir, voice=None):
     timing["outro"] = {"start": s, "end": tr.t}
     timing["duration"] = tr.t
     timing["reveals"] = tr.reveals
+    timing["events"] = tr.events
     sf.write(out_dir / "narration.wav", tr.audio(quiet_breaths=v.get("quiet_breaths", False)), SR)
     write_srt(tr.cues, out_dir / "captions.srt")
     return timing
