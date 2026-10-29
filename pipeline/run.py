@@ -55,16 +55,18 @@ def sources_block(script, lang, nasa_items=()):
     return "\n".join(out)
 
 
-def qr_links(cfg):
+def qr_links(cfg, code=None):
     """The two QR destinations as plain links, for the description (phones cannot scan their own screen)."""
     qr = (cfg.get("companion") or {}).get("qr") or {}
-    if not (qr.get("subscribe_url") or qr.get("gift_text")):
+    if not (qr.get("subscribe_url") or qr.get("gift_text") or qr.get("gift_page")):
         return ""
     from urllib.parse import quote
     out = []
     if qr.get("subscribe_url"):
         out.append(f"{qr.get('subscribe_label', 'Suscríbete')}: {qr['subscribe_url']}")
-    if qr.get("gift_text"):
+    if qr.get("gift_page") and code:
+        out.append(f"{qr.get('gift_label', 'Regálalo')}: {qr['gift_page'].rstrip('/')}/r/{code}")
+    elif qr.get("gift_text"):
         out.append(f"{qr.get('gift_label', 'Regálalo')}: https://wa.me/?text={quote(qr['gift_text'], safe=':/@,')}")
     return "\n".join(out)
 
@@ -75,7 +77,7 @@ def build_description(script, timing, lang, used_ai=False, nasa_items=(), cfg=No
     label = "Chapters" if lang == "en" else "Capítulos"
     credits = CREDITS[lang] + (f"\n{credits_line(lang)}" if used_ai else "")
     src = sources_block(script, lang, nasa_items)
-    links = qr_links(cfg or {})
+    links = qr_links(cfg or {}, script.get("share_code"))
     return (f"{script['description']}\n\n" + (f"{links}\n\n" if links else "") + f"{label}\n" + "\n".join(lines)
             + (f"\n\n{src}" if src else "") + f"\n\n{credits}")
 
@@ -344,6 +346,10 @@ def main():
         step(1, N, "writing script with Claude")
         script = write_script(topic, cfg)
         script["shorts"] = write_shorts(script, cfg, cfg.get("shorts", {}).get("count", 2)) if do_shorts else []
+        if ((cfg.get("companion") or {}).get("qr") or {}).get("gift_page"):
+            # short code printed in this video's gift QR: first word of the topic + date (titan-1029)
+            first = slugify(topic).split("-")[0][:12] or "noche"
+            script["share_code"] = f"{first}-{dt.date.today():%m%d}" + ("m" if sample else "")
         write_json(out / "script.json", script)
 
     # 2. AI scenes: Claude designs them, Kaggle starts painting while everything else runs
@@ -542,6 +548,13 @@ def main():
         video_id = upload(video, meta, cfg, thumbnail=thumbs[0] if thumbs else None,
                           captions=out / "captions.srt")
         print(f"   https://youtu.be/{video_id}")
+        if script.get("share_code"):
+            # the gift QR (/r/<code> on the channel's page) now knows which video to share; Cloudflare Pages
+            # redeploys on the commit of web/links.json at the end of the run
+            links_path = ROOT / "web" / "links.json"
+            links = read_json(links_path, {})
+            links[script["share_code"]] = video_id
+            write_json(links_path, links)
         for s in shorts:
             full = "Full documentary" if lang == "en" else "Documental completo"
             src_label = "Source" if lang == "en" else "Fuente"

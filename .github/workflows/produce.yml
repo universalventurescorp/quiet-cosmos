@@ -202,7 +202,7 @@ jobs:
         run: |
           git config user.name "quiet-cosmos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/
+          git add data/ web/links.json 2>/dev/null || git add data/
           git diff --cached --quiet || git commit -m "Episode produced $(date -u +%F)"
           # another run may have pushed meanwhile: retry, and on a conflict keep this run's files
           for i in 1 2 3; do git pull --rebase -X theirs && git push && break; git rebase --abort 2>/dev/null; sleep 10; done

@@ -188,11 +188,11 @@ def source_line(W, H, text, start, end, y_frac=0.775):
     return _to_overlay(img, start, end, 0.4, 0.3, shadow=False)
 
 
-def _qr_image(url, px, dark=(24, 27, 48, 255), light=(236, 231, 218, 255)):
+def _qr_image(url, px, dark=(20, 24, 54, 255), light=(214, 216, 238, 255)):
     """QR code as an RGBA square of about px pixels (OpenCV's encoder: no extra dependency), quiet zone included."""
     import cv2
     p = cv2.QRCodeEncoder_Params()
-    p.correction_level = cv2.QRCodeEncoder_CORRECT_LEVEL_M
+    p.correction_level = cv2.QRCodeEncoder_CORRECT_LEVEL_L
     q = cv2.QRCodeEncoder.create(p).encode(url)          # 0 = dark module, 255 = light, with a 2-module border
     n = q.shape[0]
     k = max(2, int(px // n))
@@ -211,7 +211,7 @@ def qr_card(W, H, url, label, start, end, moon=False, opacity=0.86):
     s = H / 1080
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    qr = _qr_image(url, 196 * s)
+    qr = _qr_image(url, 224 * s)
     q = qr.size[0]
     x0, y_bottom = int(96 * s), int(H - 92 * s)
     f = font("light", int(23 * s))

@@ -37,6 +37,7 @@ companion:
     seconds: 22
     subscribe_url: "https://www.youtube.com/@EstratoNocturno?sub_confirmation=1"
     subscribe_label: "Llévanos en tu celular"
+    gift_page: "https://estratonocturno.pages.dev"   # web/r.html en Cloudflare Pages (29-oct)
     gift_text: "Para tus noches largas, te regalo esto: https://youtube.com/@EstratoNocturno"
     gift_label: "Regala una noche tranquila"
 
