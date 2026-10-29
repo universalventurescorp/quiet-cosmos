@@ -1,506 +1,292 @@
 {
-  "title": "La Luna: Origen, Mares de Lava y Apolo | Documental para Dormir",
-  "description": "La Luna: origen, mares de lava, cráteres y las misiones Apolo es un documental espacial pausado para relajarte, aprender ciencia real y quedarte dormido. Viajaremos desde el choque gigante que la formó hasta las huellas que aún siguen intactas en su polvo.\n\nCon imágenes reales de la NASA y una narración tranquila, recorreremos mares de basalto, cráteres, el lado oculto y los viajes de los astronautas. Es un episodio para escuchar con calma, sin prisa, mientras la noche avanza.",
+  "title": "Titán: Lagos y Lluvia de Metano | Documental Relajante para Dormir",
+  "description": "Titán, la luna de Saturno con lagos, ríos y lluvia de metano, es el único mundo del sistema solar, aparte de la Tierra, donde hoy corre líquido por la superficie. En este documental relajante viajaremos con calma desde la lejanía de Saturno hasta las orillas de un mar de hidrocarburos, siguiendo lo que reveló la sonda Cassini y su pequeño acompañante, Huygens.\n\nEs un viaje tranquilo, pensado para escuchar con atención o para dejarse llevar hasta quedarse dormido. Todo lo que se cuenta se apoya en ciencia bien establecida, y las preguntas que siguen abiertas se presentan como lo que son: preguntas abiertas.",
   "tags": [
-    "la luna documental",
-    "documental de la luna para dormir",
-    "origen de la luna",
-    "mares de la luna",
-    "misiones Apolo",
-    "Apolo 11 documental",
-    "cráteres de la luna",
-    "lado oculto de la luna",
-    "documental espacial relajante",
+    "Titán luna de Saturno",
     "documental del espacio para dormir",
-    "la luna explicada",
-    "cómo se formó la luna",
-    "impacto gigante Theia",
-    "rocas lunares",
-    "Lunar Reconnaissance Orbiter",
-    "viaje a la luna relajante",
-    "ciencia para dormir",
-    "luna y mareas"
+    "documental relajante espacio",
+    "lagos de metano Titán",
+    "lluvia de metano",
+    "Cassini Huygens",
+    "Saturno y sus lunas",
+    "documental espacio en español",
+    "viaje por el sistema solar",
+    "luna con atmósfera",
+    "Titán documental",
+    "vida en Titán",
+    "Dragonfly Titán",
+    "mares de Titán",
+    "relajante para dormir ciencia",
+    "documental NASA español",
+    "exploración espacial relajante",
+    "Kraken Mare"
   ],
   "thumbnail_texts": [
-    "EL POLVO RECUERDA",
-    "UN MUNDO ROTO",
-    "HUELLAS SIN VIENTO"
+    "LLUEVE EN OTRO MUNDO",
+    "LAGOS BAJO LA NIEBLA",
+    "UN MAR NO TERRESTRE"
   ],
-  "hook_promise": "La Luna nació de un choque entre mundos y, como allí no hay viento ni lluvia, las huellas que dejaron los astronautas del Apolo siguen en el polvo casi tal como las dejaron hace más de cincuenta años.",
+  "hook_promise": "En una luna helada a más de mil millones de kilómetros del Sol, la lluvia cae en cámara lenta sobre ríos y lagos que reflejan el cielo naranja, y una sonda llegó a posarse en sus orillas hace casi veinte años.",
   "chapters": [
     {
-      "title": "La Luna que miras cada noche",
-      "question": "¿Por qué vemos siempre la misma cara de la Luna y qué son esas manchas oscuras?",
-      "reveal": "Esas manchas oscuras que reconoces a simple vista son enormes llanuras de roca volcánica solidificada, y la Luna lleva miles de millones de años mostrándote siempre la misma cara.",
+      "title": "Una luna envuelta en niebla naranja",
+      "question": "¿Por qué una luna más pequeña que un planeta tiene una atmósfera más densa que la nuestra?",
+      "reveal": "Titán es la única luna del sistema solar con una atmósfera espesa, y su presión en la superficie es mayor que la de la Tierra al nivel del mar.",
       "beats": [
-        "La Luna a simple vista: su brillo, sus fases y las manchas que cada cultura interpretó como un rostro, un conejo o un hombre",
-        "Su tamaño y distancia: un cuarto del diámetro de la Tierra, a una distancia en la que cabrían todos los planetas del sistema solar uno junto a otro, según un cálculo ampliamente citado",
-        "La rotación sincrónica: tarda lo mismo en girar sobre sí misma que en dar una vuelta a la Tierra, por eso nos muestra una sola cara",
-        "Galileo y su telescopio en 1609: las primeras montañas y cráteres vistos en otro mundo",
-        "Los astrónomos antiguos llamaron mares a las zonas oscuras, creyendo que eran agua; hoy sabemos que son roca",
-        "Una pregunta que dejamos abierta: ¿de dónde salió este mundo tan grande para un planeta tan pequeño?"
-      ],
-      "ambience": "none",
-      "image_queries": [
-        "Moon full Lunar Reconnaissance Orbiter",
-        "Moon near side mosaic",
-        "Moon Mare Imbrium",
-        "Moon Tycho crater",
-        "Moon terminator shadows LRO",
-        "Moon crescent Earth view",
-        "Moon Apennine mountains",
-        "Moon highlands and maria",
-        "Moon Copernicus crater",
-        "Moon Galileo Mission view"
-      ],
-      "video_queries": [
-        "Moon phases visualization LRO",
-        "Moon full rotation 4K NASA",
-        "Moon libration visualization"
-      ],
-      "text": "Esta noche, si hay cielo despejado, sal a mirar hacia arriba. Ahí está, con su brillo pálido, y sobre su cara clara hay manchas grises que conoces desde niño. Son siempre las mismas. Aunque pasen las semanas y la Luna cambie de forma, esas manchas vuelven a ocupar su lugar. ¿Por qué nunca cambian? ¿Y qué son?\n\nDurante miles de años, la gente las miró sin ayuda de ningún instrumento. En Europa vieron un rostro humano, con ojos y boca. En otros lugares vieron a un hombre cargando un haz de leña. En China, en Japón y en buena parte de América, la gente vio un conejo, de pie junto a un mortero. Todos miraban lo mismo. Cada cultura puso allí lo que más conocía.\n\nY la Luna cambiaba sin prisa. Crecía noche a noche, hasta llenarse de luz. Luego se vaciaba otra vez, hasta casi desaparecer. Una vuelta completa de fases dura casi un mes. Mucho antes de los calendarios escritos, ya se contaban las vidas por ese ritmo.\n\nPero ese brillo es un engaño amable. La Luna no tiene luz propia. Es una roca bastante oscura, y refleja apenas una pequeña parte de la luz del Sol que recibe. Aun así, en una noche despejada, alcanza para proyectar tu sombra en el suelo.\n\nTambién es más pequeña de lo que parece. Su diámetro es de aproximadamente la cuarta parte del de la Tierra. Y está lejos, a unos trescientos ochenta y cuatro mil kilómetros. Según un cálculo muy citado, en ese espacio cabrían todos los planetas del sistema solar, puestos en fila, uno junto a otro.\n\nPiensa en eso un momento. Ocho mundos, con sus anillos y sus gigantes de gas, alineados, y todavía sobraría un poco de espacio.\n\nAhora, volvamos a la pregunta. ¿Por qué esa misma cara, siempre? La respuesta tiene que ver con el tiempo. La Luna gira sobre sí misma, pero lo hace con una lentitud exacta. Tarda lo mismo en dar una vuelta sobre su eje que en dar una vuelta alrededor de la Tierra. Es como si alguien caminara en círculo alrededor de una fogata, sin dejar nunca de mirar hacia las llamas.\n\nA esto se le llama rotación sincrónica. No es casualidad. Con el paso de miles de millones de años, la atracción de la Tierra fue frenando el giro de la Luna, hasta fijarla en ese ritmo. Desde entonces, nos muestra una sola cara. Nadie en la Tierra, en toda la historia humana, la vio de otra manera, hasta hace muy poco.\n\nY las manchas siguieron siendo un misterio hasta que, en el año mil seiscientos nueve, un hombre en Italia apuntó un telescopio hacia ella. Se llamaba Galileo Galilei. Su instrumento era pequeño, apenas un tubo con dos lentes. Pero lo que vio cambió la manera de entender el cielo.\n\nLa Luna no era una esfera lisa y perfecta. Tenía montañas. Tenía cráteres, grandes huecos redondos, con bordes elevados. Las sombras se estiraban sobre ellos, igual que se estiran al atardecer sobre un paisaje de la Tierra.\n\nEra la primera vez que alguien veía el relieve de otro mundo.\n\nQuedaban las zonas oscuras. Los astrónomos de aquella época, y otros anteriores a ellos, las llamaron mares. Pensaron que eran extensiones de agua, y por eso les dieron nombres como Mar de la Tranquilidad o Mar de las Lluvias. Los nombres se quedaron, aunque la idea no.\n\nHoy sabemos que no hay agua en esas llanuras. Son enormes extensiones de roca volcánica, lava que corrió hace miles de millones de años y se enfrió hasta endurecerse. Lo que ves como una mancha es un antiguo río de fuego, convertido en piedra oscura.\n\nY esa piedra lleva todo ese tiempo mirándote, siempre desde el mismo ángulo. Aquel rostro, aquel conejo, aquel hombre con su leña, son llanuras de lava solidificada. La Luna ha mostrado la misma cara durante miles de millones de años.\n\nQuizá eso te parezca extraño. Una compañera tan constante, y todavía tan desconocida. Y queda una pregunta más profunda, que ni Galileo pudo responder. La Tierra es un planeta pequeño. Y sin embargo, tiene una luna enorme, demasiado grande para su tamaño. ¿De dónde salió un mundo así?"
-    },
-    {
-      "title": "El choque que la hizo nacer",
-      "question": "¿De dónde salió la Luna?",
-      "reveal": "La hipótesis más aceptada propone que la Luna se formó con los restos de un choque entre la joven Tierra y un mundo del tamaño de Marte, llamado Theia.",
-      "beats": [
-        "Las ideas antiguas sobre su origen: fisión, captura y formación conjunta, y por qué ninguna explicaba todos los datos",
-        "La pista de las rocas Apolo: la Luna y la Tierra tienen una composición de isótopos de oxígeno muy parecida",
-        "La hipótesis del gran impacto: un cuerpo del tamaño de Marte, Theia, golpea la Tierra joven hace unos 4500 millones de años",
-        "Los escombros fundidos forman un disco alrededor de la Tierra y se unen en la Luna en un tiempo relativamente corto",
-        "Una pregunta aún abierta: cuánto material vino de Theia y cuánto de la Tierra, dado lo parecidas que son ambas composiciones",
-        "Lo que sentirías: un cielo ardiente, con un anillo de roca fundida donde luego aparecería la Luna"
-      ],
-      "ambience": "lava",
-      "image_queries": [
-        "giant impact simulation Moon formation",
-        "young Earth molten artist concept",
-        "Moon formation NASA animation",
-        "protoplanetary disk Hubble",
-        "debris disk around young star",
-        "Earth Moon system",
-        "Moon sample Apollo lunar rock",
-        "Moon far side crust",
-        "Moon South Pole-Aitken basin",
-        "Beta Pictoris debris disk"
-      ],
-      "video_queries": [
-        "Moon formation giant impact simulation",
-        "Earth and Moon formation visualization",
-        "protoplanetary disk animation"
-      ],
-      "text": "Durante siglos, los astrónomos tuvieron tres respuestas para una sola pregunta. Y ninguna terminaba de convencer.\n\nLa primera decía que la Luna había salido de la propia Tierra. Una Tierra joven, girando muy rápido, habría lanzado un pedazo de sí misma al espacio. Era una idea elegante. Pero los cálculos mostraron que la Tierra no habría podido girar tan deprisa. Además, el sistema Tierra y Luna tiene más movimiento de giro del que esa idea permitía.\n\nLa segunda decía que la Luna nació lejos, en otro lugar, y que la Tierra la capturó al pasar. Pero atrapar un cuerpo tan grande es muy difícil. Un mundo que pasa a esa velocidad suele seguir de largo. Para quedarse, necesita frenar justo en el momento exacto.\n\nLa tercera decía que ambas se formaron juntas, como hermanas, a partir de la misma nube de polvo. Sonaba natural. Sin embargo, no explicaba por qué la Luna tiene un núcleo de hierro tan pequeño, mucho menor que el terrestre.\n\nEntonces llegaron las rocas.\n\nLos astronautas del Apolo trajeron a la Tierra rocas lunares, y los laboratorios las midieron con una paciencia enorme. Una de las cosas que buscaron fue la proporción de los isótopos de oxígeno. Son variedades del mismo átomo, con un peso apenas distinto. Cada mundo del sistema solar suele tener su propia proporción, como una huella digital.\n\nMarte tiene la suya. Los meteoritos de otras regiones, también. Pero la Luna y la Tierra eran casi idénticas.\n\nEso era extraño. Si la Luna hubiera nacido en otro lugar, su huella sería distinta. Y la idea de la captura quedaba muy debilitada.\n\nAsí que los científicos empezaron a pensar en algo más violento. En los años setenta, dos equipos de investigadores propusieron, por separado, la misma idea. Hace unos cuatro mil quinientos millones de años, cuando la Tierra aún era joven y estaba medio fundida, otro mundo chocó con ella. Era un cuerpo del tamaño de Marte. Se le dio un nombre: Theia, la titán de la mitología griega que fue madre de la Luna.\n\nNo fue un choque de frente. Fue un golpe oblicuo, como una piedra que roza el borde de otra.\n\nTheia se deshizo. Una parte de la Tierra también. Y una enorme cantidad de roca, vaporizada y fundida, salió disparada hacia arriba.\n\nEsos escombros no se perdieron en el espacio. Quedaron atrapados por la gravedad y formaron un disco alrededor de la Tierra, girando como lo hacen hoy los anillos de Saturno. Pero este disco era de roca incandescente. Con el tiempo, los fragmentos se atrajeron unos a otros y se fueron uniendo. Según las simulaciones, todo pudo ocurrir en un tiempo relativamente corto, quizá en apenas unos siglos.\n\nPara un mundo, eso es un parpadeo.\n\nLa hipótesis más aceptada propone que la Luna se formó con los restos de un choque entre la joven Tierra y un mundo del tamaño de Marte.\n\nAun así, queda un detalle sin resolver. Las simulaciones más antiguas decían que la Luna estaría hecha sobre todo de Theia, el cuerpo que golpeó. Y si Theia vino de otra parte del sistema solar, su huella de oxígeno debería ser distinta. Pero no lo es. La Luna se parece demasiado a la Tierra.\n\nQuizá Theia se formó muy cerca, con material casi igual. Quizá el choque fue tan violento que todo se mezcló por completo. Hoy se siguen probando ambas posibilidades. Cuánto vino de Theia y cuánto de la Tierra todavía no lo sabemos con certeza.\n\nPero piensa por un momento qué habrías visto, si hubieras estado allí.\n\nNo habría habido suelo firme bajo tus pies. Solo un mar de roca derretida, brillando de un rojo opaco, bajo un cielo que no era azul. Habría sido un cielo ardiente, lleno de vapor de roca, con un resplandor que lo cubría todo.\n\nY en lo alto, un anillo.\n\nUn arco ancho y brillante, hecho de roca fundida, que giraba despacio sobre ti. Allí, entre esas brasas, aún sin forma, estaba empezando a juntarse la Luna que hoy miras cada noche.\n\nPero una Luna recién nacida de ese modo no podía ser un lugar tranquilo. Era una bola de fuego. Y lo que ocurrió después con todo ese calor es lo que dejó escrito su rostro."
-    },
-    {
-      "title": "Un océano de roca fundida",
-      "question": "¿Cómo era la Luna recién nacida y por qué sus tierras altas son tan claras?",
-      "reveal": "La joven Luna estuvo cubierta por un océano de magma, y los cristales ligeros que flotaron en él formaron la corteza clara de las tierras altas que hoy ves brillar.",
-      "beats": [
-        "Una Luna recién formada, muy caliente, con su superficie fundida por la energía del impacto y de la acreción",
-        "La hipótesis del océano de magma lunar: la roca fundida se enfría lentamente y los minerales se separan por densidad",
-        "Los cristales ligeros de plagioclasa flotan y forman la corteza de las tierras altas, de color claro",
-        "Los minerales más densos se hunden y forman el manto",
-        "La Muestra 15415, la llamada Roca del Génesis, traída por el Apolo 15 y rica en plagioclasa, apoyó esta idea",
-        "Qué significa: la Luna es un mundo que se diferenció en capas, igual que la Tierra, pero conservó el registro"
-      ],
-      "ambience": "lava",
-      "image_queries": [
-        "Moon highlands LRO",
-        "Moon anorthosite highlands",
-        "Moon Apollo 15 Genesis Rock",
-        "Moon crust lunar surface detail",
-        "Moon Orientale basin",
-        "Moon far side highlands",
-        "molten lava lake Kilauea",
-        "Moon surface closeup Apollo",
-        "lunar sample Apollo",
-        "Moon cratered terrain LRO"
-      ],
-      "video_queries": [
-        "lava lake time-lapse",
-        "Moon surface flyover LRO",
-        "magma ocean animation Moon"
-      ],
-      "text": "Los astronautas del Apolo quince tenían una tarea sencilla en la mañana del uno de agosto de mil novecientos setenta y uno: buscar una piedra clara. Caminaban junto a los Apeninos lunares, y entre el polvo gris, algo brillaba distinto. Era un fragmento blanco, del tamaño de un puño, apoyado sobre una roca mayor, como si alguien lo hubiera dejado ahí para ellos.\n\nLo recogieron con cuidado y lo guardaron en una bolsa. Pero la pregunta que esa piedra despertó es más grande que la piedra. ¿Por qué las tierras altas de la Luna son tan claras? ¿Y cómo era este mundo cuando acababa de nacer?\n\nVuelve un momento a esa bola de fuego del capítulo anterior. La Luna recién formada no tenía una superficie que pudieras pisar. El choque que la originó había liberado una cantidad inmensa de energía. Y los escombros, al caer unos sobre otros para formar el nuevo mundo, soltaban todavía más calor.\n\nEl resultado fue una superficie completamente fundida. No una laguna de lava, ni un volcán. Toda la Luna, cubierta por un océano de roca líquida. Los científicos lo llaman el océano de magma, y calculan que pudo tener cientos de kilómetros de profundidad.\n\nAhora piensa en lo que ocurre cuando algo muy caliente se queda solo en un lugar frío. Se enfría. La Luna no tenía una atmósfera espesa que guardara el calor. Así que el océano de magma fue perdiendo su energía hacia el espacio, despacio, a lo largo de millones de años.\n\nY mientras se enfriaba, ocurrió algo que parece sencillo, pero que lo cambió todo. La roca fundida no se endurece de golpe. Cada mineral cristaliza a su propia temperatura. Unos se forman primero, otros después. Y cada cristal tiene su propio peso.\n\nLos primeros cristales que aparecieron eran de olivino y de piroxeno. Son minerales densos, pesados, ricos en hierro y magnesio. Dentro del magma líquido, se hundieron como granos de arena en un vaso de agua. Poco a poco se fueron acumulando en el fondo.\n\nY allí, bajo el océano, esas capas de cristales pesados formaron el manto de la Luna.\n\nPero el océano seguía enfriándose. Y cuando ya quedaba una parte del líquido, empezó a cristalizar otro mineral. Se llama plagioclasa, y es rica en calcio y aluminio. Tiene una propiedad importante: es más ligera que el magma que la rodea.\n\nAsí que no se hundió. Subió. Los cristales claros de plagioclasa flotaron hacia arriba, como témpanos de hielo sobre un lago. Se juntaron unos con otros, formaron una costra y esa costra fue creciendo, hasta cubrir toda la Luna.\n\nEsa costra es la corteza de las tierras altas. Y es clara porque la plagioclasa es clara.\n\nCuando levantas la vista esta noche, las zonas más brillantes de la Luna son esos cristales ligeros, solidificados hace más de cuatro mil millones de años.\n\nEsta era la idea. Una hipótesis elegante, formulada a partir de las primeras muestras traídas de la Luna. Pero una hipótesis necesita una prueba. Y la prueba tenía que ser una roca de esas tierras altas, una roca que nadie hubiera alterado después.\n\nAhí vuelve la piedra del Apolo quince. Su nombre oficial es Muestra quince mil cuatrocientos quince. Pero casi todo el mundo la conoce como la Roca del Génesis. Está formada casi por completo de plagioclasa, y su edad supera los cuatro mil millones de años. Era justo lo que se esperaba encontrar si la corteza había flotado sobre un océano de magma.\n\nNo resolvió todas las dudas. Los científicos todavía debaten cuánto duró aquel océano y cómo se enfrió exactamente. Pero la roca encajaba con la idea de un modo que pocas veces ocurre.\n\nY eso nos dice algo más sobre la Luna. No es una piedra cualquiera que da vueltas en el cielo. Es un mundo que se separó en capas: un manto pesado abajo, una corteza ligera arriba. Igual que la Tierra.\n\nLa diferencia es que la Tierra borró casi todo su pasado. Sus volcanes, sus placas y sus océanos remodelaron la superficie una y otra vez. La Luna, en cambio, guardó el registro. Cada región clara que ves es una página de aquel primer enfriamiento.\n\nPero esa corteza no se quedó intacta para siempre. Sobre ella cayeron rocas enormes, y bajo ella el calor no había terminado de trabajar."
-    },
-    {
-      "title": "Los mares de lava",
-      "question": "¿Cómo se llenaron de lava las grandes cuencas oscuras?",
-      "reveal": "Los mares lunares son lava basáltica que brotó e inundó cuencas excavadas por impactos, y algunas de esas erupciones ocurrieron hace más de tres mil millones de años.",
-      "beats": [
-        "Los grandes impactos excavaron cuencas gigantes en la corteza clara",
-        "El calor interno de la Luna fundió parte del manto y el magma subió por fracturas",
-        "Ríos de lava basáltica muy fluida inundaron las cuencas, de ahí su color oscuro",
-        "El Mare Imbrium, el Mare Tranquillitatis y el Oceanus Procellarum como grandes ejemplos",
-        "Los mares cubren buena parte de la cara visible y mucho menos de la cara oculta, una asimetría cuya causa sigue en estudio",
-        "Canales sinuosos como el Valle de Schröter, antiguos cauces de lava, y tubos de lava que aún se ven",
-        "La edad de las lavas, medida con las muestras traídas por los astronautas"
-      ],
-      "ambience": "lava",
-      "image_queries": [
-        "Moon Mare Tranquillitatis",
-        "Moon Oceanus Procellarum",
-        "Moon Schroeter's Valley",
-        "Moon Hadley Rille",
-        "Moon lava flows LRO",
-        "Moon Marius Hills",
-        "Moon mare basalt",
-        "Moon Mare Serenitatis",
-        "Moon lunar pit",
-        "Moon wrinkle ridges"
-      ],
-      "video_queries": [
-        "Moon lava flow animation",
-        "Moon flyover LRO 4K",
-        "lunar maria visualization"
-      ],
-      "text": "En la cara visible de la Luna, con unos simples binoculares, se distinguen manchas grises tan lisas que parecen pulidas. Son enormes, redondas, tranquilas. Y junto a ellas hay tierras claras, rugosas, llenas de cicatrices.\n\n¿Cómo pudieron llenarse esas cuencas tan grandes con algo tan liso? Sabemos que no era agua. Pero algo las llenó, hasta el borde, y luego se quedó quieto.\n\nPara entenderlo, hay que volver a la corteza clara que se formó sobre el océano de magma. Sobre ella cayeron rocas del espacio, algunas del tamaño de una ciudad, otras como una montaña. Cada golpe abrió una herida más ancha que cualquier país pequeño. Las mayores cuencas medían cientos de kilómetros, y el suelo quedó hundido varios kilómetros por debajo de su nivel original.\n\nEsas cuencas quedaron vacías durante un tiempo. Eran paisajes de roca clara, rota y fracturada, bajo un cielo negro.\n\nMientras tanto, bajo ese suelo, el interior de la Luna seguía caliente. Parte de ese calor venía de su formación. Otra parte la producían, muy despacio, elementos radiactivos atrapados en la roca. Con los millones de años, ese calor fue suficiente para fundir una porción del manto, a decenas o cientos de kilómetros de profundidad.\n\nLa roca fundida es más ligera que la roca sólida que la rodea. Por eso sube. Busca cualquier grieta, cualquier fractura que el golpe de los impactos hubiera dejado en la corteza, y se abre camino hacia arriba.\n\nCuando llegó a la superficie, no explotó como un volcán de montaña. Brotó, más bien, como un río que encuentra su cauce. Era lava basáltica, rica en hierro, y muy fluida, casi tanto como un aceite espeso. Corría sobre grandes distancias antes de detenerse, y se acumulaba en las zonas más bajas.\n\nLas cuencas eran esas zonas más bajas.\n\nCapa sobre capa, durante cientos de millones de años, la lava fue llenando los huecos. Al enfriarse, formó una roca oscura, densa, casi negra. Por eso las manchas se ven grises: el basalto refleja mucho menos luz que las tierras altas, ricas en plagioclasa. Y por eso son tan lisas. Es lo que queda cuando un líquido se asienta y se endurece.\n\nAlgunos de esos mares tienen nombres que ya conoces. El Mare Imbrium, el Mar de las Lluvias, es de los mayores: más de mil kilómetros de ancho, algo menos que la distancia entre Madrid y Roma. El Mare Tranquillitatis, el Mar de la Tranquilidad, es más pequeño, y más adelante en esta historia tendrá un papel especial. Y al oeste se extiende el Oceanus Procellarum, el Océano de las Tormentas, la mancha oscura más grande de todas.\n\nSi miras la Luna llena, esas manchas cubren buena parte del lado que vemos. Cerca de un tercio de esa cara está cubierto de lava antigua. Del otro lado, el que nunca se ve desde la Tierra, los mares son pocos y pequeños. Casi todo es tierra clara.\n\n¿Por qué? Nadie lo sabe con certeza. Hay ideas sobre una corteza más gruesa en la cara oculta, que habría frenado la subida del magma. Otras hablan de dónde se concentraban los elementos que producen calor. Pero la causa sigue en estudio.\n\nAun así, la lava dejó huellas que puedes ver. Junto al cráter Aristarco, en el Oceanus Procellarum, hay un valle que serpentea como un lecho seco: el Valle de Schröter. Tiene unos ciento sesenta kilómetros de largo, y en un punto es más ancho que un río grande. Fue un cauce de lava, un canal por donde corrió roca líquida.\n\nOtros canales son más discretos. Cuando la superficie de un río de lava se enfría y se endurece, el interior sigue fluyendo por debajo. Al vaciarse, deja un túnel. Algunos de esos tubos se derrumbaron, y desde órbita se ven los pozos abiertos en el techo, oscuros, como ventanas hacia un pasillo de roca.\n\nQueda una pregunta: ¿cuándo ocurrió todo esto?\n\nLa respuesta llegó en cajas selladas. Los astronautas del Apolo recogieron basaltos de varios mares, y los laboratorios de la Tierra midieron cuánto tiempo había pasado desde que cada roca se enfrió. Lo hicieron contando átomos de elementos radiactivos que se transforman a un ritmo conocido, como un reloj de arena en miniatura.\n\nLas muestras del Mar de la Tranquilidad tenían más de tres mil seiscientos millones de años. Otras, de otros mares, eran un poco más jóvenes, pero todas hablaban de un tiempo inmensamente lejano.\n\nLos mares lunares son lava basáltica que brotó e inundó cuencas abiertas por impactos.\n\nAlgunas de esas erupciones ocurrieron hace más de tres mil millones de años, cuando en la Tierra la vida era apenas una película de microbios en el agua.\n\nEsa lava lleva todo ese tiempo quieta, sin que nada la perturbe. Cada noche que levantas la vista, miras un río de fuego que se detuvo antes de que existiera cualquier ojo para verlo.\n\nPero esos mares oscuros no están intactos. Su superficie está marcada por miles de agujeros, grandes y pequeños, y cada uno cuenta una historia propia."
-    },
-    {
-      "title": "Cráteres: la memoria de los impactos",
-      "question": "¿Por qué la Luna conserva tantos cráteres y la Tierra tan pocos?",
-      "reveal": "Casi sin atmósfera, sin lluvia y sin placas tectónicas, la Luna conserva cada cicatriz de impacto durante miles de millones de años.",
-      "beats": [
-        "Cómo se forma un cráter: un impacto a velocidad enorme libera energía, excava y levanta un anillo",
-        "Tycho y Copernicus, cráteres jóvenes con rayos brillantes de material expulsado",
-        "Los picos centrales y las terrazas en las paredes de los cráteres grandes",
-        "Por qué la Tierra los pierde: erosión, océanos y tectónica",
-        "El conteo de cráteres como reloj: más cráteres significa superficie más antigua",
-        "Cráteres en sombra permanente en los polos, donde el Sol nunca llega y se ha detectado hielo",
-        "Un impacto sigue ocurriendo: se han observado destellos de pequeños meteoroides"
-      ],
-      "ambience": "none",
-      "image_queries": [
-        "Moon Tycho crater LRO",
-        "Moon Copernicus crater central peak",
-        "Moon Aristarchus crater",
-        "Moon crater Shackleton",
-        "Moon crater rays",
-        "Moon South Pole craters shadow",
-        "Moon crater Giordano Bruno",
-        "Moon crater Tsiolkovskiy",
-        "Moon crater Clavius",
-        "Moon fresh impact crater LRO"
-      ],
-      "video_queries": [
-        "Moon crater formation impact animation",
-        "Moon south pole flyover LRO",
-        "Lunar Reconnaissance Orbiter crater visualization"
-      ],
-      "text": "Hay una fotografía de la Luna, tomada con una lente larga, en la que la luz cae de lado sobre el borde de la sombra. Ahí, donde el día termina, cada pequeño relieve proyecta una sombra larga. Y lo que se ve es un terreno picado de agujeros, uno dentro de otro, como la piel de una naranja vista de muy cerca.\n\nEs casi extraño. Si miras una fotografía igual de la Tierra, no encuentras nada parecido. Y sin embargo, las dos han recibido golpes durante el mismo tiempo, en el mismo rincón del sistema solar.\n\n¿Por qué la Luna conserva tantos cráteres y la Tierra tan pocos?\n\nPara responderlo, primero hay que entender cómo nace uno. Una roca llega del espacio a una velocidad de muchos kilómetros por segundo. Es más rápida que una bala, decenas de veces más rápida. No se hunde despacio en el suelo. Se detiene de golpe, y toda esa energía de movimiento se convierte en calor y en una onda que atraviesa la roca.\n\nEl suelo se rompe y sale despedido hacia arriba. Se abre un hueco mucho más ancho que el propio proyectil. Y alrededor del hueco, el material expulsado cae y se amontona, formando un anillo elevado, un borde que domina el paisaje.\n\nAlgunos de estos golpes son tan recientes que todavía se ven con claridad. Tycho, en el sur de la cara visible, tiene unos cien millones de años. Parece mucho, pero para la Luna es apenas ayer. Desde su borde salen rayos brillantes que se extienden por cientos de kilómetros, como los radios de una rueda.\n\nCopernicus, más al centro, tiene unos ochocientos millones de años, y también está rodeado de rayos. Son polvo y fragmentos claros que salieron disparados en el momento del choque. Con una luna llena, esas líneas se ven incluso con unos binoculares sencillos.\n\nSi pudieras caminar dentro de uno de estos cráteres grandes, notarías dos cosas. En el centro suele levantarse una montaña, un pico central. Es el suelo que rebotó, como la gota que sube en el agua después de caer una piedra, pero congelada en roca.\n\nY en las paredes verías terrazas, escalones enormes por donde el borde se derrumbó hacia el interior. Cuando el cráter es grande, el terreno no puede sostener su propia pendiente. Se desliza, y queda escalonado, como las gradas de un estadio vacío.\n\nVolvamos entonces a la pregunta. La Tierra también fue golpeada, y mucho. Pero aquí el suelo no se queda quieto. La lluvia, el viento y el hielo desgastan los bordes, año tras año. Los océanos cubren casi tres cuartas partes de la superficie, y allí los impactos se borran bajo el agua y los sedimentos.\n\nAdemás, las placas tectónicas empujan y hunden la corteza hacia el interior del planeta. Con el tiempo, una cicatriz se pliega, se entierra y se funde. Hoy se conocen apenas unos pocos cientos de cráteres de impacto en la Tierra, y muchos son difíciles de reconocer.\n\nEn la Luna no pasa nada de eso.\n\nCasi no tiene atmósfera, no tiene lluvia, y su corteza no se desplaza. Un cráter abierto hace tres mil millones de años sigue ahí, casi como quedó. Lo único que lo altera es otro impacto, y nada más.\n\nEsto convierte al paisaje lunar en un registro. Los científicos cuentan los cráteres de una zona, y de ese número deducen su edad. Una superficie con muchos cráteres ha estado expuesta mucho tiempo. Una con pocos es más joven. Las rocas traídas por los astronautas permitieron fijar fechas reales a esa escala, y desde entonces el conteo sirve como un reloj.\n\nEse reloj también sirve en otros mundos. Pero en la Luna se puede comprobar con la roca en la mano.\n\nHay lugares donde la historia de los impactos se junta con otra cosa. Cerca de los polos, algunos cráteres son tan profundos que el Sol nunca ilumina su fondo. Allí la oscuridad dura miles de millones de años. Las sondas han detectado señales de hielo de agua en esos rincones, guardado donde la luz nunca llega.\n\nY los impactos no han terminado. Con telescopios, los astrónomos han visto pequeños destellos en la parte oscura de la Luna. Son meteoroides del tamaño de una piedra o un puñado de arena que chocan y brillan por un instante. Lo que ves en la superficie sigue escribiéndose, muy despacio.\n\nTodo ese relieve, los rayos, las terrazas y los fondos helados, se vio durante siglos solo desde lejos. Hasta que alguien logró darle la vuelta a la Luna y mirar el lado que ninguna persona había visto."
-    },
-    {
-      "title": "La cara que nunca vemos",
-      "question": "¿Cómo es el lado oculto de la Luna y por qué es tan distinto?",
-      "reveal": "El lado oculto es mucho más escarpado y con muy pocos mares, y alberga una de las cuencas de impacto más grandes y antiguas del sistema solar.",
-      "beats": [
-        "Las primeras fotografías de la sonda soviética Luna 3 en 1959 mostraron un lado desconocido",
-        "Una cara casi sin mares, con corteza más gruesa, a diferencia de la cara visible",
-        "La cuenca Polo Sur-Aitken, de unos 2500 kilómetros de diámetro, entre las mayores cicatrices conocidas",
-        "Los astronautas del Apolo 8 fueron los primeros humanos en ver el lado oculto en 1968",
-        "Las misiones Chang'e, incluida la primera alunizada en el lado oculto en 2019",
-        "Por qué se llama lado oculto y no lado oscuro: también recibe luz solar",
-        "Una pregunta abierta: por qué los dos hemisferios son tan diferentes"
+        "Saturno visto desde lejos, con sus anillos y su cortejo de lunas, y entre ellas una pequeña esfera color ámbar.",
+        "Cómo Christiaan Huygens la descubrió en 1655 y por qué se llamó Titán.",
+        "Las primeras sondas, Pioneer y Voyager 1, descubren que la niebla impide ver la superficie.",
+        "Qué es esa niebla: nitrógeno, algo de metano y moléculas orgánicas que forman una bruma de partículas.",
+        "Por qué retiene tanto gas: el frío extremo y la gravedad suficiente para no dejarlo escapar.",
+        "Planta una curiosidad: bajo la bruma, ¿qué esconde la superficie?"
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Moon far side LRO",
-        "Moon far side Apollo 8",
-        "Moon South Pole-Aitken basin",
-        "Moon far side crater Tsiolkovskiy",
-        "Moon far side Chang'e 4",
-        "Moon far side Earth rise DSCOVR",
-        "Moon far side EPIC DSCOVR",
-        "Moon far side mosaic",
-        "Moon Mare Moscoviense",
-        "Moon Korolev crater"
+        "Titan Cassini natural color",
+        "Titan atmosphere haze Cassini",
+        "Titan and Saturn Cassini",
+        "Titan hazy orange moon",
+        "Titan layers of haze",
+        "Saturn rings Cassini",
+        "Saturn moons Cassini family portrait",
+        "Titan Voyager 1",
+        "Titan crescent backlit Cassini",
+        "Titan and Dione Cassini"
       ],
       "video_queries": [
-        "Moon far side DSCOVR transit",
-        "Moon far side flyover animation",
-        "Lunar Reconnaissance Orbiter far side visualization"
+        "Titan flyby animation Cassini",
+        "Saturn system visualization Cassini",
+        "Cassini approach Saturn animation"
       ],
-      "text": "Durante miles de años, la Luna te mostró siempre el mismo rostro, y nadie se preguntó con seriedad qué había detrás. Era como una casa con una sola puerta visible. Cada noche tú ves las mismas manchas oscuras, los mismos bordes, la misma sonrisa torcida de siempre.\n\nPero la Luna gira. Lo hace despacio, al mismo ritmo con que rodea la Tierra, y por eso esconde una mitad. Entonces surge la pregunta. ¿Cómo es el lado que no vemos? ¿Será igual al nuestro, con sus grandes mares oscuros, o será otro mundo?\n\nEn octubre de mil novecientos cincuenta y nueve, una sonda soviética llamada Luna tres se acercó a ese lado escondido. Llevaba una cámara que tomaba fotografías sobre película, la revelaba dentro de la nave y la escaneaba para enviarla a la Tierra como señal de radio. Las imágenes llegaron borrosas, con mucho ruido, casi como un recuerdo mal guardado.\n\nAun así, en ellas se veía algo. Había cráteres, había zonas claras, y apenas un par de manchas oscuras pequeñas. Los ingenieros que las recibieron esperaban encontrar un reflejo de la cara conocida. Encontraron una superficie distinta.\n\nCon los años, otras sondas la fotografiaron con más detalle, y el contraste se volvió evidente. En la cara visible, los mares de lava cubren buena parte del terreno. En la otra, apenas unos pocos manchones, y el resto es un paisaje claro, áspero, lleno de cráteres que se montan unos sobre otros.\n\nEs un terreno más escarpado. Si pudieras caminar por allí, subirías y bajarías por colinas antiguas, sin grandes llanuras oscuras donde descansar la vista.\n\nHabía una pista en el interior. Las mediciones de las sondas que orbitaron la Luna indicaron que la corteza del lado oculto es más gruesa, en promedio, que la del lado cercano. Esa capa más gruesa pudo hacer más difícil que el magma subiera hasta la superficie. Por eso, quizás, hay tan pocos mares allí.\n\nY entonces apareció la cicatriz más grande de todas.\n\nSe llama cuenca Polo Sur-Aitken. Mide unos dos mil quinientos kilómetros de diámetro. Es una distancia parecida a la que separa Ciudad de México de Panamá, y hablamos de un solo agujero en el suelo.\n\nUn impacto la excavó hace mucho, mucho tiempo, y es una de las cuencas de impacto más grandes y antiguas que se conocen en el sistema solar. Con tantos miles de millones de años encima, otros cráteres la han cubierto y sus bordes se han gastado. Desde lejos, no parece un golpe. Parece una depresión enorme, hundida varios kilómetros bajo el nivel de su entorno.\n\nEn diciembre de mil novecientos sesenta y ocho, la tripulación del Apolo ocho rodeó la Luna. Frank Borman, Jim Lovell y William Anders fueron las primeras personas en mirar ese lado con sus propios ojos. Pasaron por detrás mientras la nave quedaba sin contacto con la Tierra, y la radio guardó silencio.\n\nDescribieron un suelo gris, golpeado, sin marcas de océanos. Lovell dijo que parecía yeso, o arena gris de una playa. Era una imagen sencilla para algo tan antiguo.\n\nDécadas después, llegaron las misiones chinas Chang'e. En enero de dos mil diecinueve, Chang'e cuatro hizo algo que nunca se había logrado: posarse en el lado oculto. Cayó dentro de un cráter llamado Von Kármán, que forma parte de la gran cuenca. Como la Luna le tapaba la Tierra, necesitó un satélite de relevo para enviar sus señales.\n\nAllí, un pequeño vehículo avanzó sobre un suelo polvoriento, tomó imágenes y estudió las rocas. Está en un lugar donde el cielo no tiene Tierra, ni nunca la tendrá.\n\nY hay un detalle que conviene aclarar. Se le llama lado oculto, no lado oscuro. Ese lado también recibe la luz del Sol. Cuando tú ves la Luna llena, el otro hemisferio está en plena noche. Cuando es luna nueva, allí es mediodía.\n\nLa Luna gira, y cada punto de su superficie tiene su día y su noche, de unas dos semanas cada uno. Solo la Tierra queda siempre fuera de la vista.\n\nAsí que la respuesta a la primera pregunta es clara.\n\nEl lado oculto es más escarpado, casi sin mares, y guarda una de las mayores cuencas de impacto.\n\nPero queda otra pregunta, y esa nadie la ha cerrado. ¿Por qué dos mitades de un mismo mundo son tan diferentes? Hay hipótesis, que hablan de calor, de la Tierra recién formada, de impactos y de una corteza que se enfrió de manera desigual. Ninguna lo explica del todo.\n\nPuede que la respuesta esté escondida en esas rocas, esperando a que alguien las traiga. Para llegar hasta ellas, primero habrá que aprender a cruzar el espacio hasta la Luna, y eso se tardó en conseguir."
+      "text": "Hay una luz pequeña y naranja junto a Saturno, y casi nadie se detiene a mirarla.\n\nPrimero verías al planeta. Un globo pálido, de bandas suaves, rodeado por anillos tan delgados que, vistos de canto, parecen un trazo de lápiz. Alrededor, a distintas distancias, flotan sus lunas. Algunas son rocas oscuras y otras, bolas de hielo brillante. Y entre ellas hay una esfera color ámbar, sin un solo detalle visible, como una naranja envuelta en gasa.\n\nEs Titán. Es la luna más grande de Saturno, y es más grande incluso que el planeta Mercurio. Pero lo extraño no es su tamaño. Lo extraño es lo que la rodea. Una luna pequeña, mucho más pequeña que la Tierra, sostiene una atmósfera más densa que la nuestra. ¿Cómo puede ser?\n\nPara llegar a la respuesta hay que volver atrás, a una noche de mil seiscientos cincuenta y cinco. En los Países Bajos, un joven llamado Christiaan Huygens pulía lentes con sus propias manos. Con un telescopio sencillo apuntó hacia Saturno y notó un punto de luz que lo acompañaba, noche tras noche, siempre cerca. Con el tiempo vio que ese punto daba una vuelta completa alrededor del planeta cada dieciséis días.\n\nEra la primera luna descubierta en Saturno.\n\nHuygens no le puso un nombre grandioso. Lo llamó simplemente la luna de Saturno. Fue más tarde, casi dos siglos después, cuando el astrónomo John Herschel propuso nombres para las lunas del planeta. Las bautizó con los Titanes, los gigantes de la mitología griega, hermanos y hermanas de Saturno. Y a esta, la mayor de todas, le tocó el nombre del grupo entero.\n\nDurante más de trescientos años, Titán fue solo eso: un punto anaranjado en el ocular. Nadie sabía cómo era de cerca. En mil novecientos setenta y nueve, la sonda Pioneer once pasó junto a Saturno y envió una imagen borrosa, apenas un disco de color tenue. Era poco, pero bastó para despertar la curiosidad.\n\nUn año después llegó la Voyager uno, con cámaras mucho mejores. Los ingenieros habían trazado su ruta para acercarla a Titán a propósito. Esperaban ver montañas, cráteres, quizá costas. Las primeras fotografías llegaron a la Tierra, y los científicos las miraron con atención.\n\nNo había nada que ver. Solo una esfera lisa y anaranjada, sin una grieta ni una sombra.\n\nLa superficie estaba escondida por completo. Lo que la Voyager fotografió fue una bruma espesa, que se alza cientos de kilómetros sobre la superficie. Y los instrumentos de la sonda midieron lo que esa bruma contenía.\n\nCasi todo es nitrógeno, aproximadamente el noventa y cinco por ciento. Es el mismo gas que respiras, el que forma la mayor parte del aire de la Tierra. El resto es sobre todo metano, el gas de las cocinas, junto con trazas de otras moléculas. Pero la luz del Sol lejano, y las partículas cargadas que llegan desde Saturno, rompen esas moléculas en el cielo. Los fragmentos se unen de nuevo, y forman cadenas de carbono e hidrógeno más grandes y más complejas. Son moléculas orgánicas. Poco a poco se agrupan en partículas diminutas, y esas partículas son la niebla naranja.\n\nQueda la pregunta del principio. Una atmósfera necesita ser retenida, y la gravedad de Titán es débil. Si lo midieras de pie, pesarías allí unas siete veces menos que en la Tierra, algo menos que en la Luna.\n\nLa clave es el frío. Allí la temperatura ronda los menos ciento setenta y nueve grados Celsius. A esa temperatura, las moléculas de gas se mueven despacio, casi perezosas. Ninguna alcanza la velocidad necesaria para escapar al espacio. Una luna más cálida habría perdido su aire hace miles de millones de años. Titán, helada y con la gravedad justa, lo conservó todo.\n\nPor eso Titán es la única luna del sistema solar con una atmósfera espesa. Y en su superficie la presión es un cuarenta y cinco por ciento mayor que la que sientes ahora, al nivel del mar. Si estuvieras allí, no flotarías ni te aplastaría el aire. Lo notarías como un abrazo firme, como bucear en el fondo de una piscina honda.\n\nRespira hondo, despacio, como si tú también tuvieras todo ese aire espeso a tu alrededor. Aquí no hay nada que cargar esta noche, así que deja que tu cuerpo se hunda un poco más en la cama.\n\nEs un dato curioso, y también una invitación. Porque si el aire es tan denso, algo debe estar ocurriendo debajo. Algo que lleva mucho tiempo escondido tras esa luz ámbar.\n\n¿Qué hay bajo la bruma?",
+      "companion": [
+        "Respira hondo, despacio, como si tú también tuvieras todo ese aire espeso a tu alrededor. Aquí no hay nada que cargar esta noche, así que deja que tu cuerpo se hunda un poco más en la cama."
+      ]
     },
     {
-      "title": "Ocho años para llegar",
-      "question": "¿Cómo pasó la humanidad de mirar la Luna a caminar sobre ella?",
-      "reveal": "En menos de una década la humanidad pasó de enviar astronautas a orbitar la Tierra a pisar otro mundo, impulsada por una carrera tecnológica sin precedentes.",
+      "title": "Cassini y Huygens: descenso a lo desconocido",
+      "question": "¿Qué se vería al atravesar la niebla de Titán por primera vez?",
+      "reveal": "El 14 de enero de 2005, la sonda Huygens descendió por la atmósfera y fotografió canales de drenaje y una superficie de hielo y guijarros, el aterrizaje más lejano jamás logrado.",
       "beats": [
-        "Los años iniciales: los primeros satélites y vuelos humanos al espacio",
-        "El anuncio del programa lunar en 1961 y los pasos previos de Mercury y Gemini",
-        "Las sondas Ranger, Surveyor y Lunar Orbiter que exploraron la Luna antes de que llegaran las personas",
-        "Apolo 8 en diciembre de 1968: los primeros humanos en orbitar la Luna y la imagen de la Tierra saliendo sobre el horizonte lunar",
-        "Apolo 10, el ensayo general sin alunizaje",
-        "La complejidad de una misión: el cohete Saturno V, el módulo de mando y el módulo lunar",
-        "El silencio de una nave rumbo a otro mundo: tres días de viaje"
+        "El viaje de siete años de Cassini hasta Saturno, llevando a Huygens a bordo.",
+        "La separación de Huygens y sus veinte días de caída silenciosa hacia Titán.",
+        "El descenso de unas dos horas y media con paracaídas, atravesando capas de bruma.",
+        "Las imágenes: cauces ramificados, costas y una llanura de guijarros de hielo de agua.",
+        "El aterrizaje y la transmisión desde la superficie, durante unos setenta minutos.",
+        "Qué sintió el equipo y qué significaba: había señales de líquido que fluyó, y los lagos aún no se habían visto."
       ],
-      "ambience": "none",
+      "ambience": "wind",
       "image_queries": [
-        "Earthrise Apollo 8",
-        "Apollo 8 Moon view",
-        "Apollo 10 Moon view",
-        "Lunar Orbiter Earthrise",
-        "Surveyor 1 Moon surface",
-        "Apollo Moon orbit view",
-        "Earth from Moon",
-        "Apollo 13 Moon far side",
-        "Apollo 17 Earth Blue Marble",
-        "Apollo command module Moon orbit"
+        "Huygens probe Titan surface",
+        "Huygens descent Titan",
+        "Titan surface pebbles Huygens",
+        "Titan drainage channels Huygens",
+        "Cassini Huygens spacecraft Saturn",
+        "Cassini spacecraft Saturn orbit",
+        "Titan surface panorama Huygens",
+        "Titan dunes Cassini radar",
+        "Titan radar image Cassini",
+        "Titan infrared Cassini surface"
       ],
       "video_queries": [
-        "Apollo 8 Earthrise",
-        "Apollo Moon orbit footage",
-        "Saturn V launch Apollo restored"
+        "Huygens descent Titan animation",
+        "Cassini Huygens mission animation",
+        "Titan surface landing visualization"
       ],
-      "text": "En mil novecientos cincuenta y siete, un hombre en cualquier pueblo del mundo podía salir al patio, mirar hacia arriba y ver una luz diminuta cruzando el cielo. No era una estrella ni un avión. Era una esfera de metal, del tamaño de una pelota de playa, que repetía una señal de radio una y otra vez.\n\nSe llamaba Sputnik, y fue el primer objeto fabricado por seres humanos en dar vueltas alrededor de la Tierra. Tardaba poco más de una hora y media en completar cada órbita. Apenas cuatro años después, un hombre iba dentro de una cápsula, y en solo ocho años más habría personas caminando sobre la Luna. ¿Cómo pasó la humanidad de mirar ese disco pálido a pisarlo?\n\nLa respuesta empieza con un paso pequeño. En abril de mil novecientos sesenta y uno, el soviético Yuri Gagarin dio una vuelta completa a la Tierra y volvió vivo. Fue el primer ser humano en el espacio. Su vuelo duró menos de dos horas, lo que tarda una película corta.\n\nPocas semanas después, el presidente de Estados Unidos, John Kennedy, habló ante el Congreso. Propuso llevar a un hombre a la Luna y traerlo de regreso antes de que terminara aquella década. En ese momento, los estadounidenses habían pasado apenas quince minutos en el espacio, y sin dar ni una órbita.\n\nFaltaba aprender casi todo. El programa Mercury enseñó a un solo astronauta a sobrevivir en una cápsula diminuta. El programa Gemini llevó a dos personas a la vez, durante días. En Gemini se practicó lo más difícil: acercar dos naves en el vacío y unirlas, como dos barcos que se tocan en plena oscuridad.\n\nMientras tanto, nadie sabía bien qué había en la superficie lunar. Algunos temían que el polvo fuera tan profundo que se tragaría una nave. Así que primero fueron las máquinas.\n\nLas sondas Ranger se estrellaron a propósito contra la Luna, tomando fotografías cada vez más cercanas hasta el último segundo. Después llegaron las Surveyor, que se posaron con suavidad y enviaron imágenes del suelo. Una de ellas probó algo decisivo: la superficie aguantaba el peso de una nave. Las Lunar Orbiter, por su parte, dieron vueltas alrededor del satélite y fotografiaron los lugares donde luego se podría descender.\n\nNinguna de esas máquinas llevaba a nadie dentro. Pero cada una dejó un trozo de mapa.\n\nLlegó entonces diciembre de mil novecientos sesenta y ocho. La misión Apolo ocho despegó con tres hombres: Frank Borman, James Lovell y William Anders. Ninguna persona se había alejado jamás de la Tierra más que unos mil quinientos kilómetros. Ellos iban a recorrer cuatrocientos mil.\n\nAl llegar, la nave pasó por detrás de la Luna y quedó sin contacto con la Tierra. Encendió su motor para frenar y quedar atrapada en órbita. Si el motor fallaba, nadie lo sabría hasta que ellos reaparecieran, o no.\n\nFuncionó. Y en la cuarta vuelta ocurrió algo que nadie había planeado como una escena.\n\nPor encima de un horizonte gris y lleno de cráteres, subió una esfera azul y blanca.\n\nAnders tomó la fotografía. Hoy la conocemos como la Salida de la Tierra. Muestra nuestro mundo pequeño, con nubes y océanos, suspendido sobre un suelo muerto. Por primera vez, la Luna dejó de ser solo el lugar al que íbamos. También era el sitio desde donde se veía nuestro hogar.\n\nFaltaba un ensayo final. En mayo de mil novecientos sesenta y nueve, el Apolo diez repitió todo el viaje con el módulo lunar completo. Dos astronautas descendieron en él hasta unos quince kilómetros sobre la superficie. Ahí se detuvieron, miraron el Mar de la Tranquilidad desde cerca y regresaron. No alunizaron, a propósito. Era la prueba general antes de la función.\n\nPiensa en todo lo que tenía que funcionar. El cohete Saturno cinco medía más de cien metros, más que un campo de fútbol puesto de pie. Sus motores consumían toneladas de combustible cada segundo, y el estruendo se sentía en el pecho a varios kilómetros de distancia.\n\nPero casi todo ese gigante era desechable. Arriba, en la punta, viajaba lo que importaba: el módulo de mando, donde vivían los tres hombres, y el módulo lunar, una especie de araña de metal frágil que solo servía para bajar y subir de la Luna. Su pared, en algunos puntos, era más delgada que varias hojas de papel.\n\nDespués del estruendo venía lo contrario. Una vez fuera de la órbita terrestre, la nave dejaba de acelerar y simplemente avanzaba. Durante unos tres días, tres personas flotaban dentro de una cabina del tamaño de una camioneta pequeña, con el zumbido bajo de los ventiladores como único sonido. Por la ventana, la Tierra se encogía hasta caber detrás de un pulgar.\n\nEn doce años, la humanidad había pasado de lanzar una esfera que pitaba a preparar a dos personas para pisar otro mundo. Una carrera entre dos países lo había empujado todo, con una velocidad que nadie había conocido antes. Y casi nadie, al empezar, sabía si era posible.\n\nAhora la nave ya estaba en camino, con la Luna creciendo en la ventana. Faltaba el momento más delicado de todos: bajar."
+      "text": "Durante siete años, una nave del tamaño de un autobús cruzó el espacio con una segunda nave escondida en su interior. Nadie sabía qué encontraría al otro lado de la bruma naranja.\n\nSe llamaba Cassini. Despegó en octubre de mil novecientos noventa y siete, y llevaba pegada a su costado una cápsula en forma de plato, llamada Huygens. Para llegar a Saturno, Cassini dio vueltas alrededor del Sol, pasó cerca de Venus y de la Tierra, y se impulsó con la gravedad de cada uno. Fue un camino largo y lento, como rodear una montaña entera para llegar a la casa que está justo al otro lado.\n\nY entonces, la pregunta. Si pudieras atravesar esa niebla por primera vez, ¿qué verías debajo?\n\nEn diciembre de dos mil cuatro, ya cerca de Saturno, Cassini soltó a Huygens. Fue un gesto sencillo: unos resortes, un leve empujón, y la cápsula quedó sola. Desde ese momento no tenía motor ni dirección. Solo la trayectoria que le habían dado, y la gravedad de Titán esperándola.\n\nCayó en silencio durante veinte días. Es un tiempo largo para una nave que duerme. Casi todos sus instrumentos estaban apagados, y solo un pequeño reloj interno contaba los días hasta el momento de despertar.\n\nEse momento llegó el catorce de enero de dos mil cinco. La cápsula entró en la atmósfera de Titán a gran velocidad, y su escudo de calor la frenó a medida que el aire se espesaba. Después se abrió el primer paracaídas, y luego otro más pequeño.\n\nAllí comenzó el descenso. Duró unas dos horas y media, casi lo que dura una película larga. Huygens bajó despacio, atravesando capas de bruma que, desde arriba, nadie había logrado ver.\n\nAl principio, las cámaras solo mostraron una neblina anaranjada, pareja, sin forma. Los ingenieros esperaban en la Tierra, a más de mil millones de kilómetros, con los ojos fijos en las pantallas. Una señal tardaba más de una hora en llegar hasta ellos.\n\nY de pronto, la niebla se abrió.\n\nBajo la bruma aparecieron líneas oscuras que se ramificaban, como las venas de una hoja. Eran cauces, con afluentes que se unían y desembocaban en una zona clara. Más allá se veía algo parecido a una costa, con tierra brillante a un lado y una región oscura al otro.\n\nAlgo había corrido por allí. No era agua, porque a casi doscientos grados bajo cero el agua es una roca. Debía de ser otro líquido, uno que el frío no congela.\n\nSeguía el descenso, y el paisaje crecía en las imágenes. Cuando la cápsula se acercó al suelo, la cámara reveló una llanura plana, cubierta de piedras redondeadas. Parecían guijarros de un lecho de río, del tamaño de una naranja unos, de una nuez otros. Pero estaban hechos de hielo de agua, duro como el granito.\n\nLa cápsula tocó el suelo con un golpe suave. Se hundió apenas, como sobre arena húmeda o nieve compacta.\n\nHuygens había aterrizado en Titán.\n\nNinguna nave había aterrizado nunca tan lejos de la Tierra. Seguía viva, y siguió enviando datos desde la superficie durante unos setenta minutos, más o menos lo que dura una caminata tranquila por el barrio. Midió la temperatura, la composición del aire y el color del suelo. Y fotografió un horizonte naranja y quieto, bajo un cielo de bruma.\n\nEn la Tierra, el equipo escuchó la señal llegar, y por un rato nadie habló mucho. Después de siete años de viaje y veinte días de caída, la cápsula había hecho todo lo que podía hacer. Mucha gente describió aquel momento como un alivio hondo, mezclado con asombro.\n\nLo que significaba era claro, pero no estaba completo. Titán tenía ríos, o al menos cauces que un líquido había tallado. Tenía lluvia, o algo muy parecido. Y sin embargo, en toda la zona del aterrizaje, nadie vio ni una sola gota de ese líquido.\n\nLos lagos todavía no habían aparecido. Solo había huellas de ellos, como las marcas que deja una marea que se retiró.\n\n¿Dónde estaba, entonces, el líquido que había dibujado esos cauces?"
     },
     {
-      "title": "Los pasos en el polvo",
-      "question": "¿Qué se siente caminar sobre la Luna?",
-      "reveal": "Seis misiones pisaron la Luna entre 1969 y 1972, y las huellas siguen allí porque no hay viento ni agua que las borre.",
+      "title": "Lagos, mares y lluvia de metano",
+      "question": "¿Cómo puede existir un lago a una temperatura de casi 180 grados bajo cero?",
+      "reveal": "En Titán el metano y el etano hacen el papel que el agua tiene en la Tierra: llueven, forman ríos y llenan mares como Kraken Mare, en un ciclo parecido al del agua terrestre.",
       "beats": [
-        "Apolo 11 en julio de 1969: el descenso del módulo lunar y el alunizaje en el Mar de la Tranquilidad",
-        "Los primeros pasos de Neil Armstrong y Buzz Aldrin, mientras Michael Collins orbitaba",
-        "El paisaje: un cielo negro, un horizonte cercano, una luz dura y un polvo fino y pegajoso",
-        "Cómo es moverse con una sexta parte de la gravedad terrestre: saltos largos y pasos lentos",
-        "Apolo 15, 16 y 17 y el uso del vehículo lunar para explorar más lejos",
-        "Apolo 13, la misión que no alunizó pero volvió sana y salva",
-        "En total, doce astronautas caminaron en la Luna, y el último en irse fue en diciembre de 1972"
+        "Qué descubrió el radar de Cassini en 2006 y 2007: manchas oscuras y lisas cerca de los polos.",
+        "Por qué el metano y el etano pueden ser líquidos a esa temperatura.",
+        "Los grandes mares del norte, Kraken Mare, Ligeia Mare y Punga Mare, y cuál es su tamaño aproximado.",
+        "El ciclo del metano: evaporación, nubes, lluvia escasa pero de gotas grandes y lentas por la baja gravedad.",
+        "Ríos y cañones tallados en el hielo, algunos mucho más profundos de lo esperado.",
+        "Qué verías de pie en la orilla: un cielo naranja tenue, un mar quieto y oleaje muy suave, aunque su existencia sigue en estudio.",
+        "Aún abierto: de qué están compuestos exactamente los lagos y cómo cambian con las estaciones."
       ],
-      "ambience": "none",
+      "ambience": "sea",
       "image_queries": [
-        "Apollo 11 landing site LRO",
-        "Apollo 17 landing site LRO",
-        "Apollo 15 landing site LRO",
-        "Apollo 12 Surveyor 3 LRO",
-        "Apollo footprints lunar surface",
-        "Apollo 14 landing site LRO",
-        "Apollo 16 landing site LRO",
-        "Tranquility Base LRO",
-        "Apollo 11 lunar surface",
-        "Apollo 17 Taurus-Littrow valley"
+        "Titan Kraken Mare Cassini radar",
+        "Titan Ligeia Mare Cassini",
+        "Titan lakes north pole Cassini",
+        "Titan sunlight glint lake",
+        "Titan polar lakes radar",
+        "Titan methane sea Cassini",
+        "Titan river canyon radar",
+        "Titan clouds methane Cassini",
+        "Titan north pole clouds",
+        "Titan seas infrared Cassini"
       ],
       "video_queries": [
-        "Apollo landing sites LRO visualization",
-        "Apollo 11 landing footage restored",
-        "Apollo 17 lunar rover footage"
+        "Titan lakes flyover animation",
+        "Titan methane rain visualization",
+        "Cassini radar Titan lakes"
       ],
-      "text": "¿Qué se siente caminar sobre la Luna? Durante años, nadie pudo responder esa pregunta, porque nadie lo había hecho.\n\nEs julio de mil novecientos sesenta y nueve. Dentro de un módulo lunar del tamaño de una pequeña cabaña, dos hombres miran por ventanas estrechas cómo el suelo se acerca. Se llaman Neil Armstrong y Buzz Aldrin. Arriba, en la nave principal, Michael Collins sigue orbitando, completamente solo.\n\nEl piloto automático los lleva hacia un lugar lleno de rocas grandes. Armstrong toma el control manual y busca un terreno más liso. El combustible baja. Cada segundo cuenta, y la voz de Aldrin va leyendo los números con calma.\n\nEntonces el polvo se levanta en círculos bajo el motor, y las patas tocan el Mar de la Tranquilidad.\n\nHoras después, Armstrong baja por la escalera. Pone la bota izquierda sobre la superficie y se detiene un instante. El suelo no se hunde mucho. Es un polvo tan fino que se adhiere a la bota, como harina húmeda, y deja una marca nítida en cada paso.\n\nMira alrededor. El cielo es negro, aunque el Sol brilla con toda su fuerza. No hay aire que difunda la luz, así que no existe ese azul suave al que estamos acostumbrados. La luz es dura y directa. Las sombras son tan oscuras que casi se ven huecos en el suelo.\n\nEl horizonte también sorprende. Está muy cerca, porque la Luna es pequeña y su curva se cierra enseguida. Una roca que parece estar a pocos pasos puede encontrarse mucho más lejos. Sin árboles ni casas, sin nada conocido, el ojo pierde la medida de las distancias.\n\nY luego está el cuerpo. La gravedad de la Luna es una sexta parte de la terrestre. Un hombre con el traje puesto pesa allí lo que aquí pesaría un niño. Pero conserva toda su masa, y eso lo cambia todo.\n\nLos astronautas descubrieron que correr era torpe. Lo que funcionaba era una especie de trote con saltos largos, como un canguro lento. Para detenerse había que planear el frenado con anticipación. Cada paso levantaba un polvo que caía despacio, sin una sola nube, en arcos perfectos.\n\nAsí que esa es la respuesta. Caminar sobre la Luna se siente como moverse en un sueño, ligero y a la vez pausado.\n\nDespués del Apolo once vinieron otras misiones. En el Apolo trece, en abril de mil novecientos setenta, un tanque de oxígeno estalló camino a la Luna. Los tres astronautas no alunizaron. Usaron el módulo lunar como bote salvavidas, rodearon la Luna y volvieron a casa sanos y salvos.\n\nMás tarde, el Apolo quince, el dieciséis y el diecisiete llevaron algo nuevo: un vehículo lunar eléctrico, plegado dentro del módulo. Con él, los astronautas se alejaron varios kilómetros de la nave. Ya no se limitaban a explorar los alrededores. Llegaron a laderas de montañas y a bordes de valles, y volvieron con rocas de lugares muy distintos.\n\nEn total, seis misiones alunizaron. Doce personas caminaron sobre la Luna. El último en subir la escalera fue Eugene Cernan, en diciembre de mil novecientos setenta y dos.\n\nDesde entonces, nadie ha vuelto a pisarla.\n\nY sin embargo, las huellas siguen allí. En la Luna no hay viento que las barra ni lluvia que las disuelva. Solo la caída lenta de partículas diminutas, que tardaría millones de años en cubrirlas.\n\nEsas pisadas son quizá las marcas humanas más duraderas que existen. Cuando tú y todos los que conoces ya no estén, seguirán ahí, quietas, bajo un cielo negro.\n\nPero esos viajes no solo dejaron huellas. Los astronautas también regresaron con las manos llenas, y esas piedras todavía tenían mucho que contar."
+      "text": "Si te paras en la orilla de Titán, lo primero que notas es lo quieto que está todo. Un mar de color oscuro, sin una sola vela, bajo un cielo de niebla anaranjada. Pero hay algo que no encaja. La temperatura ronda los menos ciento ochenta grados Celsius. ¿Cómo puede existir un lago a un frío así?\n\nEl agua, ahí, sería roca. Estaría dura como el granito y no correría por ninguna parte. Aun así, los cauces que vio Huygens parecían hechos por algo líquido.\n\nLa pista llegó desde arriba, en dos mil seis y dos mil siete. La sonda Cassini pasaba una y otra vez sobre Titán con su radar, que atraviesa la bruma como una linterna que no necesita luz. En las imágenes, cerca de los polos, aparecieron manchas oscuras. Eran lisas, sin una sola rugosidad. El radar rebota en un terreno áspero, pero en estas manchas casi no devolvía nada.\n\nAsí se ve una superficie quieta como un espejo. Los científicos lo entendieron enseguida, aunque costaba creerlo.\n\nEran lagos.\n\nPero no de agua. El metano y el etano son gases en nuestra casa, los que quizá conoces de una cocina. En Titán, el frío los obliga a condensarse. A menos ciento ochenta grados, se vuelven líquidos, finos y transparentes, como un combustible muy frío. Para ellos, ese lugar es templado.\n\nLos mares más grandes están en el norte. Kraken Mare es el mayor, con una extensión parecida a la del mar Caspio, el lago más grande de la Tierra. Cruzarlo de un extremo a otro te llevaría unos mil kilómetros, tanto como ir de Ciudad de México a Mazatlán, o más. Ligeia Mare es algo menor, aunque cabría sin problema el lago Superior. Punga Mare es más pequeño, pero sigue siendo un mar al que no se le ve la otra orilla.\n\nUn mar necesita que algo lo llene. Y aquí llega lo más extraño.\n\nEn Titán llueve. El Sol, aunque débil, calienta un poco la superficie, y parte del metano se evapora. Sube, se enfría y forma nubes anaranjadas. Después cae. Pero la lluvia es escasa, y puede pasar mucho tiempo sin que caiga una gota.\n\nCuando cae, lo hace de otra manera. La gravedad de Titán es casi siete veces menor que la nuestra. Las gotas son grandes, quizá del tamaño de un guisante o más, y descienden despacio. Tardan en llegar al suelo como copos de nieve gruesos que no tienen prisa.\n\nEra lluvia. Metano, en otro mundo.\n\nY esa lluvia no se queda quieta. Corre por la superficie y busca el camino más bajo. Con el tiempo talla ríos en el hielo, que ahí es tan duro como la roca. Cassini vio redes de cauces que desembocan en los mares, igual que las que viste en las imágenes de Huygens. Algunos cañones resultaron mucho más profundos de lo esperado. En ciertos puntos, las paredes caen cientos de metros hasta un fondo lleno de líquido.\n\nSi pudieras estar de pie en esa orilla, el paisaje sería sereno. Un cielo naranja tenue, sin sol claro, solo una luz difusa. Un mar oscuro y casi inmóvil. Quizá una ondulación pequeña y lenta, que llegaría hasta tus pies sin hacer ruido. Aun así, nadie ha visto esas olas con certeza. Su existencia sigue en estudio.\n\nY hay preguntas que todavía no tienen respuesta. No sabemos con exactitud de qué están hechos los lagos. Es probable que el metano y el etano se mezclen con otras moléculas, pero en qué proporción, nadie lo sabe. Tampoco entendemos del todo cómo cambian con las estaciones, que ahí duran años. Quizá los mares crecen en una época y se encogen en otra.\n\nLo que sí sabemos es esto. En Titán, el metano y el etano hacen el papel que el agua tiene en la Tierra. Se evaporan, llueven, forman ríos y llenan mares. Es el mismo ciclo que conoces, con otros materiales.\n\nUn ciclo así tiene un lado curioso. Cada gota que cae arrastra consigo algo más que líquido. Arrastra lo que la bruma ha ido fabricando en lo alto."
     },
     {
-      "title": "Lo que la Luna nos enseña y lo que viene",
-      "question": "¿Qué nos cuenta la Luna sobre nuestro propio origen y quién volverá?",
-      "reveal": "La Luna guarda un registro intacto de la historia temprana de la Tierra, y su polo sur, con hielo en cráteres en sombra, es el destino de las próximas misiones tripuladas.",
+      "title": "Dragonfly: volver a Titán para buscar vida",
+      "question": "¿Podría un mundo tan frío ser un laboratorio para entender el origen de la vida?",
+      "reveal": "Dragonfly, un dron de la NASA del tamaño de un auto pequeño, volará de un sitio a otro de Titán para estudiar sus compuestos orgánicos, algo que ningún otro mundo permite.",
       "beats": [
-        "Las 382 kilogramos de muestras traídos por las misiones Apolo y los estudios que todavía se hacen con ellas",
-        "Cómo la Luna estabiliza la inclinación de la Tierra y causa las mareas",
-        "Los espejos retrorreflectores dejados por Apolo, con los que aún se mide la distancia a la Luna con láser",
-        "La Luna se aleja de la Tierra unos centímetros al año",
-        "El hielo de agua en cráteres en sombra permanente cerca del polo sur",
-        "El programa Artemis y el regreso planificado de seres humanos",
-        "El cierre: la Luna sale cada noche, y tras ella queda todo lo que aún no sabemos"
+        "Qué moléculas orgánicas se forman en la atmósfera de Titán y caen sobre la superficie.",
+        "La hipótesis de un océano de agua líquida bajo la corteza de hielo, respaldada por mediciones de Cassini, aunque no del todo confirmada.",
+        "Por qué Titán se parece a una Tierra primitiva congelada, como una cápsula del tiempo química.",
+        "Por qué se puede volar allí: atmósfera densa y gravedad baja.",
+        "La misión Dragonfly: su lanzamiento previsto para 2028 y llegada a mediados de la década de 2030.",
+        "Una pregunta abierta: ¿pudo surgir vida en el agua bajo el hielo, o con una química distinta en los lagos? No se sabe.",
+        "Cierre en calma: la luz del Sol débil, la lluvia lenta cayendo sobre un mar silencioso."
       ],
-      "ambience": "deep_space",
+      "ambience": "ice",
       "image_queries": [
-        "Moon south pole LRO",
-        "Moon Shackleton crater ice",
-        "Artemis I Orion Moon flyby",
-        "Orion spacecraft Moon far side",
-        "Earth and Moon from space",
-        "Moon rising over Earth ISS",
-        "Moon Earthrise Artemis I",
-        "Apollo retroreflector Moon",
-        "Moon sunrise ISS",
-        "Moon lunar eclipse from space"
+        "Dragonfly rotorcraft Titan",
+        "Titan subsurface ocean illustration",
+        "Titan interior illustration Cassini",
+        "Titan surface dunes Cassini",
+        "Titan Selk crater",
+        "Titan hazy atmosphere sunset",
+        "Saturn from Titan illustration",
+        "Saturn Cassini Great Northern",
+        "Titan Cassini last flyby",
+        "Titan and Saturn rings Cassini"
       ],
       "video_queries": [
-        "Artemis I Orion Moon flyby",
-        "Earth Moon system visualization",
-        "Moon south pole water ice visualization"
+        "Dragonfly mission Titan animation",
+        "Titan flight concept animation",
+        "Saturn flyover animation Cassini"
       ],
-      "text": "En la Tierra hay un cuarto donde se guardan, dentro de cajas selladas, trescientos ochenta y dos kilogramos de piedras y polvo. Es poco más que el peso de cinco personas. Casi nadie las ve, y sin embargo, medio siglo después, siguen abriéndose.\n\nSon las muestras que trajeron las misiones Apolo. Se guardan con extremo cuidado, algunas en nitrógeno seco, para que el aire de la Tierra no las toque. Los científicos de hoy tienen instrumentos que no existían en mil novecientos setenta y dos. Con ellos le hacen a esas piedras preguntas nuevas. Y aquí aparece la nuestra: ¿qué nos cuenta la Luna sobre nuestro propio origen, y quién volverá a ella?\n\nLa primera respuesta está en esas rocas. En la Tierra, el agua, el viento y el movimiento del suelo borraron casi todo lo que ocurrió en sus primeros cientos de millones de años. Aquí no queda una sola roca de aquel tiempo, o casi ninguna. En la Luna, en cambio, las piedras siguen donde se enfriaron. Guardan la edad del choque que la formó y el ritmo de los impactos que vinieron después.\n\nHay otra herencia, más discreta. La Luna sostiene a la Tierra como una mano sostiene una peonza. Tu planeta está inclinado unos veintitrés grados, y esa inclinación apenas se mueve. Gracias a eso hay estaciones suaves y regulares. Sin la Luna, la inclinación podría variar mucho a lo largo de millones de años, y el clima cambiaría con ella.\n\nY está el mar. La Luna tira del agua de la Tierra con su gravedad. Dos abultamientos se forman en los océanos, y la Tierra gira bajo ellos. Por eso, en cualquier playa, el agua sube y baja dos veces al día. Es un movimiento lento, que se repite desde mucho antes de que hubiera alguien para mirarlo.\n\nLos astronautas dejaron algo más en la superficie. Son espejos, pequeños paneles con cientos de prismas, que devuelven la luz en la misma dirección en que llegó. Todavía hoy, en varios observatorios, se dispara un rayo láser hacia ellos. Un instante después, una luz muy débil regresa. Se mide el tiempo del viaje de ida y vuelta, que dura poco más de dos segundos y medio.\n\nCon esa medida se conoce la distancia a la Luna con una precisión de milímetros. Y el resultado es sorprendente.\n\nLa Luna se está alejando.\n\nSe aleja unos tres centímetros y ocho milímetros por año, más o menos lo que crece una uña. La causa son esas mismas mareas, que le van entregando a la Luna un poco de la energía de giro de la Tierra. Con el tiempo, los días de tu planeta se alargan, apenas una fracción de segundo cada siglo. Hace mucho, la Luna estaba mucho más cerca y se veía enorme en el cielo.\n\nAhora, el otro lado de la pregunta. Hacia el polo sur de la Luna, hay cráteres tan profundos que el Sol nunca ha entrado en ellos. El Sol allí apenas roza el horizonte, y el fondo queda en una oscuridad que dura miles de millones de años. La temperatura puede bajar a unos doscientos grados bajo cero. Las sondas que han orbitado la Luna han detectado señales de hielo de agua en esos lugares.\n\nTodavía no sabemos cuánto hay, ni en qué forma exacta. Pero es agua que podría servir para beber, o para fabricar aire y combustible. Es también un archivo, porque ese hielo pudo llegar hace mucho con cometas y asteroides.\n\nPor eso el programa Artemis apunta justamente allí.\n\nArtemis planea llevar de nuevo seres humanos a la Luna, y esta vez cerca del polo sur. Se probarán trajes nuevos y se buscará el hielo con las manos y con instrumentos. Las fechas han cambiado varias veces, como suele ocurrir con las misiones difíciles. Pero la dirección no ha cambiado.\n\nAsí que la respuesta es doble. La Luna guarda un registro casi intacto de la historia temprana de la Tierra, un libro que tu planeta perdió. Y su polo sur, con hielo escondido en la sombra, es el lugar al que volverán las próximas personas.\n\nQueda mucho por saber. Todavía no entendemos del todo por qué sus dos caras son tan distintas. No sabemos cuánto de Theia quedó en nosotros. Y esa agua congelada guarda historias que aún no hemos leído.\n\nMientras tanto, la Luna sigue su camino. Esta noche saldrá por el horizonte, tranquila, como lo hizo para quienes vivían en cuevas y para quienes encendían fogatas. Ya sabes de qué está hecha, cómo nació y quiénes caminaron sobre ella. Y aun así, seguirá guardando más de lo que cuenta.\n\nDéjala subir. Respira despacio. Todo lo que no sabemos sigue allí, esperando con paciencia, y mañana volverá a salir.\n\nBuenas noches."
+      "text": "Si pudieras tocar el aire de Titán, sentirías algo que no esperas: un frío que no hiere, sino que pesa. Y un aire denso, que te rodea como agua espesa en una piscina oscura. Arriba, la bruma naranja sigue trabajando, sin prisa, como lo ha hecho durante millones de años.\n\nY esa bruma fabrica cosas. Ya viste cómo: la luz y las partículas cargadas rompen el metano y el nitrógeno del aire. Los pedazos se vuelven a unir, y forman moléculas más grandes, hechas de carbono, hidrógeno y nitrógeno. Los científicos las llaman compuestos orgánicos, y no significan vida. Son ladrillos, nada más.\n\nMientras esa nevada oscura cae sin ruido, quiero que sepas que no estás solo. Tus pensamientos pueden esperar afuera un rato; la noche todavía es larga, y yo sigo aquí contigo.\n\nY si conoces a alguien que también pasa noches largas, compártele este viaje.\n\nEsos ladrillos crecen hasta ser granos, y los granos bajan despacio. Se posan sobre las dunas, se mezclan con la lluvia, se hunden en los lagos. Es una nevada oscura y constante, que ha cubierto el suelo de Titán durante eras. Entonces surge la pregunta. ¿Podría un mundo tan frío ser un laboratorio para entender el origen de la vida?\n\nHay otra pista, y está escondida más abajo. Cuando Cassini pasó una y otra vez junto a Titán, sus instrumentos notaron que la luna se deforma un poco, como si tuviera algo blando por dentro. La marea de Saturno la estira y la afloja, y esa flexión es mayor de lo que permitiría un interior completamente sólido. Una explicación posible es un océano de agua líquida, enterrado bajo una corteza de hielo de muchos kilómetros. Es una hipótesis respaldada por varias mediciones, pero no está confirmada, y estudios recientes sugieren que podría ser hielo con bolsas de agua.\n\nPiensa en lo que eso significa. Arriba, química orgánica cayendo desde el cielo. Abajo, quizás, agua líquida. Entre las dos, una capa de hielo que tal vez deja pasar algo con el tiempo.\n\nY hay una razón más para mirar con atención. La Tierra, hace unos cuatro mil millones de años, tenía una atmósfera con mucho nitrógeno y quizás algo de metano, y no había oxígeno libre. Nadie sabe con certeza cómo era aquel aire. Pero Titán se le parece en algo esencial.\n\nEs como una Tierra primitiva, puesta en el congelador.\n\nAquí el frío trabaja a favor nuestro. En la Tierra, la vida y el tiempo borraron casi todo rastro de aquellos primeros pasos químicos. En Titán, el frío guarda lo que allá se perdió. Es una cápsula del tiempo, y puede enseñarnos qué hace la materia cuando se le da tiempo, y nadie la interrumpe.\n\nQueda una dificultad. ¿Cómo se estudia un lugar tan extenso, con dunas, llanuras y cráteres separados por cientos de kilómetros? Un vehículo con ruedas avanzaría muy poco cada día. Pero Titán ofrece una salida. Su aire es unas cuatro veces más denso que el de la Tierra al nivel del suelo, y su gravedad es muy baja, casi siete veces menor que la nuestra. Con esas dos cosas, volar resulta sorprendentemente fácil. Las alas de un dron encontrarían un aire espeso donde apoyarse, y pesarían muy poco.\n\nPor eso existe Dragonfly.\n\nEs un dron de la NASA, del tamaño de un auto pequeño, con ocho hélices y un generador nuclear de radioisótopos que le da calor y energía. Su lanzamiento está previsto para dos mil veintiocho. Después de un viaje de unos seis años, llegaría a Titán hacia dos mil treinta y cuatro. Se posaría, tomaría muestras del suelo, y luego volaría a otro sitio, y a otro más. Sería la primera vez que un aparato mide compuestos orgánicos en lugares tan distintos de un mismo mundo. Pocos lugares del sistema solar ofrecen algo así.\n\nY sigue una pregunta que nadie sabe responder. ¿Pudo surgir vida en el agua escondida bajo el hielo? ¿O quizás una vida distinta, con una química que no conocemos, en los lagos de metano? Hoy no hay evidencia de ninguna de las dos. Puede que la respuesta sea no. Incluso eso nos enseñaría algo.\n\nMientras tanto, Titán sigue su ritmo. El Sol llega allí como una estrella pequeña y pálida, unas cien veces más tenue que sobre tu cabeza. Su luz apenas toca la bruma. Abajo, una lluvia lenta cae sobre un mar que no se mueve, gota tras gota, sin que nadie la mire.\n\nY aquí, tan lejos, tú también has estado mirando. Has recorrido anillos, un paracaídas, una orilla donde el metano brilla. Ya puedes soltarlo todo. Titán seguirá ahí, naranja y paciente, guardando su secreto con calma.\n\nBuenas noches.",
+      "companion": [
+        "Mientras esa nevada oscura cae sin ruido, quiero que sepas que no estás solo. Tus pensamientos pueden esperar afuera un rato; la noche todavía es larga, y yo sigo aquí contigo.",
+        "Y si conoces a alguien que también pasa noches largas, compártele este viaje."
+      ],
+      "gift": "Y si conoces a alguien que también pasa noches largas, compártele este viaje."
     }
   ],
-  "cold_open": "Hace más de cincuenta años, un hombre dejó la huella de su bota en el polvo de la Luna. Y esa huella sigue ahí, intacta.\n\nAllá no hay viento que la borre ni lluvia que la lave. Pensábamos que la Luna era un mundo quieto, desde siempre igual. Pero nació de un choque entre dos mundos, y de aquella violencia quedó un silencio casi perfecto.\n\n¿Cómo nace una luna? ¿Y por qué el tiempo casi no la toca?\n\nLo descubrirás poco a poco. Verás un océano de roca fundida enfriarse despacio. Recorrerás llanuras de lava endurecida, y cráteres que guardan la memoria de cada golpe. Y al final, caminarás sobre esos pasos en el polvo.\n\nAquí no hay prisa. Todo lo que oirás es ciencia real, contada con calma, bajo imágenes verdaderas. No tienes nada que hacer, salvo escuchar.\n\nSilencio.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nPonte cómodo, respira hondo, y mira hacia ella.",
+  "cold_open": "A más de mil millones de kilómetros del Sol, en una luna helada, está lloviendo. Las gotas caen despacio, tan despacio que podrías contarlas, sobre ríos y lagos que reflejan un cielo naranja.\n\nCreíamos que un mundo así tenía que estar muerto, congelado, quieto. Pero Titán respira, tiene nubes, tiene estaciones, tiene orillas.\n\nY hace más de veinte años, una pequeña sonda llegó hasta esa luna y se posó en su superficie.\n\n¿Cómo es posible que llueva donde el agua es roca? ¿Y qué podría estar naciendo en esos lagos?\n\nEsta noche descenderás a través de la niebla, verás el paisaje que reveló una nave, y sabrás por qué volveremos a buscar.\n\nSin prisa. Con ciencia verdadera, con imágenes hermosas, y nada que hacer salvo escuchar.\n\nAquí, la lluvia todavía cae.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nQuédate conmigo, y empecemos por la luz naranja.",
   "sources": [
+    "Cassini-Huygens",
     "NASA",
-    "Apollo program",
-    "Luna 3",
-    "Chang'e 4",
-    "Lunar Laser Ranging Experiment",
-    "Artemis program"
+    "ESA",
+    "Voyager 1",
+    "Pioneer 11",
+    "Dragonfly"
   ],
   "review": {
-    "suggested": 19,
-    "applied": 19,
+    "suggested": 16,
+    "applied": 16,
     "fixes": [
       {
-        "section": "chapter_2",
-        "find": "Pero los cálculos mostraron que la Tierra no habría podido girar tan deprisa, y que el sistema Tierra y Luna tiene más movimiento de giro del que esa idea permitía.",
-        "replace": "Pero los cálculos mostraron que la Tierra no habría podido girar tan deprisa. Además, el sistema Tierra y Luna tiene más movimiento de giro del que esa idea permitía.",
-        "reason": "oración larga"
+        "section": "cold_open",
+        "find": "Y hace casi veinte años, una pequeña sonda llegó hasta ellas y se posó allí.",
+        "replace": "Y hace más de veinte años, una pequeña sonda llegó hasta esa luna y se posó en su superficie.",
+        "reason": "fecha desactualizada; aterrizó en una llanura"
+      },
+      {
+        "section": "chapter_1",
+        "find": "Lo que la Voyager fotografió fue una bruma espesa, muchas veces más alta que la atmósfera entera de nuestro planeta.",
+        "replace": "Lo que la Voyager fotografió fue una bruma espesa, que se alza cientos de kilómetros sobre la superficie.",
+        "reason": "comparación imprecisa"
+      },
+      {
+        "section": "chapter_1",
+        "find": "pesarías allí unas siete veces menos que en la Tierra, más o menos lo que pesas en la Luna.",
+        "replace": "pesarías allí unas siete veces menos que en la Tierra, algo menos que en la Luna.",
+        "reason": "la Luna es seis veces menos"
+      },
+      {
+        "section": "chapter_1",
+        "find": "en su superficie la presión es unas cuarenta y cinco por ciento mayor que la que sientes ahora",
+        "replace": "en su superficie la presión es un cuarenta y cinco por ciento mayor que la que sientes ahora",
+        "reason": "concordancia"
       },
       {
         "section": "chapter_2",
-        "find": "todo pudo ocurrir en un tiempo relativamente corto, quizá unos cientos de años, o menos de unos pocos miles.",
-        "replace": "todo pudo ocurrir en un tiempo relativamente corto, quizá en apenas unos siglos.",
-        "reason": "frase confusa e imprecisa"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Los astronautas del Apolo 15 tenían una tarea sencilla",
-        "replace": "Los astronautas del Apolo quince tenían una tarea sencilla",
-        "reason": "dígitos para TTS"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Ahí vuelve la piedra del Apolo 15.",
-        "replace": "Ahí vuelve la piedra del Apolo quince.",
-        "reason": "dígitos para TTS"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Se llama plagioclase, o plagioclasa, y es rica en calcio y aluminio.",
-        "replace": "Se llama plagioclasa, y es rica en calcio y aluminio.",
-        "reason": "pronunciación TTS"
-      },
-      {
-        "section": "chapter_3",
-        "find": "y su edad ronda los cuatro mil quinientos millones de años",
-        "replace": "y su edad supera los cuatro mil millones de años",
-        "reason": "edad más conservadora"
-      },
-      {
-        "section": "chapter_4",
-        "find": "tenían más de tres mil600 millones de años",
-        "replace": "tenían más de tres mil seiscientos millones de años",
-        "reason": "número mal escrito"
-      },
-      {
-        "section": "chapter_4",
-        "find": "unos mil kilómetros de ancho, más o menos la distancia entre Madrid y Roma",
-        "replace": "más de mil kilómetros de ancho, algo menos que la distancia entre Madrid y Roma",
-        "reason": "precisión numérica"
-      },
-      {
-        "section": "chapter_5",
-        "find": "Copernicus, más al centro, es algo mayor, y también está rodeado de rayos.",
-        "replace": "Copernicus, más al centro, tiene unos ochocientos millones de años, y también está rodeado de rayos.",
-        "reason": "dato impreciso"
-      },
-      {
-        "section": "chapter_5",
-        "find": "Allí la temperatura baja a unos doscientos grados bajo cero, y esa oscuridad dura miles de millones de años.",
-        "replace": "Allí la oscuridad dura miles de millones de años.",
-        "reason": "repetición con capítulo nueve"
-      },
-      {
-        "section": "chapter_6",
-        "find": "una sonda soviética llamada Luna 3 se acercó",
-        "replace": "una sonda soviética llamada Luna tres se acercó",
-        "reason": "dígitos para TTS"
-      },
-      {
-        "section": "chapter_6",
-        "find": "la tripulación del Apolo 8 rodeó la Luna",
-        "replace": "la tripulación del Apolo ocho rodeó la Luna",
-        "reason": "dígitos para TTS"
-      },
-      {
-        "section": "chapter_6",
-        "find": "Lovell dijo que se parecía a arena de playa removida por niños.",
-        "replace": "Lovell dijo que parecía yeso, o arena gris de una playa.",
-        "reason": "cita inexacta"
-      },
-      {
-        "section": "chapter_6",
-        "find": "Chang'e 4 hizo algo que nunca se había logrado",
-        "replace": "Chang'e cuatro hizo algo que nunca se había logrado",
-        "reason": "dígitos para TTS"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Tardaba unos noventa minutos en completar cada órbita.",
-        "replace": "Tardaba poco más de una hora y media en completar cada órbita.",
+        "find": "Ninguna nave había llegado nunca tan lejos.",
+        "replace": "Ninguna nave había aterrizado nunca tan lejos de la Tierra.",
         "reason": "precisión"
       },
       {
-        "section": "chapter_7",
-        "find": "y en solo doce años más habría personas caminando sobre la Luna",
-        "replace": "y en solo ocho años más habría personas caminando sobre la Luna",
-        "reason": "error de cálculo"
+        "section": "chapter_3",
+        "find": "Evaporan, llueven, forman ríos y llenan mares.",
+        "replace": "Se evaporan, llueven, forman ríos y llenan mares.",
+        "reason": "gramática"
       },
       {
-        "section": "chapter_7",
-        "find": "más que unos cientos de kilómetros. Ellos iban a recorrer cuatrocientos mil.",
-        "replace": "más que unos mil quinientos kilómetros. Ellos iban a recorrer cuatrocientos mil.",
-        "reason": "dato corregido (Gemini 11)"
+        "section": "chapter_4",
+        "find": "Menos ciento ochenta grados Celsius, y una atmósfera más densa que la de la Tierra, que te rodea como agua tibia en una piscina oscura.",
+        "replace": "Y un aire denso, que te rodea como agua espesa en una piscina oscura.",
+        "reason": "repetición de datos y metáfora"
       },
       {
-        "section": "chapter_7",
-        "find": "En menos de diez años, la humanidad había pasado",
-        "replace": "En doce años, la humanidad había pasado",
-        "reason": "error de cálculo"
+        "section": "chapter_4",
+        "find": "Y esa bruma fabrica cosas. La luz del Sol, aunque débil, y las partículas que llegan desde Saturno rompen el metano y el nitrógeno del aire.",
+        "replace": "Y esa bruma fabrica cosas. Ya viste cómo: la luz y las partículas cargadas rompen el metano y el nitrógeno del aire.",
+        "reason": "repetición del capítulo uno"
       },
       {
-        "section": "chapter_9",
-        "find": "Entre ellos habrá, por primera vez, una mujer y una persona de color. Se prepararán campamentos, se probarán trajes nuevos",
-        "replace": "Se probarán trajes nuevos",
-        "reason": "afirmación incierta y desactualizada"
+        "section": "chapter_4",
+        "find": "Es una hipótesis firme, pero no está confirmada del todo.",
+        "replace": "Es una hipótesis respaldada por varias mediciones, pero no está confirmada, y estudios recientes sugieren que podría ser hielo con bolsas de agua.",
+        "reason": "evitar exceso de certeza"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Un vehículo con ruedas avanzaría apenas unos metros por día.",
+        "replace": "Un vehículo con ruedas avanzaría muy poco cada día.",
+        "reason": "exageración"
+      },
+      {
+        "section": "chapter_4",
+        "find": "y su gravedad es parecida a la de la Luna, casi siete veces menor.",
+        "replace": "y su gravedad es muy baja, casi siete veces menor que la nuestra.",
+        "reason": "repetición y precisión"
+      },
+      {
+        "section": "chapter_4",
+        "find": "con ocho hélices y un reactor nuclear pequeño que le da calor y energía.",
+        "replace": "con ocho hélices y un generador nuclear de radioisótopos que le da calor y energía.",
+        "reason": "no es un reactor"
+      },
+      {
+        "section": "chapter_4",
+        "find": "llegaría a Titán a mediados de la década de dos mil treinta.",
+        "replace": "llegaría a Titán hacia dos mil treinta y cuatro.",
+        "reason": "fecha más precisa"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Se posará, tomará muestras del suelo, y luego volará a otro sitio, y a otro más.",
+        "replace": "Se posaría, tomaría muestras del suelo, y luego volaría a otro sitio, y a otro más.",
+        "reason": "misión aún no realizada"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Será la primera vez que un aparato pueda medir compuestos orgánicos en lugares tan distintos de un mismo mundo. Ningún otro lugar del sistema solar lo permite.",
+        "replace": "Sería la primera vez que un aparato mide compuestos orgánicos en lugares tan distintos de un mismo mundo. Pocos lugares del sistema solar ofrecen algo así.",
+        "reason": "exceso de certeza"
+      },
+      {
+        "section": "chapter_4",
+        "find": "cien veces más tenue que sobre tu cabeza.",
+        "replace": "unas cien veces más tenue que sobre tu cabeza.",
+        "reason": "aproximación"
       }
     ]
   },
-  "topic": "La Luna: origen, mares de lava, cráteres y las misiones Apolo",
-  "shorts": [
-    {
-      "title": "La Luna se aleja de ti cada año",
-      "hook": "La Luna se está yendo",
-      "narration": "La Luna se está alejando de la Tierra, y lo sabemos con precisión de milímetros. Los astronautas del Apolo dejaron espejos sobre su superficie, pequeños paneles con cientos de prismas. Todavía hoy, varios observatorios disparan un rayo láser hacia ellos. Un instante después, una luz muy débil regresa. El viaje de ida y vuelta dura poco más de dos segundos y medio, y con ese tiempo se mide la distancia. El resultado es claro: cada año la Luna se aleja unos tres centímetros y ocho milímetros, más o menos lo que crece una uña. La causa son las mareas, que le entregan poco a poco energía del giro de la Tierra. Hace mucho tiempo, la Luna estaba mucho más cerca y se veía enorme en el cielo. Y mientras tú lees esto, sigue alejándose, centímetro a centímetro, al ritmo de tus uñas. Sígueme: cada semana, un viaje nuevo para dormir.",
-      "image_queries": [
-        "Apollo 11 laser ranging retroreflector",
-        "Lunar laser ranging retroreflector array",
-        "Apollo 14 retroreflector moon surface",
-        "Full moon night sky"
-      ],
-      "video_queries": [
-        "Apollo lunar retroreflector deployment",
-        "Moon rising over Earth horizon"
-      ],
-      "source": "NASA / Lunar Laser Ranging Experiment"
-    },
-    {
-      "title": "La Luna nació de un choque entre dos mundos",
-      "hook": "La Luna nació de un choque",
-      "narration": "Hace unos cuatro mil quinientos millones de años, un mundo del tamaño de Marte chocó contra la Tierra. Se llamaba Theia. No fue un golpe de frente, sino un roce oblicuo, como una piedra que toca el borde de otra. Theia se deshizo, y una enorme cantidad de roca vaporizada y fundida salió disparada hacia el espacio. Esos escombros formaron un disco incandescente alrededor de la Tierra, girando como los anillos de Saturno, pero hechos de roca al rojo vivo. Según las simulaciones, los fragmentos pudieron unirse en apenas unos siglos. Para un mundo, eso es un parpadeo. Si hubieras estado allí, habrías visto un anillo de fuego sobre tu cabeza, y en él, entre las brasas, empezaba a juntarse la Luna que hoy miras cada noche. Sígueme: cada semana, un viaje nuevo para dormir.",
-      "image_queries": [
-        "Moon formation giant impact illustration",
-        "Theia collision Earth artist concept",
-        "Young Earth molten surface artist concept",
-        "Full moon close up"
-      ],
-      "video_queries": [
-        "Giant impact moon formation simulation",
-        "Moon formation animation NASA"
-      ],
-      "source": "NASA"
-    },
-    {
-      "title": "El lado oculto de la Luna esconde una cicatriz gigante",
-      "hook": "La cicatriz más grande de la Luna",
-      "narration": "En el lado oculto de la Luna hay un agujero de unos dos mil quinientos kilómetros de diámetro. Se llama cuenca Polo Sur-Aitken, y es una distancia parecida a la que separa Ciudad de México de Panamá, pero en un solo golpe. Un impacto la excavó hace muchísimo tiempo, y es una de las mayores y más antiguas cuencas de impacto del sistema solar. Con tantos miles de millones de años encima, otros cráteres la han cubierto y sus bordes se han gastado. Desde lejos no parece un golpe, sino una depresión enorme, hundida varios kilómetros bajo su entorno. En enero de dos mil diecinueve, la sonda Chang'e cuatro se posó en su interior, en el cráter Von Kármán, un lugar donde el cielo nunca tendrá Tierra. Sígueme: cada semana, un viaje nuevo para dormir.",
-      "image_queries": [
-        "South Pole-Aitken basin topography",
-        "Far side of the Moon Chang'e 4",
-        "Von Karman crater Chang'e 4 lander",
-        "Moon far side Lunar Reconnaissance Orbiter"
-      ],
-      "video_queries": [
-        "Far side of the Moon rotating",
-        "Lunar Reconnaissance Orbiter far side flyover"
-      ],
-      "source": "NASA / Chang'e 4"
-    }
-  ]
+  "companion": {
+    "count": 2,
+    "minutes": [
+      5.8,
+      18.4
+    ],
+    "gift_minute": 18.4
+  },
+  "topic": "Titán: la luna de Saturno con lagos, ríos y lluvia de metano",
+  "shorts": [],
+  "share_code": "tit-1029m"
 }
