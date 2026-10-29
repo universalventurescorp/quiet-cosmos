@@ -348,7 +348,9 @@ def main():
         script["shorts"] = write_shorts(script, cfg, cfg.get("shorts", {}).get("count", 2)) if do_shorts else []
         if ((cfg.get("companion") or {}).get("qr") or {}).get("gift_page"):
             # short code printed in this video's gift QR: first word of the topic + date (titan-1029)
-            first = slugify(topic).split("-")[0][:12] or "noche"
+            import unicodedata
+            plain = unicodedata.normalize("NFKD", topic).encode("ascii", "ignore").decode()   # Titán -> Titan
+            first = slugify(plain).split("-")[0][:12] or "noche"
             script["share_code"] = f"{first}-{dt.date.today():%m%d}" + ("m" if sample else "")
         write_json(out / "script.json", script)
 
