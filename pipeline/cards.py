@@ -247,3 +247,161 @@ def qr_card(W, H, url, label, start, end, moon=False, opacity=0.74):
         a = img.split()[3].point(lambda v: int(v * opacity))
         img.putalpha(a)
     return _to_overlay(img, start, end, 1.6, 1.6, shadow=False)
+
+
+# ---------- language-free QR panel (30-oct-2026) ----------
+# No words on screen (YouTube dubs the channel into many languages). Each panel shows two paths: on the left the
+# slow way (4 steps + hourglass, small and faded); on the right the QR as the obvious bargain (phone camera →
+# lightning → result, 1 step). Dimmed for night viewing.
+_NAVY = (22, 28, 70, 255)
+_LAV = (178, 174, 206)
+_GOLD = (255, 214, 120, 255)
+
+
+def _p_phone(d, x, y, s, c, w):
+    d.rounded_rectangle((x, y, x + s * 0.6, y + s), radius=s * 0.1, outline=c, width=w)
+    d.line((x + s * 0.22, y + s * 0.08, x + s * 0.38, y + s * 0.08), fill=c, width=w)
+
+
+def _p_keyboard(d, x, y, s, c, w):
+    _p_phone(d, x, y, s, c, w)
+    for r in range(3):
+        for k in range(3):
+            cx, cy = x + s * (0.13 + k * 0.13), y + s * (0.55 + r * 0.12)
+            d.rectangle((cx, cy, cx + s * 0.08, cy + s * 0.07), fill=c)
+
+
+def _p_camera(d, x, y, s, c, w):
+    _p_phone(d, x, y, s, c, w)
+    cx, cy, r = x + s * 0.3, y + s * 0.5, s * 0.13
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=c, width=w)
+    d.ellipse((cx - s * 0.06, cy - s * 0.06, cx + s * 0.06, cy + s * 0.06), fill=c)
+
+
+def _p_magnifier(d, x, y, s, c, w):
+    r = s * 0.3
+    d.ellipse((x, y, x + 2 * r, y + 2 * r), outline=c, width=w + 1)
+    d.line((x + 1.7 * r, y + 1.7 * r, x + s * 0.9, y + s * 0.9), fill=c, width=w + 3)
+
+
+def _p_list(d, x, y, s, c, w):
+    for i in range(3):
+        yy = y + s * (0.15 + i * 0.3)
+        d.rectangle((x, yy, x + s * 0.2, yy + s * 0.18), fill=c)
+        d.line((x + s * 0.3, yy + s * 0.09, x + s * 0.9, yy + s * 0.09), fill=c, width=w + 1)
+
+
+def _p_bell(d, x, y, s, c, w):
+    d.pieslice((x + s * 0.15, y + s * 0.1, x + s * 0.85, y + s * 0.9), 180, 360, fill=c)
+    d.rectangle((x + s * 0.15, y + s * 0.5, x + s * 0.85, y + s * 0.72), fill=c)
+    d.polygon([(x + s * 0.05, y + s * 0.78), (x + s * 0.95, y + s * 0.78),
+               (x + s * 0.85, y + s * 0.68), (x + s * 0.15, y + s * 0.68)], fill=c)
+    d.ellipse((x + s * 0.42, y + s * 0.8, x + s * 0.58, y + s * 0.96), fill=c)
+    d.ellipse((x + s * 0.44, y, x + s * 0.56, y + s * 0.12), fill=c)
+
+
+def _p_hourglass(d, x, y, s, c, w):
+    d.line((x, y, x + s * 0.6, y), fill=c, width=w + 1)
+    d.line((x, y + s, x + s * 0.6, y + s), fill=c, width=w + 1)
+    d.polygon([(x + s * 0.05, y), (x + s * 0.55, y), (x + s * 0.3, y + s * 0.5)], outline=c, width=w)
+    d.polygon([(x + s * 0.05, y + s), (x + s * 0.55, y + s), (x + s * 0.3, y + s * 0.5)], fill=c)
+
+
+def _p_bolt(d, x, y, s, c, w):
+    d.polygon([(x + s * 0.55, y), (x + s * 0.1, y + s * 0.58), (x + s * 0.45, y + s * 0.58),
+               (x + s * 0.3, y + s), (x + s * 0.9, y + s * 0.38), (x + s * 0.55, y + s * 0.38)], fill=c)
+
+
+def _p_chevron(d, x, y, s, c, w):
+    d.line((x, y, x + s * 0.4, y + s * 0.5, x, y + s), fill=c, width=w + 1, joint="curve")
+
+
+def _p_link(d, x, y, s, c, w):
+    d.rounded_rectangle((x, y + s * 0.3, x + s * 0.55, y + s * 0.7), radius=s * 0.2, outline=c, width=w + 1)
+    d.rounded_rectangle((x + s * 0.4, y + s * 0.3, x + s * 0.95, y + s * 0.7), radius=s * 0.2, outline=c, width=w + 1)
+
+
+def _p_contacts(d, x, y, s, c, w):
+    for i in range(2):
+        ox = x + i * s * 0.42
+        d.ellipse((ox + s * 0.12, y + s * 0.15, ox + s * 0.4, y + s * 0.43), fill=c)
+        d.pieslice((ox, y + s * 0.5, ox + s * 0.52, y + s * 1.05), 180, 360, fill=c)
+
+
+def _p_chat_heart(d, x, y, s, c, w):
+    d.ellipse((x, y, x + s, y + s * 0.85), fill=c)
+    d.polygon([(x + s * 0.15, y + s * 0.65), (x + s * 0.05, y + s), (x + s * 0.45, y + s * 0.8)], fill=c)
+    hx, hy, hs = x + s * 0.27, y + s * 0.22, s * 0.46
+    d.ellipse((hx, hy, hx + hs * 0.55, hy + hs * 0.55), fill=_GOLD)
+    d.ellipse((hx + hs * 0.45, hy, hx + hs, hy + hs * 0.55), fill=_GOLD)
+    d.polygon([(hx + hs * 0.02, hy + hs * 0.36), (hx + hs * 0.98, hy + hs * 0.36), (hx + hs * 0.5, hy + hs * 0.95)],
+              fill=_GOLD)
+
+
+def _p_dots(d, x, y, n, s, c):
+    r, gap = 7 * s, 24 * s
+    for i in range(n):
+        d.ellipse((x + i * gap, y, x + i * gap + 2 * r, y + 2 * r), fill=c)
+
+
+def qr_panel(W, H, url, kind, start, end):
+    """kind="subscribe": slow path keyboard→search→list→bell vs QR→bell. kind="gift": slow path
+    link→app→contacts→message vs QR inside a crescent moon → message with a heart. No text at all."""
+    s = H / 1080
+    w = max(2, int(round(4 * s)))
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    X = int(60 * s)
+    gift = kind == "gift"
+    pw, ph = (760 if gift else 720) * s, (380 if gift else 330) * s
+    Y = int(H - 50 * s - ph)
+    ImageDraw.Draw(img).rounded_rectangle((X, Y, X + pw, Y + ph), radius=int(28 * s), fill=_LAV + (170,))
+
+    # slow path, faded
+    slow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(slow)
+    i = 52 * s
+    x0, y0 = X + 30 * s, Y + (120 if gift else 95) * s
+    if gift:
+        _p_link(d, x0, y0 + 4 * s, i, _NAVY, w); _p_chevron(d, x0 + 58 * s, y0 + 14 * s, 22 * s, _NAVY, w)
+        _p_phone(d, x0 + 86 * s, y0, i, _NAVY, w); _p_chevron(d, x0 + 128 * s, y0 + 14 * s, 22 * s, _NAVY, w)
+        _p_contacts(d, x0 + 156 * s, y0 + 2 * s, i, _NAVY, w); _p_chevron(d, x0 + 236 * s, y0 + 14 * s, 22 * s, _NAVY, w)
+        _p_chat_heart(d, x0 + 262 * s, y0 + 2 * s, 46 * s, _NAVY, w)
+    else:
+        _p_keyboard(d, x0, y0, i, _NAVY, w); _p_chevron(d, x0 + 42 * s, y0 + 14 * s, 22 * s, _NAVY, w)
+        _p_magnifier(d, x0 + 70 * s, y0 + 4 * s, i, _NAVY, w); _p_chevron(d, x0 + 128 * s, y0 + 14 * s, 22 * s, _NAVY, w)
+        _p_list(d, x0 + 156 * s, y0 + 4 * s, i, _NAVY, w); _p_chevron(d, x0 + 214 * s, y0 + 14 * s, 22 * s, _NAVY, w)
+        _p_bell(d, x0 + 240 * s, y0, i, _NAVY, w)
+    _p_dots(d, x0 + 70 * s, y0 + 95 * s, 4, s, _NAVY)
+    _p_hourglass(d, x0 + 180 * s, y0 + 85 * s, 34 * s, _NAVY, w)
+    slow.putalpha(slow.split()[3].point(lambda v: v * 95 // 255))
+    img.alpha_composite(slow)
+
+    d = ImageDraw.Draw(img)
+    d.line((X + (360 if gift else 345) * s, Y + 40 * s, X + (360 if gift else 345) * s, Y + ph - 40 * s),
+           fill=_NAVY[:3] + (70,), width=max(1, int(2 * s)))
+    light = _LAV + (255,)
+    if gift:
+        cx, cy, R = int(X + 530 * s), int(Y + 190 * s), int(165 * s)
+        moon = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        md = ImageDraw.Draw(moon)
+        mc = (196, 193, 214, 255)
+        md.ellipse((cx - R, cy - R, cx + R, cy + R), fill=mc)
+        md.ellipse((cx - R + 40 * s, cy - R - 10 * s, cx + R + 40 * s, cy + R - 10 * s), fill=(0, 0, 0, 0))
+        md.ellipse((cx - R, cy - R, cx + R, cy + R), outline=mc, width=max(2, int(6 * s)))
+        img.alpha_composite(moon)
+        qr = _qr_image(url, 210 * s, dark=_NAVY, light=light)
+        img.alpha_composite(qr, (int(cx - qr.size[0] / 2 + 10 * s), int(cy - qr.size[1] / 2)))
+        d = ImageDraw.Draw(img)
+        _p_camera(d, X + 700 * s, Y + 60 * s, 56 * s, _NAVY, w)
+        _p_bolt(d, X + 702 * s, Y + 145 * s, 38 * s, _NAVY, w)
+        _p_chat_heart(d, X + 695 * s, Y + 215 * s, 54 * s, _NAVY, w)
+        _p_dots(d, X + 713 * s, Y + 300 * s, 1, s, _NAVY)
+    else:
+        qr = _qr_image(url, 270 * s, dark=_NAVY, light=light)
+        img.alpha_composite(qr, (int(X + 370 * s), int(Y + 30 * s)))
+        d = ImageDraw.Draw(img)
+        _p_camera(d, X + 655 * s, Y + 40 * s, 62 * s, _NAVY, w)
+        _p_bolt(d, X + 660 * s, Y + 130 * s, 40 * s, _NAVY, w)
+        _p_bell(d, X + 650 * s, Y + 205 * s, 52 * s, _NAVY, w)
+        _p_dots(d, X + 668 * s, Y + 285 * s, 1, s, _NAVY)
+    return _to_overlay(img, start, end, 1.6, 1.6, shadow=False)

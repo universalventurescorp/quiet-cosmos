@@ -189,15 +189,15 @@ def qr_overlays(timing, cfg, W, H, share_code=None):
     out = []
     for e in timing.get("events", []):
         if e["kind"] == "subscribe" and qr.get("subscribe_url"):
-            out.append(cards.qr_card(W, H, qr["subscribe_url"], qr.get("subscribe_label", ""), e["start"] - 0.5,
-                                     e["start"] + qr.get("seconds", 22)))
+            out.append(cards.qr_panel(W, H, qr["subscribe_url"], "subscribe", e["start"] - 0.5,
+                                      e["start"] + qr.get("seconds", 22)))
         elif e["kind"] == "gift" and (qr.get("gift_page") or qr.get("gift_text")):
             # own page (Cloudflare Pages, web/r.html): opens WhatsApp with THIS video's link, in the phone's
             # language; without it, a plain WhatsApp message with the channel link
             url = (f"{qr['gift_page'].rstrip('/')}/r/{share_code}" if qr.get("gift_page") and share_code
                    else "https://wa.me/?text=" + quote(qr["gift_text"], safe=":/@,"))
-            out.append(cards.qr_card(W, H, url, qr.get("gift_label", ""), e["start"] - 0.5,
-                                     e["start"] + qr.get("seconds", 22) + 4, moon=True))
+            out.append(cards.qr_panel(W, H, url, "gift", e["start"] - 0.5,
+                                      e["start"] + qr.get("seconds", 22) + 4))
     return out
 
 
