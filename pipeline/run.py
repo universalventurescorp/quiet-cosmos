@@ -339,7 +339,7 @@ def main():
         print(f"   voice mode for this run: {voice_cfg['unit']} {voice_cfg.get('inner_end') or ''} "
               f"pitch edit {voice_cfg.get('pitch_edit')}")
     gpu_voice = voice_cfg.get("engine", "kokoro") == "qwen"
-    out = ROOT / "outputs" / (slugify(topic) + (f"-{long_mode}" if long_mode else "") + ("-muestra" if sample else ""))
+    out = ROOT / "outputs" / (slugify(topic) + (f"-{long_mode}" if long_mode else "") + ("-muestra" if sample and long_mode != "muestra" else ""))
     out.mkdir(parents=True, exist_ok=True)
     N = 12
     ai_cfg = cfg.get("ai", {})

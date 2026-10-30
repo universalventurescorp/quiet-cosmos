@@ -29,11 +29,14 @@ def apply(cfg, name):
     if not lc:
         raise SystemExit(f"unknown long format {name!r} (see 'long:' in the channel config)")
     v = cfg["video"]
-    v["target_minutes"] = lc["minutes"]
+    # the narration always comes out ~22-26 % shorter than the word budget (pauses are already in the wpm,
+    # the chapters run short): 30 min asked -> 24 min, 60 -> 44. Ask for more so a 3 h journey really lasts 3 h.
+    stretch = lc.get("stretch", 1.3)
+    v["target_minutes"] = round(lc["minutes"] * stretch)
     v["chapters"] = lc.get("chapters") or max(5, round(lc["minutes"] / 6.5))
     ai = cfg.setdefault("ai", {})
     ai["max_images"] = lc.get("max_images", ai.get("max_images", 140))
-    ai["full_minutes"] = lc.get("full_minutes", 60)
+    ai["full_minutes"] = lc.get("full_minutes", 60) * stretch     # same scale as the word budget
     kg = cfg.setdefault("kaggle", {})
     kg["gpu_budget_minutes"] = lc.get("gpu_budget_minutes", 200)
     kg["wait_minutes"] = lc.get("wait_minutes", 330)
@@ -89,5 +92,9 @@ def title(base, cfg):
     label = lc.get("title_label")
     if not label or "hora" in base.lower():
         return base
-    full = f"{base} | {label}"
+    # "Los anillos de Saturno | Un viaje tranquilo para dormir" + "3 horas para dormir": drop the generic tail
+    parts = [p.strip() for p in base.split("|")]
+    if len(parts) > 1 and "dormir" in parts[-1].lower():
+        parts = parts[:-1]
+    full = " | ".join(parts + [label])
     return full if len(full) <= 100 else base
