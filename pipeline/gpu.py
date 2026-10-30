@@ -82,6 +82,12 @@ def status(ref):
 STALE_GRACE = 30   # minutes during which a finished status is assumed to belong to the previous version
 
 
+def _stamp(job_id):
+    """Push time encoded at the end of a job id (topic-slug-YYYYmmddHHMMSS); 0 if absent."""
+    tail = (job_id or "").rsplit("-", 1)[-1]
+    return int(tail) if tail.isdigit() and len(tail) == 14 else 0
+
+
 def collect(out, cfg, wait_minutes=None):
     """Wait for the kernel and download its output into out/ai. Returns the worker manifest or None."""
     state = read_json(out / "kaggle.json", None)
@@ -104,6 +110,21 @@ def collect(out, cfg, wait_minutes=None):
             manifest = _download(state, out)
             if manifest and manifest.get("job_id") == state["job_id"]:
                 return manifest
+            if manifest and _stamp(manifest.get("job_id")) > _stamp(state["job_id"]) and not state.get("repushed"):
+                # 30-oct-2026: another run pushed a NEWER job to the same Kaggle script, which cancels ours.
+                # Push ours again (once) and keep waiting for it, instead of giving up on the voice and the scenes.
+                job = read_json(out / "gpu_job.json", None)
+                if job:
+                    print(f"   kaggle: our job was replaced by {manifest.get('job_id')}: pushing it again", flush=True)
+                    new = launch(job, out, cfg)
+                    new["repushed"] = True
+                    write_json(out / "kaggle.json", new)
+                    if new.get("ok"):
+                        state = new
+                        give_up = state["pushed_at"] + wait_minutes * 60
+                        time.sleep(90)
+                        last = ""
+                        continue
             # the status endpoint can still show the PREVIOUS version (complete, error or cancelled)
             # while ours is queued or running: keep waiting until the output belongs to this job.
             # Our worker always writes a manifest, so a stale "error" is far more likely than a real one;

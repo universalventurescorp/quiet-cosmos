@@ -25,7 +25,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: largo
+  # el mismo grupo que produce.yml: los dos usan el mismo script de Kaggle, y un trabajo nuevo cancela al anterior
+  group: produce
   cancel-in-progress: false
 
 env:
