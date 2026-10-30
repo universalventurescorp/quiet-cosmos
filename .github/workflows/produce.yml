@@ -1,4 +1,5 @@
 name: produce-episode
+run-name: ${{ (github.event_name == 'workflow_dispatch' && (inputs.sample || inputs.gpu_test || inputs.video_bench || inputs.voice_bench)) && 'produce-prueba' || 'produce-episode' }}
 
 on:
   schedule:
@@ -50,13 +51,36 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: produce
   cancel-in-progress: false
 
 jobs:
+  # 30-oct-2026: si ya se lanzó a mano el episodio de hoy, el cron de ese día no produce otro.
+  guard:
+    runs-on: ubuntu-24.04
+    outputs:
+      skip: ${{ steps.check.outputs.skip }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SKIP=false
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            SINCE="$(TZ=America/Lima date +%Y-%m-%d)T05:00:00Z"
+            N=$(gh api "repos/${{ github.repository }}/actions/workflows/produce.yml/runs?created=>=$SINCE&per_page=50" \
+              --jq '[.workflow_runs[] | select(.id != ${{ github.run_id }}) | select(.display_title == "produce-episode")
+                     | select(.event == "workflow_dispatch") | select(.conclusion != "failure" and .conclusion != "cancelled")] | length')
+            [ "$N" -gt 0 ] && SKIP=true
+          fi
+          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"; echo "skip=$SKIP"
+
   produce:
+    needs: guard
+    if: needs.guard.outputs.skip != 'true'
     # Por defecto, las máquinas gratis de GitHub. Para usar una máquina propia (más rápida),
     # crea la variable de repositorio RUNNER con el valor: self-hosted
     runs-on: ${{ vars.RUNNER || 'ubuntu-24.04' }}
