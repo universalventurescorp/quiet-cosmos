@@ -155,6 +155,9 @@ def write_script(topic, cfg):
         ending = ("This is the final chapter: close the journey with a slow, peaceful reflection "
                   "and a soft goodnight. Do not ask for likes or subscriptions." if last else
                   "Do not wrap up or summarize the episode; flow naturally toward the next chapter.")
+        from .longform import chapter_rule
+        extra = chapter_rule(i, len(chapters), cfg)
+        ending = extra.strip() if last and extra else ending + extra   # 8 h: the last chapter is the dawn
         text = clean(ask_claude(fill(
             "chapter.md", CHANNEL=ch["name"], LANGUAGE=lang, OUTLINE=plan, N=i,
             TOTAL=len(chapters), CHAPTER_TITLE=c["title"], BEATS="; ".join(c["beats"]),

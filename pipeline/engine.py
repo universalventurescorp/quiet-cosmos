@@ -224,27 +224,33 @@ def overlay_alpha(ov, t):
 
 # ---------------------------------------------------------------- main loop
 def render(shots, overlays, audio, out, W, H, fps, total, crf=20, preset="veryfast",
-           finish=True, fade_in=1.5, fade_out=3.0, progress_every=60):
+           finish=True, fade_in=1.5, fade_out=3.0, progress_every=60, frames=None):
     """shots: list of dicts sorted by start, contiguous (shot[i].end == shot[i+1].start).
     Each shot is drawn from start - XFADE/2 to end + XFADE/2 and dissolves into the next."""
     shots = sorted(shots, key=lambda s: s["start"])
     n_frames = int(round(total * fps))
+    # frames=(f0, f1): paint only that slice, without audio (long journeys: one slice per machine, joined later)
+    f0, f1 = frames or (0, n_frames)
+    seg = (f1 - f0) / fps
     vf = ["format=yuv420p"]
     if finish:
         vf = ["eq=contrast=1.04:saturation=1.06:gamma=0.98",
               "vignette=angle=PI/5.5",
-              "noise=c0s=3:c0f=t",
-              f"fade=t=in:st=0:d={fade_in}",
-              f"fade=t=out:st={max(0, total - fade_out):.3f}:d={fade_out}",
-              "format=yuv420p"]
+              "noise=c0s=3:c0f=t"]
+        if f0 == 0:
+            vf.append(f"fade=t=in:st=0:d={fade_in}")
+        if f1 >= n_frames:
+            vf.append(f"fade=t=out:st={max(0, seg - fade_out):.3f}:d={fade_out}")
+        vf.append("format=yuv420p")
     cmd = ["ffmpeg", "-y", "-loglevel", "error",
-           "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
-           "-i", str(audio),
-           "-vf", ",".join(vf),
-           "-c:v", "libx264", "-preset", preset, "-crf", str(crf), "-tune", "film",
-           "-g", str(fps * 4), "-pix_fmt", "yuv420p",
-           "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
-           "-t", f"{total:.3f}", "-movflags", "+faststart", str(out)]
+           "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-"]
+    if audio:
+        cmd += ["-i", str(audio)]
+    cmd += ["-vf", ",".join(vf),
+            "-c:v", "libx264", "-preset", preset, "-crf", str(crf), "-tune", "film",
+            "-g", str(fps * 4), "-pix_fmt", "yuv420p"]
+    cmd += ["-c:a", "aac", "-b:a", "192k", "-ar", "48000"] if audio else ["-an"]
+    cmd += ["-t", f"{seg:.3f}", "-movflags", "+faststart", str(out)]
     enc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
 
     half = XFADE / 2
@@ -252,13 +258,17 @@ def render(shots, overlays, audio, out, W, H, fps, total, crf=20, preset="veryfa
     overlays = sorted(overlays, key=lambda o: o["start"])
     black = np.zeros((H, W, 3), np.uint8)
     try:
-        for f in range(n_frames):
+        for f in range(f0, f1):
             t = f / fps
             # which shots are visible at time t
             vis = [i for i, s in enumerate(shots) if s["start"] - half <= t < s["end"] + half]
             for i in vis:
                 if i not in active:
                     active[i] = open_source(shots[i], W, H, fps)
+                    if f == f0 and shots[i]["kind"] == "clip":
+                        # a slice that starts inside a clip: advance the stream to where the clip already is
+                        for _ in range(int(round((t - (shots[i]["start"] - half)) * fps))):
+                            active[i].frame(0)
             for i in [k for k in active if k not in vis]:
                 active.pop(i).close()
 
@@ -286,7 +296,7 @@ def render(shots, overlays, audio, out, W, H, fps, total, crf=20, preset="veryfa
                     blend_overlay(frame, ov, al)
 
             enc.stdin.write(frame.tobytes())
-            if progress_every and f % (fps * progress_every) == 0:
+            if progress_every and (f - f0) % (fps * progress_every) == 0:
                 print(f"    {t / 60:5.1f} / {total / 60:.1f} min", flush=True)
     finally:
         for s in active.values():

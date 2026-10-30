@@ -180,6 +180,9 @@ def run_images(job, gpu):
     try:
         import torch
         device = f"cuda:{gpu}"
+        if job.get("voice_gpus") == 2 and job.get("narration"):
+            log(role, "waiting for the narration to free GPU 0 (long episode: both GPUs voice first)")
+            NARRATION_GPU0_FREE.wait()
         with _load_lock:
             pipe, kind = load_image_pipe(job, device, gpu, role)
         st["model"] = kind
@@ -370,6 +373,7 @@ while i < len(todo):
 """
 
 NARRATION_GPU1_FREE = threading.Event()
+NARRATION_GPU0_FREE = threading.Event()
 
 
 def run_narration(job):
@@ -402,7 +406,15 @@ def run_narration(job):
         # all on GPU 1: GPU 0 is busy with SDXL (both together run out of memory on a T4), and batched
         # Qwen3-TTS is fast enough alone; the clips start on GPU 1 once the voice is done
         import torch
-        shards = ([], list(nar["items"])) if torch.cuda.device_count() > 1 else (list(nar["items"]), [])
+        items = list(nar["items"])
+        if torch.cuda.device_count() > 1 and job.get("voice_gpus") == 2:
+            # long episodes (3 h, 8 h): split the voice over both GPUs, the images wait for GPU 0
+            half = (len(items) + 1) // 2
+            shards = (items[:half], items[half:])
+        elif torch.cuda.device_count() > 1:
+            shards = ([], items)
+        else:
+            shards = (items, [])
         out = OUT / "narration"
         procs = []
         n_gpu = torch.cuda.device_count()
@@ -430,6 +442,8 @@ def run_narration(job):
                     log(role, f"GPU {g} narration finished (exit {proc.returncode})")
                     if g == 1 or n_gpu < 2:
                         NARRATION_GPU1_FREE.set()
+                    if g == 0:
+                        NARRATION_GPU0_FREE.set()
             st["done"] = len(list(out.glob("*.wav"))) if out.exists() else 0
             save_status(role, st)
         for g, proc, _ in procs:
@@ -442,6 +456,7 @@ def run_narration(job):
         st["error"] = traceback.format_exc()[-2500:]
         log(role, st["error"])
     NARRATION_GPU1_FREE.set()
+    NARRATION_GPU0_FREE.set()
     save_status(role, st)
 
 

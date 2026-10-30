@@ -421,7 +421,9 @@ def synthesize(script, cfg, out_dir, voice=None):
     for ci, ch in enumerate(script["chapters"]):
         start = tr.t
         tr.silence(CHAPTER_LEAD)
-        tr.text(voice, ch["text"], v["pause_sentence"], v["pause_paragraph"], unit=unit,
+        from .longform import pause_factor
+        k = pause_factor(ci, len(script["chapters"]), cfg)     # long journeys slow down through the night
+        tr.text(voice, ch["text"], v["pause_sentence"] * k, v["pause_paragraph"] * k, unit=unit,
                 inner_end=inner_end, pitch_edit=pitch_edit, reveal_pause=v.get("pause_reveal", 0.0))
         if ci < len(script["chapters"]) - 1:
             tr.silence(v["pause_chapter"])

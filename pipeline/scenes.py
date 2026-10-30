@@ -19,10 +19,13 @@ def _counts(script, cfg):
     """How many AI scenes each section gets, from the expected narration length."""
     ai, v = cfg["ai"], cfg["video"]
     wpm, spi, share = cfg["voice"]["wpm"], v["seconds_per_image"], ai.get("share", 0.45)
-    raw = []
+    from .longform import taper
+    raw, minute = [], 0.0
     for c in script["chapters"]:
         seconds = len(c["text"].split()) / wpm * 60
-        raw.append(max(2, round(seconds / spi * share)))
+        k = taper(minute, ai["full_minutes"]) if ai.get("full_minutes") else 1.0   # long journeys: AI up front
+        raw.append(max(1 if k < 1 else 2, round(seconds / spi * share * k)))
+        minute += seconds / 60
     cap = ai.get("max_images", 140) - 3
     if sum(raw) > cap:
         raw = [max(2, int(n * cap / sum(raw))) for n in raw]
@@ -37,9 +40,12 @@ def plan_scenes(script, cfg):
     if script.get("cold_open"):
         sections.append({"id": "cold_open", "count": 3, "videos": 1, "text": script["cold_open"],
                          "title": "Cold open (the hook before the title)"})
+    minute, wpm = 0.0, cfg["voice"]["wpm"]
     for i, (c, n) in enumerate(zip(script["chapters"], counts), 1):
-        sections.append({"id": f"chapter_{i}", "count": n, "videos": min(vpc, n), "text": c["text"],
+        late = ai.get("full_minutes") and minute >= ai["full_minutes"]    # long journeys: clips only in hour 1
+        sections.append({"id": f"chapter_{i}", "count": n, "videos": 0 if late else min(vpc, n), "text": c["text"],
                          "title": c["title"]})
+        minute += len(c["text"].split()) / wpm
 
     result = {}
     for g in range(0, len(sections), GROUP):
@@ -101,6 +107,7 @@ def build_job(plan, cfg, job_id, topic):
         "video_width": 960, "video_height": 544, "video_frames": 121, "video_steps": ai.get("video_steps", 40),
         "upscale": True,
         "budget_minutes": kg.get("gpu_budget_minutes", 150),
+        "voice_gpus": 2 if cfg.get("_long") else 1,
         "images": order,
         "videos": videos,
     }

@@ -86,3 +86,56 @@ kaggle:
 
 upload:
   token_env: YT_REFRESH_TOKEN_NOCTURNO   # secreto de GitHub con el permiso de subida de ESTE canal
+
+# 30-oct-2026 (Luis): solo viajes largos. Lunes y jueves 3 h; sábado toda la noche (8 h, termina con "Buenos días").
+# Se producen por etapas (pipeline/longform.py, workflow largo.yml): las escenas IA nuevas van sobre todo en la
+# primera hora; después más NASA, y cada capítulo un poco más lento y suave (pausas hasta x slow_to).
+long:
+  muestra:                 # prueba corta de toda la maquinaria (3 partes), sube privada como MUESTRA
+    minutes: 30
+    parts: 3
+    max_images: 40
+    full_minutes: 10
+    gpu_budget_minutes: 70
+    wait_minutes: 180
+    slow_to: 1.3
+    sample: true
+    title_label: "3 horas para dormir"
+    topics:
+      - "Un viaje lento entre los anillos de Saturno y sus lunas heladas"
+  3h:
+    minutes: 180
+    parts: 4
+    max_images: 170
+    full_minutes: 60
+    gpu_budget_minutes: 210
+    wait_minutes: 340
+    slow_to: 1.5
+    title_label: "3 horas para dormir"
+    topics:
+      - "Un viaje lento por todo el Sistema Solar, del Sol hasta la lejana Nube de Oort"
+      - "Las lunas más extrañas del Sistema Solar: un recorrido de mundo en mundo"
+      - "La vida de las estrellas: cómo nacen, brillan y se apagan"
+      - "Viaje a los planetas gigantes: Júpiter, Saturno, Urano y Neptuno"
+      - "Los grandes misterios del universo: agujeros negros, materia oscura y energía oscura"
+      - "La Tierra vista desde el espacio: océanos, auroras, tormentas y las luces de la noche"
+      - "Un viaje por la Vía Láctea, desde nuestro vecindario de estrellas hasta su centro"
+      - "Marte y Venus: los dos mundos vecinos que pudieron parecerse a la Tierra"
+  8h:
+    minutes: 480
+    parts: 11
+    max_images: 120
+    full_minutes: 60
+    gpu_budget_minutes: 270
+    wait_minutes: 345
+    slow_to: 1.8
+    title_label: "8 horas · un viaje de toda la noche"
+    end_line: "Buenos días."
+    final_rule: >-
+      This is the final chapter of a journey that lasted the whole night: the listener is waking up. Let the
+      dawn arrive slowly (first light over the Earth seen from orbit), bring the listener gently back home, and
+      end with a warm, quiet "Buenos días". Do not ask for likes or subscriptions.
+    topics:
+      - "Un viaje de toda la noche, desde la Tierra hasta el borde del universo observable"
+      - "Una noche entera entre planetas: de Mercurio hasta los confines del Sistema Solar"
+      - "Toda la noche entre estrellas y nebulosas de la Vía Láctea"

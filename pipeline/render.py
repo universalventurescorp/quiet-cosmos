@@ -168,7 +168,8 @@ def build_episode(timing, script, media, cfg, W=None, H=None, ai=None):
     oc = timing["outro"]
     shots.append({"kind": "stars", "seed": 9, "backdrop": backdrop, "start": oc["start"], "end": timing["duration"],
                   "speed": 0.6})
-    rest = {"es": "Que descanses.", "en": "Rest well."}.get(cfg["channel"]["language"], "Rest well.")
+    rest = (cfg.get("_long") or {}).get("end_line") or \
+        {"es": "Que descanses.", "en": "Rest well."}.get(cfg["channel"]["language"], "Rest well.")
     overlays.append(cards.end_card(W, H, cfg["channel"]["name"], rest, oc["start"] + 1.5,
                                    timing["duration"] - 1.0))
     overlays += qr_overlays(timing, cfg, W, H, script.get("share_code"))
@@ -219,4 +220,35 @@ def render_episode(timing, script, media, audio, out, cfg, ai=None):
           f"{sum(bool(s.get('ai')) for s in shots)} AI scenes, {len(overlays)} overlays")
     engine.render(shots, overlays, audio, out, v["width"], v["height"], v["fps"], timing["duration"],
                   crf=v["crf"], preset=v["preset"], fade_out=4.0)
+    return out
+
+
+def part_frames(total, fps, part, parts):
+    n = int(round(total * fps))
+    return n * part // parts, n * (part + 1) // parts
+
+
+def render_part(timing, script, media, out, cfg, ai, part, parts):
+    """Long journeys: paint slice `part` of `parts` (video only); finish joins the slices with the audio."""
+    v = cfg["video"]
+    shots, overlays = build_episode(timing, script, media, cfg, ai=ai)
+    f0, f1 = part_frames(timing["duration"], v["fps"], part, parts)
+    print(f"  slice {part + 1}/{parts}: {f0 / v['fps'] / 60:.1f} -> {f1 / v['fps'] / 60:.1f} min")
+    engine.render(shots, overlays, None, out, v["width"], v["height"], v["fps"], timing["duration"],
+                  crf=v["crf"], preset=v["preset"], fade_out=4.0, frames=(f0, f1))
+    return out
+
+
+def join_parts(parts, audio, out):
+    """Concatenate the painted slices (same encoder settings: stream copy) and add the episode's audio."""
+    import subprocess
+    lst = out.with_suffix(".parts.txt")
+    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
+    r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
+                        "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+                        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest",
+                        "-movflags", "+faststart", str(out)], capture_output=True, text=True)
+    lst.unlink(missing_ok=True)
+    if r.returncode:
+        raise RuntimeError("joining the slices failed: " + r.stderr[-800:])
     return out

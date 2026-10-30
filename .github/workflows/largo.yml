@@ -1,0 +1,230 @@
+name: viaje-largo
+# Estrato Nocturno, 30-oct-2026: viajes de 3 h (lunes y jueves) y de toda la noche, 8 h (sábado).
+# GitHub corta cada trabajo a las 6 h, así que el viaje se hace por etapas (ver pipeline/longform.py):
+#   guion -> preparar (Kaggle: voz + escenas; sonido) -> pintar (varias máquinas a la vez) -> unir y subir.
+
+on:
+  schedule:
+    - cron: "17 8 * * 1,4,6"   # 03:17 hora de Lima (de madrugada GitHub retrasa menos); el formato depende del día
+  workflow_dispatch:
+    inputs:
+      formato:
+        description: "auto = el que toca hoy; muestra = prueba corta de 30 min en 3 partes"
+        type: choice
+        options: [auto, muestra, 3h, 8h]
+        default: auto
+      topic:
+        description: "Tema opcional (vacío = siguiente de la lista del formato)"
+        required: false
+      upload:
+        description: "Subir a YouTube (privado)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: largo
+  cancel-in-progress: false
+
+env:
+  CHANNEL: estrato-nocturno
+
+jobs:
+  guion:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    outputs:
+      formato: ${{ steps.pick.outputs.formato }}
+      parts: ${{ steps.parts.outputs.parts || '[0]' }}
+    steps:
+      - id: pick
+        run: |
+          F="${{ inputs.formato }}"
+          if [ -z "$F" ] || [ "$F" = "auto" ]; then
+            case "$(TZ=America/Lima date +%u)" in
+              1|4) F=3h ;;
+              6)   F=8h; [ "$(TZ=America/Lima date +%Y%m%d)" -lt 20261107 ] && F=none ;;   # el primero: 7-nov
+              *)   F=none ;;
+            esac
+          fi
+          echo "formato=$F" >> "$GITHUB_OUTPUT"; echo "Formato de hoy: $F"
+      - uses: actions/checkout@v4
+        if: steps.pick.outputs.formato != 'none'
+      - name: Parts
+        id: parts
+        if: steps.pick.outputs.formato != 'none'
+        run: |
+          P=$(python3 -c "import yaml,json;d=yaml.safe_load(open('channels/$CHANNEL.yaml'));print(json.dumps(list(range(d['long']['${{ steps.pick.outputs.formato }}']['parts']))))")
+          echo "parts=$P" >> "$GITHUB_OUTPUT"; echo "Partes: $P"
+      - uses: actions/setup-python@v5
+        if: steps.pick.outputs.formato != 'none'
+        with: { python-version: "3.11", cache: pip }
+      - uses: actions/setup-node@v4
+        if: steps.pick.outputs.formato != 'none'
+        with: { node-version: "22" }
+      - name: Packages
+        if: steps.pick.outputs.formato != 'none'
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+          npm install -g @anthropic-ai/claude-code
+      - name: Guion (Claude) + lanzar Kaggle
+        if: steps.pick.outputs.formato != 'none'
+        env:
+          LONG: ${{ steps.pick.outputs.formato }}
+          STAGE: script
+          TOPIC: ${{ inputs.topic }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: python -m pipeline.run
+      - uses: actions/upload-artifact@v4
+        if: steps.pick.outputs.formato != 'none'
+        with: { name: work-guion, path: "outputs/\ndata/\nweb/links.json", retention-days: 3 }
+      - name: Diagnóstico si falla
+        if: failure()
+        run: |
+          git config user.name "quiet-cosmos-bot"; git config user.email "actions@users.noreply.github.com"
+          git add data/channels/*/diagnostics 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Viaje largo: diagnóstico (guion)"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 10; done
+
+  preparar:
+    needs: guion
+    if: needs.guion.outputs.formato != 'none'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: work-guion }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - name: Packages
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+      - uses: actions/cache@v4
+        with: { path: ~/.cache/huggingface, key: hf-kokoro-depth-v3 }
+      - name: Esperar Kaggle, narrar, NASA, música, mezcla, escenas IA
+        env:
+          LONG: ${{ needs.guion.outputs.formato }}
+          STAGE: prepare
+          TOPIC: ${{ inputs.topic }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python -m pipeline.run
+      - run: bash scripts/work.sh pack
+      - uses: actions/upload-artifact@v4
+        with: { name: work-listo, path: "outputs/\ndata/\nweb/links.json", retention-days: 3, compression-level: 0 }
+      - name: Diagnóstico si falla
+        if: failure()
+        run: |
+          git config user.name "quiet-cosmos-bot"; git config user.email "actions@users.noreply.github.com"
+          git add data/channels/*/diagnostics 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Viaje largo: diagnóstico (preparar)"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 10; done
+
+  pintar:
+    needs: [guion, preparar]
+    if: needs.guion.outputs.formato != 'none'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 355
+    strategy:
+      fail-fast: true
+      matrix:
+        part: ${{ fromJson(needs.guion.outputs.parts) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: work-listo }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - name: Packages
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+      - run: bash scripts/work.sh unpack
+      - name: Pintar la parte ${{ matrix.part }}
+        env:
+          LONG: ${{ needs.guion.outputs.formato }}
+          STAGE: render
+          PART: ${{ matrix.part }}
+          PARTS: ${{ strategy.job-total }}
+          TOPIC: ${{ inputs.topic }}
+        run: python -m pipeline.run
+      - uses: actions/upload-artifact@v4
+        with: { name: "parte-${{ matrix.part }}", path: "outputs/*/parts/part_*.mp4", retention-days: 3, compression-level: 0 }
+
+  unir:
+    needs: [guion, pintar]
+    if: needs.guion.outputs.formato != 'none'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: work-listo }
+      - uses: actions/download-artifact@v4
+        with: { pattern: "parte-*", merge-multiple: true, path: parts-in }
+      - name: Colocar las partes
+        run: |
+          D=$(ls -d outputs/*/ | head -1); mkdir -p "$D/parts"
+          find parts-in -name 'part_*.mp4' -exec mv {} "$D/parts/" \;
+          ls -la "$D/parts"
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - name: Packages
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+      - run: bash scripts/work.sh unpack
+      - name: Unir, miniaturas, Shorts, control de calidad, subir
+        env:
+          LONG: ${{ needs.guion.outputs.formato }}
+          STAGE: finish
+          TOPIC: ${{ inputs.topic }}
+          UPLOAD: ${{ inputs.upload }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN_NOCTURNO: ${{ secrets.YT_REFRESH_TOKEN_NOCTURNO }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          export PARTS=$(python3 -c "import json;print(len(json.loads('${{ needs.guion.outputs.parts }}')))")
+          python -m pipeline.run
+      - name: Vista previa de 10 min
+        if: always()
+        run: |
+          for v in outputs/*/video.mp4; do
+            [ -f "$v" ] || continue
+            ffmpeg -y -loglevel error -i "$v" -t 600 -vf scale=1280:720 -c:v libx264 -preset veryfast -crf 27 \
+              -c:a aac -b:a 128k "$(dirname "$v")/preview-10min.mp4"
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: episode-files
+          path: |
+            outputs/**/preview-10min.mp4
+            outputs/**/short.mp4
+            outputs/**/thumbnail_*.jpg
+            outputs/**/script.json
+            outputs/**/metadata.json
+            outputs/**/qa.json
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Guardar estado
+        if: always()
+        run: |
+          git config user.name "quiet-cosmos-bot"; git config user.email "actions@users.noreply.github.com"
+          git add data/ web/links.json 2>/dev/null || git add data/
+          git diff --cached --quiet || git commit -m "Viaje largo producido $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; git rebase --abort 2>/dev/null; sleep 10; done

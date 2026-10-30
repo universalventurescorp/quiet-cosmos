@@ -307,16 +307,23 @@ def main():
         return gpu_test(load_config())
 
     cfg = load_config()
+    from . import longform
+    long_mode, stage = longform.mode(), longform.stage()
+    if long_mode:
+        longform.apply(cfg, long_mode)
+        sample = sample or bool(cfg["_long"].get("sample"))
+        print(f"   long journey {long_mode}: {cfg['video']['target_minutes']} min, stage {stage or 'all'}")
     v = cfg["video"]
     lang = cfg["channel"]["language"]
     assert lang in LANG_NAMES, f"unsupported language {lang}"
     from .topics import next_topic
-    topic = args.topic or os.environ.get("TOPIC") or (None if sample else next_topic(cfg))
+    topic = args.topic or os.environ.get("TOPIC") or (
+        longform.next_topic(cfg) if long_mode else None if sample else next_topic(cfg))
     if not topic:
         raise SystemExit("a sample needs an explicit topic (TOPIC)")
     do_upload = not args.no_upload and os.environ.get("UPLOAD", "").lower() != "false"
     do_shorts = not args.no_shorts and cfg.get("shorts", {}).get("count", 0) > 0 and not sample
-    if sample:
+    if sample and not long_mode:
         v["target_minutes"] = float(os.environ.get("SAMPLE_MINUTES") or 5)
         v["chapters"] = max(2, round(v["target_minutes"] / 6.5))
         cfg.setdefault("kaggle", {})["gpu_budget_minutes"] = max(60, round(v["target_minutes"] * 3.7))
@@ -332,7 +339,7 @@ def main():
         print(f"   voice mode for this run: {voice_cfg['unit']} {voice_cfg.get('inner_end') or ''} "
               f"pitch edit {voice_cfg.get('pitch_edit')}")
     gpu_voice = voice_cfg.get("engine", "kokoro") == "qwen"
-    out = ROOT / "outputs" / (slugify(topic) + ("-muestra" if sample else ""))
+    out = ROOT / "outputs" / (slugify(topic) + (f"-{long_mode}" if long_mode else "") + ("-muestra" if sample else ""))
     out.mkdir(parents=True, exist_ok=True)
     N = 12
     ai_cfg = cfg.get("ai", {})
@@ -378,6 +385,10 @@ def main():
                 gpu_state = gpu.launch(job, out, cfg)
             else:
                 print("   Claude returned no scene prompts: NASA imagery only")
+
+    if stage == "script":
+        print("stage script done: Kaggle is working, the next stage waits for it")
+        return
 
     # 3. narration + captions
     timing = read_json(out / "timing.json", None)
@@ -491,6 +502,26 @@ def main():
     from .render import build_episode
     shots, _ = build_episode(timing, script, media, cfg, ai=placed)
     write_json(out / "shots.json", shots)
+    if stage == "prepare":
+        print(f"stage prepare done: {timing['duration'] / 60:.1f} min ready to paint")
+        return
+    if stage == "render":
+        from .render import render_part
+        part, parts = int(os.environ["PART"]), int(os.environ["PARTS"])
+        step(8, N, f"painting slice {part + 1}/{parts}")
+        (out / "parts").mkdir(exist_ok=True)
+        tmp = out / "parts" / f"part_{part:02d}.partial.mp4"
+        render_part(timing, script, media, tmp, cfg, placed, part, parts)
+        tmp.rename(out / "parts" / f"part_{part:02d}.mp4")
+        return
+    if stage == "finish" and not video.exists():
+        from .render import join_parts
+        parts = sorted((out / "parts").glob("part_??.mp4"))
+        want = int(os.environ.get("PARTS") or len(parts))
+        if len(parts) != want:
+            raise SystemExit(f"only {len(parts)} of {want} slices arrived")
+        step(8, N, f"joining {len(parts)} slices with the audio")
+        join_parts(parts, audio, out / "video.partial.mp4").rename(video)
     if not video.exists():
         from .render import render_episode
         step(8, N, "rendering video")
@@ -507,7 +538,8 @@ def main():
     all_imgs = [it["path"] for k in ("cold_open", "chapter_1") for it in placed.get(k, [])] + all_imgs
     texts = script.get("thumbnail_texts") or [script.get("thumbnail_text", script["title"])]
     thumbs = make_thumbnails(all_imgs, texts, out)
-    title = f"MUESTRA · {script['title']}"[:100] if sample else script["title"]
+    title = longform.title(script["title"], cfg)
+    title = f"MUESTRA · {title}"[:100] if sample else title
     meta = {"title": title, "tags": script.get("tags", []),
             "description": build_description(script, timing, lang, used_ai, used_nasa(media, shots), cfg),
             "synthetic": used_ai}

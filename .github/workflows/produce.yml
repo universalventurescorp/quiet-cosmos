@@ -3,7 +3,9 @@ run-name: ${{ (github.event_name == 'workflow_dispatch' && (inputs.sample || inp
 
 on:
   schedule:
-    - cron: "17 12 * * *"     # todos los días 07:17 hora de Lima; el canal depende del día (ver "Pick channel")
+    # 30-oct-2026: Estrato Nocturno pasa a viajes largos (workflow largo.yml). Este cron diario de 46 min queda
+    # apagado; produce.yml sigue para muestras y pruebas manuales. (Quiet Cosmos: decidir antes del 16-nov.)
+    - cron: "17 12 31 2 *"    # nunca (31 de febrero)
   workflow_dispatch:
     inputs:
       channel:
