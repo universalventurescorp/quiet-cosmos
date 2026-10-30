@@ -112,15 +112,15 @@ long:
     wait_minutes: 340
     slow_to: 1.5
     title_label: "3 horas para dormir"
-    topics:
-      - "Un viaje lento por todo el Sistema Solar, del Sol hasta la lejana Nube de Oort"
-      - "Las lunas más extrañas del Sistema Solar: un recorrido de mundo en mundo"
+    topics:                # el canal ya contó todos los planetas: primero lo que aún no se contó
       - "La vida de las estrellas: cómo nacen, brillan y se apagan"
-      - "Viaje a los planetas gigantes: Júpiter, Saturno, Urano y Neptuno"
       - "Los grandes misterios del universo: agujeros negros, materia oscura y energía oscura"
       - "La Tierra vista desde el espacio: océanos, auroras, tormentas y las luces de la noche"
+      - "Mundos alrededor de otras estrellas: los exoplanetas y la búsqueda de otra Tierra"
+      - "El Sol: la estrella que nos da la vida, desde su corazón hasta sus tormentas"
       - "Un viaje por la Vía Láctea, desde nuestro vecindario de estrellas hasta su centro"
-      - "Marte y Venus: los dos mundos vecinos que pudieron parecerse a la Tierra"
+      - "Cometas, asteroides y meteoros: los viajeros del Sistema Solar"
+      - "La historia del universo: desde el Big Bang hasta esta noche"
   8h:
     minutes: 480
     parts: 11
@@ -137,5 +137,5 @@ long:
       end with a warm, quiet "Buenos días". Do not ask for likes or subscriptions.
     topics:
       - "Un viaje de toda la noche, desde la Tierra hasta el borde del universo observable"
-      - "Una noche entera entre planetas: de Mercurio hasta los confines del Sistema Solar"
-      - "Toda la noche entre estrellas y nebulosas de la Vía Láctea"
+      - "Toda la noche en órbita: una vuelta a la Tierra tras otra, de la noche al amanecer"
+      - "Una noche entera viajando entre las galaxias del universo cercano"

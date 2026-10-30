@@ -7,7 +7,7 @@ import re
 import subprocess
 import time
 
-from .common import ROOT, LANG_NAMES, extract_json
+from .common import DATA, ROOT, LANG_NAMES, extract_json, read_json
 
 PROMPTS = ROOT / "prompts"
 INSTRUCTION = ("Follow the instructions in the input exactly. Reply with only the requested output, "
@@ -124,6 +124,22 @@ def with_subscribe_line(cold_open, line):
     return "\n\n".join(paras[:-1] + [line.strip()] + paras[-1:]) if paras else line.strip()
 
 
+def told_before(limit=60):
+    """30-oct-2026: what this channel already told (topics + chapter titles), so a new journey does not
+    repeat it. Long journeys cover a lot of ground and the channel has already toured every planet."""
+    done = read_json(DATA / "done.json", [])[-limit:]
+    if not done:
+        return ""
+    lines = []
+    for d in done:
+        ch = "; ".join(d.get("chapters", []))
+        lines.append(f"- {d.get('title') or d['topic']}" + (f" (chapters: {ch})" if ch else ""))
+    return ("\n\nAlready told on this channel (the audience comes back every night). Do NOT repeat these "
+            "episodes: choose other angles, other discoveries, other stories and other numbers. If a subject must "
+            "come back, give it a NEW angle and only a brief callback, never the same explanation again:\n"
+            + "\n".join(lines))
+
+
 def write_script(topic, cfg):
     global MODEL
     MODEL = (cfg.get("claude") or {}).get("model", MODEL)
@@ -136,7 +152,7 @@ def write_script(topic, cfg):
     print("  outline")
     outline = ask_json(
         fill("outline.md", CHANNEL=ch["name"], LANGUAGE=lang, TOPIC=topic,
-             MINUTES=minutes, CHAPTERS=n_chapters),
+             MINUTES=minutes, CHAPTERS=n_chapters) + told_before(),
         lambda d: isinstance(d, dict) and d.get("title") and len(d.get("chapters", [])) >= min(3, n_chapters))
     chapters = outline["chapters"]
     for c in chapters:
