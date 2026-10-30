@@ -1,13 +1,13 @@
 {
-  "topic": "Titán: la luna de Saturno con lagos, ríos y lluvia de metano",
-  "title": "MUESTRA · Titán: Lagos y Lluvia de Metano | Documental Relajante para Dormir",
-  "video_id": "EU7S4yGZNrw",
+  "topic": "Un viaje lento entre los anillos de Saturno y sus lunas heladas",
+  "title": "MUESTRA · Los anillos de Saturno | Un viaje tranquilo para dormir | 3 horas para dormir",
+  "video_id": "wORrRAzItxQ",
   "qa_ok": true,
-  "minutes": 21.7,
+  "minutes": 24.0,
   "voice": {
     "engine": "qwen",
-    "sentences": 115,
-    "voiced": 115
+    "sentences": 125,
+    "voiced": 125
   },
-  "date": "2026-10-29"
+  "date": "2026-10-30"
 }

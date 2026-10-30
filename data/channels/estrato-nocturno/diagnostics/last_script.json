@@ -1,479 +1,285 @@
 {
-  "title": "Europa y Encélado: Océanos Ocultos | Documental Relajante para Dormir",
-  "description": "Europa y Encélado: océanos ocultos bajo el hielo es un viaje documental tranquilo por dos pequeñas lunas heladas que esconden mares de agua líquida y que hoy están entre los mejores lugares del sistema solar donde buscar vida. Con imágenes reales de las misiones Voyager, Galileo, Cassini y Juno, recorreremos sus superficies agrietadas, sus géiseres y las profundidades que aún nadie ha visto.\n\nUna narración pausada, pensada para relajarte, aprender ciencia real y quedarte dormido mientras viajas. Distinguiremos con cuidado lo que se sabe de lo que sigue siendo una pregunta abierta, hasta llegar a las misiones que viajan ahora mismo hacia estos mundos.",
+  "title": "Los anillos de Saturno | Un viaje tranquilo para dormir",
+  "description": "Los anillos de Saturno y sus lunas heladas son el escenario de este documental espacial relajante para dormir, un viaje lento y real por uno de los lugares más hermosos del Sistema Solar. Acompañados por imágenes de la misión Cassini, recorreremos el borde del anillo, la División de Cassini, las lunas que esculpen el hielo, los géiseres de Encélado y los lagos de Titán.\n\nCada capítulo abre una pregunta pequeña y la responde con ciencia bien establecida, sin prisa y con una narración suave. Es un viaje para aprender algo real, relajarte y dejarte llevar hasta quedarte dormido.",
   "tags": [
-    "Europa y Encélado",
-    "océanos ocultos bajo el hielo",
-    "documental del espacio para dormir",
-    "documental relajante del espacio",
-    "lunas heladas del sistema solar",
-    "vida en Europa",
-    "vida en Encélado",
-    "géiseres de Encélado",
-    "océano subterráneo de Europa",
-    "Europa Clipper",
+    "anillos de Saturno",
+    "documental espacial para dormir",
+    "viaje por Saturno",
+    "lunas de Saturno",
+    "Encélado",
+    "Titán",
     "misión Cassini",
-    "Júpiter y sus lunas",
-    "Saturno y sus lunas",
-    "astrobiología",
-    "vida extraterrestre",
-    "documental espacio relajante",
-    "viaje por el sistema solar",
-    "ciencia para dormir"
+    "documental relajante",
+    "espacio para dormir",
+    "documental del espacio en español",
+    "Saturno documental",
+    "cómo se formaron los anillos de Saturno",
+    "géiseres de Encélado",
+    "lagos de Titán",
+    "división de Cassini",
+    "viaje espacial relajante"
   ],
   "thumbnail_texts": [
-    "MARES BAJO EL HIELO",
-    "AGUA EN LA OSCURIDAD",
-    "EL OCÉANO ESCONDIDO"
+    "HIELO QUE CAE",
+    "EL OCÉANO OCULTO",
+    "ANILLOS EFÍMEROS"
   ],
-  "hook_promise": "Bajo cortezas de hielo de kilómetros de espesor, dos lunas diminutas esconden océanos de agua líquida, y uno de ellos dispara chorros al espacio que una nave atravesó y analizó, encontrando ingredientes químicos de la vida.",
+  "hook_promise": "Los anillos de Saturno, hechos de miles de millones de trozos de hielo, son tan delgados que en la mayor parte de su extensión miden apenas unas decenas de metros de espesor, y una de sus lunas esconde un océano que lanza chorros de agua al espacio.",
   "chapters": [
     {
-      "title": "Dos puntos de luz en la noche",
-      "question": "¿Por qué dos mundos de hielo, tan lejos del Sol, podrían ser lugares tan prometedores para la vida?",
-      "reveal": "Hay más agua líquida en las lunas heladas del sistema solar exterior que en todos los océanos de la Tierra.",
+      "title": "Llegada al borde de los anillos",
+      "question": "¿Cómo puede algo tan ancho como los anillos ser tan increíblemente delgado?",
+      "reveal": "Los anillos se extienden cientos de miles de kilómetros, pero en gran parte de su extensión su espesor es de apenas decenas de metros.",
       "beats": [
-        "Salimos de la Tierra y cruzamos el cinturón de asteroides hasta la región de los planetas gigantes",
-        "Júpiter y Saturno vistos desde lejos, con sus lunas como pequeños puntos de luz",
-        "Por qué se creía que la vida necesitaba cercanía al Sol y la zona habitable clásica",
-        "Qué necesita realmente la vida que conocemos: agua líquida, energía y ciertos elementos químicos",
-        "Primera mención de dos nombres, Europa y Encélado, y la pregunta que guiará el viaje",
-        "Se estima que el volumen de agua de Europa supera al de los océanos terrestres, aunque es una estimación"
+        "Nos acercamos a Saturno desde lejos: un planeta dorado, más ligero que el agua en promedio, rodeado por un disco claro.",
+        "Los anillos no son sólidos: son miles de millones de partículas de hielo de agua, desde granos de polvo hasta bloques del tamaño de una casa.",
+        "Galileo los vio en 1610 como 'orejas' extrañas y Huygens, en 1655, comprendió que eran un anillo.",
+        "Maxwell demostró en el siglo XIX que no podían ser sólidos, y que debían ser enjambres de partículas.",
+        "Al llegar al borde, la escala se invierte: un disco de cientos de miles de kilómetros de ancho y apenas decenas de metros de grosor.",
+        "Si pudiéramos reducirlos a la escala de una hoja de papel, serían aún más finos que ella."
       ],
       "ambience": "deep_space",
       "image_queries": [
-        "Jupiter Europa Galileo",
-        "Saturn Enceladus Cassini",
-        "Jupiter moons Juno",
-        "Saturn system Cassini",
-        "solar system outer planets",
-        "Jupiter Great Red Spot Juno",
         "Saturn rings Cassini",
-        "Europa moon Voyager",
-        "Enceladus moon global view",
-        "asteroid belt Dawn"
+        "Saturn portrait Cassini",
+        "Saturn Hubble",
+        "Saturn equinox rings Cassini",
+        "Saturn rings edge-on Cassini",
+        "Saturn and rings from afar Cassini",
+        "Saturn approach Cassini",
+        "Saturn rings backlit Cassini",
+        "Saturn rings Hubble",
+        "Saturn globe and rings Cassini"
       ],
       "video_queries": [
-        "solar system flyover visualization NASA",
-        "Jupiter system animation Juno",
-        "Saturn flyover animation Cassini"
+        "Saturn flyover animation Cassini",
+        "Saturn rings visualization NASA",
+        "Cassini approach Saturn animation"
       ],
-      "text": "A las afueras de cualquier ciudad, en una noche sin luna, puedes levantar la vista y ver una estrella muy brillante que no titila. No es una estrella. Es Júpiter, un mundo entero, y desde aquí parece solo un punto de luz tranquilo.\n\nVamos a salir hacia allá. Dejamos atrás la Tierra, pequeña y azul, y también la Luna, que se encoge hasta ser una moneda lejana. Pasamos la órbita de Marte. Y después entramos en el cinturón de asteroides, una región de rocas dispersas. Aquí nadie choca con nadie. Entre una roca y la siguiente suele haber más distancia que la que hay entre dos ciudades grandes.\n\nSeguimos. El Sol se va debilitando detrás de nosotros, hasta que ya no es un disco que calienta el rostro, sino una estrella muy brillante entre otras. Entonces aparece Júpiter, enorme, con sus bandas pálidas de color crema y marrón. Más lejos todavía está Saturno, con sus anillos como una línea fina de plata. Y alrededor de cada uno, apenas visibles, hay pequeños puntos de luz. Son lunas.\n\nDurante mucho tiempo, nadie habría mirado esos puntos buscando vida. La razón parecía sencilla. La vida, se pensaba, necesitaba el calor del Sol. Los astrónomos hablaban de una zona habitable: una franja de distancia, ni muy cerca ni muy lejos, donde el agua puede existir líquida sobre la superficie de un planeta. La Tierra está dentro de esa franja. Marte, en el borde. Y todo lo que queda más allá, según esa idea, era un desierto de hielo.\n\nPero entonces, ¿qué necesita realmente la vida que conocemos?\n\nSi lo piensas con calma, la lista es corta. Primero, agua líquida, porque las moléculas de la vida se mueven y reaccionan disueltas en ella. Segundo, una fuente de energía, algo que alimente a los seres vivos. Y tercero, ciertos elementos químicos: carbono, hidrógeno, nitrógeno, oxígeno, fósforo y azufre, entre otros.\n\nFíjate en que la luz del Sol no aparece en esa lista. La luz es solo una de las formas de conseguir energía. En la Tierra, hay criaturas que viven en el fondo del mar, sin una gota de luz, y obtienen su energía de la química de la roca. Así que la pregunta cambia. Ya no es cuánto calor llega del Sol. Es dónde puede haber agua líquida, aunque esté escondida.\n\nY ahí aparecen dos nombres.\n\nEuropa gira alrededor de Júpiter. Encélado gira alrededor de Saturno. Son dos lunas heladas, de superficie blanca y dura como roca, con un frío que ninguna ciudad conoce. Por fuera, parecen congeladas para siempre. Por dentro, quizá no.\n\nEsa es la pregunta que nos acompañará durante todo este viaje. ¿Por qué dos mundos de hielo, tan lejos del Sol, podrían ser lugares tan prometedores para la vida?\n\nUna pista viene de los números, aunque con cautela. Europa es más pequeña que nuestra Luna. Sin embargo, se estima que bajo su hielo podría haber un océano con más agua que todos los mares de la Tierra juntos. Es una estimación, no una medida directa, y los científicos la discuten. Pero aun con un margen amplio, la idea sorprende.\n\nPiensa en lo que eso significa. Nuestro planeta se llama azul porque casi toda su superficie es océano. Y aun así, parece que no tiene la mayor parte del agua líquida que hay cerca de nosotros.\n\nQuizá haya más agua líquida en las lunas heladas del sistema solar exterior que en todos los océanos de la Tierra.\n\nDurante siglos la buscamos en el lugar equivocado, bajo la luz del Sol, cuando quizá estaba lejos, en la oscuridad, bajo una cáscara de hielo. Para entender cómo llegamos a sospecharlo, tenemos que volver atrás, a una noche fría de hace más de cuatro siglos, y a un hombre con un telescopio pequeño."
+      "text": "Saturno se ve primero como una luz pequeña y dorada, quieta sobre el fondo negro. Poco a poco, mientras nos acercamos, esa luz se abre y se convierte en un mundo con un disco claro alrededor, tan nítido que parece dibujado.\n\nEl planeta es enorme. Cabrían más de setecientas Tierras dentro de él. Y sin embargo, en promedio, es más ligero que el agua. Si existiera un océano lo bastante grande para sostenerlo, Saturno flotaría. Está hecho sobre todo de hidrógeno y helio, y su color suave, como de miel pálida, es la huella de nubes altas y frías.\n\nPero tú no has venido por el planeta. Has venido por el disco que lo rodea. Y mientras lo miras, aparece una pregunta sencilla. ¿Cómo puede algo tan ancho ser a la vez tan delgado?\n\nAntes de responder, conviene mirar de qué está hecho. Desde lejos parece una lámina continua, como un disco de vinilo. No lo es. Los anillos están formados por miles de millones de partículas de hielo de agua. Algunas son granos de polvo, otras son del tamaño de una piedra, y otras son bloques como una casa. Cada una viaja por su cuenta, en su propia órbita, y todas juntas dibujan esa luz clara.\n\nLa gente tardó siglos en entenderlo. En mil seiscientos diez, Galileo apuntó su pequeño telescopio hacia Saturno. Vio algo extraño a cada lado del planeta, como dos orejas, o como dos compañeros pegados a él. No supo qué eran. Años después, las orejas parecían desaparecer, y eso lo desconcertó todavía más.\n\nFue Christiaan Huygens, en mil seiscientos cincuenta y cinco, quien tuvo un telescopio mejor y la paciencia para seguir mirando. Comprendió que no eran orejas ni lunas. Eran un anillo delgado que rodeaba al planeta sin tocarlo. Las orejas desaparecían cuando la Tierra quedaba alineada con el borde del anillo, y entonces casi no había nada que ver.\n\nAun así, quedaba una duda. ¿Era ese anillo una pieza sólida, como una moneda gigante?\n\nDos siglos más tarde, James Clerk Maxwell hizo las cuentas. Un anillo sólido, tan grande y tan fino, no resistiría las fuerzas que lo tiran y lo estiran. Se rompería. Con matemáticas, y sin salir de su estudio, Maxwell demostró que los anillos solo podían ser un enjambre de partículas pequeñas, cada una siguiendo su órbita.\n\nCon esa idea en la mente, llegamos por fin al borde.\n\nAquí la escala se invierte. Desde lejos, lo que parecía frágil resulta inmenso: el disco se extiende cientos de miles de kilómetros. Podrías alinear dentro de él buena parte de la distancia que separa la Tierra de la Luna. Pero si te asomas de canto, el anillo casi desaparece, como una línea trazada con lápiz muy fino.\n\nEsa es la verdadera proporción.\n\nPiensa en lo que eso significa. Decenas de metros es la altura de un edificio pequeño. Y ese edificio estaría tendido sobre una distancia mayor que cualquier carretera de la Tierra.\n\nSi pudiéramos reducir los anillos hasta el tamaño de una hoja de papel, la hoja sería más gruesa que ellos. Serían más finos que cualquier página que hayas tocado. Una película de hielo, luminosa y casi sin cuerpo, girando alrededor de un planeta que podría flotar.\n\nY mientras te quedas quieto en el borde, notas que esa película no es uniforme. Hay franjas más claras y otras más oscuras. Y en un lugar, una línea negra la corta de un lado a otro, como una grieta abierta en el hielo."
     },
     {
-      "title": "Galileo y las lunas de Júpiter",
-      "question": "¿Cómo descubrimos que estas lunas existían y qué nos enseñaron al principio?",
-      "reveal": "En 1610 Galileo vio cuatro puntos de luz moverse alrededor de Júpiter, y una de ellas, Europa, sería con el tiempo una de las candidatas más fascinantes a albergar vida.",
+      "title": "La División de Cassini y el vacío entre anillos",
+      "question": "¿Por qué hay un hueco oscuro que parece separar los anillos en dos mundos?",
+      "reveal": "Una luna lejana, Mimas, tira con tanta regularidad de las partículas con su gravedad que vacía un hueco entero en el anillo.",
       "beats": [
-        "Invierno de 1610: un telescopio pequeño apuntado a Júpiter",
-        "Cuatro puntos que cambian de posición noche tras noche",
-        "Qué significó ver que no todo giraba alrededor de la Tierra",
-        "Los nombres Ío, Europa, Ganímedes y Calisto",
-        "Durante siglos, Europa fue solo un punto brillante sin detalles",
-        "Las sondas Pioneer y Voyager la convierten por primera vez en un mundo con superficie"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Jupiter Galilean moons",
-        "Io Europa Ganymede Callisto",
-        "Europa Voyager 2",
-        "Jupiter Voyager 1",
-        "Ganymede Galileo",
-        "Callisto Galileo",
-        "Io volcano Galileo",
-        "Jupiter moons montage",
-        "Europa surface Voyager",
-        "Jupiter Pioneer"
-      ],
-      "video_queries": [
-        "Galilean moons animation NASA",
-        "Jupiter moons orbit visualization",
-        "Voyager Jupiter flyby"
-      ],
-      "text": "Enero de mil seiscientos diez, en Padua. Es de noche y hace frío. Un hombre sale a un patio con un tubo de madera y lentes de vidrio, apenas más largo que su brazo, y lo apunta hacia un punto brillante que domina el cielo.\n\nEse hombre se llama Galileo Galilei. El punto es Júpiter. A simple vista parece una estrella firme, sin parpadeo, un poco más clara que las demás. Pero Galileo está a punto de ver algo que nadie había visto antes. ¿Qué puede esconderse junto a una luz que los humanos miraban desde hacía miles de años?\n\nPor el lente, Júpiter se vuelve un pequeño disco pálido. Y a su lado, alineados casi en una recta, aparecen tres puntos diminutos. Galileo supone que son estrellas lejanas, de las que no se habían anotado en los mapas. Las dibuja en su cuaderno y se va a dormir.\n\nLa noche siguiente vuelve a mirar. Los puntos ya no están donde estaban.\n\nParece un detalle menor. Pero las estrellas fijas no se mueven así, de un día para otro, respecto a un planeta. Galileo sigue observando, noche tras noche, durante semanas. Aparece un cuarto punto. Algunos se acercan a Júpiter, otros se alejan, y a veces uno desaparece detrás del disco para volver a salir por el otro lado.\n\nPoco a poco entiende lo que está viendo. No son estrellas. Son cuerpos que giran alrededor de Júpiter, como la Luna gira alrededor de la Tierra. Cuatro mundos pequeños, acompañando a un mundo enorme.\n\nHoy esto nos parece natural. En aquel tiempo, no lo era. La idea dominante decía que todo lo que se movía en el cielo giraba en torno a la Tierra, que era el centro de todo. Y aquí había un lugar donde, con toda claridad, algo giraba en torno a otra cosa.\n\nEso no demostraba por sí solo que la Tierra se moviera. Pero sí quitaba un apoyo importante a la vieja idea. La Tierra dejaba de ser el único centro posible, y empezaba a parecerse a un mundo más entre otros.\n\nGalileo publicó su hallazgo en pocas semanas. Con el tiempo, las cuatro lunas recibieron nombres tomados de la mitología griega: Ío, Europa, Ganímedes y Calisto. Son personajes ligados a Zeus, el dios que los romanos llamaron Júpiter. Los nombres tardaron en imponerse, pero se quedaron.\n\nEuropa es la más pequeña de las cuatro, un poco menor que nuestra Luna. Está a unos seiscientos setenta mil kilómetros de Júpiter. Es una distancia enorme, y aun así, para el gigante, es como estar a un paso.\n\nDurante los siguientes trescientos años, Europa siguió siendo exactamente lo que Galileo había visto: un punto de luz. Los telescopios mejoraron, y los astrónomos pudieron medir su órbita con mucha precisión. Pero nadie podía decir cómo era. No se distinguía una montaña, ni una mancha, ni un color con certeza.\n\nEra un mundo sin rostro.\n\nEso cambió hace apenas medio siglo. A comienzos de los años setenta, las sondas Pioneer pasaron junto a Júpiter y mandaron las primeras fotografías cercanas del sistema. Eran borrosas, pero ya no eran puntos.\n\nDespués llegaron las Voyager, en mil novecientos setenta y nueve. Cuando las imágenes de la Voyager Dos cruzaron el espacio y se armaron en una pantalla, Europa apareció como una esfera clara, cruzada por largas líneas oscuras, como si alguien hubiera rayado una bola de billar. No se veían casi cráteres. Los científicos que miraban esas fotos se quedaron en silencio, porque no entendían por qué.\n\nUn punto de luz, visto una noche de invierno, se había convertido en un lugar. Y ese lugar tenía preguntas que nadie había previsto."
-    },
-    {
-      "title": "La superficie más lisa y joven",
-      "question": "¿Por qué la superficie de Europa casi no tiene cráteres?",
-      "reveal": "La superficie de Europa es una de las más jóvenes del sistema solar, con una edad estimada de decenas de millones de años, lo que indica que el hielo se renueva desde abajo.",
-      "beats": [
-        "Aproximación a Europa: una esfera blanca y azulada, del tamaño parecido a nuestra Luna",
-        "Las líneas rojizas que la cruzan como grietas gigantes",
-        "Comparación con la Luna y con Calisto, llenas de cráteres",
-        "Pocos cráteres significa una superficie joven, renovada",
-        "Los terrenos caóticos, bloques de hielo como balsas rotas y vueltas a congelar",
-        "Imaginar caminar por ese hielo bajo la enorme presencia de Júpiter en el cielo"
+        "Dentro del conjunto vemos bandas de distinto brillo: los anillos D, C, B, A, F y E, nombrados por orden de descubrimiento.",
+        "En 1675, Giovanni Cassini observó un hueco oscuro entre el anillo A y el B.",
+        "Ese hueco mide unos 4.800 kilómetros de ancho, y no está del todo vacío: contiene material tenue.",
+        "Las resonancias orbitales explican el vacío: una partícula allí completa dos vueltas mientras Mimas completa una, y recibe empujones periódicos.",
+        "La repetición sutil de ese tirón expulsa las partículas de esa órbita, y el hueco se abre.",
+        "Si estuviéramos dentro del hueco, veríamos los dos muros brillantes de hielo a cada lado y un cielo casi sin nada."
       ],
       "ambience": "ice",
       "image_queries": [
-        "Europa surface Galileo",
-        "Europa lineae Galileo",
-        "Europa chaos terrain",
-        "Europa Conamara Chaos",
-        "Europa global color Galileo",
-        "Europa moon close-up",
-        "Europa ridges ice",
-        "Europa Jupiter sky",
-        "Callisto craters Galileo",
-        "Moon craters LRO"
+        "Cassini Division Saturn rings",
+        "Saturn rings Cassini Division",
+        "Saturn rings color Cassini",
+        "Mimas Saturn Cassini",
+        "Saturn A ring Encke Gap",
+        "Saturn B ring Cassini",
+        "Saturn C ring Cassini",
+        "Saturn rings detail Cassini",
+        "Saturn ring gaps Cassini",
+        "Saturn rings shadow Cassini"
       ],
       "video_queries": [
-        "Europa flyover animation",
-        "Europa surface visualization NASA",
-        "Europa Galileo spacecraft flyby"
+        "Saturn rings flyover Cassini",
+        "Saturn ring system visualization",
+        "Cassini Grand Finale animation"
       ],
-      "text": "Europa se acerca despacio, y lo primero que notas es el color. Es una esfera blanca, con un tono azulado en las sombras, casi del tamaño de nuestra Luna. Si la pusieras junto a ella, se verían como hermanas pequeñas. Pero algo en su rostro es distinto, y tardas un momento en saber qué.\n\nSobre el blanco corren líneas largas, de un rojo oscuro, color óxido. Cruzan la superficie como grietas gigantes, algunas rectas, otras suaves como cicatrices. Se cortan unas a otras, se cruzan, se pierden en el horizonte. Pueden medir cientos de kilómetros, más o menos la distancia entre dos ciudades que se visitan en un día de carretera.\n\nY entonces entiendes lo que falta. No hay cráteres. O casi no hay.\n\nPiensa en la Luna, la que conoces. Su cara está marcada por millones de golpes, uno sobre otro, durante miles de millones de años. Cada mancha que ves una noche despejada es una cicatriz de roca que cayó del cielo. Calisto, otra luna de Júpiter, está tan llena de cráteres que apenas queda un espacio libre entre ellos. Es una superficie antigua, que lo ha guardado todo.\n\nEuropa, en cambio, está casi lisa. Y esto es raro, porque Europa vive en el mismo vecindario. Júpiter es un imán para cometas y rocas, y por allí pasa mucho material. Los golpes tienen que haber llegado. ¿Por qué entonces la superficie de Europa casi no tiene cráteres?\n\nLos científicos hicieron una cuenta sencilla. Contaron los cráteres que sí hay, y calcularon cuánto tiempo hace falta para que se acumulen. Cuantos más cráteres, más vieja es la superficie. Cuantos menos, más joven.\n\nCon Europa, la cuenta dio un resultado asombroso.\n\nSu superficie tiene probablemente decenas de millones de años, no más. Parece mucho, pero no lo es. Los dinosaurios desaparecieron hace sesenta y seis millones de años, y la superficie de Europa es probablemente más joven que eso. El mundo, en cambio, tiene más de cuatro mil millones de años. Es como encontrar una casa muy antigua con las paredes recién pintadas.\n\nAlgo, entonces, borra los cráteres. Y las imágenes más cercanas nos muestran cómo.\n\nEn ciertas regiones, el paisaje se rompe en pedazos. Los científicos las llaman terrenos caóticos. Ves bloques de hielo del tamaño de ciudades, inclinados, girados, desordenados como balsas rotas sobre un río. Entre ellos, el hielo parece liso y reciente, como agua que se volvió a congelar después de moverse. Los bloques todavía encajan unos con otros, como piezas de un rompecabezas que alguien sacudió.\n\nEso solo puede pasar si el hielo se movió. Si por debajo hay algo blando, o líquido, que lo empuja, lo parte y lo vuelve a cerrar.\n\nEsta es la respuesta, o al menos su parte más sólida.\n\nLa superficie de Europa es de las más jóvenes del sistema solar, y se renueva desde abajo.\n\nCada cráter que cae termina borrado. Las grietas se abren, el material sube, el hielo se cierra de nuevo. El mundo, en silencio, se corrige a sí mismo.\n\nAhora déjate caer sobre ese hielo, con calma. Pisas una superficie dura como roca, a unos ciento sesenta grados bajo cero. No hay viento. No hay sonido. Solo el crujido muy leve de tus pasos, si es que lo oyeras, porque no hay aire que lo lleve.\n\nLevantas la vista. Y allí está Júpiter, enorme, ocupando una parte del cielo que ninguna luna nuestra ocupa. Es muchas veces más grande que la Luna llena que tú conoces, con sus bandas de color crema y ocre, y con esa mancha roja girando despacio. Su luz es tenue, pero suficiente para ver las grietas rojizas a tus pies.\n\nEsa misma fuerza que llena el cielo es la que, de algún modo, trabaja bajo tus botas. Pero para saber cómo, hará falta una nave que se acerque lo suficiente a escuchar."
+      "text": "Si te quedas en el borde y miras con atención esa línea negra, notas que no se parece a las demás. Las franjas que la rodean tienen nombres de letras: D, C, B, A, F y E. Los astrónomos las fueron bautizando según iban apareciendo en los telescopios, y por eso el orden de las letras no sigue el orden del espacio. Es el orden de los descubrimientos.\n\nAsí que el anillo B, el más brillante y espeso, queda en medio, y el A, más tenue, queda afuera. El D se asoma pegado al planeta, casi invisible. El F es un hilo fino más allá del A, y el E es una niebla enorme que casi no se ve. Cada franja tiene su propio brillo, como si el hielo hubiera sido pintado con distinta mano en cada tramo.\n\nSigo aquí contigo. Mientras esas franjas de hielo brillan sin prisa, suelta el aire despacio y deja que tu cuerpo pese un poco más sobre la cama.\n\nPero la línea negra está entre el B y el A. Y es la que más pregunta.\n\n¿Por qué hay un hueco oscuro que parece separar los anillos en dos mundos?\n\nLa primera persona que lo vio fue Giovanni Cassini, en el año mil seiscientos setenta y cinco. Miraba desde París, con un telescopio de lentes sencillas, en noches frías, y apuntó que el anillo no era una sola pieza. Había una separación fina, oscura, que lo cruzaba por completo. Hoy ese hueco lleva su nombre.\n\nCon el tiempo se supo cuánto mide. Unos cuatro mil ochocientos kilómetros de ancho. Es más o menos la distancia entre Ciudad de México y Bogotá, repetida una vez y media, pero tendida sobre el hielo.\n\nY sin embargo, no está vacío. Si te acercaras con una nave, verías que dentro hay material muy tenue, polvo y fragmentos dispersos, como una bruma que casi no refleja la luz. Parece oscuro solo porque a su lado el hielo brilla demasiado.\n\nAun así, algo lo mantiene casi limpio. ¿Qué retiró la mayor parte del material?\n\nLa respuesta no está en el anillo. Está en una luna lejana, pequeña y redonda, llamada Mimas, que da vueltas mucho más afuera.\n\nAhora piensa en una partícula de hielo que gira dentro del hueco. Tarda cierto tiempo en dar una vuelta a Saturno. Mimas, más lejos, tarda justo el doble. Eso significa que cada vez que Mimas completa una vuelta, la partícula ha completado dos.\n\nLas dos se encuentran siempre en los mismos puntos del camino.\n\nEs una coincidencia muy exacta, y los astrónomos la llaman resonancia orbital. Cada vez que la luna pasa, tira un poco de la partícula con su gravedad. Es un tirón minúsculo, que apenas se nota. Pero llega en el mismo lugar, una y otra vez, como quien empuja un columpio justo en el momento preciso.\n\nY un empuje así, repetido, se acumula. La órbita de la partícula se estira, se desvía y se cruza con la de sus vecinas. Tarde o temprano, el grano de hielo choca, se desplaza y abandona ese camino. Año tras año, siglo tras siglo, la franja queda cada vez más despejada.\n\nAsí se mantiene abierto el hueco.\n\nNo lo cavó una fuerza violenta. Lo abrió la paciencia de una luna que nunca falla en su compás.\n\nHay algo muy humano en esa idea. Lo que parece un vacío resulta ser la huella de una atención constante. Un tirón suave, sostenido durante millones de años, puede esculpir más que un golpe.\n\nY ahora, déjate llevar hacia adentro, hasta quedar justo en medio de la separación. A tu izquierda se levanta el anillo B, y a tu derecha el A, como dos muros claros de hielo que se extienden a lo lejos hasta perderse. Entre ellos, el cielo está casi sin nada. Solo unas pocas motas flotan a tu alrededor, sin ruido, sin prisa.\n\nHace frío, de un modo que no se puede describir. Y todo está en calma.\n\nLo único que cambia es una luz muy lejana, la de Mimas, que pasa despacio sobre tu cabeza. Y si ella puede moldear un anillo desde tan lejos, quizá haya otras lunas más cercanas haciendo lo mismo, con mucha más delicadeza.",
+      "companion": [
+        "Sigo aquí contigo. Mientras esas franjas de hielo brillan sin prisa, suelta el aire despacio y deja que tu cuerpo pese un poco más sobre la cama."
+      ]
     },
     {
-      "title": "La nave Galileo y la pista magnética",
-      "question": "¿Cómo se detecta un océano que nadie puede ver bajo kilómetros de hielo?",
-      "reveal": "El campo magnético de Júpiter induce una respuesta en Europa que solo se explica si bajo el hielo hay una capa global de agua salada que conduce la electricidad.",
+      "title": "Las lunas pastoras y las olas de hielo",
+      "question": "¿Qué mantiene tan nítidos los bordes de ciertos anillos si las partículas deberían dispersarse?",
+      "reveal": "Pequeñas lunas esculpen los anillos como pastores, y Daphnis levanta olas verticales en el borde del hueco que abre en el anillo A.",
       "beats": [
-        "La nave Galileo llega a Júpiter en 1995 tras un largo viaje",
-        "El campo magnético de Júpiter barre Europa cada pocas horas",
-        "Las mediciones muestran un campo inducido inesperado",
-        "Un conductor eléctrico bajo la superficie: agua salada",
-        "La corteza de hielo podría medir entre decenas de kilómetros o menos, aún se debate",
-        "El océano de Europa podría tener decenas de kilómetros de profundidad",
-        "Cómo termina Galileo: se sumerge en Júpiter en 2003 para proteger las lunas"
+        "Dentro de los anillos orbitan lunas diminutas, algunas de pocos kilómetros de diámetro.",
+        "Prometeo y Pandora guían el estrecho y trenzado anillo F, con ondas y nudos que cambian con el tiempo.",
+        "Daphnis, de unos 8 kilómetros, abre el hueco Keeler y su gravedad deforma el borde en ondas.",
+        "Cassini captó esas olas de borde y sombras alargadas durante el equinoccio de Saturno, cuando el Sol iluminó los anillos casi de canto.",
+        "Las pequeñas lunas Pan y Atlas tienen forma de platillo volante por acumular material del anillo.",
+        "Los anillos son un sistema vivo, siempre cambiando, y no un objeto estático."
       ],
       "ambience": "ice",
       "image_queries": [
-        "Galileo spacecraft Jupiter",
-        "Europa magnetic field",
-        "Jupiter magnetosphere",
-        "Europa interior illustration",
-        "Europa ocean cutaway",
-        "Jupiter aurora Hubble",
-        "Europa Galileo mosaic",
-        "Jupiter Galileo probe",
-        "Europa Jupiter Hubble",
-        "Europa Juno"
+        "Daphnis Saturn moon waves Cassini",
+        "Pan moon Saturn Cassini",
+        "Atlas moon Saturn Cassini",
+        "Prometheus Pandora F ring Cassini",
+        "Saturn F ring Cassini",
+        "Keeler Gap Daphnis",
+        "Saturn rings equinox shadows Cassini",
+        "Saturn propeller rings Cassini",
+        "Pandora Saturn moon Cassini",
+        "Epimetheus Janus Saturn Cassini"
       ],
       "video_queries": [
-        "Jupiter magnetosphere visualization",
-        "Europa ocean animation NASA",
-        "Galileo mission Jupiter"
+        "Saturn F ring Prometheus animation",
+        "Cassini movie Saturn rings moons",
+        "Saturn ring moonlets visualization"
       ],
-      "text": "En el invierno de mil novecientos noventa y cinco, una nave del tamaño de un autobús pequeño llegó al final de un viaje de seis años. Se llamaba Galileo, y por fin se asomaba a Júpiter. Había recorrido miles de millones de kilómetros, dando vueltas alrededor del Sol para ganar velocidad, y ahora debía frenar justo a tiempo.\n\nEntre sus instrumentos llevaba uno muy sencillo: un magnetómetro. No tomaba fotografías ni brillaba. Solo medía la dirección y la fuerza del campo magnético que atravesaba la nave, como una brújula muy paciente.\n\nY con esa brújula, Galileo tenía que resolver una pregunta difícil. ¿Cómo se detecta un océano que nadie puede ver, escondido bajo kilómetros de hielo?\n\nPara responderla hay que recordar algo sobre Júpiter. El planeta es un imán gigantesco, y su campo magnético se extiende millones de kilómetros alrededor. Gira con el planeta, una vuelta cada diez horas, aproximadamente. Europa, en cambio, tarda unos tres días y medio en dar una vuelta alrededor de Júpiter.\n\nEso significa que el campo magnético de Júpiter pasa sobre Europa una y otra vez. Cada pocas horas, la luna queda barrida por ese campo, primero en una dirección y luego en la contraria. Es como estar de pie en la orilla mientras la marea sube y baja, sin descanso.\n\nAquí aparece la pista. Cuando un campo magnético cambia alrededor de un material que conduce la electricidad, dentro de ese material nacen corrientes eléctricas. Y esas corrientes crean su propio campo magnético, más pequeño, que responde al primero. Los físicos lo llaman campo inducido.\n\nSi Europa fuera una esfera de hielo y roca, casi no habría respuesta. El hielo puro no conduce bien la electricidad. La roca seca tampoco.\n\nGalileo pasó cerca de Europa varias veces, y en cada pasada anotó lo mismo. Algo respondía.\n\nLos datos mostraron un campo inducido que nadie esperaba, y que cambiaba al ritmo exacto del campo de Júpiter. No era un error del instrumento. Era una señal limpia, repetida, como un eco que contesta cada vez que se le llama.\n\nLos científicos probaron explicaciones. Podía haber un núcleo metálico muy grande, o rocas con minerales raros. Pero ninguna encajaba con lo que se medía. La respuesta venía de muy cerca de la superficie, a poca profundidad, y era fuerte.\n\nSolo quedaba una posibilidad.\n\nBajo el hielo, Europa probablemente guarda una capa global de agua salada que conduce la electricidad.\n\nEl agua pura casi no deja pasar la corriente. Pero el agua con sales disueltas sí, y muy bien. Es lo mismo que ocurre en el mar de la Tierra, donde cada gota lleva consigo minerales arrancados de las rocas. Un océano entero, rodeando toda la luna, explicaba la señal de forma natural.\n\nEsto no se vio con ojos ni con cámaras. Se deduce de un susurro eléctrico, medido a cientos de millones de kilómetros de casa. Aun así, es una de las pruebas más sólidas que tenemos.\n\nQuedaban preguntas, y todavía quedan. ¿Qué grosor tiene la corteza de hielo que lo cubre? Algunas estimaciones hablan de decenas de kilómetros. Otras proponen una capa mucho más delgada, y el tema sigue en debate. Con el hielo ocurre lo mismo que con un lago helado: no sabes cuánto aguanta hasta que lo pruebas.\n\nMás abajo, el océano mismo podría ser enorme. Los cálculos sugieren una profundidad de decenas de kilómetros. Para ponerlo en escala, el punto más hondo de los mares de la Tierra apenas supera los once kilómetros. Una persona caminando a paso tranquilo cubriría esa distancia en unas dos horas, y en Europa habría mucha más agua que eso bajo los pies.\n\nGalileo siguió trabajando casi ocho años, mucho más de lo previsto. Pero hacia el final, la nave ya estaba cansada, y la radiación de Júpiter había dañado sus sistemas. No tenía combustible para mucho más.\n\nHabía un riesgo que los ingenieros no podían ignorar. Si la nave quedaba a la deriva, algún día podría chocar con Europa y llevar microbios de la Tierra a un posible océano. Así que decidieron algo generoso.\n\nEn septiembre de dos mil tres, Galileo se dirigió hacia Júpiter y se hundió en su atmósfera.\n\nSe deshizo en el aire espeso del planeta, sin dejar rastro, para que las lunas quedaran intactas. Una nave que nos enseñó a escuchar un océano, y que desapareció para no perturbarlo.\n\nPero Júpiter no era el único gigante con una luna que guardaba agua. En otro lugar, mucho más lejos, y mucho más frío, otra nave apenas comenzaba a mirar."
+      "text": "Hay lunas dentro de los anillos, y son tan pequeñas que casi nadie las nota. Algunas miden apenas unos pocos kilómetros de ancho, lo que tardarías en recorrer en media hora a pie.\n\nAhora mira el anillo F, justo aquí delante. Es un hilo estrecho, brillante, más delgado que cualquier otro de los anillos principales. Y sus bordes son nítidos, casi dibujados con pluma.\n\nEso no debería ser así. Las partículas de hielo chocan, se rozan, se empujan unas a otras, y con el tiempo cualquier anillo debería ensancharse y desvanecerse como una gota de tinta en agua. ¿Qué las mantiene en su sitio?\n\nDos lunas, una a cada lado. Se llaman Prometeo y Pandora. Prometeo gira un poco por dentro del anillo F, y Pandora, un poco por fuera.\n\nCada vez que una de ellas pasa cerca, su gravedad tira suavemente de las partículas. Es un tirón mínimo, pero se repite una y otra vez. El anillo no es una línea quieta: se trenza, forma ondas y nudos, y esos nudos cambian de una semana a otra.\n\nLas lunas no lo encierran como una cerca. Lo guían, como lo haría un pastor con un rebaño.\n\nPor eso las llamamos lunas pastoras. Y no son las únicas.\n\nDesplázate hacia el anillo A, el más exterior de los grandes. Allí, en un hueco angosto llamado Keeler, se mueve una luna de unos ocho kilómetros. Se llama Daphnis. Es una piedra de hielo del tamaño de una montaña pequeña, y avanza sola en medio de una corriente de partículas.\n\nSu órbita es casi circular y muy tranquila. Al pasar, su gravedad atrae el hielo del borde, apenas un poco. Ese borde, que debería ser liso, se levanta en una ola.\n\nEntonces el hielo se curva hacia arriba, en una ondulación lenta que sigue a la luna por el borde del hueco. Cuando Daphnis se aleja, la ola se queda atrás y se va aplanando poco a poco, igual que la estela de una barca en un lago sin viento.\n\nCassini vio esas olas con detalle, y las vio mejor en un momento muy especial. Cada quince años, más o menos, Saturno atraviesa su equinoccio. El Sol ilumina entonces los anillos casi de canto, como si pasara una luz rasante sobre una mesa.\n\nCon esa luz baja, todo lo que sobresale proyecta una sombra larga. Y Cassini la vio: sombras alargadas, finas como agujas, tendidas sobre el hielo.\n\nDaphnis había levantado olas verticales, y eso quería decir que el disco no es del todo plano. En algunos lugares, el borde se alza como una pequeña cresta.\n\nHay otras lunas aún más extrañas. Pan y Atlas, dos mundos diminutos, tienen la forma de un platillo volante: un cuerpo central redondeado y, alrededor, una falda ancha y delgada.\n\nEsa falda no estaba allí desde el principio. Mientras orbitan, barren el material del anillo y lo van acumulando, capa sobre capa, a lo largo de un tiempo muy largo. Con los siglos, cada una se ha vestido con el hielo que ella misma ha ido recogiendo.\n\nAsí que los anillos no son una fotografía. Se mueven, se doblan, se trenzan, se renuevan. Las lunas los esculpen y los anillos, a su vez, moldean a las lunas.\n\nLo que ves ahora no es un objeto terminado. Es un sistema que respira muy despacio, y que nunca ha sido exactamente igual dos veces.\n\nY si el hielo cambia así, siempre en movimiento, quizá no sea una sorpresa que algo muy pequeño, escondido en otra luna más lejana, también tenga algo que contarnos."
     },
     {
-      "title": "Saturno y la sorpresa de Cassini",
-      "question": "¿Qué esperaba encontrar la nave Cassini en una luna pequeña y brillante?",
-      "reveal": "Encélado es tan reflectante que parece nieve recién caída, y en su polo sur la nave Cassini encontró grietas calientes que respiran vapor.",
+      "title": "Encélado: el océano bajo el hielo",
+      "question": "¿Por qué una luna helada de apenas 500 kilómetros de diámetro lanza chorros al espacio?",
+      "reveal": "Bajo el hielo de Encélado hay un océano de agua líquida, y sus géiseres alimentan el anillo E de Saturno.",
       "beats": [
-        "Cassini llega a Saturno en 2004 tras siete años de viaje",
-        "Anillos de Saturno, un escenario de hielo y silencio",
-        "Encélado, una luna de unos 500 kilómetros de diámetro",
-        "Un hielo extremadamente brillante, casi blanco puro",
-        "Los primeros indicios en las mediciones magnéticas de que algo escapaba de la luna",
-        "Las cuatro grietas del polo sur, llamadas rayas de tigre",
-        "El calor detectado en esas grietas, inesperado para un mundo tan pequeño y frío"
-      ],
-      "ambience": "ice",
-      "image_queries": [
-        "Enceladus Cassini",
-        "Enceladus south pole tiger stripes",
-        "Saturn rings Cassini",
-        "Saturn Enceladus rings",
-        "Enceladus close-up",
-        "Enceladus Saturn crescent",
-        "Cassini spacecraft Saturn",
-        "Enceladus surface fractures",
-        "Saturn Cassini mosaic",
-        "Enceladus bright ice"
-      ],
-      "video_queries": [
-        "Cassini Saturn flyover animation",
-        "Enceladus flyby Cassini",
-        "Saturn rings visualization"
-      ],
-      "text": "En el año dos mil cuatro, después de siete años de viaje, la nave Cassini frenó por fin junto a Saturno. Siete años son muchos. Equivalen a un niño que entra a la escuela y termina la primaria, mientras una nave de metal cruza el vacío sin que nadie la acompañe.\n\nLo primero que vio fue el escenario que ya conocíamos. Los anillos se extendían como un camino plano y pálido, hecho de hielo en trozos que van desde un grano de arena hasta una casa. Allí no hay viento ni sonido. Solo piezas heladas que giran despacio, una tras otra, en un silencio total.\n\nEntre esos anillos, entre las lunas de Saturno, había una que casi nadie miraba con especial interés. Se llama Encélado. Mide unos quinientos kilómetros de diámetro, más o menos lo que separa dos ciudades vecinas. Si la pusieras sobre un mapa de un país, la cubrirías con una sola mano.\n\nUna luna así, pequeña y lejana, debería estar muerta. Eso esperaban los científicos. Un mundo diminuto pierde su calor pronto, se enfría y se queda quieto, como una brasa que nadie vuelve a avivar.\n\nEntonces, ¿qué esperaba encontrar Cassini en una luna pequeña y brillante?\n\nLa primera sorpresa fue el color. Encélado es casi blanco puro. Refleja casi toda la luz que recibe del Sol, mucho más que cualquier otro cuerpo grande de esa región. Es como la nieve recién caída, la que todavía nadie ha pisado.\n\nY la nieve fresca, en el espacio, pide una explicación. El hielo de una luna se oscurece con el tiempo. El polvo lo cubre, la radiación lo mancha. Si Encélado seguía tan limpio, algo tenía que estar renovándolo.\n\nLuego llegaron las mediciones del campo magnético. Los instrumentos de Cassini notaron que las líneas del campo de Saturno se curvaban al pasar cerca de la luna. Algo las estaba desviando. Algo escapaba de Encélado y se mezclaba con el entorno, como una respiración muy tenue frente a un cristal frío.\n\nEra apenas una pista. Pero en ciencia, una pista pequeña basta para cambiar el rumbo de una nave. Los ingenieros y los científicos la dirigieron hacia el polo sur de la luna, para mirar de cerca.\n\nAllí, sobre el hielo, aparecieron cuatro grietas largas y paralelas. Cada una se extiende por unos ciento treinta kilómetros, más o menos la distancia que recorres en un par de horas de carretera. Las llamaron rayas de tigre, porque sobre el blanco se ven como marcas oscuras y azuladas.\n\nPero lo más extraño no era su forma. Era su temperatura.\n\nLos instrumentos que miden el calor apuntaron hacia esas grietas y encontraron que estaban más tibias que el hielo de alrededor. No hablamos de un lugar cálido para nosotros. Siguen muy por debajo de cero. Aun así, en una luna donde el frío ronda los doscientos grados bajo cero, esa diferencia era inesperada.\n\nHabía calor adentro. Un mundo pequeño y helado guardaba una fuente de energía propia.\n\nLas grietas del polo sur de Encélado están más tibias que el hielo vecino, y respiran vapor.\n\nPiénsalo un momento. Una luna que debía ser una piedra blanca y dormida tenía, bajo la superficie, algo vivo en el sentido más simple: algo que se movía, que empujaba, que salía hacia afuera. No sabemos todavía todo lo que significa. Pero sabemos que el hielo no estaba quieto.\n\nY si el vapor salía de las grietas, alguien tenía que preguntarse qué más viajaba con él."
-    },
-    {
-      "title": "Los géiseres de Encélado",
-      "question": "¿De dónde sale el chorro de hielo que brota de una luna tan pequeña?",
-      "reveal": "Cassini voló a través de los chorros y probó directamente el agua de un océano oculto, con sal, moléculas orgánicas e hidrógeno molecular.",
-      "beats": [
-        "Imágenes de 2005: columnas de partículas que se elevan sobre el polo sur",
-        "Cientos de kilómetros de altura, saliendo al espacio",
-        "Parte de ese material cae como nieve y parte forma el anillo E de Saturno",
-        "Los sobrevuelos de Cassini a través de la columna, midiendo con sus instrumentos",
-        "Se detectan sal, moléculas orgánicas y partículas de sílice",
-        "Hidrógeno molecular: una posible señal de reacciones químicas en el fondo",
-        "Sigue abierta la pregunta de si alguna reacción biológica interviene"
+        "Encélado es una luna pequeña pero de las más brillantes del Sistema Solar, porque su superficie de hielo refleja casi toda la luz.",
+        "Cassini notó que el campo magnético de Saturno se curvaba cerca del polo sur de la luna.",
+        "En 2005 se fotografiaron chorros de vapor y partículas de hielo que salían de largas grietas llamadas 'rayas de tigre'.",
+        "El material sale al espacio y forma el anillo E, el más extenso y difuso de Saturno.",
+        "Cassini voló a través de los chorros y detectó agua, sales, moléculas orgánicas simples e hidrógeno molecular.",
+        "Los datos gravitatorios y de libración indican un océano global bajo la corteza, y el hidrógeno sugiere reacciones en el fondo.",
+        "Si hay vida allí sigue siendo una pregunta abierta, pero es un lugar con ingredientes de interés."
       ],
       "ambience": "ice",
       "image_queries": [
         "Enceladus plumes Cassini",
-        "Enceladus geysers backlit",
-        "Enceladus jets south pole",
-        "Saturn E ring Cassini",
-        "Enceladus plume illustration",
-        "Enceladus Cassini flyby",
-        "Enceladus tiger stripes close",
-        "Saturn Enceladus backlit",
-        "Enceladus ice particles",
-        "Enceladus Cassini mosaic"
+        "Enceladus south pole Cassini",
+        "Enceladus tiger stripes",
+        "Enceladus Cassini close up",
+        "Enceladus backlit plume",
+        "Enceladus Saturn Cassini",
+        "Enceladus surface fractures",
+        "Saturn E ring Enceladus",
+        "Enceladus crescent Cassini",
+        "Enceladus Saturn rings Cassini"
       ],
       "video_queries": [
         "Enceladus plume animation Cassini",
-        "Enceladus geysers visualization",
-        "Cassini flies through Enceladus plume"
+        "Enceladus flyby Cassini",
+        "Enceladus ocean visualization NASA"
       ],
-      "text": "En el año dos mil cinco, una cámara a bordo de Cassini miró hacia el borde de Encélado, justo cuando la luna quedaba iluminada desde atrás. Y allí, sobre el polo sur, apareció algo que nadie esperaba ver. Una neblina fina, como el aliento de alguien en una mañana fría, que se elevaba desde la superficie y se perdía en la oscuridad.\n\nEran columnas de partículas. Decenas de chorros delgados, que salían de las grietas que ya conocíamos, las rayas de tigre. Los científicos miraron las imágenes una y otra vez, porque el hallazgo parecía imposible.\n\nEncélado es una luna diminuta. Un mundo tan pequeño debería estar quieto y congelado desde hace mucho. ¿De dónde sale, entonces, el chorro de hielo que brota de una luna así?\n\nPrimero había que entender cuánto subía ese material. Las columnas alcanzaban cientos de kilómetros de altura. Eso es mucho más que el diámetro de la propia luna.\n\nLa gravedad de Encélado es muy débil. Si dejaras caer una piedra desde la altura de tu cintura, tardaría varios segundos en llegar al suelo. Por eso el material sube tanto, y gran parte de él escapa del todo.\n\nPero no se pierde. Una parte regresa a la superficie y cae despacio como nieve, tan fina y suave que cubre las grietas con una capa recién estrenada. Otra parte se queda en órbita alrededor de Saturno. Con los años, esos granos de hielo forman un anillo ancho y tenue, el anillo E, y Encélado está justo en su zona más densa.\n\nEsa luna pequeña, entonces, alimenta un anillo entero de un planeta gigante.\n\nFaltaba lo más importante. Alguien tenía que ir hasta allí y tocar el chorro. Los ingenieros de Cassini cambiaron la ruta de la nave, y en los años siguientes la hicieron pasar a través de las columnas, a pocas decenas de kilómetros sobre el polo sur. No había nada que ver con los ojos. Pero los instrumentos escuchaban, pesaban y contaban cada grano que golpeaba la nave.\n\nLos resultados llegaron poco a poco. Los granos de hielo contenían sal, la misma clase de sal que hay en nuestros mares. Eso significaba que el hielo no venía de una masa congelada y sólida. Venía de agua líquida, salada, que se había congelado al salir al vacío.\n\nTambién había moléculas orgánicas, compuestas de carbono, algunas de ellas bastante complejas. No son vida, y conviene decirlo con calma. Son ingredientes, de los que también se encuentran en cometas y en meteoritos.\n\nY había algunos granos diminutos de sílice. Es el mismo material de la arena de una playa. Un grano así suele formarse cuando el agua está muy caliente y toca roca. Pero eso lo dejamos para más adelante.\n\nHubo todavía un hallazgo más. Entre los gases del chorro, los instrumentos detectaron hidrógeno molecular.\n\nEs una molécula pequeña y sencilla, y su presencia importa mucho. Podría ser el rastro de reacciones químicas entre el agua y la roca, allá abajo, en el fondo del mar. En la Tierra, ese tipo de reacciones alimenta a comunidades enteras de microbios.\n\n¿Y alguna reacción biológica interviene en lo que Cassini encontró? No lo sabemos. El hidrógeno puede nacer sin ayuda de ningún ser vivo, y los instrumentos de Cassini no fueron diseñados para distinguirlo. Es una pregunta honesta, y sigue abierta.\n\nLo que sí sabemos es sencillo, y alcanza para quedarse un momento en silencio.\n\nUna nave humana atravesó el aliento de un océano oculto, y probó su agua a mil millones de kilómetros de casa.\n\nEse océano no vive en el cielo de nadie. Está allí, bajo el hielo, en la oscuridad. Y ahora queda una pregunta que el chorro no puede responder, porque ningún chorro llega hasta el fondo: ¿cómo sería ese lugar, si pudiéramos bajar por una de las grietas?"
+      "text": "Encélado es una luna pequeña. Mide unos quinientos kilómetros de diámetro, más o menos lo que hay entre Madrid y Barcelona.\n\nPero si te acercas, algo se nota de inmediato. Su superficie brilla. Es una de las lunas más claras de todo el Sistema Solar, porque su hielo es tan fresco y tan limpio que devuelve al espacio casi toda la luz que recibe. Pisar allí sería como caminar sobre nieve recién caída, bajo un cielo negro y con Saturno colgando enorme y quieto.\n\nY sin embargo, hay algo que no encaja. Un mundo tan pequeño debería estar frío y muerto desde hace mucho. ¿Por qué entonces una luna helada, tan diminuta, lanza chorros al espacio?\n\nLa pista llegó de forma discreta. La sonda Cassini pasaba cerca de la luna, y sus instrumentos notaron que el campo magnético de Saturno se curvaba. No lo hacía en cualquier lugar, sino justo sobre el polo sur de Encélado. Era como si algo invisible estuviera estorbando, como una piedra que desvía un arroyo.\n\nLos científicos pensaron que algo debía estar saliendo de la luna. Algo que no se veía, pero que empujaba el campo magnético.\n\nAsí que la sonda volvió a mirar. Y en dos mil cinco, las cámaras captaron lo que nadie esperaba.\n\nHabía chorros. Finos, claros, elevándose desde el polo sur, hechos de vapor y de pequeñas partículas de hielo. Salían de unas grietas largas y paralelas en la superficie, que recibieron un nombre sencillo: las rayas de tigre.\n\nSi te despertaste hace rato, no pasa nada. Mientras esa luna pequeña respira su hielo en la oscuridad, tus pensamientos pueden esperar, y tú puedes descansar a tu ritmo.\n\nY si conoces a alguien que también pasa noches largas, compártele este viaje.\n\nAquel material no cae de vuelta. La gravedad de una luna tan pequeña es muy débil, y buena parte de lo que sale se escapa al espacio. Poco a poco, ese polvo helado se reparte a lo largo de la órbita de Encélado y forma un anillo enorme y tenue, el anillo E. Es el más extenso y el más difuso de Saturno, tan suave que casi no se distingue. Una luna diminuta, respirando hielo, alimenta un anillo entero.\n\nPero faltaba saber de qué estaban hechos los chorros. Así que los ingenieros hicieron algo audaz. Dirigieron la sonda para que pasara justo a través de ellos.\n\nFue como cruzar una niebla fina con las manos abiertas. Los instrumentos probaron lo que había allí, y encontraron agua. También sales, como las que hay en nuestros mares. Encontraron moléculas orgánicas simples, de esas que forman la base de la química de la vida. Y encontraron hidrógeno molecular.\n\nEsa última pista pesaba mucho. El hidrógeno no debería durar mucho tiempo allí, así que algo debía estar produciéndolo ahora mismo.\n\nQuedaba otra pregunta. ¿De dónde venía toda esa agua? Los datos de la gravedad de la luna dieron una respuesta, y otra medida la confirmó: Encélado se balancea muy levemente mientras gira, un movimiento llamado libración. Ese balanceo es demasiado grande para una esfera de hielo sólido. Solo tiene sentido si la corteza flota sobre algo líquido.\n\nBajo el hielo de Encélado hay un océano.\n\nEs un océano global, oculto bajo una corteza de hielo de entre unos pocos y unas dos decenas de kilómetros, en la oscuridad total. Por las grietas del polo sur, una parte de ese mar escapa hacia el espacio, y de ahí nace el anillo E. Y el hidrógeno sugiere que, en el fondo, el agua podría estar reaccionando con la roca caliente, como ocurre en algunos rincones del fondo de nuestros propios océanos.\n\n¿Hay vida allí? Nadie lo sabe. Es una pregunta que sigue abierta, y es bueno dejarla así, sin forzar la respuesta. Lo que sí sabemos es que este pequeño mundo tiene agua líquida, calor y química sencilla. Son ingredientes que, en la Tierra, bastaron para empezar algo.\n\nMientras la luz de Saturno se apaga lentamente sobre la nieve, uno piensa que este no es el único lugar donde la Cassini encontró cosas extrañas. Hay otra luna, más grande y más lejana, envuelta en una bruma anaranjada.",
+      "companion": [
+        "Si te despertaste hace rato, no pasa nada. Mientras esa luna pequeña respira su hielo en la oscuridad, tus pensamientos pueden esperar, y tú puedes descansar a tu ritmo.",
+        "Y si conoces a alguien que también pasa noches largas, compártele este viaje."
+      ],
+      "gift": "Y si conoces a alguien que también pasa noches largas, compártele este viaje."
     },
     {
-      "title": "El fondo oscuro del mar",
-      "question": "¿Cómo sería el fondo de un océano que nunca ha visto la luz del Sol?",
-      "reveal": "En la Tierra hay ecosistemas enteros en el fondo del mar que viven de la energía química de las chimeneas hidrotermales, sin necesitar el Sol.",
+      "title": "Titán y el futuro de los anillos",
+      "question": "¿Pueden los anillos, que hoy parecen eternos, desaparecer algún día?",
+      "reveal": "Los anillos pierden material hacia Saturno en forma de lluvia de hielo, y en unos cientos de millones de años podrían desvanecerse, mientras Titán conserva lagos de metano.",
       "beats": [
-        "Imaginar descender por una grieta de hielo hacia la oscuridad total",
-        "Presión, frío y sal: cómo sería el agua de este mar",
-        "Las chimeneas hidrotermales de la Tierra y los ecosistemas que viven de ellas",
-        "Evidencia de que el núcleo rocoso de Encélado podría tener actividad hidrotermal",
-        "Granos de sílice que indican agua caliente en contacto con roca",
-        "En Europa, el fondo marino podría ser rocoso, aunque no sabemos si hay actividad",
-        "La química como fuente de energía: una idea que cambió la biología"
+        "Nos alejamos hacia Titán, la luna con atmósfera espesa, de color anaranjado, mayor que Mercurio.",
+        "La sonda Huygens descendió en 2005 y mostró un paisaje de cauces secos y suelo helado.",
+        "Cassini, con radar, reveló lagos y mares de metano y etano líquidos cerca de los polos.",
+        "Titán es el único otro mundo conocido, además de la Tierra, con líquidos estables en la superficie.",
+        "Cassini midió en su final cómo el material de los anillos cae hacia Saturno como 'lluvia de anillos'.",
+        "Las estimaciones de edad de los anillos siguen en debate: algunos datos sugieren que son jóvenes, otros que son antiguos.",
+        "Si la pérdida continúa, los anillos podrían desaparecer en cientos de millones de años, y esta es una vista pasajera.",
+        "El viaje termina con Saturno y sus anillos alejándose lentamente en la oscuridad."
       ],
       "ambience": "sea",
       "image_queries": [
-        "Enceladus interior illustration",
-        "Enceladus ocean hydrothermal",
-        "Europa ocean illustration",
-        "Earth ocean hydrothermal vent",
-        "Earth ocean from space",
-        "Enceladus south pole plume",
-        "Europa ice shell",
-        "Enceladus Cassini plume dive",
-        "Ocean worlds NASA",
-        "Earth ocean ISS"
+        "Titan Cassini",
+        "Titan lakes radar Cassini",
+        "Titan Ligeia Mare",
+        "Titan atmosphere haze Cassini",
+        "Titan Saturn rings Cassini",
+        "Titan Huygens surface",
+        "Titan north pole lakes",
+        "Titan sunlight glint lake",
+        "Saturn from behind Cassini",
+        "Saturn Cassini Grand Finale"
       ],
       "video_queries": [
-        "Earth ocean time-lapse ISS",
-        "Ocean worlds animation NASA",
-        "Hydrothermal vents NOAA"
+        "Titan flyover animation Cassini",
+        "Titan lakes visualization",
+        "Saturn rings Cassini Grand Finale"
       ],
-      "text": "Hay una grieta en el hielo, y tú te acercas a su borde. Abajo no se ve nada. Ni siquiera el negro es el negro de una noche común, porque en una noche común hay estrellas, y aquí el hielo se cierra sobre todo lo que podría dar luz.\n\nEmpiezas a descender. Las paredes de la grieta son blancas al principio, luego azuladas, luego grises. Después desaparecen. La luz de tu lámpara alcanza unos pocos metros y se pierde en un hielo que lleva millones de años sin ver el Sol.\n\nSigues bajando, y la pregunta se vuelve inevitable. ¿Cómo sería el fondo de un océano que nunca ha visto la luz del Sol?\n\nPrimero llegaría el agua. Sería salada, con sales parecidas a las de nuestros mares, aunque no sabemos con exactitud en qué proporción. Estaría muy fría, cerca del punto en que se congela, algo por debajo de cero grados Celsius gracias a la sal. Y en el fondo, la presión crecería poco a poco, como si el agua te apoyara una mano enorme sobre los hombros.\n\nEn Encélado esa presión sería moderada, porque la luna es pequeña y su gravedad es débil. Aun así, el mar tendría varios kilómetros de hondura en algunas zonas. En Europa sería muy distinto: allí el océano podría ser mucho más profundo, y la presión en el fondo superaría la de los lugares más hondos de la Tierra.\n\nPero antes de seguir, conviene detenerse en algo que ocurre en nuestro propio planeta. Porque la Tierra también tiene lugares oscuros, y no están vacíos.\n\nEn mil novecientos setenta y siete, un pequeño submarino llamado Alvin bajó hasta el fondo del Pacífico, cerca de las islas Galápagos. Los científicos esperaban encontrar roca desnuda y agua helada. Encontraron agua tibia que salía de grietas en el suelo, y alrededor de ellas, vida.\n\nHabía gusanos tubulares de más de un metro, almejas del tamaño de un plato, cangrejos pálidos que caminaban sobre la roca. Todo un jardín en plena oscuridad, a dos mil quinientos metros de profundidad.\n\nNadie lo había previsto. Durante siglos, la biología había contado una sola historia: las plantas toman la luz del Sol, los animales se alimentan de las plantas, y todo lo demás depende de esa cadena.\n\nAllí abajo no había plantas. No había Sol. Entonces, ¿de qué vivían?\n\nLa respuesta estaba en el agua que brotaba de las chimeneas. Venía cargada de sulfuro de hidrógeno, un gas que se forma cuando el agua del mar se filtra por la roca caliente. Ciertas bacterias aprenden a romper esas moléculas y a usar la energía que liberan. Con ella fabrican su alimento. Los gusanos y las almejas, a su vez, viven de esas bacterias, o incluso las llevan dentro de su propio cuerpo.\n\nHay ecosistemas enteros en el fondo del mar que viven de la energía química de las chimeneas hidrotermales, sin necesitar el Sol.\n\nPiénsalo un momento. La luz que sostiene casi toda la vida que conoces no era indispensable. Bastaban agua, roca caliente y un poco de química.\n\nY entonces la mirada de los científicos volvió hacia Saturno. En Encélado, ¿podría existir algo parecido?\n\nLas pistas llegaron desde los chorros. Cuando Cassini voló a través de ellos, encontró diminutos granos de sílice, un material que forma la arena y el cuarzo. En la Tierra, esos granos se forman en circunstancias muy concretas: cuando agua caliente, a más de noventa grados Celsius, toca ciertas rocas.\n\nEs decir, en el fondo de ese mar el agua podría estar tocando roca caliente. Los granos son diminutos, de apenas unas millonésimas de milímetro. Cada uno viajó desde el fondo de un océano oculto, subió por las grietas y salió al espacio.\n\nA esto se sumó el hidrógeno molecular que Cassini midió en la columna. Una buena explicación es que el agua reacciona con el núcleo rocoso. Eso sería justo lo que ocurre en una chimenea hidrotermal. Pero no podemos asegurarlo, y por ahora el fondo de Encélado sigue siendo una deducción, no una fotografía.\n\nEn Europa la historia es más incierta. Es probable que su océano descanse sobre un suelo de roca, y eso ya es una buena noticia. Pero no sabemos si ese suelo está activo, si hay volcanes o chimeneas, o si el fondo es tan quieto como una llanura dormida. Nadie ha medido todavía esa parte.\n\nLo que sí sabemos es que ya no podemos pensar la vida como una planta que busca el Sol. Puede ser también una bacteria en la oscuridad, alimentándose de lo que la roca le ofrece.\n\nFalta saber cuánto tiempo dura un fondo así. Porque una chimenea necesita calor, y el calor de estas lunas viene de un lugar que apenas hemos empezado a entender."
-    },
-    {
-      "title": "Lo que la mareas hacen en el interior",
-      "question": "¿Qué mantiene tibio por dentro un mundo que debería ser un bloque de hielo?",
-      "reveal": "La gravedad de sus vecinos estira y relaja las lunas, y esa fricción interna genera calor suficiente para mantener el agua líquida durante miles de millones de años.",
-      "beats": [
-        "Una luna en órbita elíptica que se estira y se comprime",
-        "La comparación con doblar un clip una y otra vez hasta que se calienta",
-        "Ío como ejemplo extremo: el mundo volcánico más activo",
-        "Europa en resonancia con Ío y Ganímedes",
-        "Encélado y su relación orbital con Dione",
-        "Cuánto tiempo ha existido el océano es un tema aún en estudio",
-        "Lo que significa tener tiempo: la vida necesita estabilidad durante mucho tiempo"
-      ],
-      "ambience": "lava",
-      "image_queries": [
-        "Io volcano Galileo",
-        "Io New Horizons",
-        "Io Juno",
-        "Jupiter Io Europa",
-        "Dione Cassini",
-        "Enceladus Dione Saturn",
-        "Europa Io Jupiter",
-        "Ganymede Juno",
-        "Io plume Voyager",
-        "Jupiter moons orbit"
-      ],
-      "video_queries": [
-        "Io volcano animation NASA",
-        "Jupiter moons resonance visualization",
-        "Tidal heating animation NASA"
-      ],
-      "text": "Cerca de Júpiter, una luna describe un círculo que no es del todo un círculo. Es un óvalo muy leve, casi imperceptible, pero suficiente para que a veces esté un poco más cerca del planeta y a veces un poco más lejos.\n\nFíjate en lo que eso significa. Cuando la luna se acerca, la gravedad de Júpiter tira de ella con más fuerza, y la luna se estira. Cuando se aleja, el tirón se afloja, y la luna vuelve a su forma. Una vez, y otra vez, y otra más.\n\nEntonces aparece la pregunta. Europa y Encélado están lejos del Sol, a temperaturas de más de cien grados bajo cero. Deberían ser bloques de hielo, duros y dormidos. ¿Qué mantiene tibio por dentro un mundo que debería estar congelado?\n\nPiensa en un clip de metal. Lo doblas una vez, y no pasa nada. Lo doblas diez veces, y el punto del doblez empieza a sentirse tibio entre tus dedos. Lo doblas muchas más, y casi quema.\n\nNo es magia. El metal se deforma, y sus partes internas se frotan unas contra otras. Ese roce se convierte en calor.\n\nAhora cambia el clip por una luna entera. Las rocas y el hielo no se doblan tanto, pero se doblan un poco, todos los días, durante una eternidad. Y cada flexión deja un poco de calor adentro.\n\nHay un lugar donde se ve esto con toda claridad. Se llama Ío, y es la luna de Júpiter más cercana al planeta.\n\nÍo está tan cerca que Júpiter la amasa sin descanso. Su superficie se eleva y baja decenas de metros, como una marea hecha de roca. Y el resultado es el mundo más volcánico que conocemos. Tiene cientos de volcanes activos, y algunos lanzan columnas de gas a casi cien kilómetros de altura.\n\nÍo no tiene un solo cráter visible. La lava los cubre antes de que se noten.\n\nPero Ío nos enseña algo más que violencia. Nos muestra que la gravedad, sin ninguna otra fuente de energía, puede encender un mundo por dentro.\n\nEuropa está más lejos de Júpiter, y por eso su calor es mucho más suave. Pero tiene una ayuda curiosa. Ío, Europa y Ganímedes se acompañan en sus órbitas con un ritmo exacto. Por cada vuelta de Ganímedes, Europa da dos, e Ío da cuatro.\n\nA esto los astrónomos lo llaman resonancia. Es como empujar un columpio justo en el momento correcto. Cada tirón de una luna sobre las otras llega siempre en el mismo punto del recorrido, y por eso sus órbitas nunca se vuelven del todo circulares.\n\nUn óvalo que no se cierra, y un estiramiento que nunca termina.\n\nEn Saturno ocurre algo parecido, a otra escala. Encélado completa dos vueltas alrededor del planeta mientras Dione, una luna mayor y más lejana, completa una. Ese compás repetido mantiene la órbita de Encélado ligeramente alargada.\n\nSin embargo, aquí hay un detalle que todavía discuten los científicos. Los cálculos muestran que esa relación con Dione, por sí sola, parece dar menos calor del que Encélado emite. Quizá el calor llega a ratos y se guarda. Quizá hay algo en su interior que aún no entendemos.\n\nY eso nos lleva a otra pregunta, más difícil. ¿Desde cuándo existen estos océanos?\n\nNadie lo sabe con certeza. Algunos estudios sugieren que el océano de Europa podría tener miles de millones de años, casi tanto como la propia luna. Otros proponen que Encélado es más joven, quizá de cientos de millones de años, y que su mar podría haberse formado hace relativamente poco. Los datos todavía no deciden entre una versión y otra.\n\nAun así, incluso la versión más corta es larga. Cien millones de años equivalen a un millón de vidas humanas largas, puestas una tras otra.\n\nY aquí está lo que realmente importa. La vida no aparece de un día para otro. En la Tierra tardó cientos de millones de años en dar sus primeros pasos, y miles de millones más en llenar el mundo.\n\nNecesita un lugar tranquilo, donde el agua no se congele ni se evapore. Un lugar donde la química pueda probar, fallar y volver a probar sin que nadie apague la luz.\n\nLas mareas ofrecen exactamente eso. Los vecinos de estas lunas las estiran y las relajan, y esa fricción interna produce calor suficiente para mantener el agua líquida durante miles de millones de años, o al menos durante un tiempo muy largo.\n\nUn mar oscuro, cálido por dentro, sostenido por un tirón que nunca se detiene.\n\nEs una idea extraña y hermosa. Nosotros dependemos del Sol para vivir. Estos mundos, quizá, dependen del abrazo lento de un planeta gigante.\n\nY ahora que sabemos dónde buscar, queda una cuestión muy concreta. ¿Quién va a llegar hasta allí para mirar de cerca?"
-    },
-    {
-      "title": "Los viajeros que van hacia allá",
-      "question": "¿Cómo podríamos saber algún día si hay vida en esos mares?",
-      "reveal": "Europa Clipper viaja hoy hacia Júpiter para sobrevolar Europa decenas de veces, y su instrumental está diseñado para buscar condiciones habitables, aunque no para detectar vida directamente.",
-      "beats": [
-        "Europa Clipper lanzada en octubre de 2024, rumbo a Júpiter con llegada prevista hacia 2030",
-        "Qué hará: sobrevuelos repetidos, radar para atravesar el hielo, espectrómetros para estudiar la composición",
-        "La misión JUICE de la ESA, que explorará Ganímedes, Calisto y Europa",
-        "Ideas para un futuro aterrizador en Europa o una sonda que muestree los géiseres de Encélado",
-        "Qué contaría como evidencia de vida y qué nos haría dudar",
-        "Posibilidades: no encontrar nada, encontrar química sin biología o algo inesperado",
-        "Cierre: dos pequeñas luces junto a planetas gigantes, esperando en la noche, y nosotros mirándolas con calma"
-      ],
-      "ambience": "deep_space",
-      "image_queries": [
-        "Europa Clipper spacecraft",
-        "Europa Clipper Jupiter",
-        "JUICE spacecraft Jupiter",
-        "Europa moon Juno",
-        "Jupiter Juno",
-        "Enceladus Cassini final",
-        "Saturn Cassini Grand Finale",
-        "Europa surface Galileo",
-        "Earth from space",
-        "Jupiter Europa crescent"
-      ],
-      "video_queries": [
-        "Europa Clipper mission animation",
-        "Europa Clipper flyby visualization",
-        "Jupiter flyover animation Juno"
-      ],
-      "text": "Esta noche, en algún lugar del espacio entre los planetas, una nave viaja sola con los paneles abiertos al Sol. Sus alas extendidas miden casi lo que una cancha de baloncesto. Avanza sin ruido, sin prisa aparente, rumbo a un mundo de hielo que todavía está muy lejos.\n\nY la pregunta que lleva dentro es la nuestra. ¿Cómo podríamos saber algún día si hay vida en esos mares?\n\nSe llama Europa Clipper. Despegó en octubre de dos mil veinticuatro, y su viaje es largo. Llegará a Júpiter hacia el año dos mil treinta, después de rodear la Tierra y Marte para ganar velocidad. Una vez allí, no se quedará girando alrededor de Europa. Sería demasiado peligroso, porque Júpiter baña la zona con una radiación que daña los circuitos.\n\nAsí que hará otra cosa. Orbitará al propio Júpiter y pasará cerca de Europa, una vez, y otra, y otra más. Serán unas cincuenta veces. En cada pasada se acercará durante unos minutos y luego se alejará para descansar y enviar sus datos a casa.\n\nCada visita servirá para mirar algo distinto. Su radar podrá atravesar el hielo, como una linterna que busca el techo de una cueva. Si hay bolsas de agua dentro de la corteza, o el océano mismo, el eco lo contará. Sus espectrómetros leerán la luz que rebota en la superficie y reconocerán la sal, el hielo y las moléculas con carbono. Y si Europa deja escapar algún vapor, la nave intentará olerlo al pasar.\n\nPero hay algo que conviene decir con claridad.\n\nLa nave no buscará vida.\n\nSu misión es otra, más humilde y más sensata. Quiere saber si Europa podría albergarla. Cuánto grosor tiene el hielo, qué tan salado es el agua, si el fondo toca la roca. Es el trabajo de quien mide una casa antes de preguntar si alguien vive en ella.\n\nNo irá sola. Otra nave, de la Agencia Espacial Europea, salió en dos mil veintitrés hacia el mismo gigante. Se llama Juice. Llegará poco después, y su protagonista no será Europa sino Ganímedes, la luna más grande del sistema solar. Allí estudiará un océano que también podría esconderse bajo el hielo. De paso visitará Calisto, la luna llena de cráteres, y rozará Europa un par de veces. Dos naves, dos miradas, y una misma curiosidad.\n\nDespués vendrían otras ideas. Todavía son solo eso. Un aterrizador que se pose sobre el hielo de Europa, con un taladro pequeño y paciente. O una sonda que cruce las columnas de Encélado y recoja sus granos de hielo, como quien extiende la mano bajo una lluvia fina. Sería una forma de probar un mar sin tener que llegar hasta él.\n\n¿Y qué contaría como una señal de vida? No bastaría una sola cosa. Una molécula orgánica aparece también en meteoritos, y ahí no hay nadie. Lo que haría dudar menos sería un patrón. Algunas moléculas, en cantidades que la química sola no suele producir. Una selección que se repite, como si algo hubiera elegido.\n\nY aun así, habría que desconfiar de uno mismo. Cada medición tendría que resistir otras explicaciones, una por una, durante años.\n\nPuede que no encontremos nada. Un mar frío, salado y vacío también sería un resultado, y nos enseñaría que el agua y la energía no bastan. Puede que hallemos química rica, casi viva, pero sin vida. Esa respuesta sería la más difícil, porque nos dejaría justo en la frontera. Y puede que aparezca algo que nadie esperaba, algo que no encaje en ninguna de nuestras preguntas.\n\nQuizá ese sea el mejor desenlace. Cada vez que miramos de cerca, el cielo ha resultado más extraño de lo que supusimos.\n\nSea cual sea la respuesta, llegará tarde para algunos de los que hoy la esperan. Es un trabajo de décadas, hecho por personas que lo empezaron sin saber si lo verían terminar.\n\nY mientras tanto, ahí están. Europa gira alrededor de Júpiter, y Encélado alrededor de Saturno, cada una con su mar escondido bajo el hielo. Dos luces pequeñas junto a dos planetas enormes, esperando en la noche.\n\nNadie las apura. Llevan miles de millones de años ahí, y pueden esperar un poco más.\n\nTú también puedes quedarte un momento. Respira despacio. Sobre ti, si el cielo está despejado, quizá Júpiter brilla ahora mismo, tranquilo y firme, con sus lunas a un lado.\n\nBuenas noches."
+      "text": "Piensa en la luna más grande de Saturno, y en cómo se ve cuando uno se aleja de los anillos y la mira de frente. Es una bola de color naranja, borrosa, sin una sola costa visible. Nos alejamos hacia ella, hacia Titán, y la bruma no se abre nunca.\n\nTitán es mayor que Mercurio, aunque pesa menos. Tiene una atmósfera más espesa que la de la Tierra, hecha sobre todo de nitrógeno, con un poco de metano. Si pudieras pararte en su superficie, sentirías el aire sobre la piel como una manta fría. Haría unos ciento ochenta grados bajo cero.\n\nEn dos mil cinco, una pequeña sonda llamada Huygens se soltó de la Cassini y cayó durante dos horas y media a través de esa bruma. Nadie sabía qué encontraría abajo. Quizás un océano, quizás roca.\n\nEncontró algo más tranquilo.\n\nUn suelo helado, de color pardo, cubierto de guijarros redondeados como los de un río. Y a su alrededor, cauces secos que bajaban hacia una llanura. Había agua en esas piedras, pero era hielo duro como la roca. Lo que había tallado esos cauces era otra cosa.\n\nDespués, la Cassini lo fue explicando con su radar, que sí podía ver a través de la bruma. Cerca de los polos aparecieron manchas oscuras y lisas, con costas, bahías e islas. Eran lagos. Y algunos eran tan grandes que merecen llamarse mares. Están llenos de metano y etano líquidos, los mismos gases que en tu casa podrían salir de una cocina.\n\nAllí llueve metano, muy de vez en cuando. Los ríos corren y se vacían en esos mares.\n\nFuera de la Tierra, no se conoce otro mundo con líquidos estables en la superficie. Solo este, que sigue siendo un lugar helado y extraño, donde el agua hace de piedra.\n\nY ahora la nave, que había mirado tantas cosas, tenía que despedirse. En dos mil diecisiete, la Cassini se lanzó entre Saturno y sus anillos, en un hueco que nadie había cruzado antes. Midió lo que había allí. Y encontró algo que hacía más difícil una pregunta sencilla.\n\n¿Pueden los anillos, que hoy parecen eternos, desaparecer algún día?\n\nLos instrumentos de la nave mostraron que el material de los anillos cae hacia Saturno. Son partículas de hielo, y también polvo, que se van inclinando hacia el planeta, atraídas por su campo magnético y su gravedad. Los científicos lo llaman lluvia de anillos.\n\nEs una lluvia lenta, silenciosa. Pero constante.\n\nCada media hora, más o menos, cae material suficiente para llenar una piscina olímpica. A ese ritmo, los anillos se van vaciando poco a poco, igual que la arena de un reloj.\n\n¿Y cuánto tiempo llevan ahí? Aquí la ciencia todavía discute. Algunos datos dicen que los anillos son jóvenes, quizás de unos cien millones de años. Es decir, que los dinosaurios los habrían visto aparecer. Otros datos dicen que son tan antiguos como el propio planeta. Nadie lo ha resuelto.\n\nLo que sí parece claro es el futuro. Si la lluvia sigue como hasta ahora, los anillos podrían desaparecer en unos cientos de millones de años. Parece mucho tiempo, y lo es, pero en la vida de un planeta es un parpadeo.\n\nLos anillos podrían desvanecerse.\n\nEso significa que has nacido en una época en que se pueden ver. Dentro de mucho tiempo, otros mundos tendrán a Saturno desnudo, redondo y dorado, y nadie recordará que alguna vez llevó un collar de hielo. Titán, en cambio, seguirá con sus lagos oscuros, sus ríos de metano y su bruma.\n\nAhora el viaje se acaba. Saturno se aleja despacio, con su disco claro y sus bandas finas, cada vez más pequeño. Las lunas se pierden una a una. Los anillos se vuelven un hilo de luz, y luego solo un recuerdo sobre el fondo negro.\n\nRespira hondo, y deja que todo se quede quieto. Buenas noches."
     }
   ],
-  "cold_open": "Bajo el hielo de dos lunas diminutas, a kilómetros de profundidad, el agua nunca se ha congelado.\n\nPensábamos que la vida necesitaba un sol cercano, una luz tibia sobre la piel de un planeta. Pero allá afuera, donde el Sol es apenas una estrella más, hay océanos ocultos que llevan mucho tiempo esperando.\n\n¿Puede nacer la vida en la oscuridad total?\n\nEn este viaje verás una de las superficies más lisas y jóvenes que conocemos. Sentirás una nave escuchar el pulso magnético de un mar escondido. Y verás cómo Encélado lanza chorros de agua hacia el espacio, justo donde una nave pasó, probó esas gotas y encontró sal, moléculas orgánicas e hidrógeno.\n\nSilencio.\n\nNo hay prisa. Todo lo que verás es real, y está contado con calma. Tú solo tienes que escuchar.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nEmpecemos por una noche sin luna.",
+  "cold_open": "Saturno parece sólido, pero sus anillos casi no tienen cuerpo. Se extienden por cientos de miles de kilómetros y, en la mayor parte de su extensión, miden apenas unas decenas de metros de espesor.\n\nPensábamos que algo tan grande tenía que ser pesado. Pero está hecho de miles de millones de trozos de hielo, girando despacio, uno junto a otro.\n\n¿Cómo puede algo tan fino sostenerse durante tanto tiempo?\n\nEsta noche te acercarás a su borde dorado. Cruzarás el vacío oscuro entre dos anillos. Verás cómo unas lunas pequeñas pastorean el hielo, y descubrirás que una de ellas guarda un océano escondido, que lanza chorros de agua hacia el espacio.\n\nNada de esto es invención. Es ciencia real, contada sin prisa, con imágenes que no necesitan explicación.\n\nTú solo tienes que escuchar.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nEmpecemos por esa luz pequeña y dorada.",
   "sources": [
     "Cassini-Huygens",
     "NASA",
-    "Galileo",
-    "Cassini-Huygens",
-    "Voyager 2",
-    "Europa Clipper",
     "ESA",
-    "Jupiter Icy Moons Explorer",
-    "Pioneer 10 and 11"
+    "Italian Space Agency"
   ],
   "review": {
-    "suggested": 14,
-    "applied": 14,
+    "suggested": 10,
+    "applied": 10,
     "fixes": [
       {
-        "section": "cold_open",
-        "find": "En este viaje verás la superficie más lisa y joven que conocemos.",
-        "replace": "En este viaje verás una de las superficies más lisas y jóvenes que conocemos.",
-        "reason": "overstated"
-      },
-      {
-        "section": "cold_open",
-        "find": "probó esas gotas y encontró los ingredientes químicos de la vida",
-        "replace": "probó esas gotas y encontró sal, moléculas orgánicas e hidrógeno",
-        "reason": "overstated certainty"
+        "section": "chapter_2",
+        "find": "Las astrónomos las fueron bautizando según iban apareciendo en los telescopios",
+        "replace": "Los astrónomos las fueron bautizando según iban apareciendo en los telescopios",
+        "reason": "concordancia"
       },
       {
         "section": "chapter_1",
-        "find": "a cientos de veces más frío que un día de invierno en tu ciudad",
-        "replace": "con un frío que ninguna ciudad conoce",
-        "reason": "wrong comparison"
+        "find": "Podrías meter dentro de él casi la distancia que separa la Tierra de la Luna.",
+        "replace": "Podrías alinear dentro de él buena parte de la distancia que separa la Tierra de la Luna.",
+        "reason": "cifra exagerada"
       },
       {
         "section": "chapter_1",
-        "find": "Hay más agua líquida en las lunas heladas del sistema solar exterior que en todos los océanos de la Tierra.",
-        "replace": "Quizá haya más agua líquida en las lunas heladas del sistema solar exterior que en todos los océanos de la Tierra.",
-        "reason": "overstated certainty"
+        "find": "Los anillos se extienden cientos de miles de kilómetros, pero en gran parte de su extensión su espesor es de apenas decenas de metros.",
+        "replace": "Esa es la verdadera proporción.",
+        "reason": "repetición"
+      },
+      {
+        "section": "chapter_1",
+        "find": "Y ese edificio estaría tendido a lo largo de una distancia que ninguna carretera de la Tierra podría recorrer en toda una vida.",
+        "replace": "Y ese edificio estaría tendido sobre una distancia mayor que cualquier carretera de la Tierra.",
+        "reason": "afirmación dudosa"
       },
       {
         "section": "chapter_2",
-        "find": "Europa es la tercera en tamaño de las cuatro, un poco más pequeña que nuestra Luna.",
-        "replace": "Europa es la más pequeña de las cuatro, un poco menor que nuestra Luna.",
-        "reason": "factual error"
-      },
-      {
-        "section": "chapter_3",
-        "find": "Su hielo no puede tener más de decenas de millones de años.",
-        "replace": "Su superficie tiene probablemente decenas de millones de años, no más.",
-        "reason": "overstated certainty"
+        "find": "Así se abrió el hueco.",
+        "replace": "Así se mantiene abierto el hueco.",
+        "reason": "certeza excesiva"
       },
       {
         "section": "chapter_4",
-        "find": "Bajo el hielo, Europa guarda una capa global de agua salada que conduce la electricidad.",
-        "replace": "Bajo el hielo, Europa probablemente guarda una capa global de agua salada que conduce la electricidad.",
-        "reason": "soften certainty"
+        "find": "Si pudieras cruzarla de lado a lado, tendrías que recorrer apenas la distancia entre dos ciudades vecinas, y aun así no sería mucho más que eso: unos quinientos kilómetros de diámetro.",
+        "replace": "Mide unos quinientos kilómetros de diámetro, más o menos lo que hay entre Madrid y Barcelona.",
+        "reason": "frase confusa"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Es un océano global, oculto bajo una corteza de varios kilómetros, en la oscuridad total.",
+        "replace": "Es un océano global, oculto bajo una corteza de hielo de entre unos pocos y unas dos decenas de kilómetros, en la oscuridad total.",
+        "reason": "dato impreciso"
       },
       {
         "section": "chapter_5",
-        "find": "Las grietas del polo sur de Encélado están calientes, y respiran vapor.",
-        "replace": "Las grietas del polo sur de Encélado están más tibias que el hielo vecino, y respiran vapor.",
-        "reason": "overstated"
+        "find": "Cada segundo cae una cantidad de material que llenaría una piscina olímpica en media hora.",
+        "replace": "Cada media hora, más o menos, cae material suficiente para llenar una piscina olímpica.",
+        "reason": "frase incorrecta"
       },
       {
-        "section": "chapter_6",
-        "find": "Encélado mide unos quinientos kilómetros de ancho. Podrías cruzarlo, de un extremo al otro, en el tiempo que dura un viaje largo en tren.",
-        "replace": "Encélado es una luna diminuta.",
-        "reason": "repetition"
+        "section": "chapter_5",
+        "find": "Los anillos se desvanecerán.",
+        "replace": "Los anillos podrían desvanecerse.",
+        "reason": "certeza excesiva"
       },
       {
-        "section": "chapter_6",
-        "find": "Un grano así solo se forma cuando el agua está muy caliente y toca roca.",
-        "replace": "Un grano así suele formarse cuando el agua está muy caliente y toca roca.",
-        "reason": "soften certainty"
-      },
-      {
-        "section": "chapter_7",
-        "find": "de apenas unas milésimas de milímetro",
-        "replace": "de apenas unas millonésimas de milímetro",
-        "reason": "wrong scale"
-      },
-      {
-        "section": "chapter_8",
-        "find": "la tirón se afloja",
-        "replace": "el tirón se afloja",
-        "reason": "grammar"
-      },
-      {
-        "section": "chapter_8",
-        "find": "Cien millones de años son más de mil mil veces una vida humana larga, puestas una tras otra.",
-        "replace": "Cien millones de años equivalen a un millón de vidas humanas largas, puestas una tras otra.",
-        "reason": "TTS clarity"
-      },
-      {
-        "section": "chapter_9",
-        "find": "Se llama JUICE. Llegará unos años antes,",
-        "replace": "Se llama Juice. Llegará poco después,",
-        "reason": "wrong arrival order, acronym"
+        "section": "chapter_5",
+        "find": "Quiere decir que tú has nacido en una época en que se pueden ver.",
+        "replace": "Eso significa que has nacido en una época en que se pueden ver.",
+        "reason": "coherencia"
       }
     ]
   },
-  "topic": "Europa y Encélado: océanos ocultos bajo el hielo y la búsqueda de vida",
-  "shorts": [
-    {
-      "title": "La superficie de Europa es más joven que los dinosaurios",
-      "hook": "Una luna con la cara recién pintada",
-      "narration": "Una luna de Júpiter tiene la superficie más joven que la desaparición de los dinosaurios. Se llama Europa, y casi no tiene cráteres. Compárala con la Luna que ves cada noche, marcada por millones de golpes durante miles de millones de años. Europa vive en el mismo vecindario de rocas y cometas, así que los golpes tienen que haber llegado. Pero alguien los borró. Los científicos contaron los cráteres y su superficie tiene probablemente decenas de millones de años, y los dinosaurios desaparecieron hace sesenta y seis millones. Es como encontrar una casa antiquísima con las paredes recién pintadas. La explicación son bloques de hielo del tamaño de ciudades, girados y desordenados como balsas rotas, que se movieron sobre algo líquido. Europa se renueva desde abajo, y se corrige a sí misma en silencio. Sígueme: cada semana, un viaje nuevo para dormir.",
-      "image_queries": [
-        "Europa moon surface Galileo",
-        "Europa moon chaotic terrain ice rafts",
-        "Europa moon red lines cracks",
-        "Europa Jupiter moon global view"
-      ],
-      "video_queries": [
-        "Europa moon surface animation",
-        "Europa Galileo spacecraft flyby"
-      ],
-      "source": "NASA / Galileo"
-    },
-    {
-      "title": "Una nave probó el agua de un océano oculto",
-      "hook": "Una nave atravesó un océano oculto",
-      "narration": "Una nave humana atravesó el aliento de un océano oculto y probó su agua. Ocurrió en Encélado, una luna de Saturno que mide unos quinientos kilómetros, lo que cabría bajo una sola mano sobre un mapa. Debía estar congelada y muerta, pero Cassini vio chorros de hielo saliendo de cuatro grietas en su polo sur, cientos de kilómetros hacia arriba. Era como el vapor de una respiración frente a un cristal frío. Cuando la nave voló a través de ellos, sus instrumentos contaron cada grano. Tenían sal, la misma de nuestros mares, además de moléculas con carbono e hidrógeno. Era agua líquida y salada congelada al salir al vacío. La probamos a más de mil millones de kilómetros de casa, bajo una cáscara de hielo. Sígueme: cada semana, un viaje nuevo para dormir.",
-      "image_queries": [
-        "Enceladus plumes Cassini",
-        "Enceladus south pole tiger stripes",
-        "Enceladus backlit geysers",
-        "Cassini spacecraft Saturn Enceladus"
-      ],
-      "video_queries": [
-        "Enceladus geysers Cassini",
-        "Cassini flythrough Enceladus plume"
-      ],
-      "source": "NASA / Cassini-Huygens"
-    },
-    {
-      "title": "Cómo un campo magnético delató un océano",
-      "hook": "Un susurro eléctrico reveló un mar",
-      "narration": "Nadie vio el océano de Europa, y aun así sabemos que probablemente existe. Lo reveló un susurro eléctrico. La nave Galileo llevaba un instrumento sencillo, una brújula muy paciente. Júpiter es un imán gigante que gira cada diez horas, y Europa queda barrida por su campo una y otra vez, como alguien de pie en la orilla mientras sube y baja la marea. Si la luna fuera solo hielo y roca, casi no habría respuesta. Pero Galileo midió un eco limpio, repetido en cada pasada, que cambiaba al ritmo exacto del campo de Júpiter. Solo el agua salada conduce así la electricidad. Bajo el hielo, Europa guarda probablemente un océano global, detectado a cientos de millones de kilómetros de casa sin una sola fotografía. Sígueme: cada semana, un viaje nuevo para dormir.",
-      "image_queries": [
-        "Galileo spacecraft Jupiter",
-        "Europa moon subsurface ocean illustration",
-        "Jupiter magnetic field Europa",
-        "Europa ice shell cutaway ocean"
-      ],
-      "video_queries": [
-        "Galileo spacecraft Jupiter animation",
-        "Europa ocean beneath ice animation"
-      ],
-      "source": "NASA / Galileo"
-    }
-  ]
+  "companion": {
+    "count": 2,
+    "minutes": [
+      6.1,
+      17.8
+    ],
+    "gift_minute": 17.8
+  },
+  "topic": "Un viaje lento entre los anillos de Saturno y sus lunas heladas",
+  "shorts": [],
+  "share_code": "un-1030m"
 }
