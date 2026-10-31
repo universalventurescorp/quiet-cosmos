@@ -1,0 +1,19 @@
+outputs/la-vida-de-las-estrellas-c-mo-nacen-brillan-y-se-apagan-3h/timing.json duración 2:41:45
+subscribe 0:00:57 
+companion 0:05:44 
+companion 0:16:13 
+gift 0:16:25 
+companion 0:26:04 
+companion 0:35:55 
+companion 0:46:34 
+companion 0:55:50 
+companion 1:05:41 
+companion 1:15:47 
+companion 1:25:51 
+companion 1:36:36 
+companion 1:46:40 
+companion 1:57:05 
+companion 2:06:25 
+companion 2:17:13 
+companion 2:27:47 
+companion 2:37:57 
