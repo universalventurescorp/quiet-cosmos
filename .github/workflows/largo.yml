@@ -1,11 +1,12 @@
 name: viaje-largo
 # Estrato Nocturno, 30-oct-2026: viajes de 3 h (lunes y jueves) y de toda la noche, 8 h (sábado).
+# 31-oct: se producen UN DÍA ANTES (dom, mié, vie) para que Luis lo revise y lo programe a las 08:00 del día de publicación.
 # GitHub corta cada trabajo a las 6 h, así que el viaje se hace por etapas (ver pipeline/longform.py):
 #   guion -> preparar (Kaggle: voz + escenas; sonido) -> pintar (varias máquinas a la vez) -> unir y subir.
 
 on:
   schedule:
-    - cron: "17 8 * * 1,4,6"   # 03:17 hora de Lima (de madrugada GitHub retrasa menos); el formato depende del día
+    - cron: "17 8 * * 0,3,5"   # 03:17 Lima del día ANTERIOR a la publicación (dom→lun, mié→jue, vie→sáb)
   workflow_dispatch:
     inputs:
       formato:
@@ -45,8 +46,8 @@ jobs:
           F="${{ inputs.formato }}"
           if [ -z "$F" ] || [ "$F" = "auto" ]; then
             case "$(TZ=America/Lima date +%u)" in
-              1|4) F=3h ;;
-              6)   F=8h; [ "$(TZ=America/Lima date +%Y%m%d)" -lt 20261107 ] && F=none ;;   # el primero: 7-nov
+              7|3) F=3h ;;   # domingo y miércoles: viaje de 3 h para el lunes y el jueves
+              5)   F=8h; [ "$(TZ=America/Lima date +%Y%m%d)" -lt 20261106 ] && F=none ;;   # viernes: 8 h para el sábado (el primero: vie 6-nov → sáb 7-nov)
               *)   F=none ;;
             esac
           fi
