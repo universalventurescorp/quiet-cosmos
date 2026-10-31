@@ -132,5 +132,51 @@
     "ai_scenes": 86,
     "ai_status": "ok",
     "date": "2026-10-29"
+  },
+  {
+    "topic": "La vida de las estrellas: cómo nacen, brillan y se apagan",
+    "title": "La Vida de las Estrellas | Documental Relajante para Dormir",
+    "chapters": [
+      "Nuestra estrella entre cientos de miles de millones",
+      "Antes de la primera luz",
+      "La nube fría y oscura",
+      "Los Pilares de la Creación",
+      "La guardería de Orión",
+      "El colapso",
+      "Discos y chorros",
+      "El encendido",
+      "Las que no llegaron a encenderse",
+      "Colores que cuentan edades",
+      "El equilibrio de la secuencia principal",
+      "Enanas rojas: la paciencia",
+      "Gigantes azules: vivir deprisa",
+      "Cúmulos: hermanas de la misma edad",
+      "Cefeidas: faros que laten",
+      "Estrellas gemelas",
+      "Manchas y tormentas",
+      "El día en que el Sol se hinche",
+      "Betelgeuse",
+      "Nebulosas planetarias",
+      "La enana blanca",
+      "La cebolla de elementos",
+      "Supernova",
+      "La Nebulosa del Cangrejo",
+      "Púlsares y magnetares",
+      "Kilonova: el origen del oro",
+      "Agujeros negros estelares",
+      "La última luz"
+    ],
+    "video_id": "lbmN4znWSk0",
+    "voice_test": null,
+    "shorts": [
+      "vFJj4t8d9TA",
+      "fhmVTbyLeoU",
+      "C8zWC7HRKU0"
+    ],
+    "minutes": 161.8,
+    "qa_ok": true,
+    "ai_scenes": 131,
+    "ai_status": "ok",
+    "date": "2026-10-31"
   }
 ]
