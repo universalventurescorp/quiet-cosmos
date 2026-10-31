@@ -31,7 +31,7 @@ def apply(cfg, name):
     v = cfg["video"]
     # the narration always comes out ~22-26 % shorter than the word budget (pauses are already in the wpm,
     # the chapters run short): 30 min asked -> 24 min, 60 -> 44. Ask for more so a 3 h journey really lasts 3 h.
-    stretch = lc.get("stretch", 1.3)
+    stretch = lc.get("stretch", 1.45)   # 31-oct: 3 h x1,3 dio 2 h 42 (ratio real 0,69)
     v["target_minutes"] = round(lc["minutes"] * stretch)
     v["chapters"] = lc.get("chapters") or max(5, round(lc["minutes"] / 6.5))
     ai = cfg.setdefault("ai", {})
