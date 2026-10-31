@@ -2,10 +2,8 @@ name: produce-episode
 run-name: ${{ (github.event_name == 'workflow_dispatch' && (inputs.sample || inputs.gpu_test || inputs.video_bench || inputs.voice_bench)) && 'produce-prueba' || 'produce-episode' }}
 
 on:
-  schedule:
-    # 30-oct-2026: Estrato Nocturno pasa a viajes largos (workflow largo.yml). Este cron diario de 46 min queda
-    # apagado; produce.yml sigue para muestras y pruebas manuales. (Quiet Cosmos: decidir antes del 16-nov.)
-    - cron: "17 12 31 2 *"    # nunca (31 de febrero)
+  # 31-oct-2026: sin horario. El cron "31 de febrero" que debía apagarlo seguía disparándose; los viajes largos
+  # de Estrato Nocturno van por largo.yml. Este flujo queda solo para muestras y pruebas a mano.
   workflow_dispatch:
     inputs:
       channel:
