@@ -232,8 +232,8 @@ def save_diagnostics(out, report=None, ai_media=None):
         "sample": os.environ.get("SAMPLE", "").lower() == "true",
         "sound_design": read_json(out / "sfx.json", None),
         "reveals": len(read_json(out / "timing.json", {}).get("reveals", [])),
-        "qr_moments": [f"{e['kind']} {int(e['start'] // 60)}:{int(e['start'] % 60):02d}"
-                       for e in read_json(out / "timing.json", {}).get("events", []) if e["kind"] in ("subscribe", "gift")],
+        "moments": [f"{e['kind']} {int(e['start'] // 60)}:{int(e['start'] % 60):02d}"
+                       for e in read_json(out / "timing.json", {}).get("events", [])],
     }
     write_json(DATA / "diagnostics" / "last_episode.json", diag)
     # the script itself, so the writing can be reviewed from the repo (Actions artifacts are not reachable)

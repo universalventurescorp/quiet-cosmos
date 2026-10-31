@@ -1,0 +1,31 @@
+name: tiempos
+# Lee los momentos de compañía, regalo y suscripción (timing.json) de un viaje ya producido y los deja en la rama diag.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Id de la corrida de viaje-largo"
+        required: true
+permissions:
+  contents: write
+  actions: read
+jobs:
+  tiempos:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { name: work-listo, run-id: "${{ inputs.run_id }}", github-token: "${{ github.token }}" }
+      - run: |
+          mkdir out
+          python3 - > out/tiempos.txt <<'PY'
+          import glob, json
+          for p in glob.glob("outputs/*/timing.json"):
+              t = json.load(open(p)); f = lambda s: f"{int(s // 3600)}:{int(s % 3600 // 60):02d}:{int(s % 60):02d}"
+              print(p, "duración", f(t["duration"]))
+              for e in t.get("events", []):
+                  print(e["kind"], f(e["start"]), (e.get("text") or "")[:160])
+          PY
+          cat out/tiempos.txt
+          cd out && git init -q && git checkout -q -b diag && git add . && \
+            git -c user.name=bot -c user.email=actions@users.noreply.github.com commit -qm tiempos && \
+            git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" diag
