@@ -1,484 +1,545 @@
 {
-  "title": "Titán: la luna de Saturno | Documental Relajante para Dormir",
-  "description": "Titán, la luna de Saturno con lagos de metano y una atmósfera densa, es el único mundo del Sistema Solar, además de la Tierra, con líquidos estables en su superficie. En este documental relajante para dormir, viajamos con calma desde la distancia de Saturno hasta las orillas de sus mares, descendiendo a través de una niebla anaranjada hasta posarnos donde la lluvia cae despacio.\n\nTodo lo que escucharás se apoya en datos reales de las misiones Cassini y Huygens y en observaciones recientes. Cuando algo sigue siendo una pregunta abierta, lo diremos con claridad. Ponte cómodo, baja la luz y deja que la voz te acompañe hasta el final del viaje.",
+  "title": "Titán: lagos de metano y atmósfera densa | Documental para Dormir",
+  "description": "Titán, la luna de Saturno con lagos de metano y una atmósfera más densa que la de la Tierra, es el único mundo del Sistema Solar, además del nuestro, con líquidos estables en su superficie. Este documental relajante te lleva en una hora desde la órbita de Saturno hasta las dunas, los ríos y los mares de un lugar extraño y extrañamente familiar.\n\nViajaremos con la sonda Huygens a través de la bruma anaranjada, caminaremos por orillas de hidrocarburos, escucharemos cómo llueve despacio bajo una gravedad suave y terminaremos mirando hacia el futuro, con la misión Dragonfly. Es un viaje tranquilo, con ciencia real y preguntas abiertas, para aprender algo y dejarse llevar hasta el sueño.",
   "tags": [
     "Titán luna de Saturno",
-    "documental Titán",
+    "documental de Titán",
     "lagos de metano Titán",
     "atmósfera de Titán",
-    "Titán documental para dormir",
-    "documental espacio relajante",
-    "Cassini Huygens",
-    "Huygens aterrizaje en Titán",
-    "vida en Titán",
+    "documental espacio para dormir",
+    "documental relajante espacio",
+    "Huygens Titán",
+    "Cassini Titán",
     "Dragonfly Titán",
-    "Saturno lunas",
-    "documental espacio en español",
-    "viaje por el sistema solar",
+    "lunas de Saturno",
     "Kraken Mare",
-    "mundos con lluvia de metano",
-    "documental relajante para dormir"
+    "vida en Titán",
+    "química prebiótica Titán",
+    "documental astronomía español",
+    "sistema solar para dormir",
+    "lluvia de metano",
+    "dunas de Titán",
+    "viaje por el espacio relajante"
   ],
   "thumbnail_texts": [
-    "LLUEVE METANO",
+    "LLUVIA DE ETANO",
     "UN MAR NARANJA",
-    "OTRA TIERRA FRÍA"
+    "DONDE LLUEVE LENTO"
   ],
-  "hook_promise": "Existe un mundo helado donde llueve, corren ríos y se extienden mares bajo un cielo anaranjado, pero el líquido que moldea su paisaje no es agua, sino gas natural en estado líquido.",
+  "hook_promise": "Existe un mundo helado donde llueve, corren ríos y se extienden mares bajo una niebla naranja, pero el líquido no es agua sino metano, y la sonda Huygens llegó a posarse sobre su orilla.",
   "chapters": [
     {
       "title": "Una luna envuelta en niebla",
       "question": "¿Por qué durante siglos nadie pudo ver la superficie de esta luna?",
-      "reveal": "Titán es la única luna del Sistema Solar con una atmósfera más densa que la de la Tierra, y la presión en su suelo es cerca de una vez y media la nuestra.",
+      "reveal": "Titán es la única luna del Sistema Solar con una atmósfera tan densa que su presión en superficie supera en alrededor de un 50 % a la de la Tierra.",
       "beats": [
-        "Titán orbita Saturno a lo lejos, y es más grande que el planeta Mercurio, aunque menos masiva",
-        "Christiaan Huygens la descubre en 1655 como un punto de luz junto a Saturno",
+        "Saturno visto desde la órbita, con Titán como un punto anaranjado entre sus lunas",
+        "Christiaan Huygens la descubre en 1655 como un simple punto de luz",
         "En 1944 Gerard Kuiper detecta metano en su atmósfera con un espectrógrafo",
-        "Las sondas Voyager de 1980 solo encuentran una bruma anaranjada y opaca",
-        "La presión en la superficie es cerca de 1,5 veces la terrestre",
-        "Una luna pequeña con aire tan espeso se convierte en un enigma"
+        "Las sondas Voyager de 1980 solo encuentran una bruma opaca y uniforme",
+        "Por qué es la segunda luna más grande del Sistema Solar, mayor que Mercurio en tamaño pero no en masa",
+        "Una atmósfera mayoritariamente de nitrógeno, como la nuestra, pero a temperaturas cercanas a -180 °C"
       ],
-      "ambience": "sun",
+      "ambience": "deep_space",
       "image_queries": [
         "Titan Cassini",
-        "Titan hazy atmosphere Cassini",
+        "Titan atmosphere haze Cassini",
         "Titan and Saturn Cassini",
-        "Titan natural color Cassini",
+        "Titan crescent Cassini",
+        "Titan orange haze",
         "Titan Voyager 1",
-        "Titan crescent backlit Cassini",
         "Titan detached haze layer",
-        "Titan and Dione Cassini",
-        "Titan orbit Saturn rings",
-        "Titan south pole vortex"
+        "Titan and Rhea Cassini",
+        "Titan Saturn rings backlit",
+        "Titan global view Cassini"
       ],
       "video_queries": [
         "Titan rotation animation Cassini",
-        "Saturn system flyover Cassini",
-        "Titan global map animation"
+        "Saturn system flyover animation Cassini",
+        "Titan atmosphere visualization"
       ],
-      "text": "Hay una luna que no se parece a ninguna otra. Si pudieras acercarte a ella en una nave, no verías montañas ni cráteres. Verías una esfera de color naranja apagado, lisa, como una naranja envuelta en gasa. Durante siglos, los astrónomos la miraron con los mejores telescopios que tenían, y ninguno pudo decir qué había debajo. ¿Por qué nadie podía ver la superficie de esta luna?\n\nSe llama Titán, y gira alrededor de Saturno, muy lejos de nosotros. Desde ahí, el Sol es apenas una estrella intensa, noventa veces más débil que en la Tierra. Su tamaño sorprende. Titán es más grande que el planeta Mercurio, un poco más ancho, aunque tiene menos masa. Es un mundo grande pero ligero, hecho de hielo y roca, y no de metal denso.\n\nDurante mucho tiempo, nadie supo nada de eso. En el año mil seiscientos cincuenta y cinco, un joven holandés llamado Christiaan Huygens montó un telescopio largo y delgado, que había construido con su hermano. Apuntó hacia Saturno, y junto al planeta vio un punto de luz muy pequeño. Noche tras noche, el punto cambiaba de lugar, pero nunca se alejaba. Huygens entendió lo que era.\n\nEra una luna. La primera que se descubría alrededor de Saturno.\n\nPero un punto de luz no dice mucho. Durante casi tres siglos, Titán fue eso: un puntito junto a un planeta famoso, con una órbita que se podía medir y poco más. Los telescopios mejoraron, y aun así el disco de la luna seguía sin mostrar detalles. Algunos astrónomos sospechaban que algo la cubría. Nadie lo había comprobado.\n\nLa primera pista seria llegó en mil novecientos cuarenta y cuatro. Un astrónomo llamado Gerard Kuiper decidió analizar la luz de Titán con un espectrógrafo. Es un instrumento que separa la luz en sus colores, como hace un prisma con la luz del Sol. Cada gas deja una huella en esos colores, una serie de líneas oscuras que sirven como firma.\n\nKuiper encontró la firma del metano.\n\nMetano, en una luna. Hasta entonces, nadie había confirmado que una luna del Sistema Solar tuviera una atmósfera de verdad. Ahora Titán tenía una, y era distinta de lo que se esperaba. Pero la medición no decía qué tan gruesa era, ni qué había debajo. Eso tendría que esperar a que alguien se acercara.\n\nEse alguien fue una sonda. En mil novecientos ochenta, la Voyager uno pasó por el sistema de Saturno, y los ingenieros decidieron desviarla para sobrevolar Titán de cerca. Se esperaba mucho de esa imagen. Cuando llegaron las fotografías, no mostraban nada. Ni una montaña, ni una grieta, ni una mancha oscura que pudiera ser un mar. Solo una bruma anaranjada, pareja y opaca, que ocultaba todo lo demás.\n\nEs difícil exagerar esa decepción. La nave había viajado más de tres años para llegar hasta allí. Y lo que fotografió se parecía a una pelota de ping pong teñida de naranja.\n\nSin embargo, la Voyager sí trajo un dato valioso. Cuando la nave pasó por detrás de la luna, sus señales de radio atravesaron la atmósfera antes de perderse. Los científicos midieron cuánto se debilitaban esas señales, y de ahí calcularon la presión del aire en el suelo. Hicieron la cuenta una vez, y luego otra.\n\nLa presión en la superficie de Titán es cerca de una vez y media la que sentimos en la Tierra.\n\nPiensa en lo que eso significa. Si caminaras por allí, no necesitarías un traje inflado para que no te hinchara el vacío. Sentirías sobre el cuerpo un peso del aire parecido al que sientes en el fondo de una piscina poco profunda. Titán es la única luna del Sistema Solar con una atmósfera más densa que la de la Tierra.\n\nY eso es lo extraño. Una luna pequeña, con una gravedad débil, debería haber perdido su aire hace mucho tiempo, como lo perdieron otras. Titán lo conservó, y lo conservó en abundancia. Está tan lejos del Sol que el frío ayuda: el gas frío se mueve despacio y escapa con dificultad. Aun así, la cantidad sigue pareciendo demasiada.\n\nAsí que la bruma ya no era solo un estorbo para las cámaras. Se había vuelto el centro del enigma. ¿De qué estaba hecha esa niebla naranja? ¿Y qué ocurría dentro de ella, en un aire tan espeso, tan frío y tan lejano?"
+      "text": "Desde la órbita de Saturno, lo primero que llama la atención son los anillos: una pieza delgada y clara que corta la oscuridad. Pero si dejas que tus ojos se acostumbren, aparecen otros puntos de luz, muy cerca del planeta. Son sus lunas. Una de ellas es distinta, porque su color es un naranja apagado, como una brasa lejana.\n\nEsa brasa es Titán. Y durante siglos fue un misterio sencillo de plantear. Era claramente un mundo, tenía forma, tenía tamaño, brillaba con luz reflejada. ¿Por qué nadie pudo ver nunca su superficie?\n\nLa primera persona que la vio fue Christiaan Huygens, en mil seiscientos cincuenta y cinco. Era un astrónomo holandés, paciente, con un telescopio hecho por él mismo y su hermano. Una noche de marzo notó un punto débil que acompañaba a Saturno, y que cambiaba de lugar de una noche a otra. Siguió observándolo, y comprendió que giraba alrededor del planeta, en unos dieciséis días.\n\nAquel punto era todo lo que Huygens tenía. No distinguía montañas ni mares. Solo una chispa que se movía despacio, como una luciérnaga atada a un hilo invisible.\n\nPasaron casi tres siglos. Los telescopios mejoraron, pero Titán seguía siendo un punto, y nadie podía decir de qué estaba hecho. Entonces, en mil novecientos cuarenta y cuatro, el astrónomo Gerard Kuiper hizo algo distinto. En lugar de mirar la luna, analizó su luz con un espectrógrafo, un instrumento que separa la luz en sus colores, igual que una gota de lluvia hace con el arcoíris.\n\nEn esos colores había huecos finos, como marcas hechas con lápiz. Cada marca delataba una sustancia que absorbía la luz. Kuiper reconoció una: el metano. Era un gas, y eso significaba que Titán tenía atmósfera.\n\nY hasta entonces, nadie había encontrado una atmósfera en ninguna luna.\n\nEso explicaba, en parte, por qué el disco de Titán parecía tan borroso. Pero quedaba una esperanza. Quizá una nave que pasara muy cerca podría ver a través de ese aire. En mil novecientos ochenta, las sondas Voyager llegaron a Saturno, y la primera de ellas se acercó a Titán más que ningún instrumento humano antes.\n\nLas imágenes llegaron a la Tierra, y los científicos las miraron en silencio. No había nada que mirar. Una esfera lisa, de un naranja casi uniforme, sin una sola grieta ni un cráter. La bruma era tan espesa que ocultaba todo lo que había debajo, como una manta puesta sobre una lámpara.\n\nAun así, la nave midió otras cosas. Y esas medidas sí revelaron algo.\n\nPara entender lo que significaban, conviene ver primero el tamaño de esta luna. Titán mide unos cinco mil kilómetros de diámetro, algo más que la distancia entre Ciudad de México y Bogotá. Es la segunda luna más grande del Sistema Solar, después de Ganímedes, una de las lunas de Júpiter. Es incluso más ancha que Mercurio. Pero Mercurio es mucho más pesado, porque está hecho de roca y metal, mientras que Titán es mitad hielo, mitad roca, y por eso pesa bastante menos.\n\nCon una gravedad tan baja, cabría esperar poco aire a su alrededor. Una luna más pequeña, como la nuestra, no conserva ninguno. Pero las Voyager midieron lo contrario.\n\nSu atmósfera está formada sobre todo por nitrógeno, cerca de noventa y cinco por ciento. Es el mismo gas que domina el aire que respiras ahora, aunque aquí lo acompaña el oxígeno, y allá lo acompaña el metano. Y hace un frío tremendo: unos ciento ochenta grados bajo cero. A esa temperatura, el aire no se siente como aire. Se sentiría como una pared helada.\n\nLo que las sondas midieron, además, fue la presión en la superficie.\n\nTitán es la única luna del Sistema Solar con una atmósfera tan densa que, en el suelo, la presión es cerca de un cincuenta por ciento mayor que la de la Tierra.\n\nPiensa en lo que eso significa. Si pudieras pararte allí, con un traje abrigado, no necesitarías un traje presurizado como el de la Luna. Sentirías una presión parecida a la que sientes a unos cinco metros bajo el agua de una piscina, y nada más. Tampoco habría cielo oscuro con estrellas, sino un techo naranja, espeso y quieto.\n\nEntonces, si la bruma era tan densa, ¿de dónde venía? ¿Y qué la mantenía allí, flotando, sin dejar de formarse?"
     },
     {
-      "title": "Cómo es el aire de Titán",
-      "question": "¿De qué está hecho un cielo tan espeso y por qué es naranja?",
-      "reveal": "La luz del Sol sobre el metano fabrica en lo alto de la atmósfera moléculas orgánicas complejas que caen lentamente como una lluvia de partículas.",
+      "title": "Capas de bruma naranja",
+      "question": "¿De dónde sale el color anaranjado de esta atmósfera?",
+      "reveal": "La luz ultravioleta del Sol y las partículas de la magnetosfera de Saturno rompen el metano y el nitrógeno en las capas altas, y los fragmentos se reúnen en moléculas orgánicas complejas que forman la bruma.",
       "beats": [
-        "La atmósfera es casi toda nitrógeno, como la nuestra, con un pequeño porcentaje de metano",
-        "La luz ultravioleta rompe el metano en las capas altas",
-        "Los fragmentos se recombinan y forman moléculas orgánicas más grandes llamadas tolinas",
-        "Las partículas crean la bruma naranja que lo oculta todo",
-        "Capas de bruma separadas flotan a gran altura sobre el disco de la luna",
-        "Esas partículas descienden durante millones de años hacia el suelo",
-        "Aquí la química orgánica ocurre sin vida, y eso la hace valiosa para entender el origen de la vida"
+        "Qué es la fotoquímica: la luz como herramienta que parte y une moléculas",
+        "Las capas altas, donde nacen los primeros compuestos con carbono y nitrógeno",
+        "Las partículas de bruma crecen despacio mientras descienden",
+        "La capa de bruma separada que se ve en las imágenes de Cassini",
+        "Descubrimiento de moléculas muy complejas en la atmósfera alta por instrumentos de Cassini",
+        "Cómo esta química recuerda a lo que pudo existir en la Tierra primitiva, aún en debate"
       ],
       "ambience": "deep_space",
       "image_queries": [
         "Titan haze layers Cassini",
-        "Titan detached haze",
-        "Titan atmosphere limb Cassini",
-        "Titan orange haze",
-        "Titan blue haze ultraviolet Cassini",
-        "Titan north pole haze",
-        "Titan atmosphere Saturn backlit",
-        "Titan Cassini flyby atmosphere",
-        "Titan haze vortex winter",
-        "Titan globe Cassini mosaic"
+        "Titan blue haze limb",
+        "Titan atmosphere ultraviolet",
+        "Titan north polar vortex",
+        "Titan sunset haze",
+        "Titan from Saturn orbit",
+        "Titan atmosphere layers",
+        "Titan south pole vortex Cassini",
+        "Titan false color atmosphere",
+        "Titan Cassini haze detail"
       ],
       "video_queries": [
-        "Titan atmosphere visualization",
-        "Cassini Titan flyby animation",
-        "Titan haze layers animation"
+        "Titan atmosphere animation",
+        "Titan haze chemistry visualization",
+        "Cassini Titan flyby animation"
       ],
-      "text": "Si pudieras bajar a la superficie de Titán, lo primero que notarías no sería el frío. Sería el cielo. Un techo anaranjado, uniforme, sin sol visible, sin una sola estrella. La luz llegaría tenue, como la de una tarde de invierno muy avanzada.\n\nY sin embargo, allí arriba hay aire. Mucho aire. Más espeso que el que respiras ahora mismo. ¿De qué está hecho un cielo así? ¿Y por qué es naranja?\n\nSigo aquí contigo. Mientras miras ese cielo naranja, respira hondo una vez y suelta el aire despacio; tus pensamientos pueden esperar hasta mañana.\n\nEmpecemos por lo más sencillo. La atmósfera de Titán es casi toda nitrógeno, igual que la nuestra. Cerca de ocho de cada diez moléculas que respiramos en la Tierra son de ese mismo gas. En Titán el porcentaje es todavía mayor, de unos noventa y cinco de cada cien. El resto es sobre todo metano, un pequeño porcentaje, apenas un susurro mezclado con el nitrógeno.\n\nEse susurro lo cambia todo. El metano es una molécula sencilla, un átomo de carbono rodeado de cuatro de hidrógeno. En la Tierra lo conocemos como el gas de las cocinas. En Titán, flota a gran altura, justo donde llega la luz del Sol.\n\nY esa luz no es inofensiva. Una parte de ella es ultravioleta, una luz que tus ojos no ven, pero que tiene la energía suficiente para romper moléculas. Cuando un rayo ultravioleta golpea una molécula de metano en las capas altas, la parte en pedazos. Quedan fragmentos sueltos, inestables, buscando con quién unirse.\n\nSe unen. Chocan con otros fragmentos, con moléculas de nitrógeno, con restos de otras roturas. Poco a poco, se forman cadenas de carbono, anillos, estructuras cada vez más grandes. Los científicos las llaman tolinas, una palabra que viene del griego y significa algo parecido a lodo. Son moléculas orgánicas complejas, y no tienen un color blanco ni gris.\n\nSon de un tono entre amarillo y marrón rojizo.\n\nAhí está la respuesta a la mitad de nuestro enigma. Esas partículas diminutas, miles de millones de ellas, absorben la luz azul y dejan pasar la luz más rojiza. Por eso la bruma de Titán se ve naranja. Es el color de la química que ocurre allá arriba, sin que nadie la mire.\n\nLas sondas Voyager solo vieron una bola lisa y opaca. Pero cuando Cassini se acercó, y observó la luna a contraluz, apareció algo que nadie esperaba. La bruma no era una sola capa. Eran varias, separadas entre sí, flotando a gran altura sobre el borde de la luna. Una de ellas queda a unos quinientos kilómetros sobre el suelo, la distancia aproximada entre Madrid y Barcelona, pero hacia arriba. Desde fuera parecen finos velos naranjas, uno sobre otro, como el humo quieto de una habitación sin corrientes.\n\nNadie sabe del todo por qué se separan en capas tan nítidas. Es una pregunta que sigue abierta.\n\nLo que sí se sabe es lo que ocurre después. Las partículas crecen, se vuelven más pesadas y empiezan a caer. Pero caen despacio. Muy despacio. En un aire tan espeso y con tan poca gravedad, cada grano tarda siglos en llegar al suelo. Piensa en eso un momento. Una partícula que hoy se forma en lo alto seguirá cayendo cuando tú y yo ya no estemos.\n\nAsí que esto es lo que ocurre sobre Titán, ahora mismo, mientras lo imaginas.\n\nLa luz del Sol fabrica moléculas orgánicas en lo alto del cielo, y las deja caer como una lluvia lentísima de polvo.\n\nEsas moléculas son parientes lejanas de las que forman todo lo vivo en la Tierra. Y aquí se producen sin que haya vida, sin células, sin nadie que las necesite. Es química orgánica en estado puro, funcionando sola, durante tiempos que no sabemos medir.\n\nPor eso a los científicos les importa tanto. En la Tierra es casi imposible ver cómo empezó todo, porque la vida lo borró y lo reescribió todo mil veces. En Titán, el laboratorio sigue encendido. Quizá allí podamos leer cómo se escribe el primer párrafo.\n\nPero toda esa lluvia lenta tiene que ir a parar a alguna parte. Si cae durante millones de años, sobre un suelo helado, ¿qué se va acumulando abajo? Para saberlo, alguien tuvo que atreverse a atravesar la niebla.",
+      "text": "En lo alto de la atmósfera de Titán, a unos mil kilómetros sobre la superficie, el cielo no es azul ni negro. Es naranja. Un naranja suave, como el de una lámpara vista a través de una cortina de papel.\n\nPiensa en eso un momento. Nuestro cielo es azul porque el aire dispersa la luz. Allá el aire es casi el mismo, nitrógeno en su mayor parte, y sin embargo el color es otro. ¿De dónde sale ese naranja?\n\nSigo aquí contigo. Mientras ese cielo naranja se queda quieto en la pantalla, suelta el aire despacio y deja que tu frente se relaje un poco.\n\nLa respuesta empieza con una idea sencilla. La luz no solo ilumina. También trabaja. Cuando un rayo de luz ultravioleta golpea una molécula, puede partirla, igual que un golpe seco parte una ramita. Y los pedazos, sueltos y ansiosos, buscan con quién unirse. A eso se le llama fotoquímica: la luz usada como tijera y como pegamento.\n\nEn la Tierra la conoces bien, aunque no le pongas nombre. Es lo que ocurre en una hoja al sol. Es lo que oscurece la piel en verano.\n\nEn Titán, esa luz llega muy debilitada, porque Saturno está lejos, casi diez veces más lejos del Sol que nosotros. Pero en las capas más altas no hay nada que la detenga. Allí el ultravioleta cae casi intacto sobre el metano y el nitrógeno. Y no está solo. Desde arriba también llegan partículas cargadas, atrapadas en el campo magnético de Saturno, que chocan contra el aire como granizo invisible.\n\nEntre los dos, rompen las moléculas. El metano suelta su carbono. El nitrógeno se separa en átomos. Y los fragmentos empiezan a combinarse en cosas nuevas: los primeros compuestos que tienen a la vez carbono y nitrógeno, pequeños y sencillos.\n\nEsos compuestos no se quedan quietos. Se pegan unos a otros y forman cadenas. Las cadenas se enredan en anillos. Los anillos se agrupan en partículas diminutas, tan finas que miles de ellas cabrían en el grosor de un cabello.\n\nY entonces empiezan a caer. Pero caen despacio, con una lentitud casi desconcertante. Una partícula tarda años en bajar por esa atmósfera densa, y mientras desciende sigue creciendo, atrapando más fragmentos, como un copo que se carga de nieve. Si pudieras seguir una sola, verías cómo pasa de ser polvo casi invisible a ser un grano oscuro, anaranjado, parte de la bruma.\n\nEsa bruma tiene un detalle curioso. Las imágenes de Cassini mostraron, muy arriba, una capa separada del resto. Una franja azulada, delgada, flotando como un halo a unos quinientos kilómetros de altura, separada de la bruma principal. Entre ambas hay un espacio casi limpio. Los científicos todavía discuten por qué existe, y qué patrones de viento la mantienen tan ordenada alrededor de toda la luna.\n\nAun así, lo más sorprendente no se vio en ninguna fotografía.\n\nLos instrumentos de Cassini no solo miraron la bruma. Pasaron a través de sus capas más altas y probaron el aire, molécula por molécula. Esperaban compuestos pequeños. Encontraron otra cosa: iones enormes, miles de veces más pesados que un átomo de hidrógeno, y moléculas orgánicas de una complejidad que nadie había previsto tan arriba.\n\nAllí, donde el aire es casi vacío, la química ya había avanzado mucho.\n\nAhí está la respuesta. La luz ultravioleta del Sol y las partículas de la magnetosfera de Saturno rompen el metano y el nitrógeno en lo alto, y los fragmentos se reúnen en moléculas orgánicas complejas. Esas moléculas forman la bruma. Y la bruma es el naranja.\n\nEs un color hecho de química lenta, que se fabrica sin descanso desde mucho antes de que alguien lo mirara.\n\nY quizá te preguntes si todo esto te suena de algo. A varios científicos les ocurrió. La Tierra primitiva, hace unos cuatro mil millones de años, también pudo tener un aire pobre en oxígeno, con metano y nitrógeno, bañado por una luz sin filtro. Si algo parecido a esta bruma se formó entonces, pudo ser una de las fuentes de ingredientes para la vida. Pero es una idea en debate, y nadie sabe aún cuánto se parecían de verdad los dos mundos.\n\nLo que sí sabemos es que esa bruma tiene un destino. Sigue cayendo, grano a grano, hacia un suelo que ningún ojo humano ha visto. Y mientras Cassini la atravesaba por arriba, ya había quien pensaba en cómo cruzarla hasta el fondo.",
       "companion": [
-        "Sigo aquí contigo. Mientras miras ese cielo naranja, respira hondo una vez y suelta el aire despacio; tus pensamientos pueden esperar hasta mañana."
+        "Sigo aquí contigo. Mientras ese cielo naranja se queda quieto en la pantalla, suelta el aire despacio y deja que tu frente se relaje un poco."
       ]
     },
     {
-      "title": "La misión que cruzó la niebla",
-      "question": "¿Cómo se atreve una nave a atravesar un cielo que nadie conocía?",
-      "reveal": "En 2005 la sonda Huygens se posó sobre Titán y transmitió durante unos 90 minutos desde su superficie, el aterrizaje más lejano jamás logrado en el Sistema Solar.",
+      "title": "Cassini abre una ventana",
+      "question": "¿Cómo se puede ver a través de una niebla que la luz visible no atraviesa?",
+      "reveal": "Cassini usó radar e infrarrojo para ver a través de la bruma y reveló dunas, montañas, cauces y mares sobre una superficie de hielo.",
       "beats": [
-        "Cassini y Huygens viajan juntas hacia Saturno desde 1997 y llegan en 2004",
-        "Huygens se separa de Cassini el día de Navidad de 2004",
-        "Entra en la atmósfera en enero de 2005 y se frena con escudo térmico y paracaídas",
-        "Durante el descenso fotografía costas y canales que parecen cauces secos",
-        "Se posa sobre un suelo blando, con guijarros redondeados de hielo",
-        "Transmite desde el suelo cerca de una hora y media, y Cassini retransmite los datos",
-        "Nadie esperaba tanta información de una nave pensada para unas pocas horas"
+        "La travesía de Cassini y Huygens de siete años hasta Saturno",
+        "Por qué ciertas longitudes de onda infrarrojas atraviesan la bruma",
+        "El radar de Cassini dibuja la superficie en franjas durante cientos de sobrevuelos",
+        "Las primeras imágenes de terrenos brillantes y oscuros",
+        "Las regiones oscuras resultan ser campos de dunas y los lagos se descubren cerca de los polos",
+        "Un mapa casi completo de un mundo que antes era un punto de luz"
       ],
       "ambience": "none",
       "image_queries": [
-        "Huygens probe descent Titan",
+        "Titan radar Cassini",
+        "Titan surface infrared Cassini",
+        "Titan map Cassini VIMS",
+        "Titan dunes radar",
+        "Titan Xanadu region",
+        "Titan mountains radar",
+        "Titan Cassini flyby",
+        "Cassini spacecraft Saturn orbit",
+        "Titan bright and dark terrain",
+        "Titan surface mosaic Cassini"
+      ],
+      "video_queries": [
+        "Cassini mission animation Saturn",
+        "Titan radar mapping visualization",
+        "Cassini Titan flyby"
+      ],
+      "text": "En dos mil cuatro, una nave del tamaño de un autobús pequeño llegó a Saturno después de siete años de viaje. Se llamaba Cassini, y llevaba pegada a su costado una sonda más chica, Huygens, como un pasajero dormido. Siete años son muchos: es el tiempo que separa el primer día de escuela del cuarto o quinto grado. Durante todo ese tiempo, la nave cruzó el vacío en silencio, tomando impulso de Venus, de la Tierra y de Júpiter, como quien se columpia de rama en rama.\n\nY al llegar, enfrentó un problema que todos conocían de antemano. Titán estaba ahí, al alcance de sus instrumentos, y no se dejaba mirar. Las cámaras comunes solo veían una bola de niebla anaranjada, lisa como una naranja sin marcas.\n\n¿Cómo se puede ver a través de una niebla que la luz visible no atraviesa?\n\nLa primera pista está en la propia luz. La luz que ven tus ojos es solo una franja pequeña de un abanico enorme. Las partículas de bruma son diminutas, y tienen un efecto curioso: detienen con facilidad las ondas cortas, como el azul, y dejan pasar mejor las largas. Por eso la luz visible rebota arriba y no baja.\n\nPero existen unas pocas ventanas en el infrarrojo, longitudes de onda un poco más largas que el rojo, que el metano de la atmósfera apenas absorbe. Por esas ventanas, una parte de la luz del suelo logra escapar hacia el espacio. Es una luz débil y borrosa, pero está ahí. Los instrumentos de Cassini fueron construidos para escuchar justo esas rendijas.\n\nLa segunda herramienta era más audaz. Cassini llevaba un radar, que no espera luz del exterior: envía su propio pulso de ondas de radio y mide cuánto tarda en volver. La bruma es casi transparente para esas ondas. Pasan de largo, tocan el suelo y regresan con la forma de lo que encontraron.\n\nCon eso, la nave empezó a dibujar. No podía tomar una fotografía entera de golpe. En cada sobrevuelo, pasaba muy cerca de Titán y barría una franja larga y angosta, como quien pinta una pared con un rodillo estrecho. Después volvía, y pintaba otra franja al lado. Fueron más de cien sobrevuelos a lo largo de trece años.\n\nPoco a poco, la niebla dejó de ser un muro.\n\nLas primeras imágenes mostraron manchas claras y manchas oscuras, repartidas sin un orden evidente. Había regiones brillantes, que reflejaban mucho, y otras tan oscuras que parecían tinta derramada. Durante un tiempo nadie supo qué eran. Podían ser costas, podían ser océanos, podían ser cráteres rellenos.\n\nDespués llegaron más franjas, y el detalle se aclaró. Las zonas oscuras de la región ecuatorial no eran mares. Eran campos de dunas, largas líneas paralelas de granos oscuros que se extendían por cientos de kilómetros. Un desierto, en una luna donde nadie esperaba arena.\n\nLos lagos aparecieron en otro lugar, y más tarde. Estaban cerca de los polos, sobre todo en el norte, como charcos oscuros al radar, porque una superficie líquida y lisa refleja muy poco las ondas hacia atrás. Entre las dunas y los lagos, también se vieron montañas, cauces ramificados y llanuras. Todo ello sobre una base de hielo de agua, duro como roca a esa temperatura.\n\nPiensa en lo que pasó. Un mundo que Huygens había visto en mil seiscientos cincuenta y cinco como un punto de luz, y que las Voyager encontraron cubierto de bruma, tenía ahora un mapa. No uno perfecto, pero sí con costas, desiertos y relieve.\n\nCassini no atravesó la niebla a la fuerza. Aprendió qué clase de luz la esquiva, y se quedó escuchando ahí.\n\nQuedaba, sin embargo, una diferencia entre ver un lugar desde arriba y pisarlo. Un radar puede decirte que algo es liso, oscuro o áspero. No puede decirte cómo se siente el suelo bajo un pie, ni qué hay en el fondo de la niebla. Para eso hacía falta soltar al pasajero dormido."
+    },
+    {
+      "title": "Descenso de Huygens",
+      "question": "¿Qué se siente al caer a través de una atmósfera que nadie había visitado?",
+      "reveal": "El 14 de enero de 2005 la sonda Huygens aterrizó en Titán y envió imágenes de una orilla con guijarros de hielo redondeados por un antiguo flujo líquido.",
+      "beats": [
+        "La separación de Huygens de Cassini y el viaje de 20 días",
+        "La entrada en la atmósfera a gran velocidad y la apertura de paracaídas",
+        "Cómo se fue aclarando la niebla durante unas dos horas y media de descenso",
+        "Las primeras imágenes de redes de canales y una línea de costa",
+        "El aterrizaje sobre un suelo blando, con una textura parecida a arena húmeda",
+        "Los guijarros redondeados y qué dicen de ríos antiguos",
+        "Huygens siguió transmitiendo unos 70 minutos desde la superficie"
+      ],
+      "ambience": "wind",
+      "image_queries": [
+        "Huygens probe Titan",
         "Huygens landing site Titan",
-        "Huygens surface image Titan",
+        "Huygens descent image Titan",
+        "Huygens surface Titan pebbles",
+        "Titan channels Huygens",
+        "Titan coastline Huygens",
         "Huygens parachute artist concept",
-        "Cassini Huygens spacecraft Saturn",
-        "Titan drainage channels Huygens",
-        "Titan pebbles Huygens surface",
-        "Huygens descent mosaic Titan",
-        "Cassini orbiter Titan flyby",
-        "Titan bright dark terrain Huygens"
+        "Cassini Huygens separation",
+        "Titan drainage channels",
+        "Huygens mosaic Titan"
       ],
       "video_queries": [
         "Huygens descent Titan animation",
-        "Huygens probe descent video",
-        "Cassini mission Saturn animation"
+        "Huygens probe landing visualization",
+        "Titan surface descent mosaic video"
       ],
-      "text": "Cassini viajaba por el espacio con una pasajera pegada al costado. Era una pequeña nave con forma de plato, del tamaño de un auto compacto. Se llamaba Huygens, en honor al hombre que había descubierto Titán casi tres siglos y medio antes.\n\nLas dos salieron de la Tierra juntas en mil novecientos noventa y siete. Tardaron siete años en llegar a Saturno, y en todo ese tiempo nadie pudo responder una pregunta sencilla. ¿Cómo se atreve una nave a atravesar un cielo que nadie conocía?\n\nPiénsalo así. Los ingenieros sabían que el aire de Titán era espeso. Sabían que había nitrógeno y un poco de metano. Pero no sabían qué había debajo de la bruma, ni a qué altura empezaban las nubes, ni si el suelo era roca, hielo o un líquido. Debían diseñar una nave para un lugar que solo existía en cálculos.\n\nPor eso construyeron a Huygens con cuidado para todos los casos. Podía aterrizar sobre un terreno duro. Podía flotar un rato, si caía en un mar. Era una apuesta prudente, hecha con muy pocos datos.\n\nCassini llegó a Saturno en dos mil cuatro. Pasaron unos meses de órbita tranquila, y entonces llegó el día de Navidad. Ese día, mientras en la Tierra muchas familias se reunían a cenar, un pequeño mecanismo soltó a Huygens. La sonda se alejó de Cassini despacio, girando sobre sí misma, como una moneda lanzada con suavidad.\n\nLuego vinieron tres semanas de silencio. Huygens no tenía motor para corregir su rumbo. Solo podía caer hacia Titán, dormida, siguiendo la trayectoria que le habían dado.\n\nEl catorce de enero de dos mil cinco, la sonda tocó las primeras capas de aire. Iba a una velocidad muy alta, la de una bala de fusil multiplicada muchas veces. El escudo térmico se calentó y empezó a frenarla. Unos minutos después, a gran altura, se abrió el primer paracaídas.\n\nHabía una incertidumbre más. Nadie sabía si la nave sobreviviría a esos minutos.\n\nY sobrevivió. Los paracaídas se abrieron uno tras otro, y la sonda quedó colgando en un cielo naranja, bajando despacio. Desde ahí, por primera vez, una cámara humana miró hacia abajo.\n\nBajo la bruma apareció una costa. Se veían tonos claros y oscuros, y líneas finas que bajaban desde las tierras altas hasta una llanura. Parecían canales. Parecían cauces secos, como los que dejan los arroyos cuando el agua ya se fue. Una vista así, en una luna tan lejana y tan fría, resultaba casi familiar.\n\nDurante unas dos horas y media, Huygens descendió con el paracaídas. Fue una caída lenta, algo parecido a la de una hoja en un día sin viento. Midió la temperatura, el viento y la química del aire en cada tramo. Todo quedó guardado para quien pudiera escucharlo.\n\nY entonces el suelo se acercó.\n\nHuygens tocó la superficie con un golpe suave, y se hundió un poco, como una bota en tierra húmeda.\n\nEl terreno no era roca dura. Era blando, con una costra fina por encima, parecido a arena mojada o a nieve compacta. Alrededor había guijarros del tamaño de una naranja, o más pequeños, y estaban redondeados. Eran hielo de agua, endurecido por el frío, y alguna vez un líquido los había hecho rodar hasta dejarlos lisos.\n\nLa luz era tenue, de un naranja oscuro, y el horizonte parecía muy cercano. Si hubieras estado allí, habrías sentido un frío enorme y un silencio casi total.\n\nLa sonda empezó a transmitir. Los datos subían hacia Cassini, que pasaba por encima, y Cassini los retransmitía hacia la Tierra. Esa señal tardó más de una hora en cruzar el espacio hasta nosotros.\n\nHuygens habló desde el suelo durante poco más de una hora. Estaba diseñada para durar unas pocas horas en total, y casi todas habían sido de caída. Nadie esperaba que sobreviviera tanto tiempo en la superficie.\n\nQuédate un momento en ese silencio. Tu cuerpo ya puede descansar sobre la cama, y no tienes que hacer nada más que escuchar mi voz.\n\nY si conoces a alguien que también pasa noches largas, compártele este viaje.\n\nHabía enviado mucho más de lo que se pedía. Cientos de imágenes, medidas del suelo, del aire y del viento. Todo llegó de un lugar donde nunca había estado ningún objeto humano.\n\nEn dos mil cinco, la sonda Huygens se posó en Titán, el aterrizaje más lejano que se haya logrado en el Sistema Solar.\n\nQuédate un momento con esa imagen. Un objeto pequeño, hecho en la Tierra, descansa sobre hielo blando, bajo un cielo naranja. Allí no ha llegado ninguna voz humana, pero sí una señal tenue, en una luna que hasta hacía poco era solo un punto de luz.\n\nY esos guijarros redondeados dejaban una nueva pregunta. Si algo los había pulido, ¿qué era? ¿Y dónde estaba ahora?",
+      "text": "Durante veinte días, la sonda Huygens viajó sin hacer ruido. No tenía motor propio. Había quedado suelta el día de Navidad de dos mil cuatro, empujada apenas por un resorte, y giraba despacio sobre sí misma, como una moneda lanzada al aire.\n\nCassini ya se alejaba hacia otra órbita. Detrás dejaba a un pasajero del tamaño de un auto pequeño, con un escudo térmico delante y un reloj dentro que contaba los días. Nadie podía darle órdenes. Todo lo que debía hacer ya estaba escrito en su memoria.\n\n¿Qué se siente al caer a través de una atmósfera que nadie había visitado?\n\nNadie lo sabía, y por eso la sonda llevaba instrumentos para sentirlo por nosotros. Mediría la temperatura, la presión, el viento y la química del aire, y fotografiaría todo lo que apareciera ante su cámara.\n\nSi despertaste hace rato, no pasa nada. Ahora solo tienes que mirar cómo esta sonda se prepara para el viaje, y dejar que tus pensamientos esperen hasta mañana.\n\nY si conoces a alguien que también pasa noches largas, compártele este viaje.\n\nEl catorce de enero de dos mil cinco, Huygens tocó las capas altas de Titán a unos veinte mil kilómetros por hora. Es una velocidad difícil de sentir. Equivale a cruzar el océano Atlántico en unos quince minutos. El aire, aunque muy tenue allí arriba, empezó a frenarla con fuerza, y el escudo se calentó hasta brillar.\n\nEn pocos minutos, la velocidad cayó a una fracción de lo que había sido. Entonces se abrió el primer paracaídas, y poco después otro más pequeño, para que la caída no fuera demasiado lenta. Si lo hubiera sido, la batería no habría alcanzado para llegar abajo.\n\nY empezó el descenso largo.\n\nDurante las primeras decenas de minutos, la sonda no vio nada. Alrededor solo había un naranja uniforme, denso, sin sombras ni horizonte. Era la bruma que las Voyager habían encontrado veinticinco años antes. Un ojo humano habría visto algo parecido a un crepúsculo muy espeso.\n\nPero la niebla fue cediendo. A unos cincuenta kilómetros de altura, apareció algo parecido a una vista. A treinta, el paisaje ya tenía forma. Todo el trayecto duró unas dos horas y media, el tiempo de una película larga, y durante ese rato el mundo fue pasando de mancha a lugar.\n\nLas primeras imágenes nítidas mostraban un terreno claro, cruzado por líneas oscuras que se ramificaban. Eran redes de canales, con afluentes que se unían en cauces mayores y bajaban hacia una región más oscura y lisa. Allí había algo que se parecía mucho a una costa, con cabos, bahías y hasta islas.\n\nEra un paisaje que el ojo reconoce sin esfuerzo. Pero no era agua lo que lo había tallado. A casi ciento ochenta grados bajo cero, lo que corre por esos cauces es otra cosa, y el hielo hace el papel de la roca.\n\nMientras la sonda descendía, los instrumentos también escuchaban. El aire se hacía más espeso a cada minuto, y las ráfagas, más suaves. Abajo, el viento era casi nulo.\n\nEntonces llegó el suelo.\n\nEl impacto fue suave, a la velocidad de un trote lento. Los sensores registraron que la sonda se hundía un poco, como si hubiera pisado una costra fina sobre algo blando. Los científicos compararon después ese golpe con el de una pisada en arena húmeda, o con la capa quebradiza de una crema recién tostada.\n\nAlrededor de la sonda, la cámara mostró una llanura de color pardo anaranjado. Había piedras esparcidas por todas partes, algunas del tamaño de una nuez y otras como un puño grande. Estaban redondeadas, lisas, sin aristas.\n\nUna piedra se redondea de una sola manera: rodando en una corriente durante mucho tiempo. Esos guijarros, hechos de hielo de agua, dicen que por allí corrió un líquido, y que lo hizo con fuerza suficiente para gastarlos. Todo indica que fue metano, y que sigue haciéndolo de vez en cuando.\n\nHuygens había sido diseñada para sobrevivir al descenso, no a la superficie. Aun así, siguió hablando. Durante unos setenta minutos transmitió desde el suelo, hasta que Cassini se hundió bajo el horizonte y el enlace se cortó. No fue un final. La sonda quedó allí, a unos ciento setenta y nueve grados bajo cero, en la orilla de un lugar que ya no era un punto de luz.\n\nSeguía de pie sobre una llanura que nadie había pisado. Y en esa llanura, el viento casi no soplaba, y la luz era la de un atardecer que no termina. Quedaba por entender qué se levantaba más lejos, en el ecuador, donde Cassini veía manchas largas y oscuras que nadie sabía nombrar.",
       "companion": [
-        "Quédate un momento en ese silencio. Tu cuerpo ya puede descansar sobre la cama, y no tienes que hacer nada más que escuchar mi voz.",
+        "Si despertaste hace rato, no pasa nada. Ahora solo tienes que mirar cómo esta sonda se prepara para el viaje, y dejar que tus pensamientos esperen hasta mañana.",
         "Y si conoces a alguien que también pasa noches largas, compártele este viaje."
       ],
       "gift": "Y si conoces a alguien que también pasa noches largas, compártele este viaje."
     },
     {
-      "title": "Ríos, costas y lluvia de metano",
-      "question": "¿Puede un mundo a casi 180 grados bajo cero tener un ciclo del agua?",
-      "reveal": "Titán tiene un ciclo completo de lluvia, ríos y evaporación, pero con metano y etano líquidos en lugar de agua.",
+      "title": "Dunas bajo la luz tenue",
+      "question": "¿Cómo se forman dunas gigantes en un mundo helado de viento suave?",
+      "reveal": "Los vientos de Titán han moldeado dunas de granos orgánicos que cubren gran parte de la franja ecuatorial, algunas de cientos de kilómetros de largo.",
       "beats": [
-        "La temperatura en la superficie ronda los 179 grados bajo cero",
-        "A esa temperatura el metano puede ser gas, nube o líquido",
-        "Cassini observa nubes de metano que se mueven por el hemisferio sur",
-        "El radar de Cassini revela cauces ramificados y valles tallados",
-        "La lluvia es rara pero puede caer en gotas grandes y lentas por la baja gravedad",
-        "El hielo de agua actúa como roca dura, tan firme como el granito",
-        "Un paisaje familiar al ojo, pero de materiales completamente distintos"
+        "Cómo es la luz al mediodía en Titán: un crepúsculo anaranjado",
+        "El cinturón ecuatorial de dunas oscuras visto por radar",
+        "Granos formados por hidrocarburos o hielo cubierto de orgánicos",
+        "La paradoja de vientos débiles que forman dunas tan grandes, un tema aún estudiado",
+        "Dunas que parecen rodear obstáculos como montañas",
+        "Qué dicen las dunas sobre la dirección de los vientos y las mareas de Saturno",
+        "Una caminata imaginada sobre arena que no es arena"
       ],
-      "ambience": "deep_space",
+      "ambience": "wind",
       "image_queries": [
-        "Titan rivers radar Cassini",
-        "Titan river channels",
-        "Titan methane clouds Cassini",
-        "Titan coastline radar",
-        "Titan lakes northern hemisphere",
-        "Titan drainage network Cassini",
-        "Titan south pole clouds",
-        "Titan surface radar mosaic",
-        "Titan Vid Flumina",
-        "Titan shoreline Ligeia Mare"
+        "Titan dunes Cassini",
+        "Titan equatorial dunes radar",
+        "Titan Belet dune field",
+        "Titan Shangri-La dunes",
+        "Titan dark dune sea",
+        "Titan surface Cassini VIMS",
+        "Titan equator Cassini",
+        "Titan sand seas",
+        "Titan dunes Namib comparison",
+        "Titan radar swath"
       ],
       "video_queries": [
-        "Titan methane clouds time-lapse Cassini",
-        "Titan lakes radar flyover",
-        "Titan weather animation"
+        "Titan dunes visualization",
+        "Titan flyover animation radar",
+        "Titan surface fly-through animation"
       ],
-      "text": "En lo alto de una duna de tu imaginación, a casi ciento ochenta grados bajo cero, el aire no se mueve. Todo es penumbra anaranjada y silencio. Pero hay algo en el suelo que te resulta extrañamente familiar: un cauce, con sus curvas, sus ramas y sus orillas gastadas.\n\nUn cauce es obra del agua. Lo sabemos desde siempre, porque lo hemos visto en cada valle de la Tierra. Y aquí, el agua es una piedra.\n\n¿Puede un mundo tan frío tener un ciclo del agua?\n\nEmpecemos por el frío. La temperatura en la superficie de Titán ronda los menos ciento setenta y nueve grados Celsius. Es más frío que cualquier noche en la Antártida. Un vaso de agua, aquí, no sería un vaso: sería un trozo de roca transparente.\n\nPero a esa temperatura ocurre algo curioso con el metano. Es el gas que en la Tierra sale de los pantanos y de las cocinas. En Titán, por el frío y por el aire tan espeso, el metano está justo en el borde. Puede ser gas, puede condensarse en nube y puede ser líquido. Es el mismo papel que el agua cumple en nuestro mundo, interpretado por otra sustancia.\n\nLos instrumentos de Cassini empezaron a mostrar esa actuación. En el hemisferio sur, durante el verano de aquella región, la sonda observó nubes de metano que se movían despacio. Se formaban, avanzaban y se disolvían, como las nubes de tormenta de una tarde cualquiera. Nadie tuvo que imaginarlas: estaban ahí, fotografiadas.\n\nUna nube sugiere lluvia. Pero una nube no es una prueba.\n\nLa prueba llegó con el radar. Cassini no podía ver la superficie a través de la bruma con luz normal, así que la exploró con ondas de radio, pasada tras pasada. Y en las imágenes aparecieron líneas oscuras que se ramificaban, como las venas de una hoja. Eran valles tallados, con afluentes que se juntaban en uno solo, desembocando en terrenos más bajos.\n\nAlgo había corrido por allí. Algo que bajó desde las alturas, buscó el camino más fácil y fue excavando durante mucho tiempo.\n\nEntonces surgió una pregunta natural: ¿cómo llueve en Titán? Hoy sabemos que la lluvia es rara. Pueden pasar largos periodos sin que caiga nada. Pero cuando cae, es distinta de la nuestra. La gravedad de Titán es muy baja, apenas una séptima parte de la terrestre. Por eso las gotas pueden ser grandes, mucho mayores que las de una tormenta de verano, y caer con una lentitud casi de ensueño. Si estuvieras allí, las verías descender como copos pesados, sin prisa.\n\nY esa lluvia cae sobre un suelo muy particular. El hielo de agua, a esta temperatura, se comporta como roca dura, tan firme como el granito. Es la base del paisaje: las montañas, las colinas, el lecho de los ríos. Sobre ese hielo duro, el metano líquido corre, corroe y arrastra, igual que el agua lo hace con la piedra en nuestros valles. Por eso los guijarros que encontró Huygens eran redondos. Algo los había rodado durante mucho tiempo.\n\nCon todo esto, la respuesta se pudo armar por fin. El metano se evapora de los mares, sube, forma nubes, cae como lluvia y baja por los ríos hacia los lagos. Y vuelta a empezar.\n\nTitán tiene un ciclo completo de lluvia, ríos y evaporación, pero con metano y etano líquidos en lugar de agua.\n\nPiénsalo un momento. La Tierra no es la única que ha encontrado esta manera de mover un líquido por el mundo. Con otros materiales y otro frío, la misma idea funciona en otro lugar. Un paisaje que reconocerías al instante, hecho de cosas que no reconocerías en absoluto.\n\nY si el líquido corre por esos cauces, tiene que ir a parar a alguna parte. Hacia el norte, donde el terreno se hunde, esperaba algo mucho más grande que un río."
+      "text": "Al mediodía, en Titán, el Sol no es más que una moneda pálida detrás de una cortina de bruma. La luz que llega al suelo es unas mil veces más débil que la de un día despejado en la Tierra. Aun así, tus ojos se acostumbrarían. Verías todo en tonos de naranja apagado, como si el día entero fuera una hora después de la puesta del Sol.\n\nBajo esa luz, el radar de Cassini hizo algo curioso. Dibujó el ecuador de la luna y lo mostró cubierto de franjas oscuras, largas, casi paralelas. Parecían rayas hechas con un peine enorme. Cuando los científicos las miraron de cerca, no tardaron en reconocer la forma.\n\nEran dunas.\n\nPero había un problema. En la Tierra, las dunas nacen en desiertos donde el viento arrastra arena todos los días. En Titán, el aire casi no se mueve. Cerca del suelo sopla a una velocidad parecida a la de una persona que camina despacio. ¿Cómo se levanta una cordillera de arena con una brisa así?\n\nPrimero había que saber de qué estaban hechas. Los instrumentos de Cassini mostraron que esas regiones eran más oscuras que el hielo de alrededor, y que su química no coincidía con la del hielo de agua. Los granos serían, probablemente, partículas orgánicas. Podrían ser restos de hidrocarburos que cayeron desde la bruma, o bien hielo cubierto por una capa de esos mismos compuestos. Aún no se sabe cuál de las dos opciones es la correcta.\n\nRecuerda de dónde viene esa materia. Es la misma bruma naranja que se forma en lo alto, grano a grano, y que baja muy despacio hacia el suelo. Con el tiempo, esas partículas se acumulan, se unen y se rompen. Lo que acaba en el suelo es algo parecido a un polvo fino de carbón mezclado con hielo.\n\nY esa es la paradoja. Un aire tan denso como el de Titán es capaz de empujar granos livianos, pero un viento suave no debería moverlos con tanta eficacia. Quizá los granos se pegan entre sí por la electricidad estática y necesitan más fuerza para despegarse. Quizá existan ráfagas fuertes y breves, durante las tormentas, que hacen casi todo el trabajo. Los investigadores todavía discuten ambas ideas, y ninguna está cerrada.\n\nLo que sí se ve con claridad es cómo se comportan las dunas ante los obstáculos. Cuando una cadena de colinas de hielo se cruza en su camino, las dunas no la atraviesan. La rodean, se abren como el agua alrededor de una piedra y vuelven a unirse del otro lado. Es como mirar la corriente de un río, pero congelada en el tiempo.\n\nEsa forma guarda información. Casi todas las dunas apuntan hacia el este, lo cual sugiere que los vientos que las construyeron soplan en esa dirección, aunque los vientos de superficie medidos parecen ir hacia el oeste. Una explicación posible tiene que ver con Saturno. Su atracción gravitatoria levanta mareas en la atmósfera de Titán, igual que la Luna las levanta en nuestros océanos. Esas mareas podrían empujar el aire cerca del suelo en ráfagas que cambian el rumbo. Es una hipótesis, no una certeza.\n\nAhora camina un poco por ese desierto. El suelo cede apenas, con un crujido seco y muy suave, porque los granos son pequeños y livianos. Haría un frío de casi ciento ochenta grados bajo cero, y tu aliento se congelaría al instante. A tu alrededor, la duna se alzaría como una ola larga y baja, de unos cien metros de altura. No es arena de cuarzo. Es, con toda probabilidad, polvo de bruma, caído del cielo durante millones de años.\n\nY si siguieras caminando hacia el este, la duna no se acabaría contigo.\n\nAlgunas de ellas se extienden por cientos de kilómetros, más que la distancia entre dos ciudades grandes. Juntas cubren buena parte de la franja ecuatorial, un mar de arena orgánica moldeado por vientos tenues y por la atracción de un planeta lejano.\n\nAsí que la respuesta provisional es esta: quizá no hizo falta un viento fuerte. Bastaron tiempo, un material extraño y un cielo que nunca dejó de llover polvo.\n\nPero un desierto tan seco plantea otra pregunta. Si en este mundo hay dunas, y también ríos secos que las cortan, ¿de dónde salió el líquido que los excavó?"
+    },
+    {
+      "title": "Lluvia que cae despacio",
+      "question": "¿Cómo puede llover en un lugar a 180 grados bajo cero?",
+      "reveal": "En Titán el metano cumple el papel del agua: forma nubes, llueve en gotas grandes y que caen despacio, y llena ríos y lagos en un ciclo propio.",
+      "beats": [
+        "El metano en tres estados a esas temperaturas, como el agua en la Tierra",
+        "Las nubes de metano observadas por Cassini y telescopios en tierra",
+        "Por qué las gotas son grandes y caen más lentas gracias a la gravedad baja y el aire denso",
+        "Lluvias raras pero intensas, con estaciones de casi siete años terrestres cada una",
+        "Cauces secos que se activan de pronto en tormentas",
+        "Un cielo que se oscurece en el sur o en el norte según la estación",
+        "Una tarde imaginaria bajo esa lluvia silenciosa"
+      ],
+      "ambience": "sea",
+      "image_queries": [
+        "Titan clouds Cassini",
+        "Titan methane clouds",
+        "Titan storm clouds south pole",
+        "Titan rain illustration",
+        "Titan cloud streaks",
+        "Titan river channels",
+        "Titan surface wet",
+        "Titan methane cycle",
+        "Titan clouds north pole",
+        "Titan seasonal clouds Cassini"
+      ],
+      "video_queries": [
+        "Titan clouds time-lapse Cassini",
+        "Titan methane cycle animation",
+        "Titan weather visualization"
+      ],
+      "text": "Un astrónomo está sentado en la sala de control de un telescopio, en la cima de una montaña de Hawái. En la pantalla hay un disco pequeño y borroso. Es Titán, a más de mil millones de kilómetros. Cerca de su polo sur aparece una mancha clara que no estaba la noche anterior.\n\nEs una nube. Y eso plantea una pregunta incómoda. ¿Cómo puede llover en un lugar a ciento ochenta grados bajo cero?\n\nRespira hondo una vez, sin esfuerzo, y nota cómo la cama te sostiene. Aquí la lluvia cae despacio, y tú puedes tomarte todo el tiempo que quieras para escuchar.\n\nLa respuesta empieza con algo que ya conoces. En la Tierra, el agua vive en tres estados. La ves como hielo en invierno, como lago en verano y como vapor sobre una olla. Todo depende de que la temperatura quede en el rango justo.\n\nEn Titán ocurre lo mismo, pero con otra sustancia. A esa temperatura, el agua es una roca, dura como el granito. El metano, en cambio, está en el punto exacto donde puede ser gas, líquido o sólido. Se evapora, se condensa y se congela, igual que el agua en nuestro mundo.\n\nLas primeras pistas llegaron desde tierra. A comienzos de este siglo, grandes telescopios con óptica adaptativa vieron nubes pequeñas y brillantes sobre el polo sur de Titán. Aparecían, crecían y desaparecían en pocas horas. Después llegó Cassini y las siguió de cerca. Vio bandas alargadas, como cirros delgados, y también masas más densas que se levantaban como torres.\n\nLas nubes de metano se forman igual que las nuestras. El aire húmedo asciende, se enfría y el vapor se junta en gotas. Cuando las gotas pesan demasiado, caen.\n\nPero aquí viene lo curioso. Las gotas de Titán no se parecen a las de tu ventana.\n\nSon más grandes. Algunos modelos hablan de gotas de hasta un centímetro, del tamaño de un guisante grande. Y caen mucho más despacio. Allí la gravedad es unas siete veces menor que en la Tierra. Además, el aire es denso: la presión en la superficie es mayor que la que sientes tú al nivel del mar. Cada gota tiene que abrirse paso por una especie de almíbar ligero.\n\nAsí que la lluvia no cae como un golpe. Desciende como los copos de una nevada suave, balanceándose, tardando varios minutos en recorrer unos pocos kilómetros.\n\nY no llueve a menudo. Según lo que observó Cassini, en buena parte del año el cielo está casi limpio. Pero las estaciones de Titán son largas. Saturno tarda casi treinta años en dar una vuelta al Sol, así que cada estación dura cerca de siete años terrestres. Todo un verano cabe en lo que tarda un niño en pasar de la cuna a la escuela.\n\nDurante esos años, el calor se acumula sobre un polo. Entonces llegan las tormentas, raras pero intensas.\n\nY el paisaje las delata. En dos mil cuatro, tras una nube sobre una región del sur, Cassini vio que el suelo se había oscurecido. Era el color de la superficie mojada. Después, la sonda encontró cauces que llevaban largo tiempo secos, con huellas de crecidas súbitas. Son lechos como los de ciertos desiertos de la Tierra, donde el agua puede pasar una vez cada muchos años y, cuando pasa, lo cambia todo en una tarde.\n\nCon las estaciones, el cielo también cambia. Cuando el verano avanza en el sur, las nubes se juntan allí y esa parte del cielo se oscurece. Años después, el calor cruza el ecuador. Las nubes se mudan al norte y el sur queda en calma.\n\nPonte ahora en una orilla, bajo ese cielo. La luz es de un naranja apagado y parejo. El aire no se mueve. De pronto, lo que parecía bruma se vuelve más oscuro hacia el norte, y empieza a caer algo.\n\nNo escuchas un golpeteo sobre un techo. No hay techo. Las gotas llegan una por una, lentas, grandes, y se posan sobre la arena oscura sin hacer ruido. El suelo, poco a poco, se vuelve más negro. Todo huele, quizá, a gas natural. Todo está a una temperatura que te mataría en minutos, y sin embargo no hay nada violento en la escena.\n\nEs lluvia.\n\nLluvia de metano, en otro mundo, siguiendo reglas que reconoces.\n\nEn Titán, el metano cumple el papel del agua. Forma nubes, cae en gotas gruesas y lentas, corre por los cauces y llena depresiones. Es un ciclo completo, con sus estaciones, y no depende de nosotros ni de nuestro océano.\n\nQueda entonces una pregunta lógica. Si el líquido escurre por los cauces y se acumula, ¿hacia dónde va todo eso? ¿Dónde termina el río?",
+      "companion": [
+        "Respira hondo una vez, sin esfuerzo, y nota cómo la cama te sostiene. Aquí la lluvia cae despacio, y tú puedes tomarte todo el tiempo que quieras para escuchar."
+      ]
     },
     {
       "title": "Los mares del norte",
-      "question": "¿Qué clase de mares guarda el polo norte de Titán?",
-      "reveal": "Kraken Mare es un mar de metano y etano más extenso que el mar Caspio, y el mayor cuerpo de líquido conocido en la superficie de Titán.",
+      "question": "¿Cómo se ve un mar de hidrocarburos?",
+      "reveal": "Kraken Mare, el mayor mar de Titán, es mayor que el mar Caspio en extensión y está formado por metano y etano líquidos.",
       "beats": [
-        "Cassini cartografía lagos y mares con radar durante más de una década",
-        "Los mares se concentran sobre todo cerca del polo norte",
-        "Kraken Mare, Ligeia Mare y Punga Mare son los mayores",
-        "Los líquidos son sobre todo metano, etano y nitrógeno disuelto",
-        "Algunos lagos ocupan depresiones con bordes abruptos, quizás cráteres o hundimientos",
-        "En el hemisferio sur hay mucho menos líquido, y una causa posible son los ciclos orbitales largos de Saturno",
-        "La superficie de los mares es casi lisa, con olas diminutas observadas apenas como sospecha"
+        "El primer indicio: un parche oscuro cerca del polo sur, Ontario Lacus",
+        "El radar de Cassini revela cientos de lagos en el norte",
+        "Kraken Mare, Ligeia Mare y Punga Mare",
+        "Orillas con apariencia de bahías y rías inundadas",
+        "Un instante de calma: un reflejo especular del Sol sobre la superficie, captado en infrarrojo",
+        "Cómo se mide la profundidad de Ligeia Mare con radar",
+        "Por qué los lagos del norte son más grandes que los del sur, aún con hipótesis en debate"
       ],
       "ambience": "sea",
       "image_queries": [
         "Kraken Mare Titan",
         "Ligeia Mare Titan",
-        "Titan northern lakes radar",
-        "Titan sunglint lake Cassini",
+        "Titan lakes radar",
+        "Titan north pole lakes",
+        "Titan sunglint lake",
+        "Ontario Lacus Titan",
         "Titan Punga Mare",
-        "Titan lakes infrared Cassini",
-        "Titan north pole seas",
-        "Titan lake Ontario Lacus",
-        "Titan Cassini radar lakes mosaic",
-        "Titan shoreline Cassini"
+        "Titan lakes Cassini",
+        "Titan seas map",
+        "Titan polar seas"
       ],
       "video_queries": [
-        "Titan seas flyover animation",
-        "Titan north pole radar animation",
-        "Cassini Titan lakes visualization"
+        "Titan lakes flyover animation",
+        "Titan sea sunglint Cassini",
+        "Titan north pole seas visualization"
       ],
-      "text": "Si te asomaras al polo norte de Titán, con un buen radar y mucha paciencia, verías manchas negras sobre un mapa gris. Eran pequeñas al principio, apenas sombras irregulares en las imágenes que llegaban de Cassini. Los científicos las miraron con cuidado. ¿Qué clase de mares guarda el polo norte de una luna tan fría?\n\nLa sonda no los encontró de una vez. Durante más de diez años, Cassini pasó una y otra vez sobre Titán, y cada pasada con el radar mostraba una franja distinta del terreno. Era un trabajo lento, como pintar un mural con una brocha angosta. Poco a poco, las franjas se juntaron y formaron un mapa.\n\nY el mapa tenía un patrón claro. Casi todo el líquido se reunía cerca del polo norte. Allí el terreno se vuelve liso y oscuro para el radar, porque una superficie líquida casi no devuelve la señal. Es como mirar una habitación a oscuras y notar que un rincón no refleja nada.\n\nAlgunas de esas manchas eran lagos pequeños. Otras eran extensiones enormes, con orillas largas y retorcidas. Los tres mayores recibieron nombres con aire de leyenda: Kraken Mare, Ligeia Mare y Punga Mare. Los nombres vienen de criaturas del mar de nuestra propia mitología, como si la Tierra prestara un poco de memoria a un lugar sin testigos.\n\nPero ¿qué había dentro de esas cuencas? No era agua. A casi ciento ochenta grados bajo cero, el agua es roca. Lo que llena esos mares es sobre todo metano y etano, los mismos gases que en tu cocina arden en la estufa. Allí son líquidos, fríos y oscuros. Y además llevan nitrógeno disuelto, igual que el agua de un río lleva aire disuelto.\n\nAlgunos lagos tienen una forma que intriga. Sus bordes caen de golpe, como las paredes de un pozo. Las orillas no se suavizan poco a poco, como en una playa. Podrían ser cráteres que se llenaron, o terreno que se hundió con el tiempo. Nadie lo sabe todavía con certeza.\n\nEn el sur, la historia cambia. Hay mucho menos líquido, solo algunos lagos pequeños y dispersos. Una explicación posible tiene que ver con los ciclos orbitales de Saturno, que son larguísimos. Cada tantas decenas de miles de años, la luz del Sol reparte su calor de otra manera, y el líquido podría moverse de un polo al otro. Sería un respirar muy lento, que dura más que toda la historia humana.\n\nAhora fíjate en la superficie de esos mares. Es casi lisa, mucho más tranquila que cualquier océano que hayas visto. Las olas, si existen, serían diminutas, de apenas unos centímetros. Cassini solo las dejó entrever, como una sospecha en el borde de los datos.\n\nAsí que la pregunta tiene una respuesta, y es una respuesta grande.\n\nKraken Mare es un mar de metano y etano más extenso que el mar Caspio, y el mayor cuerpo de líquido conocido en la superficie de Titán.\n\nPiensa en eso un momento. Un mar entero, bajo un cielo naranja, quieto en el frío. Sin barcos, sin gaviotas, sin nadie que escuche cómo toca la orilla. Es la primera vez que la humanidad conoce un mar así, en otro mundo, y lo hemos visto con los ojos de una sola nave.\n\nPero esos mares tienen orillas, y las orillas tienen una luz particular. Hay una forma de mirarlas que revela algo más que su tamaño. Tiene que ver con el brillo que ves en un lago, cuando el sol baja y el agua se queda inmóvil."
+      "text": "Cuando Cassini miró por primera vez el polo sur de Titán, vio algo muy pequeño: una mancha oscura, de bordes suaves, perdida en un terreno color arena. No parecía gran cosa. Pero los astrónomos que la miraban sabían qué buscaban, y se quedaron en silencio.\n\nLlevaban años haciéndose la misma pregunta. Si en Titán llueve metano y corre por cauces, ¿cómo se vería el lugar donde se detiene? ¿Cómo se ve un mar de hidrocarburos?\n\nLa mancha del sur recibió un nombre: Ontario Lacus. Era un lago, aunque algo bajo y de orillas tenues. Tenía más o menos el tamaño del lago Ontario, del que tomó el nombre. Era la primera pista seria de que el líquido no solo cae del cielo, sino que se queda.\n\nFaltaba mirar el otro extremo del mundo. Allí, en el hemisferio norte, era invierno, y la noche polar cubría todo. La luz del Sol no servía de nada. Pero el radar de Cassini no necesita luz.\n\nPasada tras pasada, el radar fue dibujando el norte. Y en las imágenes aparecieron manchas negras, lisas como cristal oscuro. Primero fueron decenas. Después, cientos de lagos, repartidos como charcos tras una tormenta.\n\nUn líquido en calma devuelve muy poco al radar, porque la señal resbala sobre él y se pierde. Por eso los lagos se ven negros. Esa oscuridad era la huella de una superficie casi perfectamente lisa.\n\nEntre todos esos lagos, tres destacaban por su tamaño. Ligeia Mare, Punga Mare y, mayor que todos, Kraken Mare.\n\nAhora piensa en sus orillas. No son líneas rectas ni círculos limpios. Tienen bahías, penínsulas y ensenadas que se internan en la tierra, como valles que el agua hubiera ocupado después. Los científicos las comparan con rías inundadas, esas costas de la Tierra donde el mar entró en antiguos valles de ríos.\n\nQuizá fue así. Tal vez el líquido llenó terrenos que ya tenían cauces, o tal vez el suelo mismo se fue disolviendo. Todavía se discute.\n\nHubo un día en que Cassini consiguió algo más que un mapa de radar. Miraba el norte con su cámara infrarroja, a través de la bruma. Y en una de esas imágenes, sobre Kraken Mare, apareció un destello.\n\nEra el Sol, reflejado en la superficie del mar.\n\nEse brillo se llama reflejo especular. Es el mismo que ves cuando el sol cae sobre un lago tranquilo y te encandila desde la orilla. Solo que aquí lo veía una nave, a mil quinientos millones de kilómetros de casa, en un mar que nadie había visto jamás.\n\nAquel destello confirmó algo sencillo: eso era líquido, y estaba quieto.\n\nQuedaba otra pregunta. ¿Qué profundidad tiene? Para Ligeia Mare, los científicos usaron el mismo radar de otra manera. La señal atraviesa el líquido, rebota en el fondo y vuelve. Si se mide cuánto tarda en volver, se calcula la distancia recorrida.\n\nEl resultado fue claro. En algunas zonas, Ligeia Mare alcanza unos ciento sesenta metros de profundidad. Sería como un edificio de cincuenta pisos hundido bajo la superficie. Y el líquido es tan transparente al radar que el fondo se distingue con nitidez.\n\nQueda un detalle curioso. Los lagos del norte son mucho más grandes que los del sur. ¿Por qué?\n\nUna idea apunta a las estaciones. Las órbitas de Saturno y de Titán cambian, de modo que un hemisferio recibe más sol durante miles de años y el otro menos. Con el tiempo, el líquido podría haberse desplazado hacia el norte. Es una hipótesis, y no está cerrada.\n\nY así llegamos a Kraken Mare. Se extiende por unos cuatrocientos mil kilómetros cuadrados, más que el mar Caspio, el mayor lago de la Tierra. Está hecho de metano y etano líquidos, a unos ciento ochenta grados bajo cero.\n\nUn mar enorme, quieto, bajo un cielo anaranjado. Y sin embargo, hay cosas en su superficie que no deberían estar ahí."
     },
     {
-      "title": "Un reflejo en la orilla",
-      "question": "¿Cómo se vio por primera vez la luz del Sol reflejada en un lago de otro mundo?",
-      "reveal": "En 2014 Cassini captó un destello especular sobre Kraken Mare y confirmó que su superficie es lisa y líquida.",
+      "title": "Misterios de la superficie",
+      "question": "¿Qué son las islas mágicas que aparecen y desaparecen en los lagos?",
+      "reveal": "Cassini detectó objetos brillantes que surgían y se desvanecían en Ligeia Mare, y todavía se debate si son olas, burbujas o sólidos flotando.",
       "beats": [
-        "El destello especular es el brillo que vemos en un lago al atardecer",
-        "Cassini lo captó con el instrumento infrarrojo en una pasada sobre el polo norte",
-        "El reflejo mostró que el líquido es tan quieto como un espejo",
-        "Con el tiempo, el radar encontró en Ligeia Mare unas misteriosas 'islas mágicas' que aparecían y desaparecían",
-        "Las explicaciones propuestas incluyen olas, burbujas o sólidos flotando, y siguen en discusión",
-        "Imaginar estar en esa orilla: calma, penumbra naranja, un horizonte plano y silencioso",
-        "Un paisaje donde el reflejo es tan suave como en una noche sin viento"
+        "La primera sorpresa: lagos casi sin olas visibles",
+        "Las manchas brillantes que cambian entre sobrevuelos",
+        "Hipótesis: olas, burbujas de nitrógeno o sólidos flotantes",
+        "Cráteres de explosión llenos de líquido",
+        "Los agujeros profundos en las orillas, posiblemente por disolución",
+        "Un posible océano de agua líquida bajo la corteza",
+        "Por qué estas preguntas siguen abiertas"
       ],
       "ambience": "sea",
       "image_queries": [
-        "Titan sunglint Kraken Mare",
-        "Titan lake reflection Cassini",
-        "Titan Ligeia Mare magic island",
-        "Titan infrared lake Cassini",
-        "Titan lake specular reflection",
-        "Titan Cassini VIMS lakes",
-        "Titan north pole sunlight",
-        "Titan lake surface radar",
-        "Titan seas Saturn view",
-        "Titan sunset haze concept"
-      ],
-      "video_queries": [
-        "Titan sunglint animation",
-        "Titan lake surface visualization",
-        "Cassini Titan north pole flyby"
-      ],
-      "text": "Los astrónomos llevaban años buscando una cosa muy simple: el brillo del sol sobre el agua. Pero no en la Tierra. Lo buscaban en una luna cubierta de niebla, a más de mil millones de kilómetros de casa.\n\nTú conoces ese brillo. Lo has visto en un lago, al final de la tarde, cuando el viento se detiene. El sol baja, y sobre el agua aparece una mancha de luz casi blanca, tan nítida que cuesta mirarla. Se llama destello especular. Solo ocurre cuando la superficie es lisa como un vidrio, y el ángulo entre el sol, el agua y el ojo es el justo.\n\n¿Podría verse algo así en Titán? Parecía poco probable. La bruma anaranjada lo difumina todo, y la luz del sol llega allí unas cien veces más débil que en la Tierra. Pero la bruma deja pasar algunas longitudes de onda del infrarrojo. Y Cassini llevaba un instrumento hecho para verlas.\n\nSi despertaste en medio de la noche, no pasa nada. Deja que tus párpados pesen un poco, igual que esa bruma que lo cubre todo, y ven conmigo.\n\nEse instrumento era un espectrómetro de luz infrarroja. Durante años miró la superficie de Titán rendija por rendija, como quien lee un libro a través de una cortina. Los científicos sabían que, si algún día la nave pasaba en la posición correcta sobre un mar, quizás vería el reflejo. Había que esperar el momento exacto.\n\nEl momento llegó en dos mil nueve. Cassini sobrevoló el norte de Titán, y el instrumento apuntó hacia Jingpo Lacus, un lago del polo norte. Entonces apareció un punto brillante, mucho más intenso que todo lo que lo rodeaba.\n\nEra el sol, reflejado en un lago de hidrocarburos.\n\nFue la primera vez que alguien vio la luz de una estrella rebotar sobre un líquido en otro mundo. Y ese brillo decía algo importante. Un destello tan nítido solo se forma si la superficie es muy lisa. Sin olas grandes, sin espuma, sin rugosidad apreciable. El lago estaba quieto como un espejo.\n\nDurante décadas se habló de mares en Titán como una hipótesis. Después el radar mostró formas que parecían costas. Ahora había una prueba directa: una superficie líquida, lisa, que devolvía la luz del sol tal como lo hace un estanque en una noche sin viento.\n\nPero los mares de Titán todavía guardaban sorpresas. En Ligeia Mare, otro de los grandes, el radar de Cassini encontró algo extraño. Una mancha brillante, de unos pocos kilómetros, que no estaba en observaciones anteriores. Semanas después, ya no estaba. Más tarde volvió a aparecer en otra forma.\n\nLos investigadores las llamaron islas mágicas. El nombre es casi una broma, pero describe bien lo que se vio: algo que surge en la superficie del mar, y desaparece.\n\n¿Qué podría ser? Hay varias ideas. Quizás sean olas, levantadas por ráfagas de viento sobre un mar que casi siempre está en calma. Quizás burbujas de nitrógeno que suben desde el fondo. O quizás sólidos flotando, trozos de material orgánico que el líquido sostiene un tiempo y luego hunde.\n\nNinguna explicación ha ganado. Cada una encaja con parte de los datos, y ninguna con todos. Es una pregunta que sigue abierta, en un mar que nadie ha tocado.\n\nAhora quédate un momento en esa orilla. No hay sonido de oleaje, ni de aves, ni de viento. La luz es una penumbra naranja, como la de un atardecer que no termina. El suelo es de hielo duro, cubierto de un polvo oscuro y fino. Delante de ti, el mar se extiende hasta un horizonte perfectamente plano.\n\nEl aire es denso y helado. Pero no se mueve. Cada gota que cayó alguna vez en ese mar ya se asentó. No queda nada que agite la superficie.\n\nY allá lejos, junto al horizonte, el sol pequeño y pálido deja una sola mancha de luz sobre el líquido. No tiembla. No se rompe en pedazos. Se parece al reflejo de la luna en un lago, cuando no hay ni una brisa.\n\nAsí es esa orilla. Un lugar donde el agua, que no es agua, guarda la luz con la misma calma con que tú la has visto guardarse alguna vez en una noche quieta. Y debajo de esa calma, debajo del hielo que sostiene esos mares, quizás haya otra superficie líquida, mucho más profunda, que ninguna cámara ha visto.",
-      "companion": [
-        "Si despertaste en medio de la noche, no pasa nada. Deja que tus párpados pesen un poco, igual que esa bruma que lo cubre todo, y ven conmigo."
-      ]
-    },
-    {
-      "title": "Dunas y desiertos bajo la bruma",
-      "question": "¿Por qué una luna con mares también tiene desiertos de arena oscura?",
-      "reveal": "Cerca del ecuador de Titán se extienden campos de dunas del tamaño de continentes, formados por granos orgánicos y no por arena de roca.",
-      "beats": [
-        "Las regiones ecuatoriales aparecen oscuras en el radar y en infrarrojo",
-        "Cassini descubre dunas lineales de decenas de kilómetros de largo y cientos de metros de alto",
-        "Los granos parecen ser partículas orgánicas que cayeron de la atmósfera",
-        "Los vientos de la superficie son suaves, pero la baja gravedad y el aire denso ayudan a moverlas",
-        "Las dunas indican vientos que cambian de dirección con las estaciones",
-        "La región de Shangri-La y el desierto de Belet son ejemplos",
-        "Un desierto en una luna donde también llueve: el contraste es parte de su carácter"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Titan dunes Cassini radar",
-        "Titan Shangri-La dunes",
-        "Titan Belet dunes",
-        "Titan equatorial dark region",
-        "Titan dune field radar",
-        "Titan surface Cassini VIMS",
-        "Titan dunes mosaic",
-        "Titan equator Cassini",
-        "Titan dunes Namib comparison",
-        "Titan radar swath Cassini"
-      ],
-      "video_queries": [
-        "Titan dunes flyover animation",
-        "Titan surface radar flyover",
-        "Titan global view rotating Cassini"
-      ],
-      "text": "Mira el ecuador de Titán con un radar, y verás oscuridad. Grandes extensiones de color casi negro se extienden a lo largo de la franja central de la luna. En infrarrojo, la imagen se repite: manchas oscuras y alargadas, como si alguien hubiera pasado un pincel ancho sobre el mapa.\n\nLos astrónomos conocían ya los mares del norte, con su líquido quieto y su reflejo suave. Entonces, ¿qué eran estas regiones tan distintas? ¿Por qué una luna con mares también tiene desiertos de arena oscura?\n\nLa primera pista llegó en dos mil cinco. Las imágenes de radar de Cassini mostraron a lo largo del ecuador unas rayas paralelas, finas y rectas, que se repetían una y otra vez. Parecían surcos hechos con un rastrillo gigante. Los científicos las reconocieron enseguida, porque en la Tierra existen formas parecidas en el Sahara y en el desierto de Namibia.\n\nEran dunas. Dunas lineales, largas y estrechas, alineadas como olas congeladas.\n\nCon más pasadas, Cassini fue midiéndolas. Cada duna se extiende durante decenas de kilómetros, más o menos lo que caminarías en un día entero y largo. Y se elevan unos cien metros sobre el suelo, la altura de un edificio muy alto. Entre una y otra quedan corredores despejados, de varios kilómetros de ancho.\n\nAhora venía la pregunta más difícil. ¿De qué estaban hechas? En la Tierra, la arena es casi siempre roca triturada, o cuarzo. Pero en Titán el hielo de agua es tan duro como la roca, y no hay mucha arena de silicatos a la vista. Los instrumentos de infrarrojo mostraron que las dunas eran oscuras y que su composición no se parecía al hielo limpio.\n\nLa explicación más aceptada es que los granos son orgánicos. Recuerdas las tolinas, esas partículas que nacen en lo alto de la atmósfera, cuando la luz ultravioleta rompe el metano. Durante siglos descienden lentamente por el aire naranja y se posan en el suelo. Con el tiempo se agrupan, se juntan y se convierten en granos que el viento puede arrastrar. No se sabe con exactitud cómo ocurre ese paso, pero la idea encaja con lo que se ha medido.\n\nEsto sorprende por otra razón. Los vientos en la superficie de Titán son suaves, apenas una brisa de unos pocos kilómetros por hora. En la Tierra, una brisa así no movería un grano de arena. Sin embargo, allí la gravedad es baja, y el aire es mucho más denso que el nuestro. Cada soplo empuja con más fuerza, y cada grano pesa menos. Una brisa tranquila puede ser suficiente para mover una duna entera, muy despacio, durante siglos.\n\nLas formas de las dunas guardan además un detalle curioso. Su orientación no coincide con los vientos habituales que se esperarían. Las simulaciones sugieren que los vientos cambian de dirección con las estaciones, y que las dunas crecen como resultado de esa mezcla. Cada estación de Titán dura varios años terrestres, así que el viento tarda mucho en dar la vuelta.\n\nEntre todos esos paisajes, algunos tienen nombre. Shangri-La es una región enorme, oscura y cubierta de dunas, que parece una costa sin mar. Otro campo, Belet, es aún más extenso, uno de los mayores de la luna. Si pudieras volar sobre él, tardarías muchísimo en ver el final.\n\nY aquí está la respuesta.\n\nCerca del ecuador de Titán se extienden campos de dunas del tamaño de continentes.\n\nNo están hechos de arena de roca, sino de granos orgánicos que cayeron del cielo.\n\nEl mismo cielo que alimenta los mares también fabrica el desierto. La misma niebla que cae como lluvia lenta sobre el polo cae como polvo sobre el ecuador. Un desierto en una luna donde también llueve, y eso no es una contradicción. Es parte de su carácter.\n\nQueda una pregunta flotando sobre esas dunas. Si los granos vienen de arriba, y si el hielo es la roca de este mundo, ¿qué hay debajo de todo ese polvo oscuro?"
-    },
-    {
-      "title": "El océano oculto bajo el hielo",
-      "question": "¿Qué hay debajo de la corteza helada de Titán?",
-      "reveal": "Las mediciones de gravedad y rotación de Cassini indican que bajo la corteza de hielo de Titán hay un océano global de agua líquida.",
-      "beats": [
-        "Cassini mide cómo Titán se deforma con las mareas de Saturno",
-        "Esa deformación es demasiado grande para un interior totalmente sólido",
-        "La rotación de la superficie también apunta a una capa líquida debajo",
-        "El océano estaría a decenas de kilómetros de profundidad bajo el hielo",
-        "Podría ser muy salado, según algunos modelos",
-        "Estudios recientes discuten si ese océano es abierto o más parecido a hielo con bolsas de agua, y la cuestión sigue abierta",
-        "Con el océano de Europa y Encélado ya conocidos, Titán suma otro mundo con agua líquida oculta"
-      ],
-      "ambience": "ice",
-      "image_queries": [
-        "Titan interior cutaway",
-        "Titan subsurface ocean artist concept",
-        "Titan ice shell Cassini",
-        "Titan tidal flexing Saturn",
-        "Titan cryovolcano Sotra Patera",
-        "Titan Cassini gravity",
-        "Titan interior layers illustration",
-        "Titan Saturn tides",
-        "Titan surface ice Cassini",
-        "Titan Hotei Arcus"
-      ],
-      "video_queries": [
-        "Titan interior animation",
-        "Titan ocean cutaway visualization",
-        "Saturn moons ocean worlds animation"
-      ],
-      "text": "Debajo de la última duna, el suelo de Titán no es arena. Es hielo, duro como una roca, y está cubierto por una capa fina de polvo oscuro. Pero ese hielo no es el final del camino. ¿Qué hay debajo de la corteza helada de esta luna?\n\nDurante años nadie tuvo cómo saberlo. Ninguna nave podía mirar a través de decenas de kilómetros de hielo. Los científicos tuvieron que hacerlo de otra manera, con paciencia, midiendo cosas muy pequeñas durante mucho tiempo.\n\nLa primera pista llegó de la gravedad. Titán no gira en una órbita perfectamente redonda alrededor de Saturno. A veces está un poco más cerca del planeta y a veces un poco más lejos. Cuando se acerca, la gravedad de Saturno lo estira. Cuando se aleja, lo deja relajarse.\n\nEs lo mismo que hace la Luna con nuestros mares, pero aquí el tirón es mucho más fuerte. Cada vuelta, que dura unos dieciséis días, Titán se hincha y se aplana como un pecho que respira muy despacio.\n\nCassini pasó cerca de Titán muchas veces. En cada pasada, la nave sentía su gravedad con una precisión asombrosa. Los ingenieros seguían su velocidad a través de las señales de radio, y notaban cambios minúsculos, de una fracción de milímetro por segundo. Con esos cambios podían calcular cuánto se deformaba la luna.\n\n¿Sigues despierto? Está bien. No hay prisa por dormir; aquí estamos juntos, y la noche todavía tiene mucho tiempo para ti.\n\nY la deformación resultó ser grande. Si Titán fuera sólido de arriba abajo, como una gran bola de roca y hielo, la marea de Saturno lo levantaría apenas un metro. En cambio, la superficie sube y baja unos diez metros. Es una altura parecida a la de un edificio de tres pisos.\n\nUn interior rígido no se estira así.\n\nAlgo debajo tenía que ceder. Una capa que pudiera moverse, fluir, acompañar el tirón de Saturno. Una capa líquida.\n\nPero una sola medición puede engañar, y los científicos lo saben. Por eso buscaron una segunda pista, en otro lugar: la rotación. Con las imágenes de radar, siguieron durante años puntos fijos de la superficie. Y notaron algo curioso. La corteza de Titán gira con un ligero desajuste respecto a lo esperado, como si estuviera algo suelta del interior.\n\nPiensa en un huevo duro y en un huevo crudo. Si los haces girar sobre la mesa, no se comportan igual. El crudo se tambalea, porque lo que hay dentro se mueve por su cuenta. Titán se comporta como el crudo. Su cáscara de hielo parece flotar sobre una capa que no la acompaña del todo.\n\nDos pistas, obtenidas de maneras distintas, apuntaban a lo mismo.\n\nHoy se calcula que esa capa está a decenas de kilómetros de profundidad. Quizá a unos cincuenta o cien. Es una distancia que podrías recorrer caminando en un día largo. Sobre ella hay hielo firme, y más arriba el polvo, las dunas y la niebla naranja.\n\n¿Cómo sería esa agua? Según algunos modelos, muy salada. Quizá más que el Mar Muerto, con sales disueltas desde la roca del fondo. Esa salinidad explicaría por qué el agua puede seguir líquida, y por qué conduce y responde a las mareas como lo hace. Pero es una estimación, no una certeza.\n\nY aquí la historia se vuelve más prudente. Estudios recientes han vuelto a mirar los datos de Cassini con otros métodos. Algunos sugieren que no habría un océano abierto, como el de la Tierra, con corrientes y profundidad. Sería algo más parecido a un hielo espeso y lleno de bolsas de agua, o a un lodo helado con cavidades líquidas. Las mediciones de gravedad y rotación encajan con ambas ideas.\n\nTodavía no sabemos cuál es la correcta. La pregunta sigue abierta.\n\nLo que parece probable es que haya agua líquida debajo. Las mediciones de gravedad y rotación de Cassini indican que bajo la corteza de hielo de Titán hay agua líquida, aunque su forma exacta aún se discute.\n\nEuropa guarda un océano bajo su hielo. Encélado lanza chorros de agua salada al espacio. Y ahora Titán, la luna de la niebla, suma otro mundo con agua oculta, lejos del Sol, en un rincón que parecía demasiado frío para tener algo así.\n\nQuizá el agua líquida no sea una rareza de planetas tibios como el nuestro. Quizá sea algo que los mundos esconden con facilidad, bajo sus cortezas, a oscuras.\n\nY en Titán esa agua tiene vecinos muy interesantes. Arriba, en la superficie, hay materia orgánica que cae del cielo desde hace millones de años. Abajo, hay agua. Entre las dos capas, hay hielo. ¿Podrían tocarse alguna vez?",
-      "companion": [
-        "¿Sigues despierto? Está bien. No hay prisa por dormir; aquí estamos juntos, y la noche todavía tiene mucho tiempo para ti."
-      ]
-    },
-    {
-      "title": "Dragonfly: volver con alas",
-      "question": "¿Cómo volveremos a Titán y qué buscaremos allí?",
-      "reveal": "La misión Dragonfly de la NASA llevará un dron rotor del tamaño de un coche pequeño que volará de un lugar a otro sobre las dunas de Titán, gracias a su aire denso y su baja gravedad.",
-      "beats": [
-        "Volar en Titán es más fácil que en la Tierra: aire espeso y gravedad baja",
-        "Dragonfly es un rotorcraft con ocho rotores, alimentado por un generador nuclear de radioisótopos",
-        "Aterrizará cerca de la zona de dunas de Shangri-La y explorará el cráter Selk",
-        "Selk pudo contener agua líquida mezclada con material orgánico tras el impacto",
-        "Dragonfly buscará química prebiótica, no vida confirmada, y esa distinción importa",
-        "Su lanzamiento está previsto para 2028 y la llegada para mediados de la década de 2030",
-        "Cerrar el viaje: una luna que quizá nos muestre cómo empiezan los mundos con química para la vida"
-      ],
-      "ambience": "wind",
-      "image_queries": [
-        "Titan surface Cassini",
+        "Magic Island Titan",
+        "Ligeia Mare radar",
+        "Titan lake bright feature",
+        "Titan lakes depth radar",
+        "Titan Winnipeg Lacus",
+        "Titan crater Cassini",
+        "Titan interior illustration",
         "Titan Selk crater",
-        "Titan dunes Cassini",
-        "Saturn from Titan artist concept",
-        "Titan haze Saturn Cassini",
-        "Titan sunset Saturn",
-        "Titan Cassini last flyby",
-        "Saturn rings Titan Cassini",
-        "Titan orbit Saturn Cassini",
-        "Titan global mosaic Cassini"
+        "Titan surface radar details",
+        "Titan lake shoreline"
       ],
       "video_queries": [
-        "Dragonfly Titan animation",
-        "Dragonfly rotorcraft Titan flight",
-        "Titan landing visualization"
+        "Titan interior ocean animation",
+        "Titan lake surface visualization",
+        "Titan radar flyby animation"
       ],
-      "text": "En Titán, un hombre podría atar un par de alas a sus brazos y volar. No lo dice una fantasía, lo dicen los números. Allí el aire es cuatro veces más denso que en la Tierra, y la gravedad es tan débil que pesarías lo que pesa un perro mediano.\n\nHasta ahora, siempre hemos mirado desde arriba, o hemos llegado y nos hemos quedado quietos. Una nave se posó sobre guijarros de hielo y habló durante poco más de una hora. Pero el suelo de Titán es enorme. ¿Cómo se explora un mundo entero, si solo puedes ver el lugar donde caíste?\n\nLa respuesta que encontraron los ingenieros es sencilla de decir. Si el aire es espeso y el peso es poco, no hace falta rodar. Se puede volar.\n\nAsí nació Dragonfly, \"libélula\". Es lo que se llama un rotorcraft, una máquina parecida a un dron, con ocho rotores repartidos en cuatro pares. Mide más o menos lo que un coche pequeño. Cada vez que despegue, se elevará con un zumbido grave y lento, y recorrerá algunos kilómetros sobre un paisaje que nadie ha visto de cerca.\n\nHay un problema evidente. Allí el Sol llega muy débil, unas cien veces menos que aquí, y la bruma naranja lo apaga aún más. Unos paneles solares no servirían de nada. Por eso Dragonfly llevará un generador nuclear de radioisótopos, que convierte en electricidad el calor de un material que se desintegra despacio. Es el mismo tipo de fuente que ha mantenido vivas a otras naves durante décadas. Durante las noches de Titán, que duran días terrestres, cargará su batería sin prisa.\n\nY ahora, el lugar. Dragonfly aterrizará cerca de Shangri-La, el campo de dunas que ya conoces, aquellas ondulaciones de granos orgánicos que se extienden por el ecuador. Allí tomará muestras del suelo y del aire. Luego irá saltando de un sitio a otro, cada vez más lejos, hasta llegar a un cráter llamado Selk.\n\nSelk es un círculo de unos noventa kilómetros de ancho, grabado hace decenas de miles de años por el choque de un meteorito.\n\nLos científicos creen que, durante un tiempo, el calor de ese impacto pudo derretir el hielo del suelo. Habría quedado agua líquida, mezclada con la materia orgánica que cae del cielo desde hace millones de años. No sería un mar, sino un charco enorme, tibio al principio, que poco a poco se fue helando. Esa mezcla de agua y química podría haberse conservado en el fondo, como una fotografía muy antigua.\n\nAquí conviene ser claros, porque la distinción importa. Dragonfly no está pensada para demostrar que hay vida. No lleva instrumentos para decir \"esto está vivo\". Va a buscar química prebiótica, es decir, los ladrillos y las recetas que podrían preceder a la vida. Si los encuentra, nos dirá qué tan lejos puede llegar la química por sí sola. Y si no los encuentra, también nos habrá enseñado algo.\n\nSu lanzamiento está previsto para dos mil veintiocho. El viaje durará varios años, y la llegada se espera para mediados de la década de dos mil treinta. Es una espera larga, casi tanto como una infancia. Alguien que hoy aprende a leer podría estar, para entonces, terminando la escuela.\n\nMira el camino que hemos hecho. Un punto de luz junto a Saturno. Una bruma naranja que no dejaba ver nada. Un paracaídas, un suelo blando, ríos secos, mares de metano, dunas y un océano escondido bajo el hielo.\n\nY ahora, una libélula que se prepara para cruzar esa bruma con alas.\n\nQuizá Titán nos muestre cómo empiezan los mundos que tienen química para la vida. Quizá no nos diga nada tan grande, y solo nos deje una buena pregunta. De cualquier manera, esa luna lejana, con su cielo naranja y su aire tranquilo, sigue allí, girando alrededor de Saturno, tal como lo hizo antes de que existiéramos.\n\nTú también puedes quedarte así, un momento más. Sin prisa, con la respiración lenta, como el aire espeso de otro mundo.\n\nBuenas noches."
+      "text": "Antes de que Cassini llegara a Saturno, nadie esperaba que un lago pudiera esconder un truco. Pero sí se esperaba algo más simple. Un mar de metano, bajo un viento aunque sea leve, debería tener olas.\n\nLos investigadores lo calcularon con cuidado. El aire de Titán es denso. La gravedad es baja. Con esas condiciones, hasta una brisa suave debería levantar ondas largas y lentas sobre el líquido, como las que ves en un estanque al caer la tarde.\n\n¿Sigues despierto? Está bien. Imagina por un momento ese estanque quieto al atardecer, y deja que tu cuerpo se quede igual de tranquilo, sin prisa por nada.\n\nCuando Cassini miró los lagos del norte, casi no encontró ninguna. Las superficies parecían lisas, casi pulidas. Las mediciones de radar sugerían, en muchos lugares, irregularidades de apenas unos milímetros. Es menos que el grosor de una uña.\n\nPasó el tiempo, y los lagos siguieron igual de quietos. Hasta que, en las imágenes de Ligeia Mare, apareció algo que nadie había pedido.\n\nUna mancha brillante, en medio del líquido oscuro.\n\nLos científicos la llamaron, con algo de humor, una isla mágica. Era un objeto claro en el radar, del tamaño de varios kilómetros. Es más o menos la distancia que recorres caminando durante un rato largo. En un sobrevuelo estaba allí. En el siguiente, tiempo después, ya no. Más tarde, apareció otra vez, con una forma distinta.\n\n¿Cómo puede una isla desaparecer de un lago? ¿Y qué es, entonces, lo que se ve?\n\nLas ideas son tres, y ninguna ha ganado. La primera dice que son olas. Quizá el viento se levantó justo en esos días, en pleno verano del norte, y rizó el líquido lo suficiente para brillar en el radar. La segunda habla de burbujas. El metano puede disolver nitrógeno cuando está frío. Si la temperatura cambia, ese gas podría escapar, como en una bebida gaseosa recién abierta. Una nube de burbujas devolvería la señal con fuerza. La tercera propone sólidos que flotan. Una especie de nata o de espuma de compuestos orgánicos, tan ligera que se sostiene en la superficie hasta que se hunde o se disuelve.\n\nLos datos de Cassini no bastan para elegir entre ellas.\n\nCada hipótesis explica una parte. Ninguna explica todo. Y la nave que pudo haberlo resuelto ya no existe, porque terminó su misión hundiéndose en Saturno en dos mil diecisiete.\n\nHay otras señales que también piden respuesta. Algunos lagos más pequeños tienen bordes altos, como el labio de un cráter. Parecen huecos abiertos por una explosión, que luego se llenaron de líquido. Quizá el nitrógeno o el metano, calentados bajo el suelo, estallaron en algún momento remoto. Es una idea razonable, pero nadie ha visto uno formarse.\n\nOtras cavidades son todavía más extrañas. En las orillas de Ligeia Mare, y en otros lugares, el radar encontró agujeros de paredes empinadas. Algunos tienen cientos de metros de profundidad. Una explicación posible es que el líquido disuelve la roca, hecha de compuestos orgánicos, igual que el agua de lluvia disuelve la caliza en la Tierra. Con el tiempo, el terreno se hunde y deja pozos. Sería la misma lenta artesanía que talla las cuevas bajo nuestros pies.\n\nY debajo de todo eso, quizá, hay algo más profundo.\n\nLas mediciones de la gravedad y de la forma de Titán, cuando Saturno lo estira en su órbita, sugieren que bajo la corteza de hielo podría haber un océano de agua líquida, o quizá solo capas de hielo semifundido. Estaría a decenas de kilómetros de profundidad, a oscuras, sin ninguna conexión visible con los lagos de la superficie. No es una certeza. Es la mejor lectura de los datos que tenemos.\n\n¿Por qué siguen abiertas estas preguntas? Porque Cassini solo pasó cerca de los lagos unas pocas veces, y cada vez los vio desde lejos, con radar. No hay una cámara flotando sobre el agua. No hay un sensor midiendo qué lleva disuelto el líquido.\n\nLo que falta, entonces, es ir hasta allá. Y la próxima misión ya tiene nombre, y ya tiene rotores.",
+      "companion": [
+        "¿Sigues despierto? Está bien. Imagina por un momento ese estanque quieto al atardecer, y deja que tu cuerpo se quede igual de tranquilo, sin prisa por nada."
+      ]
+    },
+    {
+      "title": "Dragonfly y el futuro",
+      "question": "¿Qué haremos cuando regresemos a Titán?",
+      "reveal": "La misión Dragonfly de la NASA enviará un rotor-dron del tamaño de un coche pequeño a volar sobre la superficie, aprovechando el aire denso y la gravedad baja.",
+      "beats": [
+        "Por qué volar en Titán es más fácil que en la Tierra",
+        "El diseño del rotor-dron y su energía nuclear",
+        "Los lugares previstos: dunas y el cráter Selk",
+        "Qué buscará: química prebiótica, no vida confirmada",
+        "La llegada prevista a mediados de la década de 2030",
+        "La pregunta abierta de si pudo surgir vida allí, con otros disolventes",
+        "Un último paisaje: Saturno oculto tras la bruma, un cielo naranja y una orilla tranquila"
+      ],
+      "ambience": "sea",
+      "image_queries": [
+        "Dragonfly Titan rotorcraft",
+        "Dragonfly Titan concept",
+        "Selk crater Titan",
+        "Titan dunes Dragonfly",
+        "Titan Saturn crescent",
+        "Titan horizon haze",
+        "Saturn from Titan illustration",
+        "Titan Cassini final flyby",
+        "Titan lakes sunlight",
+        "Titan haze sunset Cassini"
+      ],
+      "video_queries": [
+        "Dragonfly mission animation Titan",
+        "Dragonfly flight Titan visualization",
+        "Titan landscape animation"
+      ],
+      "text": "Sobre una mesa de pruebas, en un laboratorio de Maryland, descansa una máquina con ocho rotores. Es del tamaño de un coche pequeño. Un ingeniero camina a su alrededor despacio, y toca con la mano uno de los brazos, como quien acaricia el lomo de un animal dormido.\n\nEsa máquina todavía no ha visto Titán. Pero fue construida para él. Y la pregunta que la rodea es sencilla: ¿qué haremos cuando regresemos?\n\nHasta ahora hemos mirado esa luna desde lejos, o la hemos tocado durante poco más de una hora. Huygens se posó sobre su suelo blando y habló un rato. Después se hizo el silencio. Esta vez la idea es distinta. No llegar y quedarse quieto, sino volar.\n\nY en Titán volar es más fácil que aquí.\n\nLa razón está en dos números que ya conoces, aunque quizá no los hayas puesto juntos. El aire en la superficie es unas cuatro veces más denso que el de la Tierra. Y la gravedad es de apenas una séptima parte de la nuestra. Con tanto aire para apoyarse y tan poco peso que levantar, las alas casi no hacen esfuerzo. Hasta una persona con alas pequeñas atadas a los brazos podría, en teoría, sostenerse en ese cielo.\n\nPor eso la misión se llama Dragonfly, libélula. La NASA enviará un rotor-dron del tamaño de un coche pequeño. Tendrá ocho rotores, dispuestos en pares sobre cuatro brazos. Despegará, avanzará unos kilómetros, y aterrizará en otro punto del mapa. Luego repetirá el gesto, una y otra vez, saltando de paisaje en paisaje.\n\nPero un dron necesita energía, y allá el Sol apenas llega. Dragonfly no usará paneles solares. Llevará un generador nuclear, parecido al que ha alimentado a otras naves en el espacio profundo. Su calor lento se convertirá en electricidad, y esa electricidad cargará una batería. Con ella volará de día, y con ella se mantendrá tibio durante la larga noche de Titán, que dura unos ocho días terrestres.\n\nOcho días de oscuridad naranja, y una máquina que espera sin moverse.\n\n¿Y adónde irá? Aterrizará primero entre las dunas, en una región llamada Shangri-La, cerca del ecuador. Ya las conoces: ondas largas y oscuras de granos que no son arena. Desde allí hará saltos cada vez más largos, hasta llegar a un cráter de unos noventa kilómetros de ancho. Se llama Selk.\n\nSelk es un lugar especial. Un impacto lo abrió hace tiempo, y el calor de ese golpe pudo fundir hielo de agua en la superficie. Durante un tiempo, quizá miles de años, el agua líquida pudo mezclarse con los compuestos orgánicos que caen del cielo. Hoy ese charco está congelado. Pero el cráter guarda la huella de aquella mezcla.\n\nEso es lo que Dragonfly irá a buscar. Con un espectrómetro de masas analizará muestras del suelo, y con un taladro tomará polvo de bajo la superficie. Buscará química prebiótica, es decir, las moléculas que podrían ser el primer escalón hacia algo vivo. No va a buscar vida confirmada. No lleva instrumentos para declarar que la encontró. Su tarea es más modesta y más honesta: leer cómo se arma la química antes de la vida.\n\nLa nave despegará a finales de esta década y llegará a mediados de la década de dos mil treinta. Son unos siete años de viaje. Piensa en un niño que hoy empieza la escuela primaria. Cuando Dragonfly toque el suelo de Titán, ese niño estará entrando en la adolescencia.\n\nQueda entonces la pregunta más grande, la que nadie puede responder todavía. En la Tierra, la vida usa agua como disolvente. En Titán, el agua es roca. Lo que fluye por sus lagos es metano y etano, a unos ciento ochenta grados bajo cero. ¿Podría surgir allí una química viva con otro disolvente, con otras reglas? No lo sabemos. Quizá la respuesta sea no. Pero ahora sabemos dónde mirar para empezar a averiguarlo.\n\nPiensa en ese final posible, aunque ya no esté en ningún plan. El rotor-dron descansa sobre una orilla tranquila, al terminar su último vuelo del día. Arriba, el cielo es de un naranja espeso y parejo. En algún lugar detrás de esa bruma está Saturno, enorme, invisible, con sus anillos suaves. Nadie lo ve. Basta saber que está ahí.\n\nMás allá de la orilla, el lago apenas se mueve. Todo está quieto, y todo sigue siendo un misterio hermoso.\n\nHas recorrido una luna entera esta noche, desde su niebla hasta su orilla. No hace falta recordarlo todo. Deja que las imágenes se vayan solas, como la bruma que baja despacio.\n\nBuenas noches."
     }
   ],
-  "cold_open": "Hay un mundo donde llueve, corren ríos y se extienden mares, bajo un cielo de color naranja.\n\nPero no es agua lo que cae. Es gas natural, tan frío que se ha vuelto líquido.\n\nDurante siglos creímos que Titán era solo una bola de niebla, una luna cerrada sobre sí misma. Pero bajo esa bruma había costas, dunas y lagos tan quietos que reflejan el cielo.\n\n¿Cómo puede un mundo tan lejano parecerse tanto al nuestro, y ser tan distinto?\n\nEso es lo que vamos a descubrir. Cruzaremos la niebla junto a una pequeña sonda, caminaremos por la orilla de un mar helado y sobrevolaremos desiertos de arena oscura.\n\nY quizá, al final, miraremos el océano escondido bajo el hielo.\n\nSin prisa. Con ciencia real, y con belleza real.\n\nTú no tienes nada que hacer, salvo escuchar.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nEmpecemos por la niebla.",
+  "cold_open": "Existe un mundo helado donde llueve, corren ríos y se extienden mares, y nada de eso es agua.\n\nDurante siglos pensamos que Titán era solo una bola borrosa, una luna escondida tras una niebla naranja. Pero bajo esa niebla hay un paisaje que se parece al nuestro más de lo que parece posible.\n\n¿Cómo puede existir un lugar con costas y lluvia a casi ciento ochenta grados bajo cero?\n\nEsta noche descenderemos despacio, capa por capa, a través de una bruma densa. Veremos cómo la sonda Cassini abrió una ventana, y cómo la sonda Huygens llegó a posarse en una orilla. Recorreremos dunas oscuras y mares de metano en el norte.\n\nTodo lo que oirás es ciencia real.\n\nNo hay prisa, y nada que hacer, salvo escuchar y dejarte llevar.\n\nSi este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos.\n\nEmpecemos por la niebla.",
   "sources": [
+    "Cassini-Huygens",
     "NASA",
     "European Space Agency",
     "Voyager 1",
     "Dragonfly"
   ],
   "review": {
-    "suggested": 22,
-    "applied": 22,
+    "suggested": 32,
+    "applied": 32,
     "fixes": [
       {
-        "section": "chapter_9",
-        "find": "Allí el Sol llega muy débil, unas mil veces menos que aquí, y la bruma naranja lo apaga aún más.",
-        "replace": "Allí el Sol llega muy débil, unas cien veces menos que aquí, y la bruma naranja lo apaga aún más.",
-        "reason": "wrong sunlight figure"
+        "section": "cold_open",
+        "find": "un lugar con costas y lluvia a casi doscientos grados bajo cero",
+        "replace": "un lugar con costas y lluvia a casi ciento ochenta grados bajo cero",
+        "reason": "temperatura real ~-180 °C"
       },
       {
-        "section": "chapter_9",
-        "find": "Piensa en lo que eso significa. Después de recorrer esa luna a lo largo de ocho capítulos, siempre hemos mirado desde arriba, o hemos llegado y nos hemos quedado quietos.",
-        "replace": "Hasta ahora, siempre hemos mirado desde arriba, o hemos llegado y nos hemos quedado quietos.",
-        "reason": "chapter label, repeated phrase"
+        "section": "chapter_1",
+        "find": "tenía tamaño, tenía luz propia reflejada",
+        "replace": "tenía tamaño, brillaba con luz reflejada",
+        "reason": "contradicción"
       },
       {
-        "section": "chapter_9",
-        "find": "Una nave se posó sobre guijarros de hielo y habló durante una hora y media.",
-        "replace": "Una nave se posó sobre guijarros de hielo y habló durante poco más de una hora.",
-        "reason": "surface time inaccurate"
+        "section": "chapter_1",
+        "find": "giraba alrededor del planeta, en unas dieciséis días",
+        "replace": "giraba alrededor del planeta, en unos dieciséis días",
+        "reason": "concordancia"
+      },
+      {
+        "section": "chapter_1",
+        "find": "algo así como la distancia entre Ciudad de México y Bogotá, recorrida dos veces",
+        "replace": "algo más que la distancia entre Ciudad de México y Bogotá",
+        "reason": "comparación inexacta"
+      },
+      {
+        "section": "chapter_1",
+        "find": "Titán es la única luna del Sistema Solar cuya atmósfera es tan densa que pesa sobre el suelo un cincuenta por ciento más que la nuestra.",
+        "replace": "Titán es la única luna del Sistema Solar con una atmósfera tan densa que, en el suelo, la presión es cerca de un cincuenta por ciento mayor que la de la Tierra.",
+        "reason": "precisión"
+      },
+      {
+        "section": "chapter_1",
+        "find": "una presión parecida a la que sientes a unos quince metros bajo el agua de una piscina",
+        "replace": "una presión parecida a la que sientes a unos cinco metros bajo el agua de una piscina",
+        "reason": "0,45 bar extra ≈ 5 m"
+      },
+      {
+        "section": "chapter_2",
+        "find": "flotando como un halo a unos quinientos kilómetros de la bruma principal",
+        "replace": "flotando como un halo a unos quinientos kilómetros de altura, separada de la bruma principal",
+        "reason": "altitud, no distancia"
+      },
+      {
+        "section": "chapter_2",
+        "find": "Pasaron a través de ssus capas más altas",
+        "replace": "Pasaron a través de sus capas más altas",
+        "reason": "errata"
       },
       {
         "section": "chapter_3",
-        "find": "Huygens habló desde el suelo durante cerca de una hora y media.",
-        "replace": "Huygens habló desde el suelo durante poco más de una hora.",
-        "reason": "surface time inaccurate"
+        "find": "Titán estaba ahí, a pocos miles de kilómetros, y no se dejaba mirar.",
+        "replace": "Titán estaba ahí, al alcance de sus instrumentos, y no se dejaba mirar.",
+        "reason": "dato incorrecto"
+      },
+      {
+        "section": "chapter_3",
+        "find": "Fueron cientos de pasadas a lo largo de trece años.",
+        "replace": "Fueron más de cien sobrevuelos a lo largo de trece años.",
+        "reason": "127 sobrevuelos"
+      },
+      {
+        "section": "chapter_3",
+        "find": "como charcos brillantes y oscuros al radar, porque una superficie líquida",
+        "replace": "como charcos oscuros al radar, porque una superficie líquida",
+        "reason": "contradicción"
+      },
+      {
+        "section": "chapter_3",
+        "find": "No uno perfecto, pero sí casi completo, con costas, desiertos y relieve.",
+        "replace": "No uno perfecto, pero sí con costas, desiertos y relieve.",
+        "reason": "sobreafirmación"
+      },
+      {
+        "section": "chapter_4",
+        "find": "Equivale a cruzar el océano Atlántico en unos tres minutos.",
+        "replace": "Equivale a cruzar el océano Atlántico en unos quince minutos.",
+        "reason": "cálculo erróneo"
+      },
+      {
+        "section": "chapter_4",
+        "find": "A menos doscientos grados Celsius, lo que corre por esos cauces es otra cosa",
+        "replace": "A casi ciento ochenta grados bajo cero, lo que corre por esos cauces es otra cosa",
+        "reason": "temperatura y lectura TTS"
+      },
+      {
+        "section": "chapter_4",
+        "find": "La sonda quedó allí, a menos ciento setenta y nueve grados, en la orilla",
+        "replace": "La sonda quedó allí, a unos ciento setenta y nueve grados bajo cero, en la orilla",
+        "reason": "lectura TTS"
+      },
+      {
+        "section": "chapter_5",
+        "find": "igual que la Luna las levanta en nuestros océanos, y esas mareas podrían empujar",
+        "replace": "igual que la Luna las levanta en nuestros océanos. Esas mareas podrían empujar",
+        "reason": "oración larga"
+      },
+      {
+        "section": "chapter_5",
+        "find": "Es polvo de bruma, caído del cielo durante millones de años.",
+        "replace": "Es, con toda probabilidad, polvo de bruma, caído del cielo durante millones de años.",
+        "reason": "incertidumbre"
+      },
+      {
+        "section": "chapter_5",
+        "find": "Así que la respuesta es esta: no hizo falta un viento fuerte.",
+        "replace": "Así que la respuesta provisional es esta: quizá no hizo falta un viento fuerte.",
+        "reason": "tema aún en debate"
+      },
+      {
+        "section": "chapter_6",
+        "find": "Algunos modelos hablan de gotas de uno o dos centímetros, del tamaño de una uva pequeña.",
+        "replace": "Algunos modelos hablan de gotas de hasta un centímetro, del tamaño de un guisante grande.",
+        "reason": "tamaño modelado"
+      },
+      {
+        "section": "chapter_6",
+        "find": "La luz es de un naranja apagado, como un atardecer que no termina.",
+        "replace": "La luz es de un naranja apagado y parejo.",
+        "reason": "repetición"
+      },
+      {
+        "section": "chapter_7",
+        "find": "sobre Kruken Mare, apareció un destello",
+        "replace": "sobre Kraken Mare, apareció un destello",
+        "reason": "errata"
+      },
+      {
+        "section": "chapter_7",
+        "find": "Está hecho de metano y etano líquidos, a casi doscientos grados bajo cero.",
+        "replace": "Está hecho de metano y etano líquidos, a unos ciento ochenta grados bajo cero.",
+        "reason": "temperatura"
+      },
+      {
+        "section": "chapter_8",
+        "find": "En mil novecientos noventa y siete, cuando la nave Cassini aún cruzaba el espacio rumbo a Saturno, nadie esperaba que un lago pudiera esconder un truco.",
+        "replace": "Antes de que Cassini llegara a Saturno, nadie esperaba que un lago pudiera esconder un truco.",
+        "reason": "dato confuso"
+      },
+      {
+        "section": "chapter_8",
+        "find": "En el siguiente, años después, ya no.",
+        "replace": "En el siguiente, tiempo después, ya no.",
+        "reason": "intervalo dudoso"
+      },
+      {
+        "section": "chapter_8",
+        "find": "Cassini detectó objetos brillantes que surgían y se desvanecían en Ligeia Mare, y todavía se debate si son olas, burbujas o sólidos flotando.",
+        "replace": "Los datos de Cassini no bastan para elegir entre ellas.",
+        "reason": "repetición"
+      },
+      {
+        "section": "chapter_8",
+        "find": "bajo la corteza de hielo podría haber un océano de agua líquida.",
+        "replace": "bajo la corteza de hielo podría haber un océano de agua líquida, o quizá solo capas de hielo semifundido.",
+        "reason": "incertidumbre actual"
       },
       {
         "section": "chapter_9",
-        "find": "Selk es un círculo de unos ochenta kilómetros de ancho, grabado hace miles de años por el choque de un meteorito.",
-        "replace": "Selk es un círculo de unos noventa kilómetros de ancho, grabado hace decenas de miles de años por el choque de un meteorito.",
-        "reason": "crater size and age"
+        "find": "o la hemos tocado durante unas pocas horas",
+        "replace": "o la hemos tocado durante poco más de una hora",
+        "reason": "Huygens ~72 min"
       },
       {
         "section": "chapter_9",
-        "find": "Dragonfly no va a buscar vida.",
-        "replace": "Dragonfly no está pensada para demostrar que hay vida.",
-        "reason": "overstated claim"
+        "find": "Huygens se posó sobre su suelo blando y habló durante unos setenta minutos.",
+        "replace": "Huygens se posó sobre su suelo blando y habló un rato.",
+        "reason": "repetición"
       },
       {
-        "section": "chapter_8",
-        "find": "Piensa en lo que significa. Europa guarda un océano bajo su hielo.",
-        "replace": "Europa guarda un océano bajo su hielo.",
-        "reason": "repeated phrase"
+        "section": "chapter_9",
+        "find": "Un ser humano, con unas alas pequeñas atadas a los brazos, podría sostenerse en ese cielo.",
+        "replace": "Hasta una persona con alas pequeñas atadas a los brazos podría, en teoría, sostenerse en ese cielo.",
+        "reason": "sobreafirmación"
       },
       {
-        "section": "chapter_8",
-        "find": "Lo que sí parece claro es que hay agua líquida debajo.",
-        "replace": "Lo que parece probable es que haya agua líquida debajo.",
-        "reason": "overstated certainty"
+        "section": "chapter_9",
+        "find": "hasta llegar a un cráter de unos ochenta kilómetros de ancho",
+        "replace": "hasta llegar a un cráter de unos noventa kilómetros de ancho",
+        "reason": "Selk ~90 km"
       },
       {
-        "section": "chapter_8",
-        "find": "indican que bajo la corteza de hielo de Titán hay un océano global de agua líquida, aunque su forma exacta aún se discute.",
-        "replace": "indican que bajo la corteza de hielo de Titán hay agua líquida, aunque su forma exacta aún se discute.",
-        "reason": "consistent with doubt"
+        "section": "chapter_9",
+        "find": "Cuando Dragonfly toque el suelo de Titán, ese niño estará terminando el colegio.",
+        "replace": "Cuando Dragonfly toque el suelo de Titán, ese niño estará entrando en la adolescencia.",
+        "reason": "cálculo temporal"
       },
       {
-        "section": "chapter_7",
-        "find": "Y se elevan cientos de metros sobre el suelo, la altura de un edificio muy alto.",
-        "replace": "Y se elevan unos cien metros sobre el suelo, la altura de un edificio muy alto.",
-        "reason": "dune height overstated"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Más al este está Belet, un campo de dunas aún más extenso, uno de los mayores de la luna.",
-        "replace": "Otro campo, Belet, es aún más extenso, uno de los mayores de la luna.",
-        "reason": "unsure direction"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Durante millones de años descienden lentamente por el aire naranja y se posan en el suelo.",
-        "replace": "Durante siglos descienden lentamente por el aire naranja y se posan en el suelo.",
-        "reason": "settling time"
-      },
-      {
-        "section": "chapter_7",
-        "find": "Piensa en lo que significa. El mismo cielo que alimenta los mares también fabrica el desierto.",
-        "replace": "El mismo cielo que alimenta los mares también fabrica el desierto.",
-        "reason": "repeated phrase"
-      },
-      {
-        "section": "chapter_6",
-        "find": "Piensa en lo que eso significa. Durante décadas se habló de mares en Titán como una hipótesis.",
-        "replace": "Durante décadas se habló de mares en Titán como una hipótesis.",
-        "reason": "repeated phrase"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Piensa en lo que significa. Esas moléculas son parientes lejanas",
-        "replace": "Esas moléculas son parientes lejanas",
-        "reason": "repeated phrase"
-      },
-      {
-        "section": "chapter_2",
-        "find": "cada grano tarda millones de años en llegar al suelo.",
-        "replace": "cada grano tarda siglos en llegar al suelo.",
-        "reason": "settling time"
-      },
-      {
-        "section": "chapter_2",
-        "find": "Una partícula que hoy se forma en lo alto habrá tocado tierra mucho antes de que existiera cualquier cosa parecida a nosotros, o mucho después.",
-        "replace": "Una partícula que hoy se forma en lo alto seguirá cayendo cuando tú y yo ya no estemos.",
-        "reason": "consistent with fall time"
-      },
-      {
-        "section": "chapter_6",
-        "find": "El momento llegó en el verano de dos mil catorce. Cassini sobrevoló el polo norte de Titán, y el instrumento apuntó hacia Kraken Mare, el mayor de los mares.",
-        "replace": "El momento llegó en dos mil nueve. Cassini sobrevoló el norte de Titán, y el instrumento apuntó hacia Jingpo Lacus, un lago del polo norte.",
-        "reason": "wrong date and place"
-      },
-      {
-        "section": "chapter_6",
-        "find": "Era el sol, reflejado en un mar de metano.",
-        "replace": "Era el sol, reflejado en un lago de hidrocarburos.",
-        "reason": "consistent with correction"
-      },
-      {
-        "section": "chapter_6",
-        "find": "El mar de Kraken estaba quieto como un espejo.",
-        "replace": "El lago estaba quieto como un espejo.",
-        "reason": "consistent with correction"
-      },
-      {
-        "section": "chapter_6",
-        "find": "quizás haya otra superficie líquida, mucho más profunda, que ninguna cámara podrá ver nunca.",
-        "replace": "quizás haya otra superficie líquida, mucho más profunda, que ninguna cámara ha visto.",
-        "reason": "overstated certainty"
-      },
-      {
-        "section": "chapter_6",
-        "find": "El aire es denso, y está a casi ciento ochenta grados bajo cero.",
-        "replace": "El aire es denso y helado.",
-        "reason": "repeated number"
+        "section": "chapter_9",
+        "find": "Lo que fluye por sus lagos es metano y etano, a casi doscientos grados bajo cero.",
+        "replace": "Lo que fluye por sus lagos es metano y etano, a unos ciento ochenta grados bajo cero.",
+        "reason": "temperatura"
       }
     ]
   },
@@ -486,61 +547,61 @@
     "count": 4,
     "minutes": [
       6.7,
-      17.4,
-      30.1,
-      42.1
+      18.8,
+      30.5,
+      42.3
     ],
-    "gift_minute": 17.4
+    "gift_minute": 18.8
   },
   "topic": "Titán: la luna de Saturno con lagos de metano y atmósfera densa",
   "shorts": [
     {
-      "title": "El sol brilló sobre un lago de otro mundo",
-      "hook": "Un espejo a mil millones de kilómetros",
-      "narration": "Los astrónomos buscaban algo muy simple: el brillo del sol sobre el agua. Pero no en la Tierra, sino en una luna cubierta de niebla, a más de mil millones de kilómetros de casa. Tú conoces ese brillo. Lo has visto en un lago, al final de la tarde, cuando el viento se detiene. En dos mil nueve, la sonda Cassini sobrevoló el polo norte de Titán, y su instrumento infrarrojo captó un punto brillante sobre Jingpo Lacus. Era el sol, reflejado en un lago de hidrocarburos. Un destello así solo se forma si la superficie es muy lisa, sin olas grandes ni espuma. Ese lago de metano y etano estaba quieto como un espejo, bajo un cielo naranja. Fue la primera vez que alguien vio la luz de una estrella rebotar sobre un líquido en otro mundo. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "El Sol se reflejó en un mar de otro mundo",
+      "hook": "Un destello sobre un mar alienígena",
+      "narration": "Un destello sobre un mar alienígena confirmó algo que nadie había visto jamás. La nave Cassini miraba el norte de Titán con su cámara infrarroja, a través de la bruma anaranjada, cuando apareció un brillo sobre Kraken Mare. Era el Sol, reflejado en la superficie de un mar de metano y etano líquidos, a unos ciento ochenta grados bajo cero. Es el mismo resplandor que te encandila desde la orilla de un lago tranquilo, solo que aquí lo vio una nave a mil quinientos millones de kilómetros de casa. Aquel destello demostró que eso era líquido, y que estaba completamente quieto. Kraken Mare se extiende por cuatrocientos mil kilómetros cuadrados, más que el mar Caspio, el mayor lago de la Tierra. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Cassini Titan Jingpo Lacus sunglint",
-        "Cassini Titan northern lakes radar",
-        "Titan Kraken Mare Cassini",
-        "Cassini infrared Titan lake reflection"
+        "Cassini Kraken Mare Titan",
+        "Cassini Titan sunglint specular reflection",
+        "Titan northern seas radar Cassini",
+        "Titan lakes methane infrared"
       ],
       "video_queries": [
-        "Cassini Titan lakes sunglint",
-        "Titan north pole seas Cassini animation"
+        "Cassini Titan lakes flyover",
+        "Titan Kraken Mare animation"
       ],
       "source": "NASA / Cassini-Huygens"
     },
     {
-      "title": "Una sonda aterrizó en la luna más lejana jamás tocada",
-      "hook": "Cayó dos horas y media sobre otro mundo",
-      "narration": "Una pequeña nave bajó durante dos horas y media a través de un cielo naranja que nadie conocía. Se llamaba Huygens, y el catorce de enero de dos mil cinco se separó de Cassini para caer hacia Titán. Nadie sabía si el suelo sería roca, hielo o un mar. Bajo la bruma apareció una costa, con líneas finas que parecían cauces secos. Después vino un golpe suave, y la sonda se hundió un poco, como una bota en tierra húmeda. Alrededor había guijarros de hielo redondeados, del tamaño de una naranja. Huygens habló desde el suelo poco más de una hora. Fue el aterrizaje más lejano que se haya logrado en el Sistema Solar. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "Así sonó la caída a Titán durante dos horas y media",
+      "hook": "Cayó dos horas y media hacia lo desconocido",
+      "narration": "Cayó dos horas y media hacia un mundo que nadie había visto. El catorce de enero de dos mil cinco, la sonda Huygens entró en la atmósfera de Titán a unos veinte mil kilómetros por hora, como cruzar el océano Atlántico en quince minutos. Durante las primeras decenas de minutos solo vio un naranja uniforme, sin sombras ni horizonte. Luego la niebla cedió, y el mundo fue pasando de mancha a lugar: canales ramificados, una costa con cabos y bahías. Al tocar el suelo, se hundió un poco, como si pisara la costra quebradiza de una crema recién tostada. Alrededor, piedras redondeadas por un líquido que alguna vez corrió allí. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
         "Huygens probe Titan surface",
-        "Huygens descent Titan panorama",
-        "Huygens landing site pebbles Titan",
-        "Cassini Huygens separation Titan"
+        "Huygens descent image Titan channels",
+        "Huygens landing site Titan pebbles",
+        "Cassini Huygens probe release Titan"
       ],
       "video_queries": [
-        "Huygens probe descent Titan",
-        "Huygens landing Titan animation"
+        "Huygens descent Titan animation",
+        "Huygens probe landing Titan"
       ],
-      "source": "ESA / Huygens"
+      "source": "ESA / Cassini-Huygens"
     },
     {
-      "title": "En Titán, el desierto está hecho de lo que cae del cielo",
-      "hook": "Dunas del tamaño de continentes",
-      "narration": "Cerca del ecuador de Titán se extienden campos de dunas del tamaño de continentes. Y no están hechos de arena. Cada duna se estira decenas de kilómetros, más o menos lo que caminarías en un día largo, y se eleva unos cien metros, la altura de un edificio muy alto. Los granos son orgánicos. Nacen en lo alto del cielo, cuando la luz ultravioleta rompe el metano, y caen durante siglos como una lluvia lentísima de polvo oscuro. El viento los junta y los empuja. Allí la gravedad es baja y el aire es denso, así que una brisa tranquila basta para mover una duna entera. El mismo cielo que alimenta los mares también fabrica el desierto. Sígueme: cada semana, un viaje nuevo para dormir.",
+      "title": "En Titán podrías volar moviendo los brazos",
+      "hook": "En Titán podrías volar con alas pequeñas",
+      "narration": "En Titán, hasta una persona con alas pequeñas atadas a los brazos podría sostenerse en el aire. La razón son dos números. El aire en la superficie es unas cuatro veces más denso que el de la Tierra, y la gravedad es apenas una séptima parte de la nuestra. Con tanto aire para apoyarse y tan poco peso que levantar, volar casi no cuesta esfuerzo. Por eso la NASA enviará Dragonfly, un rotor-dron con ocho rotores, del tamaño de un coche pequeño. Saltará de paisaje en paisaje, desde las dunas de Shangri-La hasta el cráter Selk, bajo un cielo naranja, en un mundo donde volar es más fácil que caminar. Sígueme: cada semana, un viaje nuevo para dormir.",
       "image_queries": [
-        "Cassini radar Titan dunes Shangri-La",
-        "Titan equatorial dunes Belet",
-        "Titan dunes radar image",
-        "Titan orange haze atmosphere Cassini"
+        "Dragonfly rotorcraft Titan",
+        "Dragonfly drone Titan concept",
+        "Titan dunes Shangri-La Cassini",
+        "Selk crater Titan"
       ],
       "video_queries": [
-        "Titan dunes Cassini radar flyover",
-        "Titan surface dunes animation"
+        "Dragonfly Titan mission animation",
+        "Dragonfly rotorcraft flight Titan"
       ],
-      "source": "NASA / Cassini-Huygens"
+      "source": "NASA / Dragonfly"
     }
   ],
   "share_code": "titan-1031"
