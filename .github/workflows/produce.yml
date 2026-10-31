@@ -159,6 +159,7 @@ jobs:
           [ "${{ inputs.voice_bench }}" = "true" ] && ARGS="--voice-bench"
           export BENCH_ENGINES="${{ inputs.bench_engines }}"
           [ "${{ inputs.bench_engines }}" = "qwen-designs" ] && export BENCH_ENGINES="qwen,score" BENCH_DESIGNS=true
+          [ "${{ inputs.bench_engines }}" = "ingles" ] && export BENCH_ENGINES="qwen,score" BENCH_DESIGNS=true BENCH_LANG=english
           [ "${{ inputs.bench_engines }}" = "emotion" ] && export BENCH_EMOTION=true
           [ "${{ inputs.bench_engines }}" = "native" ] && export BENCH_NATIVE=true
           [ "${{ inputs.bench_engines }}" = "nocturno" ] && export BENCH_NOCTURNO=true

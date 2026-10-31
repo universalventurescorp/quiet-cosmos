@@ -198,6 +198,7 @@ def run_variant(variant, fn, sentences, sr):
         json.dump(res, open(OUT / f"res_{engine}.json", "w"), indent=1)
 
 S, REF_TEXT, DESIGN = cfg["sentences"], cfg["ref_text"], cfg["design"]
+LANG = cfg.get("lang") or "Spanish"            # Qwen language name ("Spanish", "English")
 EMO = cfg.get("emo") or []          # [[edit_type, edit_info] | None, pause_s, gain_db] per sentence
 
 def resample(w, sr, to=24000):
@@ -381,7 +382,7 @@ try:
         refs = {}
         for g in DESIGN:
             try:
-                wavs, sr = design.generate_voice_design(text=REF_TEXT, language="Spanish", instruct=DESIGN[g])
+                wavs, sr = design.generate_voice_design(text=REF_TEXT, language=LANG, instruct=DESIGN[g])
                 w = to_np(wavs[0])
                 if not np.isfinite(w).all() or np.max(np.abs(w)) < 1e-3:
                     raise RuntimeError("fp16 produced NaN/silence")
@@ -396,7 +397,7 @@ try:
         clone_sr = {}
         for g, ref in refs.items():
             def fn(s, ref=ref):
-                wavs, sr = base.generate_voice_clone(text=s, language="Spanish", ref_audio=str(ref), ref_text=REF_TEXT)
+                wavs, sr = base.generate_voice_clone(text=s, language=LANG, ref_audio=str(ref), ref_text=REF_TEXT)
                 clone_sr["sr"] = sr
                 return wavs[0]
             run_variant(f"qwen3_{g}", fn, S, lambda: clone_sr["sr"])
@@ -407,7 +408,7 @@ try:
             ref = OUT / f"ref_voxcpm_{g}.wav"
             if ref.exists():
                 def fn(s, ref=ref):
-                    wavs, sr = base.generate_voice_clone(text=s, language="Spanish", ref_audio=str(ref), ref_text=REF_TEXT)
+                    wavs, sr = base.generate_voice_clone(text=s, language=LANG, ref_audio=str(ref), ref_text=REF_TEXT)
                     clone_sr["sr"] = sr
                     return wavs[0]
                 run_variant(f"qwen3_voxref_{g}", fn, S, lambda: clone_sr["sr"])
@@ -928,7 +929,7 @@ try:
 
         def norm(t):
             t = t.lower().replace(".", "") if re.search(r"\d\.\d{3}", t) else t.lower()
-            t = re.sub(r"\d+", lambda m: " " + num2words(int(m.group()), lang="es") + " ", t)
+            t = re.sub(r"\d+", lambda m: " " + num2words(int(m.group()), lang="en" if LANG == "English" else "es") + " ", t)
             t = unicodedata.normalize("NFD", t)
             t = "".join(c for c in t if unicodedata.category(c) != "Mn")
             t = re.sub(r"[^a-zñ ]", " ", t)
@@ -991,7 +992,7 @@ try:
                 w, sr = sf.read(f, dtype="float32")
                 w16 = librosa.resample(w, orig_sr=sr, target_sr=16000) if sr != 16000 else w
                 hyp = asr({"raw": w16, "sampling_rate": 16000},
-                          generate_kwargs={"language": "spanish", "task": "transcribe"})["text"]
+                          generate_kwargs={"language": LANG.lower(), "task": "transcribe"})["text"]
                 with torch.no_grad():
                     m = float(mos(torch.from_numpy(w16).unsqueeze(0).cuda(), 16000).item())
                 row = {"i": i, "cer": round(cer(s, hyp), 4), "mos": round(m, 3), "heard": hyp.strip(),
@@ -1210,7 +1211,7 @@ def run_engine(engine, gpu, timeout=60 * 60):
         save()
         log(f"{engine}: installed in {(time.time() - t) / 60:.1f} min on GPU {gpu}")
         cfgf = WORK / f"cfg_{engine}.json"
-        cfgf.write_text(json.dumps({"engine": engine, "out": str(OUT), "sentences": M["sentences"], "ref_text": REF_TEXT,
+        cfgf.write_text(json.dumps({"engine": engine, "out": str(OUT), "sentences": M["sentences"], "ref_text": M["ref_text"], "lang": M["lang"],
                                     "design": M["design"], "design_only": M.get("design_only", False),
                                     "emo": M.get("emo"), "narrator_ref_text": M.get("narrator_ref_text"),
                                     "native_designs": M.get("native_designs", NATIVE_DESIGNS),
@@ -1318,7 +1319,8 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     WORK.mkdir(parents=True, exist_ok=True)
     job = json.loads(base64.b64decode(JOB_B64))
-    M.update({"job_id": job["job_id"], "errors": [], "engines": {}, "sentences": SENTENCES, "ref_text": REF_TEXT,
+    M.update({"job_id": job["job_id"], "errors": [], "engines": {}, "sentences": job.get("sentences") or SENTENCES,
+              "ref_text": job.get("ref_text") or REF_TEXT, "lang": job.get("lang") or "Spanish",
               "design": job.get("design") or DESIGN, "design_only": bool(job.get("design"))})
     if job.get("emotion"):
         M.update({"sentences": [t for t, *_ in EMO_SCRIPT],

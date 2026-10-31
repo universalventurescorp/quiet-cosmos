@@ -90,7 +90,8 @@ def video_bench(cfg, kind="video"):
     out = ROOT / "outputs" / f"{kind}-bench"
     out.mkdir(parents=True, exist_ok=True)
     job = {"job_id": f"{kind}-bench-{dt.datetime.utcnow():%Y%m%d%H%M%S}"}
-    prev = ROOT / "data" / "diagnostics" / f"{kind}_bench"
+    prev = ROOT / "data" / "diagnostics" / (f"{kind}_bench_en" if os.environ.get("BENCH_LANG") == "english"
+                                            else f"{kind}_bench")
     if kind == "voice" and os.environ.get("BENCH_ENGINES"):
         # partial rerun: only these engines, reusing the designed reference voices already in the repo
         import base64
@@ -99,6 +100,10 @@ def video_bench(cfg, kind="video"):
         if os.environ.get("BENCH_DESIGNS") == "true":     # round 2: new narrator voices from kaggle/voice_designs.json
             job["design"] = read_json(ROOT / "kaggle" / "voice_designs.json", {})
             job["refs"] = {}
+        if os.environ.get("BENCH_LANG") == "english":       # English narrators (The Quiet Ledger / Quiet Cosmos)
+            en = read_json(ROOT / "kaggle" / "ledger_sample_en.json", {})
+            job.update(design=read_json(ROOT / "kaggle" / "voice_designs_en.json", {}), refs={}, lang="English",
+                       sentences=en["sentences"], ref_text=en["ref_text"])
         if os.environ.get("BENCH_MEJOR4") == "true":        # strong melody edit: PSOLA vs WORLD, no tremor
             os.environ["BENCH_EMOTION"] = "true"
             job.update(mejor4=True, prosody_src=(ROOT / "pipeline" / "prosody.py").read_text(encoding="utf-8"))
@@ -125,7 +130,7 @@ def video_bench(cfg, kind="video"):
             ch = yaml.safe_load((ROOT / "channels" / "estrato-nocturno.yaml").read_text(encoding="utf-8"))
             job.update(emotion=True, narrator_ref_text=ch["voice"]["ref_text"],
                        refs={"narrador": base64.b64encode((ROOT / ch["voice"]["ref_audio"]).read_bytes()).decode()})
-    prev_state = read_json(ROOT / "data" / "diagnostics" / f"{kind}_bench" / "manifest.json", {}).get("push") or {}
+    prev_state = read_json(prev / "manifest.json", {}).get("push") or {}
     if (prev_state.get("ok") and not prev_state.get("reused") and not job.get("engines")
             and time.time() - prev_state.get("pushed_at", 0) < 4 * 3600):
         # a bench pushed in the last 4 h may still be running (or finished) on Kaggle: collect it
