@@ -58,7 +58,7 @@ async function go() {
   try {
     const r = await fetch("/links.json", { cache: "no-store" });
     const links = await r.json();
-    if (links[code]) url = "https://youtu.be/" + links[code];
+    if (links[code]) url = "https://www.youtube.com/watch?v=" + links[code];
   } catch (e) { /* sin lista: se comparte el canal */ }
   const wa = "https://wa.me/?text=" + encodeURIComponent(tr[4] + url);
   document.getElementById("t").textContent = tr[0];
