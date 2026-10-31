@@ -1,0 +1,383 @@
+{
+  "qwen3_l1": {
+    "f0_median_hz": 94,
+    "pitch_var_st": 3.1,
+    "pitch_range_st": 10.6,
+    "declination_st_s": -2.34,
+    "final_fall_st": -4.55,
+    "pct_rising": 0.0,
+    "phrases": 35,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.423,
+    "words_per_min": 153,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.43,
+        "heard": "Close your eyes for a moment and imagine a caravan resting at the edge of a quiet desert town.",
+        "seconds": 6.6
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.41,
+        "heard": "The camels kneel in the cooling sand, and the last light of the day turns the dunes the color of old copper.",
+        "seconds": 7.0
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.442,
+        "heard": "This was the Silk Road, though it was never really a single road at all.",
+        "seconds": 4.9
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.422,
+        "heard": "It was a vast web of mountain passes, river valleys, and hidden oases stretching for thousands of miles.",
+        "seconds": 7.3
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.378,
+        "heard": "Few travelers ever walked its whole length,",
+        "seconds": 3.0
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.409,
+        "heard": "Instead, goods passed from hand to hand, from one market to the next, like a story whispered across a long table.",
+        "seconds": 8.3
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.505,
+        "heard": "A bolt of Chinese silk might change owners a dozen times before it reached a palace in Rome.",
+        "seconds": 5.5
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 4.418,
+        "heard": "And with every trade, its price rose a little higher.",
+        "seconds": 4.1
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.489,
+        "heard": "In the markets of Samarkand, Sogdian merchants kept careful records of each sale.",
+        "seconds": 5.8
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.445,
+        "heard": "They wrote contracts, lent money, and trusted one another across distances that took months to cross.",
+        "seconds": 6.8
+      },
+      {
+        "i": 10,
+        "cer": 0.0,
+        "mos": 4.453,
+        "heard": "Silver flowed east, silk flowed west, and ideas traveled quietly alongside them.",
+        "seconds": 6.7
+      },
+      {
+        "i": 11,
+        "cer": 0.0,
+        "mos": 4.44,
+        "heard": "Paper, glass, spices, and new ways of counting all moved along these same paths.",
+        "seconds": 6.7
+      },
+      {
+        "i": 12,
+        "cer": 0.0,
+        "mos": 4.419,
+        "heard": "So did faiths, languages, and the simple habits of daily life.",
+        "seconds": 3.9
+      },
+      {
+        "i": 13,
+        "cer": 0.0,
+        "mos": 4.382,
+        "heard": "There's nothing you need to remember tonight. Just let the caravan move on slowly in the dark.",
+        "seconds": 6.5
+      },
+      {
+        "i": 14,
+        "cer": 0.0,
+        "mos": 4.316,
+        "heard": "Somewhere far ahead, a city waits, its lamps glowing softly in the night.",
+        "seconds": 6.2
+      },
+      {
+        "i": 15,
+        "cer": 0.0,
+        "mos": 4.403,
+        "heard": "And the long road carries us gently toward it.",
+        "seconds": 2.8
+      }
+    ]
+  },
+  "qwen3_l2": {
+    "f0_median_hz": 90,
+    "pitch_var_st": 2.9,
+    "pitch_range_st": 9.8,
+    "declination_st_s": -2.97,
+    "final_fall_st": -5.0,
+    "pct_rising": 5.0,
+    "phrases": 40,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.501,
+    "words_per_min": 154,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.479,
+        "heard": "Close your eyes for a moment and imagine a caravan resting at the edge of a quiet desert town.",
+        "seconds": 6.2
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.507,
+        "heard": "The camels kneel in the cooling sand, and the last light of the day turns the dunes the color of old copper.",
+        "seconds": 6.3
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.508,
+        "heard": "This was the Silk Road, though it was never really a single road at all.",
+        "seconds": 4.6
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.507,
+        "heard": "It was a vast web of mountain passes, river valleys and hidden oases, stretching for thousands of miles.",
+        "seconds": 7.6
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.503,
+        "heard": "Few travelers ever walked its whole length.",
+        "seconds": 3.3
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.513,
+        "heard": "Instead, goods passed from hand to hand, from one market to the next, like a story whispered across a long table.",
+        "seconds": 8.4
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.519,
+        "heard": "A bolt of Chinese silk might change owners a dozen times before it reached a palace in Rome.",
+        "seconds": 6.1
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 4.508,
+        "heard": "And with every trade, its price rose a little higher.",
+        "seconds": 3.8
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.49,
+        "heard": "In the markets of Samarkand, Sogdian merchants kept careful records of each sale.",
+        "seconds": 5.5
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.502,
+        "heard": "They wrote contracts, lent money, and trusted one another across distances that took months to cross.",
+        "seconds": 7.0
+      },
+      {
+        "i": 10,
+        "cer": 0.0,
+        "mos": 4.505,
+        "heard": "Silver flowed east, silk flowed west, and ideas traveled quietly alongside them.",
+        "seconds": 6.4
+      },
+      {
+        "i": 11,
+        "cer": 0.0,
+        "mos": 4.528,
+        "heard": "Paper, glass, spices, and new ways of counting all moved along these same paths.",
+        "seconds": 6.4
+      },
+      {
+        "i": 12,
+        "cer": 0.0,
+        "mos": 4.475,
+        "heard": "So did faiths, languages, and the simple habits of daily life.",
+        "seconds": 4.9
+      },
+      {
+        "i": 13,
+        "cer": 0.0,
+        "mos": 4.504,
+        "heard": "There's nothing you need to remember tonight, just let the caravan move on, slowly, in the dark.",
+        "seconds": 6.3
+      },
+      {
+        "i": 14,
+        "cer": 0.0,
+        "mos": 4.513,
+        "heard": "Somewhere far ahead, a city waits, its lamps glowing softly in the night.",
+        "seconds": 5.7
+      },
+      {
+        "i": 15,
+        "cer": 0.0,
+        "mos": 4.453,
+        "heard": "and the long road carries us gently toward it.",
+        "seconds": 3.2
+      }
+    ]
+  },
+  "qwen3_l3": {
+    "f0_median_hz": 90,
+    "pitch_var_st": 2.26,
+    "pitch_range_st": 7.5,
+    "declination_st_s": -3.42,
+    "final_fall_st": -4.4,
+    "pct_rising": 0.0,
+    "phrases": 37,
+    "mean_cer": 0.0,
+    "max_cer": 0.0,
+    "mean_mos": 4.436,
+    "words_per_min": 159,
+    "sentences": [
+      {
+        "i": 0,
+        "cer": 0.0,
+        "mos": 4.447,
+        "heard": "Close your eyes for a moment and imagine a caravan resting at the edge of a quiet desert town.",
+        "seconds": 6.2
+      },
+      {
+        "i": 1,
+        "cer": 0.0,
+        "mos": 4.45,
+        "heard": "The camels kneel in the cooling sand, and the last light of the day turns the dunes the color of old copper.",
+        "seconds": 7.3
+      },
+      {
+        "i": 2,
+        "cer": 0.0,
+        "mos": 4.436,
+        "heard": "This was the Silk Road, though it was never really a single road at all.",
+        "seconds": 4.6
+      },
+      {
+        "i": 3,
+        "cer": 0.0,
+        "mos": 4.408,
+        "heard": "It was a vast web of mountain passes, river valleys, and hidden oases stretching for thousands of miles.",
+        "seconds": 7.1
+      },
+      {
+        "i": 4,
+        "cer": 0.0,
+        "mos": 4.452,
+        "heard": "Few travelers ever walked its whole length,",
+        "seconds": 3.3
+      },
+      {
+        "i": 5,
+        "cer": 0.0,
+        "mos": 4.45,
+        "heard": "Instead, goods passed from hand to hand, from one market to the next, like a story whispered across a long table.",
+        "seconds": 7.6
+      },
+      {
+        "i": 6,
+        "cer": 0.0,
+        "mos": 4.439,
+        "heard": "A bolt of Chinese silk might change owners a dozen times before it reached a palace in Rome.",
+        "seconds": 5.5
+      },
+      {
+        "i": 7,
+        "cer": 0.0,
+        "mos": 4.425,
+        "heard": "And with every trade, its price rose a little higher.",
+        "seconds": 3.8
+      },
+      {
+        "i": 8,
+        "cer": 0.0,
+        "mos": 4.453,
+        "heard": "In the markets of Samarkand, Sogdian merchants kept careful records of each sale.",
+        "seconds": 5.2
+      },
+      {
+        "i": 9,
+        "cer": 0.0,
+        "mos": 4.396,
+        "heard": "They wrote contracts, lent money, and trusted one another across distances that took months to cross.",
+        "seconds": 6.2
+      },
+      {
+        "i": 10,
+        "cer": 0.0,
+        "mos": 4.443,
+        "heard": "Silver flowed east, silk flowed west, and ideas traveled quietly alongside them.",
+        "seconds": 6.0
+      },
+      {
+        "i": 11,
+        "cer": 0.0,
+        "mos": 4.471,
+        "heard": "Paper, glass, spices, and new ways of counting all moved along these same paths.",
+        "seconds": 6.5
+      },
+      {
+        "i": 12,
+        "cer": 0.0,
+        "mos": 4.45,
+        "heard": "So did faiths, languages, and the simple habits of daily life,",
+        "seconds": 4.9
+      },
+      {
+        "i": 13,
+        "cer": 0.0,
+        "mos": 4.404,
+        "heard": "There's nothing you need to remember tonight. Just let the caravan move on, slowly in the dark.",
+        "seconds": 6.4
+      },
+      {
+        "i": 14,
+        "cer": 0.0,
+        "mos": 4.463,
+        "heard": "Somewhere far ahead, a city waits, its lamps glowing softly in the night.",
+        "seconds": 5.3
+      },
+      {
+        "i": 15,
+        "cer": 0.0,
+        "mos": 4.393,
+        "heard": "and the long road carries us gently toward it.",
+        "seconds": 3.0
+      }
+    ]
+  }
+}

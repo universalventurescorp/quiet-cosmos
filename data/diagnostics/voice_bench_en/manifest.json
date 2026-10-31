@@ -1,0 +1,149 @@
+{
+  "job_id": "voice-bench-20261031143646",
+  "errors": [],
+  "engines": {
+    "qwen": {
+      "status": "done",
+      "gpu": 1,
+      "install_min": 1.0,
+      "returncode": 0,
+      "minutes": 14.1,
+      "variants": {
+        "qwen3_l1": {
+          "sr": 24000,
+          "speech_seconds": 92.2,
+          "gen_seconds": 214.2,
+          "rtf": 2.324
+        },
+        "qwen3_l2": {
+          "sr": 24000,
+          "speech_seconds": 91.7,
+          "gen_seconds": 209.2,
+          "rtf": 2.282
+        },
+        "qwen3_l3": {
+          "sr": 24000,
+          "speech_seconds": 88.8,
+          "gen_seconds": 204.0,
+          "rtf": 2.298
+        }
+      },
+      "errors": [],
+      "torch": "2.15.0+cu132",
+      "cuda": true,
+      "version": null
+    },
+    "score": {
+      "status": "done",
+      "gpu": 1,
+      "install_min": 0.4,
+      "returncode": 0,
+      "minutes": 2.5,
+      "variants": {},
+      "errors": [],
+      "torch": "2.15.0+cu132",
+      "cuda": true,
+      "version": null
+    }
+  },
+  "sentences": [
+    "Close your eyes for a moment, and imagine a caravan resting at the edge of a quiet desert town.",
+    "The camels kneel in the cooling sand, and the last light of the day turns the dunes the color of old copper.",
+    "This was the Silk Road, though it was never really a single road at all.",
+    "It was a vast web of mountain passes, river valleys and hidden oases, stretching for thousands of miles.",
+    "Few travelers ever walked its whole length.",
+    "Instead, goods passed from hand to hand, from one market to the next, like a story whispered across a long table.",
+    "A bolt of Chinese silk might change owners a dozen times before it reached a palace in Rome.",
+    "And with every trade, its price rose a little higher.",
+    "In the markets of Samarkand, Sogdian merchants kept careful records of each sale.",
+    "They wrote contracts, lent money, and trusted one another across distances that took months to cross.",
+    "Silver flowed east, silk flowed west, and ideas traveled quietly alongside them.",
+    "Paper, glass, spices and new ways of counting all moved along these same paths.",
+    "So did faiths, languages, and the simple habits of daily life.",
+    "There's nothing you need to remember tonight. Just let the caravan move on, slowly, in the dark.",
+    "Somewhere far ahead, a city waits, its lamps glowing softly in the night.",
+    "And the long road carries us gently toward it."
+  ],
+  "ref_text": "Tonight we will travel slowly, with no hurry at all, along the old roads where merchants carried silk and silver across the world.",
+  "lang": "English",
+  "design": {
+    "l1": "Warm, deep, unhurried male narrator in his fifties with a rich baritone, native General American English, calm and intimate like a late-night history documentary, gentle storytelling with soft natural emphasis, never theatrical.",
+    "l2": "Mature British male narrator with a soft, velvety low voice, native Received Pronunciation, wise and reassuring, speaks slowly like a bedtime history documentary, warm and quietly expressive.",
+    "l3": "Calm older male storyteller with a deep, slightly husky bass-baritone, native American English, relaxed and soothing, as if reading a history book by candlelight, slow pace with natural pauses and warmth."
+  },
+  "design_only": true,
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "minutes": 17.1,
+  "files": [
+    "log.txt",
+    "manifest.json",
+    "qwen3_l1.mp3",
+    "qwen3_l1.wav",
+    "qwen3_l2.mp3",
+    "qwen3_l2.wav",
+    "qwen3_l3.mp3",
+    "qwen3_l3.wav",
+    "ref_qwen_l1.mp3",
+    "ref_qwen_l1.wav",
+    "ref_qwen_l2.mp3",
+    "ref_qwen_l2.wav",
+    "ref_qwen_l3.mp3",
+    "ref_qwen_l3.wav",
+    "res_qwen.json",
+    "res_score.json",
+    "scores.json",
+    "stdout_qwen.log",
+    "stdout_score.log"
+  ],
+  "scores": {
+    "qwen3_l1": {
+      "f0_median_hz": 94,
+      "pitch_var_st": 3.1,
+      "pitch_range_st": 10.6,
+      "declination_st_s": -2.34,
+      "final_fall_st": -4.55,
+      "pct_rising": 0.0,
+      "phrases": 35,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.423,
+      "words_per_min": 153
+    },
+    "qwen3_l2": {
+      "f0_median_hz": 90,
+      "pitch_var_st": 2.9,
+      "pitch_range_st": 9.8,
+      "declination_st_s": -2.97,
+      "final_fall_st": -5.0,
+      "pct_rising": 5.0,
+      "phrases": 40,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.501,
+      "words_per_min": 154
+    },
+    "qwen3_l3": {
+      "f0_median_hz": 90,
+      "pitch_var_st": 2.26,
+      "pitch_range_st": 7.5,
+      "declination_st_s": -3.42,
+      "final_fall_st": -4.4,
+      "pct_rising": 0.0,
+      "phrases": 37,
+      "mean_cer": 0.0,
+      "max_cer": 0.0,
+      "mean_mos": 4.436,
+      "words_per_min": 159
+    }
+  },
+  "push": {
+    "job_id": "voice-bench-20261031143646",
+    "kernel": "universalventures/quiet-cosmos-gen",
+    "pushed_at": 1793457408.7771504,
+    "ok": true,
+    "push_output": "Kernel version 64 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/quiet-cosmos-gen"
+  }
+}
