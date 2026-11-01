@@ -589,6 +589,12 @@ def main():
         video_id = upload(video, meta, cfg, thumbnail=thumbs[0] if thumbs else None,
                           captions=out / "captions.srt")
         print(f"   https://youtu.be/{video_id}")
+        if thumbs and cfg.get("thumbnail", {}).get("web_page", True):
+            try:
+                from .thumbnail import publish_web
+                publish_web(thumbs, meta["title"], video_id, ROOT)
+            except Exception as exc:                          # noqa: BLE001
+                print(f"   thumbnails page failed: {exc}")
         if script.get("share_code"):
             # the gift QR (/r/<code> on the channel's page) now knows which video to share; Cloudflare Pages
             # redeploys on the commit of web/links.json at the end of the run

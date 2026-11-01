@@ -302,3 +302,47 @@ def make_thumbnails(images, texts, out_dir):
         style(ranked[i % len(ranked)], texts[i % len(texts)], p)
         paths.append(p)
     return paths
+
+
+def publish_web(thumbs, title, video_id, root, keep=12):
+    """Copia las 3 miniaturas a web/miniaturas/ (Cloudflare Pages) y rehace la página con botones de descarga,
+    para que Luis las baje desde el celular y las suba al Test & Compare de Studio."""
+    import datetime
+    import html
+    import json
+    import shutil
+    base = pathlib.Path(root) / "web" / "miniaturas"
+    base.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.datetime.utcnow().strftime("%Y%m%d-%H%M")
+    folder = base / f"{stamp}-{video_id}"
+    folder.mkdir(exist_ok=True)
+    for i, t in enumerate(thumbs, 1):
+        shutil.copy(t, folder / f"miniatura_{i}.jpg")
+    index = base / "index.json"
+    items = json.loads(index.read_text()) if index.exists() else []
+    items.insert(0, {"dir": folder.name, "title": title, "video_id": video_id, "n": len(thumbs),
+                     "date": datetime.datetime.utcnow().strftime("%d-%m-%Y")})
+    for old in items[keep:]:                                   # solo los últimos viajes, el repo no crece
+        shutil.rmtree(base / old["dir"], ignore_errors=True)
+    items = items[:keep]
+    index.write_text(json.dumps(items, ensure_ascii=False, indent=1))
+    cards = []
+    for it in items:
+        imgs = "".join(
+            f'<a class="t" href="{it["dir"]}/miniatura_{k}.jpg" download="miniatura_{k}.jpg">'
+            f'<img src="{it["dir"]}/miniatura_{k}.jpg" loading="lazy"><span>Descargar {k}</span></a>'
+            for k in range(1, it["n"] + 1))
+        cards.append(f'<section><h2>{html.escape(it["title"])}</h2><p>{it["date"]} · '
+                     f'<a href="https://studio.youtube.com/video/{it["video_id"]}/edit">Abrir en Studio</a></p>'
+                     f'<div class="g">{imgs}</div></section>')
+    (base / "index.html").write_text(
+        '<!doctype html><html lang="es"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">'
+        '<title>Miniaturas</title><style>body{margin:0;padding:16px;background:#05060f;color:#f2eee4;'
+        'font-family:system-ui,sans-serif}h1{font-size:22px}h2{font-size:17px;margin:24px 0 4px}p{margin:0 0 10px;'
+        'color:#8e93d9;font-size:14px}a{color:#8e93d9}.g{display:grid;grid-template-columns:repeat(auto-fit,'
+        'minmax(240px,1fr));gap:10px}.t{display:block;text-decoration:none}.t img{width:100%;border-radius:8px;'
+        'display:block}.t span{display:block;margin-top:6px;padding:10px;text-align:center;background:#8e93d9;'
+        'color:#05060f;border-radius:8px;font-weight:700}</style></head><body><h1>Miniaturas para el A/B</h1>'
+        + "".join(cards) + "</body></html>", encoding="utf-8")
+    return folder
