@@ -186,5 +186,53 @@
     "ai_scenes": 101,
     "ai_status": "ok",
     "date": "2026-10-31"
+  },
+  {
+    "topic": "La vida de las estrellas: cómo nacen, brillan y se apagan",
+    "title": "Cómo nacen y mueren las estrellas | Documental para Dormir",
+    "chapters": [
+      "La estrella que conocemos",
+      "La nube que sabe esperar",
+      "Pilares de polvo y luz",
+      "Cuando la gravedad empieza a ganar",
+      "El disco y los chorros",
+      "El encendido",
+      "Hermanas nacidas juntas",
+      "La guardería más cercana",
+      "El motor del corazón",
+      "Un viaje de cien mil años",
+      "El equilibrio",
+      "Los colores de las estrellas",
+      "Cecilia Payne y el universo de hidrógeno",
+      "Las enanas rojas, las pacientes",
+      "Soles gemelos",
+      "Otros mundos, otros soles",
+      "Las cuentas del Sol",
+      "El Sol se hincha",
+      "El destello del helio",
+      "Una nebulosa que parece un ojo",
+      "La brasa que se enfría",
+      "Vidas cortas y luminosas",
+      "Betelgeuse, la que parpadea",
+      "El último segundo",
+      "La estrella que vieron en 1054",
+      "Faros que giran",
+      "Cuando ni la luz escapa",
+      "El oro que viene del choque",
+      "Polvo de estrellas",
+      "Las últimas estrellas"
+    ],
+    "video_id": "arF3T2-I59o",
+    "voice_test": null,
+    "shorts": [
+      "SNvjIW4czbU",
+      "V10yM-RqlBo",
+      "6hipSDA6ZM8"
+    ],
+    "minutes": 198.3,
+    "qa_ok": true,
+    "ai_scenes": 0,
+    "ai_status": "kaggle push failed",
+    "date": "2026-11-01"
   }
 ]
