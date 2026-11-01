@@ -9,7 +9,7 @@ jobs:
   status:
     runs-on: ubuntu-24.04
     steps:
-      - run: pip install -q kaggle
+      - run: pip install -q kaggle six
       - env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}

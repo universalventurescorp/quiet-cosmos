@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Python packages
-        run: pip install kaggle Pillow PyYAML numpy
+        run: pip install kaggle six Pillow PyYAML numpy
       - name: Paint candidates on Kaggle
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}

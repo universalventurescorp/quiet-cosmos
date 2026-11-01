@@ -10,4 +10,5 @@ google-auth
 google-auth-oauthlib
 transformers>=4.45
 kaggle
+six  # 1-nov-2026: la versión nueva de kaggle lo importa sin declararlo (sin él, no se lanzaba la GPU)
 praat-parselmouth
