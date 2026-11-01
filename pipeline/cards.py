@@ -168,6 +168,29 @@ def ai_label(W, H, text, start, end):
     return ov
 
 
+def brand_seal(W, H, wordmark, start, end, y_frac=0.075, color=(142, 147, 217)):
+    """Sello fijo del canal arriba en los Shorts (1-nov-2026): media luna lila + nombre, el mismo de las
+    miniaturas DUERME. Debajo de la barra de YouTube y encima del gancho, durante todo el Short."""
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    s = W / 1080
+    f = font("bold", int(34 * s))
+    r = int(22 * s)
+    tw = f.getlength(wordmark) + len(wordmark) * 2 * s
+    total = 2 * r + 16 * s + tw
+    x0, y = (W - total) / 2, H * y_frac
+    m = Image.new("L", (4 * r, 4 * r), 0)
+    md = ImageDraw.Draw(m)
+    md.ellipse([r, r, 3 * r, 3 * r], fill=255)
+    md.ellipse([r + int(0.8 * r), r - int(0.25 * r), 3 * r + int(0.8 * r), 3 * r - int(0.25 * r)], fill=0)
+    img.paste(Image.new("RGBA", m.size, color + (245,)), (int(x0 - r), int(y - r)), m)
+    d = ImageDraw.Draw(img)
+    x = x0 + 2 * r + 16 * s
+    for ch in wordmark:                                   # un poco de espacio entre letras, como en la miniatura
+        d.text((x, y + r - f.getbbox("H")[3] / 2 - 2 * s), ch, font=f, fill=color + (245,))
+        x += f.getlength(ch) + 2 * s
+    return _to_overlay(img, start, end, 0.3, 0.3, shadow=True)
+
+
 def source_line(W, H, text, start, end, y_frac=0.775):
     """Small "Source: NASA / Curiosity" pill near the end of a Short: proof without stealing focus.
     Sits above YouTube's bottom title area and left of the action buttons' column."""

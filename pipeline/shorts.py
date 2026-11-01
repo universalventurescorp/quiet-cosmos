@@ -47,6 +47,9 @@ def produce_short(short, idx, cfg, out_dir, used, music, fallback_images, voice=
     shots = _fill(0.0, dur, imgs, clips, spi, 3)
     overlays = [cards.short_hook(W, H, short.get("hook", ""), 0.0, 3.0)] if short.get("hook") else []
     overlays += [cards.caption(W, H, text, a, b) for a, b, text in cues]
+    if (cfg.get("thumbnail") or {}).get("style") == "duerme":     # sello de marca durante todo el Short
+        overlays.append(cards.brand_seal(W, H, cfg["channel"].get("wordmark", cfg["channel"]["name"]).upper(),
+                                         0.0, dur))
     if short.get("source"):                                # proof line in the last seconds
         label = "Source" if cfg["channel"].get("language") == "en" else "Fuente"
         overlays.append(cards.source_line(W, H, f"{label}: {short['source']}", max(0.0, dur - 5.0), dur))
