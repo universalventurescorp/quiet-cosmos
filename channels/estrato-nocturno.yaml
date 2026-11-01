@@ -57,6 +57,8 @@ voice:
   # Narrador del canal (elegido el 16-oct-2026 tras 4 rondas de pruebas): voz diseñada con Qwen3-TTS
   # (Apache-2.0) y clonada frase por frase en la GPU de Kaggle a partir de este clip de referencia.
   engine: qwen
+  # 1-nov-2026 (Luis): SIN respaldo. Si Kaggle falla o falta una sola frase, la corrida se detiene (no Kokoro).
+  require_gpu: true
   model: Qwen/Qwen3-TTS-12Hz-1.7B-Base
   ref_audio: assets/voices/estrato_narrador.mp3
   ref_text: "Esta noche viajaremos despacio, sin ninguna prisa, hacia el planeta más grande de nuestro sistema solar, mientras todo a nuestro alrededor se queda en calma."

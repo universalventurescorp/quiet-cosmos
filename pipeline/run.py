@@ -267,7 +267,10 @@ def load_gpu_voice(out, cfg, gpu_state):
     job = read_json(out / "gpu_job.json", {})
     items = [tuple(x) for x in (job.get("narration") or {}).get("items", [])]
     fb = vc.get("fallback_id", "em_alex")
+    strict = vc.get("require_gpu")
     if not (gpu_state and gpu_state.get("ok") and items):
+        if strict:
+            raise RuntimeError("voz del canal no disponible (Kaggle no arrancó) y voice.require_gpu: no se produce")
         print(f"   GPU narration not available: Kokoro {fb}")
         vc["id"] = fb
         return None, {"engine": "kokoro (fallback)", "reason": "kaggle not launched"}
@@ -278,6 +281,9 @@ def load_gpu_voice(out, cfg, gpu_state):
     info = {"engine": "qwen", "sentences": len(items), "voiced": have}
     if have == len(items):
         return PrecomputedVoice(folder, items), info
+    if strict:
+        raise RuntimeError(f"voz del canal incompleta ({have}/{len(items)} frases) y voice.require_gpu: "
+                           "no se mezcla con otra voz ni se produce")
     if have >= 0.97 * len(items):
         print(f"   {len(items) - have} sentences missing: Kokoro {fb} fills them")
         info["filled_with_kokoro"] = len(items) - have
@@ -392,6 +398,11 @@ def main():
                 gpu_state = gpu.launch(job, out, cfg)
             else:
                 print("   Claude returned no scene prompts: NASA imagery only")
+
+    if gpu_voice and cfg["voice"].get("require_gpu") and not (gpu_state and gpu_state.get("ok")):
+        # 1-nov-2026 (Luis): sin la voz del canal no se produce nada (Kokoro = video que no se publica)
+        raise RuntimeError("Kaggle no arrancó y la voz del canal es obligatoria (voice.require_gpu): no se produce. "
+                           f"Detalle en kaggle.json: {str((gpu_state or {}).get('push_output', ''))[-300:]}")
 
     if stage == "script":
         print("stage script done: Kaggle is working, the next stage waits for it")
