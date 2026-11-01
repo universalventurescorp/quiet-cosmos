@@ -22,6 +22,17 @@ channel:
   # Una sola frase tranquila al final del cold open, cuando el oyente todavía está despierto.
   subscribe_line: "Si este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos."
 
+# 1-nov-2026 (Luis): marca fija en TODAS las miniaturas = estilo que ganó el Test & Compare del maratón
+# ("DUERME EN MINUTOS", ~44 %). Las camas con ventana dieron 0,8 % de clics. pipeline/thumbnail.py make_duerme.
+thumbnail:
+  style: duerme
+  word: "DUERME"
+  label_first: true          # título: "3 horas para dormir: <tema>"
+  outline_rule: >-
+    thumbnail_texts: three different options, each 2 to 3 words in Spanish, ALL CAPS, that complete the big word
+    "DUERME" printed above them and name the episode's main subject, e.g. "CON LAS ESTRELLAS", "EN SATURNO",
+    "JUNTO A LA LUNA", "BAJO LAS NEBULOSAS". Calm and simple, no questions, no numbers, no curiosity hooks.
+
 # 29-oct-2026 (Luis): "que me sienta acompañado". El narrador nunca dice "escanea": la mayoría ve en el celular;
 # los QR son para la TV (35 % de las horas, 44 min de promedio) y la computadora. Cada ~12 min de narración el narrador deja la historia un momento
 # y le habla al oyente (más suave, con pausa antes y después). Una sola vez, el "regalo": QR de luna que abre WhatsApp

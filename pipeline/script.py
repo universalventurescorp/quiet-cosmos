@@ -86,6 +86,12 @@ def ask_json(prompt, check, tries=3):
     raise RuntimeError("Claude did not return valid JSON")
 
 
+def thumb_rule(cfg):
+    """Regla de miniatura propia del canal (p. ej. la marca DUERME de Estrato Nocturno)."""
+    rule = ((cfg.get("thumbnail") or {}).get("outline_rule") or "").strip()
+    return f"\n\nOverride for thumbnail_texts on this channel (it replaces the rule above):\n{rule}\n" if rule else ""
+
+
 def fill(name, **values):
     text = (PROMPTS / name).read_text(encoding="utf-8")
     for key, value in values.items():
@@ -191,7 +197,7 @@ def write_script(topic, cfg):
     print("  outline")
     outline = ask_json(
         fill("outline.md", CHANNEL=ch["name"], LANGUAGE=lang, TOPIC=topic,
-             MINUTES=minutes, CHAPTERS=n_chapters) + told_before(),
+             MINUTES=minutes, CHAPTERS=n_chapters) + told_before() + thumb_rule(cfg),
         lambda d: isinstance(d, dict) and d.get("title") and len(d.get("chapters", [])) >= min(3, n_chapters))
     chapters = outline["chapters"]
     for c in chapters:

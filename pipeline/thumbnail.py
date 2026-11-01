@@ -221,6 +221,53 @@ def make_bold(image_path, text, out_path):
     return out_path
 
 
+# Marca "DUERME" (Estrato Nocturno, 1-nov-2026). Copia del estilo que ganó el Test & Compare del maratón
+# (C, ~44 % del tiempo de visualización): fondo negro, astro a la derecha, "DUERME" en Inter Black crema,
+# segunda línea en lila y el sello fijo del canal (media luna lila + nombre) arriba a la izquierda.
+# La esquina inferior derecha queda libre para la duración de YouTube.
+CREAM, LILAC, NIGHT = (242, 238, 228), (142, 147, 217), (4, 6, 18)
+
+
+def _crescent(r):
+    m = Image.new("L", (4 * r, 4 * r), 0)
+    d = ImageDraw.Draw(m)
+    d.ellipse([r, r, 3 * r, 3 * r], fill=255)
+    d.ellipse([r + int(0.8 * r), r - int(0.25 * r), 3 * r + int(0.8 * r), 3 * r - int(0.25 * r)], fill=0)
+    return m
+
+
+def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO"):
+    im = ImageOps.fit(Image.open(image_path).convert("RGB"), (W, H), Image.LANCZOS)
+    if _subject_side(im) == "left":                  # el astro siempre a la derecha, lejos del texto
+        im = im.transpose(Image.FLIP_LEFT_RIGHT)
+    im = ImageEnhance.Contrast(im).enhance(1.06)
+    shade = Image.new("L", (W, H))
+    sd = ImageDraw.Draw(shade)
+    for x in range(W):
+        sd.line([(x, 0), (x, H)], fill=int(185 * max(0.0, 1 - x / (W * 0.62)) ** 1.4))
+    img = Image.composite(Image.new("RGB", (W, H), NIGHT), im, shade).convert("RGBA")
+
+    line2 = " ".join(line2.upper().split())
+    big = font("black", 172)
+    size2 = 80
+    while size2 > 44 and font("semibold", size2).getlength(line2) > W * 0.58:
+        size2 -= 4
+    small = font("semibold", size2)
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(lay)
+    x = 64
+    m = _crescent(20)
+    lay.paste(Image.new("RGBA", m.size, LILAC + (255,)), (x - 20, 24), m)
+    d.text((x + 44, 48), wordmark, font=font("semibold", 26), fill=LILAC + (235,))
+    d.text((x, 200), word, font=big, fill=CREAM)
+    bottom = d.textbbox((x, 200), word, font=big)[3]
+    d.text((x + 4, bottom + 26), line2, font=small, fill=LILAC)
+    img.alpha_composite(_glow(lay, 10, 0.8))
+    img.alpha_composite(lay)
+    img.convert("RGB").save(out_path, "JPEG", quality=92)
+    return out_path
+
+
 # kept for any caller that used the old name
 make_thumbnail = make_bold
 
@@ -236,6 +283,18 @@ def make_thumbnails(images, texts, out_dir):
     ranked = sorted(unique, key=thumb_score, reverse=True)
     if not ranked or not texts:
         return []
+    from .common import load_config
+    cfg = load_config()
+    tc = cfg.get("thumbnail") or {}
+    if tc.get("style") == "duerme":
+        # 3 variantes de la misma marca para Test & Compare: cambia el astro y la frase, nunca el diseño
+        paths = []
+        for i in range(3):
+            p = out_dir / f"thumbnail_{i + 1}.jpg"
+            make_duerme(ranked[i % len(ranked)], texts[i % len(texts)], p, tc.get("word", "DUERME"),
+                        cfg["channel"].get("wordmark", cfg["channel"]["name"]).upper())
+            paths.append(p)
+        return paths
     styles = [make_quiet, make_centre, make_bold] if _brand() else [make_bold] * 3
     paths = []
     for i, style in enumerate(styles):

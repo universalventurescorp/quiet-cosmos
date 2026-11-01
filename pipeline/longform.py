@@ -92,6 +92,11 @@ def title(base, cfg):
     label = lc.get("title_label")
     if not label or "hora" in base.lower():
         return base
+    if (cfg.get("thumbnail") or {}).get("label_first"):
+        # la promesa primero (como el maratón que despegó): "3 horas para dormir: La vida de las estrellas"
+        subject = base.split("|")[0].strip()
+        full = f"{label[:1].upper()}{label[1:]}: {subject}"
+        return full if len(full) <= 100 else base
     # "Los anillos de Saturno | Un viaje tranquilo para dormir" + "3 horas para dormir": drop the generic tail
     parts = [p.strip() for p in base.split("|")]
     if len(parts) > 1 and "dormir" in parts[-1].lower():
