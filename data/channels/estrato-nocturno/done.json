@@ -234,5 +234,51 @@
     "ai_scenes": 0,
     "ai_status": "kaggle push failed",
     "date": "2026-11-01"
+  },
+  {
+    "topic": "Los grandes misterios del universo: agujeros negros, materia oscura y energía oscura",
+    "title": "Agujeros Negros y Materia Oscura | Documental Relajante para Dormir",
+    "chapters": [
+      "Lo poco que sí vemos",
+      "Estrellas oscuras en 1783",
+      "Cuando el espacio se curva",
+      "El borde sin retorno",
+      "Caer en la oscuridad",
+      "El reloj que se detiene",
+      "Cygnus X-1, la primera sospecha",
+      "Estrellas que giran en torno a nada",
+      "La primera fotografía de una sombra",
+      "Un eco en el espaciotiempo",
+      "Faros en el centro de las galaxias",
+      "Gigantes que llegaron demasiado pronto",
+      "Lo que el agujero deja escapar",
+      "Zwicky y el cúmulo que no cuadraba",
+      "Vera Rubin y las galaxias que giran",
+      "Lentes hechas de gravedad",
+      "El choque del Cúmulo Bala",
+      "La red invisible del cosmos",
+      "Cazadores bajo tierra",
+      "El sonido del universo bebé",
+      "¿Y si la gravedad es distinta?",
+      "Mapear lo que no se ve",
+      "Hubble y las galaxias que se alejan",
+      "1998: la expansión se acelera",
+      "Una energía sin rostro",
+      "Dos relojes que no coinciden",
+      "Un futuro que se enfría",
+      "Quedarse un rato en la noche"
+    ],
+    "video_id": "RTHbaPcw__A",
+    "voice_test": null,
+    "shorts": [
+      "HCKlJxYFwEk",
+      "-IHfQodRO8M",
+      "3XZcZ9owwm8"
+    ],
+    "minutes": 170.7,
+    "qa_ok": true,
+    "ai_scenes": 133,
+    "ai_status": "ok",
+    "date": "2026-11-02"
   }
 ]
