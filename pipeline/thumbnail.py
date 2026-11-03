@@ -252,10 +252,41 @@ def _crescent(r):
     return m
 
 
+def _reframe(im):
+    """Astro sobre fondo oscuro: lo agranda (si se ve chico) y lo lleva al tercio derecho, como la luna ganadora.
+    Solo si el fondo es oscuro de verdad (el relleno es negro y no se nota)."""
+    g = np.asarray(im.convert("L"), np.float32)
+    border = np.concatenate([g[:8].ravel(), g[-8:].ravel(), g[:, :8].ravel(), g[:, -8:].ravel()])
+    if np.percentile(border, 90) > 40:
+        return im
+    mask = g > max(45.0, np.percentile(g, 99) * 0.35)
+    ys, xs = np.nonzero(mask)
+    if len(xs) < 200:
+        return im
+    x0, x1 = np.percentile(xs, [1, 99])
+    y0, y1 = np.percentile(ys, [1, 99])
+    bw, bh, cx, cy = max(x1 - x0, 1), max(y1 - y0, 1), (x0 + x1) / 2, (y0 + y1) / 2
+    # grande pero sin pasar de ~la mitad del cuadro (el texto ocupa la izquierda)
+    k = max(0.6, min(2.2, 0.9 * H / bh, 0.42 * W / bw))
+    big = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+    bg = tuple(int(v) for v in np.median(np.asarray(im)[:8].reshape(-1, 3), axis=0))
+    canvas = Image.new("RGB", (W, H), bg)
+    # bordes fundidos con el fondo: si la imagen no cubre el cuadro, no se ve el rectángulo
+    feather = Image.new("L", big.size, 0)
+    fd = ImageDraw.Draw(feather)
+    m = max(8, int(min(big.size) * 0.08))
+    for i in range(m):
+        fd.rectangle([i, i, big.width - 1 - i, big.height - 1 - i], outline=int(255 * (i + 1) / m))
+    fd.rectangle([m, m, big.width - 1 - m, big.height - 1 - m], fill=255)
+    canvas.paste(big, (round(0.795 * W - cx * k), round(0.5 * H - cy * k)), feather)
+    return canvas
+
+
 def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO"):
     im = ImageOps.fit(Image.open(image_path).convert("RGB"), (W, H), Image.LANCZOS)
     if _subject_side(im) == "left":                  # el astro siempre a la derecha, lejos del texto
         im = im.transpose(Image.FLIP_LEFT_RIGHT)
+    im = _reframe(im)
     im = ImageEnhance.Contrast(im).enhance(1.06)
     shade = Image.new("L", (W, H))
     sd = ImageDraw.Draw(shade)
