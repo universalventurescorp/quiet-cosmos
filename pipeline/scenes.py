@@ -127,8 +127,10 @@ THUMB_LAYOUT = ("a single sharp subject on the right third of the frame, partly 
 def add_thumbnail_heroes(job, script, cfg, seeds=2):
     tc = cfg.get("thumbnail") or {}
     subjects = [x for x in (script.get("thumbnail_subjects") or []) if isinstance(x, str) and x.strip()][:3]
-    if not (tc.get("hero_images") and subjects):
+    if not tc.get("hero_images"):
         return job
+    while len(subjects) < 3:            # si Claude no los escribió: el objeto principal del tema, igual con la receta
+        subjects.append(f"the single most iconic astronomical object of this subject: {script.get('topic') or script.get('title')}")
     heroes = []
     for i, subj in enumerate(subjects, 1):
         for k in range(1, seeds + 1):
