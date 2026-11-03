@@ -136,7 +136,7 @@ def add_thumbnail_heroes(job, script, cfg, seeds=2):
         for k in range(1, seeds + 1):
             iid = f"thumb_{i}_{k}"
             heroes.append({"id": iid, "prompt": f"{subj.strip().rstrip('.')}, {THUMB_LAYOUT}", "style": THUMB_STYLE,
-                           "negative": THUMB_NEG, "seed": zlib.crc32(f"{script.get('title')}|{iid}".encode()) % 2_000_000_000,
+                           "negative": THUMB_NEG, "steps": 35, "width": 1344, "height": 768, "seed": zlib.crc32(f"{script.get('title')}|{iid}".encode()) % 2_000_000_000,
                            "video": False})
     job["images"] = heroes + job["images"]
     print(f"   + {len(heroes)} thumbnail images")

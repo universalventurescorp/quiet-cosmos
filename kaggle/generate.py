@@ -170,7 +170,7 @@ def make_image(pipe, kind, job, item, seed):
     return pipe(prompt=f"{item['prompt']}, {item.get('style', job['style'])}",
                 negative_prompt=item.get("negative", job["negative"]),
                 width=item.get("width", job["width"]), height=item.get("height", job["height"]),
-                num_inference_steps=job["steps"],
+                num_inference_steps=item.get("steps", job["steps"]),
                 guidance_scale=5.5, generator=g).images[0]
 
 
