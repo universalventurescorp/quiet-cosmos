@@ -9,6 +9,9 @@ on:
       slots:
         description: "Piezas a pintar, separadas por comas (vacío = todas)"
         required: false
+      seeds:
+        description: "Variantes por prompt (vacío = 4)"
+        required: false
 
 permissions:
   contents: write
@@ -33,6 +36,7 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           BRANDING_SLOTS: ${{ inputs.slots }}
+          BRANDING_SEEDS: ${{ inputs.seeds }}
         run: python -m pipeline.branding_gen
       - name: Save candidates to their own branch
         if: always()

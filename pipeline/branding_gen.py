@@ -102,7 +102,22 @@ SLOTS["maraton_c"] = (WIDE, STYLE_SPACE, NEG_MOON, [
     "the dark Moon almost entirely in shadow with only a delicate thin bright crescent edge, deep black sky, "
     "very faint stars, the Moon on the right side, minimal and calm",
 ])
-SEEDS_PER_PROMPT = 4
+# 2-nov-2026: miniaturas DUERME para el A/B de "Agujeros Negros y Materia Oscura" (RTHbaPcw__A).
+# Receta de la miniatura ganadora: un solo astro nítido a la derecha, mitad izquierda negra y vacía.
+STYLE_THUMB = ("photorealistic cinematic deep space render, razor sharp, high detail, pure black background, "
+               "high contrast, calm, 35mm film")
+NEG_THUMB = ("text, letters, watermark, logo, signature, frame, border, cartoon, anime, illustration, lowres, "
+             "blurry, soft focus, haze, nebula filling the frame, busy background, oversaturated, people, person, "
+             "spacecraft, planet surface, landscape")
+SLOTS["thumb_agujeros"] = (WIDE, STYLE_THUMB, NEG_THUMB, [
+    "a single supermassive black hole with a thin glowing golden-orange accretion disk and a bright photon ring, "
+    "seen slightly from above, on the right third of the frame, the left half pitch black and empty, minimal",
+    "the round black shadow of a black hole encircled by a crisp bright orange ring of light, on the right side "
+    "of the frame, partly cut by the right edge, vast pitch black empty space on the left, a few tiny stars",
+    "a black hole bending the light of its glowing white and pale blue accretion disk into a perfect halo, "
+    "on the right third of the frame, pure black empty space on the left half, minimal and calm",
+])
+SEEDS_PER_PROMPT = int(os.environ.get("BRANDING_SEEDS") or 4)
 
 
 def build_job(job_id, cfg):
