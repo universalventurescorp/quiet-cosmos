@@ -1,57 +1,45 @@
 {
-  "job_id": "branding-20261026135847",
-  "saved": 20,
+  "job_id": "branding-20261103024142",
+  "saved": 9,
   "push": {
-    "job_id": "branding-20261026135847",
+    "job_id": "branding-20261103024142",
     "kernel": "universalventures/estrato-branding",
-    "pushed_at": 1793023129.6749,
+    "pushed_at": 1793673704.9647298,
     "ok": true,
-    "push_output": "Kernel version 3 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/estrato-branding"
+    "push_output": "Kernel version 4 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/estrato-branding"
   },
   "worker": {
-    "job_id": "branding-20261026135847",
+    "job_id": "branding-20261103024142",
     "errors": [],
     "gpus": [
       "Tesla T4",
       "Tesla T4"
     ],
     "images_status": {
-      "done": 20,
+      "done": 9,
       "failed": 0,
       "skipped": 0,
       "model": "sdxl"
     },
     "images": [
-      "maraton_b_p1_s1.jpg",
-      "maraton_b_p1_s2.jpg",
-      "maraton_b_p1_s3.jpg",
-      "maraton_b_p1_s4.jpg",
-      "maraton_b_p2_s1.jpg",
-      "maraton_b_p2_s2.jpg",
-      "maraton_b_p2_s3.jpg",
-      "maraton_b_p2_s4.jpg",
-      "maraton_b_p3_s1.jpg",
-      "maraton_b_p3_s2.jpg",
-      "maraton_b_p3_s3.jpg",
-      "maraton_b_p3_s4.jpg",
-      "maraton_c_p1_s1.jpg",
-      "maraton_c_p1_s2.jpg",
-      "maraton_c_p1_s3.jpg",
-      "maraton_c_p1_s4.jpg",
-      "maraton_c_p2_s1.jpg",
-      "maraton_c_p2_s2.jpg",
-      "maraton_c_p2_s3.jpg",
-      "maraton_c_p2_s4.jpg"
+      "thumb_agujeros_p1_s1.jpg",
+      "thumb_agujeros_p1_s2.jpg",
+      "thumb_agujeros_p1_s3.jpg",
+      "thumb_agujeros_p2_s1.jpg",
+      "thumb_agujeros_p2_s2.jpg",
+      "thumb_agujeros_p2_s3.jpg",
+      "thumb_agujeros_p3_s1.jpg",
+      "thumb_agujeros_p3_s2.jpg",
+      "thumb_agujeros_p3_s3.jpg"
     ],
     "videos": [],
-    "minutes": 14.4
+    "minutes": 7.2
   },
   "log": [
-    "[   0.4 min] main: packages ready",
-    "[   0.9 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
-    "[   2.2 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
-    "[   2.8 min] images: 1/20 images (31.3 s each)",
-    "[   8.9 min] images: 11/20 images (36.9 s each)",
-    "[  14.4 min] main: finished: 20 images, 0 clips"
+    "[   0.6 min] main: packages ready",
+    "[   1.2 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
+    "[   2.7 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
+    "[   3.2 min] images: 1/9 images (29.5 s each)",
+    "[   7.2 min] main: finished: 9 images, 0 clips"
   ]
 }
