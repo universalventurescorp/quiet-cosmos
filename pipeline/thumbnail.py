@@ -226,6 +226,22 @@ def make_bold(image_path, text, out_path):
 # segunda línea en lila y el sello fijo del canal (media luna lila + nombre) arriba a la izquierda.
 # La esquina inferior derecha queda libre para la duración de YouTube.
 CREAM, LILAC, NIGHT = (242, 238, 228), (142, 147, 217), (4, 6, 18)
+LILAC_TEXT = (176, 180, 242)     # 2-nov: la 2.ª línea en un lila más claro (sobre imagen brillante no se leía)
+
+
+def duerme_score(path):
+    """Qué tan bien sirve una imagen para la miniatura DUERME: un astro nítido y brillante en un lado,
+    el otro lado oscuro y vacío (el texto va ahí). Más alto = mejor. Mira los dos lados (se puede voltear)."""
+    im = Image.open(path).convert("L")
+    im.thumbnail((320, 320))
+    g = np.asarray(im, np.float32)
+    h, w = g.shape
+    left, right = g[:, : int(w * 0.45)], g[:, int(w * 0.55):]
+    if left.mean() > right.mean():
+        left, right = right, left
+    edges = np.abs(np.diff(g, axis=0)).mean() + np.abs(np.diff(g, axis=1)).mean()      # nitidez
+    subject = np.percentile(right, 97) - np.percentile(right, 40)                       # un astro que destaca
+    return subject * 0.6 + edges * 2.0 - left.mean() * 1.6 - left.std() * 0.8
 
 
 def _crescent(r):
@@ -243,13 +259,15 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
     im = ImageEnhance.Contrast(im).enhance(1.06)
     shade = Image.new("L", (W, H))
     sd = ImageDraw.Draw(shade)
-    for x in range(W):
-        sd.line([(x, 0), (x, H)], fill=int(185 * max(0.0, 1 - x / (W * 0.62)) ** 1.4))
+    for x in range(W):                     # 2-nov: casi negro detrás del texto, sea cual sea la imagen
+        t = x / W
+        v = 238 if t < 0.34 else 238 * max(0.0, 1 - (t - 0.34) / 0.28) ** 1.5
+        sd.line([(x, 0), (x, H)], fill=int(v))
     img = Image.composite(Image.new("RGB", (W, H), NIGHT), im, shade).convert("RGBA")
 
     line2 = " ".join(line2.upper().split())
     big = font("black", 172)
-    size2 = 80
+    size2 = 86
     while size2 > 44 and font("semibold", size2).getlength(line2) > W * 0.58:
         size2 -= 4
     small = font("semibold", size2)
@@ -261,7 +279,7 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
     d.text((x + 44, 48), wordmark, font=font("semibold", 26), fill=LILAC + (235,))
     d.text((x, 200), word, font=big, fill=CREAM)
     bottom = d.textbbox((x, 200), word, font=big)[3]
-    d.text((x + 4, bottom + 26), line2, font=small, fill=LILAC)
+    d.text((x + 4, bottom + 26), line2, font=small, fill=LILAC_TEXT)
     img.alpha_composite(_glow(lay, 10, 0.8))
     img.alpha_composite(lay)
     img.convert("RGB").save(out_path, "JPEG", quality=92)
@@ -272,7 +290,7 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
 make_thumbnail = make_bold
 
 
-def make_thumbnails(images, texts, out_dir):
+def make_thumbnails(images, texts, out_dir, heroes=None):
     import hashlib
     seen, unique = set(), []
     for p in images:                                   # drop duplicate files
@@ -288,10 +306,19 @@ def make_thumbnails(images, texts, out_dir):
     tc = cfg.get("thumbnail") or {}
     if tc.get("style") == "duerme":
         # 3 variantes de la misma marca para Test & Compare: cambia el astro y la frase, nunca el diseño
+        # una imagen propia por variante (pintada para la miniatura); si falta, la mejor del episodio para DUERME
+        pool = sorted(unique, key=duerme_score, reverse=True)
+        picks = []
+        for i in range(3):
+            own = [h for h in (heroes or [[]] * 3)[i] if pathlib.Path(h).exists()] if heroes and i < len(heroes) else []
+            if own:
+                picks.append(max(own, key=duerme_score))
+            else:
+                picks.append(next((p for p in pool if p not in picks), pool[i % len(pool)]))
         paths = []
         for i in range(3):
             p = out_dir / f"thumbnail_{i + 1}.jpg"
-            make_duerme(ranked[i % len(ranked)], texts[i % len(texts)], p, tc.get("word", "DUERME"),
+            make_duerme(picks[i], texts[i % len(texts)], p, tc.get("word", "DUERME"),
                         cfg["channel"].get("wordmark", cfg["channel"]["name"]).upper())
             paths.append(p)
         return paths

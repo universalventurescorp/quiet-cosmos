@@ -389,6 +389,8 @@ def main():
             print("   Kaggle not configured (KAGGLE_USERNAME / KAGGLE_KEY): NASA imagery only")
         elif not gpu_state or not gpu_state.get("ok"):
             job = build_job(plan, cfg, f"{slugify(topic)}-{dt.datetime.utcnow():%Y%m%d%H%M%S}", topic)
+            from .scenes import add_thumbnail_heroes
+            job = add_thumbnail_heroes(job, script, cfg)
             if gpu_voice:
                 job["narration"] = narration_job(script, cfg)
             write_json(out / "gpu_job.json", job)
@@ -555,7 +557,8 @@ def main():
     all_imgs = [i["path"] for i in media[0]["images"]] or [i["path"] for m in media for i in m["images"]]
     all_imgs = [it["path"] for k in ("cold_open", "chapter_1") for it in placed.get(k, [])] + all_imgs
     texts = script.get("thumbnail_texts") or [script.get("thumbnail_text", script["title"])]
-    thumbs = make_thumbnails(all_imgs, texts, out)
+    heroes = [[str(p) for p in sorted((out / "ai").glob(f"thumb_{i}_*.jpg"))] for i in (1, 2, 3)]
+    thumbs = make_thumbnails(all_imgs, texts, out, heroes=heroes)
     title = longform.title(script["title"], cfg)
     title = f"MUESTRA · {title}"[:100] if sample else title
     meta = {"title": title, "tags": script.get("tags", []),

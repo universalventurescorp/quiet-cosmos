@@ -32,6 +32,11 @@ thumbnail:
     thumbnail_texts: three different options, each 2 to 3 words in Spanish, ALL CAPS, that complete the big word
     "DUERME" printed above them and name the episode's main subject, e.g. "CON LAS ESTRELLAS", "EN SATURNO",
     "JUNTO A LA LUNA", "BAJO LAS NEBULOSAS". Calm and simple, no questions, no numbers, no curiosity hooks.
+    Also add the key "thumbnail_subjects": three short English descriptions (max 25 words each), one per
+    thumbnail_text and in the same order, of ONE single striking astronomical object that shows that text, for an
+    AI image (e.g. "Saturn with its golden rings, seen from its night side as a crescent", "a supermassive black
+    hole with a thin glowing orange accretion disk"). One object only, no landscapes, no people, no spacecraft.
+  hero_images: true          # 2-nov-2026: la GPU pinta 2 imágenes por miniatura con la receta ganadora
 
 # 29-oct-2026 (Luis): "que me sienta acompañado". El narrador nunca dice "escanea": la mayoría ve en el celular;
 # los QR son para la TV (35 % de las horas, 44 min de promedio) y la computadora. Cada ~12 min de narración el narrador deja la historia un momento

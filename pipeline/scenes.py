@@ -113,6 +113,34 @@ def build_job(plan, cfg, job_id, topic):
     }
 
 
+# 2-nov-2026: imágenes propias para la miniatura DUERME (la receta de la ganadora: un solo astro nítido a la
+# derecha, la mitad izquierda negra y vacía para el texto). Van primero en la cola: nunca se quedan sin pintar.
+THUMB_STYLE = ("photorealistic cinematic deep space render, razor sharp, high detail, pure black background, "
+               "high contrast, calm, 35mm film")
+THUMB_NEG = ("text, letters, watermark, logo, signature, frame, border, cartoon, anime, illustration, lowres, "
+             "blurry, soft focus, haze, nebula filling the frame, busy background, oversaturated, people, person, "
+             "spacecraft, landscape, horizon")
+THUMB_LAYOUT = ("a single sharp subject on the right third of the frame, partly cut by the right edge, "
+                "the left half pitch black and completely empty, minimal")
+
+
+def add_thumbnail_heroes(job, script, cfg, seeds=2):
+    tc = cfg.get("thumbnail") or {}
+    subjects = [x for x in (script.get("thumbnail_subjects") or []) if isinstance(x, str) and x.strip()][:3]
+    if not (tc.get("hero_images") and subjects):
+        return job
+    heroes = []
+    for i, subj in enumerate(subjects, 1):
+        for k in range(1, seeds + 1):
+            iid = f"thumb_{i}_{k}"
+            heroes.append({"id": iid, "prompt": f"{subj.strip().rstrip('.')}, {THUMB_LAYOUT}", "style": THUMB_STYLE,
+                           "negative": THUMB_NEG, "seed": zlib.crc32(f"{script.get('title')}|{iid}".encode()) % 2_000_000_000,
+                           "video": False})
+    job["images"] = heroes + job["images"]
+    print(f"   + {len(heroes)} thumbnail images")
+    return job
+
+
 # ---------------------------------------------------------------- placing scenes on the timeline
 def _norm(word):
     word = unicodedata.normalize("NFKD", word.lower())
@@ -250,7 +278,7 @@ def prepare_ai_files(ai_dir, cfg):
     if not ai_dir.exists():
         return files
     for p in sorted(ai_dir.glob("*.jpg")):
-        if p.name.startswith("."):
+        if p.name.startswith(".") or p.name.startswith("thumb_"):     # thumbnail heroes never go in the video
             continue
         files["images"][p.stem] = str(p)
         if ai.get("parallax", True):
