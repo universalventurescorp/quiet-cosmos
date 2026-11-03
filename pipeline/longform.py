@@ -31,7 +31,12 @@ def apply(cfg, name):
     v = cfg["video"]
     # the narration always comes out ~22-26 % shorter than the word budget (pauses are already in the wpm,
     # the chapters run short): 30 min asked -> 24 min, 60 -> 44. Ask for more so a 3 h journey really lasts 3 h.
-    stretch = lc.get("stretch", 1.45)   # 31-oct: 3 h x1,3 dio 2 h 42 (ratio real 0,69)
+    # 31-oct: 3 h x1,3 dio 2 h 42 (ratio real 0,69); 2-nov: x1,45 dio 2 h 51 (0,65). Ahora se apunta a
+    # `aim_minutes` (3 h 20 para un viaje de 3 h): x1,75 -> ~3 h 25 con el ratio peor visto. voice.synthesize además
+    # nunca deja salir un viaje por debajo de `min_minutes`.
+    stretch = lc.get("stretch", 1.45)
+    if lc.get("aim_minutes"):
+        stretch *= lc["aim_minutes"] / lc["minutes"]
     v["target_minutes"] = round(lc["minutes"] * stretch)
     v["chapters"] = lc.get("chapters") or max(5, round(lc["minutes"] / 6.5))
     ai = cfg.setdefault("ai", {})

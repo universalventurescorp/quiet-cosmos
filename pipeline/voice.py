@@ -282,6 +282,7 @@ class Track:
         return self.n / SR
 
     def silence(self, seconds):
+        self.paused = getattr(self, "paused", 0.0) + seconds
         a = np.zeros(int(SR * seconds), np.float32)
         self.parts.append(a)
         self.n += len(a)
@@ -389,8 +390,45 @@ def write_srt(cues, path):
 
 
 def synthesize(script, cfg, out_dir, voice=None):
+    """Narrate the episode. Long journeys (2-nov-2026, Luis: "no podemos darnos el lujo de que no salgan de 3 h"):
+    if the narration comes out under long.<fmt>.min_minutes, the pauses are lengthened (up to x`max_pause_boost`)
+    and, if it is still short, the calm closing (stars + "Que descanses" + music) is held until the minimum."""
     import soundfile as sf
 
+    lc = cfg.get("_long") or {}
+    need = float(lc.get("min_minutes") or 0) * 60
+    tr, timing = _narrate(script, cfg, voice, 1.0)
+    if need and timing["duration"] < need:
+        short = need - timing["duration"]
+        cap = float(lc.get("max_pause_boost", 1.35))
+        boost = min(cap, 1.0 + 1.08 * short / max(tr.paused, 1.0))
+        print(f"  narration {timing['duration'] / 60:.1f} min < {need / 60:.0f} min: pauses x{boost:.2f}")
+        first = timing["duration"]
+        tr, timing = _narrate(script, cfg, voice, boost)
+        if timing["duration"] < need and boost < cap and timing["duration"] > first:
+            # second try with the measured effect of the boost (fixed pauses such as the title gap don't grow)
+            slope = (timing["duration"] - first) / (boost - 1.0)
+            boost = min(cap, 1.0 + 1.02 * (need - first) / slope)
+            print(f"  pauses x{boost:.2f}")
+            tr, timing = _narrate(script, cfg, voice, boost)
+        timing["pause_boost"] = round(boost, 3)
+    if need and timing["duration"] < need:
+        pad = min(need - timing["duration"] + 0.5, float(lc.get("max_outro_pad_minutes", 25)) * 60)
+        print(f"  still {timing['duration'] / 60:.1f} min: calm closing held {pad / 60:.1f} min longer")
+        tr.silence(pad)
+        timing["outro"]["end"] = tr.t
+        timing["duration"] = tr.t
+        timing["outro_pad"] = round(pad, 1)
+    if need and timing["duration"] < need - 1.0:
+        raise RuntimeError(f"la narración dura {timing['duration'] / 60:.1f} min, menos que el mínimo "
+                           f"{need / 60:.0f} min: no se produce un viaje más corto de lo prometido")
+    v = cfg["voice"]
+    sf.write(out_dir / "narration.wav", tr.audio(quiet_breaths=v.get("quiet_breaths", False)), SR)
+    write_srt(tr.cues, out_dir / "captions.srt")
+    return timing
+
+
+def _narrate(script, cfg, voice, boost):
     v = cfg["voice"]
     voice = voice or Voice(v["id"], v["speed"])
     tr = Track()
@@ -410,7 +448,7 @@ def synthesize(script, cfg, out_dir, voice=None):
     tr.silence(LEAD)
     if script.get("cold_open"):
         s = tr.t
-        tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8, v["pause_paragraph"] * 0.8, unit=unit,
+        tr.text(voice, script["cold_open"], v["pause_sentence"] * 0.8 * boost, v["pause_paragraph"] * 0.8 * boost, unit=unit,
                 inner_end=inner_end, pitch_edit=pitch_edit, reveal_pause=v.get("pause_reveal", 0.0))
         timing["cold_open"] = {"start": s, "end": tr.t}
         print(f"  voiced cold open ({tr.t:.0f} s)")
@@ -422,11 +460,11 @@ def synthesize(script, cfg, out_dir, voice=None):
         start = tr.t
         tr.silence(CHAPTER_LEAD)
         from .longform import pause_factor
-        k = pause_factor(ci, len(script["chapters"]), cfg)     # long journeys slow down through the night
+        k = pause_factor(ci, len(script["chapters"]), cfg) * boost   # long journeys slow down through the night
         tr.text(voice, ch["text"], v["pause_sentence"] * k, v["pause_paragraph"] * k, unit=unit,
                 inner_end=inner_end, pitch_edit=pitch_edit, reveal_pause=v.get("pause_reveal", 0.0))
         if ci < len(script["chapters"]) - 1:
-            tr.silence(v["pause_chapter"])
+            tr.silence(v["pause_chapter"] * boost)
         timing["chapters"].append({"title": ch["title"], "start": start, "end": tr.t})
         print(f"  voiced chapter {ci + 1}/{len(script['chapters'])} -> {tr.t / 60:.1f} min")
 
@@ -436,9 +474,7 @@ def synthesize(script, cfg, out_dir, voice=None):
     timing["duration"] = tr.t
     timing["reveals"] = tr.reveals
     timing["events"] = tr.events
-    sf.write(out_dir / "narration.wav", tr.audio(quiet_breaths=v.get("quiet_breaths", False)), SR)
-    write_srt(tr.cues, out_dir / "captions.srt")
-    return timing
+    return tr, timing
 
 
 def synthesize_short(text, cfg, out_wav, speed=1.0, voice=None):

@@ -1,5 +1,6 @@
 """Automatic quality gate before anything is uploaded."""
 import json
+import os
 import re
 import subprocess
 
@@ -34,6 +35,10 @@ def check_episode(out, script, timing, media, shots, video, ai_media=None):
     dur = media_duration(video)
     if abs(dur - timing["duration"]) > 2.5:
         fails.append(f"video is {dur:.1f}s but narration timeline is {timing['duration']:.1f}s")
+    from .common import load_config
+    need = float(((load_config().get("long") or {}).get(os.environ.get("LONG") or "", {}) or {}).get("min_minutes") or 0)
+    if need and dur < need * 60 - 5:                       # 2-nov-2026: a 3 h journey never goes up shorter
+        fails.append(f"video is {dur / 60:.1f} min, under the promised minimum of {need:.0f} min")
     lufs = loudness(video)
     if lufs is None:
         fails.append("no audio stream")

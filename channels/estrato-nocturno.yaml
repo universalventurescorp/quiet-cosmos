@@ -118,7 +118,12 @@ long:
       - "Un viaje lento entre los anillos de Saturno y sus lunas heladas"
   3h:
     minutes: 180
-    parts: 4
+    # 2-nov-2026 (Luis): NUNCA menos de 3 h. Se apunta a 3 h 20 (margen) y por debajo de 3 h 02 la narración
+    # alarga sus pausas o sostiene el cierre tranquilo (pipeline/voice.synthesize). 5 máquinas pintan ~42 min c/u.
+    aim_minutes: 200
+    stretch: 1.575         # x(200/180) = 1,75 sobre el guion de 180 min
+    min_minutes: 182
+    parts: 5
     max_images: 170
     full_minutes: 60
     gpu_budget_minutes: 210
@@ -136,6 +141,7 @@ long:
       - "La historia del universo: desde el Big Bang hasta esta noche"
   8h:
     minutes: 480
+    min_minutes: 482       # nunca menos de 8 h
     parts: 11
     max_images: 120
     full_minutes: 60
