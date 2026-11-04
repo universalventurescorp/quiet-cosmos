@@ -378,6 +378,10 @@ def publish_web(thumbs, title, video_id, root, keep=12):
         shutil.copy(t, folder / f"miniatura_{i}.jpg")
     index = base / "index.json"
     items = json.loads(index.read_text()) if index.exists() else []
+    for old in [it for it in items if it["video_id"] == video_id]:      # una sola entrada por video (la última)
+        if old["dir"] != folder.name:
+            shutil.rmtree(base / old["dir"], ignore_errors=True)
+    items = [it for it in items if it["video_id"] != video_id]
     items.insert(0, {"dir": folder.name, "title": title, "video_id": video_id, "n": len(thumbs),
                      "date": datetime.datetime.utcnow().strftime("%d-%m-%Y")})
     for old in items[keep:]:                                   # solo los últimos viajes, el repo no crece
