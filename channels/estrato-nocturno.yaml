@@ -35,7 +35,10 @@ thumbnail:
     Also add the key "thumbnail_subjects": three short English descriptions (max 25 words each), one per
     thumbnail_text and in the same order, of ONE single striking astronomical object that shows that text, for an
     AI image (e.g. "Saturn with its golden rings, seen from its night side as a crescent", "a supermassive black
-    hole with a thin glowing orange accretion disk"). One object only, no landscapes, no people, no spacecraft.
+    hole with a thin glowing orange accretion disk"). One object only, always seen WHOLE from far
+    away in deep space (a full sphere, a crescent, a ring or a nebula), never a surface, horizon or view from orbit
+    (e.g. not "Earth seen from the ISS" but "planet Earth seen whole from deep space"). No landscapes, no people,
+    no spacecraft.
   hero_images: true          # 2-nov-2026: la GPU pinta 2 imágenes por miniatura con la receta ganadora
 
 # 29-oct-2026 (Luis): "que me sienta acompañado". El narrador nunca dice "escanea": la mayoría ve en el celular;
