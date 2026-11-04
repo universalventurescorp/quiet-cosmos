@@ -129,7 +129,7 @@ long:
     # 2-nov-2026 (Luis): NUNCA menos de 3 h. Se apunta a 3 h 20 (margen) y por debajo de 3 h 02 la narración
     # alarga sus pausas o sostiene el cierre tranquilo (pipeline/voice.synthesize). 5 máquinas pintan ~42 min c/u.
     aim_minutes: 200
-    stretch: 1.575         # x(200/180) = 1,75 sobre el guion de 180 min
+    stretch: 1.68          # x(200/180) = 1,87 total. 4-nov: x1,75 dio 3:07:24 (ratio 0,595) -> se sube
     min_minutes: 182
     parts: 5
     max_images: 170
