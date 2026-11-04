@@ -280,5 +280,51 @@
     "ai_scenes": 133,
     "ai_status": "ok",
     "date": "2026-11-02"
+  },
+  {
+    "topic": "La Tierra vista desde el espacio: océanos, auroras, tormentas y las luces de la noche",
+    "title": "La Tierra vista desde el espacio | Documental Relajante para Dormir",
+    "chapters": [
+      "Dieciséis amaneceres en un día",
+      "La delgada línea azul",
+      "La primera mirada atrás",
+      "Por qué el planeta es azul",
+      "Ríos dentro del mar",
+      "Los jardines verdes del mar",
+      "Un espejo que delata el mar",
+      "El mar sube y baja, visto desde arriba",
+      "La Tierra no es una esfera",
+      "Ríos, deltas y árboles de agua",
+      "El polvo que cruza el océano",
+      "Hielo en los extremos del mundo",
+      "Nubes con forma de remolino",
+      "Dentro del ojo del huracán",
+      "Relámpagos que miran hacia arriba",
+      "Humo, fuego y cielos naranjas",
+      "El día que un volcán sacudió el cielo",
+      "El viento que viene del Sol",
+      "Cortinas verdes desde arriba",
+      "El escudo invisible",
+      "La noche también brilla",
+      "El mapa de luz de la humanidad",
+      "Barcos, llamas y luciérnagas del mar",
+      "Cuando la luz se apaga",
+      "El cielo que estamos perdiendo",
+      "El planeta respira",
+      "El disco entero desde un millón y medio de kilómetros",
+      "Un punto azul pálido"
+    ],
+    "video_id": "-Uat1L0nNBA",
+    "voice_test": null,
+    "shorts": [
+      "Q6ynbOmtolU",
+      "gcu5HWWDaHA",
+      "5FOZVOeeZRg"
+    ],
+    "minutes": 187.4,
+    "qa_ok": true,
+    "ai_scenes": 134,
+    "ai_status": "ok",
+    "date": "2026-11-04"
   }
 ]
