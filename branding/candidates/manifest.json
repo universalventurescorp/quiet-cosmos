@@ -1,15 +1,15 @@
 {
-  "job_id": "branding-20261103024142",
+  "job_id": "branding-20261104230136",
   "saved": 9,
   "push": {
-    "job_id": "branding-20261103024142",
+    "job_id": "branding-20261104230136",
     "kernel": "universalventures/estrato-branding",
-    "pushed_at": 1793673704.9647298,
+    "pushed_at": 1793833298.1022332,
     "ok": true,
-    "push_output": "Kernel version 4 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/estrato-branding"
+    "push_output": "Kernel version 5 successfully pushed.  Please check progress at https://www.kaggle.com/code/universalventures/estrato-branding"
   },
   "worker": {
-    "job_id": "branding-20261103024142",
+    "job_id": "branding-20261104230136",
     "errors": [],
     "gpus": [
       "Tesla T4",
@@ -22,24 +22,24 @@
       "model": "sdxl"
     },
     "images": [
-      "thumb_agujeros_p1_s1.jpg",
-      "thumb_agujeros_p1_s2.jpg",
-      "thumb_agujeros_p1_s3.jpg",
-      "thumb_agujeros_p2_s1.jpg",
-      "thumb_agujeros_p2_s2.jpg",
-      "thumb_agujeros_p2_s3.jpg",
-      "thumb_agujeros_p3_s1.jpg",
-      "thumb_agujeros_p3_s2.jpg",
-      "thumb_agujeros_p3_s3.jpg"
+      "thumb_tierra_p1_s1.jpg",
+      "thumb_tierra_p1_s2.jpg",
+      "thumb_tierra_p1_s3.jpg",
+      "thumb_tierra_p2_s1.jpg",
+      "thumb_tierra_p2_s2.jpg",
+      "thumb_tierra_p2_s3.jpg",
+      "thumb_tierra_p3_s1.jpg",
+      "thumb_tierra_p3_s2.jpg",
+      "thumb_tierra_p3_s3.jpg"
     ],
     "videos": [],
-    "minutes": 7.2
+    "minutes": 8.5
   },
   "log": [
     "[   0.6 min] main: packages ready",
-    "[   1.2 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
-    "[   2.7 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
-    "[   3.2 min] images: 1/9 images (29.5 s each)",
-    "[   7.2 min] main: finished: 9 images, 0 clips"
+    "[   1.4 min] main: GPUs: ['Tesla T4', 'Tesla T4']",
+    "[   2.9 min] images: image model: SG161222/RealVisXL_V5.0 (fp16)",
+    "[   3.5 min] images: 1/9 images (33.4 s each)",
+    "[   8.5 min] main: finished: 9 images, 0 clips"
   ]
 }
