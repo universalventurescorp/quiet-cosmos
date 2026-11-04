@@ -69,7 +69,7 @@ jobs:
       - name: Packages
         if: steps.pick.outputs.formato != 'none'
         run: |
-          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core fonts-inter
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt
           npm install -g @anthropic-ai/claude-code
@@ -107,7 +107,7 @@ jobs:
         with: { python-version: "3.11", cache: pip }
       - name: Packages
         run: |
-          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core fonts-inter
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt
       - uses: actions/cache@v4
@@ -149,7 +149,7 @@ jobs:
         with: { python-version: "3.11", cache: pip }
       - name: Packages
         run: |
-          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core fonts-inter
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt
       - run: bash scripts/work.sh unpack
@@ -184,7 +184,7 @@ jobs:
         with: { python-version: "3.11", cache: pip }
       - name: Packages
         run: |
-          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core fonts-inter
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt
       - run: bash scripts/work.sh unpack

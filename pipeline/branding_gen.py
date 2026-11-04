@@ -117,6 +117,15 @@ SLOTS["thumb_agujeros"] = (WIDE, STYLE_THUMB, NEG_THUMB, [
     "a black hole bending the light of its glowing white and pale blue accretion disk into a perfect halo, "
     "on the right third of the frame, pure black empty space on the left half, minimal and calm",
 ])
+# 4-nov-2026: miniaturas del viaje "La Tierra vista desde el espacio" (-Uat1L0nNBA)
+SLOTS["thumb_tierra"] = (WIDE, STYLE_THUMB, NEG_THUMB, [
+    "planet Earth seen whole from deep space as a thin bright crescent, blue ocean and white clouds on the day "
+    "side, the night side dark, on the right third of the frame, the left half pitch black and empty, minimal",
+    "planet Earth seen whole from space at night with a glowing green aurora ring around the north pole, faint "
+    "city lights, on the right third of the frame, the left half pitch black and empty, minimal",
+    "planet Earth seen whole from deep space showing the deep blue Pacific Ocean with soft white clouds, "
+    "half lit by the Sun, on the right third of the frame, the left half pitch black and empty, minimal",
+])
 SEEDS_PER_PROMPT = int(os.environ.get("BRANDING_SEEDS") or 4)
 
 

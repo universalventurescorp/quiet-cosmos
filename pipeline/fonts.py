@@ -3,7 +3,10 @@ import pathlib
 
 from PIL import ImageFont
 
-DIRS = ["/usr/share/fonts/opentype/inter", "/usr/share/fonts/truetype/inter",
+# 4-nov-2026: Inter va dentro del repo (branding/fonts/inter, licencia OFL): largo.yml no instalaba fonts-inter y
+# las miniaturas salieron con DejaVu. Así no depende de apt.
+DIRS = [str(pathlib.Path(__file__).resolve().parent.parent / "branding" / "fonts" / "inter"),
+        "/usr/share/fonts/opentype/inter", "/usr/share/fonts/truetype/inter",
         "/usr/local/share/fonts", str(pathlib.Path.home() / ".fonts")]
 FALLBACK = {
     "light": ["/usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf",
