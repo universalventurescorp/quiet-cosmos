@@ -252,9 +252,13 @@ def write_script(topic, cfg):
         print(f"    applied {n} fixes")
     except Exception as exc:
         print(f"    review skipped: {exc}")
-    outline["cold_open"] = with_subscribe_line(sections["cold_open"], ch.get("subscribe_line"))
+    sub_at = ch.get("subscribe_minute")
+    outline["cold_open"] = (sections["cold_open"] if sub_at else
+                            with_subscribe_line(sections["cold_open"], ch.get("subscribe_line")))
     for i, c in enumerate(chapters, 1):
         c["text"] = sections[f"chapter_{i}"]
+    if sub_at and ch.get("subscribe_line"):
+        add_subscribe(outline, cfg, float(sub_at))
     if cfg.get("companion", {}).get("enabled"):
         add_companion(outline, cfg)
 
@@ -294,6 +298,24 @@ def companion_slots(chapters, every_min, wpm, first_min=None):
             slots.append((best[1], best[2]))
         target += every_min
     return slots
+
+
+def add_subscribe(outline, cfg, minute):
+    """Nocturno, 7-nov-2026: with the subscribe request (+ QR) at 0:58, half of the viewers of "La Tierra" left
+    before minute 2 (the marathon without it kept 66 %). The request now goes at a calm paragraph break near
+    channel.subscribe_minute, once the listener has settled. Listed in chapter["companion"] so it is said
+    softly and stays out of the Shorts; the voice still marks it as "subscribe" (QR timing)."""
+    line = cfg["channel"]["subscribe_line"].strip()
+    chapters = outline["chapters"]
+    slot = companion_slots(chapters, 10 ** 6, cfg["voice"]["wpm"], minute)
+    if not slot:
+        outline["cold_open"] = with_subscribe_line(outline["cold_open"], line)
+        return
+    ci, pi = slot[0]
+    ps = _paras(chapters[ci]["text"])
+    chapters[ci]["text"] = "\n\n".join(ps[:pi] + [line] + ps[pi:])
+    chapters[ci].setdefault("companion", []).append(line)
+    print(f"  subscribe line in chapter {ci + 1}, paragraph {pi} (~minute {minute:.0f})")
 
 
 def add_companion(outline, cfg):

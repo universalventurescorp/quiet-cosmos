@@ -20,6 +20,8 @@ channel:
     the listener is drifting off to sleep. Natural neutral Latin American Spanish; avoid Spain-only words.
   # Suscriptores (26-oct-2026): la gente se duerme y no se suscribe (maratón: +1 sub en 252 vistas).
   # Una sola frase tranquila al final del cold open, cuando el oyente todavía está despierto.
+  # 7-nov-2026: la frase (y su QR) iba en el minuto 1 y la mitad de la gente se iba antes del minuto 2 -> minuto ~12
+  subscribe_minute: 12
   subscribe_line: "Si este viaje te ayuda a descansar, suscríbete ahora, antes de cerrar los ojos. Así, la próxima noche, seguimos viajando juntos."
 
 # 1-nov-2026 (Luis): marca fija en TODAS las miniaturas = estilo que ganó el Test & Compare del maratón
