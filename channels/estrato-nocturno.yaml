@@ -149,7 +149,12 @@ long:
       - "La historia del universo: desde el Big Bang hasta esta noche"
   8h:
     minutes: 480
+    # 7-nov-2026: el 1.er intento (6-nov, x1,45) narró 7 h 48 incluso alargando pausas y cierre -> no se produjo.
+    # Igual que el de 3 h: se apunta a 8 h 20 con el mismo estiramiento (x1,75 total) y el cierre puede sostenerse más.
+    aim_minutes: 500
+    stretch: 1.68
     min_minutes: 482       # nunca menos de 8 h
+    max_outro_pad_minutes: 40
     parts: 11
     max_images: 120
     full_minutes: 60
