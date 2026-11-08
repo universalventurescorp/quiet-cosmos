@@ -326,5 +326,51 @@
     "ai_scenes": 134,
     "ai_status": "ok",
     "date": "2026-11-04"
+  },
+  {
+    "topic": "Mundos alrededor de otras estrellas: los exoplanetas y la búsqueda de otra Tierra",
+    "title": "Exoplanetas: la búsqueda de otra Tierra | Documental para Dormir",
+    "chapters": [
+      "La pregunta más antigua",
+      "Una luciérnaga junto a un faro",
+      "1992: planetas alrededor de un púlsar",
+      "51 Pegasi b: el planeta imposible",
+      "El bamboleo de una estrella",
+      "La sombra que cruza el sol",
+      "Kepler mira un solo rincón",
+      "Un censo de miles de mundos",
+      "El planeta que se evapora",
+      "Un mundo hecho de lava",
+      "Lluvia de vidrio",
+      "Supertierras y minineptunos",
+      "Tatooine existe",
+      "Planetas sin estrella",
+      "Fotografiar un planeta",
+      "Dónde nacen los planetas",
+      "Leer el aire de un mundo lejano",
+      "Ni muy cerca ni muy lejos",
+      "Próxima b: la vecina de al lado",
+      "TRAPPIST-1: siete mundos en fila",
+      "El cielo desde TRAPPIST-1",
+      "Mundos océano",
+      "Primos de la Tierra",
+      "La Tierra vista desde lejos",
+      "Rastros de vida",
+      "Los cazadores que vienen",
+      "Cuánto tardaríamos en llegar",
+      "Una Tierra entre miles de millones"
+    ],
+    "video_id": "f4ouOFkF4Dg",
+    "voice_test": null,
+    "shorts": [
+      "tUQh1r2wLKU",
+      "EfrHt1CI8Zs",
+      "c31G352c7mY"
+    ],
+    "minutes": 205.7,
+    "qa_ok": true,
+    "ai_scenes": 128,
+    "ai_status": "ok",
+    "date": "2026-11-08"
   }
 ]
