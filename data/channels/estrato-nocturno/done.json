@@ -372,5 +372,51 @@
     "ai_scenes": 128,
     "ai_status": "ok",
     "date": "2026-11-08"
+  },
+  {
+    "topic": "El Sol: la estrella que nos da la vida, desde su corazón hasta sus tormentas",
+    "title": "El Sol: la estrella que nos da la vida | Documental para Dormir",
+    "chapters": [
+      "Ocho minutos y veinte segundos",
+      "Una estrella entre un millón de Tierras",
+      "Las manchas que nadie quería ver",
+      "El farmacéutico que contó manchas",
+      "La superficie que hierve",
+      "Islas oscuras y frías",
+      "El bosque de espículas",
+      "El elemento que nació en el cielo",
+      "Un eclipse total, minuto a minuto",
+      "La corona y su enigma",
+      "Parker: tocar la corona",
+      "Arcos de plasma",
+      "La noche de Carrington",
+      "Una nube de mil millones de toneladas",
+      "Cuando la tormenta llega",
+      "Los polos que nadie había visto",
+      "Un Sol que gira a distintas velocidades",
+      "Cuando los polos se dan la vuelta",
+      "El Sol suena como una campana",
+      "Descenso a la zona convectiva",
+      "El corazón: quince millones de grados",
+      "Un tanque en una mina de oro",
+      "Los neutrinos que faltaban",
+      "Una fracción diminuta",
+      "Cuando el Sol se quedó sin manchas",
+      "La burbuja que habitamos",
+      "Una vuelta a la galaxia",
+      "El Sol que te despierta y te duerme"
+    ],
+    "video_id": "FbDgtBNk7Fw",
+    "voice_test": null,
+    "shorts": [
+      "xzfQjRUq1DE",
+      "WqfGzIgjXBk",
+      "hDvpbm2qI64"
+    ],
+    "minutes": 191.0,
+    "qa_ok": true,
+    "ai_scenes": 128,
+    "ai_status": "ok",
+    "date": "2026-11-11"
   }
 ]
