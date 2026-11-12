@@ -418,5 +418,51 @@
     "ai_scenes": 128,
     "ai_status": "ok",
     "date": "2026-11-11"
+  },
+  {
+    "topic": "El Sol: la estrella que nos da la vida, desde su corazón hasta sus tormentas",
+    "title": "El Sol: de su corazón a sus tormentas | Documental para Dormir",
+    "chapters": [
+      "El peso de una estrella",
+      "El misterio de la edad del Sol",
+      "Eddington y la idea atrevida",
+      "Cuatro protones y un secreto",
+      "El túnel cuántico",
+      "Más lento que un montón de compost",
+      "El laberinto de luz",
+      "La capa donde nace el magnetismo",
+      "Neutrinos del ciclo CNO",
+      "La superficie que no tiene borde",
+      "Las líneas de Fraunhofer",
+      "El Sol no es amarillo",
+      "Hale mide un imán a 150 millones de km",
+      "La mariposa de Maunder",
+      "Reconexión",
+      "Lluvia coronal",
+      "Eclipses por encargo",
+      "Cometas que caen al Sol",
+      "El viento que Parker predijo",
+      "Agujeros en la corona",
+      "La noche en que Quebec se quedó sin luz",
+      "Mayo de 2024: cielos rojos",
+      "Los vigías del punto L1",
+      "Mirar el Sol con otros ojos",
+      "Cuánto mide la distancia al Sol",
+      "La luz que se vuelve comida",
+      "La noche también es Sol",
+      "La luz más antigua que sientes"
+    ],
+    "video_id": "5yU11ZyITzw",
+    "voice_test": null,
+    "shorts": [
+      "Q4Y5vfIJDUY",
+      "-Br2It9BSKk",
+      "-7auaBz_Ql8"
+    ],
+    "minutes": 223.6,
+    "qa_ok": true,
+    "ai_scenes": 132,
+    "ai_status": "ok",
+    "date": "2026-11-12"
   }
 ]
