@@ -84,6 +84,8 @@ def chapter_rule(index, total, cfg):
     third = index / total
     if index == total:
         return lc.get("final_rule", "")
+    if not lc.get("soften", True):   # voz del maratón: mismo tono y energía toda la noche
+        return ""
     if third > 0.66:
         return (" We are deep into the night and most listeners are asleep: shorter, simpler sentences, very few "
                 "numbers, slower images, softer wonder. Keep telling the story, just more gently.")

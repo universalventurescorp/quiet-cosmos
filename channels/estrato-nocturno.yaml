@@ -192,6 +192,7 @@ presets:
     long:
       3h:
         slow_to: 1.0       # ritmo constante, como los episodios del maratón (sin ir frenando en la noche)
+        soften: false      # el guion no pide "más lento y más suave" en el 2.º y 3.er tercio
   calm:                    # en pausa: lo que estaba activo del 25-oct al 11-nov
     voice:
       pause_sentence: 0.6
@@ -203,3 +204,4 @@ presets:
     long:
       3h:
         slow_to: 1.5
+        soften: true
