@@ -173,3 +173,33 @@ long:
       - "Un viaje de toda la noche, desde la Tierra hasta el borde del universo observable"
       - "Toda la noche en órbita: una vuelta a la Tierra tras otra, de la noche al amanecer"
       - "Una noche entera viajando entre las galaxias del universo cercano"
+
+# 11-nov-2026 (Luis): volver a la voz del maratón qKVP9yXgbN0 (7,6 K h, 1 h 04 de promedio, 57 % a los 13 min).
+# Esos episodios (Mercurio, Venus, Marte, Saturno; 21-25 oct) se hicieron con el commit ebc9eff: pausas largas,
+# música más presente y ritmo constante; el maratón solo los dejó a -16 LUFS. QR, compañía y suscripción siguen igual.
+# Para volver a los parámetros del 25-oct (Calm Space): voice_preset: calm
+voice_preset: maraton
+presets:
+  maraton:
+    voice:
+      pause_sentence: 0.8
+      pause_paragraph: 1.8
+      pause_chapter: 4.0
+      pause_reveal: 0.7
+    mix:
+      music_volume: 0.16
+      lufs: -16            # el maratón normalizó cada episodio a -16 LUFS (se mezclaban a -10,5)
+    long:
+      3h:
+        slow_to: 1.0       # ritmo constante, como los episodios del maratón (sin ir frenando en la noche)
+  calm:                    # en pausa: lo que estaba activo del 25-oct al 11-nov
+    voice:
+      pause_sentence: 0.6
+      pause_paragraph: 1.1
+      pause_reveal: 0.3
+    mix:
+      music_volume: 0.06
+      lufs: -16
+    long:
+      3h:
+        slow_to: 1.5

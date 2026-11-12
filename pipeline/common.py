@@ -28,6 +28,13 @@ def load_config():
         if not path.exists():
             raise SystemExit(f"unknown channel '{CHANNEL}': {path} not found")
         cfg = _merge(cfg, yaml.safe_load(path.read_text(encoding="utf-8")))
+    # voice_preset: aplica un juego guardado de parámetros (voice/mix/long…) encima del resto. Los demás juegos
+    # quedan guardados en "presets" sin usarse, para volver a ellos cambiando una sola línea.
+    name = cfg.get("voice_preset")
+    if name:
+        if name not in cfg.get("presets", {}):
+            raise SystemExit(f"voice_preset '{name}' no existe en presets")
+        cfg = _merge(cfg, cfg["presets"][name])
     return cfg
 
 
