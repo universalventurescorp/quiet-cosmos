@@ -366,7 +366,7 @@ def _glow_radius(gray, cx, cy, r, bg):
     return 1.35 * r
 
 
-def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.8):
+def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.56):
     """Formato C (13-nov-2026, Luis): astro REAL y detallado, ~120 % del alto, en los 2/3 derechos y cortado por
     arriba y abajo (como la luna del maratón qKVP9yXgbN0); puede pasar detrás del texto, que lleva una sombra
     oscura suave. Si la imagen es plana/lisa o no tiene un astro claro, lanza ThumbnailError (no se usa)."""
@@ -407,16 +407,16 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
             if (255 * (gray[lit] / 255) ** gamma).mean() >= 0.32 * 255:
                 break
         a_ = 255 * (a_ / 255) ** gamma
-    # 13-nov (Luis, formato C de la maqueta): el astro ENORME (~180 % del alto) llena el fondo y el texto va
-    # encima. Se alinea por su borde DERECHO (en ~95 % del ancho), así en una luna creciente la parte iluminada
-    # queda a la vista como en la ganadora del maratón; el resto se corta por arriba, abajo e izquierda.
+    # 13-nov (Luis): MISMA posición y tamaño que la luna ganadora del maratón (branding/maraton/maraton_c.jpg,
+    # medida): diámetro 1,56 × alto, borde derecho en 87 % del ancho, centro en 63 % del alto. El astro llena
+    # el fondo y el texto va encima; se corta por arriba, abajo e izquierda.
     if disk:
         right, mid_y = dcx + r_out, dcy
     else:
         xs_ = np.nonzero(box[3])[1]
         right, mid_y = float(np.percentile(xs_, 99.5)), cy
-    off_x = round(0.95 * W - right * k)
-    off_y = round(H / 2 - mid_y * k)
+    off_x = round(0.87 * W - right * k)
+    off_y = round(0.63 * H - mid_y * k)
     big = Image.fromarray(np.clip(a_ + np.array(NIGHT, np.float32), 0, 255).astype(np.uint8))
     big = big.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
     yy, xx = np.indices((big.height, big.width))
@@ -500,7 +500,7 @@ def make_thumbnails(images, texts, out_dir, heroes=None):
             for c in cands:
                 p = out_dir / f"thumbnail_{len(paths) + 1}.jpg"
                 try:
-                    make_duerme(c, fixed, p, tc.get("word", "DUERME"), wm, tc.get("fill", 1.8))
+                    make_duerme(c, fixed, p, tc.get("word", "DUERME"), wm, tc.get("fill", 1.56))
                     paths.append(p)
                 except ThumbnailError as exc:
                     why.append(str(exc))
