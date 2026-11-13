@@ -318,6 +318,54 @@ def texture_score(im, box=None):
     return float(np.abs(g - blur)[inside].mean() * 4)
 
 
+def _fit_disk(mask, seed=0):
+    """Centro y radio del disco del astro: círculo (RANSAC) sobre el contorno de la máscara de brillo. Ignora
+    contornos rectos (cortes de la imagen) y el terminador de una fase."""
+    m = Image.fromarray((mask * 255).astype(np.uint8))
+    edge = (np.asarray(m) > 0) & ~(np.asarray(m.filter(ImageFilter.MinFilter(3))) > 0)
+    ys, xs = np.nonzero(edge)
+    if len(xs) < 20:
+        return None
+    pts = np.stack([xs, ys], 1).astype(np.float64)
+    mys, mxs = np.nonzero(mask)
+    span = max(np.ptp(mxs), np.ptp(mys), 1)            # tamaño de lo visible
+    rng = np.random.default_rng(seed)
+    best, best_n = None, 0
+    tol = max(2.0, 0.006 * max(mask.shape))
+    for _ in range(400):
+        a, b, c = pts[rng.choice(len(pts), 3, replace=False)]
+        d = 2 * (a[0] * (b[1] - c[1]) + b[0] * (c[1] - a[1]) + c[0] * (a[1] - b[1]))
+        if abs(d) < 1e-6:
+            continue
+        ux = ((a @ a) * (b[1] - c[1]) + (b @ b) * (c[1] - a[1]) + (c @ c) * (a[1] - b[1])) / d
+        uy = ((a @ a) * (c[0] - b[0]) + (b @ b) * (a[0] - c[0]) + (c @ c) * (b[0] - a[0])) / d
+        r = np.hypot(a[0] - ux, a[1] - uy)
+        if not (0.25 * span < r < 0.8 * span):        # ni diminuto ni un "círculo" casi recto (corte)
+            continue
+        n = int((np.abs(np.hypot(pts[:, 0] - ux, pts[:, 1] - uy) - r) < tol).sum())
+        if n > best_n:
+            best, best_n = (ux, uy, r), n
+    if best is None:
+        return None
+    ux, uy, r = best                                   # ajuste fino por mínimos cuadrados con los inliers
+    inl = pts[np.abs(np.hypot(pts[:, 0] - ux, pts[:, 1] - uy) - r) < tol]
+    A = np.c_[2 * inl, np.ones(len(inl))]
+    sol, *_ = np.linalg.lstsq(A, (inl ** 2).sum(1), rcond=None)
+    ux, uy = sol[0], sol[1]
+    return ux, uy, float(np.sqrt(sol[2] + ux ** 2 + uy ** 2))
+
+
+def _glow_radius(gray, cx, cy, r, bg):
+    """Radio exterior del aro de brillo (corona/atmósfera): donde el brillo radial vuelve al fondo."""
+    yy, xx = np.indices(gray.shape)
+    dist = np.hypot(xx - cx, yy - cy)
+    for rr in np.arange(r, 1.35 * r, max(1.0, r / 150)):
+        ring = gray[(dist >= rr) & (dist < rr + max(1.0, r / 150))]
+        if ring.size and ring.mean() < bg + 6:
+            return rr + max(2.0, r / 100)
+    return 1.35 * r
+
+
 def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.2):
     """Formato C (13-nov-2026, Luis): astro REAL y detallado, ~120 % del alto, en los 2/3 derechos y cortado por
     arriba y abajo (como la luna del maratón qKVP9yXgbN0); puede pasar detrás del texto, que lleva una sombra
@@ -332,40 +380,54 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
         raise ThumbnailError(f"{name}: imagen plana o lisa (detalle {tex:.1f}, mínimo {MIN_TEXTURE})")
     cx, cy, diam, _ = box
     k = fill * H / diam
-    big = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
     # centro del astro en ~63 % del ancho: ocupa los 2/3 derechos, se corta arriba y abajo
     target_x = W - fill * H / 2 - 0.03 * W
     # 13-nov: el negro de la imagen generada = el negro de la miniatura (se resta su fondo y se suma NIGHT)
-    a_ = np.asarray(big, np.float32)
+    a_ = np.asarray(src, np.float32)
     srcbg = np.median(np.concatenate([a_[:8].reshape(-1, 3), a_[-8:].reshape(-1, 3),
                                       a_[:, :8].reshape(-1, 3), a_[:, -8:].reshape(-1, 3)]), axis=0)
-    big = Image.fromarray(np.clip(a_ - srcbg + np.array(NIGHT, np.float32), 0, 255).astype(np.uint8))
-    # solo se pega el astro (y su brillo): máscara por brillo...
-    lum = np.asarray(big.convert("L"), np.float32) - float(np.mean(NIGHT))
-    alpha = np.clip((lum - 6) / 35, 0, 1)
-    # ...y ningún borde recto: degradado de FADE px hacia el negro en el lado izquierdo del astro (queda detrás
-    # del texto) y en los 4 bordes de la imagen pegada
-    FADE = 180
-    xs_obj = np.nonzero(box[3].any(axis=0))[0]
-    left = float(np.percentile(xs_obj, 0.5)) * k        # borde izquierdo REAL de lo visible (curvo o recto)
-    xs = np.arange(big.width, dtype=np.float32)
-    ys = np.arange(big.height, dtype=np.float32)
-    ramp = lambda d: np.clip(d / FADE, 0, 1) ** 1.5
-    fx = ramp(xs - left) * ramp(xs) * ramp(big.width - 1 - xs)
-    fy = ramp(ys) * ramp(big.height - 1 - ys)
-    alpha = alpha * fx[None, :] * fy[:, None]
-    feather = Image.fromarray((alpha * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(4))
+    a_ = np.clip(a_ - srcbg, 0, 255)
+    # 13-nov (Luis): el disco recortado en CÍRCULO con borde suave de ~8 px, incluyendo el aro de brillo;
+    # fuera del círculo, el negro de la miniatura. Nunca una línea recta.
+    gray = a_.mean(2)
+    disk = _fit_disk(box[3])
+    yy, xx = np.indices(gray.shape)
+    if disk:
+        dcx, dcy, r = disk
+        r_out = _glow_radius(gray, dcx, dcy, r, 0.0)
+        # el círculo tiene que contener todo lo brillante; si no, el ajuste no sirve
+        if (np.hypot(xx - dcx, yy - dcy)[box[3]] <= r_out).mean() < 0.97:
+            disk = None
+    if disk:
+        inside = np.hypot(xx - dcx, yy - dcy) < r
+    else:                                              # fase sin disco claro: contorno de lo brillante
+        inside = box[3]
+    lit = inside & box[3]
+    # interior muy oscuro (parte iluminada < 25 %): se sube con una curva hasta ver las texturas
+    if lit.any() and gray[lit].mean() < 0.25 * 255:
+        for gamma in np.arange(0.95, 0.45, -0.05):
+            if (255 * (gray[lit] / 255) ** gamma).mean() >= 0.32 * 255:
+                break
+        a_ = 255 * (a_ / 255) ** gamma
+    big = Image.fromarray(np.clip(a_ + np.array(NIGHT, np.float32), 0, 255).astype(np.uint8))
+    big = big.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
+    yy, xx = np.indices((big.height, big.width))
+    if disk:
+        d = np.hypot(xx - dcx * k, yy - dcy * k)
+        alpha = np.clip((r_out * k - d) / 8.0, 0, 1)    # borde suave de 8 px
+    else:
+        hull = Image.fromarray((box[3] * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(9))
+        hull = hull.resize(big.size, Image.BILINEAR).filter(ImageFilter.GaussianBlur(4))
+        alpha = np.asarray(hull, np.float32) / 255
+    # bordes de la imagen pegada (si quedan dentro del cuadro): 8 px suaves
+    e = np.minimum.reduce([xx, yy, big.width - 1 - xx, big.height - 1 - yy]).astype(np.float32)
+    alpha *= np.clip(e / 8.0, 0, 1)
+    feather = Image.fromarray((alpha * 255).astype(np.uint8))
     canvas = Image.new("RGB", (W, H), NIGHT)
     canvas.paste(big, (round(target_x - cx * k), round(H / 2 - cy * k)), feather)
     im = ImageEnhance.Contrast(canvas).enhance(1.06)
 
-    shade = Image.new("L", (W, H))                     # oscurece suave el borde izquierdo (sin tapar el astro)
-    sd = ImageDraw.Draw(shade)
-    for x in range(W):
-        t = x / W
-        sd.line([(x, 0), (x, H)], fill=int(200 * max(0.0, 1 - t / 0.45) ** 1.6))
-    img = Image.composite(Image.new("RGB", (W, H), NIGHT), im, shade).convert("RGBA")
-
+    img = im.convert("RGBA")
     line2 = " ".join(line2.upper().split())
     big_f = font("black", 172)
     size2 = 86
