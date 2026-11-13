@@ -366,7 +366,7 @@ def _glow_radius(gray, cx, cy, r, bg):
     return 1.35 * r
 
 
-def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.56):
+def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.3, left_edge=0.5):
     """Formato C (13-nov-2026, Luis): astro REAL y detallado, ~120 % del alto, en los 2/3 derechos y cortado por
     arriba y abajo (como la luna del maratón qKVP9yXgbN0); puede pasar detrás del texto, que lleva una sombra
     oscura suave. Si la imagen es plana/lisa o no tiene un astro claro, lanza ThumbnailError (no se usa)."""
@@ -415,13 +415,15 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
     # 13-nov (Luis): MISMA posición y tamaño que la luna ganadora del maratón (branding/maraton/maraton_c.jpg,
     # medida): diámetro 1,56 × alto, borde derecho en 87 % del ancho, centro en 63 % del alto. El astro llena
     # el fondo y el texto va encima; se corta por arriba, abajo e izquierda.
+    # 13-nov 11:10 (Luis): como en la luna ganadora, el lado IZQUIERDO queda negro (solo texto): el borde izquierdo
+    # del astro empieza en `left_edge` del ancho y el astro se corta por la derecha, arriba y abajo.
     if disk:
-        right, mid_y = dcx + r_out, dcy
+        left, mid_y = dcx - r_out, dcy
     else:
         xs_ = np.nonzero(box[3])[1]
-        right, mid_y = float(np.percentile(xs_, 99.5)), cy
-    off_x = round(0.87 * W - right * k)
-    off_y = round(0.63 * H - mid_y * k)
+        left, mid_y = float(np.percentile(xs_, 0.5)), cy
+    off_x = round(left_edge * W - left * k)
+    off_y = round(0.5 * H - mid_y * k)
     big = Image.fromarray(np.clip(a_ + np.array(NIGHT, np.float32), 0, 255).astype(np.uint8))
     big = big.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
     yy, xx = np.indices((big.height, big.width))
