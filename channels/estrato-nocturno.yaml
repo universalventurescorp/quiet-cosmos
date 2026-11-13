@@ -41,7 +41,7 @@ thumbnail:
     (e.g. not "Earth seen from the ISS" but "planet Earth seen whole from deep space"). No landscapes, no people,
     no spacecraft.
   hero_images: true          # 2-nov-2026: la GPU pinta 2 imágenes por miniatura con la receta ganadora
-  fill: 1.3                  # 13-nov 11:10 (Luis): astro a la derecha, lado izquierdo negro como la luna ganadora
+  fill: 1.56                 # 13-nov 11:12 (Luis): tamaño y posición de la luna ganadora; lado izquierdo en sombra
   # 13-nov: el astro completo y centrado (make_duerme lo mide, lo agranda y lo corta); con mucho detalle real
   hero_layout: >-
     the whole object centered in the frame with black space around it, extremely detailed real surface texture
