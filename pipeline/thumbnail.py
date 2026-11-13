@@ -333,13 +333,29 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
     cx, cy, diam, _ = box
     k = fill * H / diam
     big = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
-    canvas = Image.new("RGB", (W, H), NIGHT)
-    # solo se pega el astro (y su brillo): el fondo de la imagen se funde con negro, nunca se ve un recuadro
-    lum = np.asarray(big.convert("L"), np.float32)
-    alpha = Image.fromarray((np.clip((lum - 10) / 35, 0, 1) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(4))
-    feather = alpha
     # centro del astro en ~63 % del ancho: ocupa los 2/3 derechos, se corta arriba y abajo
     target_x = W - fill * H / 2 - 0.03 * W
+    # 13-nov: el negro de la imagen generada = el negro de la miniatura (se resta su fondo y se suma NIGHT)
+    a_ = np.asarray(big, np.float32)
+    srcbg = np.median(np.concatenate([a_[:8].reshape(-1, 3), a_[-8:].reshape(-1, 3),
+                                      a_[:, :8].reshape(-1, 3), a_[:, -8:].reshape(-1, 3)]), axis=0)
+    big = Image.fromarray(np.clip(a_ - srcbg + np.array(NIGHT, np.float32), 0, 255).astype(np.uint8))
+    # solo se pega el astro (y su brillo): máscara por brillo...
+    lum = np.asarray(big.convert("L"), np.float32) - float(np.mean(NIGHT))
+    alpha = np.clip((lum - 6) / 35, 0, 1)
+    # ...y ningún borde recto: degradado de FADE px hacia el negro en el lado izquierdo del astro (queda detrás
+    # del texto) y en los 4 bordes de la imagen pegada
+    FADE = 180
+    xs_obj = np.nonzero(box[3].any(axis=0))[0]
+    left = float(np.percentile(xs_obj, 0.5)) * k        # borde izquierdo REAL de lo visible (curvo o recto)
+    xs = np.arange(big.width, dtype=np.float32)
+    ys = np.arange(big.height, dtype=np.float32)
+    ramp = lambda d: np.clip(d / FADE, 0, 1) ** 1.5
+    fx = ramp(xs - left) * ramp(xs) * ramp(big.width - 1 - xs)
+    fy = ramp(ys) * ramp(big.height - 1 - ys)
+    alpha = alpha * fx[None, :] * fy[:, None]
+    feather = Image.fromarray((alpha * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(4))
+    canvas = Image.new("RGB", (W, H), NIGHT)
     canvas.paste(big, (round(target_x - cx * k), round(H / 2 - cy * k)), feather)
     im = ImageEnhance.Contrast(canvas).enhance(1.06)
 
