@@ -379,6 +379,11 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
     if tex < MIN_TEXTURE:
         raise ThumbnailError(f"{name}: imagen plana o lisa (detalle {tex:.1f}, mínimo {MIN_TEXTURE})")
     cx, cy, diam, _ = box
+    # 13-nov: el astro tiene que verse ENTERO en la imagen; si toca un borde (cortado, horizonte, aurora) no sirve
+    m_ = box[3]
+    edge = max(m_[:, 0].mean(), m_[:, -1].mean(), m_[0].mean(), m_[-1].mean())
+    if edge > 0.03:
+        raise ThumbnailError(f"{name}: el astro sale cortado por el borde ({edge:.0%})")
     k = fill * H / diam
     # 13-nov: el negro de la imagen generada = el negro de la miniatura (se resta su fondo y se suma NIGHT)
     a_ = np.asarray(src, np.float32)
