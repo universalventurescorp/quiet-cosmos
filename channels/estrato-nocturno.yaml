@@ -41,6 +41,11 @@ thumbnail:
     (e.g. not "Earth seen from the ISS" but "planet Earth seen whole from deep space"). No landscapes, no people,
     no spacecraft.
   hero_images: true          # 2-nov-2026: la GPU pinta 2 imágenes por miniatura con la receta ganadora
+  fill: 1.2                  # 13-nov: el astro mide ~120 % del alto, en los 2/3 derechos, cortado arriba y abajo
+  # 13-nov: el astro completo y centrado (make_duerme lo mide, lo agranda y lo corta); con mucho detalle real
+  hero_layout: >-
+    the whole object centered in the frame with black space around it, extremely detailed real surface texture
+    (craters, clouds, bands, granulation), NASA photograph quality, pure black empty background
 
 # 29-oct-2026 (Luis): "que me sienta acompañado". El narrador nunca dice "escanea": la mayoría ve en el celular;
 # los QR son para la TV (35 % de las horas, 44 min de promedio) y la computadora. Cada ~12 min de narración el narrador deja la historia un momento

@@ -282,34 +282,98 @@ def _reframe(im):
     return canvas
 
 
-def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO"):
-    im = ImageOps.fit(Image.open(image_path).convert("RGB"), (W, H), Image.LANCZOS)
-    if _subject_side(im) == "left":                  # el astro siempre a la derecha, lejos del texto
-        im = im.transpose(Image.FLIP_LEFT_RIGHT)
-    im = _reframe(im)
-    im = ImageEnhance.Contrast(im).enhance(1.06)
-    shade = Image.new("L", (W, H))
+class ThumbnailError(RuntimeError):
+    """La miniatura DUERME no se pudo hacer con una imagen real (todas planas, lisas o sin astro)."""
+
+
+MIN_TEXTURE = 3.0          # 13-nov: detalle mínimo dentro del astro (círculo liso ≈ 0; Sol y Luna reales ≈ 8-20)
+
+
+def _object_box(im):
+    """Astro sobre fondo oscuro → (cx, cy, diámetro, máscara) en píxeles de `im`; None si no hay astro claro."""
+    g = np.asarray(im.convert("L"), np.float32)
+    border = np.concatenate([g[:8].ravel(), g[-8:].ravel(), g[:, :8].ravel(), g[:, -8:].ravel()])
+    if np.median(border) > 40:                          # fondo claro: no es un astro aislado
+        return None
+    mask = g > max(30.0, np.percentile(g, 99) * 0.25)
+    ys, xs = np.nonzero(mask)
+    if len(xs) < 0.01 * g.size:
+        return None
+    x0, x1 = np.percentile(xs, [0.5, 99.5])
+    y0, y1 = np.percentile(ys, [0.5, 99.5])
+    return (x0 + x1) / 2, (y0 + y1) / 2, max(x1 - x0, y1 - y0, 1), mask
+
+
+def texture_score(im, box=None):
+    """Detalle real dentro del astro (cráteres, granulación, nubes…). Una forma plana da casi 0."""
+    box = box or _object_box(im)
+    if box is None:
+        return 0.0
+    g = np.asarray(im.convert("L"), np.float32)
+    mask = Image.fromarray((box[3] * 255).astype(np.uint8)).filter(ImageFilter.MinFilter(15))   # sin el borde
+    inside = np.asarray(mask) > 0
+    if inside.sum() < 500:
+        return 0.0
+    blur = np.asarray(Image.fromarray(g.astype(np.uint8)).filter(ImageFilter.GaussianBlur(2)), np.float32)
+    return float(np.abs(g - blur)[inside].mean() * 4)
+
+
+def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.2):
+    """Formato C (13-nov-2026, Luis): astro REAL y detallado, ~120 % del alto, en los 2/3 derechos y cortado por
+    arriba y abajo (como la luna del maratón qKVP9yXgbN0); puede pasar detrás del texto, que lleva una sombra
+    oscura suave. Si la imagen es plana/lisa o no tiene un astro claro, lanza ThumbnailError (no se usa)."""
+    name = pathlib.Path(image_path).name
+    src = Image.open(image_path).convert("RGB")
+    box = _object_box(src)
+    if box is None:
+        raise ThumbnailError(f"{name}: no hay un astro claro sobre fondo oscuro")
+    tex = texture_score(src, box)
+    if tex < MIN_TEXTURE:
+        raise ThumbnailError(f"{name}: imagen plana o lisa (detalle {tex:.1f}, mínimo {MIN_TEXTURE})")
+    cx, cy, diam, _ = box
+    k = fill * H / diam
+    big = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
+    canvas = Image.new("RGB", (W, H), NIGHT)
+    # solo se pega el astro (y su brillo): el fondo de la imagen se funde con negro, nunca se ve un recuadro
+    lum = np.asarray(big.convert("L"), np.float32)
+    alpha = Image.fromarray((np.clip((lum - 10) / 35, 0, 1) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(4))
+    feather = alpha
+    # centro del astro en ~63 % del ancho: ocupa los 2/3 derechos, se corta arriba y abajo
+    target_x = W - fill * H / 2 - 0.03 * W
+    canvas.paste(big, (round(target_x - cx * k), round(H / 2 - cy * k)), feather)
+    im = ImageEnhance.Contrast(canvas).enhance(1.06)
+
+    shade = Image.new("L", (W, H))                     # oscurece suave el borde izquierdo (sin tapar el astro)
     sd = ImageDraw.Draw(shade)
-    for x in range(W):                     # 2-nov: casi negro detrás del texto, sea cual sea la imagen
+    for x in range(W):
         t = x / W
-        v = 238 if t < 0.34 else 238 * max(0.0, 1 - (t - 0.34) / 0.28) ** 1.5
-        sd.line([(x, 0), (x, H)], fill=int(v))
+        sd.line([(x, 0), (x, H)], fill=int(200 * max(0.0, 1 - t / 0.45) ** 1.6))
     img = Image.composite(Image.new("RGB", (W, H), NIGHT), im, shade).convert("RGBA")
 
     line2 = " ".join(line2.upper().split())
-    big = font("black", 172)
+    big_f = font("black", 172)
     size2 = 86
     while size2 > 44 and font("semibold", size2).getlength(line2) > W * 0.58:
         size2 -= 4
     small = font("semibold", size2)
+    x = 64
+    bottom = ImageDraw.Draw(Image.new("L", (1, 1))).textbbox((x, 200), word, font=big_f)[3]
+
+    # sombra oscura suave detrás de DUERME / EN MINUTOS para que se lea sobre el astro
+    tmask = Image.new("L", (W, H), 0)
+    td = ImageDraw.Draw(tmask)
+    td.text((x, 200), word, font=big_f, fill=255)
+    td.text((x + 4, bottom + 26), line2, font=small, fill=255)
+    halo = tmask.filter(ImageFilter.MaxFilter(31)).filter(ImageFilter.GaussianBlur(38))
+    halo = halo.point(lambda v: min(235, int(v * 1.6)))
+    img = Image.composite(Image.new("RGBA", (W, H), NIGHT + (255,)), img, halo)
+
     lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(lay)
-    x = 64
-    m = _crescent(20)
-    lay.paste(Image.new("RGBA", m.size, LILAC + (255,)), (x - 20, 24), m)
+    cm = _crescent(20)
+    lay.paste(Image.new("RGBA", cm.size, LILAC + (255,)), (x - 20, 24), cm)
     d.text((x + 44, 48), wordmark, font=font("semibold", 26), fill=LILAC + (235,))
-    d.text((x, 200), word, font=big, fill=CREAM)
-    bottom = d.textbbox((x, 200), word, font=big)[3]
+    d.text((x, 200), word, font=big_f, fill=CREAM)
     d.text((x + 4, bottom + 26), line2, font=small, fill=LILAC_TEXT)
     img.alpha_composite(_glow(lay, 10, 0.8))
     img.alpha_composite(lay)
@@ -340,14 +404,26 @@ def make_thumbnails(images, texts, out_dir, heroes=None):
         # una imagen propia por variante (pintada para la miniatura); si falta, la mejor del episodio para DUERME
         pool = sorted(unique, key=duerme_score, reverse=True)
         fixed = tc.get("line2")
+        wm = cfg["channel"].get("wordmark", cfg["channel"]["name"]).upper()
         if fixed:
-            # 13-nov-2026 (formato C fijo): subtítulo siempre igual y UN objeto del tema, grande.
-            # Todas las imágenes pintadas para la miniatura compiten; la mejor va en thumbnail_1 (la que se sube).
+            # 13-nov-2026 (formato C fijo): subtítulo siempre igual y UN astro real del tema, grande.
+            # Primero las imágenes pintadas para la miniatura, luego las del episodio; las planas se descartan.
             own = [h for grp in (heroes or []) for h in grp if pathlib.Path(h).exists()]
-            ranked_own = sorted(own, key=duerme_score, reverse=True) + [p for p in pool if p not in own]
-            texts = [fixed]
-            pool = ranked_own
-            heroes = None
+            cands = sorted(own, key=duerme_score, reverse=True) + [p for p in pool if p not in own]
+            paths, why = [], []
+            for c in cands:
+                p = out_dir / f"thumbnail_{len(paths) + 1}.jpg"
+                try:
+                    make_duerme(c, fixed, p, tc.get("word", "DUERME"), wm, tc.get("fill", 1.2))
+                    paths.append(p)
+                except ThumbnailError as exc:
+                    why.append(str(exc))
+                    print(f"   miniatura descartada: {exc}")
+                if len(paths) == 3:
+                    break
+            if not paths:
+                raise ThumbnailError("ninguna imagen sirve para la miniatura DUERME:\n  " + "\n  ".join(why[:12]))
+            return paths
         picks = []
         for i in range(3):
             own = [h for h in (heroes or [[]] * 3)[i] if pathlib.Path(h).exists()] if heroes and i < len(heroes) else []
