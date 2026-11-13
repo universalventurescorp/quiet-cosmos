@@ -366,7 +366,7 @@ def _glow_radius(gray, cx, cy, r, bg):
     return 1.35 * r
 
 
-def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.2):
+def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NOCTURNO", fill=1.8):
     """Formato C (13-nov-2026, Luis): astro REAL y detallado, ~120 % del alto, en los 2/3 derechos y cortado por
     arriba y abajo (como la luna del maratón qKVP9yXgbN0); puede pasar detrás del texto, que lleva una sombra
     oscura suave. Si la imagen es plana/lisa o no tiene un astro claro, lanza ThumbnailError (no se usa)."""
@@ -380,8 +380,6 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
         raise ThumbnailError(f"{name}: imagen plana o lisa (detalle {tex:.1f}, mínimo {MIN_TEXTURE})")
     cx, cy, diam, _ = box
     k = fill * H / diam
-    # centro del astro en ~63 % del ancho: ocupa los 2/3 derechos, se corta arriba y abajo
-    target_x = W - fill * H / 2 - 0.03 * W
     # 13-nov: el negro de la imagen generada = el negro de la miniatura (se resta su fondo y se suma NIGHT)
     a_ = np.asarray(src, np.float32)
     srcbg = np.median(np.concatenate([a_[:8].reshape(-1, 3), a_[-8:].reshape(-1, 3),
@@ -409,6 +407,16 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
             if (255 * (gray[lit] / 255) ** gamma).mean() >= 0.32 * 255:
                 break
         a_ = 255 * (a_ / 255) ** gamma
+    # 13-nov (Luis, formato C de la maqueta): el astro ENORME (~180 % del alto) llena el fondo y el texto va
+    # encima. Se alinea por su borde DERECHO (en ~95 % del ancho), así en una luna creciente la parte iluminada
+    # queda a la vista como en la ganadora del maratón; el resto se corta por arriba, abajo e izquierda.
+    if disk:
+        right, mid_y = dcx + r_out, dcy
+    else:
+        xs_ = np.nonzero(box[3])[1]
+        right, mid_y = float(np.percentile(xs_, 99.5)), cy
+    off_x = round(0.95 * W - right * k)
+    off_y = round(H / 2 - mid_y * k)
     big = Image.fromarray(np.clip(a_ + np.array(NIGHT, np.float32), 0, 255).astype(np.uint8))
     big = big.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
     yy, xx = np.indices((big.height, big.width))
@@ -424,7 +432,7 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
     alpha *= np.clip(e / 8.0, 0, 1)
     feather = Image.fromarray((alpha * 255).astype(np.uint8))
     canvas = Image.new("RGB", (W, H), NIGHT)
-    canvas.paste(big, (round(target_x - cx * k), round(H / 2 - cy * k)), feather)
+    canvas.paste(big, (off_x, off_y), feather)
     im = ImageEnhance.Contrast(canvas).enhance(1.06)
 
     img = im.convert("RGBA")
@@ -492,7 +500,7 @@ def make_thumbnails(images, texts, out_dir, heroes=None):
             for c in cands:
                 p = out_dir / f"thumbnail_{len(paths) + 1}.jpg"
                 try:
-                    make_duerme(c, fixed, p, tc.get("word", "DUERME"), wm, tc.get("fill", 1.2))
+                    make_duerme(c, fixed, p, tc.get("word", "DUERME"), wm, tc.get("fill", 1.8))
                     paths.append(p)
                 except ThumbnailError as exc:
                     why.append(str(exc))
