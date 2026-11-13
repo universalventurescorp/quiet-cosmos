@@ -98,6 +98,9 @@ mix:
   lufs: -16                # 25-oct: volumen de canal para dormir, como Calm Space (antes -10.5)
   # 29-oct: Luis eligió la voz A (tono natural ~101 Hz, sin subir). Fin de la prueba A/B.
   score: chapters          # la música cambia de tonalidad y color en cada capítulo
+  # 13-nov (Luis): ritmo de sonidos de los episodios del maratón (uno cada ~1,5 min). Si entre dos sonidos pasan más
+  # de 140 s, se agrega una subida suave en la pausa entre párrafos más cercana al medio.
+  sfx_max_gap: 140        # probado en un viaje como el del Sol: de 1 sonido cada 2,3 min a 1 cada ~1,5 min
 
 shorts:
   count: 3                 # 25-oct: 3 Shorts por episodio (9/semana) para ganar suscriptores más rápido

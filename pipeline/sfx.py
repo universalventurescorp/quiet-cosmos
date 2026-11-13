@@ -192,8 +192,40 @@ def make_hit(kind, seed):
 
 # ---------- the episode track ----------
 
-def plan(timing, script):
-    """(sections, hits): ambience per time range and one-shot hits with their start time in seconds."""
+def fill_gaps(hits, pauses, max_gap, duration):
+    """13-nov-2026 (Luis): the rhythm of the marathon episodes (one sound every ~1.5 min). The long journeys have
+    longer chapters and fewer reveal lines per minute, so their sounds came every ~2.3 min with long empty stretches.
+    Wherever two sounds are more than `max_gap` seconds apart, add a soft swell in the pause between two paragraphs
+    closest to the middle (it peaks as the next paragraph starts), until no gap is longer than `max_gap`."""
+    if not max_gap or not pauses:
+        return hits
+    times = sorted(t for t, _ in hits)
+    pauses = sorted(pauses)
+    edges = [0.0] + times + [duration]
+    added = []
+    for a, b in zip(edges, edges[1:]):
+        seg = [a]
+        while True:
+            lo = seg[-1]
+            if b - lo <= max_gap:
+                break
+            # the paragraph start nearest to lo + gap/n, never closer than 25 s to a neighbour sound
+            n = int((b - lo) // max_gap) + 1
+            target = lo + (b - lo) / n
+            cands = [x for x in pauses if lo + 25 <= x - 1.6 <= b - 25]
+            if not cands:
+                break
+            x = min(cands, key=lambda c: abs(c - target))
+            if x - 1.6 <= lo:
+                break
+            added.append((max(0.0, x - 1.6), "swell"))
+            seg.append(x - 1.6)
+    return sorted(hits + added)
+
+
+def plan(timing, script, pauses=None, max_gap=0):
+    """(sections, hits): ambience per time range and one-shot hits with their start time in seconds.
+    pauses: start times of paragraphs that come after a silence (from the captions), used to keep the rhythm."""
     chapters = timing.get("chapters", [])
     first = chapters[0]["start"] if chapters else timing["duration"]
     sections = [(0.0, first, "deep_space")]                   # cold open + title card over open space
@@ -210,11 +242,21 @@ def plan(timing, script):
         hits.append((max(0.0, r - 1.6), "swell"))                    # peaks as the reveal line starts
     if timing.get("outro"):
         hits.append((timing["outro"]["start"] + 0.4, "boom_soft"))
-    return sections, sorted(hits)
+    hits = sorted(hits)
+    if max_gap and pauses:
+        end = timing["outro"]["start"] if timing.get("outro") else timing["duration"]
+        body = [h for h in hits if h[0] < end]
+        hits = sorted(fill_gaps(body, pauses, max_gap, end) + [h for h in hits if h[0] >= end])
+    return sections, hits
 
 
-def make_sfx(path, timing, script, seed=0, block_s=30):
-    sections, hits = plan(timing, script)
+def paragraph_starts(cues, min_silence=1.0):
+    """Times where speech starts again after at least `min_silence` seconds (paragraph and chapter pauses)."""
+    return [b0 for (_, a1, _), (b0, _, _) in zip(cues, cues[1:]) if b0 - a1 >= min_silence]
+
+
+def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0):
+    sections, hits = plan(timing, script, pauses, max_gap)
     total = int(timing["duration"] * SR) + SR
     beds = {k: make_bed(k, seed + 101 * i) for i, k in enumerate(sorted({s[2] for s in sections}))}
     shots = {k: make_hit(k, seed + 7 * i) for i, k in enumerate(("boom", "boom_soft", "whoosh", "swell"))}
