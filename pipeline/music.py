@@ -85,9 +85,10 @@ def make_score(path, timing, seed, sr=22050, xfade=6.0):
     marks[1:1] = [first] if len(timing["chapters"]) > 1 else []
     marks = sorted(set(round(m, 3) for m in marks))
     total = int(round(timing["duration"] * sr)) + sr
-    out = np.zeros((total, 2), np.float32)
     fade = int(xfade * sr)
     with tempfile.TemporaryDirectory() as tmp:
+        # 13-nov-2026: the 8 h score (2,5 GB) lives in a file on disk, not in memory (runner of 7 GB)
+        out = np.memmap(pathlib.Path(tmp) / "score.f32", np.float32, mode="w+", shape=(total, 2))
         for i, (a, b) in enumerate(zip(marks[:-1], marks[1:])):
             seconds = int(min(360, max(30, b - a + xfade + 2)))
             p = pathlib.Path(tmp) / f"part{i}.wav"
@@ -102,6 +103,12 @@ def make_score(path, timing, seed, sr=22050, xfade=6.0):
                 env[:fade] = np.sin(np.linspace(0, np.pi / 2, fade)) ** 2
             if s1 < total:
                 env[-fade:] = np.minimum(env[-fade:], np.cos(np.linspace(0, np.pi / 2, fade)) ** 2)
-            out[s0:s1] += seg * env[:, None]
-    out = out / max(1e-6, np.abs(out).max()) * 0.7
-    sf.write(path, out, sr)
+            seg *= env[:, None]
+            out[s0:s1] += seg
+            del seg
+        blk = sr * 600
+        m = max(max(float(out[i:i + blk].max()), float(-out[i:i + blk].min())) for i in range(0, total, blk))
+        with sf.SoundFile(path, "w", sr, 2, subtype="PCM_16") as f:
+            for i in range(0, total, blk):
+                f.write(out[i:i + blk] * (0.7 / max(1e-6, m)))
+        del out

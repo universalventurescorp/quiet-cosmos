@@ -10,6 +10,8 @@ Episode layout:
 """
 import re
 
+import pathlib
+
 import numpy as np
 
 SR = 24000
@@ -270,12 +272,36 @@ def is_reveal(paragraph, index):
     return index > 0 and len(s) == 1 and len(s[0].split()) <= 14
 
 
+def peak_abs(x, block=24000 * 600):
+    """max(|x|) in blocks: np.abs(x).max() would copy the whole 8 h track."""
+    m = 0.0
+    for i in range(0, len(x), block):
+        seg = x[i:i + block]
+        m = max(m, float(seg.max()), float(-seg.min()))
+    return m
+
+
 class Track:
     def __init__(self):
-        self.parts, self.n, self.cues, self.reveals = [], 0, [], []
+        # 13-nov-2026: the audio goes straight to a temp file on disk (not a list in memory): the 8 h journey
+        # (~690 M samples) crashed the 7 GB runner twice (7-nov and 13-nov)
+        import tempfile
+        self._buf = tempfile.NamedTemporaryFile(suffix=".f32", delete=False)
+        self.n, self.cues, self.reveals = 0, [], []
         self.marks = {}      # normalized paragraph text -> kind ("companion", "gift", "subscribe")
         self.events = []     # [{"kind", "start", "end"}] where those paragraphs were said
         self.soft_pause = 0.0
+
+    def _add(self, a):
+        np.asarray(a, np.float32).tofile(self._buf)
+        self.n += len(a)
+
+    def __del__(self):
+        try:
+            self._buf.close()
+            pathlib.Path(self._buf.name).unlink(missing_ok=True)
+        except Exception:                                  # noqa: BLE001
+            pass
 
     @property
     def t(self):
@@ -283,14 +309,11 @@ class Track:
 
     def silence(self, seconds):
         self.paused = getattr(self, "paused", 0.0) + seconds
-        a = np.zeros(int(SR * seconds), np.float32)
-        self.parts.append(a)
-        self.n += len(a)
+        self._add(np.zeros(int(SR * seconds), np.float32))
 
     def speech(self, audio, sentence, max_chars=EPISODE_CUE_CHARS):
         start = self.t
-        self.parts.append(audio)
-        self.n += len(audio)
+        self._add(audio)
         self.cues += timed_chunks(start, self.t, sentence, max_chars)
 
     def text(self, voice, text, pause_sentence, pause_paragraph, max_chars=EPISODE_CUE_CHARS, unit="sentence", inner_end=None,
@@ -314,8 +337,7 @@ class Track:
                         from .prosody import edit
                         a = edit(a, SR, pitch_edit)
                     start = self.t
-                    self.parts.append(a)
-                    self.n += len(a)
+                    self._add(a)
                     for s, (b0, b1) in zip(g, sentence_bounds(a, g)):
                         self.cues += timed_chunks(start + b0, start + b1, s, max_chars)
                 last = gi == len(groups) - 1
@@ -327,13 +349,23 @@ class Track:
                     self.silence(pause_paragraph if last else pause_sentence)
 
     def audio(self, peak=0.89, quiet_breaths=False):
-        a = np.concatenate(self.parts) if self.parts else np.zeros(1, np.float32)
+        """The whole narration as a float32 array mapped from the temp file on disk (no copy in memory);
+        breath quieting and peak normalization work in place, in blocks."""
+        if not self.n:
+            return np.zeros(1, np.float32)
+        self._buf.flush()
+        a = np.memmap(self._buf.name, np.float32, mode="r+", shape=(self.n,))
         if quiet_breaths:
-            a = quiet_pauses(a)
-        return a / max(1e-6, np.abs(a).max()) * peak
+            quiet_pauses(a, inplace=True)
+        g = peak / max(1e-6, peak_abs(a))
+        for i in range(0, len(a), SR * 600):
+            a[i:i + SR * 600] *= g
+        a.flush()
+        return a
 
 
-def quiet_pauses(x, below=24, min_ms=120, atten_db=-24, hold_ms=160, pre_ms=70, close_ms=140, open_ms=40):
+def quiet_pauses(x, below=24, min_ms=120, atten_db=-24, hold_ms=160, pre_ms=70, close_ms=140, open_ms=40,
+                 inplace=False, block=SR * 600):
     """Breaths and noise INSIDE pauses (> `below` dB under the speech level for >= min_ms) turned down (Luis: "se
     escucha como que toma aire"), without ever chopping a word: the natural decay of the last syllable is kept for
     hold_ms and then faded down over close_ms; the gain is fully back pre_ms before the next word (soft onsets like
@@ -343,7 +375,14 @@ def quiet_pauses(x, below=24, min_ms=120, atten_db=-24, hold_ms=160, pre_ms=70, 
     n = len(x) // hop
     if n < 10:
         return x
-    e = 20 * np.log10(np.sqrt((x[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+    if not inplace:
+        x = x.astype(np.float32, copy=True)
+    e = np.empty(n, np.float32)                       # energy per 10 ms, in blocks (no full-length copies)
+    fb = block // hop
+    for k0 in range(0, n, fb):
+        k1 = min(n, k0 + fb)
+        seg = x[k0 * hop:k1 * hop].reshape(k1 - k0, hop)
+        e[k0:k1] = 20 * np.log10(np.sqrt(np.einsum("ij,ij->i", seg, seg) / hop) + 1e-9)
     q = e < np.percentile(e, 90) - below
     speech = ~q
     # short quiet runs are part of speech
@@ -374,8 +413,10 @@ def quiet_pauses(x, below=24, min_ms=120, atten_db=-24, hold_ms=160, pre_ms=70, 
         cur = max(target[k], cur - down) if target[k] < cur else min(target[k], cur + up)
         g[k] = cur
     centers = (np.arange(n) + 0.5) * hop
-    gs = 10 ** (np.interp(np.arange(len(x)), centers, g) / 20)
-    return (x * gs).astype(np.float32)
+    for s0 in range(0, len(x), block):                # gain applied in blocks, in place
+        s1 = min(len(x), s0 + block)
+        x[s0:s1] *= (10 ** (np.interp(np.arange(s0, s1), centers, g) / 20)).astype(np.float32)
+    return x
 
 
 def srt_time(t):
@@ -404,12 +445,14 @@ def synthesize(script, cfg, out_dir, voice=None):
         boost = min(cap, 1.0 + 1.08 * short / max(tr.paused, 1.0))
         print(f"  narration {timing['duration'] / 60:.1f} min < {need / 60:.0f} min: pauses x{boost:.2f}")
         first = timing["duration"]
+        tr = None                                     # 13-nov: never two full narrations in memory
         tr, timing = _narrate(script, cfg, voice, boost)
         if timing["duration"] < need and boost < cap and timing["duration"] > first:
             # second try with the measured effect of the boost (fixed pauses such as the title gap don't grow)
             slope = (timing["duration"] - first) / (boost - 1.0)
             boost = min(cap, 1.0 + 1.02 * (need - first) / slope)
             print(f"  pauses x{boost:.2f}")
+            tr = None
             tr, timing = _narrate(script, cfg, voice, boost)
         timing["pause_boost"] = round(boost, 3)
     if need and timing["duration"] < need:
@@ -423,7 +466,9 @@ def synthesize(script, cfg, out_dir, voice=None):
         raise RuntimeError(f"la narración dura {timing['duration'] / 60:.1f} min, menos que el mínimo "
                            f"{need / 60:.0f} min: no se produce un viaje más corto de lo prometido")
     v = cfg["voice"]
-    sf.write(out_dir / "narration.wav", tr.audio(quiet_breaths=v.get("quiet_breaths", False)), SR)
+    audio = tr.audio(quiet_breaths=v.get("quiet_breaths", False))
+    sf.write(out_dir / "narration.wav", audio, SR, subtype="PCM_16")    # 16 bit: half the size of float
+    del audio
     write_srt(tr.cues, out_dir / "captions.srt")
     return timing
 
