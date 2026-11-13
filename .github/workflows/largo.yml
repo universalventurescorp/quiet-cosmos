@@ -24,6 +24,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   # el mismo grupo que produce.yml: los dos usan el mismo script de Kaggle, y un trabajo nuevo cancela al anterior
@@ -42,6 +43,8 @@ jobs:
       parts: ${{ steps.parts.outputs.parts || '[0]' }}
     steps:
       - id: pick
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           F="${{ inputs.formato }}"
           if [ -z "$F" ] || [ "$F" = "auto" ]; then
@@ -50,6 +53,13 @@ jobs:
               5)   F=8h; [ "$(TZ=America/Lima date +%Y%m%d)" -lt 20261106 ] && F=none ;;   # viernes: 8 h para el sábado (el primero: vie 6-nov → sáb 7-nov)
               *)   F=none ;;
             esac
+          fi
+          # 13-nov-2026: si el cron llega tarde y hoy ya se lanzó a mano un viaje, no producir otro (saldría doble)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$F" != "none" ]; then
+            HOY=$(TZ=America/Lima date +%Y-%m-%d)
+            N=$(gh api "repos/${{ github.repository }}/actions/workflows/largo.yml/runs?event=workflow_dispatch&per_page=10" \
+                --jq "[.workflow_runs[] | select(.conclusion != \"cancelled\") | select((.created_at | fromdateiso8601 - 18000 | strftime(\"%Y-%m-%d\")) == \"$HOY\")] | length" || echo 0)
+            if [ "${N:-0}" -gt 0 ]; then echo "Hoy ya se lanzó a mano ($N): el cron no produce otro"; F=none; fi
           fi
           echo "formato=$F" >> "$GITHUB_OUTPUT"; echo "Formato de hoy: $F"
       - uses: actions/checkout@v4
