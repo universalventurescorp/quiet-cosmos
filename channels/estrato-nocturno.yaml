@@ -29,15 +29,14 @@ channel:
 thumbnail:
   style: duerme
   word: "DUERME"
+  line2: "EN MINUTOS"        # 13-nov-2026 (Luis): formato C fijo. Subtítulo siempre igual; el tema NO va en la imagen
   label_first: true          # título: "3 horas para dormir: <tema>"
   outline_rule: >-
-    thumbnail_texts: three different options, each 2 to 3 words in Spanish, ALL CAPS, that complete the big word
-    "DUERME" printed above them and name the episode's main subject, e.g. "CON LAS ESTRELLAS", "EN SATURNO",
-    "JUNTO A LA LUNA", "BAJO LAS NEBULOSAS". Calm and simple, no questions, no numbers, no curiosity hooks.
-    Also add the key "thumbnail_subjects": three short English descriptions (max 25 words each), one per
-    thumbnail_text and in the same order, of ONE single striking astronomical object that shows that text, for an
-    AI image (e.g. "Saturn with its golden rings, seen from its night side as a crescent", "a supermassive black
-    hole with a thin glowing orange accretion disk"). One object only, always seen WHOLE from far
+    thumbnail_texts: always exactly ["EN MINUTOS", "EN MINUTOS", "EN MINUTOS"] (fixed channel format, never the topic).
+    Also add the key "thumbnail_subjects": three short English descriptions (max 25 words each) of the SAME single
+    striking astronomical object, the episode's main subject (three slightly different views of it, so the best render
+    can be chosen), e.g. "Saturn with its golden rings, seen from its night side as a crescent", "a supermassive black
+    hole with a thin glowing orange accretion disk". One object only, big and always seen WHOLE from far
     away in deep space (a full sphere, a crescent, a ring or a nebula), never a surface, horizon or view from orbit
     (e.g. not "Earth seen from the ISS" but "planet Earth seen whole from deep space"). No landscapes, no people,
     no spacecraft.

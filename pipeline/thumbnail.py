@@ -339,6 +339,15 @@ def make_thumbnails(images, texts, out_dir, heroes=None):
         # 3 variantes de la misma marca para Test & Compare: cambia el astro y la frase, nunca el diseño
         # una imagen propia por variante (pintada para la miniatura); si falta, la mejor del episodio para DUERME
         pool = sorted(unique, key=duerme_score, reverse=True)
+        fixed = tc.get("line2")
+        if fixed:
+            # 13-nov-2026 (formato C fijo): subtítulo siempre igual y UN objeto del tema, grande.
+            # Todas las imágenes pintadas para la miniatura compiten; la mejor va en thumbnail_1 (la que se sube).
+            own = [h for grp in (heroes or []) for h in grp if pathlib.Path(h).exists()]
+            ranked_own = sorted(own, key=duerme_score, reverse=True) + [p for p in pool if p not in own]
+            texts = [fixed]
+            pool = ranked_own
+            heroes = None
         picks = []
         for i in range(3):
             own = [h for h in (heroes or [[]] * 3)[i] if pathlib.Path(h).exists()] if heroes and i < len(heroes) else []
