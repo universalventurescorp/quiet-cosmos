@@ -25,6 +25,8 @@ for k, s in enumerate(script.get("shorts", []), 1):
     try:
         r = produce_short(s, k, cfg, work, set(), music, [], voice=voice, ai_images=ai)
     except Exception as exc:                                   # noqa: BLE001
+        import traceback
+        traceback.print_exc()
         print(f"short {k} falló: {exc}")
         continue
     if r:
