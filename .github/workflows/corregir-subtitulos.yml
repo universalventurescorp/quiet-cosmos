@@ -1,0 +1,25 @@
+name: corregir-subtitulos
+on:
+  workflow_dispatch:
+    inputs:
+      video_id: { required: true }
+      corte_inicio: { description: "segundos", required: true }
+      corte_fin: { description: "segundos", required: true }
+      aplicar: { type: boolean, default: false }
+permissions:
+  contents: write
+jobs:
+  corregir:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install google-api-python-client google-auth
+      - env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_NOCTURNO: ${{ secrets.YT_REFRESH_TOKEN_NOCTURNO }}
+        run: python scripts/corregir_subtitulos.py ${{ inputs.video_id }} ${{ inputs.corte_inicio }} ${{ inputs.corte_fin }} ${{ inputs.aplicar && '--aplicar' || '' }}
+      - if: always()
+        run: |
+          git config user.name quiet-cosmos-bot; git config user.email actions@users.noreply.github.com
+          git checkout --orphan diag-subtitulos && git rm -rqf --cached . && git add -f diag && git commit -qm "subtítulos" && git push -f origin HEAD:diag-subtitulos
