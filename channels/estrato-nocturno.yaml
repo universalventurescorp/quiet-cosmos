@@ -47,6 +47,23 @@ thumbnail:
     the whole object centered in the frame with black space around it, extremely detailed real surface texture
     (craters, clouds, bands, granulation), NASA photograph quality, pure black empty background
 
+# 14-nov-2026 (Luis): quien hace clic quiere recibir YA lo que vino a buscar; los primeros minutos deciden.
+# El Capítulo 1 del 8 h ("Una cama bajo el cielo": tu cama, tu habitación, tu casa...) se sintió lento y se cortó.
+hook:
+  outline: >-
+    Chapter 1 must be the most gripping question of the whole journey (like "Why is the night sky dark if there are
+    so many stars?"): a concrete paradox or surprising fact, never an orientation chapter about the listener's bed,
+    room, house or city, and never "where are you right now". Chapter 2 keeps that energy with another strong question.
+    The calm, contemplative chapters come later.
+  chapters:
+    "1": >-
+      This is the hook chapter: the listener just clicked and decides in the next minute whether to stay. Open with
+      the question itself in the FIRST sentence, a vivid concrete image and a surprising fact within the first
+      paragraph. No warm-up, no describing the bed, the room or "where you are", no slow scene-setting. Keep a steady
+      flow of new ideas (a new fact or image every few sentences) and short paragraphs; calm voice, but never empty.
+    "2": >-
+      Still the opening of the journey: start straight with the question, no recap and no talk about the bed or
+      the room; a steady flow of new facts and images.
 # 29-oct-2026 (Luis): "que me sienta acompañado". El narrador nunca dice "escanea": la mayoría ve en el celular;
 # los QR son para la TV (35 % de las horas, 44 min de promedio) y la computadora. Cada ~12 min de narración el narrador deja la historia un momento
 # y le habla al oyente (más suave, con pausa antes y después). Una sola vez, el "regalo": QR de luna que abre WhatsApp

@@ -89,7 +89,9 @@ def ask_json(prompt, check, tries=3):
 def thumb_rule(cfg):
     """Regla de miniatura propia del canal (p. ej. la marca DUERME de Estrato Nocturno)."""
     rule = ((cfg.get("thumbnail") or {}).get("outline_rule") or "").strip()
-    return f"\n\nOverride for thumbnail_texts on this channel (it replaces the rule above):\n{rule}\n" if rule else ""
+    out = f"\n\nOverride for thumbnail_texts on this channel (it replaces the rule above):\n{rule}\n" if rule else ""
+    hook = ((cfg.get("hook") or {}).get("outline") or "").strip()     # 14-nov-2026: the first chapters are the hook
+    return out + (f"\n\nOpening chapters (most important rule of the outline):\n{hook}\n" if hook else "")
 
 
 def fill(name, **values):

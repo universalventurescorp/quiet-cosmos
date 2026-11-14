@@ -82,6 +82,9 @@ def chapter_rule(index, total, cfg):
     if not lc:
         return ""
     third = index / total
+    hook = (cfg.get("hook") or {}).get("chapters") or {}
+    if str(index) in hook or index in hook:                     # 14-nov-2026: the first chapters are the hook
+        return " " + (hook.get(str(index)) or hook.get(index)).strip()
     if index == total:
         return lc.get("final_rule", "")
     if not lc.get("soften", True):   # voz del maratón: mismo tono y energía toda la noche
