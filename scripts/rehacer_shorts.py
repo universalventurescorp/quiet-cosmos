@@ -14,6 +14,11 @@ script = json.loads((ep / "script.json").read_text())
 items = [tuple(x) for x in (read_json(ep / "gpu_job.json", {}).get("narration") or {}).get("items", [])]
 voice = PrecomputedVoice(ep / "ai" / "narration", items) if items else None
 music = ep / "music.wav"
+if not music.exists():                         # el artefacto no guarda la música (pesa mucho en 8 h): una nueva, corta
+    import zlib
+    from pipeline.music import make_score
+    music = ep / "music_shorts.wav"
+    make_score(music, {"duration": 90, "chapters": [{"start": 4, "end": 90}]}, seed=zlib.crc32(ep.name.encode()))
 ai = sorted(str(p) for p in (ep / "ai").glob("*.jpg"))
 print("episodio", ep.name, "| shorts", len(script.get("shorts", [])), "| imágenes IA", len(ai), "| voz", bool(voice))
 out = ROOT / "shorts_rehechos"
