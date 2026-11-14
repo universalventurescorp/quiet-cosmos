@@ -1,0 +1,29 @@
+name: poner-miniatura
+on:
+  workflow_dispatch:
+    inputs:
+      video_id: { required: true }
+      imagen: { description: "ruta en el repo (jpg 1280x720)", required: true }
+jobs:
+  poner:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install google-api-python-client google-auth
+      - env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_NOCTURNO: ${{ secrets.YT_REFRESH_TOKEN_NOCTURNO }}
+        run: |
+          python - <<'PY'
+          import os
+          from google.oauth2.credentials import Credentials
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaFileUpload
+          c = Credentials(None, refresh_token=os.environ["YT_REFRESH_TOKEN_NOCTURNO"], token_uri="https://oauth2.googleapis.com/token",
+                          client_id=os.environ["YT_CLIENT_ID"], client_secret=os.environ["YT_CLIENT_SECRET"],
+                          scopes=["https://www.googleapis.com/auth/youtube.force-ssl"])
+          yt = build("youtube", "v3", credentials=c, cache_discovery=False)
+          r = yt.thumbnails().set(videoId="${{ inputs.video_id }}", media_body=MediaFileUpload("${{ inputs.imagen }}", mimetype="image/jpeg")).execute()
+          print(r)
+          PY
