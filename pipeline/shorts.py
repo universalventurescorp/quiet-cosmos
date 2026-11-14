@@ -42,6 +42,7 @@ def _short_sfx(path, dur, cues, seed, every=6.0):
 
 
 def produce_short(short, idx, cfg, out_dir, used, music, fallback_images, voice=None, ai_images=None):
+    """ai_images: [(ruta, texto con el que se pintó)] de las escenas IA del episodio."""
     d = out_dir / f"short_{idx}"
     d.mkdir(parents=True, exist_ok=True)
     sc = cfg.get("shorts", {})
@@ -64,18 +65,19 @@ def produce_short(short, idx, cfg, out_dir, used, music, fallback_images, voice=
     if sc.get("cinematic") and ai_images:
         # 14-nov-2026 (Luis): imágenes grandes y de cine (las escenas pintadas por la GPU y los astros de la
         # miniatura), cada Short con las suyas; NASA solo completa si faltan
-        import pathlib
-        names = lambda q: pathlib.Path(q).name
-        heroes = [q for q in ai_images if names(q).startswith(("thumb_", "cine_"))]     # astros grandes primero
-        scenes = [q for q in ai_images if q not in heroes]
-        start = (idx - 1) * need % max(1, len(scenes))
-        pool = heroes[(idx - 1) * 2:(idx - 1) * 2 + 2] + scenes[start:] + scenes[:start]
-        imgs = [{"path": q} for q in pool[:need]]
+        # cada imagen con el texto con el que se pintó: se eligen las que hablan de lo mismo que el Short
+        import re
+        words = lambda t: {w for w in re.findall(r"[a-záéíóúñ]+", (t or "").lower()) if len(w) > 3}
+        topic = words(" ".join(short.get("image_queries", []) + short.get("video_queries", []) +
+                               [short.get("title", ""), short.get("hook", "")]))
+        scored = sorted(((len(words(pr) & topic), q) for q, pr in ai_images), key=lambda x: -x[0])
+        imgs = [{"path": q} for n, q in scored if n >= 1][:need]
     if len(imgs) < need:
         imgs += fetch_images(short.get("image_queries", []), need - len(imgs), d / "images", used, 2)
     if len(imgs) < 4:
         imgs += fallback_images[: 6 - len(imgs)]
-    clips = fetch_clips(short.get("video_queries", []), 2, d / "clips", used, seconds=8, W=W, H=H, fps=FPS)
+    clips = [] if (sc.get("cinematic") and len(imgs) >= need) else \
+        fetch_clips(short.get("video_queries", []), 2, d / "clips", used, seconds=8, W=W, H=H, fps=FPS)
 
     shots = _fill(0.0, dur, imgs, clips, spi, 3)
     overlays = [cards.short_hook(W, H, short.get("hook", ""), 0.0, 3.0)] if short.get("hook") else []

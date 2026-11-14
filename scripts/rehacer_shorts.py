@@ -19,8 +19,10 @@ if not music.exists():                         # el artefacto no guarda la músi
     from pipeline.music import make_score
     music = ep / "music_shorts.wav"
     make_score(music, {"duration": 90, "chapters": [{"start": 4, "end": 90}]}, seed=zlib.crc32(ep.name.encode()))
-ai = sorted(str(p) for p in (ep / "ai").glob("*.jpg"))
-print("episodio", ep.name, "| shorts", len(script.get("shorts", [])), "| imágenes IA", len(ai), "| voz", bool(voice))
+ai = [(str(ep / "ai" / f"{im['id']}.jpg"), im.get("prompt", ""))
+                               for im in read_json(ep / "gpu_job.json", {}).get("images", [])
+                               if (ep / "ai" / f"{im['id']}.jpg").exists()]
+print("episodio", ep.name, "| shorts", len(script.get("shorts", [])), "| imágenes IA", len(ai), "| voz", bool(voice)); print("ejemplo", ai[:2])
 out = ROOT / "shorts_rehechos"
 out.mkdir(exist_ok=True)
 work = ep / "shorts_v2"

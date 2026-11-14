@@ -590,7 +590,9 @@ def main():
             fallback = [i for m in media for i in m["images"]]
             for k, s in enumerate(script["shorts"], 1):
                 try:
-                    ai_imgs = sorted(str(p) for p in (out / "ai").glob("*.jpg"))
+                    ai_imgs = [(str(out / "ai" / f"{im['id']}.jpg"), im.get("prompt", ""))
+                               for im in read_json(out / "gpu_job.json", {}).get("images", [])
+                               if (out / "ai" / f"{im['id']}.jpg").exists()]
                     r = produce_short(s, k, cfg, out / "shorts", used, music, fallback, voice=gpu_voice_obj,
                                       ai_images=ai_imgs)
                     if r:
