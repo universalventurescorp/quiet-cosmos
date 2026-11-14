@@ -138,6 +138,17 @@ def add_thumbnail_heroes(job, script, cfg, seeds=2):
             heroes.append({"id": iid, "prompt": f"{subj.strip().rstrip('.')}, {tc.get('hero_layout') or THUMB_LAYOUT}", "style": THUMB_STYLE,
                            "negative": THUMB_NEG, "steps": 35, "width": 1344, "height": 768, "seed": zlib.crc32(f"{script.get('title')}|{iid}".encode()) % 2_000_000_000,
                            "video": False})
+    cine = (script.get("thumbnail_cinema") or "").strip() if tc.get("cinema") else ""
+    if tc.get("cinema"):               # 14-nov-2026 (Luis): escena de cine con profundidad para la miniatura B
+        cine = cine or (f"the curved horizon of a planet seen from low orbit at night, filling the lower two thirds, "
+                        f"thin glowing blue atmosphere, a warm sunrise flare on the right edge of the limb, deep starfield "
+                        f"above; theme: {script.get('topic') or script.get('title')}")
+        for k in (1, 2):
+            iid = f"cine_{k}"
+            heroes.append({"id": iid, "prompt": f"{cine.rstrip('.')}, {tc.get('cinema_layout') or ''}".rstrip(", "),
+                           "style": THUMB_STYLE, "negative": THUMB_NEG + ", text, letters, title", "steps": 35,
+                           "width": 1344, "height": 768,
+                           "seed": zlib.crc32(f"{script.get('title')}|{iid}".encode()) % 2_000_000_000, "video": False})
     job["images"] = heroes + job["images"]
     print(f"   + {len(heroes)} thumbnail images")
     return job

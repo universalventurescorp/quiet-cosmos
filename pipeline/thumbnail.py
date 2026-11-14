@@ -485,7 +485,55 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
 make_thumbnail = make_bold
 
 
-def make_thumbnails(images, texts, out_dir, heroes=None):
+def make_cine(src, out, title="DUERME EN MINUTOS", wordmark="ESTRATO NOCTURNO", size=74, spacing=13):
+    """14-nov-2026 (Luis): miniatura "de cine" (como el póster de una película): la escena pintada a todo lo ancho
+    (horizonte de un planeta con su atmósfera y el amanecer, espacio profundo arriba), el título en letras finas y
+    espaciadas, centrado en el tercio de abajo, con la marca pequeña arriba entre dos líneas. Sin degradados rectos:
+    solo una sombra suave y difusa detrás del texto."""
+    from PIL import ImageDraw, ImageFilter, ImageFont
+    W, H = 1280, 720
+    im = Image.open(src).convert("RGB")
+    s = max(W / im.width, H / im.height)
+    im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+    x0, y0 = (im.width - W) // 2, (im.height - H) // 2
+    im = im.crop((x0, y0, x0 + W, y0 + H))
+    a = np.asarray(im, np.float32)
+    if a.mean() > 70:                                   # demasiado clara para ser de noche: bajar un poco
+        a *= 70 / a.mean()
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+    a *= np.clip(1 - 0.55 * np.exp(-((yy - 0.70 * H) / 150) ** 2) * np.exp(-((xx - W / 2) / 520) ** 2), 0, 1)[..., None]
+    img = Image.fromarray(np.clip(a, 0, 255).astype("uint8"))
+    fdir = ROOT / "branding" / "fonts" / "inter"
+    big = ImageFont.truetype(str(fdir / "Inter-ExtraLight.otf"), size)
+    small = ImageFont.truetype(str(fdir / "Inter-Light.otf"), 22)
+    d = ImageDraw.Draw(img)
+    def width(text, font, sp):
+        return sum(d.textlength(ch, font=font) for ch in text) + sp * (len(text) - 1)
+    while width(title, big, spacing) > W - 140 and size > 40:     # títulos largos: achicar sin salirse
+        size -= 4
+        big = ImageFont.truetype(str(fdir / "Inter-ExtraLight.otf"), size)
+    sh = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(sh).rectangle((150, 430, W - 150, 590), fill=150)
+    sh = sh.filter(ImageFilter.GaussianBlur(45)).point(lambda v: int(v * 0.55))
+    img = Image.composite(Image.new("RGB", (W, H), NIGHT), img, sh)
+    d = ImageDraw.Draw(img)
+    def tracked(text, font, y, sp, fill):
+        x = (W - width(text, font, sp)) / 2
+        start = x
+        for ch in text:
+            d.text((x, y), ch, font=font, fill=fill)
+            x += d.textlength(ch, font=font) + sp
+        return start, x - sp
+    tracked(title, big, 465, spacing, (242, 238, 228))
+    a0, a1 = tracked(wordmark, small, 425, 7, (176, 180, 242))
+    d.line((a0 - 130, 439, a0 - 24, 439), fill=(176, 180, 242), width=1)
+    d.line((a1 + 24, 439, a1 + 130, 439), fill=(176, 180, 242), width=1)
+    d.line((W / 2 - 30, 585, W / 2 + 30, 585), fill=(176, 180, 242), width=1)
+    img.save(out, quality=93)
+    return out
+
+
+def make_thumbnails(images, texts, out_dir, heroes=None, cinema=None):
     import hashlib
     seen, unique = set(), []
     for p in images:                                   # drop duplicate files
@@ -523,6 +571,16 @@ def make_thumbnails(images, texts, out_dir, heroes=None):
                     break
             if not paths:
                 raise ThumbnailError("ninguna imagen sirve para la miniatura DUERME:\n  " + "\n  ".join(why[:12]))
+            # 14-nov-2026 (Luis): la miniatura 2 es "de cine" para el A/B (la 1, que se sube sola, sigue siendo DUERME)
+            cine = [c for c in (cinema or []) if pathlib.Path(c).exists()]
+            if tc.get("cinema") and cine:
+                best = max(cine, key=lambda c: np.asarray(Image.open(c).convert("L"), np.float32).std())
+                p2 = out_dir / "thumbnail_cine.jpg"
+                try:
+                    make_cine(best, p2, f'{tc.get("word", "DUERME")} {fixed}', wm)
+                    paths = paths[:1] + [p2] + paths[1:2]
+                except Exception as exc:                       # noqa: BLE001
+                    print(f"   miniatura de cine no se pudo hacer: {exc}")
             return paths
         picks = []
         for i in range(3):

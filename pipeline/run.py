@@ -564,7 +564,8 @@ def main():
     heroes = [[str(p) for p in sorted((out / "ai").glob(f"thumb_{i}_*.jpg"))] for i in (1, 2, 3)]
     thumb_error = None
     try:
-        thumbs = make_thumbnails(all_imgs, texts, out, heroes=heroes)
+        thumbs = make_thumbnails(all_imgs, texts, out, heroes=heroes,
+                                 cinema=[str(p) for p in sorted((out / "ai").glob("cine_*.jpg"))])
     except Exception as exc:                             # noqa: BLE001
         # 13-nov-2026 (Luis): una miniatura plana NO se usa. El video se sube igual (privado, sin miniatura)
         # para no perder la GPU, y el run termina en ERROR con el motivo (diagnostics/thumbnail_error.json).

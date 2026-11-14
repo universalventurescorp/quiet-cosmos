@@ -40,6 +40,16 @@ thumbnail:
     away in deep space (a full sphere, a crescent, a ring or a nebula), never a surface, horizon or view from orbit
     (e.g. not "Earth seen from the ISS" but "planet Earth seen whole from deep space"). No landscapes, no people,
     no spacecraft.
+    Also add the key "thumbnail_cinema": ONE English description (max 35 words) of a cinematic, deep scene for a
+    movie-poster thumbnail: the curved horizon of a planet or moon of this topic seen from low orbit, with the
+    episode's main object rising in the sky above when it is not a planet (e.g. "the curved night horizon of Earth
+    seen from orbit, with the Andromeda galaxy rising huge above it"). No text, no people, no spacecraft.
+  # 14-nov-2026 (Luis): miniatura 2 "de cine" (horizonte + amanecer + espacio profundo, título fino centrado)
+  cinema: true
+  cinema_layout: >-
+    cinematic wide shot, the curved horizon crossing the upper third of the frame, the planet filling the lower two
+    thirds with its night side darker toward the bottom, thin glowing atmosphere along the limb, a small bright sunrise
+    flare on the right part of the horizon, deep black space with faint Milky Way above, photorealistic, NASA quality
   hero_images: true          # 2-nov-2026: la GPU pinta 2 imágenes por miniatura con la receta ganadora
   fill: 1.56                 # 13-nov 11:12 (Luis): tamaño y posición de la luna ganadora; lado izquierdo en sombra
   # 13-nov: el astro completo y centrado (make_duerme lo mide, lo agranda y lo corta); con mucho detalle real

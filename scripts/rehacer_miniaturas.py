@@ -20,7 +20,7 @@ heroes = [sorted(glob.glob(str(ep / "ai" / f"thumb_{i}_*.jpg"))) for i in (1, 2,
 imgs = [p for p in sorted(glob.glob(str(ep / "ai" / "*.jpg"))) if not pathlib.Path(p).name.startswith("thumb_")]
 out = ROOT / "rehechas"
 out.mkdir(exist_ok=True)
-thumbs = make_thumbnails(imgs, texts, out, heroes=heroes)
+thumbs = make_thumbnails(imgs, texts, out, heroes=heroes, cinema=sorted(glob.glob(str(ep / "ai" / "cine_*.jpg"))))
 title = sys.argv[2] if len(sys.argv) > 2 else script["title"]
 publish_web(thumbs, title, vid, ROOT)
 hero_dir = ROOT / "hero"
