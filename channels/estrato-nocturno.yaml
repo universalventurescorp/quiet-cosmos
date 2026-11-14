@@ -138,6 +138,12 @@ shorts:
   # 26-oct-2026: los Shorts traen casi todas las vistas, pero casi nadie se suscribe. Cierre fijo de seguimiento
   # (Claude ya no escribe su propia invitación al final). Video relacionado del Short = maratón (lo pone Luis).
   closing_line: "Sígueme: cada semana, un viaje nuevo para dormir."
+  # 14-nov-2026 (Luis): "los Shorts se sienten súper vacíos, solo habla el narrador" y "imágenes grandes, de cine".
+  sound_design: true       # fondo de espacio profundo + golpe al inicio + barrido cada ~11 s + subidas suaves
+  sfx_every: 11
+  sfx_volume: 1.8          # en el celular se oye bajito: el diseño de sonido va más presente que en el episodio
+  music_volume: 0.30       # antes 0.22
+  cinematic: true          # primero las escenas pintadas por la GPU y los astros de la miniatura; NASA solo completa
 
 kaggle:
   gpu_budget_minutes: 170  # narración (ambas GPU) + escenas IA

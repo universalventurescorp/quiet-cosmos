@@ -590,7 +590,9 @@ def main():
             fallback = [i for m in media for i in m["images"]]
             for k, s in enumerate(script["shorts"], 1):
                 try:
-                    r = produce_short(s, k, cfg, out / "shorts", used, music, fallback, voice=gpu_voice_obj)
+                    ai_imgs = sorted(str(p) for p in (out / "ai").glob("*.jpg"))
+                    r = produce_short(s, k, cfg, out / "shorts", used, music, fallback, voice=gpu_voice_obj,
+                                      ai_images=ai_imgs)
                     if r:
                         shorts.append(r)
                 except Exception as exc:
