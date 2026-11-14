@@ -1,0 +1,33 @@
+name: rehacer-shorts
+# Rehace los Shorts de un viaje ya producido con el sistema actual y los deja en la rama diag-shorts.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id: { description: "Id de la corrida de largo.yml", required: true }
+permissions:
+  contents: write
+  actions: read
+env:
+  CHANNEL: estrato-nocturno
+jobs:
+  rehacer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: work-listo, run-id: "${{ inputs.run_id }}", github-token: "${{ github.token }}", path: art }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-dejavu-core fonts-inter
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+      - run: |
+          mv art/outputs outputs
+          python scripts/rehacer_shorts.py
+      - if: always()
+        run: |
+          mkdir -p shorts_rehechos && cd shorts_rehechos && git init -q && git checkout -q -b diag-shorts && git add . && \
+            git -c user.name=bot -c user.email=actions@users.noreply.github.com commit -qm "shorts rehechos" && \
+            git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" diag-shorts
