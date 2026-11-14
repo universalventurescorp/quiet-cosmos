@@ -223,9 +223,12 @@ def fill_gaps(hits, pauses, max_gap, duration):
     return sorted(hits + added)
 
 
-def plan(timing, script, pauses=None, max_gap=0):
+def plan(timing, script, pauses=None, max_gap=0, hook=None):
     """(sections, hits): ambience per time range and one-shot hits with their start time in seconds.
-    pauses: start times of paragraphs that come after a silence (from the captions), used to keep the rhythm."""
+    pauses: start times of paragraphs that come after a silence (from the captions), used to keep the rhythm.
+    hook: {"minutes", "bed", "max_gap"} — 14-nov-2026 (Luis): the first minutes are where the audience decides, so
+    they must never sound empty: no "none" ambience there (it left only a low hum between sentences) and sounds
+    closer together."""
     chapters = timing.get("chapters", [])
     first = chapters[0]["start"] if chapters else timing["duration"]
     sections = [(0.0, first, "deep_space")]                   # cold open + title card over open space
@@ -233,6 +236,17 @@ def plan(timing, script, pauses=None, max_gap=0):
         sections.append((mark["start"], mark["end"], ch.get("ambience") or "deep_space"))
     if chapters:
         sections.append((chapters[-1]["end"], timing["duration"], "deep_space"))
+    hook_s = float((hook or {}).get("minutes", 0)) * 60
+    if hook_s:
+        full = []
+        for a, b, kind in sections:
+            if kind == "none" and a < hook_s:
+                full.append((a, min(b, hook_s), hook.get("bed", "deep_space")))
+                if b > hook_s:
+                    full.append((hook_s, b, "none"))
+            else:
+                full.append((a, b, kind))
+        sections = full
     hits = []
     if timing.get("title_card"):
         hits.append((max(0.0, timing["title_card"]["start"] - 0.05), "boom"))
@@ -247,6 +261,9 @@ def plan(timing, script, pauses=None, max_gap=0):
         end = timing["outro"]["start"] if timing.get("outro") else timing["duration"]
         body = [h for h in hits if h[0] < end]
         hits = sorted(fill_gaps(body, pauses, max_gap, end) + [h for h in hits if h[0] >= end])
+    if hook_s and pauses and hook.get("max_gap"):
+        start = [h for h in hits if h[0] < hook_s]
+        hits = sorted(fill_gaps(start, pauses, hook["max_gap"], hook_s) + [h for h in hits if h[0] >= hook_s])
     return sections, hits
 
 
@@ -255,8 +272,8 @@ def paragraph_starts(cues, min_silence=1.0):
     return [b0 for (_, a1, _), (b0, _, _) in zip(cues, cues[1:]) if b0 - a1 >= min_silence]
 
 
-def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0):
-    sections, hits = plan(timing, script, pauses, max_gap)
+def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0, hook=None):
+    sections, hits = plan(timing, script, pauses, max_gap, hook)
     total = int(timing["duration"] * SR) + SR
     beds = {k: make_bed(k, seed + 101 * i) for i, k in enumerate(sorted({s[2] for s in sections}))}
     shots = {k: make_hit(k, seed + 7 * i) for i, k in enumerate(("boom", "boom_soft", "whoosh", "swell"))}

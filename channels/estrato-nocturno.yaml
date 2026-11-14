@@ -101,6 +101,9 @@ mix:
   # 13-nov (Luis): ritmo de sonidos de los episodios del maratón (uno cada ~1,5 min). Si entre dos sonidos pasan más
   # de 140 s, se agrega una subida suave en la pausa entre párrafos más cercana al medio.
   sfx_max_gap: 140        # probado en un viaje como el del Sol: de 1 sonido cada 2,3 min a 1 cada ~1,5 min
+  # 14-nov (Luis): los primeros minutos deciden si la gente se queda: nunca vacíos. Ahí no se usa el ambiente
+  # "none" (dejaba solo un zumbido grave entre frases) sino espacio profundo, y los sonidos van más seguidos.
+  sfx_hook: { minutes: 20, bed: deep_space, max_gap: 75 }
 
 shorts:
   count: 3                 # 25-oct: 3 Shorts por episodio (9/semana) para ganar suscriptores más rápido
