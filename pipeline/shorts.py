@@ -64,9 +64,13 @@ def produce_short(short, idx, cfg, out_dir, used, music, fallback_images, voice=
     if sc.get("cinematic") and ai_images:
         # 14-nov-2026 (Luis): imágenes grandes y de cine (las escenas pintadas por la GPU y los astros de la
         # miniatura), cada Short con las suyas; NASA solo completa si faltan
-        pool = list(ai_images)
-        start = (idx - 1) * need % max(1, len(pool))
-        imgs = (pool[start:] + pool[:start])[:need]
+        import pathlib
+        names = lambda q: pathlib.Path(q).name
+        heroes = [q for q in ai_images if names(q).startswith(("thumb_", "cine_"))]     # astros grandes primero
+        scenes = [q for q in ai_images if q not in heroes]
+        start = (idx - 1) * need % max(1, len(scenes))
+        pool = heroes[(idx - 1) * 2:(idx - 1) * 2 + 2] + scenes[start:] + scenes[:start]
+        imgs = [{"path": q} for q in pool[:need]]
     if len(imgs) < need:
         imgs += fetch_images(short.get("image_queries", []), need - len(imgs), d / "images", used, 2)
     if len(imgs) < 4:
