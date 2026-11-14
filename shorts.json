@@ -1,0 +1,23 @@
+[
+ {
+  "archivo": "short_1.mp4",
+  "titulo": "La luz de la Luna tarda un segundo y tres décimas",
+  "duracion": 40.3,
+  "texto": "La Luna está a un segundo y tres décimas de ti. No a un segundo de distancia en coche, sino a un segundo de luz. Mientras dices dos o tres palabras, la luz ya ha cruzado todo el vacío que a las naves del programa Apolo les costó tres días. Y ese vacío es enorme. Si pusieras en fila los ocho planetas del Sistema Solar, todos cabrían entre la Tierra y la Luna, y todavía sobraría un poco de espacio. Nuestros ojos no fueron hechos para medir un hueco así. Por eso lo que ves en el cielo no es la Luna de ahora mismo, sino la de hace un segundo y poco. Es la primera vez que mirar y recordar se vuelven casi lo mismo. Sígueme: cada semana, un viaje nuevo para dormir.",
+  "fuente": "NASA / Apollo"
+ },
+ {
+  "archivo": "short_2.mp4",
+  "titulo": "El asteroide del que se trajo un puñado de polvo",
+  "duracion": 42.0,
+  "texto": "Una sonda tocó un asteroide durante seis segundos, y eso bastó. Bennu es una roca con forma de peonza que no ha cambiado en cuatro mil quinientos millones de años. OSIRIS-REx descendió despacio hacia su superficie, soltó un chorro de nitrógeno y recogió polvo y piedras pequeñas. Seis segundos de contacto, lo que tardas en respirar una vez. Tan lleno quedó el recipiente que algunas partículas escapaban flotando al espacio, como migas de una bolsa demasiado llena. Cuando la muestra llegó a la Tierra, dentro había carbono, arcillas que solo se forman con agua y cristales de sal. Son los ingredientes de un mundo, antes de que existiera la vida. Sígueme: cada semana, un viaje nuevo para dormir.",
+  "fuente": "NASA / OSIRIS-REx"
+ },
+ {
+  "archivo": "short_3.mp4",
+  "titulo": "El Webb vive en un punto donde la gravedad se compensa",
+  "duracion": 42.0,
+  "texto": "A millón y medio de kilómetros de tu cama, un telescopio lleva años sin caer hacia ningún lado. Está en L2, uno de los cinco puntos de equilibrio que descubrió Lagrange en mil setecientos setenta y dos, con pluma y papel. Allí, la gravedad del Sol y de la Tierra, sumada al giro del conjunto, se compensa. Desde ese lugar, el Webb le da la espalda a los dos a la vez, protegido por un parasol del tamaño de una cancha de tenis. De un lado hace ochenta y cinco grados. Del otro, casi doscientos treinta bajo cero, a través de unos pocos metros de lámina plateada. El frío llega solo, sostenido por la geometría. Sígueme: cada semana, un viaje nuevo para dormir.",
+  "fuente": "NASA / James Webb"
+ }
+]
