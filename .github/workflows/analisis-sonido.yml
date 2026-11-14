@@ -1,0 +1,31 @@
+name: analisis-sonido
+on:
+  workflow_dispatch:
+    inputs:
+      run_id: { description: "run de largo.yml con episode-files (vista previa 10 min)", required: true }
+      maraton: { description: "video de maraton-entrada a comparar", default: "KvZlSFIG0ww.mp4" }
+      minutos: { default: "10" }
+permissions:
+  contents: write
+  actions: read
+jobs:
+  analizar:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: episode-files, run-id: "${{ inputs.run_id }}", github-token: "${{ github.token }}", path: ep }
+      - name: Paquetes
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg && pip install numpy matplotlib
+      - name: Analizar
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          mkdir -p diag
+          gh release download maraton-entrada -p "${{ inputs.maraton }}" -D m -R ${{ github.repository }}
+          P=$(find ep -name 'preview-10min.mp4' | head -1); echo "preview: $P"
+          python scripts/analisis_sonido.py maraton m/${{ inputs.maraton }} ${{ inputs.minutos }} diag
+          python scripts/analisis_sonido.py viaje8h "$P" ${{ inputs.minutos }} diag
+      - name: Guardar en la rama diag-sonido
+        run: |
+          git config user.name quiet-cosmos-bot; git config user.email actions@users.noreply.github.com
+          git checkout --orphan diag-sonido && git rm -rqf --cached . && git add -f diag && git commit -qm "análisis de sonido" && git push -f origin HEAD:diag-sonido
