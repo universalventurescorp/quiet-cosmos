@@ -21,9 +21,9 @@ def _tempo(wav, cues, dur, factor):
     return dur / factor, [(a / factor, b / factor, t) for a, b, t in cues]
 
 
-def _short_sfx(path, dur, cues, seed, every=11.0):
+def _short_sfx(path, dur, cues, seed, every=6.0):
     """14-nov-2026 (Luis): los Shorts se sentían vacíos (solo la voz). Fondo de espacio profundo todo el Short,
-    golpe al empezar, barrido cada ~11 s (en una pausa entre frases) y una subida suave en medio de cada tramo."""
+    golpe al empezar, barrido cada ~6 s (en una pausa entre frases) y una subida suave en medio de cada tramo."""
     from .sfx import make_sfx
     starts = [a for a, _, _ in cues] or [0.0]
     cuts, t = [0.0], every
@@ -85,7 +85,7 @@ def produce_short(short, idx, cfg, out_dir, used, music, fallback_images, voice=
     sfx = None
     if sc.get("sound_design"):
         try:
-            sfx = _short_sfx(d / "sfx.wav", dur, cues, seed=1000 + idx, every=sc.get("sfx_every", 11.0))
+            sfx = _short_sfx(d / "sfx.wav", dur, cues, seed=1000 + idx, every=sc.get("sfx_every", 6.0))
         except Exception as exc:                                       # noqa: BLE001
             print(f"    short {idx}: sin diseño de sonido ({exc})")
     audio = mix(wav, music, d / "audio.wav", dur, music_volume=sc.get("music_volume", 0.22), lufs=-14, fade_out=1.0,
