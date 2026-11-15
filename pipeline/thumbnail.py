@@ -436,8 +436,10 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
         alpha = np.asarray(hull, np.float32) / 255
     # 13-nov 11:12 (Luis): como la luna ganadora, el lado izquierdo del astro se funde con el fondo (lado de noche):
     # sombra con borde CURVO y muy suave (círculo desplazado a la derecha), nunca una línea recta.
-    if night:
-        ncx, ncy, nr = (dcx, dcy, r) if disk else (cx, cy, diam / 2)
+    # 15-nov: la sombra de "lado de noche" solo para astros redondos (planetas, lunas, estrellas); en una galaxia
+    # o algo alargado dejaba la miniatura casi negra (Vía Láctea keoDKvI4tUQ)
+    if night and disk:
+        ncx, ncy, nr = dcx, dcy, r
         dn = np.hypot(xx - (ncx + night * nr) * k, yy - ncy * k)
         lit_ = np.clip((nr * k * 1.05 - dn) / (0.25 * nr * k), 0, 1)
         alpha *= lit_ * lit_ * (3 - 2 * lit_)
@@ -447,6 +449,10 @@ def make_duerme(image_path, line2, out_path, word="DUERME", wordmark="ESTRATO NO
     feather = Image.fromarray((alpha * 255).astype(np.uint8))
     canvas = Image.new("RGB", (W, H), NIGHT)
     canvas.paste(big, (off_x, off_y), feather)
+    # control: el astro tiene que VERSE en la miniatura (no puede quedar fuera de cuadro ni a oscuras)
+    vis = np.asarray(canvas.convert("L"), np.float32)[:, int(W * 0.35):]
+    if (vis > 60).mean() < 0.06:
+        raise ThumbnailError(f"{name}: el astro casi no se ve en la miniatura ({(vis > 60).mean():.0%} visible)")
     im = ImageEnhance.Contrast(canvas).enhance(1.06)
 
     img = im.convert("RGBA")
