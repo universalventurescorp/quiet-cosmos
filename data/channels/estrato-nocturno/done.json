@@ -556,5 +556,51 @@
     "ai_scenes": 147,
     "ai_status": "ok",
     "date": "2026-11-14"
+  },
+  {
+    "topic": "Un viaje por la Vía Láctea, desde nuestro vecindario de estrellas hasta su centro",
+    "title": "Un Viaje por la Vía Láctea hasta su Centro | Documental para Dormir",
+    "chapters": [
+      "Un retrato que nadie ha podido tomar",
+      "El día que el Sol salió del centro",
+      "Un espolón entre dos brazos",
+      "La ola de las estrellas jóvenes",
+      "La línea de 21 centímetros",
+      "Manchas negras en el cielo",
+      "La zona de evitación",
+      "Eta Carinae: la estrella que casi se fue",
+      "Cicatrices de explosiones",
+      "Un campo magnético que abraza la galaxia",
+      "El Sol sube y baja",
+      "Una carta a través de la galaxia",
+      "La galaxia que se fundió con la nuestra",
+      "La estrella Matusalén",
+      "Sagitario: una enana que cruza el disco",
+      "Una barra de estrellas",
+      "El bulbo, un cacahuete de estrellas viejas",
+      "Terzan 5: un fósil en el bulbo",
+      "La Zona Molecular Central",
+      "Sagitario B2 y el sabor a frambuesa",
+      "El eco de un destello",
+      "Los Arcos y el Quintuplete",
+      "Los hilos magnéticos del centro",
+      "Estrellas jóvenes donde no deberían",
+      "La nube que no se comió el agujero negro",
+      "Un anillo que parpadea",
+      "Cuatro millones de soles bajo la órbita de Mercurio",
+      "La luz que salió en la Edad de Hielo"
+    ],
+    "video_id": "keoDKvI4tUQ",
+    "voice_test": null,
+    "shorts": [
+      "lMD1q1cHMwA",
+      "ica_KD72vzw",
+      "kyZMnxdl4NA"
+    ],
+    "minutes": 194.4,
+    "qa_ok": true,
+    "ai_scenes": 134,
+    "ai_status": "ok",
+    "date": "2026-11-15"
   }
 ]
