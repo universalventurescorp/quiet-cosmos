@@ -212,7 +212,8 @@ def fill_gaps(hits, pauses, max_gap, duration):
             # the paragraph start nearest to lo + gap/n, never closer than 25 s to a neighbour sound
             n = int((b - lo) // max_gap) + 1
             target = lo + (b - lo) / n
-            cands = [x for x in pauses if lo + 25 <= x - 1.6 <= b - 25]
+            sep = min(25.0, max_gap / 2.5)               # 17-nov: con huecos cortos, los sonidos pueden ir más juntos
+            cands = [x for x in pauses if lo + sep <= x - 1.6 <= b - sep]
             if not cands:
                 break
             x = min(cands, key=lambda c: abs(c - target))

@@ -462,7 +462,7 @@ def main():
             from .scenes import read_srt
             from .sfx import paragraph_starts
             info = make_sfx(sfx, timing, script, seed=zlib.crc32(topic.encode()) % 100000,
-                            pauses=paragraph_starts(read_srt(out / "captions.srt")),
+                            pauses=paragraph_starts(read_srt(out / "captions.srt"), 0.7),
                             max_gap=cfg["mix"].get("sfx_max_gap", 0), hook=cfg["mix"].get("sfx_hook"))
             write_json(out / "sfx.json", info)
             print(f"   ambiences {info['beds']}, hits {info['hits']}")

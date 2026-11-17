@@ -14,7 +14,7 @@ new = json.loads(os.environ.get("AJUSTES", "{}"))
 ep = pathlib.Path(sorted(glob.glob(str(ROOT / "outputs" / "*" / "timing.json")))[-1]).parent
 timing, script = read_json(ep / "timing.json", {}), read_json(ep / "script.json", {})
 topic = script.get("topic") or ep.name
-pauses = paragraph_starts(read_srt(ep / "captions.srt"))
+pauses = paragraph_starts(read_srt(ep / "captions.srt"), 0.7)
 out = ROOT / "muestra"; out.mkdir(exist_ok=True)
 rep = {"episodio": ep.name}
 for name, m in (("antes", cfg["mix"]), ("despues", {**cfg["mix"], **new})):
