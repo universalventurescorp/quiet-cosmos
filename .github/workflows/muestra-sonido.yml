@@ -1,0 +1,36 @@
+name: muestra-sonido
+on:
+  workflow_dispatch:
+    inputs:
+      run_id: { required: true }
+      minutos: { default: "6" }
+      ajustes: { description: "JSON con los ajustes de mix a probar", required: true }
+permissions:
+  contents: write
+  actions: read
+env:
+  CHANNEL: estrato-nocturno
+jobs:
+  muestra:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: work-listo, run-id: "${{ inputs.run_id }}", github-token: "${{ github.token }}", path: art }
+      - uses: actions/download-artifact@v4
+        with: { name: episode-files, run-id: "${{ inputs.run_id }}", github-token: "${{ github.token }}", path: ep }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          pip install numpy scipy soundfile pyyaml pillow requests opencv-python-headless praat-parselmouth
+      - env: { AJUSTES: "${{ inputs.ajustes }}" }
+        run: |
+          mv art/outputs outputs
+          python scripts/muestra_sonido.py ${{ inputs.minutos }}
+      - if: always()
+        run: |
+          mkdir -p muestra && cd muestra && rm -f *.wav && git init -q && git checkout -q -b diag-muestra && git add . && \
+            git -c user.name=bot -c user.email=actions@users.noreply.github.com commit -qm muestra && \
+            git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" diag-muestra
