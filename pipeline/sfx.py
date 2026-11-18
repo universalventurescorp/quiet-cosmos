@@ -351,7 +351,8 @@ def zone_gain(t, zones):
         return 1.0, None
     a, b = zones["hook_min"] * 60, zones.get("fade_end_min", zones["hook_min"] + 30) * 60
     x = min(1.0, max(0.0, (t - a) / max(1.0, b - a)))
-    gain = 1.0 + (zones.get("fade_to", 0.5) - 1.0) * x
+    hg = float(zones.get("hook_gain", 1.0))     # el refuerzo es solo de los efectos del gancho, no del fondo
+    gain = hg + (zones.get("fade_to", 0.5) - hg) * x
     cut = None if x <= 0 else 12000 * (1 - x) + zones.get("dark_hz", 2500) * x
     return gain, cut
 

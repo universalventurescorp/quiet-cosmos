@@ -264,9 +264,9 @@ sound_presets:
   # mitad y se oscurecen hasta el minuto 60, más espaciados; el fondo de espacio nunca se corta. Solo para pruebas.
   dormir:
     mix:
-      sfx_volume: 1.6
+      sfx_volume: 1.0          # el fondo queda como hoy; los efectos del gancho van x1,6 (hook_gain)
       sfx_max_gap: 90
       sfx_hook: { minutes: 30, bed: deep_space, max_gap: 30 }
       sfx_semantic: true
-      sfx_zones: { hook_min: 30, fade_end_min: 60, fade_to: 0.5, dark_hz: 2500, bed_always: true,
+      sfx_zones: { hook_min: 30, hook_gain: 1.6, fade_end_min: 60, fade_to: 0.6, dark_hz: 2500, bed_always: true,
                    late_after_min: 60, late_min_spacing: 150 }
