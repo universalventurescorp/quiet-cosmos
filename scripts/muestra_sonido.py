@@ -37,7 +37,7 @@ for name, c in (("actual", o), ("nuevo", m)):
 big = [p for p in ep.rglob("*.mp4") if p.stat().st_size > 5e8]
 prev = sorted(glob.glob(str(ROOT / "ep" / "**" / "preview-10min.mp4"), recursive=True))
 src = str(big[0]) if big else (prev[0] if prev else None)
-audio_full = ep / "audio.wav"
+audio_full = next((ep / f for f in ("audio.flac", "audio.wav") if (ep / f).exists()), ep / "audio.wav")
 print("fuente:", src, "| audio.wav:", audio_full.exists())
 
 
