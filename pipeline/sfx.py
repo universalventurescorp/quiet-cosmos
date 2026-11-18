@@ -276,7 +276,7 @@ def fill_gaps(hits, pauses, max_gap, duration):
     return sorted(hits + added)
 
 
-def plan(timing, script, pauses=None, max_gap=0, hook=None, cues=None, semantic=False):
+def plan(timing, script, pauses=None, max_gap=0, hook=None, cues=None, semantic=False, zones=None):
     """(sections, hits): ambience per time range and one-shot hits with their start time in seconds.
     pauses: start times of paragraphs that come after a silence (from the captions), used to keep the rhythm.
     hook: {"minutes", "bed", "max_gap"} — 14-nov-2026 (Luis): the first minutes are where the audience decides, so
@@ -300,6 +300,9 @@ def plan(timing, script, pauses=None, max_gap=0, hook=None, cues=None, semantic=
             else:
                 full.append((a, b, kind))
         sections = full
+    zones = zones or {}
+    if zones.get("bed_always"):                 # 17-nov (estudios de sueño): el fondo nunca se corta, así ningún
+        sections = [(a, b, "deep_space" if k == "none" else k) for a, b, k in sections]   # efecto cae sobre silencio
     hits = []
     if timing.get("title_card"):
         hits.append((max(0.0, timing["title_card"]["start"] - 0.05), "boom"))
@@ -317,6 +320,14 @@ def plan(timing, script, pauses=None, max_gap=0, hook=None, cues=None, semantic=
     if hook_s and pauses and hook.get("max_gap"):
         start = [h for h in hits if h[0] < hook_s]
         hits = sorted(fill_gaps(start, pauses, hook["max_gap"], hook_s) + [h for h in hits if h[0] >= hook_s])
+    late = float(zones.get("late_after_min", 0)) * 60
+    if late and zones.get("late_min_spacing"):  # zona de sueño: menos sonidos (los de capítulo se quedan)
+        kept, last = [], -1e9
+        for t0, kind in hits:
+            if t0 < late or kind in ("whoosh", "boom_soft") or t0 - last >= zones["late_min_spacing"]:
+                kept.append((t0, kind))
+                last = t0
+        hits = kept
     if semantic and cues:                       # 17-nov: el sonido acorde a la frase que empieza justo después
         starts = [(a, txt) for a, _, txt in cues]
         out = []
@@ -334,9 +345,26 @@ def paragraph_starts(cues, min_silence=1.0):
     return [b0 for (_, a1, _), (b0, _, _) in zip(cues, cues[1:]) if b0 - a1 >= min_silence]
 
 
+def zone_gain(t, zones):
+    """Volumen y brillo de un efecto según el minuto: pleno en el gancho, luego baja y se oscurece poco a poco."""
+    if not zones or not zones.get("hook_min"):
+        return 1.0, None
+    a, b = zones["hook_min"] * 60, zones.get("fade_end_min", zones["hook_min"] + 30) * 60
+    x = min(1.0, max(0.0, (t - a) / max(1.0, b - a)))
+    gain = 1.0 + (zones.get("fade_to", 0.5) - 1.0) * x
+    cut = None if x <= 0 else 12000 * (1 - x) + zones.get("dark_hz", 2500) * x
+    return gain, cut
+
+
+def _lowpass(h, cut):
+    spec = np.fft.rfft(h, axis=0)
+    f = np.fft.rfftfreq(len(h), 1 / SR)
+    return np.fft.irfft(spec / np.sqrt(1 + (f / cut) ** 4)[:, None], len(h), axis=0).astype(np.float32)
+
+
 def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0, hook=None, cues=None,
-             semantic=False, soft_boom=False):
-    sections, hits = plan(timing, script, pauses, max_gap, hook, cues, semantic)
+             semantic=False, soft_boom=False, zones=None):
+    sections, hits = plan(timing, script, pauses, max_gap, hook, cues, semantic, zones)
     total = int(timing["duration"] * SR) + SR
     beds = {k: make_bed(k, seed + 101 * i) for i, k in enumerate(sorted({s[2] for s in sections}))}
     shots = {k: make_hit(k, seed + 7 * i) for i, k in enumerate(HIT_KINDS)}
@@ -361,6 +389,9 @@ def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0, h
                 out[lo - b0:hi - b0] += bed[k % len(bed)] * env[:, None]
             for t0, kind in hits:
                 h = shots[kind]
+                if zones:
+                    g, cut = zone_gain(t0, zones)
+                    h = (_lowpass(h, cut) if cut else h) * g
                 s0 = int(t0 * SR)
                 if s0 >= b1 or s0 + len(h) <= b0:
                     continue

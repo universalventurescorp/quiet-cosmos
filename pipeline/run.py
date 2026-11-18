@@ -465,7 +465,7 @@ def main():
                             pauses=paragraph_starts(read_srt(out / "captions.srt"), 0.7),
                             max_gap=cfg["mix"].get("sfx_max_gap", 0), hook=cfg["mix"].get("sfx_hook"),
                             cues=read_srt(out / "captions.srt"), semantic=cfg["mix"].get("sfx_semantic", False),
-                            soft_boom=cfg["mix"].get("sfx_semantic", False))
+                            soft_boom=cfg["mix"].get("sfx_semantic", False), zones=cfg["mix"].get("sfx_zones"))
             write_json(out / "sfx.json", info)
             print(f"   ambiences {info['beds']}, hits {info['hits']}")
         except Exception as exc:          # never lose an episode over the sound design

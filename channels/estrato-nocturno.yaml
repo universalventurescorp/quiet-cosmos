@@ -260,3 +260,13 @@ sound_presets:
       sfx_max_gap: 90
       sfx_hook: { minutes: 30, bed: deep_space, max_gap: 30 }
       sfx_semantic: true
+  # 17-nov-2026: versión "dormir" (basada en estudios de sueño): gancho fuerte 30 min y luego los efectos bajan a la
+  # mitad y se oscurecen hasta el minuto 60, más espaciados; el fondo de espacio nunca se corta. Solo para pruebas.
+  dormir:
+    mix:
+      sfx_volume: 1.6
+      sfx_max_gap: 90
+      sfx_hook: { minutes: 30, bed: deep_space, max_gap: 30 }
+      sfx_semantic: true
+      sfx_zones: { hook_min: 30, fade_end_min: 60, fade_to: 0.5, dark_hz: 2500, bed_always: true,
+                   late_after_min: 60, late_min_spacing: 150 }

@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
     inputs:
       run_id: { required: true }
-      minutos: { default: "6" }
+      tramos: { description: "minutos donde empieza cada tramo, separados por coma", default: "0,45,120" }
+      dur: { description: "segundos de cada tramo", default: "240" }
       ajustes: { description: "JSON con los ajustes de mix a probar", required: true }
 permissions:
   contents: write
@@ -25,10 +26,11 @@ jobs:
       - run: |
           sudo apt-get update && sudo apt-get install -y ffmpeg
           pip install numpy scipy soundfile pyyaml pillow requests opencv-python-headless praat-parselmouth
-      - env: { AJUSTES: "${{ inputs.ajustes }}" }
+      - env: { AJUSTES: "${{ inputs.ajustes }}", TRAMOS: "${{ inputs.tramos }}", DUR: "${{ inputs.dur }}", GH_TOKEN: "${{ github.token }}" }
         run: |
           mv art/outputs outputs
-          python scripts/muestra_sonido.py ${{ inputs.minutos }}
+          gh release download maraton-entrada -p "KvZlSFIG0ww.mp4" -D m -R ${{ github.repository }} || true
+          python scripts/muestra_sonido.py
       - if: always()
         run: |
           mkdir -p muestra && cd muestra && rm -f *.wav && git init -q && git checkout -q -b diag-muestra && git add . && \
