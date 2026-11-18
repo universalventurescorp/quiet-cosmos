@@ -1,0 +1,95 @@
+{
+ "episodio": "un-viaje-por-la-v-a-l-ctea-desde-nuestro-vecindario-de-estre-3h",
+ "ajustes_nuevos": {
+  "sfx_volume": 1.0,
+  "sfx_max_gap": 90,
+  "sfx_hook": {
+   "minutes": 30,
+   "bed": "deep_space",
+   "max_gap": 30
+  },
+  "sfx_semantic": true,
+  "sfx_zones": {
+   "hook_min": 30,
+   "hook_gain": 1.6,
+   "fade_end_min": 60,
+   "fade_to": 0.6,
+   "dark_hz": 2500,
+   "bed_always": true,
+   "late_after_min": 60,
+   "late_min_spacing": 150
+  }
+ },
+ "tramos": {
+  "min000": {
+   "actual": {
+    "saltos_>6dB": 7,
+    "pct_casi_silencio": 0.0,
+    "pct_energia_>4kHz": 35.3,
+    "nivel_medio_dB": -20.8
+   },
+   "nuevo": {
+    "saltos_>6dB": 7,
+    "pct_casi_silencio": 0.0,
+    "pct_energia_>4kHz": 36.3,
+    "nivel_medio_dB": -19.7
+   },
+   "maraton": {
+    "saltos_>6dB": 14,
+    "pct_casi_silencio": 0.0,
+    "pct_energia_>4kHz": 35.1,
+    "nivel_medio_dB": -16.4
+   }
+  },
+  "min045": {
+   "actual": {
+    "saltos_>6dB": 2,
+    "pct_casi_silencio": 0.0,
+    "pct_energia_>4kHz": 33.3,
+    "nivel_medio_dB": -21.3
+   },
+   "nuevo": {
+    "saltos_>6dB": 2,
+    "pct_casi_silencio": 0.0,
+    "pct_energia_>4kHz": 32.9,
+    "nivel_medio_dB": -20.3
+   }
+  },
+  "min120": {
+   "actual": {
+    "saltos_>6dB": 1,
+    "pct_casi_silencio": 0.0,
+    "pct_energia_>4kHz": 35.5,
+    "nivel_medio_dB": -20.7
+   },
+   "nuevo": {
+    "saltos_>6dB": 2,
+    "pct_casi_silencio": 0.0,
+    "pct_energia_>4kHz": 35.4,
+    "nivel_medio_dB": -19.7
+   }
+  }
+ },
+ "actual": {
+  "min_0-10": 12,
+  "min_10-20": 12,
+  "min_20-30": 6,
+  "min_30-40": 5,
+  "min_45-55": 8,
+  "min_60-70": 6,
+  "min_90-100": 5,
+  "min_120-130": 5,
+  "min_150-160": 7
+ },
+ "nuevo": {
+  "min_0-10": 28,
+  "min_10-20": 27,
+  "min_20-30": 26,
+  "min_30-40": 8,
+  "min_45-55": 10,
+  "min_60-70": 4,
+  "min_90-100": 3,
+  "min_120-130": 4,
+  "min_150-160": 4
+ }
+}
