@@ -1,3 +1,4 @@
+import re
 """Cinematic sound design, generated from math (royalty-free by construction, like the score).
 
 Two layers, mixed with the music under the voice (so they duck while the narrator speaks):
@@ -17,7 +18,31 @@ SR = 48000
 LOOP = 48          # seconds of each ambience bed (seamless loop: built with circular FFT)
 BED_RMS = 10 ** (-37 / 20)   # beds sit ~4 dB under the score (measured: score ~-33 dBFS RMS at music_volume 0.16)
 HIT_PEAK = {"boom": 10 ** (-9 / 20), "boom_soft": 10 ** (-17 / 20), "whoosh": 10 ** (-17 / 20),
-            "swell": 10 ** (-20 / 20)}
+            "swell": 10 ** (-20 / 20), "shimmer": 10 ** (-19 / 20), "rumble": 10 ** (-15 / 20),
+            "drift": 10 ** (-17 / 20)}
+HIT_KINDS = ("boom", "boom_soft", "whoosh", "swell", "shimmer", "rumble", "drift")
+
+# 17-nov-2026 (Luis): "a veces suenan de la nada y dan miedo": cada sonido se elige por lo que dice la frase que viene
+# y entra despacio. luz/estrellas -> brillo; gravedad/oscuridad/inmensidad -> retumbo grave; viaje/distancia ->
+# deriva; pregunta o revelación -> subida.
+MEANING = [
+    ("rumble", r"agujero|gravedad|masa|colaps|oscur|negr|vac[ií]o|inmens|gigant|enorme|profund|abismo|choc|impact|"
+               r"explos|supernova|tormenta|fuego|lava|volc|terremot|peso|aplast"),
+    ("shimmer", r"luz|luces|brill|estrell|sol\b|amanec|aurora|resplandor|destell|cristal|hielo|helad|fr[ií]o|"
+                r"agua|oc[eé]ano|nube|anillo|polvo|chispa|color|azul|dorad|plat"),
+    ("drift", r"viaj|velocidad|kil[oó]metro|a[nñ]os luz|distancia|lej|alej|cruz|nave|sonda|[oó]rbita|vuel|avanz|"
+              r"recorr|camino|rumbo|deriv|flot|gir|mov"),
+]
+
+
+def kind_for(text, default="swell"):
+    t = (text or "").lower()
+    if "?" in t or "¿" in t:
+        return "swell"
+    for kind, rx in MEANING:
+        if re.search(rx, t):
+            return kind
+    return default
 FADE = 5.0         # seconds of crossfade between chapter ambiences
 
 
@@ -185,6 +210,33 @@ def make_hit(kind, seed):
         sub = 0.6 * np.sin(2 * np.pi * 45 * t) * env
         mono = hiss * env + sub
         st = np.stack([mono, _shaped_noise(rng, d, _band(3000, 11000, 2)) * env + sub], 1)
+    elif kind == "shimmer":                                    # brillo: armónicos altos que suben y se apagan
+        d = int(SR * 4.2)
+        t = np.arange(d) / SR
+        env = np.where(t < 1.4, (t / 1.4) ** 2, np.exp(-(t - 1.4) / 1.1))
+        base = rng.choice([523.3, 587.3, 659.3, 784.0])
+        mono = sum(np.sin(2 * np.pi * base * m * (1 + 0.012 * t) * t + rng.uniform(0, 6.3)) / m
+                   for m in (1, 1.5, 2, 3, 4)) * env
+        mono += 0.25 * _shaped_noise(rng, d, _band(5000, 12000, 2)) * env
+        mono = 0.6 * mono + 0.6 * _reverb(rng, mono, 3.5, 7000)
+        st = _pan(mono, -0.5, 0.5)
+    elif kind == "rumble":                                     # retumbo grave que crece y se va, sin golpe
+        d = int(SR * 5.0)
+        t = np.arange(d) / SR
+        env = np.where(t < 1.8, np.sin(t / 1.8 * np.pi / 2) ** 2, np.exp(-(t - 1.8) / 1.3))
+        low = _shaped_noise(rng, d, _band(25, 140, 3))
+        sub = np.sin(2 * np.pi * (38 + 6 * np.exp(-t)) * t)
+        mono = (low / max(1e-9, np.abs(low).max()) + 0.8 * sub) * env
+        mono = 0.7 * mono + 0.5 * _reverb(rng, mono, 3.0, 600)
+        st = np.stack([mono, mono * 0.95], 1)
+    elif kind == "drift":                                      # deriva: un barrido largo y suave de lado a lado
+        d = int(SR * 3.8)
+        t = np.arange(d) / SR
+        mono = np.zeros(d)
+        for k, (lo, hi) in enumerate(((150, 500), (400, 1300), (1000, 3000), (2500, 7000))):
+            env = np.exp(-((t - (1.7 + 0.15 * k)) / 0.85) ** 2)
+            mono += _shaped_noise(rng, d, _band(lo, hi, 2)) * env / (1 + 0.5 * k)
+        st = _pan(mono, -0.8, 0.8)
     else:
         raise ValueError(kind)
     return (st / max(1e-9, np.abs(st).max()) * HIT_PEAK[kind]).astype(np.float32)
@@ -224,7 +276,7 @@ def fill_gaps(hits, pauses, max_gap, duration):
     return sorted(hits + added)
 
 
-def plan(timing, script, pauses=None, max_gap=0, hook=None):
+def plan(timing, script, pauses=None, max_gap=0, hook=None, cues=None, semantic=False):
     """(sections, hits): ambience per time range and one-shot hits with their start time in seconds.
     pauses: start times of paragraphs that come after a silence (from the captions), used to keep the rhythm.
     hook: {"minutes", "bed", "max_gap"} — 14-nov-2026 (Luis): the first minutes are where the audience decides, so
@@ -265,6 +317,15 @@ def plan(timing, script, pauses=None, max_gap=0, hook=None):
     if hook_s and pauses and hook.get("max_gap"):
         start = [h for h in hits if h[0] < hook_s]
         hits = sorted(fill_gaps(start, pauses, hook["max_gap"], hook_s) + [h for h in hits if h[0] >= hook_s])
+    if semantic and cues:                       # 17-nov: el sonido acorde a la frase que empieza justo después
+        starts = [(a, txt) for a, _, txt in cues]
+        out = []
+        for t0, kind in hits:
+            if kind in ("whoosh", "swell"):
+                nxt = next((txt for a, txt in starts if a >= t0 - 0.2), "")
+                kind = kind_for(nxt, "drift" if kind == "whoosh" else "swell")
+            out.append((t0, kind))
+        hits = out
     return sections, hits
 
 
@@ -273,11 +334,15 @@ def paragraph_starts(cues, min_silence=1.0):
     return [b0 for (_, a1, _), (b0, _, _) in zip(cues, cues[1:]) if b0 - a1 >= min_silence]
 
 
-def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0, hook=None):
-    sections, hits = plan(timing, script, pauses, max_gap, hook)
+def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0, hook=None, cues=None,
+             semantic=False, soft_boom=False):
+    sections, hits = plan(timing, script, pauses, max_gap, hook, cues, semantic)
     total = int(timing["duration"] * SR) + SR
     beds = {k: make_bed(k, seed + 101 * i) for i, k in enumerate(sorted({s[2] for s in sections}))}
-    shots = {k: make_hit(k, seed + 7 * i) for i, k in enumerate(("boom", "boom_soft", "whoosh", "swell"))}
+    shots = {k: make_hit(k, seed + 7 * i) for i, k in enumerate(HIT_KINDS)}
+    if soft_boom:                               # 17-nov: el golpe del título entra en 0,3 s (sin susto)
+        b = shots["boom"]
+        b[: int(0.3 * SR)] *= np.linspace(0, 1, int(0.3 * SR))[:, None]
     fade = int(FADE * SR)
     with sf.SoundFile(str(path), "w", SR, 2, subtype="FLOAT") as f:
         for b0 in range(0, total, block_s * SR):
@@ -303,4 +368,4 @@ def make_sfx(path, timing, script, seed=0, block_s=30, pauses=None, max_gap=0, h
                 out[lo - b0:hi - b0] += h[lo - s0:hi - s0]
             f.write(out)
     return {"beds": sorted(k for k in beds if beds[k] is not None),
-            "hits": {k: sum(1 for _, x in hits if x == k) for k in shots}}
+            "hits": {k: sum(1 for _, x in hits if x == k) for k in shots if any(x == k for _, x in hits)}}

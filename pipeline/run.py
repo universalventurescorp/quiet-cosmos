@@ -463,7 +463,9 @@ def main():
             from .sfx import paragraph_starts
             info = make_sfx(sfx, timing, script, seed=zlib.crc32(topic.encode()) % 100000,
                             pauses=paragraph_starts(read_srt(out / "captions.srt"), 0.7),
-                            max_gap=cfg["mix"].get("sfx_max_gap", 0), hook=cfg["mix"].get("sfx_hook"))
+                            max_gap=cfg["mix"].get("sfx_max_gap", 0), hook=cfg["mix"].get("sfx_hook"),
+                            cues=read_srt(out / "captions.srt"), semantic=cfg["mix"].get("sfx_semantic", False),
+                            soft_boom=cfg["mix"].get("sfx_semantic", False))
             write_json(out / "sfx.json", info)
             print(f"   ambiences {info['beds']}, hits {info['hits']}")
         except Exception as exc:          # never lose an episode over the sound design

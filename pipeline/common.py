@@ -35,6 +35,14 @@ def load_config():
         if name not in cfg.get("presets", {}):
             raise SystemExit(f"voice_preset '{name}' no existe en presets")
         cfg = _merge(cfg, cfg["presets"][name])
+    # 17-nov-2026: SOUND_PRESET=<nombre> aplica un juego de sonido de "sound_presets" SOLO a esta corrida (pruebas sin
+    # tocar la producción normal)
+    snd = os.environ.get("SOUND_PRESET", "").strip()
+    if snd:
+        if snd not in cfg.get("sound_presets", {}):
+            raise SystemExit(f"SOUND_PRESET '{snd}' no existe en sound_presets")
+        cfg = _merge(cfg, cfg["sound_presets"][snd])
+        print(f"   sonido de prueba: {snd}")
     return cfg
 
 

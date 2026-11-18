@@ -30,7 +30,8 @@ t = min(mins * 60, 600)
 old, nsfx = out / "sfx_antes.wav", out / "sfx_despues.wav"
 o = cfg["mix"]
 make_sfx(old, timing, script, seed=seed, pauses=pauses, max_gap=o.get("sfx_max_gap", 0), hook=o.get("sfx_hook"))
-make_sfx(nsfx, timing, script, seed=seed, pauses=pauses, max_gap=m.get("sfx_max_gap", 0), hook=m.get("sfx_hook"))
+make_sfx(nsfx, timing, script, seed=seed, pauses=pauses, max_gap=m.get("sfx_max_gap", 0), hook=m.get("sfx_hook"),
+         cues=read_srt(ep / "captions.srt"), semantic=m.get("sfx_semantic", False), soft_boom=m.get("sfx_semantic", False))
 # el artefacto no guarda la voz ni la música sueltas: a la mezcla final de la vista previa se le suma la diferencia.
 # Los sonidos y fondos son idénticos entre las dos versiones (misma semilla), así que (nuevo - viejo) son justo los
 # sonidos agregados; y + viejo * (vol - 1) sube el volumen de todos los efectos.

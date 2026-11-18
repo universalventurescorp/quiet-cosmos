@@ -248,3 +248,15 @@ presets:
       3h:
         slow_to: 1.5
         soften: true
+
+# 17-nov-2026 (Luis): sonido de PRUEBA, solo para la corrida que lo pida (largo.yml input "sonido: tematico").
+# La producción normal no cambia. Efectos +4 dB, mucho más seguidos (uno cada ~20 s al inicio) y elegidos por lo que
+# dice la frase que viene (luz -> brillo, gravedad/oscuridad -> retumbo, viaje -> deriva, pregunta -> subida),
+# todos con entrada suave para que no asusten.
+sound_presets:
+  tematico:
+    mix:
+      sfx_volume: 1.6
+      sfx_max_gap: 90
+      sfx_hook: { minutes: 30, bed: deep_space, max_gap: 30 }
+      sfx_semantic: true

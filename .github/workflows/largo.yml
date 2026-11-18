@@ -21,6 +21,11 @@ on:
         description: "Subir a YouTube (privado)"
         type: boolean
         default: true
+      sonido:
+        description: "normal = el de siempre; tematico = PRUEBA 17-nov (efectos +4 dB, más seguidos y acordes a la frase)"
+        type: choice
+        options: [normal, tematico]
+        default: normal
 
 permissions:
   contents: write
@@ -33,6 +38,7 @@ concurrency:
 
 env:
   CHANNEL: estrato-nocturno
+  SOUND_PRESET: ${{ inputs.sonido == 'tematico' && 'tematico' || '' }}
 
 jobs:
   guion:
