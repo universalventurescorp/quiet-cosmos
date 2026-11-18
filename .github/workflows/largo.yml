@@ -22,10 +22,10 @@ on:
         type: boolean
         default: true
       sonido:
-        description: "normal = el de siempre; tematico = PRUEBA 17-nov (efectos +4 dB, más seguidos y acordes a la frase)"
+        description: "dormir = SEMANA DE PRUEBA desde el 18-nov (gancho lleno 30 min y luego suave); normal = el de siempre"
         type: choice
-        options: [normal, tematico]
-        default: normal
+        options: [dormir, normal, tematico]
+        default: dormir
 
 permissions:
   contents: write
@@ -38,7 +38,9 @@ concurrency:
 
 env:
   CHANNEL: estrato-nocturno
-  SOUND_PRESET: ${{ inputs.sonido == 'tematico' && 'tematico' || '' }}
+  # 17-nov-2026 (Luis): una semana con el sonido "dormir" en TODAS las producciones (también las automáticas).
+  # Volver al de siempre: elegir "normal" o cambiar aquí 'dormir' por ''. El sonido normal sigue intacto.
+  SOUND_PRESET: ${{ inputs.sonido == 'normal' && '' || (inputs.sonido || 'dormir') }}
 
 jobs:
   guion:
