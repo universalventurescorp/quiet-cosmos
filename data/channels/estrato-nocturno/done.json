@@ -602,5 +602,51 @@
     "ai_scenes": 134,
     "ai_status": "ok",
     "date": "2026-11-15"
+  },
+  {
+    "topic": "Cometas, asteroides y meteoros: los viajeros del Sistema Solar",
+    "title": "Cometas, Asteroides y Meteoros | Documental Relajante para Dormir",
+    "chapters": [
+      "El día que el cielo cayó en Yucatán",
+      "Una cola que apunta contra el camino",
+      "La piedra que nadie vio venir",
+      "Tunguska: el bosque sin cráter",
+      "La noche de cien mil estrellas",
+      "Polvo de cometa en el cielo de agosto",
+      "El sonido de un meteoro",
+      "Un cometa más grande que el Sol",
+      "Un cometa que huele a alcohol",
+      "El regreso de Halley",
+      "Cuando Júpiter rompió un cometa",
+      "¿Nos trajeron los cometas el agua?",
+      "Los minerales que no deberían estar ahí",
+      "Cráteres: la prueba que tardó en llegar",
+      "La roca que cayó en Murchison",
+      "Hierro con forma de flor",
+      "Los sólidos más antiguos",
+      "El planeta que no llegó a nacer",
+      "Vesta, el protoplaneta herido",
+      "Ryugu: un trompo oscuro",
+      "Psyche: un mundo de metal",
+      "Lucy y los troyanos de Júpiter",
+      "Cuando las rocas se miran de cerca",
+      "Destellos en otros cielos",
+      "Un cometa que no era de aquí",
+      "La nube de los cometas dormidos",
+      "Lo que cae cada día",
+      "Somos un montón de viajeros"
+    ],
+    "video_id": "dm1N-Km-qVE",
+    "voice_test": null,
+    "shorts": [
+      "rqKAE8NevUE",
+      "BCYkpY6kvCA",
+      "Ri2flMY3CI0"
+    ],
+    "minutes": 207.2,
+    "qa_ok": true,
+    "ai_scenes": 37,
+    "ai_status": "ok",
+    "date": "2026-11-18"
   }
 ]
